@@ -1,4 +1,0 @@
-﻿main.obj : error LNK2019: unresolved external symbol _sqlite3_close referenced in function _main
-main.obj : error LNK2019: unresolved external symbol _sqlite3_open referenced in function _main
-main.obj : error LNK2019: unresolved external symbol _sqlite3_errmsg referenced in function _main
-D:\Documents-(D)\HBO-ICT\jaar2\Blok B\Gaming project\gameproject\Software\Gaming_project_workspace\Debug\sqlite_test.exe : fatal error LNK1120: 3 unresolved externals

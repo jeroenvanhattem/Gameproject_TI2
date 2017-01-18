@@ -1,0 +1,14 @@
+_DOC/*
+_TEMP/*
+bin/obj/*
+bin/*.exe
+bin/*.dll
+bin/*.txt
+
+*.user
+*.bat
+*.cbp
+*.depend
+*.layout
+*.sublime-project
+*.sublime-workspace

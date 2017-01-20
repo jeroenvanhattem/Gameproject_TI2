@@ -1,20 +1,20 @@
-﻿Build started 1/20/2017 14:08:46.
+﻿Build started 1/20/2017 14:12:38.
      1>Project "D:\School\2016-2017\Blok_2\Gameproject\Opdrachten\Project\Software\_Overig\_SQL\_SQL\_SQL.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp sql.cpp
-         main.cpp
-         Generating Code...
-         Compiling...
          sql.cpp
+     1>d:\school\2016-2017\blok_2\gameproject\opdrachten\project\software\_overig\_sql\_sql\sql.hpp(29): error C2440: 'return': cannot convert from 'unsigned char *' to 'char *'
+         d:\school\2016-2017\blok_2\gameproject\opdrachten\project\software\_overig\_sql\_sql\sql.hpp(29): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>d:\school\2016-2017\blok_2\gameproject\opdrachten\project\software\_overig\_sql\_sql\sql.cpp(25): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned int'
+     1>d:\school\2016-2017\blok_2\gameproject\opdrachten\project\software\_overig\_sql\_sql\sql.cpp(25): warning C4302: 'type cast': truncation from 'char *' to 'unsigned int'
+     1>d:\school\2016-2017\blok_2\gameproject\opdrachten\project\software\_overig\_sql\_sql\sql.cpp(25): error C2664: 'void sql::set_returned(unsigned char *)': cannot convert argument 1 from 'unsigned int' to 'unsigned char *'
+         d:\school\2016-2017\blok_2\gameproject\opdrachten\project\software\_overig\_sql\_sql\sql.cpp(25): note: Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+         main.cpp
+     1>d:\school\2016-2017\blok_2\gameproject\opdrachten\project\software\_overig\_sql\_sql\sql.hpp(29): error C2440: 'return': cannot convert from 'unsigned char *' to 'char *'
+         d:\school\2016-2017\blok_2\gameproject\opdrachten\project\software\_overig\_sql\_sql\sql.hpp(29): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
          Generating Code...
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\School\2016-2017\Blok_2\Gameproject\Opdrachten\Project\Software\_Overig\_SQL\x64\Debug\_SQL.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\School\2016-2017\Blok_2\Gameproject\Opdrachten\Project\Software\_Overig\_SQL\x64\Debug\_SQL.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\School\2016-2017\Blok_2\Gameproject\Opdrachten\Project\Software\_Overig\_SQL\x64\Debug\_SQL.lib" /MACHINE:X64 x64\Debug\main.obj
-         x64\Debug\sql.obj
-         x64\Debug\sqlite3.obj
-     1>sql.obj : error LNK2001: unresolved external symbol "private: static char * sql::returned" (?returned@sql@@0PEADEA)
-     1>D:\School\2016-2017\Blok_2\Gameproject\Opdrachten\Project\Software\_Overig\_SQL\x64\Debug\_SQL.exe : fatal error LNK1120: 1 unresolved externals
      1>Done Building Project "D:\School\2016-2017\Blok_2\Gameproject\Opdrachten\Project\Software\_Overig\_SQL\_SQL\_SQL.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:01.14
+Time Elapsed 00:00:00.67

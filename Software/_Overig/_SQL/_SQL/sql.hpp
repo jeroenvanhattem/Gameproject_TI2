@@ -14,11 +14,11 @@ private:
 	const char* data = "Callback function called";
 
 	int counter;
-	static char* returned;
 
 	std::ostringstream query;
 
 public:
+	static char* returned;
 
 	sql();
 	~sql();

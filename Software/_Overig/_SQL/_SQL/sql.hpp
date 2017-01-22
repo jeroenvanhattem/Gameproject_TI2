@@ -4,6 +4,8 @@
 #include <string>
 #include <sstream>
 
+static char* result;
+
 class sql {
 private:
 	sqlite3 *database;
@@ -17,19 +19,27 @@ private:
 
 	std::ostringstream query;
 
+
+
 public:
-	static char* returned;
 
 	sql();
 	~sql();
 
+	void get_data(char* table, char* columnname, char* condition1, char* condition2);
 	void get_data(char* table, char* columnname);
 
+	void add_data(char* table, char* values);
+
 	int get_counter() { return counter; }
-	char* get_returned() { return returned; }
+	char* get_result() { return result; }
 	
+	char* get_id(char* table);
+
 	void set_counter(int x) { counter = x; }
-	static void set_returned(char* x) { returned = x; }
+	static void set_result(char* x) { result = x; }
+
+	void execute_query(char* to_be_executed);
 
 	static int callback(void *NotUsed, int argc, char **argv, char **azColName);
 };

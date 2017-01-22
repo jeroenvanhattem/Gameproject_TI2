@@ -11,10 +11,11 @@
 int main( int argc, char* argv[]) {
 	std::cout << "Checking CMD" << std::endl;
 	
+	sql database;
+	
 	int _ENDING;
 
-	sql database;
-
+	//database.change_data("item", "name", "'apple'", "name", "banana");
 	//database.execute_query("SELECT name FROM item ORDER BY id DESC");
 	//database.add_data("item", "'Tokato gloves', 0, 20, 0, 60");
 	//database.get_data("item", "id", "name", "'shield'");

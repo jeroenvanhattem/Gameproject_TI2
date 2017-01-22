@@ -98,3 +98,20 @@ void sql::add_data(char* table, char* values) {
 		std::cout << "Records added succesfull" << std::endl;
 	}
 }
+
+void sql::change_data(char* table, char* condition1, char* condition2, char* value1, char* value2) {
+	query << "UPDATE " << table << " SET " << value1 << " = '" << value2 << "' WHERE " << condition1 << " = " << condition2 << ";";
+	std::string query_string = query.str();
+
+	rc = sqlite3_exec(database, query_string.c_str(), callback, 0, &_ERROR_MESSAGE);
+	std::cout << rc;
+
+	if (rc != SQLITE_OK) {
+		std::cout << "ERROR: " << _ERROR_MESSAGE << std::endl;
+		sqlite3_free(_ERROR_MESSAGE);
+	}
+	else {
+		std::cout << "Changing data succesfull" << std::endl;
+	}
+
+}

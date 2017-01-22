@@ -34,7 +34,7 @@ public:
 	int get_counter() { return counter; }
 	char* get_result() { return result; }
 	
-	char* get_id(char* table);
+	void change_data(char* table, char* condition1, char* condition2, char* value1, char* value2);
 
 	void set_counter(int x) { counter = x; }
 	static void set_result(char* x) { result = x; }

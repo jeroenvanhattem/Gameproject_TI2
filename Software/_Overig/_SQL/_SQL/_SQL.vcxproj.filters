@@ -24,9 +24,21 @@
     <ClCompile Include="_Classes\sql.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="_Classes\npc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_Classes\ability.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_Classes\sql.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_Classes\npc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_Classes\ability.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

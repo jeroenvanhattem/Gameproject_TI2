@@ -1,0 +1,20 @@
+﻿  main.cpp
+  npc.cpp
+  sql.cpp
+  sqlite3.c
+npc.obj : error LNK2001: unresolved external symbol "public: void __cdecl ability::draw(class sf::RenderWindow &)" (?draw@ability@@QEAAXAEAVRenderWindow@sf@@@Z)
+npc.obj : error LNK2001: unresolved external symbol "public: void __cdecl ability::move(class sf::Vector2<float>)" (?move@ability@@QEAAXV?$Vector2@M@sf@@@Z)
+npc.obj : error LNK2001: unresolved external symbol "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl ability::get_name(void)" (?get_name@ability@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ)
+npc.obj : error LNK2001: unresolved external symbol "public: __cdecl ability::ability(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::vector<class sf::Sprite,class std::allocator<class sf::Sprite> > &,class sf::Vector2<float>)" (??0ability@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$vector@VSprite@sf@@V?$allocator@VSprite@sf@@@std@@@2@V?$Vector2@M@sf@@@Z)
+npc.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Texture::setSmooth(bool)" (__imp_?setSmooth@Texture@sf@@QEAAX_N@Z)
+npc.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __cdecl sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$Rect@H@2@@Z)
+npc.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QEAA@XZ)
+npc.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QEAA@XZ)
+npc.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) private: virtual void __cdecl sf::Sprite::draw(class sf::RenderTarget &,class sf::RenderStates)const " (__imp_?draw@Sprite@sf@@EEBAXAEAVRenderTarget@2@VRenderStates@2@@Z)
+npc.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Sprite::setTextureRect(class sf::Rect<int> const &)" (__imp_?setTextureRect@Sprite@sf@@QEAAXAEBV?$Rect@H@2@@Z)
+npc.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QEAAXAEBVTexture@2@_N@Z)
+npc.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Sprite::Sprite(void)" (__imp_??0Sprite@sf@@QEAA@XZ)
+npc.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Sprite::Sprite(class sf::Sprite &&)" (__imp_??0Sprite@sf@@QEAA@$$QEAV01@@Z)
+npc.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Sprite::Sprite(class sf::Sprite const &)" (__imp_??0Sprite@sf@@QEAA@AEBV01@@Z)
+npc.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UEAA@XZ)
+D:\Documents-(D)\HBO-ICT\jaar2\Blok B\git\game_development\Software\_Overig\_SQL\x64\Release\_SQL.exe : fatal error LNK1120: 15 unresolved externals

@@ -4,11 +4,11 @@ sql::sql() {
 	connection = sqlite3_open("database.db", &database);	
 
 	if (connection) {
-		std::cout << "Can't open the given database" << std::endl;
+		std::cout << "Error: Can't open the given database" << std::endl;
 	}
 
 	else {
-		std::cout << "Congratulations, you opened the given database!" << std::endl;
+		std::cout << "Database correctly opened." << std::endl;
 	}	
 }	
 

@@ -155,11 +155,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="sql.cpp" />
     <ClCompile Include="sqlite3.c" />
+    <ClCompile Include="_Classes\sql.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sql.hpp" />
+    <ClInclude Include="_Classes\sql.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

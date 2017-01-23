@@ -21,12 +21,12 @@
     <ClCompile Include="sqlite3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sql.cpp">
+    <ClCompile Include="_Classes\sql.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sql.hpp">
+    <ClInclude Include="_Classes\sql.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

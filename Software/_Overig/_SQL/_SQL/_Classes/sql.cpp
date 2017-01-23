@@ -19,13 +19,13 @@ sql::~sql() {
 int sql::callback(void *NotUsed, int argc, char **argv, char **azColName) {
 	for (int i = 0; i < argc; i++) {
 		set_result(argv[0]);
-		std::cout << result;
+		//std::cout << result;
 	}
 	std::cout << "\n";
 	return 0;
 }
 
-void sql::get_data(char* table, char* columnname, char* condition1, char* condition2) {
+char* sql::get_data(char* table, char* columnname, char* condition1, char* condition2) {
 	query << "SELECT " << columnname << " FROM " << table << " WHERE " << condition1 << " = " << condition2 << ";";
 	std::string query_string = query.str();
 
@@ -42,9 +42,10 @@ void sql::get_data(char* table, char* columnname, char* condition1, char* condit
 	else {
 		std::cout << "Reading succesfull" << std::endl;
 	}
+	return get_result();
 }
 
-void sql::get_data(char* table, char* columnname) {
+char* sql::get_data(char* table, char* columnname) {
 	query << "SELECT " << columnname << " FROM " << table << ";";
 	std::string query_string = query.str();
 
@@ -62,6 +63,9 @@ void sql::get_data(char* table, char* columnname) {
 	else {
 		std::cout << "Reading succesfull" << std::endl;
 	}
+	std::cout << get_result();
+
+	return result;
 }
 
 void sql::execute_query(char* to_be_executed) {

@@ -1,13 +1,3 @@
-﻿  tile.cpp
-  sql.cpp
-  sprite.cpp
-  npc.cpp
-  main.cpp
-  file_reading_operators.cpp
-  button_actions.cpp
-  background.cpp
-  ability.cpp
-  Generating Code...
-  sqlite3.c
+﻿  sql.cpp
   _SQL.vcxproj -> D:\Documents-(D)\HBO-ICT\jaar2\Blok B\git\game_development\Software\Maingame\project\_SQL\..\..\bin\_SQL.exe
   _SQL.vcxproj -> ..\..\bin\_SQL.pdb (Full PDB)

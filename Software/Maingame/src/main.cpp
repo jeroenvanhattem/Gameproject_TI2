@@ -21,16 +21,43 @@ int main( int argc, char* argv[]) {
 	
 	npc player(window, "../../bin/sprite_sheets/player_sprite.png", { 100,100 }, true);
 
-	//std::cout << database.get_player_variable(current_save, "name");
-	//std::cout << database.get_data_from_query("SELECT sprites.path FROM sprites, player WHERE player.sprite_id == sprites.id");
+
 	std::vector<npc*>npc_list;
-	std::vector<std::string>npc_names;
-	std::vector<std::string>lalalal;
-	lalalal = database.get_npc_variables();
-	
-	for (auto indexer : lalalal) {
-		std::cout << indexer << "\t";
+	std::vector<std::string>value_of_one_npc;
+	std::vector<std::string>get_npc_id;
+
+	std::vector<std::string>get_object_ids;
+	std::vector<std::string>value_of_one_object;
+
+	get_object_ids = database.get_object_sprite_ids();
+	for (auto indexer : get_object_ids) {
+		std::cout << indexer << ")\t";
+		value_of_one_object = database.get_object_sprite_value(indexer);
+		
+		for (auto indexer2 : value_of_one_object) {
+			std::cout << indexer2 << "\t";
+		}
+		std::cout << "\n\n\n";
 	}
+	std::cout << "\n\n\n";
+
+
+	std::cout << "Getting NPC id's.\n";
+	/*get_npc_id = database.get_number_of_npcs();
+	
+	for (auto indexer : get_npc_id) {
+		value_of_one_npc = database.get_npc_value(indexer);
+		std::cout << indexer << ")\t";
+		for (auto indexer2 : value_of_one_npc) {
+			std::cout << indexer2 << "\t";
+		}
+		std::cout << "\n\n\n";
+	}*/
+
+
+	
+	
+	
 	
 
 

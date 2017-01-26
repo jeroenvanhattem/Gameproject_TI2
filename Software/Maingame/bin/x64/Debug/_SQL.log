@@ -1,5 +1,3 @@
-﻿  objects.cpp
-  main.cpp
-c:\users\rik\documents\projectblok2\gameproject_ti2\software\maingame\src\main.cpp(22): error C2664: 'leveleditor::leveleditor(leveleditor &&)': cannot convert argument 4 from 'sql' to 'std::ifstream &'
-  leveleditor.cpp
-  Generating Code...
+﻿  leveleditor.cpp
+  _SQL.vcxproj -> C:\Users\Rik\Documents\ProjectBlok2\Gameproject\Gameproject_TI2\Software\Maingame\project\_SQL\..\..\bin\_SQL.exe
+  _SQL.vcxproj -> ..\..\bin\_SQL.pdb (Full PDB)

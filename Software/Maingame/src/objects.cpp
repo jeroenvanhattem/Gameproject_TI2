@@ -5,19 +5,6 @@ figure::figure(sf::Vector2f position) :
 	position{ position }
 {}
 
-self_def_object::self_def_object(std::string picture_path, sf::Vector2f position, int points) :
-	picture_path(picture_path),
-	figure(position),
-	points(points)
-{
-	if (!texture.loadFromFile(picture_path)) {
-		std::cout << "Error while loading file.\n";
-	}
-	texture.setSmooth(true);
-	convex.setTexture(&texture);
-	convex.setPointCount(points);
-}
-
 picture::picture(std::string picture_path, sf::Vector2f position, sf::Vector2f tile_size) :
 	picture_path(picture_path),
 	figure(position),
@@ -28,6 +15,10 @@ picture::picture(std::string picture_path, sf::Vector2f position, sf::Vector2f t
 	}
 	texture.setSmooth(true);
 	sprite.setTexture(texture);
+}
+
+void picture::rotate(float angle) {
+	sprite.rotate(angle);
 }
 
 circle::circle(sf::Vector2f position, float size, sf::Color color) :

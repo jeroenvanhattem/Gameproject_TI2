@@ -18,16 +18,6 @@ public:
 	virtual void jump(sf::Vector2i target);
 };
 
-class self_def_object : public figure {
-private:
-	sf::ConvexShape convex;
-	sf::Texture texture;
-	int points = 0;
-public:
-	std::string picture_path;
-	self_def_object(std::string picture_path, sf::Vector2f position, int points);
-};
-
 class picture : public figure {
 private:
 	sf::Texture texture;
@@ -37,6 +27,7 @@ public:
 	sf::FloatRect getBounds();
 	std::string picture_path;
 	sf::Vector2f tile_size;
+	void rotate(float angle);
 
 	void draw(sf::RenderWindow & window);
 };

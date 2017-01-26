@@ -20,13 +20,27 @@ leveleditor::leveleditor(sf::Vector2f levelsize, sf::Vector2f rect_size, sf::Ren
 }
 
 void leveleditor::editor_loop() {
-	window.setView(view1);
-	get_actions();
-	draw_rectangle_store();
-	draw_background_store();
-	window.setView(view2);
-	get_actions();
-	draw_tile_store();
+	while (window.isOpen()) {
+
+		window.clear();
+		window.setView(view1);
+		get_actions();
+		draw_rectangle_store();
+		draw_background_store();
+		window.setView(view2);
+		get_actions();
+		draw_tile_store();
+		window.display();
+
+		sf::sleep(sf::milliseconds(20));
+
+		sf::Event event;
+		while (window.pollEvent(event)) {
+			if (event.type == sf::Event::Closed) {
+				window.close();
+			}
+		}
+	}
 }
 
 void leveleditor::load_rectangles(){
@@ -64,31 +78,9 @@ bool leveleditor::remove_object_under_mouse() {
 	return false;
 }
 
-/*
-std::ifstream & operator >> (std::ifstream & input, sf::Vector2f & rhs) {
-	char c;
-	if (!(input >> c)) {}
-	//	if (c != '(') { throw invalid_position(c); }
-
-	if (!(input >> rhs.x)) {}
-
-	if (!(input >> c)) {}
-
-	if (!(input >> rhs.y)) {}
-
-	if (!(input >> c)) {}
-	//	if (c != ')') { throw invalid_position(c); }
-	return input;
-}
-*/
-
-void leveleditor::save() {
-
-}
-
 void leveleditor::load_tile_list() {
 	float start = levelsize.x + 64;
-	float pos_x = levelsize.x + 64;
+	float pos_x = start;
 	float pos_y = 0;
 	sf::Vector2f pre_size = { 0, 0 };
 	std::string path;
@@ -100,8 +92,8 @@ void leveleditor::load_tile_list() {
 
 	std::vector<std::string> tile;
 
-	int tile_position_x_converted_as_int;
-	int tile_position_y_converted_as_int;
+	float tile_position_x_converted_as_int;
+	float tile_position_y_converted_as_int;
 
 	
 	
@@ -109,10 +101,10 @@ void leveleditor::load_tile_list() {
 		
 		tile = database.get_object_sprite_value(indexer);
 
-		std::istringstream buffer(tile.at(3));
+		std::istringstream buffer(tile.at(2));
 		buffer >> tile_position_x_converted_as_int;
-		std::istringstream buffer(tile.at(4));
-		buffer >> tile_position_y_converted_as_int;
+		std::istringstream buff(tile.at(3));
+		buff >> tile_position_y_converted_as_int;
 		
 
 		sf::Vector2f tile_size = { tile_position_x_converted_as_int, tile_position_y_converted_as_int };
@@ -124,7 +116,7 @@ void leveleditor::load_tile_list() {
 			biggest_tile = 0;
 		}
 		if ((pos_x + tile_size.x) <= (start + 256)) {
-			tile_store.push_back(new picture(tile.at(1), { pos_x, pos_y }, tile_size));
+			tile_store.push_back(new picture(tile.at(0), { pos_x, pos_y }, tile_size));
 			pos_x += tile_size.x;
 			pre_size = { tile_size.x, tile_size.y };
 			if (pre_size.y > biggest_tile) {

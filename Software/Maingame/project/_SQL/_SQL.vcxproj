@@ -23,6 +23,7 @@
     <ClInclude Include="..\..\src\button_actions.hpp" />
     <ClInclude Include="..\..\src\exception_list.hpp" />
     <ClInclude Include="..\..\src\leveleditor.hpp" />
+    <ClInclude Include="..\..\src\main_menu.hpp" />
     <ClInclude Include="..\..\src\npc.hpp" />
     <ClInclude Include="..\..\src\objects.hpp" />
     <ClInclude Include="..\..\src\sprite.hpp" />
@@ -35,6 +36,7 @@
     <ClCompile Include="..\..\src\button_actions.cpp" />
     <ClCompile Include="..\..\src\leveleditor.cpp" />
     <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\main_menu.cpp" />
     <ClCompile Include="..\..\src\npc.cpp" />
     <ClCompile Include="..\..\src\objects.cpp" />
     <ClCompile Include="..\..\src\sprite.cpp" />

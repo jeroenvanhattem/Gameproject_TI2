@@ -24,9 +24,21 @@
     <ClCompile Include="_Classes\sql.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="_Classes\leveleditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_Classes\objects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_Classes\sql.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_Classes\leveleditor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_Classes\objects.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

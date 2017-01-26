@@ -4,6 +4,8 @@ leveleditor::leveleditor(sf::Vector2f levelsize, sf::Vector2f rect_size, sf::Ren
 	levelsize(levelsize),
 	rect_size(rect_size),
 	database(database),
+	save_level_button("../../bin/pictures/save_level_button.png", { 0 , ((float)window.getSize().y / 4 )- 50 }, { 0,0 }),
+	back_to_menu_button("../../bin/pictures/back_to_menu_button.png", { 0, (float)window.getSize().y / 4 }, { 0,0 }),
 	window(window)
 {
 	load_rectangles();
@@ -17,19 +19,43 @@ leveleditor::leveleditor(sf::Vector2f levelsize, sf::Vector2f rect_size, sf::Ren
 	view2.setCenter(sf::Vector2f(levelsize.x + 192, 256));
 	view2.setSize(sf::Vector2f(256, 512));
 	view2.setViewport(sf::FloatRect(0.75f, 0, 0.25f, 1));
+	
+	view3.setCenter(sf::Vector2f(200 , 250));
+	view3.setSize(sf::Vector2f(400, 500));
+	view3.setViewport(sf::FloatRect(0.75f, 0, 0.25f, 1));
+	view3.zoom(1.5);
 }
 
 void leveleditor::editor_loop() {
 	while (window.isOpen()) {
 
 		window.clear();
+
 		window.setView(view1);
 		get_actions();
 		draw_rectangle_store();
 		draw_background_store();
-		window.setView(view2);
-		get_actions();
-		draw_tile_store();
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+			pressed = true;
+		}
+		if (pressed == true) {
+			window.setView(view3);
+			save_level_button.draw(window);
+			back_to_menu_button.draw(window);
+			if (is_button_pressed(back_to_menu_button, view3)) {
+				pressed = false;
+				break;
+			}
+			if (is_button_pressed(save_level_button, view3)) {
+				//save_game();
+			}
+		}
+		else {
+			window.setView(view2);
+			get_actions();
+			draw_tile_store();
+		}
 		window.display();
 
 		sf::sleep(sf::milliseconds(20));
@@ -41,6 +67,10 @@ void leveleditor::editor_loop() {
 			}
 		}
 	}
+}
+
+bool leveleditor::is_button_pressed(picture & object, sf::View & view) {
+	return (sf::Mouse::isButtonPressed(sf::Mouse::Left)) && object.getBounds().contains(window.mapPixelToCoords(sf::Mouse::getPosition(window), view));
 }
 
 void leveleditor::load_rectangles(){

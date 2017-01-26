@@ -48,6 +48,8 @@ private:
 	std::vector<picture*> tile_store;
 	sf::RenderWindow & window;
 	sql & database;
+	picture back_to_menu_button;
+	picture save_level_button;
 
 	void load_rectangles();
 	void load_tile_list();
@@ -59,6 +61,8 @@ private:
 	sf::Vector2f get_position_from_rectangle_under_mouse();
 	bool is_object_under_mouse(std::vector<picture*> & vector, sf::View & view);
 	bool is_object_under_mouse(std::vector<figure*> & vector, sf::View & view);
+	bool is_button_pressed(picture & object, sf::View & view);
+	bool pressed = 0;
 
 	action actions[12] = {
 		action(sf::Keyboard::Left,  [&]() {view1.move(-16, 0); }),
@@ -79,6 +83,7 @@ public:
 	leveleditor(sf::Vector2f levelsize, sf::Vector2f tilesize, sf::RenderWindow & window, sql & database);
 	sf::View view1;
 	sf::View view2;
+	sf::View view3;
 
 	void editor_loop();
 	void get_actions();

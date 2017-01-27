@@ -21,6 +21,14 @@ void picture::rotate(float angle) {
 	sprite.rotate(angle);
 }
 
+void picture::set_transpirantie(int value) {
+	int b = sprite.getColor().b;
+	int g = sprite.getColor().g;
+	int r = sprite.getColor().r;
+	sprite.setColor(sf::Color(r, g, b, value));
+}
+
+
 circle::circle(sf::Vector2f position, float size, sf::Color color) :
 	figure(position)
 {

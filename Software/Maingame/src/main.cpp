@@ -22,11 +22,13 @@ int main( int argc, char* argv[]) {
 	while (window.isOpen()) {
 
 		window.clear();
-		menu.game_loop();
+		menu.show_menu();
 		if (menu.button_pressed(menu.level_editor_button, menu.view1)) {
+			menu.load_screen();
 			editor.editor_loop();
 		}
 		if (menu.button_pressed(menu.play_game_button, menu.view1)) {
+			menu.load_screen();
 			//game.play_game_loop();
 		}
 		window.display();

@@ -6,12 +6,15 @@
 class main_menu {
 public:
 	sf::View view1;
+	sf::View view2;
 	picture level_editor_button;
 	picture play_game_button;
+	picture load_screen_pic;
 
 	main_menu(sf::RenderWindow & window);
-	void game_loop();
+	void show_menu();
 	bool button_pressed(picture & object, sf::View & view);
+	void load_screen();
 private:
 	sf::RenderWindow & window;
 	picture background;

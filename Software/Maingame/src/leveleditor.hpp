@@ -50,6 +50,11 @@ private:
 	sql & database;
 	picture back_to_menu_button;
 	picture save_level_button;
+	picture new_game_button;
+	picture load_game_button;
+	picture level_1_button;
+	picture level_2_button;
+	picture level_3_button;
 
 	void load_rectangles();
 	void load_tile_list();
@@ -62,7 +67,8 @@ private:
 	bool is_object_under_mouse(std::vector<picture*> & vector, sf::View & view);
 	bool is_object_under_mouse(std::vector<figure*> & vector, sf::View & view);
 	bool is_button_pressed(picture & object, sf::View & view);
-	bool pressed = 0;
+	bool pressed_esc = true;
+	bool pressed_load_game = false;
 
 	action actions[12] = {
 		action(sf::Keyboard::Left,  [&]() {view1.move(-16, 0); }),
@@ -84,6 +90,7 @@ public:
 	sf::View view1;
 	sf::View view2;
 	sf::View view3;
+	sf::View view4;
 
 	void editor_loop();
 	void get_actions();

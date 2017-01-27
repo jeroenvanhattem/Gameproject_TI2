@@ -28,6 +28,7 @@ public:
 	std::string picture_path;
 	sf::Vector2f tile_size;
 	void rotate(float angle);
+	void set_transpirantie(int value);
 
 	void draw(sf::RenderWindow & window);
 };

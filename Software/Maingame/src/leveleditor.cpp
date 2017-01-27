@@ -4,8 +4,13 @@ leveleditor::leveleditor(sf::Vector2f levelsize, sf::Vector2f rect_size, sf::Ren
 	levelsize(levelsize),
 	rect_size(rect_size),
 	database(database),
-	save_level_button("../../bin/pictures/save_level_button.png", { 0 , ((float)window.getSize().y / 4 )- 50 }, { 0,0 }),
-	back_to_menu_button("../../bin/pictures/back_to_menu_button.png", { 0, (float)window.getSize().y / 4 }, { 0,0 }),
+	save_level_button("../../bin/pictures/save_level_button.png", { 0 , ((float)window.getSize().y / 9 ) + 120 }, { 0,0 }),
+	back_to_menu_button("../../bin/pictures/back_to_menu_button.png", { 0, (float)window.getSize().y / 9 + 180}, { 0,0 }),
+	new_game_button("../../bin/pictures/new_level_button.png", { 0 , ((float)window.getSize().y / 9) }, { 0,0 }),
+	load_game_button("../../bin/pictures/load_level_button.png", { 0, ((float)window.getSize().y / 9) + 60}, { 0,0 }),
+	level_1_button("../../bin/pictures/level_1_button.png", { 0, ((float)window.getSize().y / 9) }, { 0,0 }),
+	level_2_button("../../bin/pictures/level_2_button.png", { 0, ((float)window.getSize().y / 9) + 60 }, { 0,0 }),
+	level_3_button("../../bin/pictures/level_3_button.png", { 0, ((float)window.getSize().y / 9) + 120 }, { 0,0 }),
 	window(window)
 {
 	load_rectangles();
@@ -24,6 +29,11 @@ leveleditor::leveleditor(sf::Vector2f levelsize, sf::Vector2f rect_size, sf::Ren
 	view3.setSize(sf::Vector2f(400, 500));
 	view3.setViewport(sf::FloatRect(0.75f, 0, 0.25f, 1));
 	view3.zoom(1.5);
+
+	view4.setCenter(sf::Vector2f(200, 250));
+	view4.setSize(sf::Vector2f(400, 500));
+	view4.setViewport(sf::FloatRect(0.75f, 0, 0.25f, 1));
+	view4.zoom(1.5);
 }
 
 void leveleditor::editor_loop() {
@@ -36,22 +46,55 @@ void leveleditor::editor_loop() {
 		draw_rectangle_store();
 		draw_background_store();
 
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
-			pressed = true;
+		if (pressed_load_game == true) {
+			window.setView(view4);
+			//if level 1 is available draw level 1 button
+			if (is_button_pressed(level_1_button, view4)) {
+				//load_level_1
+				pressed_load_game = false;
+			}
+			//if level 2 is available draw level 2 button
+			if (is_button_pressed(level_2_button, view4)) {
+				//load_level_2
+				pressed_load_game = false;
+			}
+			//if level 3 is available draw level 3 button
+			if (is_button_pressed(level_3_button, view4)) {
+				//load_level_3
+				pressed_load_game = false;
+			}
 		}
-		if (pressed == true) {
+		
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+			pressed_esc = true;
+		}
+		if (pressed_esc == true) {
 			window.setView(view3);
 			save_level_button.draw(window);
 			back_to_menu_button.draw(window);
-			if (is_button_pressed(back_to_menu_button, view3)) {
-				pressed = false;
-				break;
+			new_game_button.draw(window);
+			load_game_button.draw(window);
+
+			if (is_button_pressed(new_game_button, view3)) {
+				//new_game();
+				pressed_esc = false;
+			}
+			if (is_button_pressed(load_game_button, view3)) {
+				pressed_load_game = true;
+				pressed_esc = false;
 			}
 			if (is_button_pressed(save_level_button, view3)) {
 				//save_game();
+				pressed_esc = false;
+				pressed_load_game = false;
+			}
+			if (is_button_pressed(back_to_menu_button, view3)) {
+				pressed_esc = false;
+				pressed_load_game = false;
+				break;
 			}
 		}
-		else {
+		else if(pressed_load_game == false && pressed_esc == false) {
 			window.setView(view2);
 			get_actions();
 			draw_tile_store();

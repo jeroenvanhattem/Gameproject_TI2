@@ -1,3 +1,14 @@
-﻿  sql.cpp
-  _SQL.vcxproj -> D:\Documents-(D)\HBO-ICT\jaar2\Blok B\git\game_development\Software\Maingame\project\_SQL\..\..\bin\_SQL.exe
-  _SQL.vcxproj -> ..\..\bin\_SQL.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (../../bin/x64/Debug/) contains files shared from another project (_SQL.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Skipping... (no relevant changes detected)
+  tile.cpp
+  sql.cpp
+  sprite.cpp
+  npc.cpp
+  main.cpp
+  file_reading_operators.cpp
+  button_actions.cpp
+  background.cpp
+  ability.cpp
+  sqlite3.c
+  _SQL.vcxproj -> D:\Documents-(D)\HBO-ICT\jaar2\Blok B\git\game_development\Software\Maingame\project\_SQL\..\..\bin\move_player.exe
+  _SQL.vcxproj -> ..\..\bin\move_player.pdb (Full PDB)

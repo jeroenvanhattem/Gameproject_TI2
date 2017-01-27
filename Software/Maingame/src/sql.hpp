@@ -13,7 +13,7 @@ static std::vector<std::string> result;
 class sql {
 private:
 	sqlite3 *database;
-	std::string database_path = "../../bin/database.db";
+	std::string database_path = "database.db";
 
 	int rc;
 	int connection;

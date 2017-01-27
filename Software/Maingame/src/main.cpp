@@ -22,7 +22,7 @@ int main( int argc, char* argv[]) {
 	std::vector<std::string>available_level_names;
 	std::vector<std::string>level_ids;
 	std::vector<std::string>level_values;
-	std::vector<std::string>values_of_one_object;
+	std::map<std::string, std::vector<std::string>>object_values_map;
 	std::vector<std::string>values_of_one_background_tile;
 
 	available_level_names = database.get_available_levels();
@@ -35,24 +35,42 @@ int main( int argc, char* argv[]) {
 
 	level_ids = database.get_level_ids();
 	for (auto indexer : level_ids) {
-		std::cout << indexer << ")\t";
-		values_of_one_object = database.get_level_object_value(indexer);
-		
-		for (auto indexer2 : values_of_one_object) {
-			std::cout << indexer2 << "\t";
+		std::cout << "Level ID: " << indexer << ")\n";
+		object_values_map = database.get_level_object_value(indexer);
+		for (auto map_indexer = object_values_map.begin(); map_indexer != object_values_map.end(); map_indexer++) {
+			std::cout << "Object id:" << map_indexer->first << ")\t";
+			for (auto map_value_indexer : map_indexer->second) {
+				std::cout << map_value_indexer << "\t";
+			}
+			std::cout << "\n";
 		}
+		
 
 		
-		std::cout << "\n" << indexer << ")\t";
-		values_of_one_background_tile = database.get_level_background_value(indexer);
 
-		for (auto indexer2 : values_of_one_background_tile) {
-			std::cout << indexer2 << "\t";
-		}
-		std::cout << "\n\n\n";
 	}
-	std::cout << "\n\n\n";
+	std::cout << "\n\n\n" << "Background tiles:\n\n\n";
+	
+	
+	std::map<std::string, std::vector<std::string>>background_values_map;
+	for (auto indexer : level_ids) {
+		std::cout << "Level ID: " << indexer << ")\n";
+		background_values_map = database.get_level_background_value(indexer);
+		
+		for (auto map_indexer = background_values_map.begin(); map_indexer != background_values_map.end(); map_indexer++) {
+			std::cout << "background id:" << map_indexer->first << ")\t";
+			for (auto map_value_indexer : map_indexer->second) {
+				std::cout << map_value_indexer << "\t";
+			}
+			std::cout << "\n";
+		}
+	}
 
+	
+	std::cout << "\n\n\n";
+	
+	
+	
 	/*
 	//Test for saving a tile.
 

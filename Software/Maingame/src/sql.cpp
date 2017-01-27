@@ -349,83 +349,98 @@ std::vector<std::string> sql::get_level_ids() {
 
 
 
-std::vector<std::string> sql::get_level_object_value(std::string level_id) {
+std::map<std::string, std::vector<std::string>> sql::get_level_object_value(std::string level_id) {
 
-	std::vector<std::string>temp_sprite_values;
-	std::vector<std::string>sprite_values;
 	std::string temp_query_string;
-	std::ostringstream ostring_query;
+	
+	std::map<std::string, std::vector<std::string>>object_values_map;
+	std::vector<std::string>object_ids = get_data("objects", "id");
 
-	ostring_query
-		<< "SELECT " << "sprites.path"
-		<< " FROM " << "sprites, objects"
-		<< " WHERE " << "sprites.id" << " == " << "objects.sprite_id" 
-		<< " AND " << "objects.map_id" << " == " << level_id << ";"
+	for(auto id : object_ids){
+		std::vector<std::string>object_values;
+		std::ostringstream ostring_query;
+		ostring_query
+			<< "SELECT " << "sprites.path"
+			<< " FROM " << "sprites, objects"
+			<< " WHERE " << "sprites.id" << " == " << "objects.sprite_id" 
+			<< " AND " << "objects.id" << " == " << id
+			<< " AND " << "objects.map_id" << " == " << level_id << ";"
 
-		<< "SELECT " << "name"
-		<< " FROM " << "objects"
-		<< " WHERE " << "map_id" << " == " << level_id << ";"
+			<< "SELECT " << "name"
+			<< " FROM " << "objects"
+			<< " WHERE " << "map_id" << " == " << level_id 
+			<< " AND " << "objects.id" << " == " << id << ";"
 
-		<< "SELECT " << "position_x"
-		<< " FROM " << "objects"
-		<< " WHERE " << "map_id" << " == " << level_id << ";"
+			<< "SELECT " << "position_x"
+			<< " FROM " << "objects"
+			<< " WHERE " << "map_id" << " == " << level_id 
+			<< " AND " << "objects.id" << " == " << id << ";"
 
-		<< "SELECT " << "position_y"
-		<< " FROM " << "objects"
-		<< " WHERE " << "map_id" << " == " << level_id << ";"
+			<< "SELECT " << "position_y"
+			<< " FROM " << "objects"
+			<< " WHERE " << "map_id" << " == " << level_id 
+			<< " AND " << "objects.id" << " == " << id << ";"
 
-		<< "SELECT " << "sprites.walkable"
-		<< " FROM " << "sprites, objects"
-		<< " WHERE " << "sprites.id" << " == " << "objects.sprite_id"
-		<< " AND " << "objects.map_id" << " == " << level_id << ";";
+			<< "SELECT " << "sprites.walkable"
+			<< " FROM " << "sprites, objects"
+			<< " WHERE " << "sprites.id" << " == " << "objects.sprite_id"
+			<< " AND " << "objects.map_id" << " == " << level_id 
+			<< " AND " << "objects.id" << " == " << id << ";";
 
-	temp_query_string = ostring_query.str();
-	temp_sprite_values = execute_query_with_return(temp_query_string.c_str());
-	for (auto indexer : temp_sprite_values) {
-		sprite_values.push_back(indexer);
+		temp_query_string = ostring_query.str();
+		object_values = execute_query_with_return(temp_query_string.c_str());
+		object_values_map[id] = object_values;
+
 	}
 
-	return sprite_values;
+	return object_values_map;
 
 }
 
 
-std::vector<std::string> sql::get_level_background_value(std::string level_id) {
-	std::vector<std::string>temp_sprite_values;
-	std::vector<std::string>sprite_values;
+std::map<std::string, std::vector<std::string>> sql::get_level_background_value(std::string level_id) {
+	
 	std::string temp_query_string;
-	std::ostringstream ostring_query;
+	std::vector<std::string>background_ids = get_data("objects", "id");
+	std::map<std::string, std::vector<std::string>>object_values_map;
+	
+	for (auto id : background_ids) {
+		std::ostringstream ostring_query;
+		std::vector<std::string>background_values;
+		ostring_query
+			<< "SELECT " << "sprites.path"
+			<< " FROM " << "sprites, background"
+			<< " WHERE " << "sprites.id" << " == " << "background.sprite_id"
+			<< " AND " << "background.map_id" << " == " << level_id 
+			<< " AND " << "background.id" << " == " << id << ";"
 
-	ostring_query
-		<< "SELECT " << "sprites.path"
-		<< " FROM " << "sprites, background"
-		<< " WHERE " << "sprites.id" << " == " << "background.sprite_id"
-		<< " AND " << "background.map_id" << " == " << level_id << ";"
+			<< "SELECT " << "name"
+			<< " FROM " << "background"
+			<< " WHERE " << "map_id" << " == " << level_id
+			<< " AND " << "background.id" << " == " << id << ";"
 
-		<< "SELECT " << "name"
-		<< " FROM " << "background"
-		<< " WHERE " << "map_id" << " == " << level_id << ";"
+			<< "SELECT " << "position_x"
+			<< " FROM " << "background"
+			<< " WHERE " << "map_id" << " == " << level_id
+			<< " AND " << "background.id" << " == " << id << ";"
 
-		<< "SELECT " << "position_x"
-		<< " FROM " << "background"
-		<< " WHERE " << "map_id" << " == " << level_id << ";"
+			<< "SELECT " << "position_y"
+			<< " FROM " << "background"
+			<< " WHERE " << "map_id" << " == " << level_id
+			<< " AND " << "background.id" << " == " << id << ";"
 
-		<< "SELECT " << "position_y"
-		<< " FROM " << "background"
-		<< " WHERE " << "map_id" << " == " << level_id << ";"
+			<< "SELECT " << "sprites.walkable"
+			<< " FROM " << "sprites, background"
+			<< " WHERE " << "sprites.id" << " == " << "background.sprite_id"
+			<< " AND " << "background.map_id" << " == " << level_id
+			<< " AND " << "background.id" << " == " << id << ";";
 
-		<< "SELECT " << "sprites.walkable"
-		<< " FROM " << "sprites, background"
-		<< " WHERE " << "sprites.id" << " == " << "background.sprite_id"
-		<< " AND " << "background.map_id" << " == " << level_id << ";";
-
-	temp_query_string = ostring_query.str();
-	temp_sprite_values = execute_query_with_return(temp_query_string.c_str());
-	for (auto indexer : temp_sprite_values) {
-		sprite_values.push_back(indexer);
+		temp_query_string = ostring_query.str();
+		object_values_map[id] = execute_query_with_return(temp_query_string.c_str());
 	}
+	
 
-	return sprite_values;
+	return object_values_map;
 
 }
 

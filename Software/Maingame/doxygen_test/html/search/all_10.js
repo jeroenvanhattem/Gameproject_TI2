@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['save_5ftiles',['save_tiles',['../classsql.html#a4c6195e2934d72569b45041039a2be63',1,'sql']]],
   ['savepoint',['Savepoint',['../struct_savepoint.html',1,'']]],
   ['scanstatus',['ScanStatus',['../struct_scan_status.html',1,'']]],
   ['schema',['Schema',['../struct_schema.html',1,'']]],
@@ -7,6 +8,8 @@ var searchData=
   ['scratchfreeslot',['ScratchFreeslot',['../struct_scratch_freeslot.html',1,'']]],
   ['select',['Select',['../struct_select.html',1,'']]],
   ['selectdest',['SelectDest',['../struct_select_dest.html',1,'']]],
+  ['set_5fnew_5fmap',['set_new_map',['../classsql.html#ac24a3682f7478f78508e3e433b637407',1,'sql']]],
+  ['set_5fresult',['set_result',['../classsql.html#ad28cc81f2ee03c6a15d26ff216353d71',1,'sql']]],
   ['sortctx',['SortCtx',['../struct_sort_ctx.html',1,'']]],
   ['sorterfile',['SorterFile',['../struct_sorter_file.html',1,'']]],
   ['sorterlist',['SorterList',['../struct_sorter_list.html',1,'']]],

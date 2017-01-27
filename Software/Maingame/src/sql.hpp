@@ -508,32 +508,55 @@ public:
 	std::vector<std::string> get_level_ids();
 
 
-	/// Get the values of one object.
+	/// Get all object values of a level.
 	//
 	/// This method returns the values of all objects that are assigned to the given level ID.\n
+	/// IMPORTANT!: In the next patch this function will be merged in a new function together with get_level_background_value(std::string level_id).\n
 	/// 
 	/// 
 	/// Parameters:
 	/// -----------
 	/// level_id : std::string \n
-	///	-> id of the level from what the objects has to be loaded.
+	///	-> id of the level from what the objects have to be loaded.
 	/// 
 	///
 	/// Return:
 	/// -------
-	/// list_of_data : std::vector<std::string> \n
-	///	-> List that contains the asked data in the form of strings.
+	/// list_of_data : std::map<std::string, std::vector<std::string>> \n
+	///	-> map that contains the asked data in the form of strings with name as key.\n
 	/// 
 	///
 	/// Example:
 	/// --------
 	/// get_level_object_value("level1")\n
-	/// return: {"1","2","5"}
+	/// return: {"road1":{"../../bin/objects/example.png","120","150","1"}}
 	///
 	std::map<std::string, std::vector<std::string>> get_level_object_value(std::string level_id);
 
 
-
+	/// Get all background values of a level.
+	//
+	/// This method returns the values of all background tiles that are assigned to the given level ID.\n
+	/// IMPORTANT!: In the next patch this function will be merged in a new function together with get_level_object_value(std::string level_id).
+	/// 
+	/// 
+	/// Parameters:
+	/// -----------
+	/// level_id : std::string \n
+	///	-> id of the level from what the background tiles have to be loaded.
+	/// 
+	///
+	/// Return:
+	/// -------
+	/// list_of_data : std::map<std::string, std::vector<std::string>> \n
+	///	-> map that contains the asked data in the form of strings with name as key.\n
+	/// 
+	///
+	/// Example:
+	/// --------
+	/// get_level_object_value("level1")\n
+	/// return: {"road1":{"../../bin/tiles/example.png","120","150","1"}}
+	///
 	std::map<std::string, std::vector<std::string>> get_level_background_value(std::string level_id);
 
 

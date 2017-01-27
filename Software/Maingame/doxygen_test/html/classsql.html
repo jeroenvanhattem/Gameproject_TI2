@@ -118,10 +118,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9928c456c632f88d19cce26b8165bd6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID's of all levels in the database.  <a href="#a9928c456c632f88d19cce26b8165bd6f">More...</a><br /></td></tr>
 <tr class="separator:a9928c456c632f88d19cce26b8165bd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dd21fbf729e949d804ba5509af2b295"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsql.html#a1dd21fbf729e949d804ba5509af2b295">get_level_object_value</a> (std::string level_id)</td></tr>
-<tr class="memdesc:a1dd21fbf729e949d804ba5509af2b295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the values of one object.  <a href="#a1dd21fbf729e949d804ba5509af2b295">More...</a><br /></td></tr>
+<tr class="memdesc:a1dd21fbf729e949d804ba5509af2b295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all object values of a level.  <a href="#a1dd21fbf729e949d804ba5509af2b295">More...</a><br /></td></tr>
 <tr class="separator:a1dd21fbf729e949d804ba5509af2b295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eb7fea00a56fe6ba33f602871798bc8"><td class="memItemLeft" align="right" valign="top"><a id="a5eb7fea00a56fe6ba33f602871798bc8"></a>
-std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_level_background_value</b> (std::string level_id)</td></tr>
+<tr class="memitem:a5eb7fea00a56fe6ba33f602871798bc8"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsql.html#a5eb7fea00a56fe6ba33f602871798bc8">get_level_background_value</a> (std::string level_id)</td></tr>
+<tr class="memdesc:a5eb7fea00a56fe6ba33f602871798bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all background values of a level.  <a href="#a5eb7fea00a56fe6ba33f602871798bc8">More...</a><br /></td></tr>
 <tr class="separator:a5eb7fea00a56fe6ba33f602871798bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -477,6 +477,38 @@ return: {"arno"}. </p>
 
 </div>
 </div>
+<a id="a5eb7fea00a56fe6ba33f602871798bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb7fea00a56fe6ba33f602871798bc8">&#9670;&nbsp;</a></span>get_level_background_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; sql::get_level_background_value </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>level_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all background values of a level. </p>
+<p>This method returns the values of all background tiles that are assigned to the given level ID.<br />
+IMPORTANT!: In the next patch this function will be merged in a new function together with <a class="el" href="classsql.html#a1dd21fbf729e949d804ba5509af2b295" title="Get all object values of a level. ">get_level_object_value(std::string level_id)</a>.</p>
+<h2>Parameters: </h2>
+<p>level_id : std::string <br />
+-&gt; id of the level from what the background tiles have to be loaded.</p>
+<h2>Return: </h2>
+<p>list_of_data : std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; <br />
+-&gt; map that contains the asked data in the form of strings with name as key.<br />
+</p>
+<h2>Example: </h2>
+<p>get_level_object_value("level1")<br />
+return: {"road1":{"../../bin/tiles/example.png","120","150","1"}} </p>
+
+</div>
+</div>
 <a id="a9928c456c632f88d19cce26b8165bd6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9928c456c632f88d19cce26b8165bd6f">&#9670;&nbsp;</a></span>get_level_ids()</h2>
 
@@ -520,18 +552,20 @@ return: {"1","2","5"} </p>
       </table>
 </div><div class="memdoc">
 
-<p>Get the values of one object. </p>
+<p>Get all object values of a level. </p>
 <p>This method returns the values of all objects that are assigned to the given level ID.<br />
+IMPORTANT!: In the next patch this function will be merged in a new function together with <a class="el" href="classsql.html#a5eb7fea00a56fe6ba33f602871798bc8" title="Get all background values of a level. ">get_level_background_value(std::string level_id)</a>.<br />
 </p>
 <h2>Parameters: </h2>
 <p>level_id : std::string <br />
--&gt; id of the level from what the objects has to be loaded.</p>
+-&gt; id of the level from what the objects have to be loaded.</p>
 <h2>Return: </h2>
-<p>list_of_data : std::vector&lt;std::string&gt; <br />
--&gt; List that contains the asked data in the form of strings.</p>
+<p>list_of_data : std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; <br />
+-&gt; map that contains the asked data in the form of strings with name as key.<br />
+</p>
 <h2>Example: </h2>
 <p>get_level_object_value("level1")<br />
-return: {"1","2","5"} </p>
+return: {"road1":{"../../bin/objects/example.png","120","150","1"}} </p>
 
 </div>
 </div>

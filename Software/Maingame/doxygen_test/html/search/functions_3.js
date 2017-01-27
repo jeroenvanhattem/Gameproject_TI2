@@ -2,6 +2,7 @@ var searchData=
 [
   ['get_5favailable_5flevels',['get_available_levels',['../classsql.html#a29fe43df701460704744049aec28d58e',1,'sql']]],
   ['get_5fdata',['get_data',['../classsql.html#a1cb74ab7343ef603490518715297be83',1,'sql::get_data(char *table, char *columnname)'],['../classsql.html#afbf7d36239ee07a23d06c72f2fd1b93c',1,'sql::get_data(char *table, char *columnname, char *condition1, char *condition2)']]],
+  ['get_5flevel_5fbackground_5fvalue',['get_level_background_value',['../classsql.html#a5eb7fea00a56fe6ba33f602871798bc8',1,'sql']]],
   ['get_5flevel_5fids',['get_level_ids',['../classsql.html#a9928c456c632f88d19cce26b8165bd6f',1,'sql']]],
   ['get_5flevel_5fobject_5fvalue',['get_level_object_value',['../classsql.html#a1dd21fbf729e949d804ba5509af2b295',1,'sql']]],
   ['get_5fnpc_5fvalue',['get_npc_value',['../classsql.html#af04403a0cab4ee13a6f70b396e5b3a20',1,'sql']]],

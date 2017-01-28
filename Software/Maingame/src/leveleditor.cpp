@@ -46,21 +46,25 @@ void leveleditor::editor_loop() {
 		draw_rectangle_store();
 		draw_background_store();
 
+		//level_ids = database.get_level_ids();
+		//available_level_names = database.get_available_levels();
+
 		if (pressed_load_game == true) {
 			window.setView(view4);
-			//if level 1 is available draw level 1 button
+			level_1_button.draw(window);
+
+			//make button for every available level name
 			if (is_button_pressed(level_1_button, view4)) {
-				//load_level_1
-				pressed_load_game = false;
-			}
-			//if level 2 is available draw level 2 button
-			if (is_button_pressed(level_2_button, view4)) {
-				//load_level_2
-				pressed_load_game = false;
-			}
-			//if level 3 is available draw level 3 button
-			if (is_button_pressed(level_3_button, view4)) {
-				//load_level_3
+				//active level is level name
+				active_level = "level1";
+
+				//get id from level name
+				background_values_map = database.get_level_background_value("17");
+				get_items_from_database(background_values_map);
+				
+				object_values_map = database.get_level_object_value("17");
+				get_items_from_database(object_values_map);
+
 				pressed_load_game = false;
 			}
 		}
@@ -68,29 +72,10 @@ void leveleditor::editor_loop() {
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
 			pressed_esc = true;
 		}
-		if (pressed_esc == true) {
-			window.setView(view3);
-			save_level_button.draw(window);
-			back_to_menu_button.draw(window);
-			new_game_button.draw(window);
-			load_game_button.draw(window);
 
-			if (is_button_pressed(new_game_button, view3)) {
-				//new_game();
-				pressed_esc = false;
-			}
-			if (is_button_pressed(load_game_button, view3)) {
-				pressed_load_game = true;
-				pressed_esc = false;
-			}
-			if (is_button_pressed(save_level_button, view3)) {
-				//save_game();
-				pressed_esc = false;
-				pressed_load_game = false;
-			}
-			if (is_button_pressed(back_to_menu_button, view3)) {
-				pressed_esc = false;
-				pressed_load_game = false;
+		if (pressed_esc == true) {
+			bool out_of_loop = menu_options();
+			if (out_of_loop) {
 				break;
 			}
 		}
@@ -99,6 +84,7 @@ void leveleditor::editor_loop() {
 			get_actions();
 			draw_tile_store();
 		}
+
 		window.display();
 
 		sf::sleep(sf::milliseconds(20));
@@ -108,6 +94,69 @@ void leveleditor::editor_loop() {
 			if (event.type == sf::Event::Closed) {
 				window.close();
 			}
+		}
+	}
+}
+
+bool leveleditor::menu_options() {
+	window.setView(view3);
+	save_level_button.draw(window);
+	back_to_menu_button.draw(window);
+	new_game_button.draw(window);
+	load_game_button.draw(window);
+
+	if (is_button_pressed(new_game_button, view3)) {
+		std::string level_name = "level" + std::to_string(level_ids.size() + 1);
+		active_level = level_name;
+		background_store.clear();
+		database.set_new_map(level_name, 1);
+		pressed_esc = false;
+	}
+	if (is_button_pressed(load_game_button, view3)) {
+		pressed_load_game = true;
+		pressed_esc = false;
+		background_store.clear();
+	}
+	if (is_button_pressed(save_level_button, view3)) {
+		pressed_esc = false;
+		pressed_load_game = false;
+		for (auto tile : background_store) {
+			std::string path = tile->picture_path;
+			int pos_x = tile->position.x;
+			int pos_y = tile->position.y;
+			database.save_tiles(path, pos_x, pos_y, active_level);
+		}
+	}
+	if (is_button_pressed(back_to_menu_button, view3)) {
+		pressed_esc = true;
+		pressed_load_game = false;
+		background_store.clear();
+		return 1;
+	}
+	return 0;
+}
+
+void leveleditor::get_items_from_database(std::map<std::string, std::vector<std::string>> & item_values_map) {
+	std::string path;
+	float posx = 0;
+	float posy = 0;
+	int count = 0;
+	for (auto map_indexer = item_values_map.begin(); map_indexer != item_values_map.end(); map_indexer++) {
+		count = 0;
+		for (auto map_value_indexer : map_indexer->second) {
+			if (count == 0) {
+				path = map_value_indexer;
+			}
+			if (count == 2) {
+				posx = std::stof(map_value_indexer);
+			}
+			if (count == 3) {
+				posy = std::stof(map_value_indexer);
+				sf::Vector2f pos = { posx, posy };
+				std::cout << "loaded: " << path << "\t" << pos.x << "\t" << pos.y << "\n";
+				background_store.push_back(new picture(path, pos, { 0,0 }));
+			}
+			count++;
 		}
 	}
 }
@@ -129,6 +178,7 @@ void leveleditor::create_object(sf::Vector2f pos) {
 	for (auto tile : tile_store) {
 		if (tile->selected) {
 			background_store.push_back(new picture(tile->picture_path, pos , tile->tile_size));
+			sf::sleep(sf::milliseconds(100));
 		}
 	}
 }

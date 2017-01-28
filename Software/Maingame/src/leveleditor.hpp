@@ -44,8 +44,16 @@ private:
 	sf::Vector2f levelsize = { 0,0 };
 	sf::Vector2f rect_size = { 0,0 };
 	std::vector<figure*> rectangle_store;
-	std::vector<figure*> background_store;
+	std::vector<picture*> background_store;
 	std::vector<picture*> tile_store;
+
+	std::vector<std::string>available_level_names;
+	std::vector<std::string>level_ids;
+	std::map<std::string, std::vector<std::string>>background_values_map;
+	std::map<std::string, std::vector<std::string>>object_values_map;
+	void get_items_from_database(std::map<std::string, std::vector<std::string>> & item_values_map);
+	std::string active_level;
+
 	sf::RenderWindow & window;
 	sql & database;
 	picture back_to_menu_button;
@@ -69,6 +77,7 @@ private:
 	bool is_button_pressed(picture & object, sf::View & view);
 	bool pressed_esc = true;
 	bool pressed_load_game = false;
+	bool menu_options();
 
 	action actions[12] = {
 		action(sf::Keyboard::Left,  [&]() {view1.move(-16, 0); }),

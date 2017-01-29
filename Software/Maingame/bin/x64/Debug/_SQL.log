@@ -1,7 +1,3 @@
-﻿  main.cpp
-  leveleditor.cpp
-c:\users\rik\documents\projectblok2\gameproject\gameproject_ti2\software\maingame\src\leveleditor.cpp(125): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\rik\documents\projectblok2\gameproject\gameproject_ti2\software\maingame\src\leveleditor.cpp(126): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
+﻿  game.cpp
   _SQL.vcxproj -> C:\Users\Rik\Documents\ProjectBlok2\Gameproject\Gameproject_TI2\Software\Maingame\project\_SQL\..\..\bin\_SQL.exe
   _SQL.vcxproj -> ..\..\bin\_SQL.pdb (Full PDB)

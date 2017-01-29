@@ -6,6 +6,7 @@
 #include "button_actions.hpp"
 #include "leveleditor.hpp"
 #include "main_menu.hpp"
+#include "game.hpp"
 
 // https://dcravey.wordpress.com/2011/03/21/using-sqlite-in-a-visual-c-application/
 // https://www.tutorialspoint.com/sqlite/sqlite_c_cpp.htm
@@ -15,9 +16,10 @@
 int main( int argc, char* argv[]) {
 	sql database;
 
-	sf::RenderWindow window{ sf::VideoMode{ 1920, 1080 }, "SFML window" };
+	sf::RenderWindow window{ sf::VideoMode{ 1366, 768 }, "SFML window" };
 	leveleditor editor({ 1024, 1024 }, { 32, 32 }, window, database);
 	main_menu menu(window);
+	game game(window, database, { 1024, 1024 });
 
 	while (window.isOpen()) {
 
@@ -29,7 +31,7 @@ int main( int argc, char* argv[]) {
 		}
 		if (menu.button_pressed(menu.play_game_button, menu.view1)) {
 			menu.load_screen();
-			//game.play_game_loop();
+			game.game_loop();
 		}
 		window.display();
 

@@ -445,5 +445,54 @@ std::map<std::string, std::vector<std::string>> sql::get_level_background_value(
 }
 
 
+std::vector<std::string> sql::get_player_value(std::string player_id) {
+	/*
+	name
+	sprite_id
+	map
+	level
+	pos_x
+	pos_y
+	faction_id
+	*/
+	std::string temp_query_string;
+	std::ostringstream ostring_query;
+
+	ostring_query
+		<< "SELECT " << "name"
+		<< " FROM " << "player"
+		<< " WHERE " << "id" << " == " << player_id << ";"
+
+		<< "SELECT " << "sprites.path"
+		<< " FROM " << "sprites, player"
+		<< " WHERE " << "sprites.id" << " == " << "player.sprite_id"
+		<< " AND " << "player.id" << " == " << player_id << ";"
+
+		<< "SELECT " << "map"
+		<< " FROM " << "player"
+		<< " WHERE " << "id" << " == " << player_id << ";"
+
+		<< "SELECT " << "level"
+		<< " FROM " << "player"
+		<< " WHERE " << "id" << " == " << player_id << ";"
+
+		<< "SELECT " << "position_x"
+		<< " FROM " << "player"
+		<< " WHERE " << "id" << " == " << player_id << ";"
+
+		<< "SELECT " << "position_y"
+		<< " FROM " << "player"
+		<< " WHERE " << "id" << " == " << player_id << ";"
+
+		<< "SELECT " << "faction_id"
+		<< " FROM " << "player"
+		<< " WHERE " << "id" << " == " << player_id << ";";
+
+	temp_query_string = ostring_query.str();
+
+	return execute_query_with_return(temp_query_string.c_str());
+}
+
+
 
 

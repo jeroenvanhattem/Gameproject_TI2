@@ -25,9 +25,11 @@
     <ClInclude Include="..\..\src\exception_list.hpp" />
     <ClInclude Include="..\..\src\file_reading_operators.hpp" />
     <ClInclude Include="..\..\src\npc.hpp" />
+    <ClInclude Include="..\..\src\player.hpp" />
     <ClInclude Include="..\..\src\sprite.hpp" />
     <ClInclude Include="..\..\src\sql.hpp" />
     <ClInclude Include="..\..\src\sqlite3.h" />
+    <ClInclude Include="..\..\src\template_functions.hpp" />
     <ClInclude Include="..\..\src\tile.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -37,6 +39,7 @@
     <ClCompile Include="..\..\src\file_reading_operators.cpp" />
     <ClCompile Include="..\..\src\main.cpp" />
     <ClCompile Include="..\..\src\npc.cpp" />
+    <ClCompile Include="..\..\src\player.cpp" />
     <ClCompile Include="..\..\src\sprite.cpp" />
     <ClCompile Include="..\..\src\sql.cpp" />
     <ClCompile Include="..\..\src\sqlite3.c" />

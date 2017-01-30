@@ -1,14 +1,26 @@
 #include "npc.hpp"
 
-npc::npc(sf::RenderWindow & window, std::string sprite_path, sf::Vector2f position, bool is_player):
+npc::npc(sf::RenderWindow & window, sql & database, std::string npc_id, bool is_player):
 	window(window),
-	position(position)
+	database(database),
+	id(npc_id)
 {
 
 	npc::is_player = is_player ? true : false;
+	if (is_player) { 
+		npc_values = database.get_player_value(npc_id); 
+		
+		position = { std::stof(npc_values.at(4)), std::stof(npc_values.at(5)) };
+		texture.loadFromFile(npc_values.at(1));
+	}
+	else { 
+		npc_values = database.get_npc_value(id); 
+		position = { std::stof(npc_values.at(3)), std::stof(npc_values.at(4)) };
 
-
-	texture.loadFromFile(sprite_path);
+		
+		texture.loadFromFile(npc_values.at(1));
+	}
+	
 	texture.setSmooth(true);
 	load_all_actions();
 }
@@ -42,15 +54,12 @@ void npc::load_all_actions(){
 	load_action("die",					6, 20);
 }
 
-void npc::move_player(sf::Vector2f delta) {
+void npc::move(sf::Vector2f delta) {
 	position += delta;
-	if (is_player) {
-		for (auto action : npc_actions) {
-			if (action->get_name() == current_action) {
-				action->move(position);
-			}
+	for (auto action : npc_actions) {
+		if (action->get_name() == current_action) {
+			action->move(position);
 		}
-		
 	}
 }
 
@@ -86,6 +95,10 @@ const void npc::draw() {
 			return;
 		}
 	}
+}
+
+std::string npc::get_name() {
+	return npc_values.at(0);
 }
 
 

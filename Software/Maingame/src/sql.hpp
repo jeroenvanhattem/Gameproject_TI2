@@ -560,6 +560,11 @@ public:
 	std::map<std::string, std::vector<std::string>> get_level_background_value(std::string level_id);
 
 
+	  /*-------------------*/
+	 /*  Player functions */
+	/*-------------------*/
+
+	std::vector<std::string> get_player_value(std::string npc_id);
 
 	
 	/// Get value from database

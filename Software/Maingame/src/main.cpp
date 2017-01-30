@@ -2,37 +2,53 @@
 #include "sqlite3.h"
 #include "sql.hpp"
 #include <SFML\Graphics.hpp>
-#include "npc.hpp"
 #include "button_actions.hpp"
 #include "player.hpp"
+#include "music.hpp"
+#include "main_menu.hpp"
+#include "game.hpp"
+#include "leveleditor.hpp"
 
 
-
-// https://dcravey.wordpress.com/2011/03/21/using-sqlite-in-a-visual-c-application/
-// https://www.tutorialspoint.com/sqlite/sqlite_c_cpp.htm
-// http://www.w3schools.com/sql
-// If you get a lot of '1's when executing a query, you might miss some parameters
 
 
 int main( int argc, char* argv[]) {
-	
+	//sf::SoundBuffer buffer;
+	//sf::Sound sound;
 
 	sql database;
+	
+	//music audio(database, buffer, sound);
+	
+	sf::RenderWindow window{ sf::VideoMode{ 1920, 1080 }, "SFML window" };
+	leveleditor editor({ 1024, 1024 }, { 32, 32 }, window, database);
+	main_menu menu(window);
+	game game(window, database, { 1024, 1024 });
 
-	sf::RenderWindow window{ sf::VideoMode{ 640, 480 }, "SFML window" };
-	
-	player arno(window, database , "1");
-	
-	npc test_npc(window, database, "1");
+
+	//audio.play_music_from_map("1");
+
+	window.display();
+
 
 	while (window.isOpen()) {
+
 		window.clear();
-		
-		test_npc.draw();
-		arno.set_action(get_action_name_from_button_keys());
-		arno.move(get_move_direction_from_button_keys());
-		arno.draw();
-		
+		game.game_loop();
+
+
+
+		menu.show_menu();
+		if (menu.button_pressed(menu.level_editor_button, menu.view1)) {
+			menu.load_screen();
+			editor.editor_loop();
+		}
+		if (menu.button_pressed(menu.play_game_button, menu.view1)) {
+			menu.load_screen();
+			game.game_loop();
+		}
+
+
 		window.display();
 
 		sf::Event event;
@@ -40,12 +56,9 @@ int main( int argc, char* argv[]) {
 			if (event.type == sf::Event::Closed) {
 				window.close();
 			}
+			//	if (event.type == sf::Event::GainedFocus) {
+			//	}
+			sf::sleep(sf::milliseconds(10));
 		}
-
-
-		sf::sleep(sf::milliseconds(30));
 	}
-
-
-	while (1) {}
 }

@@ -9,14 +9,14 @@ npc::npc(sf::RenderWindow & window, sql & database, std::string npc_id, bool is_
 	npc::is_player = is_player ? true : false;
 	if (is_player) { 
 		npc_values = database.get_player_value(npc_id); 
-		
+		std::cout << "(" << std::stof(npc_values.at(4)) << ",\t" << std::stof(npc_values.at(5)) << ")\t"<< npc_values.at(1) << "\n";
 		position = { std::stof(npc_values.at(4)), std::stof(npc_values.at(5)) };
 		texture.loadFromFile(npc_values.at(1));
 	}
 	else { 
 		npc_values = database.get_npc_value(id); 
 		position = { std::stof(npc_values.at(3)), std::stof(npc_values.at(4)) };
-
+		std::cout << "(" << std::stof(npc_values.at(3)) << ",\t" << std::stof(npc_values.at(4)) << ")\t" << npc_values.at(1) << "\n";
 		
 		texture.loadFromFile(npc_values.at(1));
 	}
@@ -100,6 +100,47 @@ const void npc::draw() {
 std::string npc::get_name() {
 	return npc_values.at(0);
 }
+
+
+
+sf::IntRect npc::get_bounds() {
+	return sf::IntRect(int(position.x), int(position.y), int(sprite_size), int(sprite_size));
+}
+
+
+int npc::get_interaction(npc & other_npc) {
+
+	sf::IntRect player_bounds = get_bounds();
+	player_bounds.top *= 2;
+	player_bounds.width /= 2;
+	player_bounds.height *= 1.5;
+
+	sf::IntRect other_npc_bounds = other_npc.get_bounds();
+	other_npc_bounds.top *= 2;
+	other_npc_bounds.width /= 2;
+	other_npc_bounds.height *= 1.5;
+
+	if (player_bounds.intersects(other_npc_bounds)) {
+		return 1;
+	}
+
+	return 0;
+}
+
+void npc::set_position(sf::Vector2f given_position) {
+	position = given_position;
+	if (is_player) {
+		for (auto action : npc_actions) {
+			if (action->get_name() == current_action) {
+				action->move(position);
+			}
+		}
+	}
+}
+
+
+
+
 
 
 npc::~npc() {

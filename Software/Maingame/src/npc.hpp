@@ -77,8 +77,8 @@ public:
 	/// database : sql \n
 	///	-> referrence to the database class.\n
 	///
-	/// npc_name : sf::string \n
-	///	-> name of the npc that has to be drawn.
+	/// npc_id : sf::string \n
+	///	-> id of the npc that has to be drawn.
 	/// 
 	/// is_player : bool \n
 	///	-> boolean to select if this npc is the player or not.
@@ -86,9 +86,9 @@ public:
 	///
 	/// Example:
 	/// --------
-	/// ability a("arno", {...}, {100,100})\n
+	/// ability a(window, database, "1")\n
 	///
-	npc(sf::RenderWindow & window, sql & database, std::string npc_name, bool is_player = false);
+	npc(sf::RenderWindow & window, sql & database, std::string npc_id, bool is_player = false);
 	
 	
 	/// Move the npc
@@ -155,6 +155,57 @@ public:
 	///
 	///
 	const void draw();
+
+
+
+	/// Get a sf::IntRect from the coordinates from the NPC
+	//
+	/// This function returns a sf::IntRect object which is created from the position and size of the NPC object\n
+	/// 
+	/// Return:
+	/// -------
+	/// intrect_object : sf::IntRect \n
+	///	-> a sf::IntRect object using the position and size of the NPC object
+	/// 
+	/// Example:
+	/// --------
+	/// get_bounds() \n
+	/// return: sf::IntRect(100, 100, 30, 30) .
+	///
+	sf::IntRect get_bounds();
+
+
+	/// int npc::get_interaction(npc & other_npc) : Get interaction between two NPC's
+	//
+	/// Call the 'get_interaction' function to check for a collision with another NPC
+	/// Do this by calling 'get_interaction()' with a NPC object as parameter
+
+
+	///Get interaction between two NPC's
+	//
+	/// Call the 'get_interaction' function to check for a collision with another NPC
+	/// 
+	/// Parameters:
+	/// -----------
+	/// other_npc : NPC & \n
+	///	-> Table name in the database
+	///
+	/// Return:
+	/// -------
+	/// 0 / 1 : integer \n
+	///	-> Return a 1 if there's a collision detected, return a 0 if no collision is detected
+	/// 
+	/// Example:
+	/// --------
+	///player.get_interaction(*other_npc) \n
+	/// return: {"1"}.
+	///
+	int get_interaction(npc & other_npc);
+
+
+	sf::Vector2f get_position() { return position; }
+	void set_position(sf::Vector2f given_position);
+
 
 
 	/// Decontructor

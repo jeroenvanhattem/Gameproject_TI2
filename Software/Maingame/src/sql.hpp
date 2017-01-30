@@ -566,6 +566,14 @@ public:
 
 	std::vector<std::string> get_player_value(std::string npc_id);
 
+
+
+	  /*-------------------*/
+	 /*  Music functions  */
+	/*-------------------*/
+
+	std::vector<std::string> get_music(std::string map_id);
+
 	
 	/// Get value from database
 	//

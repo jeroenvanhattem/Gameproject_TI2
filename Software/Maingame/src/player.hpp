@@ -7,6 +7,11 @@
 class player{
 private:
 	npc player_npc;
+	std::string player_id;
+	sf::Vector2f spawn;
+	sf::Vector2f position;
+	sf::Vector2f last_move;
+	sql database;
 public:
 
 
@@ -80,6 +85,13 @@ public:
 	///
 	void draw();
 
+	void respawn();
+
+	int get_interaction(npc & other_npc);
+
+	void set_last_position();
+
+	sf::Vector2f get_position();
 
 	/// Decontructor
 	//

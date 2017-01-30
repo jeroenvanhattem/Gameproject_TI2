@@ -401,7 +401,7 @@ std::map<std::string, std::vector<std::string>> sql::get_level_object_value(std:
 std::map<std::string, std::vector<std::string>> sql::get_level_background_value(std::string level_id) {
 	
 	std::string temp_query_string;
-	std::vector<std::string>background_ids = get_data("objects", "id");
+	std::vector<std::string>background_ids = get_data("background", "id");
 	std::map<std::string, std::vector<std::string>>object_values_map;
 	
 	for (auto id : background_ids) {
@@ -493,6 +493,22 @@ std::vector<std::string> sql::get_player_value(std::string player_id) {
 	return execute_query_with_return(temp_query_string.c_str());
 }
 
+
+std::vector<std::string> sql::get_music(std::string map_id) {
+	
+	std::ostringstream query;
+	query << "SELECT music.path_to_file"
+		<< " FROM maps, music"
+		<< " WHERE maps.id == " << map_id
+		<< " AND maps.music_id == music.id;";
+
+	std::string query_string = query.str();
+	execute_query_with_return(query_string.c_str());
+
+	std::cout << "Buffering music" << std::endl;
+
+	return execute_query_with_return(query_string.c_str());
+}
 
 
 

@@ -16,7 +16,7 @@
 int main( int argc, char* argv[]) {
 	sql database;
 
-	sf::RenderWindow window{ sf::VideoMode{ 1366, 768 }, "SFML window" };
+	sf::RenderWindow window{ sf::VideoMode{ 1920, 1080 }, "SFML window" };
 	leveleditor editor({ 1024, 1024 }, { 32, 32 }, window, database);
 	main_menu menu(window);
 	game game(window, database, { 1024, 1024 });

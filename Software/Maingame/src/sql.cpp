@@ -389,8 +389,9 @@ std::map<std::string, std::vector<std::string>> sql::get_level_object_value(std:
 
 		temp_query_string = ostring_query.str();
 		object_values = execute_query_with_return(temp_query_string.c_str());
-		object_values_map[id] = object_values;
-
+		if (object_values.empty() == false) {
+			object_values_map[id] = object_values;
+		}
 	}
 
 	return object_values_map;
@@ -436,9 +437,11 @@ std::map<std::string, std::vector<std::string>> sql::get_level_background_value(
 			<< " AND " << "background.id" << " == " << id << ";";
 
 		temp_query_string = ostring_query.str();
-		object_values_map[id] = execute_query_with_return(temp_query_string.c_str());
+		background_values = execute_query_with_return(temp_query_string.c_str());
+		if (background_values.empty() == false) {
+			object_values_map[id] = background_values;
+		}
 	}
-	
 
 	return object_values_map;
 

@@ -2,6 +2,7 @@
 #define _leveleditor_HPP
 
 #include "objects.hpp"
+#include "dialogbox.hpp"
 #include <functional>
 #include <sstream>
 #include <fstream>
@@ -46,8 +47,9 @@ private:
 	std::vector<figure*> rectangle_store;
 	std::vector<picture*> background_store;
 	std::vector<picture*> tile_store;
+	std::vector<picture*> temporary_store;
+	std::vector<dialogbox*> level_buttons;
 
-	std::vector<std::string>available_level_names;
 	std::vector<std::string>level_ids;
 	std::map<std::string, std::vector<std::string>>background_values_map;
 	std::map<std::string, std::vector<std::string>>object_values_map;
@@ -61,8 +63,7 @@ private:
 	picture new_game_button;
 	picture load_game_button;
 	picture level_1_button;
-	picture level_2_button;
-	picture level_3_button;
+	bool button_pressed(dialogbox & object, sf::View & view);
 
 	void load_rectangles();
 	void load_tile_list();
@@ -106,6 +107,7 @@ public:
 	void draw_rectangle_store();
 	void draw_background_store();
 	void draw_tile_store();
+	void draw_temporary_store();
 };
 
 #endif

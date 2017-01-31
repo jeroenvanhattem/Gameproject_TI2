@@ -28,7 +28,6 @@ void picture::set_transpirantie(int value) {
 	sprite.setColor(sf::Color(r, g, b, value));
 }
 
-
 circle::circle(sf::Vector2f position, float size, sf::Color color) :
 	figure(position)
 {

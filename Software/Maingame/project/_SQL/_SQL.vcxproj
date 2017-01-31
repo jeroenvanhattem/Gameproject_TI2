@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\src\ability.hpp" />
     <ClInclude Include="..\..\src\button_actions.hpp" />
+    <ClInclude Include="..\..\src\dialogbox.hpp" />
     <ClInclude Include="..\..\src\exception_list.hpp" />
     <ClInclude Include="..\..\src\game.hpp" />
     <ClInclude Include="..\..\src\leveleditor.hpp" />
@@ -35,6 +36,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\src\ability.cpp" />
     <ClCompile Include="..\..\src\button_actions.cpp" />
+    <ClCompile Include="..\..\src\dialogbox.cpp" />
     <ClCompile Include="..\..\src\game.cpp" />
     <ClCompile Include="..\..\src\leveleditor.cpp" />
     <ClCompile Include="..\..\src\main.cpp" />

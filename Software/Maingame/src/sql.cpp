@@ -445,6 +445,46 @@ std::map<std::string, std::vector<std::string>> sql::get_level_background_value(
 }
 
 
+sf::IntRect sql::get_collision_objects(std::vector<std::string> objects) {
+	std::vector<std::string>not_walkable = get_data("sprites", "name", "walkable", "0");
+	std::vector<sf::IntRect>collision_rects;
+	std::string temp_query_string;
+	std::ostringstream ostring_query;
+
+	ostring_query
+		<< "SELECT " << "size_x"
+		<< " FROM " << "sprites"
+		<< " WHERE " << "name" << " == '" << objects.at(1) << "';"
+
+		<< "SELECT " << "size_y"
+		<< " FROM " << "sprites"
+		<< " WHERE " << "name" << " == '" << objects.at(1) << "';";
+
+
+	temp_query_string = ostring_query.str();
+	std::vector<std::string>values = execute_query_with_return(temp_query_string.c_str());
+
+	for (auto indexer : not_walkable) {
+		if (indexer == objects.at(1)) {
+			std::cout << objects.at(1) << "\t";
+			return 
+				sf::IntRect(
+					std::stoi(objects.at(2)),
+					std::stoi(objects.at(3)), 
+					std::stoi(values.at(0)),
+					std::stoi(values.at(1))
+				)
+			;
+		}
+	}
+	
+	
+	
+
+
+}
+
+
 std::vector<std::string> sql::get_player_value(std::string player_id) {
 	/*
 	name
@@ -495,20 +535,61 @@ std::vector<std::string> sql::get_player_value(std::string player_id) {
 
 
 std::vector<std::string> sql::get_music(std::string map_id) {
-	
 	std::ostringstream query;
-	query << "SELECT music.path_to_file"
+	query << "SELECT music.path"
 		<< " FROM maps, music"
 		<< " WHERE maps.id == " << map_id
 		<< " AND maps.music_id == music.id;";
 
 	std::string query_string = query.str();
-	execute_query_with_return(query_string.c_str());
 
 	std::cout << "Buffering music" << std::endl;
 
 	return execute_query_with_return(query_string.c_str());
 }
+
+
+
+std::vector<std::string> sql::get_quest_text(std::string quest_id, std::string part) {
+
+	std::ostringstream query;
+	query << "SELECT text"
+		<< " FROM quest_stories"
+		<< " WHERE quest_id == " << quest_id
+		<< " AND part == " << part << ";"
+		<< "SELECT text1"
+		<< " FROM quest_stories"
+		<< " WHERE quest_id == " << quest_id
+		<< " AND part == " << part << ";"
+		<< "SELECT text2"
+		<< " FROM quest_stories"
+		<< " WHERE quest_id == " << quest_id
+		<< " AND part == " << part << ";"
+		<< "SELECT text3"
+		<< " FROM quest_stories"
+		<< " WHERE quest_id == " << quest_id
+		<< " AND part == " << part << ";"
+		<< "SELECT text4"
+		<< " FROM quest_stories"
+		<< " WHERE quest_id == " << quest_id
+		<< " AND part == " << part << ";";
+
+	std::string query_string = query.str();
+	return execute_query_with_return(query_string.c_str());
+}
+
+
+std::vector<std::string> sql::get_quest_parts(std::string quest_id) {
+	std::ostringstream query;
+	query << "SELECT part"
+		<< " FROM quest_stories"
+		<< " WHERE quest_id == " << quest_id << ";";
+
+	std::string query_string = query.str();
+	return execute_query_with_return(query_string.c_str());
+}
+
+
 
 
 

@@ -11,6 +11,7 @@
 #include "button_actions.hpp"
 #include "npc.hpp"
 #include "player.hpp"
+#include "leveleditor.hpp"
 
 class game {
 private:
@@ -18,6 +19,8 @@ private:
 	sf::View game_view;
 	std::vector<picture*> background_store;
 	std::vector<npc*>npc_list;
+	std::vector<sf::IntRect>collision_objects;
+	std::vector<sf::IntRect>collision_backgrounds;
 	player arno;
 	sql & database;
 	sf::Vector2f levelsize;
@@ -34,6 +37,8 @@ private:
 	void draw_background_store();
 	void move_player();
 	void draw_player();
+	void perform_player_action(std::string action);
+	void perform_npc_action(std::string npc_name, std::string action);
 
 	std::string tutorial_sentence = "Welcome, try to walk using the up, down, left or right keys.\n\nPress space to begin!";
 	std::string game_intro = "Ouch, where am i?\n\nIt feels like i slept for hours and i can't remember a thing.\n\n[press space to continue])";

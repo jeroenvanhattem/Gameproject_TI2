@@ -108,6 +108,23 @@ sf::IntRect npc::get_bounds() {
 }
 
 
+int npc::get_collision(sf::IntRect colliding_object) {
+	sf::IntRect player_bounds = get_bounds();
+	player_bounds.top *= 2;
+	player_bounds.width /= 2;
+	player_bounds.height *= 1.5;
+
+	colliding_object.top *= 2;
+	colliding_object.width /= 2;
+	colliding_object.height *= 1.5;
+
+	if (player_bounds.intersects(colliding_object)) {
+		return 1;
+	}
+
+	return 0;
+}
+
 int npc::get_interaction(npc & other_npc) {
 
 	sf::IntRect player_bounds = get_bounds();
@@ -138,7 +155,13 @@ void npc::set_position(sf::Vector2f given_position) {
 	}
 }
 
-
+void npc::show_action(std::string action_to_perform) {
+	for (auto action : npc_actions) {
+		if (action->get_name() == action_to_perform) {
+			action->perfrom_action(window);
+		}
+	}
+}
 
 
 

@@ -9,8 +9,21 @@ game::game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize) :
 	
 {
 	background_values_map = database.get_level_background_value("17");
+
+	for (auto indexer = background_values_map.begin(); indexer != background_values_map.end(); indexer++) {
+		if (indexer->second.at(indexer->second.size() - 1) != "1") {
+			std::cout << indexer->second.at(1);
+			collision_objects.push_back(database.get_collision_objects(indexer->second));
+		}
+	}
+
 	get_items_from_database(background_values_map);
 	object_values_map = database.get_level_object_value("17");
+
+	for (auto indexer = object_values_map.begin(); indexer != object_values_map.end(); indexer++) {
+		collision_backgrounds.push_back(database.get_collision_objects(indexer->second));
+	}
+
 	get_items_from_database(object_values_map);
 	load_npc();
 	draw_npc();
@@ -18,31 +31,31 @@ game::game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize) :
 	game_view.setCenter(levelsize.x / 2 + 25, levelsize.y / 2 + 10);
 	game_view.setSize(levelsize.x, levelsize.y);
 	game_view.setViewport(sf::FloatRect(0, 0, 1, 1));
-	game_view.zoom(1.2);
+	game_view.zoom(1.2f);
 }
 
 void game::game_loop() {
 	while (window.isOpen()) {
-		
 		window.clear();
 		
+		if (game_begin) {
+			window.setView(game_view);
+			draw_background_store();
+			
+			move_player();
+			draw_player();
+			draw_npc();
 
-
-		window.setView(game_view);
-		draw_background_store();
-		if (game_begin == false) {
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
+				while (sf::Keyboard::isKeyPressed(sf::Keyboard::R));
+				arno.respawn();
+				std::cout << "(" << window.mapPixelToCoords(sf::Mouse::getPosition(window),game_view).x << " , " << window.mapPixelToCoords(sf::Mouse::getPosition(window), game_view).y << ")\n";
+			}
+		}
+		else {
 			view_start_dialogs();
 		}
 
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
-			while (sf::Keyboard::isKeyPressed(sf::Keyboard::R));
-			//arno.respawn();
-		}
-		draw_npc();
-		move_player();
-		draw_player();
-		
-		
 		window.display();
 		
 		
@@ -58,25 +71,25 @@ void game::game_loop() {
 }
 
 void game::view_start_dialogs() {
-	while (game_begin == false) {
-		if (count == 0) {
-			dialogbox.text_input(game_intro, 25, sf::Color::White);
+	for (auto indexer : database.get_quest_parts("1")) {
+		for (auto index : database.get_quest_text("1",indexer)) {
+			if (index == "NULL") { continue; }
+			dialogbox.text_input((index), 25, sf::Color::White);
+			window.setView(game_view);
 			dialogbox.draw(window);
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
-				sf::sleep(sf::milliseconds(200));
-				count = 1;
-			}
+			window.display();
+
+			while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
+			while (sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
 		}
-		if (count == 1) {
-			dialogbox.text_input(tutorial_sentence, 25, sf::Color::White);
-			dialogbox.draw(window);
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
-				sf::sleep(sf::milliseconds(200));
-				game_begin = true;
-			}
-		}
-		window.display();
 	}
+	game_begin = true;
+	window.clear();
+	draw_player();
+	perform_player_action("cast_spell_down");
+	window.display();
+	sf::sleep(sf::milliseconds(1000));
+	
 }
 
 void game::get_items_from_database(std::map<std::string, std::vector<std::string>> & item_values_map) {
@@ -114,27 +127,49 @@ void game::load_npc() {
 
 
 void game::move_player() {
+	bool no_collision = true;
 	for (auto one_npc : npc_list) {
-		if (!arno.get_interaction(*one_npc)) {
-			arno.set_action(get_action_name_from_button_keys());
-			arno.move(get_move_direction_from_button_keys());
+		if (arno.get_interaction(*one_npc)) {
+			no_collision = false;
 		}
-
-		else if (arno.get_interaction(*one_npc)) {
-			for (int i = 0; i < 5; i++) {
-				//arno.set_last_position();
-			}
-			std::cout << "Collision" << std::endl;
+	}
+	for (auto indexer : collision_backgrounds) {
+		if (arno.get_collision(indexer)) {
+			no_collision = false;
+		}
+	}
+	for (auto indexer : collision_objects) {
+		if (arno.get_collision(indexer)) {
+			no_collision = false;
+		}
+	}
+	if (no_collision) {
+		arno.set_action(get_action_name_from_button_keys());
+		arno.move(get_move_direction_from_button_keys());
+	}
+	else {
+		for (int i = 0; i < 3; i++) {
+			arno.set_last_position();
 		}
 	}
 	
 }
 
 void game::draw_player() {
-	//std::cout << "(" << arno.get_position().x << " , " << arno.get_position().x << ")\n";
 	arno.draw();
 }
 
+void game::perform_player_action(std::string action) {
+	arno.show_action(action);
+}
+
+void game::perform_npc_action(std::string npc_name, std::string action) {
+	for (auto indexer : npc_list) {
+		if (indexer->get_name() == npc_name) {
+			indexer->show_action(action);
+		}
+	}
+}
 
 
 

@@ -46,6 +46,18 @@ void ability::add_sprite_to_action(sf::Sprite t) {
 	action.push_back(t);
 }
 
+void ability::perfrom_action(sf::RenderWindow & window) {
+	sf::View ability;
+	window.setView(ability);
+	
+	for (auto & indexer : action) {
+		window.clear();
+		window.draw(indexer);
+		window.display();
+		sf::sleep(sf::milliseconds(200));
+	}
+	window.setView(window.getDefaultView());
+}
 
 
 ability::~ability(){

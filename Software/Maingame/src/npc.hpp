@@ -202,10 +202,12 @@ public:
 	///
 	int get_interaction(npc & other_npc);
 
+	int get_collision(sf::IntRect colliding_object);
 
 	sf::Vector2f get_position() { return position; }
 	void set_position(sf::Vector2f given_position);
 
+	void show_action(std::string action_to_perform);
 
 
 	/// Decontructor

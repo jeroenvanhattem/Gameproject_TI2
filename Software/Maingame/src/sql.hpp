@@ -534,6 +534,9 @@ public:
 	std::map<std::string, std::vector<std::string>> get_level_object_value(std::string level_id);
 
 
+	sf::IntRect get_collision_objects(std::vector<std::string> objects);
+
+
 	/// Get all background values of a level.
 	//
 	/// This method returns the values of all background tiles that are assigned to the given level ID.\n
@@ -574,6 +577,9 @@ public:
 
 	std::vector<std::string> get_music(std::string map_id);
 
+	
+	std::vector<std::string> get_quest_text(std::string quest_id, std::string part);
+	std::vector<std::string> get_quest_parts(std::string quest_id);
 	
 	/// Get value from database
 	//

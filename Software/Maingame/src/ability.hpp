@@ -108,6 +108,9 @@ public:
 	void add_sprite_to_action(sf::Sprite t);
 
 
+	void perfrom_action(sf::RenderWindow & window);
+
+
 	/// Decontructor
 	//
 	/// Will be called when the object is deleted. \n

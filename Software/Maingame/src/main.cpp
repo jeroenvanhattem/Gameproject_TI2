@@ -54,7 +54,7 @@ int main( int argc, char* argv[]) {
 			if (event.type == sf::Event::Closed) {
 				window.close();
 			}
-			sf::sleep(sf::milliseconds(10));
+			sf::sleep(sf::milliseconds(1));
 		}
 	}
 }

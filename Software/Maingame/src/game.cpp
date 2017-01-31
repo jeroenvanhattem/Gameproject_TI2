@@ -35,13 +35,14 @@ game::game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize) :
 }
 
 void game::game_loop() {
+	
 	while (window.isOpen()) {
 		window.clear();
 		
 		if (game_begin) {
 			window.setView(game_view);
-			draw_background_store();
 			
+			draw_background_store();
 			move_player();
 			draw_player();
 			draw_npc();
@@ -65,7 +66,7 @@ void game::game_loop() {
 			if (event.type == sf::Event::Closed) {
 				window.close();
 			}
-			sf::sleep(sf::milliseconds(10));
+			sf::sleep(sf::milliseconds(1));
 		}
 	}
 }

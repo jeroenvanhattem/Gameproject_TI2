@@ -1,5 +1,9 @@
 ﻿  leveleditor.cpp
-c:\users\rikru\desktop\gameproject_ti2_rik_goede\software\maingame\src\leveleditor.cpp(148): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\rikru\desktop\gameproject_ti2_rik_goede\software\maingame\src\leveleditor.cpp(149): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  _SQL.vcxproj -> C:\Users\rikru\Desktop\Gameproject_TI2_Rik_goede\Software\Maingame\project\_SQL\..\..\bin\_SQL.exe
+c:\users\rikru\desktop\maingame\maingame\src\leveleditor.cpp(148): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\rikru\desktop\maingame\maingame\src\leveleditor.cpp(149): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  dialogbox.cpp
+c:\users\rikru\desktop\maingame\maingame\src\dialogbox.cpp(23): warning C4996: 'sf::Text::setColor': was declared deprecated
+  c:\users\rikru\desktop\maingame\maingame\deps\sfml-2.4.1\include\sfml\graphics\text.hpp(177): note: see declaration of 'sf::Text::setColor'
+  Generating Code...
+  _SQL.vcxproj -> C:\Users\rikru\Desktop\Maingame\Maingame\project\_SQL\..\..\bin\_SQL.exe
   _SQL.vcxproj -> ..\..\bin\_SQL.pdb (Full PDB)

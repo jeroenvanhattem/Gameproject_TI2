@@ -36,7 +36,6 @@ leveleditor::leveleditor(sf::Vector2f levelsize, sf::Vector2f rect_size, sf::Ren
 
 void leveleditor::editor_loop() {
 	while (window.isOpen()) {
-
 		window.clear();
 
 		window.setView(view1);
@@ -50,6 +49,7 @@ void leveleditor::editor_loop() {
 			std::vector<std::string>available_level_names = database.get_available_levels();
 			level_ids = database.get_level_ids();
 			std::map<std::string, std::string> id_with_name;
+			level_buttons.clear();
 			float posy = 0;
 			int count = 0;
 			int x = 0;
@@ -197,7 +197,7 @@ void leveleditor::create_object(sf::Vector2f pos) {
 	for (auto tile : tile_store) {
 		if (tile->selected) {
 			temporary_store.push_back(new picture(tile->picture_path, pos , tile->tile_size));
-			sf::sleep(sf::milliseconds(100));
+			sf::sleep(sf::milliseconds(200));
 		}
 	}
 }

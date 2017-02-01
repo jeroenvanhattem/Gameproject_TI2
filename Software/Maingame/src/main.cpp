@@ -42,17 +42,12 @@ int main( int argc, char* argv[]) {
 	window.clear();
 	menu.loading();
 	window.display();
+	if (!database.get_level_ids().empty()) {
+		audio.play_music_from_map(database.get_level_ids().at(0));
+	}
 
-	audio.play_music_from_map(database.get_level_ids().at(0));
-	
-	
-	
-	
-	
-	
-
-	leveleditor editor({ 1024, 1024 }, { 32, 32 }, window, database);
-	game game(window, database, { 1024, 1024 });
+	leveleditor editor({ 2048, 2048 }, { 32, 32 }, window, database);
+	game game(window, database, { 2048, 2048 });
 	
 	while (window.isOpen()) {
 

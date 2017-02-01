@@ -18,7 +18,12 @@ void dialogbox::draw(sf::RenderWindow & window) {
 }
 
 void dialogbox::text_input(std::string sentence, int char_size, sf::Color color) {
+	last_text = sentence;
 	text.setString(sentence);
 	text.setColor(color);
 	text.setCharacterSize(char_size);
+}
+
+sf::FloatRect dialogbox::getBounds() {
+	return text.getGlobalBounds();
 }

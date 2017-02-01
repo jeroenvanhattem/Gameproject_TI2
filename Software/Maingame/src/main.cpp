@@ -9,9 +9,6 @@
 #include "game.hpp"
 #include "leveleditor.hpp"
 
-
-
-
 int main( int argc, char* argv[]) {
 	sf::SoundBuffer buffer;
 	sf::Sound sound;

@@ -12,12 +12,12 @@ private:
 	sf::Vector2f position;
 	sf::Vector2f last_move;
 	sql database;
-public:
 
+public:
 
 	/// Constructor
 	//
-	/// This method will crate an object of class npc.\n
+	/// This method will create an object of class npc.\n
 	///
 	/// 
 	/// Parameters:
@@ -39,7 +39,7 @@ public:
 	player(sf::RenderWindow & window, sql & database, std::string save);
 
 
-	/// Move the player
+	/// void move() : Move the player
 	//
 	/// This method moves the position the player.\n
 	///
@@ -58,7 +58,7 @@ public:
 	void move(sf::Vector2f delta);
 
 
-	/// Set action of the player
+	/// void set_action(std::string s) : Set action of the player
 	//
 	/// This method sets the current action of the player.\n
 	/// The standard value is walk down.\n
@@ -69,33 +69,118 @@ public:
 	/// s : std::string\n
 	/// -> name of the action that has to be set on active.
 	///
-	///
 	/// Example:
 	/// --------
 	/// set_action("walk_up")\n
-	/// player is now set for walking up.\n
+	/// -> Player is now set for walking up.\n
 	///
 	void set_action(std::string s);
 
-
-	/// Print player
+	/// void draw() : Print player
 	//
 	/// This method draws the player on the screen. \n
 	///
+	/// Example:
+	/// --------
+	/// draw()\n
+	/// -> Draw the player on the screen
 	///
 	void draw();
 
+	/// void respawn() : Respawn player
+	//
+	/// This method moves the player back to a specific location \n
+	///
+	/// Example:
+	/// --------
+	/// respawn()\n
+	/// -> Player will be moved back to (200,200)
+	///
 	void respawn();
 
+	/// int npc::get_interaction(npc & other_npc) : Get interaction between the player and a NPC
+	//
+	/// Call the 'get_interaction' function to check for a collision between the player and a NPC
+	/// 
+	/// Parameters:
+	/// -----------
+	/// other_npc : NPC & \n
+	///	-> The NPC that will be checked with for a collision
+	///
+	/// Return:
+	/// -------
+	/// 0 / 1 : integer \n
+	///	-> Return a 1 if there's a collision detected, return a 0 if no collision is detected
+	/// 
+	/// Example:
+	/// --------
+	/// get_interaction(*other_npc) \n
+	/// -> return: {"1"}.
+	///
 	int get_interaction(npc & other_npc);
 
+	/// int get_collision(sf::IntRect colliding_object) : Get interaction between a NPC and a sf::IntRect object
+	//
+	/// Call the 'get_collision' function to check for a collision with a sf::IntRect object
+	/// 
+	/// Parameters:
+	/// -----------
+	/// colliding_object : sf::IntRect \n
+	///	-> The sf::IntRect that will be check for a collision
+	///
+	/// Return:
+	/// -------
+	/// 0 / 1 : integer \n
+	///	-> Return a 1 if there's a collision detected, return a 0 if no collision is detected
+	/// 
+	/// Example:
+	/// --------
+	/// get_collision(recangle) \n
+	/// -> return: {"1"}.
+	///
 	int get_collision(sf::IntRect colliding_object);
 
+	/// void set_last_position() : Set the position back to its last position
+	//
+	/// When this function is called, the current location will be set to last location
+	/// 
+	/// Example:
+	/// --------
+	/// set_last_position() \n
+	///  -> The position is now set to the last position
+	///
 	void set_last_position();
 
+	/// sf::Vector2f get_position() : Get position of player
+	//
+	/// When this function is called, it will return the position of the player
+	/// 
+	/// Return:
+	/// -------
+	/// position : sf::Vector2f \n
+	///	-> The position of the player
+	/// 
+	/// Example:
+	/// --------
+	/// get_position() \n
+	/// -> return sf::Vector(200,200)
+	///
 	sf::Vector2f get_position();
 
-	
+	/// void show_action(std::string action_to_perform) : Player acion
+	//
+	/// This function displays the right action of the player, so the right spritepart that displays the current action of the player, like walking up
+	/// 
+	/// Parameters:
+	/// -----------
+	/// action_to_perform : std::string \n
+	///	-> The action that has to be shown
+	///
+	/// Example:
+	/// --------
+	/// show_action("walk_up") \n
+	/// -> Now the player seems to be walking up
+	///
 	void show_action(std::string action_to_perform);
 
 

@@ -28,8 +28,6 @@ private:
 	sf::RenderWindow & window;
 	std::string current_action = "walk_down";
 	
-	
-
 	const std::vector<std::string>action_names = {
 		"cast_spell_up",
 		"cast_spell_left",
@@ -58,11 +56,8 @@ private:
 
 	void load_all_actions();
 	void load_action(std::string action_name, int steps_of_action, int level);
-
-
 	
 public:
-	
 	
 	/// Constructor
 	//
@@ -90,7 +85,6 @@ public:
 	///
 	npc(sf::RenderWindow & window, sql & database, std::string npc_id, bool is_player = false);
 	
-	
 	/// Move the npc
 	//
 	/// This method moves the position an npc.\n
@@ -108,7 +102,6 @@ public:
 	/// npc has moved 2 pixels to the right\n
 	///
 	void move(sf::Vector2f delta);
-	
 	
 	/// set action of npc
 	//
@@ -129,7 +122,6 @@ public:
 	///
 	void set_action(std::string s = "0");
 	
-	
 	/// Get the name of npc
 	//
 	/// This method returns the name of an npc.\n
@@ -147,16 +139,17 @@ public:
 	/// "monk"\n
 	///
 	std::string get_name();
-	
-	
-	/// Print npc
+
+	/// void draw() : Print NPC
 	//
-	/// This method draws the npc on the screen. \n
+	/// This method draws the NPC on the screen. \n
 	///
+	/// Example:
+	/// --------
+	/// draw()\n
+	/// -> Draw the NPC on the screen
 	///
 	const void draw();
-
-
 
 	/// Get a sf::IntRect from the coordinates from the NPC
 	//
@@ -174,21 +167,14 @@ public:
 	///
 	sf::IntRect get_bounds();
 
-
 	/// int npc::get_interaction(npc & other_npc) : Get interaction between two NPC's
-	//
-	/// Call the 'get_interaction' function to check for a collision with another NPC
-	/// Do this by calling 'get_interaction()' with a NPC object as parameter
-
-
-	///Get interaction between two NPC's
 	//
 	/// Call the 'get_interaction' function to check for a collision with another NPC
 	/// 
 	/// Parameters:
 	/// -----------
 	/// other_npc : NPC & \n
-	///	-> Table name in the database
+	///	-> The NPC that will be check for a collision
 	///
 	/// Return:
 	/// -------
@@ -197,16 +183,81 @@ public:
 	/// 
 	/// Example:
 	/// --------
-	///player.get_interaction(*other_npc) \n
-	/// return: {"1"}.
+	/// get_interaction(*other_npc) \n
+	/// -> return: {"1"}.
 	///
 	int get_interaction(npc & other_npc);
 
+
+
+	///Get interaction between a NPC and a sf::IntRect object
+	//
+	/// Call the 'get_collision' function to check for a collision with a sf::IntRect object
+	/// 
+	/// Parameters:
+	/// -----------
+	/// colliding_object : sf::IntRect \n
+	///	-> The sf::IntRect that will be check for a collision
+	///
+	/// Return:
+	/// -------
+	/// 0 / 1 : integer \n
+	///	-> Return a 1 if there's a collision detected, return a 0 if no collision is detected
+	/// 
+	/// Example:
+	/// --------
+	/// npc.get_collision(recangle) \n
+	/// return: {"1"}.
+	///
+
 	int get_collision(sf::IntRect colliding_object);
 
-	sf::Vector2f get_position() { return position; }
+	/// sf::Vector2f get_position() : Get position of NPC
+	//
+	/// When this function is called, it will return the position of the NPC
+	/// 
+	/// Return:
+	/// -------
+	/// position : sf::Vector2f \n
+	///	-> The position of the NPC
+	/// 
+	/// Example:
+	/// --------
+	/// get_position() \n
+	/// -> return sf::Vector(200,200)
+	///
 	void set_position(sf::Vector2f given_position);
 
+	/// sf::Vector2f get_position() : Get position of NPC
+	//
+	/// When this function is called, it will return the position of the NPC
+	/// 
+	/// Return:
+	/// -------
+	/// position : sf::Vector2f \n
+	///	-> The position of the NPC
+	/// 
+	/// Example:
+	/// --------
+	/// get_position() \n
+	/// -> return sf::Vector(200,200)
+	sf::Vector2f get_position() { return position; }
+
+
+	/// void show_action(std::string action_to_perform) : NPC acion
+	//
+	/// This function displays the right action of the NPC, so the right spritepart that displays the current action of the NPC, like walking up
+	/// 
+	/// Parameters:
+	/// -----------
+	/// action_to_perform : std::string \n
+	///	-> The action that has to be shown
+	///
+	/// Example:
+	/// --------
+	/// show_action("walk_up") \n
+	/// -> Now the NPC seems to be walking up
+	///
 	void show_action(std::string action_to_perform);
 
 

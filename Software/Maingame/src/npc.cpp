@@ -13,6 +13,7 @@ npc::npc(sf::RenderWindow & window, sql & database, std::string npc_id, bool is_
 		position = { std::stof(npc_values.at(4)), std::stof(npc_values.at(5)) };
 		texture.loadFromFile(npc_values.at(1));
 	}
+
 	else { 
 		npc_values = database.get_npc_value(id); 
 		position = { std::stof(npc_values.at(3)), std::stof(npc_values.at(4)) };
@@ -112,11 +113,11 @@ int npc::get_collision(sf::IntRect colliding_object) {
 	sf::IntRect player_bounds = get_bounds();
 	player_bounds.top *= 2;
 	player_bounds.width /= 2;
-	player_bounds.height *= 1.5;
+	//player_bounds.height *= 2;
 
 	colliding_object.top *= 2;
-	colliding_object.width /= 2;
-	colliding_object.height *= 1.5;
+	colliding_object.width /= 2.5;
+	//colliding_object.height *= 2;
 
 	if (player_bounds.intersects(colliding_object)) {
 		return 1;
@@ -130,12 +131,12 @@ int npc::get_interaction(npc & other_npc) {
 	sf::IntRect player_bounds = get_bounds();
 	player_bounds.top *= 2;
 	player_bounds.width /= 2;
-	player_bounds.height *= 1.5;
+	//player_bounds.height *= 1.5;
 
 	sf::IntRect other_npc_bounds = other_npc.get_bounds();
 	other_npc_bounds.top *= 2;
 	other_npc_bounds.width /= 2;
-	other_npc_bounds.height *= 1.5;
+	//other_npc_bounds.height *= 1.5;
 
 	if (player_bounds.intersects(other_npc_bounds)) {
 		return 1;
@@ -162,9 +163,6 @@ void npc::show_action(std::string action_to_perform) {
 		}
 	}
 }
-
-
-
 
 npc::~npc() {
 

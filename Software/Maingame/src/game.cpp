@@ -56,8 +56,11 @@ void game::game_loop() {
 		else {
 			view_start_dialogs();
 		}
+		
+		interact("1");
 
 		window.display();
+		
 		
 		
 
@@ -84,13 +87,66 @@ void game::view_start_dialogs() {
 			while (sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
 		}
 	}
+
 	game_begin = true;
 	window.clear();
 	draw_player();
 	perform_player_action("cast_spell_down");
 	window.display();
 	sf::sleep(sf::milliseconds(1000));
-	
+}
+
+void game::interact() {
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::E)) {
+		for (auto one_npc : npc_list) {
+			if (arno.get_interaction(*one_npc)) {
+
+				for (auto indexer : database.get_quest_parts("0")) {
+					for (auto index : database.get_quest_text("0", indexer)) {
+						if (index == "NULL") { continue; }
+						dialogbox.text_input((index), 25, sf::Color::White);
+						window.setView(game_view);
+						dialogbox.draw(window);
+						window.display();
+
+						while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
+						while (sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
+					}
+				}
+			}
+		}
+
+		window.clear();
+		draw_player();
+		window.display();
+	}
+}
+
+void game::interact(std::string item_id) {
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::E)) {
+		for (auto one_npc : npc_list) {
+			if (arno.get_interaction(*one_npc)) {
+				for (auto indexer : database.get_quest_parts("2")) {
+					for (auto index : database.get_quest_text("2", indexer)) {
+						if (index == "NULL") { continue; }
+						dialogbox.text_input((index), 25, sf::Color::White);
+						window.setView(game_view);
+						dialogbox.draw(window);
+						window.display();
+
+						while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
+						while (sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
+					}
+				}
+				database.add_item_to_inventory(item_id);
+				//database.add_data("inventory", "1, 1, 0");
+			}
+		}
+
+		window.clear();
+		draw_player();
+		window.display();
+	}
 }
 
 void game::get_items_from_database(std::map<std::string, std::vector<std::string>> & item_values_map) {
@@ -125,7 +181,6 @@ void game::load_npc() {
 		npc_list.push_back(new npc(window, database, indexer));
 	}
 }
-
 
 void game::move_player() {
 	bool no_collision = true;
@@ -171,6 +226,3 @@ void game::perform_npc_action(std::string npc_name, std::string action) {
 		}
 	}
 }
-
-
-

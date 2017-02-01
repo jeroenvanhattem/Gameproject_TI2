@@ -148,6 +148,7 @@ public:
 	/// There is now a new record in the database with the given values.
 	///
 	void add_data(char* table, const char* values);
+	void add_data2(char* table, const char* values);
 	
 	
 	/// Execute a query.
@@ -569,7 +570,24 @@ public:
 
 	std::vector<std::string> get_player_value(std::string npc_id);
 
+	/// add_item_to_inventory(std::string item_name) : Add an item to the players inventory
+	//
+	/// This function will give the player an item that will be stored in the inventory table in the database.\n
+	/// 
+	/// 
+	/// Parameters:
+	/// -----------
+	/// item_name : std::string
+	///	-> The name of the item that has to be given
+	/// 
+	///
+	/// Example:
+	/// --------
+	/// add_item_to_inventory("1");
+	/// -> Adds a banana to the users inventory
+	///
 
+	void add_item_to_inventory(std::string item_id);
 
 	  /*-------------------*/
 	 /*  Music functions  */

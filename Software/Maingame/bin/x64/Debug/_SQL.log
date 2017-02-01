@@ -1,3 +1,13 @@
 ﻿  game.cpp
-  _SQL.vcxproj -> D:\Documents\HBO-ICT\Jaar2\Blok B\Gameproject_TI2\Software\Maingame\project\_SQL\..\..\bin\_SQL.exe
+  Generating Code...
+  Compiling...
+  main.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  sql.cpp
+  player.cpp
+  npc.cpp
+  music.cpp
+  leveleditor.cpp
+  _SQL.vcxproj -> E:\School\2016-2017\Blok_2\Gameproject\Opdrachten\Project\Software\Maingame\project\_SQL\..\..\bin\_SQL.exe
   _SQL.vcxproj -> ..\..\bin\_SQL.pdb (Full PDB)

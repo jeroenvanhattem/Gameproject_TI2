@@ -71,14 +71,31 @@ std::vector<std::string> sql::get_data(char* table, char* columnname) {
 	return execute_query_with_return(query_string.c_str());
 }
 
-
-
 void sql::add_data(char* table, const char* values) {
 	std::ostringstream query;
 	query << "INSERT INTO " << table << " VALUES( NULL, " << values << ");";
 
 	std::string query_string = query.str();
 	execute_query_without_return(query_string.c_str());
+}
+
+void sql::add_data2(char* table, const char* values) {
+	std::ostringstream query;
+	query << "INSERT INTO " << table << " VALUES(" << values << ");";
+
+	std::string query_string = query.str();
+	execute_query_without_return(query_string.c_str());
+}
+
+
+void sql::add_item_to_inventory(std::string item_id) {
+	std::ostringstream query;
+	query << "INSERT INTO inventory VALUES( " << item_id << ", 1, 0);";
+
+	std::string query_string = query.str();
+	std::cout << "Going to update" << std::endl;
+	execute_query_without_return(query_string.c_str());
+	std::cout << "Updated" << std::endl;
 }
 
 void sql::change_data(char* table, char* condition1, char* condition2, char* columnname, char* new_value) {

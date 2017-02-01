@@ -1,3 +1,6 @@
-﻿  main.cpp
+﻿  music.cpp
+d:\documents-(d)\hbo-ict\jaar2\blok b\git\game_development\software\maingame\src\music.cpp(10): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+  Generating Code...
   _SQL.vcxproj -> D:\Documents-(D)\HBO-ICT\jaar2\Blok B\git\game_development\Software\Maingame\project\_SQL\..\..\bin\_SQL.exe
   _SQL.vcxproj -> ..\..\bin\_SQL.pdb (Full PDB)

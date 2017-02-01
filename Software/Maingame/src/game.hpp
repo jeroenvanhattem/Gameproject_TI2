@@ -20,6 +20,7 @@ private:
 	sql & database;
 	sf::RenderWindow & window;
 	sf::View game_view;
+	sf::View dialogbox_view;
 	sf::Vector2f levelsize;
 	std::vector<picture*> background_store;
 	std::vector<npc*>npc_list;
@@ -36,7 +37,12 @@ private:
 	bool first_dialog_done = false;
 	int count = 0;
 
+	bool mouse_intersects_left_edge(sf::View & view);
+	bool mouse_intersects_right_edge(sf::View & view);
+	bool mouse_intersects_upper_edge(sf::View & view);
+	bool mouse_intersects_down_edge(sf::View & view);
 
+	void game_viewer();
 	/// void draw_npc() : This function will draw NPC's on the window
 	//
 	/// This function will go through a vector which contains NPC objects, their draw function will be called on all of them one by one

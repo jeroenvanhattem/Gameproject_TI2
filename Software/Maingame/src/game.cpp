@@ -6,7 +6,6 @@ game::game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize) :
 	levelsize(levelsize),
 	arno(window, database, "1"),
 	dialogbox("../../bin/pictures/dialog_box.png", "../../bin/pictures/game_font.ttf", {200, 800})
-	
 {
 	std::vector<std::string>level_ids = database.get_level_ids();
 	if (!level_ids.empty()) {
@@ -30,10 +29,11 @@ game::game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize) :
 		draw_npc();
 		draw_player();
 	}
-	game_view.setCenter(levelsize.x / 2 + 25, levelsize.y / 2 + 10);
-	game_view.setSize(levelsize.x, levelsize.y);
+	game_view.setCenter(levelsize.x/4 + 25, levelsize.y/4 + 10);
+	game_view.setSize(levelsize.x/2, levelsize.y/2);
 	game_view.setViewport(sf::FloatRect(0, 0, 1, 1));
-	game_view.zoom(1.2f);
+	dialogbox_view.setCenter(levelsize.x / 4 + 25, levelsize.y / 4 + 10);
+	dialogbox_view.setSize(levelsize.x / 2, levelsize.y / 2);
 }
 
 void game::game_loop() {
@@ -48,6 +48,7 @@ void game::game_loop() {
 			move_player();
 			draw_player();
 			draw_npc();
+			game_viewer();
 
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
 				while (sf::Keyboard::isKeyPressed(sf::Keyboard::R));
@@ -61,11 +62,8 @@ void game::game_loop() {
 		
 		interact("1");
 
-		window.display();
+		window.display();	
 		
-		
-		
-
 		sf::Event event;
 		if (window.pollEvent(event)) {
 			if (event.type == sf::Event::Closed) {
@@ -76,12 +74,35 @@ void game::game_loop() {
 	}
 }
 
+void game::game_viewer() {
+	if (mouse_intersects_left_edge(game_view)) game_view.move({-2 , 0 });
+	if (mouse_intersects_right_edge(game_view)) game_view.move({2, 0});
+	if (mouse_intersects_upper_edge(game_view)) game_view.move({ 0, -4 });;
+	if (mouse_intersects_down_edge(game_view)) game_view.move({ 0, 4 });;
+}
+
+bool game::mouse_intersects_left_edge(sf::View & view) {
+	return get_mouse_position(window).x <= 10 && (window.mapPixelToCoords(sf::Mouse::getPosition(window), view).x >= -5);
+}
+
+bool game::mouse_intersects_right_edge(sf::View & view) { 
+	return get_mouse_position(window).x >= (window.getSize().x-10) && (window.mapPixelToCoords(sf::Mouse::getPosition(window), view).x <= (levelsize.x + 25));
+}
+
+bool game::mouse_intersects_upper_edge(sf::View & view) {
+	return get_mouse_position(window).y <= 10 && (window.mapPixelToCoords(sf::Mouse::getPosition(window), view).y >= -5);
+}
+
+bool game::mouse_intersects_down_edge(sf::View & view) {
+	return get_mouse_position(window).y >= (window.getSize().y-10) && (window.mapPixelToCoords(sf::Mouse::getPosition(window), view).y <= (levelsize.y+25));
+}
+
 void game::view_start_dialogs() {
 	for (auto indexer : database.get_quest_parts("1")) {
 		for (auto index : database.get_quest_text("1",indexer)) {
 			if (index == "NULL") { continue; }
 			dialogbox.text_input((index), 25, sf::Color::White);
-			window.setView(game_view);
+			window.setView(dialogbox_view);
 			dialogbox.draw(window);
 			window.display();
 
@@ -107,7 +128,7 @@ void game::interact() {
 					for (auto index : database.get_quest_text("0", indexer)) {
 						if (index == "NULL") { continue; }
 						dialogbox.text_input((index), 25, sf::Color::White);
-						window.setView(game_view);
+						window.setView(dialogbox_view);
 						dialogbox.draw(window);
 						window.display();
 

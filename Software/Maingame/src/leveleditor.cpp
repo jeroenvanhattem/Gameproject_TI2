@@ -8,7 +8,6 @@ leveleditor::leveleditor(sf::Vector2f levelsize, sf::Vector2f rect_size, sf::Ren
 	back_to_menu_button("../../bin/pictures/back_to_menu_button.png", { 0, (float)window.getSize().y / 9 + 180}, { 0,0 }),
 	new_game_button("../../bin/pictures/new_level_button.png", { 0 , ((float)window.getSize().y / 9) }, { 0,0 }),
 	load_game_button("../../bin/pictures/load_level_button.png", { 0, ((float)window.getSize().y / 9) + 60}, { 0,0 }),
-	level_1_button("../../bin/pictures/level_1_button.png", { 0, ((float)window.getSize().y / 9) }, { 0,0 }),
 	window(window)
 {
 	load_rectangles();

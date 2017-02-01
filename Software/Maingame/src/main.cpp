@@ -20,11 +20,11 @@ int main( int argc, char* argv[]) {
 	if (!database.get_level_ids().empty()) {
 		audio.play_music_from_map(database.get_level_ids().at(0));
 	}
-	sf::RenderWindow window{ sf::VideoMode{ 1024, 512 }, "SFML window" };
+	sf::RenderWindow window{ sf::VideoMode{ 1080, 540 }, "SFML window" };
 	window.display();
-	leveleditor editor({ 1024, 1024 }, { 32, 32 }, window, database);
+	leveleditor editor({ 2048, 2048 }, { 32, 32 }, window, database);
 	main_menu menu(window);
-	game game(window, database, { 1024, 1024 });
+	game game(window, database, { 2048, 2048 });
 
 	while (window.isOpen()) {
 

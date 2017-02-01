@@ -62,7 +62,6 @@ private:
 	picture save_level_button;
 	picture new_game_button;
 	picture load_game_button;
-	picture level_1_button;
 	bool button_pressed(dialogbox & object, sf::View & view);
 
 	void load_rectangles();

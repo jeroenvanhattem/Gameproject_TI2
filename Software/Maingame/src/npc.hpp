@@ -258,7 +258,12 @@ public:
 	/// show_action("walk_up") \n
 	/// -> Now the NPC seems to be walking up
 	///
-	void show_action(std::string action_to_perform);
+	///!unfinished
+	std::vector<sf::Sprite> npc::get_action(std::string action_to_get);
+
+	std::string get_current_action();
+
+	void show_ability(std::string action_to_show);
 
 
 	/// Decontructor

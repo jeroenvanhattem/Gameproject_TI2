@@ -37,9 +37,12 @@ private:
 	int count = 0;
 
 
-	/// void draw_npc() : This function will draw NPC's on the window
+	/// Draw NPC's on the window
 	//
-	/// This function will go through a vector which contains NPC objects, their draw function will be called on all of them one by one
+	/// This function will go through a vector which contains NPC objects, 
+	/// their draw function will be called on all of them one by one.\n
+	///
+	///
 	/// Example:
 	/// --------
 	/// draw_npc() \n
@@ -47,9 +50,11 @@ private:
 	///
 	void draw_npc();
 
-	/// void load_npc() : This function will get all the NPC's from the database and put them in a vector
+	/// Get all the NPC's
 	//
-	/// This function will retrieve all the NPC's from the database and put them in the 'npc_list' vector
+	/// This function will retrieve all the NPC's from the database and put them in the 'npc_list' vector.\n
+	///
+	///
 	/// Example:
 	/// --------
 	/// load_npc() \n
@@ -57,9 +62,11 @@ private:
 	///
 	void load_npc();
 
-	/// void view_start_dialogs() : This function shows the dialogues in the beginning of the game
+	/// Show beginning dialogues
 	//
-	/// This function shows the the dialogs that will be shown in the beginning of the game
+	/// This function shows the the dialogs that will be shown in the beginning of the game.\n
+	///
+	///
 	/// Example:
 	/// --------
 	/// view_start_dialogs() \n
@@ -67,40 +74,53 @@ private:
 	///
 	void view_start_dialogs();
 
-	/// void draw_background_store() : This function shows the store on the window
+	/// Show the store on the window
 	//
-	/// This function retrieves the background of the store from the vector it's in and displays it on the screen
+	/// This function retrieves the background of the store from the vector it's in and displays it on the screen.\n
+	///
+	///
 	/// Example:
 	/// --------
 	/// draw_background_store() \n
 	/// -> The store will be shown on the window
+	///
 	void draw_background_store();
 
-	/// void move_player() : This function moves the player if it meets the requirements to move
+	/// Moves the player
 	//
-	/// This function will move the player as long as there's no collision. When there's a collision the player will be set back to its previous position before the collision
+	/// This function will move the player as long as there's no collision. \n
+	/// When there's a collision the player will be set back to its previous position before the collision.\n
+	///
+	///
 	/// Example:
 	/// --------
 	/// move_player() \n
 	/// -> Move the player
+	///
 	void move_player();
 
-	/// void draw_player() : This function draws the player on the screen
+	/// Draws the player on the screen
 	//
-	/// This function calls the draw function from the 'player' class, which will then draw the player on the screen
+	/// This function calls the draw function from the 'player' class, 
+	/// which will then draw the player on the screen.
+	/// 
+	///
 	/// Example:
 	/// --------
 	/// move_player() \n
 	/// -> Player will be shown on the screen
+	///
 	void draw_player();
 
-	/// void perform_player_action(std::string action) : This function show the sprite that belongs to the action
+	/// Show the sprite that belongs to the action
 	//
-	/// This function shows the action the belongs to the state of the player, if he walks up, the sprite will be shown of the player walking up
+	/// This function shows the action the belongs to the state of the player, \n
+	/// if he walks up, the sprite will be shown of the player walking up. \n
 	/// 
+	///
 	/// Parameters:
 	/// -----------
-	/// action : std::string
+	/// action : std::string\n
 	///	-> The name of the action that must be performed
 	///
 	/// Example:
@@ -110,16 +130,20 @@ private:
 	///
 	void perform_player_action(std::string action);
 
-	/// void perform_npc_action(std::string npc_name,std::string action) : This function show the sprite that belongs to the action
+	/// Show the sprite that belongs to the action.
 	//
-	/// This function shows the action the belongs to the state of the NPC, if it walks up, the sprite will be shown of the NPC walking up
+	/// This function shows the action the belongs to the state of the NPC, 
+	/// if it walks up, the sprite will be shown of the NPC walking up.\n
 	/// 
+	///
 	/// Parameters:
 	/// -----------
-	/// action : std::string
-	///	-> The name of the action that must be performed
-	/// npc_name : std::string
-	///	-> The name of the NPC on which this function must be executed
+	/// action : std::string\n
+	///	-> The name of the action that must be performed.
+	///
+	/// npc_name : std::string\n
+	///	-> The name of the NPC on which this function must be executed.
+	///
 	///
 	/// Example:
 	/// --------
@@ -128,9 +152,14 @@ private:
 	///
 	void perform_npc_action(std::string npc_name, std::string action);
 
-	/// void interact() : Make the player, when possible, interact with a NPC
+
+	void player_skill();
+
+	/// Interact with a NPC
 	//
-	/// Call the 'interact' function to see if the player can interact with a player
+	/// Call the 'interact' function to see if the player can interact with a player.\n
+	///
+	///
 	/// Example:
 	/// --------
 	/// player.interact() \n
@@ -138,14 +167,16 @@ private:
 	///
 	void interact();
 
-	/// void interact(std::string item_id) : Make the player, when possible, interact with a NPC
+	/// Interact with a object or tile
 	//
-	/// Call the 'interact' function to see if the player can interact with a player
+	/// Call the 'interact' function to see if the player can interact with a player.\n
 	/// 
+	///
 	/// Parameters:
 	/// -----------
-	/// item_name : std::string
+	/// item_name : std::string\n
 	///	-> The name of an item which will be given to the player
+	///
 	///
 	/// Example:
 	/// --------
@@ -156,18 +187,22 @@ private:
 
 public:
 
-	/// game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize) : The constructor of a the 'game' class
+	/// The constructor
 	//
-	/// The constructor of the 'game' class, this creates a game object
+	/// The constructor of the 'game' class, this creates a game object.\n
 	/// 
+	///
 	/// Parameters:
 	/// -----------
-	/// levelsize :  sf::Vector2f
+	/// levelsize :  sf::Vector2f \n
 	///	-> The size of the level
-	/// database : sql &
+	/// 
+	/// database : sql & \n
 	///	-> A 'SQ' object, this will be used to get information from the database
-	/// window :sf::RenderWindow
+	///
+	/// window :sf::RenderWindow \n
 	///	-> The window on which the game has to be drawn
+	///
 	///
 	/// Example:
 	/// --------
@@ -176,10 +211,12 @@ public:
 	///
 	game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize);
 
-	/// game_loop() : This function is the game loop, when called it will play the game
+	/// Loop that handles the game
 	//
-	/// This funtion will execute everything that will be needed to run the game, like drawing the window, loading the NPC's and working with them
+	/// This funtion will execute everything that will be needed to run the game, \n
+	/// like drawing the window, loading the NPC's and working with them
 	/// 
+	///
 	/// Example:
 	/// --------
 	/// game_loop() \n
@@ -187,14 +224,16 @@ public:
 	///
 	void game_loop();
 
-	/// get_items_from_database(std::map<std::string, std::vector<std::string>> & item_values_map) : This function gets the items from the database
+	/// Get the items from the database
 	//
-	/// This function gets all the items from the database and places it in a std::map
+	/// This function gets all the items from the database and places it in a std::map.\n
 	/// 
+	///
 	/// Parameters:
 	/// -----------
-	/// item_values_map :  std::map<std::string, std::vector<std::string>> & 
+	/// item_values_map :  std::map<std::string, std::vector<std::string>> & \n
 	///	-> The map that contains all the items and its location
+	///
 	///
 	/// Example:
 	/// --------

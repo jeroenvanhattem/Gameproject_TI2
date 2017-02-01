@@ -57,7 +57,7 @@ void npc::load_all_actions(){
 
 void npc::move(sf::Vector2f delta) {
 	position += delta;
-	for (auto action : npc_actions) {
+	for (auto & action : npc_actions) {
 		if (action->get_name() == current_action) {
 			action->move(position);
 		}
@@ -85,6 +85,19 @@ void npc::set_action( std::string s ) {
 	for (auto action : npc_actions) {
 		if (s == action->get_name()) {
 			current_action = s;
+		}
+	}
+}
+
+void npc::show_ability(std::string action_to_show) {
+	int i = 0;
+	for (auto & action : npc_actions) {
+		if (action_to_show == action->get_name()) {
+			action->move(position);
+			action->draw(window);
+			action->next_step();
+			
+			return;
 		}
 	}
 }
@@ -156,10 +169,14 @@ void npc::set_position(sf::Vector2f given_position) {
 	}
 }
 
-void npc::show_action(std::string action_to_perform) {
+std::string npc::get_current_action() {
+	return current_action;
+}
+
+std::vector<sf::Sprite> npc::get_action(std::string action_to_get) {
 	for (auto action : npc_actions) {
-		if (action->get_name() == action_to_perform) {
-			action->perfrom_action(window);
+		if (action->get_name() == action_to_get) {
+			return action->get_action();
 		}
 	}
 }

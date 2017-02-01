@@ -181,7 +181,14 @@ public:
 	/// show_action("walk_up") \n
 	/// -> Now the player seems to be walking up
 	///
-	void show_action(std::string action_to_perform);
+	std::vector<sf::Sprite> get_action(std::string action_to_get);
+
+
+	std::string get_current_action();
+
+	void show_ability(std::string action_to_show);
+
+	void set_position(sf::Vector2f new_position);
 
 
 	/// Decontructor

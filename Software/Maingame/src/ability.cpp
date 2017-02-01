@@ -19,22 +19,29 @@ std::string ability::get_name() {
 void ability::move( sf::Vector2f new_position) {
 	if(position != new_position){
 		position = new_position;
-
 		for (auto & item : action) {
 			item.setPosition(position);
 		}
+		next_step();
 		
-		if (current_action_step < int(action.size()) - 1) {
-			current_action_step++;
-		}
-		else {
-			current_action_step = 0;
-		}
+	}
+	else if (name.find("walk") != std::string::npos ){
+		current_action_step = 0;
+	}
+	else {
+		next_step();
+	}
+	
+}
+
+void ability::next_step() {
+	
+	if (current_action_step < int(action.size()) - 1) {
+		current_action_step++;
 	}
 	else {
 		current_action_step = 0;
 	}
-	
 }
 
 
@@ -46,18 +53,10 @@ void ability::add_sprite_to_action(sf::Sprite t) {
 	action.push_back(t);
 }
 
-void ability::perfrom_action(sf::RenderWindow & window) {
-	sf::View ability;
-	window.setView(ability);
-	
-	for (auto & indexer : action) {
-		window.clear();
-		window.draw(indexer);
-		window.display();
-		sf::sleep(sf::milliseconds(200));
-	}
-	window.setView(window.getDefaultView());
+std::vector<sf::Sprite> ability::get_action() {
+	return action;
 }
+
 
 
 ability::~ability(){

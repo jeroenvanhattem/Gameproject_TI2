@@ -35,6 +35,7 @@ void player::set_last_position() {
 }
 
 void player::respawn() {
+	position = spawn;
 	player_npc.set_position(spawn);
 }
 
@@ -51,8 +52,21 @@ sf::Vector2f player::get_position() {
 	return player_npc.get_position();
 }
 
-void player::show_action(std::string action_to_perform) {
-	player_npc.show_action(action_to_perform);
+std::string player::get_current_action() {
+	return player_npc.get_current_action();
+}
+
+std::vector<sf::Sprite> player::get_action(std::string action_to_get){
+	return player_npc.get_action(action_to_get);
+}
+
+void player::set_position(sf::Vector2f new_position) {
+	player_npc.set_position(new_position);
+}
+
+
+void player::show_ability(std::string action_to_show) {
+	player_npc.show_ability(action_to_show);
 }
 
 player::~player()

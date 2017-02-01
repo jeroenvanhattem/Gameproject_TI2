@@ -10,28 +10,50 @@
 #include "leveleditor.hpp"
 
 
+void intro(sf::Music & m, std::string path) {
+	if (!m.openFromFile("../../bin/music/boot.ogg")) {
+		std::cout << "Error: Music not found or corrupted file.\n";
+	}
+	m.play();
+}
 
+void intro_stop(sf::Music & m) {
+	m.stop();
+}
 
 int main( int argc, char* argv[]) {
-	//sf::SoundBuffer buffer;
-	//sf::Sound sound;
+	sf::SoundBuffer buffer;
+	sf::Sound sound;
+	sf::Music m;
 
 	sql database;
 	
-	//music audio(database, buffer, sound);
-	//audio.play_music_from_map(database.get_level_ids().at(0));
+	music audio(database, buffer, sound);
+	music git_gud_audio(database, buffer, sound);
 	sf::RenderWindow window{ sf::VideoMode{ 1024, 512 }, "SFML window" };
-	window.display();
-	leveleditor editor({ 1024, 1024 }, { 32, 32 }, window, database);
+	
 	main_menu menu(window);
+	
+	
+	intro(m, "../../bin/music/boot.ogg");
+	menu.gid_gud_splash();
+	window.display();
+
+	window.clear();
+	menu.loading();
+	window.display();
+
+	audio.play_music_from_map(database.get_level_ids().at(0));
+	
+	
+	
+	
+	
+	
+
+	leveleditor editor({ 1024, 1024 }, { 32, 32 }, window, database);
 	game game(window, database, { 1024, 1024 });
-
-
 	
-
-	
-
-
 	while (window.isOpen()) {
 
 		window.clear();

@@ -44,8 +44,10 @@ void game::game_loop() {
 			
 			draw_background_store();
 			move_player();
-			draw_player();
 			draw_npc();
+
+			player_skill();
+			draw_player();
 
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
 				while (sf::Keyboard::isKeyPressed(sf::Keyboard::R));
@@ -78,7 +80,7 @@ void game::view_start_dialogs() {
 	for (auto indexer : database.get_quest_parts("1")) {
 		for (auto index : database.get_quest_text("1",indexer)) {
 			if (index == "NULL") { continue; }
-			dialogbox.text_input((index), 25, sf::Color::White);
+			dialogbox.text_input((index+"\n[Press Space to continue]"), 25, sf::Color::White);
 			window.setView(game_view);
 			dialogbox.draw(window);
 			window.display();
@@ -182,6 +184,39 @@ void game::load_npc() {
 	}
 }
 
+void game::player_skill() {
+	std::string temp = get_skill_from_button_keys();
+	
+	std::string current = arno.get_current_action();
+
+	if (temp != "") {
+		std::cout << temp << "\n";
+		if ((current.find("up")) != std::string::npos) {
+			temp += "_up";
+			arno.get_action(temp);
+			perform_player_action(temp);
+		}
+		else if ((current.find("left")) != std::string::npos) {
+			temp += "_left";
+			arno.get_action(temp);
+			perform_player_action(temp);
+		}
+		else if ((current.find("down")) != std::string::npos) {
+			temp += "_down";
+			arno.get_action(temp);
+			perform_player_action(temp);
+		}
+		else if ((current.find("right")) != std::string::npos) {
+			temp += "_right";
+			arno.get_action(temp);
+			perform_player_action(temp);
+		}
+	}
+	
+
+}
+
+
 void game::move_player() {
 	bool no_collision = true;
 	for (auto one_npc : npc_list) {
@@ -216,13 +251,26 @@ void game::draw_player() {
 }
 
 void game::perform_player_action(std::string action) {
-	arno.show_action(action);
+	std::vector<sf::Sprite> & temp = arno.get_action(action);
+	std::string action_save = arno.get_current_action();
+	arno.set_action(action);
+	for (auto & index : temp) {
+		window.clear();
+		
+		draw_background_store();
+		draw_npc();
+		arno.show_ability(action);
+
+		window.display();
+		sf::sleep(sf::milliseconds(50));
+	}
+	arno.set_action(action_save);
 }
 
 void game::perform_npc_action(std::string npc_name, std::string action) {
 	for (auto indexer : npc_list) {
 		if (indexer->get_name() == npc_name) {
-			indexer->show_action(action);
+			indexer->get_action(action);
 		}
 	}
 }

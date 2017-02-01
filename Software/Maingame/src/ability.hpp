@@ -107,8 +107,9 @@ public:
 	///
 	void add_sprite_to_action(sf::Sprite t);
 
+	std::vector<sf::Sprite> get_action();
 
-	void perfrom_action(sf::RenderWindow & window);
+	void next_step();
 
 
 	/// Decontructor

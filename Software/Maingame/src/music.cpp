@@ -1,6 +1,14 @@
 #include "music.hpp"
 
-music::music(sql & database, sf::SoundBuffer buffer, sf::Sound sound) : database(database), buffer(buffer), sound(sound) {}
+music::music(sql & database, sf::SoundBuffer buffer, sf::Sound sound) : 
+	database(database), 
+	buffer(buffer), 
+	sound(sound) 
+{}
+
+void music::set_volume(int i) {
+	sound.setVolume(i);
+}
 
 void music::play_music_from_map(std::string map_id) {
 	
@@ -17,4 +25,13 @@ void music::play_music_from_map(std::string map_id) {
 
 	sound.setBuffer(buffer);
 	sound.play();
+	for (int i = 0; i < 100; i++) {
+		set_volume(i);
+		sf::sleep(sf::milliseconds(30));
+	}
+	sound.setLoop(true);
+}
+
+void music::stop_music() {
+	sound.stop();
 }

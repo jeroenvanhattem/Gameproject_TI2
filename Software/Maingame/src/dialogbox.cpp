@@ -18,7 +18,7 @@ void dialogbox::draw(sf::RenderWindow & window) {
 }
 
 void dialogbox::text_input(std::string sentence, int char_size, sf::Color color) {
-	text.setString(sentence+"\n[Press space to continue.]");
+	text.setString(sentence);
 	text.setColor(color);
 	text.setCharacterSize(char_size);
 }

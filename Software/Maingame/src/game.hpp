@@ -28,6 +28,7 @@ private:
 	std::vector<sf::IntRect>collision_backgrounds;
 	std::map<std::string, std::vector<std::string>>background_values_map;
 	std::map<std::string, std::vector<std::string>>object_values_map;
+	std::map<std::string, std::vector<std::string>>begin_stories;
 
 	/*std::string tutorial_sentence = "Welcome, try to walk using the up, down, left or right keys.\n\nPress space to begin!";
 	std::string game_intro = "Ouch, where am i?\n\nIt feels like i slept for hours and i can't remember a thing.\n\n[press space to continue])";

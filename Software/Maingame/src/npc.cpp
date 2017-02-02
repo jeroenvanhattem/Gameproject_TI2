@@ -9,7 +9,6 @@ npc::npc(sf::RenderWindow & window, sql & database, std::string npc_id, bool is_
 	npc::is_player = is_player ? true : false;
 	if (is_player) { 
 		npc_values = database.get_player_value(npc_id); 
-		std::cout << "(" << std::stof(npc_values.at(4)) << ",\t" << std::stof(npc_values.at(5)) << ")\t"<< npc_values.at(1) << "\n";
 		position = { std::stof(npc_values.at(4)), std::stof(npc_values.at(5)) };
 		texture.loadFromFile(npc_values.at(1));
 	}
@@ -17,8 +16,6 @@ npc::npc(sf::RenderWindow & window, sql & database, std::string npc_id, bool is_
 	else { 
 		npc_values = database.get_npc_value(id); 
 		position = { std::stof(npc_values.at(3)), std::stof(npc_values.at(4)) };
-		std::cout << "(" << std::stof(npc_values.at(3)) << ",\t" << std::stof(npc_values.at(4)) << ")\t" << npc_values.at(1) << "\n";
-		
 		texture.loadFromFile(npc_values.at(1));
 	}
 	

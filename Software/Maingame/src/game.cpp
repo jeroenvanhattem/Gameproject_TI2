@@ -26,6 +26,17 @@ game::game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize) :
 			collision_backgrounds.push_back(database.get_collision_objects(indexer->second));
 		}
 		get_items_from_database(object_values_map);
+		std::vector<std::string>temp = { "1","3","4","5","6" };
+		for (auto i : temp) {
+			for (auto indexer : database.get_quest_parts(i)) {
+				for (auto index : database.get_quest_text(i, indexer)) {
+					if (index == "NULL") { continue; }
+					begin_stories[i].push_back(index);
+				}
+			}
+		}
+
+
 		load_npc();
 		draw_npc();
 		draw_player();
@@ -56,7 +67,7 @@ void game::game_loop() {
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
 				while (sf::Keyboard::isKeyPressed(sf::Keyboard::R));
 				arno.respawn();
-				std::cout << "(" << window.mapPixelToCoords(sf::Mouse::getPosition(window),game_view).x << " , " << window.mapPixelToCoords(sf::Mouse::getPosition(window), game_view).y << ")\n";
+				//std::cout << "(" << window.mapPixelToCoords(sf::Mouse::getPosition(window),game_view).x << " , " << window.mapPixelToCoords(sf::Mouse::getPosition(window), game_view).y << ")\n";
 			}
 		}
 		else {
@@ -102,25 +113,66 @@ bool game::mouse_intersects_down_edge(sf::View & view) {
 }
 
 void game::view_start_dialogs() {
-	for (auto indexer : database.get_quest_parts("1")) {
-		for (auto index : database.get_quest_text("1",indexer)) {
-			if (index == "NULL") { continue; }
-			dialogbox.text_input((index+"\n[Press Space to continue]"), 25, sf::Color::White);
+
+
+	for (auto i = begin_stories.begin(); i != begin_stories.end(); i++) {
+		for (auto x : i->second) {
+			dialogbox.text_input((x + "\n[Press Space to continue]"), 25, sf::Color::White);
 			window.setView(dialogbox_view);
 			dialogbox.draw(window);
 			window.display();
 
-			while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
-			while (sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
+			while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) { sf::sleep(sf::milliseconds(10)); }
+			while (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) { sf::sleep(sf::milliseconds(10)); }
 		}
-	}
 
+		window.clear();
+
+		draw_background_store();draw_npc();draw_player();
+		game_viewer();
+
+		window.display();
+		
+		if (i->first == "1") {
+			window.clear();
+			perform_player_action("cast_spell_down");
+			draw_background_store();draw_npc();draw_player();
+			game_viewer();
+
+			window.display();
+			int x = 0;
+			while (x < 50) {
+				if (get_move_direction_from_button_keys() != sf::Vector2f(0, 0)) {
+					window.clear();
+					draw_background_store();draw_npc();move_player();draw_player();game_viewer();
+					window.display();
+					x++;
+				}
+			}
+			
+		}
+		if (i->first == "3") {
+			while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) { sf::sleep(sf::milliseconds(10)); }
+		}
+		if (i->first == "4") {
+			while (!sf::Keyboard::isKeyPressed(sf::Keyboard::F)) { sf::sleep(sf::milliseconds(10)); }
+		}
+		if (i->first == "5") {
+			while (!sf::Mouse::isButtonPressed(sf::Mouse::Button::Right)) { sf::sleep(sf::milliseconds(10)); }
+		}
+		if (i->first == "6") {
+			dialogbox.text_input(("Well, Good luck now!\n[Press Space to continue]"), 25, sf::Color::White);
+			window.setView(dialogbox_view);
+			dialogbox.draw(window);
+			window.display();
+			while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) { sf::sleep(sf::milliseconds(10)); }
+			while (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) { sf::sleep(sf::milliseconds(10)); }
+		}
+
+		player_skill();
+
+	}
 	game_begin = true;
-	window.clear();
-	draw_player();
-	perform_player_action("cast_spell_down");
-	window.display();
-	sf::sleep(sf::milliseconds(1000));
 }
 
 void game::interact() {
@@ -157,7 +209,7 @@ void game::interact(std::string item_id) {
 					for (auto index : database.get_quest_text("2", indexer)) {
 						if (index == "NULL") { continue; }
 						dialogbox.text_input((index), 25, sf::Color::White);
-						window.setView(game_view);
+						window.setView(dialogbox_view);
 						dialogbox.draw(window);
 						window.display();
 
@@ -166,7 +218,6 @@ void game::interact(std::string item_id) {
 					}
 				}
 				database.add_item_to_inventory(item_id);
-				//database.add_data("inventory", "1, 1, 0");
 			}
 		}
 
@@ -215,7 +266,6 @@ void game::player_skill() {
 	std::string current = arno.get_current_action();
 
 	if (temp != "") {
-		std::cout << temp << "\n";
 		if ((current.find("up")) != std::string::npos) {
 			temp += "_up";
 			arno.get_action(temp);

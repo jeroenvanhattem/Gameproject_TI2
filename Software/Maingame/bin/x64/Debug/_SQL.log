@@ -1,3 +1,5 @@
-﻿  game.cpp
+﻿  npc.cpp
+d:\documents-(d)\hbo-ict\jaar2\blok b\git\game_development\software\maingame\src\npc.cpp(129): warning C4244: '/=': conversion from 'double' to 'int', possible loss of data
+d:\documents-(d)\hbo-ict\jaar2\blok b\git\game_development\software\maingame\src\npc.cpp(179): warning C4715: 'npc::get_action': not all control paths return a value
   _SQL.vcxproj -> D:\Documents-(D)\HBO-ICT\jaar2\Blok B\git\game_development\Software\Maingame\project\_SQL\..\..\bin\_SQL.exe
   _SQL.vcxproj -> ..\..\bin\_SQL.pdb (Full PDB)

@@ -3,17 +3,11 @@
 game::game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize) :
 	window(window),
 	database(database),
-<<<<<<< HEAD
 	inv(window, database),
 	levelsize(levelsize),
 	arno(window, database, "1"),
 	dialogbox("../../bin/pictures/dialog_box.png", "../../bin/pictures/game_font.ttf", {200, 800})
 	
-=======
-	levelsize(levelsize),
-	arno(window, database, "1"),
-	dialogbox("../../bin/pictures/dialog_box.png", "../../bin/pictures/game_font.ttf", {200, 800})
->>>>>>> level_editor_with_sql
 {
 	std::vector<std::string>level_ids = database.get_level_ids();
 	if (!level_ids.empty()) {
@@ -33,7 +27,6 @@ game::game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize) :
 			collision_backgrounds.push_back(database.get_collision_objects(indexer->second));
 		}
 		get_items_from_database(object_values_map);
-<<<<<<< HEAD
 		std::vector<std::string>temp = { "1","3","4","5","6" };
 		for (auto i : temp) {
 			for (auto indexer : database.get_quest_parts(i)) {
@@ -45,19 +38,12 @@ game::game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize) :
 		}
 
 
-=======
->>>>>>> level_editor_with_sql
 		load_npc();
 		draw_npc();
 		draw_player();
 	}
-<<<<<<< HEAD
 	game_view.setCenter(levelsize.x / 4 + 25, levelsize.y / 4 + 10);
 	game_view.setSize(levelsize.x / 2, levelsize.y / 2);
-=======
-	game_view.setCenter(levelsize.x/4 + 25, levelsize.y/4 + 10);
-	game_view.setSize(levelsize.x/2, levelsize.y/2);
->>>>>>> level_editor_with_sql
 	game_view.setViewport(sf::FloatRect(0, 0, 1, 1));
 	dialogbox_view.setCenter(levelsize.x / 4 + 25, levelsize.y / 4 + 10);
 	dialogbox_view.setSize(levelsize.x / 2, levelsize.y / 2);
@@ -73,25 +59,16 @@ void game::game_loop() {
 			
 			draw_background_store();
 			move_player();
-<<<<<<< HEAD
 			draw_npc();
 			player_skill();
 			draw_player();
 
-=======
-			draw_player();
-			draw_npc();
->>>>>>> level_editor_with_sql
 			game_viewer();
 
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
 				while (sf::Keyboard::isKeyPressed(sf::Keyboard::R));
 				arno.respawn();
-<<<<<<< HEAD
 				//std::cout << "(" << window.mapPixelToCoords(sf::Mouse::getPosition(window),game_view).x << " , " << window.mapPixelToCoords(sf::Mouse::getPosition(window), game_view).y << ")\n";
-=======
-				std::cout << "(" << window.mapPixelToCoords(sf::Mouse::getPosition(window),game_view).x << " , " << window.mapPixelToCoords(sf::Mouse::getPosition(window), game_view).y << ")\n";
->>>>>>> level_editor_with_sql
 			}
 		}
 		else {
@@ -100,7 +77,6 @@ void game::game_loop() {
 		
 		interact("1");
 
-<<<<<<< HEAD
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::I)) {
 			//while (sf::Keyboard::isKeyPressed(sf::Keyboard::I)){
 			inv.get_inventory();
@@ -111,9 +87,6 @@ void game::game_loop() {
 
 		window.display();
 		
-=======
-		window.display();	
->>>>>>> level_editor_with_sql
 		
 		sf::Event event;
 		if (window.pollEvent(event)) {
@@ -126,13 +99,8 @@ void game::game_loop() {
 }
 
 void game::game_viewer() {
-<<<<<<< HEAD
 	if (mouse_intersects_left_edge(game_view)) game_view.move({ -2 , 0 });
 	if (mouse_intersects_right_edge(game_view)) game_view.move({ 2, 0 });
-=======
-	if (mouse_intersects_left_edge(game_view)) game_view.move({-2 , 0 });
-	if (mouse_intersects_right_edge(game_view)) game_view.move({2, 0});
->>>>>>> level_editor_with_sql
 	if (mouse_intersects_upper_edge(game_view)) game_view.move({ 0, -4 });;
 	if (mouse_intersects_down_edge(game_view)) game_view.move({ 0, 4 });;
 }
@@ -141,13 +109,8 @@ bool game::mouse_intersects_left_edge(sf::View & view) {
 	return get_mouse_position(window).x <= 10 && (window.mapPixelToCoords(sf::Mouse::getPosition(window), view).x >= -5);
 }
 
-<<<<<<< HEAD
 bool game::mouse_intersects_right_edge(sf::View & view) {
 	return get_mouse_position(window).x >= (window.getSize().x - 10) && (window.mapPixelToCoords(sf::Mouse::getPosition(window), view).x <= (levelsize.x + 25));
-=======
-bool game::mouse_intersects_right_edge(sf::View & view) { 
-	return get_mouse_position(window).x >= (window.getSize().x-10) && (window.mapPixelToCoords(sf::Mouse::getPosition(window), view).x <= (levelsize.x + 25));
->>>>>>> level_editor_with_sql
 }
 
 bool game::mouse_intersects_upper_edge(sf::View & view) {
@@ -155,7 +118,6 @@ bool game::mouse_intersects_upper_edge(sf::View & view) {
 }
 
 bool game::mouse_intersects_down_edge(sf::View & view) {
-<<<<<<< HEAD
 	return get_mouse_position(window).y >= (window.getSize().y - 10) && (window.mapPixelToCoords(sf::Mouse::getPosition(window), view).y <= (levelsize.y + 25));
 }
 
@@ -165,21 +127,10 @@ void game::view_start_dialogs() {
 	for (auto i = begin_stories.begin(); i != begin_stories.end(); i++) {
 		for (auto x : i->second) {
 			dialogbox.text_input((x + "\n[Press Space to continue]"), 25, sf::Color::White);
-=======
-	return get_mouse_position(window).y >= (window.getSize().y-10) && (window.mapPixelToCoords(sf::Mouse::getPosition(window), view).y <= (levelsize.y+25));
-}
-
-void game::view_start_dialogs() {
-	for (auto indexer : database.get_quest_parts("1")) {
-		for (auto index : database.get_quest_text("1",indexer)) {
-			if (index == "NULL") { continue; }
-			dialogbox.text_input((index), 25, sf::Color::White);
->>>>>>> level_editor_with_sql
 			window.setView(dialogbox_view);
 			dialogbox.draw(window);
 			window.display();
 
-<<<<<<< HEAD
 			while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) { sf::sleep(sf::milliseconds(10)); }
 			while (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) { sf::sleep(sf::milliseconds(10)); }
 		}
@@ -231,19 +182,6 @@ void game::view_start_dialogs() {
 
 	}
 	game_begin = true;
-=======
-			while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
-			while (sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
-		}
-	}
-
-	game_begin = true;
-	window.clear();
-	draw_player();
-	perform_player_action("cast_spell_down");
-	window.display();
-	sf::sleep(sf::milliseconds(1000));
->>>>>>> level_editor_with_sql
 }
 
 void game::interact() {
@@ -280,11 +218,7 @@ void game::interact(std::string item_id) {
 					for (auto index : database.get_quest_text("2", indexer)) {
 						if (index == "NULL") { continue; }
 						dialogbox.text_input((index), 25, sf::Color::White);
-<<<<<<< HEAD
 						window.setView(dialogbox_view);
-=======
-						window.setView(game_view);
->>>>>>> level_editor_with_sql
 						dialogbox.draw(window);
 						window.display();
 
@@ -293,10 +227,6 @@ void game::interact(std::string item_id) {
 					}
 				}
 				database.add_item_to_inventory(item_id);
-<<<<<<< HEAD
-=======
-				//database.add_data("inventory", "1, 1, 0");
->>>>>>> level_editor_with_sql
 			}
 		}
 
@@ -339,7 +269,6 @@ void game::load_npc() {
 	}
 }
 
-<<<<<<< HEAD
 void game::player_skill() {
 	std::string temp = get_skill_from_button_keys();
 	
@@ -372,8 +301,6 @@ void game::player_skill() {
 }
 
 
-=======
->>>>>>> level_editor_with_sql
 void game::move_player() {
 	bool no_collision = true;
 	for (auto one_npc : npc_list) {
@@ -408,7 +335,6 @@ void game::draw_player() {
 }
 
 void game::perform_player_action(std::string action) {
-<<<<<<< HEAD
 	std::vector<sf::Sprite> & temp = arno.get_action(action);
 	std::string action_save = arno.get_current_action();
 	arno.set_action(action);
@@ -423,19 +349,12 @@ void game::perform_player_action(std::string action) {
 		sf::sleep(sf::milliseconds(50));
 	}
 	arno.set_action(action_save);
-=======
-	arno.show_action(action);
->>>>>>> level_editor_with_sql
 }
 
 void game::perform_npc_action(std::string npc_name, std::string action) {
 	for (auto indexer : npc_list) {
 		if (indexer->get_name() == npc_name) {
-<<<<<<< HEAD
 			indexer->get_action(action);
-=======
-			indexer->show_action(action);
->>>>>>> level_editor_with_sql
 		}
 	}
 }

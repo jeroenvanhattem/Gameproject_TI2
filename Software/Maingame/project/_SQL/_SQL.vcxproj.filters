@@ -122,14 +122,11 @@
     <ClCompile Include="..\..\src\objects.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
     <ClCompile Include="..\..\src\inventory.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\item.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClCompile>
-=======
->>>>>>> level_editor_with_sql
   </ItemGroup>
 </Project>

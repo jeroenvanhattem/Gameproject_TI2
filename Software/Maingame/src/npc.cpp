@@ -9,10 +9,6 @@ npc::npc(sf::RenderWindow & window, sql & database, std::string npc_id, bool is_
 	npc::is_player = is_player ? true : false;
 	if (is_player) { 
 		npc_values = database.get_player_value(npc_id); 
-<<<<<<< HEAD
-=======
-		std::cout << "(" << std::stof(npc_values.at(4)) << ",\t" << std::stof(npc_values.at(5)) << ")\t"<< npc_values.at(1) << "\n";
->>>>>>> level_editor_with_sql
 		position = { std::stof(npc_values.at(4)), std::stof(npc_values.at(5)) };
 		texture.loadFromFile(npc_values.at(1));
 	}
@@ -20,11 +16,6 @@ npc::npc(sf::RenderWindow & window, sql & database, std::string npc_id, bool is_
 	else { 
 		npc_values = database.get_npc_value(id); 
 		position = { std::stof(npc_values.at(3)), std::stof(npc_values.at(4)) };
-<<<<<<< HEAD
-=======
-		std::cout << "(" << std::stof(npc_values.at(3)) << ",\t" << std::stof(npc_values.at(4)) << ")\t" << npc_values.at(1) << "\n";
-		
->>>>>>> level_editor_with_sql
 		texture.loadFromFile(npc_values.at(1));
 	}
 	
@@ -63,11 +54,7 @@ void npc::load_all_actions(){
 
 void npc::move(sf::Vector2f delta) {
 	position += delta;
-<<<<<<< HEAD
 	for (auto & action : npc_actions) {
-=======
-	for (auto action : npc_actions) {
->>>>>>> level_editor_with_sql
 		if (action->get_name() == current_action) {
 			action->move(position);
 		}
@@ -99,7 +86,6 @@ void npc::set_action( std::string s ) {
 	}
 }
 
-<<<<<<< HEAD
 void npc::show_ability(std::string action_to_show) {
 	int i = 0;
 	for (auto & action : npc_actions) {
@@ -113,8 +99,6 @@ void npc::show_ability(std::string action_to_show) {
 	}
 }
 
-=======
->>>>>>> level_editor_with_sql
 const void npc::draw() {
 	for (auto action : npc_actions) {
 		if (current_action == action->get_name()) {
@@ -182,7 +166,6 @@ void npc::set_position(sf::Vector2f given_position) {
 	}
 }
 
-<<<<<<< HEAD
 std::string npc::get_current_action() {
 	return current_action;
 }
@@ -191,12 +174,6 @@ std::vector<sf::Sprite> npc::get_action(std::string action_to_get) {
 	for (auto action : npc_actions) {
 		if (action->get_name() == action_to_get) {
 			return action->get_action();
-=======
-void npc::show_action(std::string action_to_perform) {
-	for (auto action : npc_actions) {
-		if (action->get_name() == action_to_perform) {
-			action->perfrom_action(window);
->>>>>>> level_editor_with_sql
 		}
 	}
 }

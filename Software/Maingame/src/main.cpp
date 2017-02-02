@@ -9,7 +9,6 @@
 #include "game.hpp"
 #include "leveleditor.hpp"
 
-<<<<<<< HEAD
 
 void intro(sf::Music & m, std::string path) {
 	if (!m.openFromFile("../../bin/music/boot.ogg")) {
@@ -26,16 +25,10 @@ int main( int argc, char* argv[]) {
 	sf::SoundBuffer buffer;
 	sf::Sound sound;
 	sf::Music m;
-=======
-int main( int argc, char* argv[]) {
-	sf::SoundBuffer buffer;
-	sf::Sound sound;
->>>>>>> level_editor_with_sql
 
 	sql database;
 	
 	music audio(database, buffer, sound);
-<<<<<<< HEAD
 	music git_gud_audio(database, buffer, sound);
 	sf::RenderWindow window{ sf::VideoMode{ 1024, 512 }, "SFML window" };
 	
@@ -56,18 +49,6 @@ int main( int argc, char* argv[]) {
 	leveleditor editor({ 2048, 2048 }, { 32, 32 }, window, database);
 	game game(window, database, { 2048, 2048 });
 	
-=======
-
-	if (!database.get_level_ids().empty()) {
-		audio.play_music_from_map(database.get_level_ids().at(0));
-	}
-	sf::RenderWindow window{ sf::VideoMode{ 1080, 540 }, "SFML window" };
-	window.display();
-	leveleditor editor({ 2048, 2048 }, { 32, 32 }, window, database);
-	main_menu menu(window);
-	game game(window, database, { 2048, 2048 });
-
->>>>>>> level_editor_with_sql
 	while (window.isOpen()) {
 
 		window.clear();
@@ -82,10 +63,7 @@ int main( int argc, char* argv[]) {
 			game.game_loop();
 		}
 
-<<<<<<< HEAD
 
-=======
->>>>>>> level_editor_with_sql
 		window.display();
 
 		sf::Event event;

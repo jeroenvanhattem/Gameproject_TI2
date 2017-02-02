@@ -16,11 +16,7 @@ void dialogbox::draw(sf::RenderWindow & window) {
 	box.draw(window);
 	window.draw(text);
 }
-<<<<<<< HEAD
 
-=======
-//+"\n[Press space to continue.]"
->>>>>>> level_editor_with_sql
 void dialogbox::text_input(std::string sentence, int char_size, sf::Color color) {
 	last_text = sentence;
 	text.setString(sentence);

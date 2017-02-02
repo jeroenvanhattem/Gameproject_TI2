@@ -5,12 +5,8 @@ main_menu::main_menu(sf::RenderWindow & window) :
 	background("../../bin/pictures/main_background.jpg", { 0,0 }, { 0,0 }),
 	level_editor_button("../../bin/pictures/level_editor_button.png", { 2150,630 }, { 0,0 }),
 	play_game_button("../../bin/pictures/play_game_button.png", { 1950,650 }, { 0,0 }),
-<<<<<<< HEAD
 	load_screen_pic("../../bin/pictures/loading.png", { 0, 0 }, { 0,0 }),
 	gid_gud("../../bin/pictures/gid_gud_splash_screen.png", { 0, 0 }, { 0,0 })
-=======
-	load_screen_pic("../../bin/pictures/load_screen.jpg", { 0, 0 }, { 0,0 })
->>>>>>> level_editor_with_sql
 {
 	view1.setCenter({1280,800});
 	view1.setSize({2560,1600});
@@ -60,7 +56,6 @@ void main_menu::load_screen() {
 	view1.setCenter({ 1280,800 });
 	view1.setSize({ 2560,1600 });
 	view1.rotate(215);
-<<<<<<< HEAD
 }
 void main_menu::gid_gud_splash() {
 	view2.move({0,-200});
@@ -95,6 +90,4 @@ void main_menu::loading() {
 		window.display();
 		sf::sleep(sf::milliseconds(20));
 	}
-=======
->>>>>>> level_editor_with_sql
 }

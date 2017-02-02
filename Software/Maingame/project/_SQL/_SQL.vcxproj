@@ -45,8 +45,11 @@
     <ClCompile Include="..\..\src\dialogbox.cpp" />
     <ClCompile Include="..\..\src\file_reading_operators.cpp" />
     <ClCompile Include="..\..\src\game.cpp" />
+<<<<<<< HEAD:Software/Maingame/project/_SQL/_SQL.vcxproj
     <ClCompile Include="..\..\src\inventory.cpp" />
     <ClCompile Include="..\..\src\item.cpp" />
+=======
+>>>>>>> level_editor_with_sql:Software/Maingame/project/_SQL/_SQL.vcxproj
     <ClCompile Include="..\..\src\leveleditor.cpp" />
     <ClCompile Include="..\..\src\main.cpp" />
     <ClCompile Include="..\..\src\main_menu.cpp" />

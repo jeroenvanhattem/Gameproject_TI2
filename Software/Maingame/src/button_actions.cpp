@@ -13,15 +13,19 @@ sf::Vector2f get_move_direction_from_button_keys() {
 	for (const auto& action : actions) {
 		if (sf::Keyboard::isKeyPressed(action.Key)) {
 			move_direction = sf::Vector2f{ action.x, action.y };
+<<<<<<< HEAD
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift)) {
 				move_direction = {move_direction.x*2, move_direction.y * 2 };
 			}
+=======
+>>>>>>> level_editor_with_sql
 			
 		}
 	}
 	return move_direction;
 }
 
+<<<<<<< HEAD
 std::string get_skill_from_button_keys() {
 	std::string temp = "";
 	for (const auto& skill : skills) {
@@ -31,12 +35,18 @@ std::string get_skill_from_button_keys() {
 	}
 	return temp;
 }
+=======
+>>>>>>> level_editor_with_sql
 
 std::string get_action_name_from_button_keys() {
 	std::string name = "";
 	for (const auto& action : actions) {
 		if (sf::Keyboard::isKeyPressed(action.Key)) {
 			name = action.name;
+<<<<<<< HEAD
+=======
+
+>>>>>>> level_editor_with_sql
 		}
 	}
 	return name;

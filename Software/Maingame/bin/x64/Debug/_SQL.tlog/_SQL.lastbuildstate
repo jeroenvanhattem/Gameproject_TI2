@@ -1,2 +1,6 @@
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
+<<<<<<< HEAD:Software/Maingame/bin/x64/Debug/_SQL.tlog/_SQL.lastbuildstate
 Debug|x64|D:\Documents-(D)\HBO-ICT\jaar2\Blok B\git\game_development\Software\Maingame\project\|
+=======
+Debug|x64|C:\Users\rikru\Documents\ProjectBlokB\Gameproject_TI2_Rik_goede\Software\Maingame\project\|
+>>>>>>> level_editor_with_sql:Software/Maingame/bin/x64/Debug/_SQL.tlog/_SQL.lastbuildstate

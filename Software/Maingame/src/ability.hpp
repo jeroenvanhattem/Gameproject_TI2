@@ -107,9 +107,14 @@ public:
 	///
 	void add_sprite_to_action(sf::Sprite t);
 
+<<<<<<< HEAD
 	std::vector<sf::Sprite> get_action();
 
 	void next_step();
+=======
+
+	void perfrom_action(sf::RenderWindow & window);
+>>>>>>> level_editor_with_sql
 
 
 	/// Decontructor

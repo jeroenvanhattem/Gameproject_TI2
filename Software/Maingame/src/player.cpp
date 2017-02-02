@@ -35,7 +35,10 @@ void player::set_last_position() {
 }
 
 void player::respawn() {
+<<<<<<< HEAD
 	position = spawn;
+=======
+>>>>>>> level_editor_with_sql
 	player_npc.set_position(spawn);
 }
 
@@ -52,6 +55,7 @@ sf::Vector2f player::get_position() {
 	return player_npc.get_position();
 }
 
+<<<<<<< HEAD
 std::string player::get_current_action() {
 	return player_npc.get_current_action();
 }
@@ -67,6 +71,10 @@ void player::set_position(sf::Vector2f new_position) {
 
 void player::show_ability(std::string action_to_show) {
 	player_npc.show_ability(action_to_show);
+=======
+void player::show_action(std::string action_to_perform) {
+	player_npc.show_action(action_to_perform);
+>>>>>>> level_editor_with_sql
 }
 
 player::~player()

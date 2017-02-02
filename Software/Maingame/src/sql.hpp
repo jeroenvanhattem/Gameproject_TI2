@@ -211,6 +211,7 @@ public:
 	///
 	static std::vector<std::string> get_result();
 	
+<<<<<<< HEAD
 
 	/// std::vector<std::string> get_name_from_id_inventory(std::string item_id) : Get the name from an item
 	//
@@ -288,6 +289,8 @@ public:
 	///
 	std::vector<std::string> get_inventory();
 
+=======
+>>>>>>> level_editor_with_sql
 	
 	/// Save result to static value.
 	//

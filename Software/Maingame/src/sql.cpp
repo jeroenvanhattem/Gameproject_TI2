@@ -119,6 +119,7 @@ std::vector<std::string> sql::get_result() {
 }
 
 
+<<<<<<< HEAD
 std::vector<std::string> sql::get_inventory() {
 	std::ostringstream query;
 	query << "SELECT item_id "
@@ -159,6 +160,8 @@ std::vector<std::string> sql::get_in_game_name_from_id_inventory(std::string ite
 	return execute_query_with_return(query_string.c_str());
 }
 
+=======
+>>>>>>> level_editor_with_sql
 
 std::vector<std::string> sql::get_player_value(int save, std::string variable_name) {
 	std::ostringstream query;
@@ -449,7 +452,10 @@ std::map<std::string, std::vector<std::string>> sql::get_level_object_value(std:
 		if (object_values.empty() == false) {
 			object_values_map[id] = object_values;
 		}
+<<<<<<< HEAD
 
+=======
+>>>>>>> level_editor_with_sql
 	}
 
 	return object_values_map;
@@ -495,7 +501,11 @@ std::map<std::string, std::vector<std::string>> sql::get_level_background_value(
 			<< " AND " << "background.id" << " == " << id << ";";
 
 		temp_query_string = ostring_query.str();
+<<<<<<< HEAD
 		object_values_map[id] = execute_query_with_return(temp_query_string.c_str());
+=======
+		background_values = execute_query_with_return(temp_query_string.c_str());
+>>>>>>> level_editor_with_sql
 		if (background_values.empty() == false) {
 			object_values_map[id] = background_values;
 		}

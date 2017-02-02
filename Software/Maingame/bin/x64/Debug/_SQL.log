@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 ﻿  _SQL.vcxproj -> D:\Documents-(D)\HBO-ICT\jaar2\Blok B\git\game_development\Software\Maingame\project\_SQL\..\..\bin\_SQL.exe
+=======
+﻿  game.cpp
+  _SQL.vcxproj -> C:\Users\rikru\Documents\ProjectBlokB\Gameproject_TI2_Rik_goede\Software\Maingame\project\_SQL\..\..\bin\_SQL.exe
+>>>>>>> level_editor_with_sql
   _SQL.vcxproj -> ..\..\bin\_SQL.pdb (Full PDB)

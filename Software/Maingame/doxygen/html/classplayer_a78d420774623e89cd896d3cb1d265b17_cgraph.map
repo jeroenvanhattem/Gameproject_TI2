@@ -1,0 +1,7 @@
+<map id="player::get_position" name="player::get_position">
+<area shape="rect" id="node2" href="$classnpc.html#af58658444d25eaa77aec883dd9d5592d" title="Get position of NPC. " alt="" coords="188,81,309,108"/>
+<area shape="rect" id="node3" href="$classnpc.html#a78bc2f0af05b44a6a8e71fa3853c0920" title="Get NPC action. " alt="" coords="381,5,492,32"/>
+<area shape="rect" id="node4" href="$classnpc.html#a61315bb51941237b6b2c0fb578f3e5ee" title="Get current action of NPC. " alt="" coords="357,56,516,83"/>
+<area shape="rect" id="node5" href="$classnpc.html#a2a5bbed340b918265dabc2dcfb5d07b6" title="Perform an action. " alt="" coords="375,107,498,133"/>
+<area shape="rect" id="node6" href="$classnpc.html#a77e7e3430ee5ff383f7a16b4b3e07fa1" title="Decontructor. " alt="" coords="397,157,477,184"/>
+</map>

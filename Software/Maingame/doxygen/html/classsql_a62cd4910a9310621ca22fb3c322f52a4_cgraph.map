@@ -1,0 +1,6 @@
+<map id="sql::get_in_game_name_from_id_inventory" name="sql::get_in_game_name_from_id_inventory">
+<area shape="rect" id="node2" href="$classsql.html#a53dd323de395c13534e63a3482190777" title="Execute a query. " alt="" coords="213,23,345,65"/>
+<area shape="rect" id="node3" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="398,5,493,32"/>
+<area shape="rect" id="node5" href="$classsql.html#ad4d8bdf41eede1ae1363d0be8a2f60a9" title="Get saved result. " alt="" coords="393,56,497,83"/>
+<area shape="rect" id="node4" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="545,5,649,32"/>
+</map>

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="item_8hpp" kind="file" language="C++">
+    <compoundname>item.hpp</compoundname>
+    <includes refid="sql_8hpp" local="yes">sql.hpp</includes>
+    <includedby refid="inventory_8hpp" local="yes">D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/inventory.hpp</includedby>
+    <includedby refid="item_8cpp" local="yes">D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/item.cpp</includedby>
+    <incdepgraph>
+      <node id="134">
+        <label>D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/item.hpp</label>
+        <link refid="item_8hpp"/>
+        <childnode refid="135" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>string</label>
+      </node>
+      <node id="136">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="138">
+        <label>fstream</label>
+      </node>
+      <node id="142">
+        <label>SFML\Graphics.hpp</label>
+      </node>
+      <node id="141">
+        <label>vector</label>
+      </node>
+      <node id="135">
+        <label>sql.hpp</label>
+        <link refid="sql_8hpp"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>sstream</label>
+      </node>
+      <node id="137">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="143">
+        <label>D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/item.hpp</label>
+        <link refid="item_8hpp"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp</label>
+        <link refid="game_8hpp"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/inventory.cpp</label>
+        <link refid="inventory_8cpp"/>
+      </node>
+      <node id="149">
+        <label>D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/item.cpp</label>
+        <link refid="item_8cpp"/>
+      </node>
+      <node id="146">
+        <label>D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp</label>
+        <link refid="game_8cpp"/>
+      </node>
+      <node id="144">
+        <label>D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/inventory.hpp</label>
+        <link refid="inventory_8hpp"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classitem" prot="public">item</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sql_8hpp" kindref="compound">sql.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classitem" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classitem" kindref="compound">item</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>id;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsql" kindref="compound">sql</ref><sp/>&amp;<sp/>database;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::Sprite<sp/>sprite;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::Texture<sp/>texture;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classitem_1a235883f911ed8fad4679655a57d23d96" kindref="member">item</ref>(std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="classsql" kindref="compound">sql</ref><sp/>&amp;<sp/>database);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classitem_1ab7c2fa653e0f9a565283b60ca325f2a7" kindref="member">get_name</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classitem_1aa5a9140482a7d88d6a3eea342cb0c082" kindref="member">get_in_game_name</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>sf::Sprite<sp/><ref refid="classitem_1aafc61a4b7e2bd10300a6767e6dd7281e" kindref="member">get_sprite</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>counter);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/item.hpp"/>
+  </compounddef>
+</doxygen>

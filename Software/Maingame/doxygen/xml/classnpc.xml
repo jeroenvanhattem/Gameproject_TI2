@@ -1,0 +1,560 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classnpc" kind="class" language="C++" prot="public">
+    <compoundname>npc</compoundname>
+    <includes refid="npc_8hpp" local="no">npc.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnpc_1afc25127e7611064526758d66e78e4e29" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classability" kindref="compound">ability</ref> * &gt;</type>
+        <definition>std::vector&lt;ability*&gt; npc::npc_actions</definition>
+        <argsstring></argsstring>
+        <name>npc_actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="10" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnpc_1ae50304639c2715b89dc1902c59830acf" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; npc::npc_values</definition>
+        <argsstring></argsstring>
+        <name>npc_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="11" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnpc_1af2544175f28e31abaa3587d7807aa60c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string npc::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="12" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnpc_1af27f0e211e77578a73b34c7ea094d82b" prot="private" static="no" mutable="no">
+        <type>sf::Vector2f</type>
+        <definition>sf::Vector2f npc::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="13" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnpc_1a092e6acb7f951c0805d6c4c948ccd37d" prot="private" static="no" mutable="no">
+        <type><ref refid="classsql" kindref="compound">sql</ref> &amp;</type>
+        <definition>sql&amp; npc::database</definition>
+        <argsstring></argsstring>
+        <name>database</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="15" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnpc_1a662c915f75653537fcbffcef96087a48" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int npc::sprite_size</definition>
+        <argsstring></argsstring>
+        <name>sprite_size</name>
+        <initializer>= 64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="17" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnpc_1ade5118e0c4c299eea10fda2d8a6611f6" prot="private" static="no" mutable="no">
+        <type>sf::Texture</type>
+        <definition>sf::Texture npc::texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="18" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnpc_1a7fde3d3012e4dff0d02bf882fa466fc6" prot="private" static="no" mutable="no">
+        <type>sf::RenderWindow &amp;</type>
+        <definition>sf::RenderWindow&amp; npc::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="19" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnpc_1a3ca0e4e222e0e7fee4d3abd9a3c7c5c4" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string npc::current_action</definition>
+        <argsstring></argsstring>
+        <name>current_action</name>
+        <initializer>= &quot;walk_down&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="20" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnpc_1a3815e143f7d384cb9bd0a1ab45c729a5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool npc::is_player</definition>
+        <argsstring></argsstring>
+        <name>is_player</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="22" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnpc_1a357fc1c053fb6fe0e09c03d72f63191a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void npc::load_all_actions</definition>
+        <argsstring>()</argsstring>
+        <name>load_all_actions</name>
+        <briefdescription>
+<para>Load all abilities. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will load all abilities of an NPC sprite sheet.<linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="29" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="26" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1a3f32867195150317774af508034f0a41" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void npc::load_action</definition>
+        <argsstring>(std::string action_name, int steps_of_action, int level)</argsstring>
+        <name>load_action</name>
+        <param>
+          <type>std::string</type>
+          <declname>action_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>steps_of_action</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Load a npc ability. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will load one ability of an NPC sprite sheet.<linebreak/>
+This ability has a certain ammount of steps and stands on a certain level in the sprite sheet.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>action_name : std::string<linebreak/>
+-&gt; name of the ability to load</para><para>steps_of_action : int <linebreak/>
+-&gt; ammount of steps of the ability. <linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="45" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="65" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnpc_1ac99eae829579a6f49387bd44129ec33a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>npc::npc</definition>
+        <argsstring>(sf::RenderWindow &amp;window, sql &amp;database, std::string npc_id, bool is_player=false)</argsstring>
+        <name>npc</name>
+        <param>
+          <type>sf::RenderWindow &amp;</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="classsql" kindref="compound">sql</ref> &amp;</type>
+          <declname>database</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>npc_id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_player</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will crate an object of class npc.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>window : sf::RenderWindow <linebreak/>
+-&gt; window where content will be drawn on.</para><para>database : sql <linebreak/>
+-&gt; referrence to the database class.<linebreak/>
+ npc_id : sf::string <linebreak/>
+-&gt; id of the npc that has to be drawn.</para><para>is_player : bool <linebreak/>
+-&gt; boolean to select if this npc is the player or not.</para><para><heading level="2">Example: </heading>
+</para><para>ability a(window, database, &quot;1&quot;)<linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="73" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="3" bodyend="24"/>
+        <references refid="classsql_1ae560c01f2e8e57cee454ecd8e38616eb" compoundref="sql_8cpp" startline="155" endline="163">sql::get_player_value</references>
+        <references refid="classsql_1af04403a0cab4ee13a6f70b396e5b3a20" compoundref="sql_8cpp" startline="183" endline="223">sql::get_npc_value</references>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1ae8d1bfcd87382237192ebb5b6def33a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void npc::move</definition>
+        <argsstring>(sf::Vector2f delta)</argsstring>
+        <name>move</name>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Move the npc. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method moves the position an npc.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>delta : sf::Vector2f<linebreak/>
+-&gt; new position of the npc.</para><para><heading level="2">Example: </heading>
+</para><para>move({2,0})<linebreak/>
+npc has moved 2 pixels to the right<linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="91" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="55" bodyend="62"/>
+        <references refid="button__actions_8hpp_1ad0da36b2558901e21e7a30f6c227a45e" compoundref="button__actions_8hpp" startline="8">x</references>
+        <referencedby refid="classplayer_1a0f6538451ec51b4407cca22294451443" compoundref="player_8cpp" startline="18" endline="22">player::move</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1aa86a880284a09f9fc3358a61a74be1b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void npc::set_action</definition>
+        <argsstring>(std::string s=&quot;0&quot;)</argsstring>
+        <name>set_action</name>
+        <param>
+          <type>std::string</type>
+          <declname>s</declname>
+          <defval>&quot;0&quot;</defval>
+        </param>
+        <briefdescription>
+<para>set action of npc </para>        </briefdescription>
+        <detaileddescription>
+<para>This method sets the current action of the npc.<linebreak/>
+The standard value is walk down.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>s : std::string<linebreak/>
+-&gt; name of the action that has to be set on active.</para><para><heading level="2">Example: </heading>
+</para><para>set_action(&quot;walk_up&quot;)<linebreak/>
+npc is now set for walking up.<linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="110" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="81" bodyend="87"/>
+        <referencedby refid="classplayer_1aa673c84d7b56badc58d7c467325cbf88" compoundref="player_8cpp" startline="24" endline="26">player::set_action</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1a670b40abcf52e0615883622324ac3bc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string npc::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>Get the name of npc. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the name of an npc.<linebreak/>
+</para><para><heading level="2">Return: </heading>
+</para><para>name : std::String<linebreak/>
+-&gt; name of the ability</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classnpc_1a670b40abcf52e0615883622324ac3bc9" kindref="member">get_name()</ref><linebreak/>
+&quot;monk&quot;<linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="128" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1a1adf71c32d8948c9718568d1a2a6d9a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const void</type>
+        <definition>const void npc::draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <briefdescription>
+<para>void <ref refid="classnpc_1a1adf71c32d8948c9718568d1a2a6d9a7" kindref="member">draw()</ref> : Print NPC </para>        </briefdescription>
+        <detaileddescription>
+<para>This method draws the NPC on the screen. <linebreak/>
+ <heading level="2">Example: </heading>
+</para><para><ref refid="classnpc_1a1adf71c32d8948c9718568d1a2a6d9a7" kindref="member">draw()</ref><linebreak/>
+-&gt; Draw the NPC on the screen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="139" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="102" bodyend="109"/>
+        <referencedby refid="classplayer_1a1a369fcd087aa48f9241fb20c8df52f3" compoundref="player_8cpp" startline="5" endline="16">player::player</referencedby>
+        <referencedby refid="classplayer_1a67423ce10d4abb42775868f978d04247" compoundref="player_8cpp" startline="28" endline="30">player::draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1aa6a71f7355403e4a108f3c4e8b6a3931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sf::IntRect</type>
+        <definition>sf::IntRect npc::get_bounds</definition>
+        <argsstring>()</argsstring>
+        <name>get_bounds</name>
+        <briefdescription>
+<para>Get a bounds from a NPC. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns a sf::IntRect object which is created from the position and size of the NPC object.<linebreak/>
+ <heading level="2">Return: </heading>
+</para><para>intrect_object : sf::IntRect <linebreak/>
+-&gt; a sf::IntRect object using the position and size of the NPC object</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classnpc_1aa6a71f7355403e4a108f3c4e8b6a3931" kindref="member">get_bounds()</ref> <linebreak/>
+return: sf::IntRect(100, 100, 30, 30) . </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="155" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="117" bodyend="119"/>
+        <referencedby refid="classnpc_1a64342e70f2e8c3afde210ffa77e1e54e" compoundref="npc_8cpp" startline="122" endline="137">get_collision</referencedby>
+        <referencedby refid="classnpc_1a2714b410c2e644040f69f1cf50d3bc50" compoundref="npc_8cpp" startline="139" endline="156">get_interaction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1a2714b410c2e644040f69f1cf50d3bc50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int npc::get_interaction</definition>
+        <argsstring>(npc &amp;other_npc)</argsstring>
+        <name>get_interaction</name>
+        <param>
+          <type><ref refid="classnpc" kindref="compound">npc</ref> &amp;</type>
+          <declname>other_npc</declname>
+        </param>
+        <briefdescription>
+<para>Get interaction two NPC&apos;s. </para>        </briefdescription>
+        <detaileddescription>
+<para>Call the &apos;get_interaction&apos; function to check for a collision with another NPC.</para><para><heading level="2">Parameters: </heading>
+</para><para>other_npc : NPC &amp; <linebreak/>
+-&gt; The NPC that will be check for a collision.</para><para><heading level="2">Return: </heading>
+</para><para>0 / 1 : integer <linebreak/>
+-&gt; Return a 1 if there&apos;s a collision detected, return a 0 if no collision is detected.</para><para><heading level="2">Example: </heading>
+</para><para>get_interaction(*other_npc) <linebreak/>
+-&gt; return: {&quot;1&quot;}. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="176" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="139" bodyend="156"/>
+        <references refid="classnpc_1aa6a71f7355403e4a108f3c4e8b6a3931" compoundref="npc_8cpp" startline="117" endline="119">get_bounds</references>
+        <referencedby refid="classplayer_1ad93507550867df5598b86b73de01ec12" compoundref="player_8cpp" startline="42" endline="44">player::get_interaction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1a64342e70f2e8c3afde210ffa77e1e54e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int npc::get_collision</definition>
+        <argsstring>(sf::IntRect colliding_object)</argsstring>
+        <name>get_collision</name>
+        <param>
+          <type>sf::IntRect</type>
+          <declname>colliding_object</declname>
+        </param>
+        <briefdescription>
+<para>Get interaction NPC and object. </para>        </briefdescription>
+        <detaileddescription>
+<para>Call the &apos;get_collision&apos; function to check for a collision with a sf::IntRect object.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>colliding_object : sf::IntRect <linebreak/>
+-&gt; The sf::IntRect that will be check for a collision.<linebreak/>
+ <heading level="2">Return: </heading>
+</para><para>0 / 1 : integer <linebreak/>
+-&gt; Return a 1 if there&apos;s a collision detected, return a 0 if no collision is detected.<linebreak/>
+ <heading level="2">Example: </heading>
+</para><para>npc.get_collision(recangle) <linebreak/>
+return: {&quot;1&quot;}. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="199" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="122" bodyend="137"/>
+        <references refid="classnpc_1aa6a71f7355403e4a108f3c4e8b6a3931" compoundref="npc_8cpp" startline="117" endline="119">get_bounds</references>
+        <referencedby refid="classplayer_1aa405bc495c5a6bced7740352abd4249f" compoundref="player_8cpp" startline="46" endline="48">player::get_collision</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1a52d22585e441af4d8dde1d1a2658b2dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void npc::set_position</definition>
+        <argsstring>(sf::Vector2f given_position)</argsstring>
+        <name>set_position</name>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>given_position</declname>
+        </param>
+        <briefdescription>
+<para>Get position of NPC. </para>        </briefdescription>
+        <detaileddescription>
+<para>When this function is called, it will return the position of the NPC.<linebreak/>
+ <heading level="2">Return: </heading>
+</para><para>position : sf::Vector2f <linebreak/>
+-&gt; The position of the NPC</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classnpc_1af58658444d25eaa77aec883dd9d5592d" kindref="member">get_position()</ref> <linebreak/>
+-&gt; return sf::Vector(200,200) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="217" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="158" bodyend="167"/>
+        <referencedby refid="classplayer_1a3bf8cc80800146684a3dbf28c0c4a83c" compoundref="player_8cpp" startline="32" endline="35">player::set_last_position</referencedby>
+        <referencedby refid="classplayer_1a519784459639f6b785bcfeaa05b6f604" compoundref="player_8cpp" startline="37" endline="40">player::respawn</referencedby>
+        <referencedby refid="classplayer_1a17ee5122ab15251afb54b4cdd42060e6" compoundref="player_8cpp" startline="63" endline="65">player::set_position</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1af58658444d25eaa77aec883dd9d5592d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>sf::Vector2f</type>
+        <definition>sf::Vector2f npc::get_position</definition>
+        <argsstring>()</argsstring>
+        <name>get_position</name>
+        <briefdescription>
+<para>Get position of NPC. </para>        </briefdescription>
+        <detaileddescription>
+<para>When this function is called, it will return the position of the NPC.</para><para><heading level="2">Return: </heading>
+</para><para>position : sf::Vector2f <linebreak/>
+-&gt; The position of the NPC</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classnpc_1af58658444d25eaa77aec883dd9d5592d" kindref="member">get_position()</ref> <linebreak/>
+-&gt; return sf::Vector(200,200) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="232" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="232" bodyend="232"/>
+        <references refid="classnpc_1a78bc2f0af05b44a6a8e71fa3853c0920" compoundref="npc_8cpp" startline="173" endline="182">get_action</references>
+        <references refid="classnpc_1a61315bb51941237b6b2c0fb578f3e5ee" compoundref="npc_8cpp" startline="169" endline="171">get_current_action</references>
+        <references refid="classnpc_1a2a5bbed340b918265dabc2dcfb5d07b6" compoundref="npc_8cpp" startline="89" endline="100">show_ability</references>
+        <references refid="classnpc_1a77e7e3430ee5ff383f7a16b4b3e07fa1" compoundref="npc_8cpp" startline="184" endline="186">~npc</references>
+        <referencedby refid="classplayer_1a78d420774623e89cd896d3cb1d265b17" compoundref="player_8cpp" startline="51" endline="53">player::get_position</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1a78bc2f0af05b44a6a8e71fa3853c0920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; sf::Sprite &gt;</type>
+        <definition>std::vector&lt; sf::Sprite &gt; npc::get_action</definition>
+        <argsstring>(std::string action_to_get)</argsstring>
+        <name>get_action</name>
+        <param>
+          <type>std::string</type>
+          <declname>action_to_get</declname>
+        </param>
+        <briefdescription>
+<para>Get NPC action. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function return a list of sprites that is asked from the NPC. <linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>action_to_perform : std::string <linebreak/>
+-&gt; The action that has to be shown.</para><para><heading level="2">Return: </heading>
+</para><para>temp : std::vector&lt;sf::Sprite&gt; <linebreak/>
+-&gt; list of sprites containing the sprites of an ability.</para><para><heading level="2">Example: </heading>
+</para><para>get_action(&quot;walk_up&quot;) <linebreak/>
+-&gt; {sprite1,sprite2,....} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="257" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="173" bodyend="182"/>
+        <referencedby refid="classnpc_1af58658444d25eaa77aec883dd9d5592d" compoundref="npc_8hpp" startline="232" endline="232">get_position</referencedby>
+        <referencedby refid="classplayer_1a676129193d589a975d7a86429a37b1b7" compoundref="player_8cpp" startline="59" endline="61">player::get_action</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1a61315bb51941237b6b2c0fb578f3e5ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string npc::get_current_action</definition>
+        <argsstring>()</argsstring>
+        <name>get_current_action</name>
+        <briefdescription>
+<para>Get current action of NPC. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the name of the current action of a NPC. <linebreak/>
+This is the action that the NPC is currently performing in the game.<linebreak/>
+</para><para><heading level="2">Return: </heading>
+</para><para>current_action : std::string <linebreak/>
+-&gt; Name of the current action from NPC.</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classnpc_1a61315bb51941237b6b2c0fb578f3e5ee" kindref="member">get_current_action()</ref> <linebreak/>
+-&gt; &quot;walk_up&quot; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="277" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="169" bodyend="171"/>
+        <referencedby refid="classnpc_1af58658444d25eaa77aec883dd9d5592d" compoundref="npc_8hpp" startline="232" endline="232">get_position</referencedby>
+        <referencedby refid="classplayer_1afc7732284851b7f0d90b66a5d25931e2" compoundref="player_8cpp" startline="55" endline="57">player::get_current_action</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1a2a5bbed340b918265dabc2dcfb5d07b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void npc::show_ability</definition>
+        <argsstring>(std::string action_to_show)</argsstring>
+        <name>show_ability</name>
+        <param>
+          <type>std::string</type>
+          <declname>action_to_show</declname>
+        </param>
+        <briefdescription>
+<para>Perform an action. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function shows one step of the asked ability. <linebreak/>
+This function has to be called in a loop that stops at the max size of the ability list. <linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>action_to_show : std::string <linebreak/>
+-&gt; Name of action.</para><para><heading level="2">Example: </heading>
+</para><para>show_ability(&quot;shoot_arrow_up&quot;) <linebreak/>
+-&gt; NPC will shoot an arrow northwards. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="297" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="89" bodyend="100"/>
+        <referencedby refid="classnpc_1af58658444d25eaa77aec883dd9d5592d" compoundref="npc_8hpp" startline="232" endline="232">get_position</referencedby>
+        <referencedby refid="classplayer_1a4659a0677d5b19b0ae27737dfaa0176e" compoundref="player_8cpp" startline="68" endline="70">player::show_ability</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classnpc_1a77e7e3430ee5ff383f7a16b4b3e07fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>npc::~npc</definition>
+        <argsstring>()</argsstring>
+        <name>~npc</name>
+        <briefdescription>
+<para>Decontructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Will be called when the object is deleted. <linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="304" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.cpp" bodystart="184" bodyend="186"/>
+        <referencedby refid="classnpc_1af58658444d25eaa77aec883dd9d5592d" compoundref="npc_8hpp" startline="232" endline="232">get_position</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" line="8" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/npc.hpp" bodystart="8" bodyend="305"/>
+    <listofallmembers>
+      <member refid="classnpc_1a3ca0e4e222e0e7fee4d3abd9a3c7c5c4" prot="private" virt="non-virtual"><scope>npc</scope><name>current_action</name></member>
+      <member refid="classnpc_1a092e6acb7f951c0805d6c4c948ccd37d" prot="private" virt="non-virtual"><scope>npc</scope><name>database</name></member>
+      <member refid="classnpc_1a1adf71c32d8948c9718568d1a2a6d9a7" prot="public" virt="non-virtual"><scope>npc</scope><name>draw</name></member>
+      <member refid="classnpc_1a78bc2f0af05b44a6a8e71fa3853c0920" prot="public" virt="non-virtual"><scope>npc</scope><name>get_action</name></member>
+      <member refid="classnpc_1aa6a71f7355403e4a108f3c4e8b6a3931" prot="public" virt="non-virtual"><scope>npc</scope><name>get_bounds</name></member>
+      <member refid="classnpc_1a64342e70f2e8c3afde210ffa77e1e54e" prot="public" virt="non-virtual"><scope>npc</scope><name>get_collision</name></member>
+      <member refid="classnpc_1a61315bb51941237b6b2c0fb578f3e5ee" prot="public" virt="non-virtual"><scope>npc</scope><name>get_current_action</name></member>
+      <member refid="classnpc_1a2714b410c2e644040f69f1cf50d3bc50" prot="public" virt="non-virtual"><scope>npc</scope><name>get_interaction</name></member>
+      <member refid="classnpc_1a670b40abcf52e0615883622324ac3bc9" prot="public" virt="non-virtual"><scope>npc</scope><name>get_name</name></member>
+      <member refid="classnpc_1af58658444d25eaa77aec883dd9d5592d" prot="public" virt="non-virtual"><scope>npc</scope><name>get_position</name></member>
+      <member refid="classnpc_1af2544175f28e31abaa3587d7807aa60c" prot="private" virt="non-virtual"><scope>npc</scope><name>id</name></member>
+      <member refid="classnpc_1a3815e143f7d384cb9bd0a1ab45c729a5" prot="private" virt="non-virtual"><scope>npc</scope><name>is_player</name></member>
+      <member refid="classnpc_1a3f32867195150317774af508034f0a41" prot="private" virt="non-virtual"><scope>npc</scope><name>load_action</name></member>
+      <member refid="classnpc_1a357fc1c053fb6fe0e09c03d72f63191a" prot="private" virt="non-virtual"><scope>npc</scope><name>load_all_actions</name></member>
+      <member refid="classnpc_1ae8d1bfcd87382237192ebb5b6def33a5" prot="public" virt="non-virtual"><scope>npc</scope><name>move</name></member>
+      <member refid="classnpc_1ac99eae829579a6f49387bd44129ec33a" prot="public" virt="non-virtual"><scope>npc</scope><name>npc</name></member>
+      <member refid="classnpc_1afc25127e7611064526758d66e78e4e29" prot="private" virt="non-virtual"><scope>npc</scope><name>npc_actions</name></member>
+      <member refid="classnpc_1ae50304639c2715b89dc1902c59830acf" prot="private" virt="non-virtual"><scope>npc</scope><name>npc_values</name></member>
+      <member refid="classnpc_1af27f0e211e77578a73b34c7ea094d82b" prot="private" virt="non-virtual"><scope>npc</scope><name>position</name></member>
+      <member refid="classnpc_1aa86a880284a09f9fc3358a61a74be1b9" prot="public" virt="non-virtual"><scope>npc</scope><name>set_action</name></member>
+      <member refid="classnpc_1a52d22585e441af4d8dde1d1a2658b2dc" prot="public" virt="non-virtual"><scope>npc</scope><name>set_position</name></member>
+      <member refid="classnpc_1a2a5bbed340b918265dabc2dcfb5d07b6" prot="public" virt="non-virtual"><scope>npc</scope><name>show_ability</name></member>
+      <member refid="classnpc_1a662c915f75653537fcbffcef96087a48" prot="private" virt="non-virtual"><scope>npc</scope><name>sprite_size</name></member>
+      <member refid="classnpc_1ade5118e0c4c299eea10fda2d8a6611f6" prot="private" virt="non-virtual"><scope>npc</scope><name>texture</name></member>
+      <member refid="classnpc_1a7fde3d3012e4dff0d02bf882fa466fc6" prot="private" virt="non-virtual"><scope>npc</scope><name>window</name></member>
+      <member refid="classnpc_1a77e7e3430ee5ff383f7a16b4b3e07fa1" prot="public" virt="non-virtual"><scope>npc</scope><name>~npc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classinvalid__position" kind="class" language="C++" prot="public">
+    <compoundname>invalid_position</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
+    <includes refid="exception__list_8hpp" local="no">exception_list.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classinvalid__position_1a583ac2c97b1c840be45d66f39c079082" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string invalid_position::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="25" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classinvalid__position_1afdef78718233d3cf1f8e77ec0af4963d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>invalid_position::invalid_position</definition>
+        <argsstring>(char c)</argsstring>
+        <name>invalid_position</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="27" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classinvalid__position_1a06163ba7cde1c818d7fd52b13686aad4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* invalid_position::what</definition>
+        <argsstring>() const override</argsstring>
+        <name>what</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="30" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="26">
+        <label>exception</label>
+      </node>
+      <node id="25">
+        <label>invalid_position</label>
+        <link refid="classinvalid__position"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="28">
+        <label>exception</label>
+      </node>
+      <node id="27">
+        <label>invalid_position</label>
+        <link refid="classinvalid__position"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="23" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="23" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classinvalid__position_1afdef78718233d3cf1f8e77ec0af4963d" prot="public" virt="non-virtual"><scope>invalid_position</scope><name>invalid_position</name></member>
+      <member refid="classinvalid__position_1a583ac2c97b1c840be45d66f39c079082" prot="private" virt="non-virtual"><scope>invalid_position</scope><name>s</name></member>
+      <member refid="classinvalid__position_1a06163ba7cde1c818d7fd52b13686aad4" prot="public" virt="non-virtual"><scope>invalid_position</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+.TH "action" 3 "Fri Feb 3 2017" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+action
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <leveleditor\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBaction\fP (std::function< bool() > condition, std::function< void() > work)"
+.br
+.RI "Template function for bool\&. "
+.ti -1c
+.RI "\fBaction\fP (std::function< void() > work)"
+.br
+.RI "Template function for void\&. "
+.ti -1c
+.RI "\fBaction\fP (\fBsf::Keyboard::Key\fP key, std::function< void() > work)"
+.br
+.RI "Template function for key pressing\&. "
+.ti -1c
+.RI "\fBaction\fP (sf::Mouse::Button button, std::function< void() > work)"
+.br
+.RI "Template function for mouse button\&. "
+.ti -1c
+.RI "void \fBoperator()\fP ()"
+.br
+.RI "Overloader for \fBoperator()()\fP "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 11 of file leveleditor\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "action::action (std::function< bool() > condition, std::function< void() > work)\fC [inline]\fP"
+
+.PP
+Template function for bool\&. This method will create a boolean function with a specified use\&. 
+.br
+ 
+.PP
+Definition at line 21 of file leveleditor\&.hpp\&.
+.SS "action::action (std::function< void() > work)\fC [inline]\fP"
+
+.PP
+Template function for void\&. This method will create a void function with a specified use\&. 
+.br
+ 
+.PP
+Definition at line 31 of file leveleditor\&.hpp\&.
+.SS "action::action (\fBsf::Keyboard::Key\fP key, std::function< void() > work)\fC [inline]\fP"
+
+.PP
+Template function for key pressing\&. This method will create a boolean function with a specified use\&. 
+.br
+And returns if a specified key is pressed\&. 
+.br
+
+.PP
+Definition at line 42 of file leveleditor\&.hpp\&.
+.SS "action::action (sf::Mouse::Button button, std::function< void() > work)\fC [inline]\fP"
+
+.PP
+Template function for mouse button\&. This method will create a boolean function with a specified use\&. 
+.br
+And returns if a specified mouse button is pressed\&. 
+.br
+
+.PP
+Definition at line 53 of file leveleditor\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void action::operator() ()\fC [inline]\fP"
+
+.PP
+Overloader for \fBoperator()()\fP This method creates the \fBoperator()()\fP so it can be used in this class\&. 
+.br
+
+.PP
+Definition at line 63 of file leveleditor\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

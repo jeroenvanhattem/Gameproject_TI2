@@ -1,0 +1,4 @@
+<map id="player::get_interaction" name="player::get_interaction">
+<area shape="rect" id="node2" href="$classnpc.html#a2714b410c2e644040f69f1cf50d3bc50" title="Get interaction two NPC&#39;s. " alt="" coords="204,5,340,32"/>
+<area shape="rect" id="node3" href="$classnpc.html#aa6a71f7355403e4a108f3c4e8b6a3931" title="Get a bounds from a NPC. " alt="" coords="388,5,507,32"/>
+</map>

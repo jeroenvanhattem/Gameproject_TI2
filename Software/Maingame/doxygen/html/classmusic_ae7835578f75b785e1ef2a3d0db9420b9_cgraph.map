@@ -1,0 +1,8 @@
+<map id="music::play_music_from_map" name="music::play_music_from_map">
+<area shape="rect" id="node2" href="$classsql.html#ae959c21f71c8f9b1df8bde932a6c484b" title="Get music of consisting map. " alt="" coords="260,31,367,57"/>
+<area shape="rect" id="node7" href="$classmusic.html#aeb639e45c64ee79496e8ec6187cfcf70" title="Set music volume. " alt="" coords="248,81,379,108"/>
+<area shape="rect" id="node3" href="$classsql.html#a53dd323de395c13534e63a3482190777" title="Execute a query. " alt="" coords="427,23,559,65"/>
+<area shape="rect" id="node4" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="611,5,706,32"/>
+<area shape="rect" id="node6" href="$classsql.html#ad4d8bdf41eede1ae1363d0be8a2f60a9" title="Get saved result. " alt="" coords="607,56,711,83"/>
+<area shape="rect" id="node5" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="759,5,863,32"/>
+</map>

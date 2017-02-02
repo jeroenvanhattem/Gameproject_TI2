@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classunknown__shape" kind="class" language="C++" prot="public">
+    <compoundname>unknown_shape</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
+    <includes refid="exception__list_8hpp" local="no">exception_list.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classunknown__shape_1a315cb57042a51070978ee5fbb8150a81" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string unknown_shape::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="38" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classunknown__shape_1acba61daef65acb20740ee969373afa2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>unknown_shape::unknown_shape</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>unknown_shape</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="40" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classunknown__shape_1a79e591bd483fc895aeeffccffe56ea14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* unknown_shape::what</definition>
+        <argsstring>() const override</argsstring>
+        <name>what</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="44" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="56">
+        <label>exception</label>
+      </node>
+      <node id="55">
+        <label>unknown_shape</label>
+        <link refid="classunknown__shape"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="58">
+        <label>exception</label>
+      </node>
+      <node id="57">
+        <label>unknown_shape</label>
+        <link refid="classunknown__shape"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="36" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="36" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classunknown__shape_1a315cb57042a51070978ee5fbb8150a81" prot="private" virt="non-virtual"><scope>unknown_shape</scope><name>s</name></member>
+      <member refid="classunknown__shape_1acba61daef65acb20740ee969373afa2d" prot="public" virt="non-virtual"><scope>unknown_shape</scope><name>unknown_shape</name></member>
+      <member refid="classunknown__shape_1a79e591bd483fc895aeeffccffe56ea14" prot="public" virt="non-virtual"><scope>unknown_shape</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

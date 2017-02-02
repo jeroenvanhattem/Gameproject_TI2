@@ -1,0 +1,1105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classsql" kind="class" language="C++" prot="public">
+    <compoundname>sql</compoundname>
+    <includes refid="sql_8hpp" local="no">sql.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsql_1a16d6812a301ce81d856e7d5800bf20fd" prot="private" static="no" mutable="no">
+        <type>sqlite3 *</type>
+        <definition>sqlite3* sql::database</definition>
+        <argsstring></argsstring>
+        <name>database</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="15" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsql_1aa0b79c68df90d2e2a3f829e25a44b878" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string sql::database_path</definition>
+        <argsstring></argsstring>
+        <name>database_path</name>
+        <initializer>= &quot;../../bin/database.db&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="16" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsql_1a1ad7137a182503f7676b53f6fa2786ed" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sql::rc</definition>
+        <argsstring></argsstring>
+        <name>rc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="18" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsql_1a9eacc4ecb1f8cb870c2234adba85d31f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sql::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="19" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsql_1a2d17635b5b4cf20d48ba354e2330b734" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* sql::_ERROR_MESSAGE</definition>
+        <argsstring></argsstring>
+        <name>_ERROR_MESSAGE</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="21" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsql_1a88d67d82b4bd8be3d1e31719a0d8f35e" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* sql::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>= &quot;Callback function called&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="22" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsql_1a4bdab1846b3789ddd83521d5eec019b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sql::check_query_request</definition>
+        <argsstring>()</argsstring>
+        <name>check_query_request</name>
+        <briefdescription>
+<para>Checks if query is executed correctly. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method checks if the executed query is correctly procesed.<linebreak/>
+If that is not the case this function will print an error on the command prompt.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>check_query_request()<linebreak/>
+<emphasis>no error, so do nothing</emphasis> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="36" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="36" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsql_1ac9b186df2a51d7eda72cd4a9c34c0624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sql::sql</definition>
+        <argsstring>()</argsstring>
+        <name>sql</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="40" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="6" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a67805540e55f3cfb1849178023aa39b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sql::~sql</definition>
+        <argsstring>()</argsstring>
+        <name>~sql</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="41" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a1cb74ab7343ef603490518715297be83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_data</definition>
+        <argsstring>(char *table, char *columnname)</argsstring>
+        <name>get_data</name>
+        <param>
+          <type>char *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>columnname</declname>
+        </param>
+        <briefdescription>
+<para>Get data from a column in a table in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method gets the data from a column in a table in the database.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>table : char* <linebreak/>
+-&gt; Table name in the database</para><para>column : char* <linebreak/>
+-&gt; Column name in the database</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para>Get_data(&quot;player&quot;, &quot;level&quot;) <linebreak/>
+return: {&quot;1&quot;}. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="65" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="66" bodyend="72"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classsql_1ae854372bac3fc5e681287e3cbf5b03de" compoundref="sql_8cpp" startline="178" endline="181">get_number_of_npcs</referencedby>
+        <referencedby refid="classsql_1a4c6195e2934d72569b45041039a2be63" compoundref="sql_8cpp" startline="293" endline="386">save_tiles</referencedby>
+        <referencedby refid="classsql_1a29fe43df701460704744049aec28d58e" compoundref="sql_8cpp" startline="389" endline="392">get_available_levels</referencedby>
+        <referencedby refid="classsql_1a9928c456c632f88d19cce26b8165bd6f" compoundref="sql_8cpp" startline="394" endline="397">get_level_ids</referencedby>
+        <referencedby refid="classsql_1a1dd21fbf729e949d804ba5509af2b295" compoundref="sql_8cpp" startline="401" endline="449">get_level_object_value</referencedby>
+        <referencedby refid="classsql_1a5eb7fea00a56fe6ba33f602871798bc8" compoundref="sql_8cpp" startline="452" endline="499">get_level_background_value</referencedby>
+        <referencedby refid="classsql_1af126860a2afcf82e53c9f895577bab76" compoundref="sql_8cpp" startline="502" endline="539">get_collision_objects</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1afbf7d36239ee07a23d06c72f2fd1b93c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_data</definition>
+        <argsstring>(char *table, char *columnname, char *condition1, char *condition2)</argsstring>
+        <name>get_data</name>
+        <param>
+          <type>char *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>columnname</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>condition1</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>condition2</declname>
+        </param>
+        <briefdescription>
+<para>Get data from a column in a table in the database with condition. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method gets the data from a table in the database,<linebreak/>
+where the value of the given column meets the condition values.</para><para><heading level="2">Parameters: </heading>
+</para><para>table : char* <linebreak/>
+-&gt; Table name in the database</para><para>column : char* <linebreak/>
+-&gt; Column name in the database</para><para>condition1 : char* <linebreak/>
+-&gt; First condition of the Where statement in the SQL query.</para><para>condition2 : char* <linebreak/>
+-&gt; Second condition of the Where statement in the SQL query.</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para>Get_data(&quot;player&quot;, &quot;name&quot;,&quot;id&quot;,&quot;1&quot;) <linebreak/>
+return: {&quot;arno&quot;}. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="97" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="57" bodyend="63"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1aa6a8501373e0cd73d48bee389353d6ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sql::change_data</definition>
+        <argsstring>(char *table, char *condition1, char *condition2, char *columnname, char *new_value)</argsstring>
+        <name>change_data</name>
+        <param>
+          <type>char *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>condition1</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>condition2</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>columnname</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>new_value</declname>
+        </param>
+        <briefdescription>
+<para>Change values in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method overwrites data in the database, where the value of the given column meets the condition values.</para><para><heading level="2">Parameters: </heading>
+</para><para>table : char* <linebreak/>
+-&gt; Table name in the database</para><para>condition1 : char* <linebreak/>
+-&gt; First condition of the Where statement in the SQL query.</para><para>condition2 : char* <linebreak/>
+-&gt; Second condition of the Where statement in the SQL query.</para><para>columnname : char* <linebreak/>
+-&gt; Column name in the database</para><para>new_value : char* <linebreak/>
+-&gt; New value to be set in the specified column value</para><para><heading level="2">Example: </heading>
+</para><para>change_data(&quot;player&quot;,&quot;id&quot;,&quot;1&quot;,&quot;name&quot;,&quot;pieter&quot;)<linebreak/>
+The name of the player is now &quot;pieter&quot; instead of &quot;arno&quot; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="127" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="93" bodyend="101"/>
+        <references refid="classsql_1ac70e1da6d9e49f114bcf639fd1e6f86c" compoundref="sql_8cpp" startline="43" endline="46">execute_query_without_return</references>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a94c4df2d61461e99d3767f1b37163c2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sql::add_data</definition>
+        <argsstring>(char *table, const char *values)</argsstring>
+        <name>add_data</name>
+        <param>
+          <type>char *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+<para>Add a new value to database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method adds a new value in the given table of the database.<linebreak/>
+The parameter &quot;value&quot; is consists all the column values except the id,<linebreak/>
+because the this value has auto increment.</para><para><heading level="2">Parameters: </heading>
+</para><para>table : char* <linebreak/>
+-&gt; Table name in the database</para><para>values : char* <linebreak/>
+-&gt; column values to add in the database.</para><para><heading level="2">Example: </heading>
+</para><para>add_data(&quot;sprites&quot;,&quot;&apos;../../bin/objects/new_pic.png&apos;, new pic , 64 , 64&quot;)<linebreak/>
+There is now a new record in the database with the given values. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="150" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="74" bodyend="80"/>
+        <references refid="classsql_1ac70e1da6d9e49f114bcf639fd1e6f86c" compoundref="sql_8cpp" startline="43" endline="46">execute_query_without_return</references>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1ac70e1da6d9e49f114bcf639fd1e6f86c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sql::execute_query_without_return</definition>
+        <argsstring>(const char *to_be_executed)</argsstring>
+        <name>execute_query_without_return</name>
+        <param>
+          <type>const char *</type>
+          <declname>to_be_executed</declname>
+        </param>
+        <briefdescription>
+<para>Execute a query. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method executes a given query that has no return value.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>to_be_executed : const char* <linebreak/>
+-&gt; Query to be executed</para><para><heading level="2">Example: </heading>
+</para><para>execute_query_without_return(&quot;INSERT INTO sprites VALUES(NULL, &apos;../../bin/objects/new_pic.png&apos;, new pic , 64 , 64);&quot;)<linebreak/>
+There is now a new record in the database with the given values. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="168" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="43" bodyend="46"/>
+        <references refid="classsql_1aff61710f28dd54827b67a99c24fbdb0d" compoundref="sql_8cpp" startline="29" endline="34">callback</references>
+        <referencedby refid="classsql_1a94c4df2d61461e99d3767f1b37163c2f" compoundref="sql_8cpp" startline="74" endline="80">add_data</referencedby>
+        <referencedby refid="classsql_1af0e753f3af81ff1ff7f7582dcea4b0ed" compoundref="sql_8cpp" startline="83" endline="91">add_item_to_inventory</referencedby>
+        <referencedby refid="classsql_1aa6a8501373e0cd73d48bee389353d6ea" compoundref="sql_8cpp" startline="93" endline="101">change_data</referencedby>
+        <referencedby refid="classsql_1ac24a3682f7478f78508e3e433b637407" compoundref="sql_8cpp" startline="279" endline="290">set_new_map</referencedby>
+        <referencedby refid="classsql_1a4c6195e2934d72569b45041039a2be63" compoundref="sql_8cpp" startline="293" endline="386">save_tiles</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a53dd323de395c13534e63a3482190777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::execute_query_with_return</definition>
+        <argsstring>(const char *to_be_executed)</argsstring>
+        <name>execute_query_with_return</name>
+        <param>
+          <type>const char *</type>
+          <declname>to_be_executed</declname>
+        </param>
+        <briefdescription>
+<para>Execute a query. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method executes a given query that has a return value.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>to_be_executed : const char* <linebreak/>
+-&gt; Query to be executed</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para>execute_query_with_return(&quot;SELECT name FROM player WHERE id == 1;&quot;)<linebreak/>
+Return: {&quot;arno&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="192" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="48" bodyend="54"/>
+        <references refid="classsql_1aff61710f28dd54827b67a99c24fbdb0d" compoundref="sql_8cpp" startline="29" endline="34">callback</references>
+        <references refid="classsql_1ad4d8bdf41eede1ae1363d0be8a2f60a9" compoundref="sql_8cpp" startline="103" endline="111">get_result</references>
+        <referencedby refid="classsql_1afbf7d36239ee07a23d06c72f2fd1b93c" compoundref="sql_8cpp" startline="57" endline="63">get_data</referencedby>
+        <referencedby refid="classsql_1a7f818b967453b1ae15ce4c5b28cf4765" compoundref="sql_8cpp" startline="114" endline="122">get_inventory</referencedby>
+        <referencedby refid="classsql_1a7b49bcf5ac10f6421a5ecd62865e3316" compoundref="sql_8cpp" startline="124" endline="132">get_name_from_id_inventory</referencedby>
+        <referencedby refid="classsql_1a060764a845c3a26c99c6f15470df9634" compoundref="sql_8cpp" startline="134" endline="142">get_sprite_inventory</referencedby>
+        <referencedby refid="classsql_1a62cd4910a9310621ca22fb3c322f52a4" compoundref="sql_8cpp" startline="144" endline="152">get_in_game_name_from_id_inventory</referencedby>
+        <referencedby refid="classsql_1ae560c01f2e8e57cee454ecd8e38616eb" compoundref="sql_8cpp" startline="155" endline="163">get_player_value</referencedby>
+        <referencedby refid="classsql_1a370d018617316ff6489cbb97565b7af9" compoundref="sql_8cpp" startline="166" endline="175">get_player_sprite</referencedby>
+        <referencedby refid="classsql_1af04403a0cab4ee13a6f70b396e5b3a20" compoundref="sql_8cpp" startline="183" endline="223">get_npc_value</referencedby>
+        <referencedby refid="classsql_1a0ea1aa772cb693be29da61c6cadffd86" compoundref="sql_8cpp" startline="226" endline="236">get_object_sprite_ids</referencedby>
+        <referencedby refid="classsql_1a2466fe5b0ec24e98190ee5763a4a69d1" compoundref="sql_8cpp" startline="239" endline="275">get_object_sprite_value</referencedby>
+        <referencedby refid="classsql_1a4c6195e2934d72569b45041039a2be63" compoundref="sql_8cpp" startline="293" endline="386">save_tiles</referencedby>
+        <referencedby refid="classsql_1a1dd21fbf729e949d804ba5509af2b295" compoundref="sql_8cpp" startline="401" endline="449">get_level_object_value</referencedby>
+        <referencedby refid="classsql_1a5eb7fea00a56fe6ba33f602871798bc8" compoundref="sql_8cpp" startline="452" endline="499">get_level_background_value</referencedby>
+        <referencedby refid="classsql_1af126860a2afcf82e53c9f895577bab76" compoundref="sql_8cpp" startline="502" endline="539">get_collision_objects</referencedby>
+        <referencedby refid="classsql_1ae959c21f71c8f9b1df8bde932a6c484b" compoundref="sql_8cpp" startline="591" endline="603">get_music</referencedby>
+        <referencedby refid="classsql_1a59249e218b1bb9d811c50b5615312eaf" compoundref="sql_8cpp" startline="607" endline="633">get_quest_text</referencedby>
+        <referencedby refid="classsql_1a9f75a32a77a498b1a328a53ade518ce7" compoundref="sql_8cpp" startline="636" endline="644">get_quest_parts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a7b49bcf5ac10f6421a5ecd62865e3316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_name_from_id_inventory</definition>
+        <argsstring>(std::string item_id)</argsstring>
+        <name>get_name_from_id_inventory</name>
+        <param>
+          <type>std::string</type>
+          <declname>item_id</declname>
+        </param>
+        <briefdescription>
+<para>Get the name from an item. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the name of an item by using its ID.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>item_id : std::string <linebreak/>
+-&gt; The ID of the item. <linebreak/>
+</para><para><heading level="2">Return: </heading>
+</para><para>name : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; The name of the requested item.</para><para><heading level="2">Example: </heading>
+</para><para>get_name_from_id_inventory(&quot;1&quot;) <linebreak/>
+-&gt; tokato_gloves </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="236" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="124" bodyend="132"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classitem_1ab7c2fa653e0f9a565283b60ca325f2a7" compoundref="item_8cpp" startline="8" endline="13">item::get_name</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a060764a845c3a26c99c6f15470df9634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_sprite_inventory</definition>
+        <argsstring>(std::string item_id)</argsstring>
+        <name>get_sprite_inventory</name>
+        <param>
+          <type>std::string</type>
+          <declname>item_id</declname>
+        </param>
+        <briefdescription>
+<para>Get the sprite_path from an item. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the name of an item by using its ID.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>sprite_path : std::string <linebreak/>
+-&gt; The ID of the item.</para><para><heading level="2">Return: </heading>
+</para><para>sprite_path : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; The sprite_path of the requested item.</para><para><heading level="2">Example: </heading>
+</para><para>get_sprite_inventory(&quot;1&quot;) <linebreak/>
+-&gt; &quot;../../bin/objects/banana.gif&quot; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="259" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="134" bodyend="142"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classitem_1aafc61a4b7e2bd10300a6767e6dd7281e" compoundref="item_8cpp" startline="22" endline="38">item::get_sprite</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a62cd4910a9310621ca22fb3c322f52a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_in_game_name_from_id_inventory</definition>
+        <argsstring>(std::string item_id)</argsstring>
+        <name>get_in_game_name_from_id_inventory</name>
+        <param>
+          <type>std::string</type>
+          <declname>item_id</declname>
+        </param>
+        <briefdescription>
+<para>Get the name from an item. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the name of an item by using its ID.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>item_id : std::string <linebreak/>
+-&gt; The ID of the item.</para><para><heading level="2">Return: </heading>
+</para><para>name : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; The in game name of the requested item.</para><para><heading level="2">Example: </heading>
+</para><para>get_name_from_id_inventory(&quot;1&quot;) <linebreak/>
+-&gt; Tokato Gloves </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="282" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="144" bodyend="152"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classitem_1aa5a9140482a7d88d6a3eea342cb0c082" compoundref="item_8cpp" startline="15" endline="20">item::get_in_game_name</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a7f818b967453b1ae15ce4c5b28cf4765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_inventory</definition>
+        <argsstring>()</argsstring>
+        <name>get_inventory</name>
+        <briefdescription>
+<para>Get the inventory. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function retrieves the inventory and its values and puts it into a vector. <linebreak/>
+</para><para><heading level="2">Return: </heading>
+</para><para>inventory_vector : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; This vector contains the items in the inventory</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classsql_1a7f818b967453b1ae15ce4c5b28cf4765" kindref="member">get_inventory()</ref> <linebreak/>
+-&gt; {&quot;1&quot;, &quot;2&quot;, &quot;2&quot;, &quot;3&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="300" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="114" bodyend="122"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classinventory_1abb6d846e4b7297f79c2c9fb34b26fee2" compoundref="inventory_8cpp" startline="8" endline="30">inventory::get_inventory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1ae560c01f2e8e57cee454ecd8e38616eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_player_value</definition>
+        <argsstring>(int save, std::string variable_name)</argsstring>
+        <name>get_player_value</name>
+        <param>
+          <type>int</type>
+          <declname>save</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>variable_name</declname>
+        </param>
+        <briefdescription>
+<para>Get value of a column from the player. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a column value of the player.<linebreak/>
+The save is equal the the player id in the database,<linebreak/>
+this is because the player can have multiple saved games.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>save : int <linebreak/>
+-&gt; Save of the player and player id in the database.</para><para>variable_name : std::string <linebreak/>
+-&gt; Columnname from what the value is requested.</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para>get_player_value(1,&quot;name&quot;)<linebreak/>
+-&gt; {&quot;arno&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="353" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="155" bodyend="163"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classnpc_1ac99eae829579a6f49387bd44129ec33a" compoundref="npc_8cpp" startline="3" endline="24">npc::npc</referencedby>
+        <referencedby refid="classplayer_1a1a369fcd087aa48f9241fb20c8df52f3" compoundref="player_8cpp" startline="5" endline="16">player::player</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a370d018617316ff6489cbb97565b7af9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_player_sprite</definition>
+        <argsstring>(int save)</argsstring>
+        <name>get_player_sprite</name>
+        <param>
+          <type>int</type>
+          <declname>save</declname>
+        </param>
+        <briefdescription>
+<para>Get sprite sheet of the player. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the sprite sheet of the player.<linebreak/>
+The save is equal the the player id in the database,<linebreak/>
+this is because the player can have multiple saved games.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>save : int <linebreak/>
+-&gt; Save of the player and player id in the database.</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para>get_player_sprite(1)<linebreak/>
+-&gt; {&quot;../../bin/sprite_sheets/player_sprite.png&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="380" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="166" bodyend="175"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a251f53bb3d5d98f821713a42212276e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_player_value</definition>
+        <argsstring>(std::string npc_id)</argsstring>
+        <name>get_player_value</name>
+        <param>
+          <type>std::string</type>
+          <declname>npc_id</declname>
+        </param>
+        <briefdescription>
+<para>Get value of the player. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the value of a player.<linebreak/>
+The player value is calculated on the player_id.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>npc_id : std::string <linebreak/>
+-&gt; Save of the player and player id in the database.</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para>get_player_sprite(1)<linebreak/>
+-&gt; {&quot;../../bin/sprite_sheets/player_sprite.png&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="406" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="542" bodyend="588"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1af0e753f3af81ff1ff7f7582dcea4b0ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sql::add_item_to_inventory</definition>
+        <argsstring>(std::string item_id)</argsstring>
+        <name>add_item_to_inventory</name>
+        <param>
+          <type>std::string</type>
+          <declname>item_id</declname>
+        </param>
+        <briefdescription>
+<para>Add an item to the players inventory. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function will give the player an item that will be stored in the inventory table in the database.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>item_name : std::string -&gt; The name of the item that has to be given</para><para><heading level="2">Example: </heading>
+</para><para>add_item_to_inventory(&quot;1&quot;); -&gt; Adds a banana to the users inventory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="424" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="83" bodyend="91"/>
+        <references refid="classsql_1ac70e1da6d9e49f114bcf639fd1e6f86c" compoundref="sql_8cpp" startline="43" endline="46">execute_query_without_return</references>
+        <referencedby refid="classgame_1a2b80a1fbc6d723e78d3c86d2f8ff24d4" compoundref="game_8cpp" startline="52" endline="96">game::game_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1af04403a0cab4ee13a6f70b396e5b3a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_npc_value</definition>
+        <argsstring>(std::string npc_id)</argsstring>
+        <name>get_npc_value</name>
+        <param>
+          <type>std::string</type>
+          <declname>npc_id</declname>
+        </param>
+        <briefdescription>
+<para>Get all values from columns in NPC. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns all column values of a NPC.<linebreak/>
+ The order of the returning values in the vector is:<linebreak/>
+ index | name of value <linebreak/>
+----------------------<mdash/> <linebreak/>
+ 0 | name <linebreak/>
+ 1 | level <linebreak/>
+ 2 | class_id <linebreak/>
+ 3 | sprite_id <linebreak/>
+ 4 | position_x <linebreak/>
+ 5 | position_y <linebreak/>
+ 6 | quest_id <linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>npc_id : std::string <linebreak/>
+-&gt; ID of the NPC from whom the values are asked.</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para>get_npc_value(&quot;1&quot;)<linebreak/>
+-&gt; {&quot;arno&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="465" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="183" bodyend="223"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classnpc_1ac99eae829579a6f49387bd44129ec33a" compoundref="npc_8cpp" startline="3" endline="24">npc::npc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1ae854372bac3fc5e681287e3cbf5b03de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_number_of_npcs</definition>
+        <argsstring>()</argsstring>
+        <name>get_number_of_npcs</name>
+        <briefdescription>
+<para>Get all id&apos;s of the NPC&apos;s. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns all id values of the NPC table.<linebreak/>
+The lengths of the vector is equal to how many NPC&apos;s there are in the table.<linebreak/>
+</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classsql_1ae854372bac3fc5e681287e3cbf5b03de" kindref="member">get_number_of_npcs()</ref><linebreak/>
+-&gt; {&quot;1&quot;,&quot;2&quot;,&quot;5&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="485" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="178" bodyend="181"/>
+        <references refid="classsql_1a1cb74ab7343ef603490518715297be83" compoundref="sql_8cpp" startline="66" endline="72">get_data</references>
+        <referencedby refid="classgame_1a0eb06f984d04128ba7fba6fcca04bda3" compoundref="game_8cpp" startline="236" endline="248">game::get_items_from_database</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a0ea1aa772cb693be29da61c6cadffd86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_object_sprite_ids</definition>
+        <argsstring>()</argsstring>
+        <name>get_object_sprite_ids</name>
+        <briefdescription>
+<para>Get id&apos;s from objects and tiles sprites. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns all sprite id values of tiles and objects.<linebreak/>
+</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classsql_1a0ea1aa772cb693be29da61c6cadffd86" kindref="member">get_object_sprite_ids()</ref><linebreak/>
+-&gt; {&quot;1&quot;,&quot;2&quot;,&quot;5&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="507" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="226" bodyend="236"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">leveleditor::editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a2466fe5b0ec24e98190ee5763a4a69d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_object_sprite_value</definition>
+        <argsstring>(std::string object_id)</argsstring>
+        <name>get_object_sprite_value</name>
+        <param>
+          <type>std::string</type>
+          <declname>object_id</declname>
+        </param>
+        <briefdescription>
+<para>Get all values from columns in sprites. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns all column values of a a sprite.<linebreak/>
+The order of the returning values in the vector is:<linebreak/>
+ index | name of value <linebreak/>
+----------------------<mdash/> <linebreak/>
+ 0 | path <linebreak/>
+ 1 | name <linebreak/>
+ 2 | sprite_size_x <linebreak/>
+ 3 | sprite_size_y <linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>object_id : std::string <linebreak/>
+-&gt; ID of the object/tile from what the values are asked.</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para>get_object_sprite_value(&quot;1&quot;) <linebreak/>
+-&gt; {&quot;../../bin/objects/road1.png&quot;, &quot;road1&quot;,&quot;32&quot;,&quot;32&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="540" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="239" bodyend="275"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">leveleditor::editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1ac24a3682f7478f78508e3e433b637407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sql::set_new_map</definition>
+        <argsstring>(std::string map_name, int background_music)</argsstring>
+        <name>set_new_map</name>
+        <param>
+          <type>std::string</type>
+          <declname>map_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>background_music</declname>
+        </param>
+        <briefdescription>
+<para>Create new map. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method creates a new record in the maps table.<linebreak/>
+This record consists the map_id, map name and the corresponding background music.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>map_name : std::string <linebreak/>
+-&gt; name of the level that has to be created.</para><para>background_music : int <linebreak/>
+-&gt; id of the background music of the level.</para><para><heading level="2">Example: </heading>
+</para><para>set_new_map(&quot;level1&quot;,1)<linebreak/>
+There is now a new maps record in the database,<linebreak/>
+that has the name level1 with brackground_id 1.<linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="571" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="279" bodyend="290"/>
+        <references refid="classsql_1ac70e1da6d9e49f114bcf639fd1e6f86c" compoundref="sql_8cpp" startline="43" endline="46">execute_query_without_return</references>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">leveleditor::editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a4c6195e2934d72569b45041039a2be63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sql::save_tiles</definition>
+        <argsstring>(std::string tile_path, int pos_x, int pos_y, std::string map_name)</argsstring>
+        <name>save_tiles</name>
+        <param>
+          <type>std::string</type>
+          <declname>tile_path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pos_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pos_y</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>map_name</declname>
+        </param>
+        <briefdescription>
+<para>Saves the tiles in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method saves a tile in the database.<linebreak/>
+The tile values will be filterd if it is an object or an background tile.<linebreak/>
+It is very importend that if you want to save the level, that the map_name is spelled correctly.<linebreak/>
+If the map_name is not correctly spelled or if it doesn&apos;t exist, the level cannot be saved. <linebreak/>
+The same counts for the tile path. <linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>tile_path : std::string <linebreak/>
+-&gt; path to the consisting image of the object/tile.</para><para>pos_x : int <linebreak/>
+-&gt; x position where the object/tile should be placed in the map.</para><para>pos_y : int <linebreak/>
+-&gt; y position where the object/tile should be placed in the map.</para><para>map_name : std::string <linebreak/>
+-&gt; name of the map where the object/tile will be placed in.</para><para><heading level="2">Example: </heading>
+</para><para>save_tiles(&quot;../../bin/objects/example.png&quot;,10,10,&quot;level1&quot;)<linebreak/>
+This object is now saved in the objects table, <linebreak/>
+with a refference that is has to be placed in level1.<linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="605" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="293" bodyend="386"/>
+        <references refid="classsql_1a1cb74ab7343ef603490518715297be83" compoundref="sql_8cpp" startline="66" endline="72">get_data</references>
+        <references refid="button__actions_8hpp_1a9b45b3e13bd9167aab02e17e08916231" compoundref="button__actions_8hpp" startline="7">name</references>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <references refid="classsql_1ac70e1da6d9e49f114bcf639fd1e6f86c" compoundref="sql_8cpp" startline="43" endline="46">execute_query_without_return</references>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">leveleditor::editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a29fe43df701460704744049aec28d58e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_available_levels</definition>
+        <argsstring>()</argsstring>
+        <name>get_available_levels</name>
+        <briefdescription>
+<para>Get the names of all levels in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns all names of the levels that are in the database.<linebreak/>
+This can be usefull so you can know if a level already exists. <linebreak/>
+</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classsql_1a29fe43df701460704744049aec28d58e" kindref="member">get_available_levels()</ref><linebreak/>
+-&gt; {&quot;level1&quot;,&quot;level2&quot;,&quot;level5&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="626" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="389" bodyend="392"/>
+        <references refid="classsql_1a1cb74ab7343ef603490518715297be83" compoundref="sql_8cpp" startline="66" endline="72">get_data</references>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">leveleditor::editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a9928c456c632f88d19cce26b8165bd6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_level_ids</definition>
+        <argsstring>()</argsstring>
+        <name>get_level_ids</name>
+        <briefdescription>
+<para>Get the ID&apos;s of all levels in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns all ID&apos;s of the levels that are in the database.<linebreak/>
+</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classsql_1a9928c456c632f88d19cce26b8165bd6f" kindref="member">get_level_ids()</ref><linebreak/>
+-&gt; {&quot;1&quot;,&quot;2&quot;,&quot;5&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="645" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="394" bodyend="397"/>
+        <references refid="classsql_1a1cb74ab7343ef603490518715297be83" compoundref="sql_8cpp" startline="66" endline="72">get_data</references>
+        <referencedby refid="classgame_1a46eaf7a077e7f3ff0b5e229142358f00" compoundref="game_8cpp" startline="3" endline="50">game::game</referencedby>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">leveleditor::editor_loop</referencedby>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="24" endline="77">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a1dd21fbf729e949d804ba5509af2b295" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; sql::get_level_object_value</definition>
+        <argsstring>(std::string level_id)</argsstring>
+        <name>get_level_object_value</name>
+        <param>
+          <type>std::string</type>
+          <declname>level_id</declname>
+        </param>
+        <briefdescription>
+<para>Get all object values of a level. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the values of all objects that are assigned to the given level ID.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>level_id : std::string <linebreak/>
+-&gt; id of the level from what the objects have to be loaded.</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; <linebreak/>
+-&gt; map that contains the asked data in the form of strings with name as key.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>get_level_object_value(&quot;level1&quot;) <linebreak/>
+-&gt; {&quot;road1&quot;:{&quot;../../bin/objects/example.png&quot;,&quot;120&quot;,&quot;150&quot;,&quot;1&quot;}} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="670" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="401" bodyend="449"/>
+        <references refid="classsql_1a1cb74ab7343ef603490518715297be83" compoundref="sql_8cpp" startline="66" endline="72">get_data</references>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classgame_1a46eaf7a077e7f3ff0b5e229142358f00" compoundref="game_8cpp" startline="3" endline="50">game::game</referencedby>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">leveleditor::editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1af126860a2afcf82e53c9f895577bab76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sf::IntRect</type>
+        <definition>sf::IntRect sql::get_collision_objects</definition>
+        <argsstring>(std::vector&lt; std::string &gt; objects)</argsstring>
+        <name>get_collision_objects</name>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>objects</declname>
+        </param>
+        <briefdescription>
+<para>Get the not walkable objects. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the hitbox of an object that is not walkable.<linebreak/>
+The hitbox can be used to calculate the collision detection on. <linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>objects : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; values of one opbject.</para><para><heading level="2">Return: </heading>
+</para><para>collision_rects : sf::IntRect <linebreak/>
+-&gt; Hitbox of the not walkable object.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>get_collision_objects({...}) <linebreak/>
+-&gt; (100,100,50,50) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="696" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="502" bodyend="539"/>
+        <references refid="classsql_1a1cb74ab7343ef603490518715297be83" compoundref="sql_8cpp" startline="66" endline="72">get_data</references>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classgame_1a46eaf7a077e7f3ff0b5e229142358f00" compoundref="game_8cpp" startline="3" endline="50">game::game</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a5eb7fea00a56fe6ba33f602871798bc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; sql::get_level_background_value</definition>
+        <argsstring>(std::string level_id)</argsstring>
+        <name>get_level_background_value</name>
+        <param>
+          <type>std::string</type>
+          <declname>level_id</declname>
+        </param>
+        <briefdescription>
+<para>Get all background values of a level. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the values of all background tiles that are assigned to the given level ID.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>level_id : std::string <linebreak/>
+-&gt; id of the level from what the background tiles have to be loaded.</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::map&lt; std::string, std::vector&lt;std::string&gt; &gt; <linebreak/>
+-&gt; Map that contains the asked data in the form of strings with name as key.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>get_level_object_value(&quot;level1&quot;) <linebreak/>
+{&quot;road1&quot;:{&quot;../../bin/tiles/example.png&quot;,&quot;120&quot;,&quot;150&quot;,&quot;1&quot;}} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="721" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="452" bodyend="499"/>
+        <references refid="classsql_1a1cb74ab7343ef603490518715297be83" compoundref="sql_8cpp" startline="66" endline="72">get_data</references>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classgame_1a46eaf7a077e7f3ff0b5e229142358f00" compoundref="game_8cpp" startline="3" endline="50">game::game</referencedby>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">leveleditor::editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1ae959c21f71c8f9b1df8bde932a6c484b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_music</definition>
+        <argsstring>(std::string map_id)</argsstring>
+        <name>get_music</name>
+        <param>
+          <type>std::string</type>
+          <declname>map_id</declname>
+        </param>
+        <briefdescription>
+<para>Get music of consisting map. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the path of a music file what is the background music of a level. <linebreak/>
+The values are searched by the ID of the map. <linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>map_id : std::string <linebreak/>
+-&gt; ID of the level where the music file is requested.</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; list that contains the asked data in the form of strings.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>get_music(&quot;17&quot;) <linebreak/>
+-&gt; ../../bin/music/x_gon_give_it_to_ya.wav </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="752" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="591" bodyend="603"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classmusic_1ae7835578f75b785e1ef2a3d0db9420b9" compoundref="music_8cpp" startline="13" endline="33">music::play_music_from_map</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a59249e218b1bb9d811c50b5615312eaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_quest_text</definition>
+        <argsstring>(std::string quest_id, std::string part)</argsstring>
+        <name>get_quest_text</name>
+        <param>
+          <type>std::string</type>
+          <declname>quest_id</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+<para>Get quest part text. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the text of a quest part. <linebreak/>
+The values are searched by the ID of the of the quest and the given part number. <linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>quest_id : std::string <linebreak/>
+-&gt; ID of the quest from what the text is requested.<linebreak/>
+ part : std::string <linebreak/>
+-&gt; number of the part in the quest where the text is requested from. <linebreak/>
+</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; list that contains the asked data in the form of strings.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>get_quest_text(&quot;17&quot;) <linebreak/>
+-&gt; {&quot;Hello.&quot;,&quot;welcome&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="785" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="607" bodyend="633"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classgame_1a46eaf7a077e7f3ff0b5e229142358f00" compoundref="game_8cpp" startline="3" endline="50">game::game</referencedby>
+        <referencedby refid="classgame_1a2b80a1fbc6d723e78d3c86d2f8ff24d4" compoundref="game_8cpp" startline="52" endline="96">game::game_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1a9f75a32a77a498b1a328a53ade518ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_quest_parts</definition>
+        <argsstring>(std::string quest_id)</argsstring>
+        <name>get_quest_parts</name>
+        <param>
+          <type>std::string</type>
+          <declname>quest_id</declname>
+        </param>
+        <briefdescription>
+<para>Get all part numbers from quest. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the numbers of quest parts of a quest. <linebreak/>
+The values are searched by the ID of the quest. <linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>quest_id : std::string <linebreak/>
+-&gt; ID of the quest from what the text is requested.<linebreak/>
+</para><para><heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; list that contains the asked data in the form of strings.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>get_quest_parts(&quot;1&quot;) <linebreak/>
+-&gt; {&quot;1&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="811" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="636" bodyend="644"/>
+        <references refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</references>
+        <referencedby refid="classgame_1a46eaf7a077e7f3ff0b5e229142358f00" compoundref="game_8cpp" startline="3" endline="50">game::game</referencedby>
+        <referencedby refid="classgame_1a2b80a1fbc6d723e78d3c86d2f8ff24d4" compoundref="game_8cpp" startline="52" endline="96">game::game_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsql_1ad4d8bdf41eede1ae1363d0be8a2f60a9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sql::get_result</definition>
+        <argsstring>()</argsstring>
+        <name>get_result</name>
+        <briefdescription>
+<para>Get saved result. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the result that is stored in the global result value.<linebreak/>
+the result value is a global and static because it is set by the callback function.<linebreak/>
+ <heading level="2">Return: </heading>
+</para><para>list_of_data : std::vector&lt;std::string&gt; <linebreak/>
+-&gt; List that contains the asked data in the form of strings.</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classsql_1ad4d8bdf41eede1ae1363d0be8a2f60a9" kindref="member">get_result()</ref><linebreak/>
+Return: {&quot;arno&quot;} </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="211" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="103" bodyend="111"/>
+        <referencedby refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1ad28cc81f2ee03c6a15d26ff216353d71" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void sql::set_result</definition>
+        <argsstring>(char *x)</argsstring>
+        <name>set_result</name>
+        <param>
+          <type>char *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Save result to static value. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method adds a new value, what is a result of an query,<linebreak/>
+to the static string vector result.<linebreak/>
+It does not overwrite it because there could be a result of multiple strings.<linebreak/>
+This function is only called by the static callback function.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>x : char* <linebreak/>
+-&gt; Query result to add.</para><para><heading level="2">Example: </heading>
+</para><para>set_result(&quot;arno&quot;)<linebreak/>
+Last value in result is now &quot;arno&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="321" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" bodystart="321" bodyend="321"/>
+        <referencedby refid="classsql_1aff61710f28dd54827b67a99c24fbdb0d" compoundref="sql_8cpp" startline="29" endline="34">callback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsql_1aff61710f28dd54827b67a99c24fbdb0d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sql::callback</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+<para>Get value from database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is used to get the value from the database. What the function does is explained in the sqlite3.hpp file. In this class we use it to store the found data in a global static value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="819" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.cpp" bodystart="29" bodyend="34"/>
+        <references refid="classsql_1ad28cc81f2ee03c6a15d26ff216353d71" compoundref="sql_8hpp" startline="321" endline="321">set_result</references>
+        <referencedby refid="classsql_1ac70e1da6d9e49f114bcf639fd1e6f86c" compoundref="sql_8cpp" startline="43" endline="46">execute_query_without_return</referencedby>
+        <referencedby refid="classsql_1a53dd323de395c13534e63a3482190777" compoundref="sql_8cpp" startline="48" endline="54">execute_query_with_return</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" line="13" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/sql.hpp" bodystart="13" bodyend="820"/>
+    <listofallmembers>
+      <member refid="classsql_1a2d17635b5b4cf20d48ba354e2330b734" prot="private" virt="non-virtual"><scope>sql</scope><name>_ERROR_MESSAGE</name></member>
+      <member refid="classsql_1a94c4df2d61461e99d3767f1b37163c2f" prot="public" virt="non-virtual"><scope>sql</scope><name>add_data</name></member>
+      <member refid="classsql_1af0e753f3af81ff1ff7f7582dcea4b0ed" prot="public" virt="non-virtual"><scope>sql</scope><name>add_item_to_inventory</name></member>
+      <member refid="classsql_1aff61710f28dd54827b67a99c24fbdb0d" prot="public" virt="non-virtual"><scope>sql</scope><name>callback</name></member>
+      <member refid="classsql_1aa6a8501373e0cd73d48bee389353d6ea" prot="public" virt="non-virtual"><scope>sql</scope><name>change_data</name></member>
+      <member refid="classsql_1a4bdab1846b3789ddd83521d5eec019b5" prot="private" virt="non-virtual"><scope>sql</scope><name>check_query_request</name></member>
+      <member refid="classsql_1a9eacc4ecb1f8cb870c2234adba85d31f" prot="private" virt="non-virtual"><scope>sql</scope><name>connection</name></member>
+      <member refid="classsql_1a88d67d82b4bd8be3d1e31719a0d8f35e" prot="private" virt="non-virtual"><scope>sql</scope><name>data</name></member>
+      <member refid="classsql_1a16d6812a301ce81d856e7d5800bf20fd" prot="private" virt="non-virtual"><scope>sql</scope><name>database</name></member>
+      <member refid="classsql_1aa0b79c68df90d2e2a3f829e25a44b878" prot="private" virt="non-virtual"><scope>sql</scope><name>database_path</name></member>
+      <member refid="classsql_1a53dd323de395c13534e63a3482190777" prot="public" virt="non-virtual"><scope>sql</scope><name>execute_query_with_return</name></member>
+      <member refid="classsql_1ac70e1da6d9e49f114bcf639fd1e6f86c" prot="public" virt="non-virtual"><scope>sql</scope><name>execute_query_without_return</name></member>
+      <member refid="classsql_1a29fe43df701460704744049aec28d58e" prot="public" virt="non-virtual"><scope>sql</scope><name>get_available_levels</name></member>
+      <member refid="classsql_1af126860a2afcf82e53c9f895577bab76" prot="public" virt="non-virtual"><scope>sql</scope><name>get_collision_objects</name></member>
+      <member refid="classsql_1a1cb74ab7343ef603490518715297be83" prot="public" virt="non-virtual"><scope>sql</scope><name>get_data</name></member>
+      <member refid="classsql_1afbf7d36239ee07a23d06c72f2fd1b93c" prot="public" virt="non-virtual"><scope>sql</scope><name>get_data</name></member>
+      <member refid="classsql_1a62cd4910a9310621ca22fb3c322f52a4" prot="public" virt="non-virtual"><scope>sql</scope><name>get_in_game_name_from_id_inventory</name></member>
+      <member refid="classsql_1a7f818b967453b1ae15ce4c5b28cf4765" prot="public" virt="non-virtual"><scope>sql</scope><name>get_inventory</name></member>
+      <member refid="classsql_1a5eb7fea00a56fe6ba33f602871798bc8" prot="public" virt="non-virtual"><scope>sql</scope><name>get_level_background_value</name></member>
+      <member refid="classsql_1a9928c456c632f88d19cce26b8165bd6f" prot="public" virt="non-virtual"><scope>sql</scope><name>get_level_ids</name></member>
+      <member refid="classsql_1a1dd21fbf729e949d804ba5509af2b295" prot="public" virt="non-virtual"><scope>sql</scope><name>get_level_object_value</name></member>
+      <member refid="classsql_1ae959c21f71c8f9b1df8bde932a6c484b" prot="public" virt="non-virtual"><scope>sql</scope><name>get_music</name></member>
+      <member refid="classsql_1a7b49bcf5ac10f6421a5ecd62865e3316" prot="public" virt="non-virtual"><scope>sql</scope><name>get_name_from_id_inventory</name></member>
+      <member refid="classsql_1af04403a0cab4ee13a6f70b396e5b3a20" prot="public" virt="non-virtual"><scope>sql</scope><name>get_npc_value</name></member>
+      <member refid="classsql_1ae854372bac3fc5e681287e3cbf5b03de" prot="public" virt="non-virtual"><scope>sql</scope><name>get_number_of_npcs</name></member>
+      <member refid="classsql_1a0ea1aa772cb693be29da61c6cadffd86" prot="public" virt="non-virtual"><scope>sql</scope><name>get_object_sprite_ids</name></member>
+      <member refid="classsql_1a2466fe5b0ec24e98190ee5763a4a69d1" prot="public" virt="non-virtual"><scope>sql</scope><name>get_object_sprite_value</name></member>
+      <member refid="classsql_1a370d018617316ff6489cbb97565b7af9" prot="public" virt="non-virtual"><scope>sql</scope><name>get_player_sprite</name></member>
+      <member refid="classsql_1ae560c01f2e8e57cee454ecd8e38616eb" prot="public" virt="non-virtual"><scope>sql</scope><name>get_player_value</name></member>
+      <member refid="classsql_1a251f53bb3d5d98f821713a42212276e9" prot="public" virt="non-virtual"><scope>sql</scope><name>get_player_value</name></member>
+      <member refid="classsql_1a9f75a32a77a498b1a328a53ade518ce7" prot="public" virt="non-virtual"><scope>sql</scope><name>get_quest_parts</name></member>
+      <member refid="classsql_1a59249e218b1bb9d811c50b5615312eaf" prot="public" virt="non-virtual"><scope>sql</scope><name>get_quest_text</name></member>
+      <member refid="classsql_1ad4d8bdf41eede1ae1363d0be8a2f60a9" prot="public" virt="non-virtual"><scope>sql</scope><name>get_result</name></member>
+      <member refid="classsql_1a060764a845c3a26c99c6f15470df9634" prot="public" virt="non-virtual"><scope>sql</scope><name>get_sprite_inventory</name></member>
+      <member refid="classsql_1a1ad7137a182503f7676b53f6fa2786ed" prot="private" virt="non-virtual"><scope>sql</scope><name>rc</name></member>
+      <member refid="classsql_1a4c6195e2934d72569b45041039a2be63" prot="public" virt="non-virtual"><scope>sql</scope><name>save_tiles</name></member>
+      <member refid="classsql_1ac24a3682f7478f78508e3e433b637407" prot="public" virt="non-virtual"><scope>sql</scope><name>set_new_map</name></member>
+      <member refid="classsql_1ad28cc81f2ee03c6a15d26ff216353d71" prot="public" virt="non-virtual"><scope>sql</scope><name>set_result</name></member>
+      <member refid="classsql_1ac9b186df2a51d7eda72cd4a9c34c0624" prot="public" virt="non-virtual"><scope>sql</scope><name>sql</name></member>
+      <member refid="classsql_1a67805540e55f3cfb1849178023aa39b2" prot="public" virt="non-virtual"><scope>sql</scope><name>~sql</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

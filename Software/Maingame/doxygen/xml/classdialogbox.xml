@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classdialogbox" kind="class" language="C++" prot="public">
+    <compoundname>dialogbox</compoundname>
+    <includes refid="dialogbox_8hpp" local="no">dialogbox.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdialogbox_1a37ebf2968cfa80f0cdde35d2722f40ad" prot="private" static="no" mutable="no">
+        <type>sf::Font</type>
+        <definition>sf::Font dialogbox::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" line="10" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdialogbox_1a11fd386b5bb381072262a574ea25c8c3" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dialogbox::font_path</definition>
+        <argsstring></argsstring>
+        <name>font_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" line="11" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdialogbox_1a05031b5d9149389d301638da9005e744" prot="private" static="no" mutable="no">
+        <type>sf::Vector2f</type>
+        <definition>sf::Vector2f dialogbox::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" line="12" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdialogbox_1aa0686bdcc541c36e19ba3122befe1978" prot="private" static="no" mutable="no">
+        <type><ref refid="classpicture" kindref="compound">picture</ref></type>
+        <definition>picture dialogbox::box</definition>
+        <argsstring></argsstring>
+        <name>box</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" line="13" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdialogbox_1a227a4bab170830377e3b954c80341570" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dialogbox::last_text</definition>
+        <argsstring></argsstring>
+        <name>last_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" line="16" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classdialogbox_1ab9d8f8b65c3a54ccaea57a941d43a176" compoundref="dialogbox_8cpp" startline="20" endline="25">text_input</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdialogbox_1a710d3c7c4f21676a560d6825ff22a152" prot="public" static="no" mutable="no">
+        <type>sf::Text</type>
+        <definition>sf::Text dialogbox::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" line="17" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classdialogbox_1a44b14d7932ab0866ba2d3708d406bfb7" compoundref="dialogbox_8cpp" startline="3" endline="13">dialogbox</referencedby>
+        <referencedby refid="classdialogbox_1a722438dee05d120c77871b1ec9d26cf5" compoundref="dialogbox_8cpp" startline="15" endline="18">draw</referencedby>
+        <referencedby refid="classdialogbox_1ab9d8f8b65c3a54ccaea57a941d43a176" compoundref="dialogbox_8cpp" startline="20" endline="25">text_input</referencedby>
+        <referencedby refid="classdialogbox_1aeb83bd7a568feeb4be10a0335838ae2a" compoundref="dialogbox_8cpp" startline="27" endline="29">getBounds</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdialogbox_1a44b14d7932ab0866ba2d3708d406bfb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dialogbox::dialogbox</definition>
+        <argsstring>(std::string box_path, std::string font_path, sf::Vector2f position)</argsstring>
+        <name>dialogbox</name>
+        <param>
+          <type>std::string</type>
+          <declname>box_path</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>font_path</declname>
+        </param>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will create a object of this class.</para><para><heading level="2">Parameters: </heading>
+</para><para>box path : std::string <linebreak/>
+-&gt; The path which contains the background of the dialogbox. <linebreak/>
+ font_path : std::string <linebreak/>
+-&gt; The path which contains font of the text in the dialogbox. <linebreak/>
+ position : sf::vector2f <linebreak/>
+-&gt; This is the position of the dialogbox on the screen. <linebreak/>
+ <heading level="2">Example: </heading>
+</para><para>dialogbox d(&quot;background.png&quot;, &quot;font.ttf&quot;, {200, 800}); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" line="40" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.cpp" bodystart="3" bodyend="13"/>
+        <references refid="classdialogbox_1a710d3c7c4f21676a560d6825ff22a152" compoundref="dialogbox_8hpp" startline="17">text</references>
+      </memberdef>
+      <memberdef kind="function" id="classdialogbox_1a722438dee05d120c77871b1ec9d26cf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dialogbox::draw</definition>
+        <argsstring>(sf::RenderWindow &amp;window)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>sf::RenderWindow &amp;</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Draw the dialogbox. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method draws the dialogbox on the screen.</para><para><heading level="2">Parameters: </heading>
+</para><para>window : sf::RenderWindow&amp; <linebreak/>
+-&gt; The window where the dialogbox is shown on. <linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>dialogbox.draw(window); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" line="58" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.cpp" bodystart="15" bodyend="18"/>
+        <references refid="classpicture_1ac69e8047651291091abbe2a8da545aa1" compoundref="objects_8cpp" startline="79" endline="82">picture::draw</references>
+        <references refid="classdialogbox_1a710d3c7c4f21676a560d6825ff22a152" compoundref="dialogbox_8hpp" startline="17">text</references>
+        <referencedby refid="classgame_1a2b80a1fbc6d723e78d3c86d2f8ff24d4" compoundref="game_8cpp" startline="52" endline="96">game::game_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdialogbox_1ab9d8f8b65c3a54ccaea57a941d43a176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dialogbox::text_input</definition>
+        <argsstring>(std::string sentence, int char_size, sf::Color color)</argsstring>
+        <name>text_input</name>
+        <param>
+          <type>std::string</type>
+          <declname>sentence</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>char_size</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Set text in the dialogbox. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method sets a given text in a dialogbox. <linebreak/>
+Also is the font size given and in what color the text should appear. <linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>sentence : std::string <linebreak/>
+-&gt; The sentence which is shown in the dialogbox.</para><para>char_size : int <linebreak/>
+-&gt; The size of the characters in the dialogbox.</para><para>color : sf::Color <linebreak/>
+-&gt; The color of the text.</para><para><heading level="2">Example: </heading>
+</para><para>text_input(&quot;hey&quot;, 30, sf::Color::Red); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" line="83" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.cpp" bodystart="20" bodyend="25"/>
+        <references refid="classdialogbox_1a227a4bab170830377e3b954c80341570" compoundref="dialogbox_8hpp" startline="16">last_text</references>
+        <references refid="classdialogbox_1a710d3c7c4f21676a560d6825ff22a152" compoundref="dialogbox_8hpp" startline="17">text</references>
+        <referencedby refid="classgame_1a2b80a1fbc6d723e78d3c86d2f8ff24d4" compoundref="game_8cpp" startline="52" endline="96">game::game_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdialogbox_1aeb83bd7a568feeb4be10a0335838ae2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sf::FloatRect</type>
+        <definition>sf::FloatRect dialogbox::getBounds</definition>
+        <argsstring>()</argsstring>
+        <name>getBounds</name>
+        <briefdescription>
+<para>Get bounds of dialogbox. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will return the boundary of the text in the dialogbox.</para><para><heading level="2">Return: </heading>
+</para><para>sf::FloatRect : sf::FloatRect -&gt; The boundary of the text in the dialogbox.</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classdialogbox_1aeb83bd7a568feeb4be10a0335838ae2a" kindref="member">getBounds()</ref>; -&gt; (100,100,50,50) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" line="101" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.cpp" bodystart="27" bodyend="29"/>
+        <references refid="classdialogbox_1a710d3c7c4f21676a560d6825ff22a152" compoundref="dialogbox_8hpp" startline="17">text</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" line="8" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/dialogbox.hpp" bodystart="8" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classdialogbox_1aa0686bdcc541c36e19ba3122befe1978" prot="private" virt="non-virtual"><scope>dialogbox</scope><name>box</name></member>
+      <member refid="classdialogbox_1a44b14d7932ab0866ba2d3708d406bfb7" prot="public" virt="non-virtual"><scope>dialogbox</scope><name>dialogbox</name></member>
+      <member refid="classdialogbox_1a722438dee05d120c77871b1ec9d26cf5" prot="public" virt="non-virtual"><scope>dialogbox</scope><name>draw</name></member>
+      <member refid="classdialogbox_1a37ebf2968cfa80f0cdde35d2722f40ad" prot="private" virt="non-virtual"><scope>dialogbox</scope><name>font</name></member>
+      <member refid="classdialogbox_1a11fd386b5bb381072262a574ea25c8c3" prot="private" virt="non-virtual"><scope>dialogbox</scope><name>font_path</name></member>
+      <member refid="classdialogbox_1aeb83bd7a568feeb4be10a0335838ae2a" prot="public" virt="non-virtual"><scope>dialogbox</scope><name>getBounds</name></member>
+      <member refid="classdialogbox_1a227a4bab170830377e3b954c80341570" prot="public" virt="non-virtual"><scope>dialogbox</scope><name>last_text</name></member>
+      <member refid="classdialogbox_1a05031b5d9149389d301638da9005e744" prot="private" virt="non-virtual"><scope>dialogbox</scope><name>position</name></member>
+      <member refid="classdialogbox_1a710d3c7c4f21676a560d6825ff22a152" prot="public" virt="non-virtual"><scope>dialogbox</scope><name>text</name></member>
+      <member refid="classdialogbox_1ab9d8f8b65c3a54ccaea57a941d43a176" prot="public" virt="non-virtual"><scope>dialogbox</scope><name>text_input</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

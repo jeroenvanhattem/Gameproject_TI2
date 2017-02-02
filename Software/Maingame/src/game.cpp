@@ -68,7 +68,6 @@ void game::game_loop() {
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
 				while (sf::Keyboard::isKeyPressed(sf::Keyboard::R));
 				arno.respawn();
-				//std::cout << "(" << window.mapPixelToCoords(sf::Mouse::getPosition(window),game_view).x << " , " << window.mapPixelToCoords(sf::Mouse::getPosition(window), game_view).y << ")\n";
 			}
 		}
 		else {
@@ -78,10 +77,8 @@ void game::game_loop() {
 		interact("1");
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::I)) {
-			//while (sf::Keyboard::isKeyPressed(sf::Keyboard::I)){
 			inv.get_inventory();
 			while (!sf::Keyboard::isKeyPressed(sf::Keyboard::I));
-			//}
 		}
 
 
@@ -271,33 +268,26 @@ void game::load_npc() {
 
 void game::player_skill() {
 	std::string temp = get_skill_from_button_keys();
-	
 	std::string current = arno.get_current_action();
 
 	if (temp != "") {
 		if ((current.find("up")) != std::string::npos) {
 			temp += "_up";
-			arno.get_action(temp);
 			perform_player_action(temp);
 		}
 		else if ((current.find("left")) != std::string::npos) {
 			temp += "_left";
-			arno.get_action(temp);
 			perform_player_action(temp);
 		}
 		else if ((current.find("down")) != std::string::npos) {
 			temp += "_down";
-			arno.get_action(temp);
 			perform_player_action(temp);
 		}
 		else if ((current.find("right")) != std::string::npos) {
 			temp += "_right";
-			arno.get_action(temp);
 			perform_player_action(temp);
 		}
 	}
-	
-
 }
 
 
@@ -352,9 +342,25 @@ void game::perform_player_action(std::string action) {
 }
 
 void game::perform_npc_action(std::string npc_name, std::string action) {
+	std::vector<sf::Sprite> temp;
+	std::string action_save;
 	for (auto indexer : npc_list) {
 		if (indexer->get_name() == npc_name) {
-			indexer->get_action(action);
+			temp = indexer->get_action(action);
+			action_save = indexer->get_current_action();
+			for (auto & index : temp) {
+				window.clear();
+
+				draw_background_store();
+				draw_npc();
+				indexer->show_ability(action);
+
+				window.display();
+				sf::sleep(sf::milliseconds(50));
+			}
+			indexer->set_action(action_save);
+			break;
 		}
 	}
+	
 }

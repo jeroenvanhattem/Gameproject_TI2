@@ -32,19 +32,83 @@ private:
 	std::map<std::string, std::vector<std::string>>object_values_map;
 	std::map<std::string, std::vector<std::string>>begin_stories;
 
-	/*std::string tutorial_sentence = "Welcome, try to walk using the up, down, left or right keys.\n\nPress space to begin!";
-	std::string game_intro = "Ouch, where am i?\n\nIt feels like i slept for hours and i can't remember a thing.\n\n[press space to continue])";
-	std::string trigger_1 = "Wow, did you do that all by yourself? .... Idiot.";*/
-	
 	bool game_begin = false;
 	bool first_dialog_done = false;
 	int count = 0;
 
+
+	/// Checkt left edge of screen
+	//
+	/// This function checks if the mouse intersects with the left edge of the screen.\n
+	///
+	/// Parameters:
+	/// -----------
+	/// view : sf::View&\n
+	///	-> The view is given with the function.
+	///
+	/// Example:
+	/// --------
+	/// mouse_intersects_left_edge(view1);
+	///
 	bool mouse_intersects_left_edge(sf::View & view);
+
+
+	/// Checkt right edge of screen
+	//
+	/// This function checks if the mouse intersects with the right edge of the screen.\n
+	///
+	/// Parameters:
+	/// -----------
+	/// view : sf::View&\n
+	///	-> The view is given with the function.
+	///
+	/// Example:
+	/// --------
+	/// mouse_intersects_right_edge(view1);
+	///
 	bool mouse_intersects_right_edge(sf::View & view);
+
+
+	/// Checkt upper edge of screen
+	//
+	/// This function checks if the mouse intersects with the upper edge of the screen.\n
+	///
+	/// Parameters:
+	/// -----------
+	/// view : sf::View&\n
+	///	-> The view is given with the function.
+	///
+	/// Example:
+	/// --------
+	/// mouse_intersects_upper_edge(view1);
+	///
 	bool mouse_intersects_upper_edge(sf::View & view);
+
+
+	/// Checkt buttom edge of screen
+	//
+	/// This function checks if the mouse intersects with the down edge of the screen.\n
+	///
+	/// Parameters:
+	/// -----------
+	/// view : sf::View&\n
+	///	-> The view is given with the function.
+	///
+	/// Example:
+	/// --------
+	/// mouse_intersects_down_edge(view1);
+	///
 	bool mouse_intersects_down_edge(sf::View & view);
 
+
+	/// Activate game_viewr
+	//
+	/// This function is used to activate the game_viewer. \n
+	///
+	/// Example:
+	/// --------
+	/// game_viewer();
+	///
 	void game_viewer();
 
 	/// Draw NPC's on the window
@@ -163,6 +227,12 @@ private:
 	void perform_npc_action(std::string npc_name, std::string action);
 
 
+	/// Show action if action button pressed
+	//
+	/// This method will let the player perform a certain skill if the consisting button is pressed. \n
+	/// The consisting keys and buttons are defined in button_actions.\n
+	/// 
+	///
 	void player_skill();
 
 	/// Interact with a NPC

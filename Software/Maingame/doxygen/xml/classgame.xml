@@ -1,0 +1,707 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgame" kind="class" language="C++" prot="public">
+    <compoundname>game</compoundname>
+    <includes refid="game_8hpp" local="no">game.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgame_1abea612890f55555c354cb24bd521b784" prot="private" static="no" mutable="no">
+        <type><ref refid="classplayer" kindref="compound">player</ref></type>
+        <definition>player game::arno</definition>
+        <argsstring></argsstring>
+        <name>arno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="19" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1a2ea8501912521b1b00dcd29284039234" prot="private" static="no" mutable="no">
+        <type><ref refid="classdialogbox" kindref="compound">dialogbox</ref></type>
+        <definition>dialogbox game::dialogbox</definition>
+        <argsstring></argsstring>
+        <name>dialogbox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="20" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1aa6c2206b4735cd2c90f934384c350e0a" prot="private" static="no" mutable="no">
+        <type><ref refid="classsql" kindref="compound">sql</ref> &amp;</type>
+        <definition>sql&amp; game::database</definition>
+        <argsstring></argsstring>
+        <name>database</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="21" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1af7435cad08a8114c7598bc99f5b6496e" prot="private" static="no" mutable="no">
+        <type>sf::RenderWindow &amp;</type>
+        <definition>sf::RenderWindow&amp; game::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="22" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1ac607d12774a2ebf6fb3cf24a60f47fed" prot="private" static="no" mutable="no">
+        <type>sf::View</type>
+        <definition>sf::View game::game_view</definition>
+        <argsstring></argsstring>
+        <name>game_view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="23" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1aead46333e3eb81e970a9d10d0b2481c9" prot="private" static="no" mutable="no">
+        <type>sf::View</type>
+        <definition>sf::View game::dialogbox_view</definition>
+        <argsstring></argsstring>
+        <name>dialogbox_view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="24" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1a4bfc9c9555fc75525ba0d8719827e749" prot="private" static="no" mutable="no">
+        <type><ref refid="classinventory" kindref="compound">inventory</ref></type>
+        <definition>inventory game::inv</definition>
+        <argsstring></argsstring>
+        <name>inv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="25" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1abccd2ff11b53d33fde0ee8ab50c29972" prot="private" static="no" mutable="no">
+        <type>sf::Vector2f</type>
+        <definition>sf::Vector2f game::levelsize</definition>
+        <argsstring></argsstring>
+        <name>levelsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="26" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1ad39555b6aeb922c481a4f37500280d96" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classpicture" kindref="compound">picture</ref> * &gt;</type>
+        <definition>std::vector&lt;picture*&gt; game::background_store</definition>
+        <argsstring></argsstring>
+        <name>background_store</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="27" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1af427a7b929715c637cb10a4894386ead" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classnpc" kindref="compound">npc</ref> * &gt;</type>
+        <definition>std::vector&lt;npc*&gt; game::npc_list</definition>
+        <argsstring></argsstring>
+        <name>npc_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="28" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1ab83d40295556a456fd5f976335609ab1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; sf::IntRect &gt;</type>
+        <definition>std::vector&lt;sf::IntRect&gt; game::collision_objects</definition>
+        <argsstring></argsstring>
+        <name>collision_objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="29" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1a961d3da89b2af402aff6c9f7c2a2b81c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; sf::IntRect &gt;</type>
+        <definition>std::vector&lt;sf::IntRect&gt; game::collision_backgrounds</definition>
+        <argsstring></argsstring>
+        <name>collision_backgrounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="30" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1a839db13cc77624fa6a671b46bbf02b28" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::vector&lt;std::string&gt; &gt; game::background_values_map</definition>
+        <argsstring></argsstring>
+        <name>background_values_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="31" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1a7fcd329ec94a2aa84d486e67978d417a" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::vector&lt;std::string&gt; &gt; game::object_values_map</definition>
+        <argsstring></argsstring>
+        <name>object_values_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="32" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1a601fdbb561a442a318906ad9b57536f0" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::vector&lt;std::string&gt; &gt; game::begin_stories</definition>
+        <argsstring></argsstring>
+        <name>begin_stories</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="33" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1ae82c66167f3bf9cd4892a9e0ec6c3ba6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool game::game_begin</definition>
+        <argsstring></argsstring>
+        <name>game_begin</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="35" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1ac28a00d246bdb9b92858bd876c6edd0e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool game::first_dialog_done</definition>
+        <argsstring></argsstring>
+        <name>first_dialog_done</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="36" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1a278222f919fb52fb2f87e45be40fb571" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int game::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="37" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgame_1ae263cdc30dcc916b98b0ddbbf0a6fccc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool game::mouse_intersects_left_edge</definition>
+        <argsstring>(sf::View &amp;view)</argsstring>
+        <name>mouse_intersects_left_edge</name>
+        <param>
+          <type>sf::View &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Checkt left edge of screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function checks if the mouse intersects with the left edge of the screen.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>view : sf::View&amp;<linebreak/>
+-&gt; The view is given with the function.</para><para><heading level="2">Example: </heading>
+</para><para>mouse_intersects_left_edge(view1); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="53" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a273013552bc7ad8fef9d9192aad3cc0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool game::mouse_intersects_right_edge</definition>
+        <argsstring>(sf::View &amp;view)</argsstring>
+        <name>mouse_intersects_right_edge</name>
+        <param>
+          <type>sf::View &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Checkt right edge of screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function checks if the mouse intersects with the right edge of the screen.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>view : sf::View&amp;<linebreak/>
+-&gt; The view is given with the function.</para><para><heading level="2">Example: </heading>
+</para><para>mouse_intersects_right_edge(view1); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="69" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1abb1c33c5a73de27e4ebd20e1b61dc3dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool game::mouse_intersects_upper_edge</definition>
+        <argsstring>(sf::View &amp;view)</argsstring>
+        <name>mouse_intersects_upper_edge</name>
+        <param>
+          <type>sf::View &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Checkt upper edge of screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function checks if the mouse intersects with the upper edge of the screen.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>view : sf::View&amp;<linebreak/>
+-&gt; The view is given with the function.</para><para><heading level="2">Example: </heading>
+</para><para>mouse_intersects_upper_edge(view1); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="85" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a34a5241e205d0985a9e477a3dd77ba08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool game::mouse_intersects_down_edge</definition>
+        <argsstring>(sf::View &amp;view)</argsstring>
+        <name>mouse_intersects_down_edge</name>
+        <param>
+          <type>sf::View &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Checkt buttom edge of screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function checks if the mouse intersects with the down edge of the screen.<linebreak/>
+ <heading level="2">Parameters: </heading>
+</para><para>view : sf::View&amp;<linebreak/>
+-&gt; The view is given with the function.</para><para><heading level="2">Example: </heading>
+</para><para>mouse_intersects_down_edge(view1); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="101" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a69793e75c155cb06e4f2c4d98c5da27c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::game_viewer</definition>
+        <argsstring>()</argsstring>
+        <name>game_viewer</name>
+        <briefdescription>
+<para>Activate game_viewr. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used to activate the game_viewer. <linebreak/>
+ <heading level="2">Example: </heading>
+</para><para>game_viewer(); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="112" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="98" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a961fe8a42a2c0bc1ef62ef17c7c64f06" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::draw_npc</definition>
+        <argsstring>()</argsstring>
+        <name>draw_npc</name>
+        <briefdescription>
+<para>Draw NPC&apos;s on the window. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function will go through a vector which contains NPC objects, their draw function will be called on all of them one by one.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>draw_npc() <linebreak/>
+-&gt; Drawing the NPC&apos;s on the window </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="125" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="257" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a3718980f99cd44e9c882c2aa67368450" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::load_npc</definition>
+        <argsstring>()</argsstring>
+        <name>load_npc</name>
+        <briefdescription>
+<para>Get all the NPC&apos;s. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function will retrieve all the NPC&apos;s from the database and put them in the &apos;npc_list&apos; vector.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>load_npc() <linebreak/>
+-&gt; The npc_list vector will be filled with NPC objects from the database </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="137" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="263" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1af99a7ac774385373a015bd3082049bd2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::view_start_dialogs</definition>
+        <argsstring>()</argsstring>
+        <name>view_start_dialogs</name>
+        <briefdescription>
+<para>Show beginning dialogues. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function shows the the dialogs that will be shown in the beginning of the game.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>view_start_dialogs() <linebreak/>
+-&gt; Dialogues will be shown on the bottom of the screen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="149" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="121" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a4cf9147e06874edfc6190db64d719dec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::draw_background_store</definition>
+        <argsstring>()</argsstring>
+        <name>draw_background_store</name>
+        <briefdescription>
+<para>Show the store on the window. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function retrieves the background of the store from the vector it&apos;s in and displays it on the screen.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>draw_background_store() <linebreak/>
+-&gt; The store will be shown on the window </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="161" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="250" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1ab13015cdc535671de1dd7a5a7970a238" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::move_player</definition>
+        <argsstring>()</argsstring>
+        <name>move_player</name>
+        <briefdescription>
+<para>Moves the player. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function will move the player as long as there&apos;s no collision. <linebreak/>
+When there&apos;s a collision the player will be set back to its previous position before the collision.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>move_player() <linebreak/>
+-&gt; Move the player </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="174" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="294" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a4982a1c81b1a52b8f050ef48dea86743" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::draw_player</definition>
+        <argsstring>()</argsstring>
+        <name>draw_player</name>
+        <briefdescription>
+<para>Draws the player on the screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function calls the draw function from the &apos;player&apos; class, which will then draw the player on the screen.</para><para><heading level="2">Example: </heading>
+</para><para>move_player() <linebreak/>
+-&gt; Player will be shown on the screen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="187" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="323" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a50870549f1abdbc924743d8173ced15d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::perform_player_action</definition>
+        <argsstring>(std::string action)</argsstring>
+        <name>perform_player_action</name>
+        <param>
+          <type>std::string</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Show the sprite that belongs to the action. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function shows the action the belongs to the state of the player, <linebreak/>
+if he walks up, the sprite will be shown of the player walking up. <linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>action : std::string<linebreak/>
+-&gt; The name of the action that must be performed</para><para><heading level="2">Example: </heading>
+</para><para>perform_player_action(&quot;walk_up&quot;) <linebreak/>
+<itemizedlist>
+<listitem><para>&gt; The player will be shown doing something, like walking up, walking down or dying </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="205" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="327" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a5b71f711786b1b48343dd02d31551a69" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::perform_npc_action</definition>
+        <argsstring>(std::string npc_name, std::string action)</argsstring>
+        <name>perform_npc_action</name>
+        <param>
+          <type>std::string</type>
+          <declname>npc_name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Show the sprite that belongs to the action. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function shows the action the belongs to the state of the NPC, if it walks up, the sprite will be shown of the NPC walking up.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>action : std::string<linebreak/>
+-&gt; The name of the action that must be performed.</para><para>npc_name : std::string<linebreak/>
+-&gt; The name of the NPC on which this function must be executed.</para><para><heading level="2">Example: </heading>
+</para><para>perform_npc_action(&quot;henk&quot;, &quot;walk_up&quot;) <linebreak/>
+<itemizedlist>
+<listitem><para>&gt; The NPC will be shown doing something, like walking up, walking down or dying </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="227" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="344" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a478a3366ffd0e10713b0abc3adb65696" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::player_skill</definition>
+        <argsstring>()</argsstring>
+        <name>player_skill</name>
+        <briefdescription>
+<para>Show action if action button pressed. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will let the player perform a certain skill if the consisting button is pressed. <linebreak/>
+The consisting keys and buttons are defined in button_actions.<linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="236" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="269" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a61adfafa4d31548fc94c853f10b9bf3b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::interact</definition>
+        <argsstring>()</argsstring>
+        <name>interact</name>
+        <briefdescription>
+<para>Interact with a NPC. </para>        </briefdescription>
+        <detaileddescription>
+<para>Call the &apos;interact&apos; function to see if the player can interact with a player.<linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>player.interact() <linebreak/>
+-&gt; Executing the function which will show text on the screen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="248" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="184" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1aa78cf955c292ac2bd75fa385a946cd6e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::interact</definition>
+        <argsstring>(std::string item_id)</argsstring>
+        <name>interact</name>
+        <param>
+          <type>std::string</type>
+          <declname>item_id</declname>
+        </param>
+        <briefdescription>
+<para>Interact with a object or tile. </para>        </briefdescription>
+        <detaileddescription>
+<para>Call the &apos;interact&apos; function to see if the player can interact with a player.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>item_name : std::string<linebreak/>
+-&gt; The name of an item which will be given to the player</para><para><heading level="2">Example: </heading>
+</para><para>player.interact(&quot;banana&quot;) <linebreak/>
+<itemizedlist>
+<listitem><para>&gt; Give the player an item and update this in the database </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="266" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="210" bodyend="234"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1a46eaf7a077e7f3ff0b5e229142358f00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>game::game</definition>
+        <argsstring>(sf::RenderWindow &amp;window, sql &amp;database, sf::Vector2f levelsize)</argsstring>
+        <name>game</name>
+        <param>
+          <type>sf::RenderWindow &amp;</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="classsql" kindref="compound">sql</ref> &amp;</type>
+          <declname>database</declname>
+        </param>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>levelsize</declname>
+        </param>
+        <briefdescription>
+<para>The constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>The constructor of the &apos;game&apos; class, this creates a game object.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>levelsize : sf::Vector2f <linebreak/>
+-&gt; The size of the level</para><para>database : sql &amp; <linebreak/>
+-&gt; A &apos;SQ&apos; object, this will be used to get information from the database</para><para>window :sf::RenderWindow <linebreak/>
+-&gt; The window on which the game has to be drawn</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classgame" kindref="compound">game(window, database, levelsize)</ref> <linebreak/>
+<itemizedlist>
+<listitem><para>&gt; This will create a &apos;game&apos; object </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="292" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="3" bodyend="50"/>
+        <references refid="classsql_1a9928c456c632f88d19cce26b8165bd6f" compoundref="sql_8cpp" startline="394" endline="397">sql::get_level_ids</references>
+        <references refid="classsql_1a5eb7fea00a56fe6ba33f602871798bc8" compoundref="sql_8cpp" startline="452" endline="499">sql::get_level_background_value</references>
+        <references refid="classsql_1af126860a2afcf82e53c9f895577bab76" compoundref="sql_8cpp" startline="502" endline="539">sql::get_collision_objects</references>
+        <references refid="classgame_1a0eb06f984d04128ba7fba6fcca04bda3" compoundref="game_8cpp" startline="236" endline="248">get_items_from_database</references>
+        <references refid="classsql_1a1dd21fbf729e949d804ba5509af2b295" compoundref="sql_8cpp" startline="401" endline="449">sql::get_level_object_value</references>
+        <references refid="classsql_1a9f75a32a77a498b1a328a53ade518ce7" compoundref="sql_8cpp" startline="636" endline="644">sql::get_quest_parts</references>
+        <references refid="classsql_1a59249e218b1bb9d811c50b5615312eaf" compoundref="sql_8cpp" startline="607" endline="633">sql::get_quest_text</references>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a2b80a1fbc6d723e78d3c86d2f8ff24d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::game_loop</definition>
+        <argsstring>()</argsstring>
+        <name>game_loop</name>
+        <briefdescription>
+<para>Loop that handles the game. </para>        </briefdescription>
+        <detaileddescription>
+<para>This funtion will execute everything that will be needed to run the game, <linebreak/>
+like drawing the window, loading the NPC&apos;s and working with them</para><para><heading level="2">Example: </heading>
+</para><para><ref refid="classgame_1a2b80a1fbc6d723e78d3c86d2f8ff24d4" kindref="member">game_loop()</ref> <linebreak/>
+<itemizedlist>
+<listitem><para>&gt; This will start the game </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="305" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="52" bodyend="96"/>
+        <references refid="classplayer_1a519784459639f6b785bcfeaa05b6f604" compoundref="player_8cpp" startline="37" endline="40">player::respawn</references>
+        <references refid="classinventory_1abb6d846e4b7297f79c2c9fb34b26fee2" compoundref="inventory_8cpp" startline="8" endline="30">inventory::get_inventory</references>
+        <references refid="button__actions_8cpp_1a067f53aa6474ce70abccc5bbd28ad01d" compoundref="button__actions_8cpp" startline="46" endline="48">get_mouse_position</references>
+        <references refid="button__actions_8hpp_1ad0da36b2558901e21e7a30f6c227a45e" compoundref="button__actions_8hpp" startline="8">x</references>
+        <references refid="classdialogbox_1ab9d8f8b65c3a54ccaea57a941d43a176" compoundref="dialogbox_8cpp" startline="20" endline="25">dialogbox::text_input</references>
+        <references refid="classdialogbox_1a722438dee05d120c77871b1ec9d26cf5" compoundref="dialogbox_8cpp" startline="15" endline="18">dialogbox::draw</references>
+        <references refid="button__actions_8cpp_1a6a2c7019e201b42b13d3032fc538298d" compoundref="button__actions_8cpp" startline="11" endline="23">get_move_direction_from_button_keys</references>
+        <references refid="classplayer_1ad93507550867df5598b86b73de01ec12" compoundref="player_8cpp" startline="42" endline="44">player::get_interaction</references>
+        <references refid="classsql_1a9f75a32a77a498b1a328a53ade518ce7" compoundref="sql_8cpp" startline="636" endline="644">sql::get_quest_parts</references>
+        <references refid="classsql_1a59249e218b1bb9d811c50b5615312eaf" compoundref="sql_8cpp" startline="607" endline="633">sql::get_quest_text</references>
+        <references refid="classsql_1af0e753f3af81ff1ff7f7582dcea4b0ed" compoundref="sql_8cpp" startline="83" endline="91">sql::add_item_to_inventory</references>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="24" endline="77">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1a0eb06f984d04128ba7fba6fcca04bda3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void game::get_items_from_database</definition>
+        <argsstring>(std::map&lt; std::string, std::vector&lt; std::string &gt;&gt; &amp;item_values_map)</argsstring>
+        <name>get_items_from_database</name>
+        <param>
+          <type>std::map&lt; std::string, std::vector&lt; std::string &gt;&gt; &amp;</type>
+          <declname>item_values_map</declname>
+        </param>
+        <briefdescription>
+<para>Get the items from the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function gets all the items from the database and places it in a std::map.<linebreak/>
+</para><para><heading level="2">Parameters: </heading>
+</para><para>item_values_map : std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; &amp; <linebreak/>
+-&gt; The map that contains all the items and its location</para><para><heading level="2">Example: </heading>
+</para><para>get_items_from_database(background_values_map) <linebreak/>
+<itemizedlist>
+<listitem><para>&gt; The std::map will be filled with the items </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="323" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.cpp" bodystart="236" bodyend="248"/>
+        <references refid="classsql_1ae854372bac3fc5e681287e3cbf5b03de" compoundref="sql_8cpp" startline="178" endline="181">sql::get_number_of_npcs</references>
+        <references refid="button__actions_8cpp_1aac3d825fa7b0f54fd0340a611b9639d5" compoundref="button__actions_8cpp" startline="25" endline="33">get_skill_from_button_keys</references>
+        <references refid="classplayer_1afc7732284851b7f0d90b66a5d25931e2" compoundref="player_8cpp" startline="55" endline="57">player::get_current_action</references>
+        <references refid="classplayer_1ad93507550867df5598b86b73de01ec12" compoundref="player_8cpp" startline="42" endline="44">player::get_interaction</references>
+        <references refid="classplayer_1aa405bc495c5a6bced7740352abd4249f" compoundref="player_8cpp" startline="46" endline="48">player::get_collision</references>
+        <references refid="classplayer_1aa673c84d7b56badc58d7c467325cbf88" compoundref="player_8cpp" startline="24" endline="26">player::set_action</references>
+        <references refid="button__actions_8cpp_1a147658cb884fa19f4a0a255ea858b7b8" compoundref="button__actions_8cpp" startline="35" endline="43">get_action_name_from_button_keys</references>
+        <references refid="classplayer_1a0f6538451ec51b4407cca22294451443" compoundref="player_8cpp" startline="18" endline="22">player::move</references>
+        <references refid="button__actions_8cpp_1a6a2c7019e201b42b13d3032fc538298d" compoundref="button__actions_8cpp" startline="11" endline="23">get_move_direction_from_button_keys</references>
+        <references refid="classplayer_1a3bf8cc80800146684a3dbf28c0c4a83c" compoundref="player_8cpp" startline="32" endline="35">player::set_last_position</references>
+        <references refid="classplayer_1a67423ce10d4abb42775868f978d04247" compoundref="player_8cpp" startline="28" endline="30">player::draw</references>
+        <references refid="classplayer_1a676129193d589a975d7a86429a37b1b7" compoundref="player_8cpp" startline="59" endline="61">player::get_action</references>
+        <references refid="classplayer_1a4659a0677d5b19b0ae27737dfaa0176e" compoundref="player_8cpp" startline="68" endline="70">player::show_ability</references>
+        <referencedby refid="classgame_1a46eaf7a077e7f3ff0b5e229142358f00" compoundref="game_8cpp" startline="3" endline="50">game</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" line="17" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/game.hpp" bodystart="17" bodyend="324"/>
+    <listofallmembers>
+      <member refid="classgame_1abea612890f55555c354cb24bd521b784" prot="private" virt="non-virtual"><scope>game</scope><name>arno</name></member>
+      <member refid="classgame_1ad39555b6aeb922c481a4f37500280d96" prot="private" virt="non-virtual"><scope>game</scope><name>background_store</name></member>
+      <member refid="classgame_1a839db13cc77624fa6a671b46bbf02b28" prot="private" virt="non-virtual"><scope>game</scope><name>background_values_map</name></member>
+      <member refid="classgame_1a601fdbb561a442a318906ad9b57536f0" prot="private" virt="non-virtual"><scope>game</scope><name>begin_stories</name></member>
+      <member refid="classgame_1a961d3da89b2af402aff6c9f7c2a2b81c" prot="private" virt="non-virtual"><scope>game</scope><name>collision_backgrounds</name></member>
+      <member refid="classgame_1ab83d40295556a456fd5f976335609ab1" prot="private" virt="non-virtual"><scope>game</scope><name>collision_objects</name></member>
+      <member refid="classgame_1a278222f919fb52fb2f87e45be40fb571" prot="private" virt="non-virtual"><scope>game</scope><name>count</name></member>
+      <member refid="classgame_1aa6c2206b4735cd2c90f934384c350e0a" prot="private" virt="non-virtual"><scope>game</scope><name>database</name></member>
+      <member refid="classgame_1a2ea8501912521b1b00dcd29284039234" prot="private" virt="non-virtual"><scope>game</scope><name>dialogbox</name></member>
+      <member refid="classgame_1aead46333e3eb81e970a9d10d0b2481c9" prot="private" virt="non-virtual"><scope>game</scope><name>dialogbox_view</name></member>
+      <member refid="classgame_1a4cf9147e06874edfc6190db64d719dec" prot="private" virt="non-virtual"><scope>game</scope><name>draw_background_store</name></member>
+      <member refid="classgame_1a961fe8a42a2c0bc1ef62ef17c7c64f06" prot="private" virt="non-virtual"><scope>game</scope><name>draw_npc</name></member>
+      <member refid="classgame_1a4982a1c81b1a52b8f050ef48dea86743" prot="private" virt="non-virtual"><scope>game</scope><name>draw_player</name></member>
+      <member refid="classgame_1ac28a00d246bdb9b92858bd876c6edd0e" prot="private" virt="non-virtual"><scope>game</scope><name>first_dialog_done</name></member>
+      <member refid="classgame_1a46eaf7a077e7f3ff0b5e229142358f00" prot="public" virt="non-virtual"><scope>game</scope><name>game</name></member>
+      <member refid="classgame_1ae82c66167f3bf9cd4892a9e0ec6c3ba6" prot="private" virt="non-virtual"><scope>game</scope><name>game_begin</name></member>
+      <member refid="classgame_1a2b80a1fbc6d723e78d3c86d2f8ff24d4" prot="public" virt="non-virtual"><scope>game</scope><name>game_loop</name></member>
+      <member refid="classgame_1ac607d12774a2ebf6fb3cf24a60f47fed" prot="private" virt="non-virtual"><scope>game</scope><name>game_view</name></member>
+      <member refid="classgame_1a69793e75c155cb06e4f2c4d98c5da27c" prot="private" virt="non-virtual"><scope>game</scope><name>game_viewer</name></member>
+      <member refid="classgame_1a0eb06f984d04128ba7fba6fcca04bda3" prot="public" virt="non-virtual"><scope>game</scope><name>get_items_from_database</name></member>
+      <member refid="classgame_1a61adfafa4d31548fc94c853f10b9bf3b" prot="private" virt="non-virtual"><scope>game</scope><name>interact</name></member>
+      <member refid="classgame_1aa78cf955c292ac2bd75fa385a946cd6e" prot="private" virt="non-virtual"><scope>game</scope><name>interact</name></member>
+      <member refid="classgame_1a4bfc9c9555fc75525ba0d8719827e749" prot="private" virt="non-virtual"><scope>game</scope><name>inv</name></member>
+      <member refid="classgame_1abccd2ff11b53d33fde0ee8ab50c29972" prot="private" virt="non-virtual"><scope>game</scope><name>levelsize</name></member>
+      <member refid="classgame_1a3718980f99cd44e9c882c2aa67368450" prot="private" virt="non-virtual"><scope>game</scope><name>load_npc</name></member>
+      <member refid="classgame_1a34a5241e205d0985a9e477a3dd77ba08" prot="private" virt="non-virtual"><scope>game</scope><name>mouse_intersects_down_edge</name></member>
+      <member refid="classgame_1ae263cdc30dcc916b98b0ddbbf0a6fccc" prot="private" virt="non-virtual"><scope>game</scope><name>mouse_intersects_left_edge</name></member>
+      <member refid="classgame_1a273013552bc7ad8fef9d9192aad3cc0c" prot="private" virt="non-virtual"><scope>game</scope><name>mouse_intersects_right_edge</name></member>
+      <member refid="classgame_1abb1c33c5a73de27e4ebd20e1b61dc3dc" prot="private" virt="non-virtual"><scope>game</scope><name>mouse_intersects_upper_edge</name></member>
+      <member refid="classgame_1ab13015cdc535671de1dd7a5a7970a238" prot="private" virt="non-virtual"><scope>game</scope><name>move_player</name></member>
+      <member refid="classgame_1af427a7b929715c637cb10a4894386ead" prot="private" virt="non-virtual"><scope>game</scope><name>npc_list</name></member>
+      <member refid="classgame_1a7fcd329ec94a2aa84d486e67978d417a" prot="private" virt="non-virtual"><scope>game</scope><name>object_values_map</name></member>
+      <member refid="classgame_1a5b71f711786b1b48343dd02d31551a69" prot="private" virt="non-virtual"><scope>game</scope><name>perform_npc_action</name></member>
+      <member refid="classgame_1a50870549f1abdbc924743d8173ced15d" prot="private" virt="non-virtual"><scope>game</scope><name>perform_player_action</name></member>
+      <member refid="classgame_1a478a3366ffd0e10713b0abc3adb65696" prot="private" virt="non-virtual"><scope>game</scope><name>player_skill</name></member>
+      <member refid="classgame_1af99a7ac774385373a015bd3082049bd2" prot="private" virt="non-virtual"><scope>game</scope><name>view_start_dialogs</name></member>
+      <member refid="classgame_1af7435cad08a8114c7598bc99f5b6496e" prot="private" virt="non-virtual"><scope>game</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

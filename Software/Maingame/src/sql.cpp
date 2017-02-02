@@ -79,14 +79,6 @@ void sql::add_data(char* table, const char* values) {
 	execute_query_without_return(query_string.c_str());
 }
 
-void sql::add_data2(char* table, const char* values) {
-	std::ostringstream query;
-	query << "INSERT INTO " << table << " VALUES(" << values << ");";
-
-	std::string query_string = query.str();
-	execute_query_without_return(query_string.c_str());
-}
-
 
 void sql::add_item_to_inventory(std::string item_id) {
 	std::ostringstream query;

@@ -1,0 +1,214 @@
+.TH "ability" 3 "Fri Feb 3 2017" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ability
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ability\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBability\fP (std::string name, std::vector< sf::Sprite > &\fBaction\fP, sf::Vector2f position)"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "std::string \fBget_name\fP ()"
+.br
+.RI "Get the name of the ability\&. "
+.ti -1c
+.RI "void \fBmove\fP (sf::Vector2f new_position)"
+.br
+.RI "Move the current ability\&. "
+.ti -1c
+.RI "const void \fBdraw\fP (sf::RenderWindow &window)"
+.br
+.RI "Print ability\&. "
+.ti -1c
+.RI "void \fBadd_sprite_to_action\fP (sf::Sprite t)"
+.br
+.RI "Add a sprite to the action\&. "
+.ti -1c
+.RI "std::vector< sf::Sprite > \fBget_action\fP ()"
+.br
+.RI "Get list of sprites from an ability\&. "
+.ti -1c
+.RI "void \fBnext_step\fP ()"
+.br
+.RI "Skip to the next action step\&. "
+.ti -1c
+.RI "\fB~ability\fP ()"
+.br
+.RI "Decontructor\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 6 of file ability\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ability::ability (std::string name, std::vector< sf::Sprite > & action, sf::Vector2f position)"
+
+.PP
+Constructor\&. This method will crate an object of class ability\&.
+.br
+.PP
+.SS "Parameters: "
+.PP
+name : std::string 
+.br
+-> name of the ability to be loaded\&.
+.PP
+action : std::vector<sf::Sprite> 
+.br
+-> list of sprites that the animation of the ability needs\&.
+.br
+ position : sf::Vector2f 
+.br
+-> position of the player, so the ability is loaded on that spot\&.
+.PP
+.SS "Example: "
+.PP
+ability a('arno', {\&.\&.\&.}, {100,100})
+.br
+
+.PP
+Definition at line 5 of file ability\&.cpp\&.
+.SS "ability::~ability ()"
+
+.PP
+Decontructor\&. Will be called when the object is deleted\&. 
+.br
+
+.PP
+Definition at line 62 of file ability\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void ability::add_sprite_to_action (sf::Sprite t)"
+
+.PP
+Add a sprite to the action\&. This method will add a new sprite to the action\&. 
+.br
+This method can be used if you think that the animation is not complete enough,
+.br
+and want to add an extra sprite to the animation\&.
+.br
+.PP
+.SS "Parameters: "
+.PP
+t : sf::Sprite
+.br
+-> new sprite that will be added to the ability\&.
+.PP
+.SS "Example: "
+.PP
+add_sprite_to_action(example_sprite)
+.br
+
+.PP
+Definition at line 52 of file ability\&.cpp\&.
+.SS "const void ability::draw (sf::RenderWindow & window)"
+
+.PP
+Print ability\&. This method draws the ability on the screen\&. 
+.br
+Because there are likely multiple sprites in an ability, 
+.br
+the sprite that have to be printed is handle by the current_action_step value\&. 
+.br
+.PP
+.SS "Parameters: "
+.PP
+window : sf::RenderWindow
+.br
+-> window where the ability have to be drawn on\&.
+.br
+
+.PP
+Definition at line 48 of file ability\&.cpp\&.
+.SS "std::vector< sf::Sprite > ability::get_action ()"
+
+.PP
+Get list of sprites from an ability\&. This method returns a list that contains all sprites from the ability\&. 
+.br
+.PP
+.SS "Return: "
+.PP
+action : std::vector<sf::Sprite>
+.br
+-> List of sprites, containing the ability\&.
+.PP
+.SS "Example: "
+.PP
+\fBget_action()\fP
+.br
+{sprite1,sprite2,sprite3} 
+.PP
+Definition at line 56 of file ability\&.cpp\&.
+.SS "std::string ability::get_name ()"
+
+.PP
+Get the name of the ability\&. This method returns the name of the saved ability\&.
+.br
+.PP
+.SS "Return: "
+.PP
+name : std::String
+.br
+-> name of the ability
+.PP
+.SS "Example: "
+.PP
+\fBget_name()\fP
+.br
+'walk_up'
+.br
+
+.PP
+Definition at line 15 of file ability\&.cpp\&.
+.SS "void ability::move (sf::Vector2f new_position)"
+
+.PP
+Move the current ability\&. This method moves the position of the ability, 
+.br
+so that the ability sprite is printed on the same position as the player or NPC\&.
+.br
+.PP
+.SS "Parameters: "
+.PP
+new_position : sf::Vector2f
+.br
+-> new position of the ability sprite
+.PP
+.SS "Example: "
+.PP
+move({200,200})
+.br
+ability position now set on 200, 200
+.br
+
+.PP
+Definition at line 19 of file ability\&.cpp\&.
+.SS "void ability::next_step ()"
+
+.PP
+Skip to the next action step\&. This method moves the current_action_step to the next value\&. 
+.br
+.PP
+.SS "Example: "
+.PP
+current_action_step = 5
+.br
+\fBnext_step()\fP
+.br
+current_action_step = 6
+.br
+
+.PP
+Definition at line 37 of file ability\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

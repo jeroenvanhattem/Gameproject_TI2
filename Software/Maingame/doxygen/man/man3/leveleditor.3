@@ -1,0 +1,186 @@
+.TH "leveleditor" 3 "Fri Feb 3 2017" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+leveleditor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <leveleditor\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBleveleditor\fP (sf::Vector2f levelsize, sf::Vector2f tilesize, sf::RenderWindow &window, \fBsql\fP &database)"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "void \fBeditor_loop\fP ()"
+.br
+.RI "The main loop for the editor to stay working\&. "
+.ti -1c
+.RI "void \fBget_actions\fP ()"
+.br
+.RI "Loop through the actions in the action class\&. "
+.ti -1c
+.RI "void \fBdraw_rectangle_store\fP ()"
+.br
+.RI "Draw the rectangle store on the screen\&. "
+.ti -1c
+.RI "void \fBdraw_background_store\fP ()"
+.br
+.RI "Draw the background store\&. "
+.ti -1c
+.RI "void \fBdraw_tile_store\fP ()"
+.br
+.RI "Draw the tile store\&. "
+.ti -1c
+.RI "void \fBdraw_temporary_store\fP ()"
+.br
+.RI "Draw the temporary store\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::View \fBview1\fP"
+.br
+.ti -1c
+.RI "sf::View \fBview2\fP"
+.br
+.ti -1c
+.RI "sf::View \fBview3\fP"
+.br
+.ti -1c
+.RI "sf::View \fBview4\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 70 of file leveleditor\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "leveleditor::leveleditor (sf::Vector2f levelsize, sf::Vector2f tilesize, sf::RenderWindow & window, \fBsql\fP & database)"
+
+.PP
+Constructor\&. 
+.SS "This will create a leveleditor object\&.  Parameters: "
+.PP
+levelsize : sf::Vector2f 
+.br
+-> Give the levelsize with the function\&. 
+.br
+ tilesize : sf::Vector2f 
+.br
+-> Give the tilesize with the function\&. 
+.br
+ window : sf::RenderWindow& 
+.br
+-> Give a window with the function where the leveleditor needs to be drawn at\&. 
+.br
+ database : sql& 
+.br
+-> Give the database to the function\&.
+.br
+ 
+.SS "Example: "
+.PP
+leveleditor({1080,1080}, {32,32}, window, database); 
+.br
+
+.PP
+Definition at line 3 of file leveleditor\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void leveleditor::draw_background_store ()"
+
+.PP
+Draw the background store\&. 
+.SS "Example: "
+.PP
+\fBdraw_background_store()\fP 
+.br
+background_store is now drawn on the screen\&. 
+.br
+
+.PP
+Definition at line 319 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::draw_rectangle_store ()"
+
+.PP
+Draw the rectangle store on the screen\&. 
+.SS "Example: "
+.PP
+\fBdraw_rectangle_store()\fP 
+.br
+rectangle_store is now drawn on the screen\&. 
+.br
+
+.PP
+Definition at line 313 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::draw_temporary_store ()"
+
+.PP
+Draw the temporary store\&. 
+.SS "Example: "
+.PP
+\fBdraw_temporary_store()\fP 
+.br
+Draw the objects from the temporary_store\&. 
+.br
+
+.PP
+Definition at line 325 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::draw_tile_store ()"
+
+.PP
+Draw the tile store\&. 
+.SS "Example: "
+.PP
+\fBdraw_tile_store()\fP 
+.br
+Draw the objects from the tile_store\&. 
+.br
+
+.PP
+Definition at line 331 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::editor_loop ()"
+
+.PP
+The main loop for the editor to stay working\&. 
+.SS "Example: "
+.PP
+\fBeditor_loop()\fP; 
+.br
+
+.PP
+Definition at line 36 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::get_actions ()"
+
+.PP
+Loop through the actions in the action class\&. 
+.PP
+Definition at line 337 of file leveleditor\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "sf::View leveleditor::view1"
+
+.PP
+Definition at line 338 of file leveleditor\&.hpp\&.
+.SS "sf::View leveleditor::view2"
+
+.PP
+Definition at line 339 of file leveleditor\&.hpp\&.
+.SS "sf::View leveleditor::view3"
+
+.PP
+Definition at line 340 of file leveleditor\&.hpp\&.
+.SS "sf::View leveleditor::view4"
+
+.PP
+Definition at line 341 of file leveleditor\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

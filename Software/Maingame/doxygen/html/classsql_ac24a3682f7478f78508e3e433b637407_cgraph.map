@@ -1,0 +1,5 @@
+<map id="sql::set_new_map" name="sql::set_new_map">
+<area shape="rect" id="node2" href="$classsql.html#ac70e1da6d9e49f114bcf639fd1e6f86c" title="Execute a query. " alt="" coords="180,5,312,47"/>
+<area shape="rect" id="node3" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="360,13,455,39"/>
+<area shape="rect" id="node4" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="503,13,607,39"/>
+</map>

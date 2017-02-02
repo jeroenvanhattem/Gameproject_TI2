@@ -1,0 +1,144 @@
+.TH "dialogbox" 3 "Fri Feb 3 2017" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+dialogbox
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dialogbox\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBdialogbox\fP (std::string box_path, std::string font_path, sf::Vector2f position)"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "void \fBdraw\fP (sf::RenderWindow &window)"
+.br
+.RI "Draw the dialogbox\&. "
+.ti -1c
+.RI "void \fBtext_input\fP (std::string sentence, int char_size, sf::Color color)"
+.br
+.RI "Set text in the dialogbox\&. "
+.ti -1c
+.RI "sf::FloatRect \fBgetBounds\fP ()"
+.br
+.RI "Get bounds of dialogbox\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBlast_text\fP"
+.br
+.ti -1c
+.RI "sf::Text \fBtext\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 8 of file dialogbox\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "dialogbox::dialogbox (std::string box_path, std::string font_path, sf::Vector2f position)"
+
+.PP
+Constructor\&. This method will create a object of this class\&.
+.PP
+.SS "Parameters: "
+.PP
+box path : std::string 
+.br
+-> The path which contains the background of the dialogbox\&. 
+.br
+ font_path : std::string 
+.br
+-> The path which contains font of the text in the dialogbox\&. 
+.br
+ position : sf::vector2f 
+.br
+-> This is the position of the dialogbox on the screen\&. 
+.br
+ 
+.SS "Example: "
+.PP
+dialogbox d('background\&.png', 'font\&.ttf', {200, 800}); 
+.PP
+Definition at line 3 of file dialogbox\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void dialogbox::draw (sf::RenderWindow & window)"
+
+.PP
+Draw the dialogbox\&. This method draws the dialogbox on the screen\&.
+.PP
+.SS "Parameters: "
+.PP
+window : sf::RenderWindow& 
+.br
+-> The window where the dialogbox is shown on\&. 
+.br
+.PP
+.SS "Example: "
+.PP
+dialogbox\&.draw(window); 
+.PP
+Definition at line 15 of file dialogbox\&.cpp\&.
+.SS "sf::FloatRect dialogbox::getBounds ()"
+
+.PP
+Get bounds of dialogbox\&. This method will return the boundary of the text in the dialogbox\&.
+.PP
+.SS "Return: "
+.PP
+sf::FloatRect : sf::FloatRect -> The boundary of the text in the dialogbox\&.
+.PP
+.SS "Example: "
+.PP
+\fBgetBounds()\fP; -> (100,100,50,50) 
+.PP
+Definition at line 27 of file dialogbox\&.cpp\&.
+.SS "void dialogbox::text_input (std::string sentence, int char_size, sf::Color color)"
+
+.PP
+Set text in the dialogbox\&. This method sets a given text in a dialogbox\&. 
+.br
+Also is the font size given and in what color the text should appear\&. 
+.br
+.PP
+.SS "Parameters: "
+.PP
+sentence : std::string 
+.br
+-> The sentence which is shown in the dialogbox\&.
+.PP
+char_size : int 
+.br
+-> The size of the characters in the dialogbox\&.
+.PP
+color : sf::Color 
+.br
+-> The color of the text\&.
+.PP
+.SS "Example: "
+.PP
+text_input('hey', 30, sf::Color::Red); 
+.PP
+Definition at line 20 of file dialogbox\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string dialogbox::last_text"
+
+.PP
+Definition at line 16 of file dialogbox\&.hpp\&.
+.SS "sf::Text dialogbox::text"
+
+.PP
+Definition at line 17 of file dialogbox\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

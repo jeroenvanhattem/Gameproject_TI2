@@ -1,0 +1,372 @@
+.TH "npc" 3 "Fri Feb 3 2017" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+npc
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <npc\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBnpc\fP (sf::RenderWindow &window, \fBsql\fP &database, std::string npc_id, bool is_player=false)"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "void \fBmove\fP (sf::Vector2f delta)"
+.br
+.RI "Move the npc\&. "
+.ti -1c
+.RI "void \fBset_action\fP (std::string s='0')"
+.br
+.RI "set action of npc "
+.ti -1c
+.RI "std::string \fBget_name\fP ()"
+.br
+.RI "Get the name of npc\&. "
+.ti -1c
+.RI "const void \fBdraw\fP ()"
+.br
+.RI "void \fBdraw()\fP : Print NPC "
+.ti -1c
+.RI "sf::IntRect \fBget_bounds\fP ()"
+.br
+.RI "Get a bounds from a NPC\&. "
+.ti -1c
+.RI "int \fBget_interaction\fP (\fBnpc\fP &other_npc)"
+.br
+.RI "Get interaction two NPC's\&. "
+.ti -1c
+.RI "int \fBget_collision\fP (sf::IntRect colliding_object)"
+.br
+.RI "Get interaction NPC and object\&. "
+.ti -1c
+.RI "void \fBset_position\fP (sf::Vector2f given_position)"
+.br
+.RI "Get position of NPC\&. "
+.ti -1c
+.RI "sf::Vector2f \fBget_position\fP ()"
+.br
+.RI "Get position of NPC\&. "
+.ti -1c
+.RI "std::vector< sf::Sprite > \fBget_action\fP (std::string action_to_get)"
+.br
+.RI "Get NPC action\&. "
+.ti -1c
+.RI "std::string \fBget_current_action\fP ()"
+.br
+.RI "Get current action of NPC\&. "
+.ti -1c
+.RI "void \fBshow_ability\fP (std::string action_to_show)"
+.br
+.RI "Perform an action\&. "
+.ti -1c
+.RI "\fB~npc\fP ()"
+.br
+.RI "Decontructor\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 8 of file npc\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "npc::npc (sf::RenderWindow & window, \fBsql\fP & database, std::string npc_id, bool is_player = \fCfalse\fP)"
+
+.PP
+Constructor\&. This method will crate an object of class npc\&.
+.br
+.PP
+.SS "Parameters: "
+.PP
+window : sf::RenderWindow 
+.br
+-> window where content will be drawn on\&.
+.PP
+database : sql 
+.br
+-> referrence to the database class\&.
+.br
+ npc_id : sf::string 
+.br
+-> id of the npc that has to be drawn\&.
+.PP
+is_player : bool 
+.br
+-> boolean to select if this npc is the player or not\&.
+.PP
+.SS "Example: "
+.PP
+ability a(window, database, '1')
+.br
+
+.PP
+Definition at line 3 of file npc\&.cpp\&.
+.SS "npc::~npc ()"
+
+.PP
+Decontructor\&. Will be called when the object is deleted\&. 
+.br
+
+.PP
+Definition at line 184 of file npc\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "const void npc::draw ()"
+
+.PP
+void \fBdraw()\fP : Print NPC This method draws the NPC on the screen\&. 
+.br
+ 
+.SS "Example: "
+.PP
+\fBdraw()\fP
+.br
+-> Draw the NPC on the screen 
+.PP
+Definition at line 102 of file npc\&.cpp\&.
+.SS "std::vector< sf::Sprite > npc::get_action (std::string action_to_get)"
+
+.PP
+Get NPC action\&. This function return a list of sprites that is asked from the NPC\&. 
+.br
+.PP
+.SS "Parameters: "
+.PP
+action_to_perform : std::string 
+.br
+-> The action that has to be shown\&.
+.PP
+.SS "Return: "
+.PP
+temp : std::vector<sf::Sprite> 
+.br
+-> list of sprites containing the sprites of an ability\&.
+.PP
+.SS "Example: "
+.PP
+get_action('walk_up') 
+.br
+-> {sprite1,sprite2,\&.\&.\&.\&.} 
+.PP
+Definition at line 173 of file npc\&.cpp\&.
+.SS "sf::IntRect npc::get_bounds ()"
+
+.PP
+Get a bounds from a NPC\&. This function returns a sf::IntRect object which is created from the position and size of the NPC object\&.
+.br
+ 
+.SS "Return: "
+.PP
+intrect_object : sf::IntRect 
+.br
+-> a sf::IntRect object using the position and size of the NPC object
+.PP
+.SS "Example: "
+.PP
+\fBget_bounds()\fP 
+.br
+return: sf::IntRect(100, 100, 30, 30) \&. 
+.PP
+Definition at line 117 of file npc\&.cpp\&.
+.SS "int npc::get_collision (sf::IntRect colliding_object)"
+
+.PP
+Get interaction NPC and object\&. Call the 'get_collision' function to check for a collision with a sf::IntRect object\&.
+.br
+ 
+.SS "Parameters: "
+.PP
+colliding_object : sf::IntRect 
+.br
+-> The sf::IntRect that will be check for a collision\&.
+.br
+ 
+.SS "Return: "
+.PP
+0 / 1 : integer 
+.br
+-> Return a 1 if there's a collision detected, return a 0 if no collision is detected\&.
+.br
+ 
+.SS "Example: "
+.PP
+npc\&.get_collision(recangle) 
+.br
+return: {'1'}\&. 
+.PP
+Definition at line 122 of file npc\&.cpp\&.
+.SS "std::string npc::get_current_action ()"
+
+.PP
+Get current action of NPC\&. This function returns the name of the current action of a NPC\&. 
+.br
+This is the action that the NPC is currently performing in the game\&.
+.br
+.PP
+.SS "Return: "
+.PP
+current_action : std::string 
+.br
+-> Name of the current action from NPC\&.
+.PP
+.SS "Example: "
+.PP
+\fBget_current_action()\fP 
+.br
+-> 'walk_up' 
+.PP
+Definition at line 169 of file npc\&.cpp\&.
+.SS "int npc::get_interaction (\fBnpc\fP & other_npc)"
+
+.PP
+Get interaction two NPC's\&. Call the 'get_interaction' function to check for a collision with another NPC\&.
+.PP
+.SS "Parameters: "
+.PP
+other_npc : NPC & 
+.br
+-> The NPC that will be check for a collision\&.
+.PP
+.SS "Return: "
+.PP
+0 / 1 : integer 
+.br
+-> Return a 1 if there's a collision detected, return a 0 if no collision is detected\&.
+.PP
+.SS "Example: "
+.PP
+get_interaction(*other_npc) 
+.br
+-> return: {'1'}\&. 
+.PP
+Definition at line 139 of file npc\&.cpp\&.
+.SS "std::string npc::get_name ()"
+
+.PP
+Get the name of npc\&. This method returns the name of an npc\&.
+.br
+.PP
+.SS "Return: "
+.PP
+name : std::String
+.br
+-> name of the ability
+.PP
+.SS "Example: "
+.PP
+\fBget_name()\fP
+.br
+'monk'
+.br
+
+.PP
+Definition at line 111 of file npc\&.cpp\&.
+.SS "sf::Vector2f npc::get_position ()\fC [inline]\fP"
+
+.PP
+Get position of NPC\&. When this function is called, it will return the position of the NPC\&.
+.PP
+.SS "Return: "
+.PP
+position : sf::Vector2f 
+.br
+-> The position of the NPC
+.PP
+.SS "Example: "
+.PP
+\fBget_position()\fP 
+.br
+-> return sf::Vector(200,200) 
+.PP
+Definition at line 232 of file npc\&.hpp\&.
+.SS "void npc::move (sf::Vector2f delta)"
+
+.PP
+Move the npc\&. This method moves the position an npc\&.
+.br
+.PP
+.SS "Parameters: "
+.PP
+delta : sf::Vector2f
+.br
+-> new position of the npc\&.
+.PP
+.SS "Example: "
+.PP
+move({2,0})
+.br
+npc has moved 2 pixels to the right
+.br
+
+.PP
+Definition at line 55 of file npc\&.cpp\&.
+.SS "void npc::set_action (std::string s = \fC'0'\fP)"
+
+.PP
+set action of npc This method sets the current action of the npc\&.
+.br
+The standard value is walk down\&.
+.br
+.PP
+.SS "Parameters: "
+.PP
+s : std::string
+.br
+-> name of the action that has to be set on active\&.
+.PP
+.SS "Example: "
+.PP
+set_action('walk_up')
+.br
+npc is now set for walking up\&.
+.br
+
+.PP
+Definition at line 81 of file npc\&.cpp\&.
+.SS "void npc::set_position (sf::Vector2f given_position)"
+
+.PP
+Get position of NPC\&. When this function is called, it will return the position of the NPC\&.
+.br
+ 
+.SS "Return: "
+.PP
+position : sf::Vector2f 
+.br
+-> The position of the NPC
+.PP
+.SS "Example: "
+.PP
+\fBget_position()\fP 
+.br
+-> return sf::Vector(200,200) 
+.PP
+Definition at line 158 of file npc\&.cpp\&.
+.SS "void npc::show_ability (std::string action_to_show)"
+
+.PP
+Perform an action\&. This function shows one step of the asked ability\&. 
+.br
+This function has to be called in a loop that stops at the max size of the ability list\&. 
+.br
+.PP
+.SS "Parameters: "
+.PP
+action_to_show : std::string 
+.br
+-> Name of action\&.
+.PP
+.SS "Example: "
+.PP
+show_ability('shoot_arrow_up') 
+.br
+-> NPC will shoot an arrow northwards\&. 
+.PP
+Definition at line 89 of file npc\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

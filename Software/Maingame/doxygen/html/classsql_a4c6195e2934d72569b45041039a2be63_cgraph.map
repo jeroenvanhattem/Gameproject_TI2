@@ -1,0 +1,8 @@
+<map id="sql::save_tiles" name="sql::save_tiles">
+<area shape="rect" id="node2" href="$classsql.html#a1cb74ab7343ef603490518715297be83" title="Get data from a column in a table in the database. " alt="" coords="157,5,255,32"/>
+<area shape="rect" id="node3" href="$classsql.html#a53dd323de395c13534e63a3482190777" title="Execute a query. " alt="" coords="303,34,435,75"/>
+<area shape="rect" id="node7" href="$classsql.html#ac70e1da6d9e49f114bcf639fd1e6f86c" title="Execute a query. " alt="" coords="303,99,435,141"/>
+<area shape="rect" id="node4" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="487,99,582,125"/>
+<area shape="rect" id="node6" href="$classsql.html#ad4d8bdf41eede1ae1363d0be8a2f60a9" title="Get saved result. " alt="" coords="483,41,587,68"/>
+<area shape="rect" id="node5" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="635,99,739,125"/>
+</map>

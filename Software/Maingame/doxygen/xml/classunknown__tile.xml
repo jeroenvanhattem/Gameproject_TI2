@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classunknown__tile" kind="class" language="C++" prot="public">
+    <compoundname>unknown_tile</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
+    <includes refid="exception__list_8hpp" local="no">exception_list.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classunknown__tile_1a9327fd93d7fd68755f5b656e1943adfb" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string unknown_tile::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="52" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classunknown__tile_1a461cac6c68bff3bb3840332dac3930a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>unknown_tile::unknown_tile</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>unknown_tile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="54" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classunknown__tile_1acb0d54524c73e359ac6f222a698fc30c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* unknown_tile::what</definition>
+        <argsstring>() const override</argsstring>
+        <name>what</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="58" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="59">
+        <label>unknown_tile</label>
+        <link refid="classunknown__tile"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="61">
+        <label>unknown_tile</label>
+        <link refid="classunknown__tile"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" line="50" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/exception_list.hpp" bodystart="50" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classunknown__tile_1a9327fd93d7fd68755f5b656e1943adfb" prot="private" virt="non-virtual"><scope>unknown_tile</scope><name>s</name></member>
+      <member refid="classunknown__tile_1a461cac6c68bff3bb3840332dac3930a7" prot="public" virt="non-virtual"><scope>unknown_tile</scope><name>unknown_tile</name></member>
+      <member refid="classunknown__tile_1acb0d54524c73e359ac6f222a698fc30c" prot="public" virt="non-virtual"><scope>unknown_tile</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

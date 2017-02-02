@@ -148,7 +148,6 @@ public:
 	/// There is now a new record in the database with the given values.
 	///
 	void add_data(char* table, const char* values);
-	void add_data2(char* table, const char* values);
 	
 	
 	/// Execute a query.
@@ -212,19 +211,23 @@ public:
 	static std::vector<std::string> get_result();
 	
 
-	/// std::vector<std::string> get_name_from_id_inventory(std::string item_id) : Get the name from an item
+	/// Get the name from an item
 	//
-	/// This function returns the name of an item by using its ID
+	/// This function returns the name of an item by using its ID.\n
 	/// 
+	///
 	/// Parameters:
 	/// -----------
 	/// item_id : std::string \n
-	///	-> The ID of the item
+	///	-> The ID of the item. \n
+	///
+	///
 	/// Return:
 	/// -------
 	/// name : std::vector<std::string> \n
-	///	-> The name of the requested item
+	///	-> The name of the requested item.
 	/// 
+	///
 	/// Example:
 	/// --------
 	/// get_name_from_id_inventory("1") \n
@@ -232,19 +235,22 @@ public:
 	///
 	std::vector<std::string> get_name_from_id_inventory(std::string item_id);
 
-	/// std::vector<std::string> get_sprite_ivnentory(std::string item_id) : Get the sprite_path from an item
+	/// Get the sprite_path from an item.
 	//
-	/// This function returns the name of an item by using its ID
+	/// This function returns the name of an item by using its ID.\n
 	/// 
 	/// Parameters:
 	/// -----------
 	/// sprite_path : std::string \n
-	///	-> The ID of the item
+	///	-> The ID of the item.
+	///
+	///
 	/// Return:
 	/// -------
 	/// sprite_path : std::vector<std::string> \n
-	///	-> The sprite_path of the requested item
+	///	-> The sprite_path of the requested item.
 	/// 
+	///
 	/// Example:
 	/// --------
 	/// get_sprite_inventory("1") \n
@@ -252,19 +258,22 @@ public:
 	///
 	std::vector<std::string> get_sprite_inventory(std::string item_id);
 
-	/// std::vector<std::string> get_in_game_name_from_id_inventory(std::string item_id) : Get the name from an item
+	/// Get the name from an item
 	//
-	/// This function returns the name of an item by using its ID
+	/// This function returns the name of an item by using its ID.\n
 	/// 
 	/// Parameters:
 	/// -----------
 	/// item_id : std::string \n
-	///	-> The ID of the item
+	///	-> The ID of the item.
+	///
+	///
 	/// Return:
 	/// -------
 	/// name : std::vector<std::string> \n
-	///	-> The in game name of the requested item
+	///	-> The in game name of the requested item.
 	/// 
+	///
 	/// Example:
 	/// --------
 	/// get_name_from_id_inventory("1") \n
@@ -272,19 +281,21 @@ public:
 	///
 	std::vector<std::string> get_in_game_name_from_id_inventory(std::string item_id);
 
-	/// std::vector<std::string> get_inventory() : Get the inventory
+	/// Get the inventory
 	//
-	/// This function retrieves the inventory and its values and puts it into a vector
+	/// This function retrieves the inventory and its values and puts it into a vector. \n
 	/// 
+	///
 	/// Return:
 	/// -------
 	/// inventory_vector : std::vector<std::string> \n
 	///	-> This vector contains the items in the inventory
 	/// 
+	///
 	/// Example:
 	/// --------
 	/// get_inventory() \n
-	/// -> <"1", "2", "2", "3">
+	/// -> {"1", "2", "2", "3"}
 	///
 	std::vector<std::string> get_inventory();
 
@@ -299,7 +310,7 @@ public:
 	/// Parameters:
 	/// -----------
 	/// x : char* \n
-	///	-> Query result to add
+	///	-> Query result to add.
 	///
 	/// 
 	/// Example:
@@ -309,10 +320,11 @@ public:
 	///
 	static void set_result(char* x) { result.push_back(x); }
 	
-	  /*------------------*/
-	 /*  query functions */
-	/*------------------*/
-	/// Get value of column from the player
+	  /*-------------------*/
+	 /*  player functions */
+	/*-------------------*/
+
+	/// Get value of a column from the player
 	//
 	/// This method returns a column value of the player.\n
 	/// The save is equal the the player id in the database,\n
@@ -321,7 +333,7 @@ public:
 	/// Parameters:
 	/// -----------
 	/// save : int \n
-	///	-> Save of the player and player id in the database
+	///	-> Save of the player and player id in the database.
 	///
 	/// variable_name : std::string \n
 	///	-> Columnname from what the value is requested.
@@ -336,7 +348,7 @@ public:
 	/// Example:
 	/// --------
 	/// get_player_value(1,"name")\n
-	/// return: {"arno"}
+	/// -> {"arno"}
 	///
 	std::vector<std::string> get_player_value(int save, std::string variable_name);
 	
@@ -347,6 +359,7 @@ public:
 	/// The save is equal the the player id in the database,\n
 	/// this is because the player can have multiple saved games.\n
 	/// 
+	///
 	/// Parameters:
 	/// -----------
 	/// save : int \n
@@ -362,14 +375,59 @@ public:
 	/// Example:
 	/// --------
 	/// get_player_sprite(1)\n
-	/// return: {"../../bin/sprite_sheets/player_sprite.png"}
+	/// -> {"../../bin/sprite_sheets/player_sprite.png"}
 	///
 	std::vector<std::string> get_player_sprite(int save);
+
+
+	/// Get value of the player
+	//
+	/// This method returns the value of a player.\n
+	/// The player value is calculated on the player_id.\n
+	/// 
+	/// 
+	/// Parameters:
+	/// -----------
+	/// npc_id : std::string \n
+	///	-> Save of the player and player id in the database.
+	/// 
+	/// 
+	/// Return:
+	/// -------
+	/// list_of_data : std::vector<std::string> \n
+	///	-> List that contains the asked data in the form of strings.
+	/// 
+	///
+	/// Example:
+	/// --------
+	/// get_player_sprite(1)\n
+	/// -> {"../../bin/sprite_sheets/player_sprite.png"}
+	///
+	std::vector<std::string> get_player_value(std::string npc_id);
+
+	/// Add an item to the players inventory
+	//
+	/// This function will give the player an item that will be stored in the inventory table in the database.\n
+	/// 
+	/// 
+	/// Parameters:
+	/// -----------
+	/// item_name : std::string
+	///	-> The name of the item that has to be given
+	/// 
+	///
+	/// Example:
+	/// --------
+	/// add_item_to_inventory("1");
+	/// -> Adds a banana to the users inventory
+	///
+	void add_item_to_inventory(std::string item_id);
 	
 	
 	  /*---------------*/
 	 /* npc functions */
 	/*---------------*/
+
 	/// Get all values from columns in NPC
 	//
 	/// This method returns all column values of a NPC.\n
@@ -386,6 +444,7 @@ public:
 	///		5	|		position_y \n
 	///		6	|		quest_id \n
 	/// 
+	///
 	/// Parameters:
 	/// -----------
 	/// npc_id : std::string \n
@@ -401,7 +460,7 @@ public:
 	/// Example:
 	/// --------
 	/// get_npc_value("1")\n
-	/// return: {"arno"}
+	/// -> {"arno"}
 	///
 	std::vector<std::string> get_npc_value(std::string npc_id);
 	
@@ -421,7 +480,7 @@ public:
 	/// Example:
 	/// --------
 	/// get_number_of_npcs()\n
-	/// return: {"1","2","5"}
+	/// -> {"1","2","5"}
 	///
 	std::vector<std::string> get_number_of_npcs();
 	
@@ -443,7 +502,7 @@ public:
 	/// Example:
 	/// --------
 	/// get_object_sprite_ids()\n
-	/// return: {"1","2","5"}
+	/// -> {"1","2","5"}
 	///
 	std::vector<std::string> get_object_sprite_ids();
 	
@@ -475,8 +534,8 @@ public:
 	///
 	/// Example:
 	/// --------
-	/// get_object_sprite_value("1")\n
-	/// return: {"../../bin/objects/road1.png", "road1","32","32"}
+	/// get_object_sprite_value("1") \n
+	/// -> {"../../bin/objects/road1.png", "road1","32","32"}
 	///
 	std::vector<std::string> get_object_sprite_value(std::string object_id);
 	
@@ -519,7 +578,7 @@ public:
 	/// The tile values will be filterd if it is an object or an background tile.\n
 	/// It is very importend that if you want to save the level, that the map_name is spelled correctly.\n
 	/// If the map_name is not correctly spelled or if it doesn't exist, the level cannot be saved. \n
-	/// The same counts for the tile path.
+	/// The same counts for the tile path. \n
 	///
 	/// 
 	/// Parameters:
@@ -550,7 +609,7 @@ public:
 	/// Get the names of all levels in the database.
 	//
 	/// This method returns all names of the levels that are in the database.\n
-	/// This can be usefull so you can know if a level already exists.
+	/// This can be usefull so you can know if a level already exists. \n
 	/// 
 	///
 	/// Return:
@@ -562,7 +621,7 @@ public:
 	/// Example:
 	/// --------
 	/// get_available_levels()\n
-	/// return: {"level1","level2","level5"}
+	/// -> {"level1","level2","level5"}
 	///
 	std::vector<std::string> get_available_levels();
 
@@ -581,7 +640,7 @@ public:
 	/// Example:
 	/// --------
 	/// get_level_ids()\n
-	/// return: {"1","2","5"}
+	/// -> {"1","2","5"}
 	///
 	std::vector<std::string> get_level_ids();
 
@@ -589,8 +648,7 @@ public:
 	/// Get all object values of a level.
 	//
 	/// This method returns the values of all objects that are assigned to the given level ID.\n
-	/// IMPORTANT!: In the next patch this function will be merged in a new function together with get_level_background_value(std::string level_id).\n
-	/// 
+	///
 	/// 
 	/// Parameters:
 	/// -----------
@@ -606,20 +664,42 @@ public:
 	///
 	/// Example:
 	/// --------
-	/// get_level_object_value("level1")\n
-	/// return: {"road1":{"../../bin/objects/example.png","120","150","1"}}
+	/// get_level_object_value("level1") \n
+	/// -> {"road1":{"../../bin/objects/example.png","120","150","1"}}
 	///
 	std::map<std::string, std::vector<std::string>> get_level_object_value(std::string level_id);
 
 
+
+	/// Get the not walkable objects.
+	//
+	/// This method returns the hitbox of an object that is not walkable.\n
+	/// The hitbox can be used to calculate the collision detection on. \n
+	/// 
+	/// Parameters:
+	/// -----------
+	/// objects : std::vector<std::string> \n
+	///	-> values of one opbject.
+	/// 
+	///
+	/// Return:
+	/// -------
+	/// collision_rects : sf::IntRect \n
+	///	-> Hitbox of the not walkable object.\n
+	/// 
+	///
+	/// Example:
+	/// --------
+	/// get_collision_objects({...}) \n
+	/// -> (100,100,50,50)
+	///
 	sf::IntRect get_collision_objects(std::vector<std::string> objects);
 
 
 	/// Get all background values of a level.
 	//
 	/// This method returns the values of all background tiles that are assigned to the given level ID.\n
-	/// IMPORTANT!: In the next patch this function will be merged in a new function together with get_level_object_value(std::string level_id).
-	/// 
+	///
 	/// 
 	/// Parameters:
 	/// -----------
@@ -629,51 +709,105 @@ public:
 	///
 	/// Return:
 	/// -------
-	/// list_of_data : std::map<std::string, std::vector<std::string>> \n
-	///	-> map that contains the asked data in the form of strings with name as key.\n
+	/// list_of_data : std::map< std::string, std::vector<std::string> > \n
+	///	-> Map that contains the asked data in the form of strings with name as key.\n
 	/// 
 	///
 	/// Example:
 	/// --------
-	/// get_level_object_value("level1")\n
-	/// return: {"road1":{"../../bin/tiles/example.png","120","150","1"}}
+	/// get_level_object_value("level1") \n
+	/// {"road1":{"../../bin/tiles/example.png","120","150","1"}}
 	///
 	std::map<std::string, std::vector<std::string>> get_level_background_value(std::string level_id);
 
 
 	  /*-------------------*/
-	 /*  Player functions */
+	 /*  Music functions  */
 	/*-------------------*/
 
-	std::vector<std::string> get_player_value(std::string npc_id);
 
-	/// add_item_to_inventory(std::string item_name) : Add an item to the players inventory
+	/// Get music of consisting map.
 	//
-	/// This function will give the player an item that will be stored in the inventory table in the database.\n
-	/// 
+	/// This method returns the path of a music file what is the background music of a level. \n
+	/// The values are searched by the ID of the map. \n
+	///
 	/// 
 	/// Parameters:
 	/// -----------
-	/// item_name : std::string
-	///	-> The name of the item that has to be given
+	/// map_id : std::string \n
+	///	-> ID of the level where the music file is requested.
+	/// 
+	///
+	/// Return:
+	/// -------
+	/// list_of_data : std::vector<std::string> \n
+	///	-> list that contains the asked data in the form of strings.\n
 	/// 
 	///
 	/// Example:
 	/// --------
-	/// add_item_to_inventory("1");
-	/// -> Adds a banana to the users inventory
+	/// get_music("17") \n
+	/// -> ../../bin/music/x_gon_give_it_to_ya.wav
 	///
-
-	void add_item_to_inventory(std::string item_id);
-
-	  /*-------------------*/
-	 /*  Music functions  */
-	/*-------------------*/
-
 	std::vector<std::string> get_music(std::string map_id);
 
-	
+	  /*-------------------*/
+	 /*  Quest functions  */
+	/*-------------------*/
+
+
+	/// Get quest part text.
+	//
+	/// This method returns the text of a quest part. \n
+	/// The values are searched by the ID of the of the quest and the given part number. \n
+	///
+	/// 
+	/// Parameters:
+	/// -----------
+	/// quest_id : std::string \n
+	///	-> ID of the quest from what the text is requested.\n
+	///
+	/// part : std::string \n
+	///	-> number of the part in the quest where the text is requested from. \n
+	/// 
+	///
+	/// Return:
+	/// -------
+	/// list_of_data : std::vector<std::string> \n
+	///	-> list that contains the asked data in the form of strings.\n
+	/// 
+	///
+	/// Example:
+	/// --------
+	/// get_quest_text("17") \n
+	/// -> {"Hello.","welcome"}
+	///
 	std::vector<std::string> get_quest_text(std::string quest_id, std::string part);
+
+
+	/// Get all part numbers from quest.
+	//
+	/// This method returns the numbers of quest parts of a quest. \n
+	/// The values are searched by the ID of the quest. \n
+	///
+	/// 
+	/// Parameters:
+	/// -----------
+	/// quest_id : std::string \n
+	///	-> ID of the quest from what the text is requested.\n
+	/// 
+	///
+	/// Return:
+	/// -------
+	/// list_of_data : std::vector<std::string> \n
+	///	-> list that contains the asked data in the form of strings.\n
+	/// 
+	///
+	/// Example:
+	/// --------
+	/// get_quest_parts("1") \n
+	/// -> {"1","3","4","5","6"}
+	///
 	std::vector<std::string> get_quest_parts(std::string quest_id);
 	
 	/// Get value from database

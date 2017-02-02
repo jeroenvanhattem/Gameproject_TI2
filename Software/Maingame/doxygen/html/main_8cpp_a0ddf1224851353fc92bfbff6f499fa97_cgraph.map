@@ -1,0 +1,39 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$main_8cpp.html#a235bce26738e0eec7d7ed336e30e538d" title="intro" alt="" coords="178,5,225,32"/>
+<area shape="rect" id="node3" href="$classmain__menu.html#a555c4191cafced116939b5c6c354fe3e" title="Creater screen. " alt="" coords="130,57,273,98"/>
+<area shape="rect" id="node6" href="$classmain__menu.html#a83e10a5ce65747f1de76e40d32dd8e5b" title="start the load screen " alt="" coords="132,123,271,149"/>
+<area shape="rect" id="node7" href="$classsql.html#a9928c456c632f88d19cce26b8165bd6f" title="Get the ID&#39;s of all levels in the database. " alt="" coords="594,376,715,403"/>
+<area shape="rect" id="node13" href="$classmusic.html#ae7835578f75b785e1ef2a3d0db9420b9" title="Play map music. " alt="" coords="104,764,299,791"/>
+<area shape="rect" id="node16" href="$main_8cpp.html#a357ffa2037bfb7515a059fd98995e184" title="intro_stop" alt="" coords="162,815,241,841"/>
+<area shape="rect" id="node17" href="$classmain__menu.html#ac653f7645e7dab1807f141ba2395dc5c" title="Show menu. " alt="" coords="347,224,513,251"/>
+<area shape="rect" id="node18" href="$classmain__menu.html#a9314da13b6b8a7cd40dee3d45f029835" title="Ceck if a button is pressed. " alt="" coords="561,249,748,276"/>
+<area shape="rect" id="node19" href="$classmain__menu.html#a924f8d3f2d87b382a8590055cda2f549" title="Load the load screen. " alt="" coords="118,173,285,200"/>
+<area shape="rect" id="node20" href="$classgame.html#a2b80a1fbc6d723e78d3c86d2f8ff24d4" title="Loop that handles the game. " alt="" coords="139,579,264,605"/>
+<area shape="rect" id="node4" href="$classpicture.html#a4222d8d8a5be3d0775b741049064714f" title="picture::set_transpirantie" alt="" coords="347,72,513,99"/>
+<area shape="rect" id="node5" href="$classpicture.html#ac69e8047651291091abbe2a8da545aa1" title="picture::draw" alt="" coords="607,173,703,200"/>
+<area shape="rect" id="node8" href="$classsql.html#a1cb74ab7343ef603490518715297be83" title="Get data from a column in a table in the database. " alt="" coords="835,376,933,403"/>
+<area shape="rect" id="node9" href="$classsql.html#a53dd323de395c13534e63a3482190777" title="Execute a query. " alt="" coords="1020,689,1152,730"/>
+<area shape="rect" id="node10" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="1205,775,1299,801"/>
+<area shape="rect" id="node12" href="$classsql.html#ad4d8bdf41eede1ae1363d0be8a2f60a9" title="Get saved result. " alt="" coords="1200,696,1304,723"/>
+<area shape="rect" id="node11" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="1352,775,1456,801"/>
+<area shape="rect" id="node14" href="$classsql.html#ae959c21f71c8f9b1df8bde932a6c484b" title="Get music of consisting map. " alt="" coords="831,797,937,824"/>
+<area shape="rect" id="node15" href="$classmusic.html#aeb639e45c64ee79496e8ec6187cfcf70" title="Set music volume. " alt="" coords="365,949,495,976"/>
+<area shape="rect" id="node21" href="$classplayer.html#a519784459639f6b785bcfeaa05b6f604" title="void respawn() : Respawn player " alt="" coords="373,797,487,824"/>
+<area shape="rect" id="node23" href="$classinventory.html#abb6d846e4b7297f79c2c9fb34b26fee2" title="void get_inventory() : Get the inventory " alt="" coords="351,747,509,773"/>
+<area shape="rect" id="node27" href="$button__actions_8cpp.html#a067f53aa6474ce70abccc5bbd28ad01d" title="Get the position of the mouse. " alt="" coords="361,696,499,723"/>
+<area shape="rect" id="node29" href="$classdialogbox.html#ab9d8f8b65c3a54ccaea57a941d43a176" title="Set text in the dialogbox. " alt="" coords="359,528,501,555"/>
+<area shape="rect" id="node30" href="$classdialogbox.html#a722438dee05d120c77871b1ec9d26cf5" title="Draw the dialogbox. " alt="" coords="374,325,486,352"/>
+<area shape="rect" id="node31" href="$button__actions_8cpp.html#a6a2c7019e201b42b13d3032fc538298d" title="Get the move direction if move button is pressed. " alt="" coords="363,630,497,671"/>
+<area shape="rect" id="node32" href="$classplayer.html#ad93507550867df5598b86b73de01ec12" title="int npc::get_interaction(npc &amp; other_npc) : Get interaction between the player and a NPC ..." alt="" coords="355,477,505,504"/>
+<area shape="rect" id="node35" href="$classsql.html#a9f75a32a77a498b1a328a53ade518ce7" title="Get all part numbers from quest. " alt="" coords="814,427,954,453"/>
+<area shape="rect" id="node36" href="$classsql.html#a59249e218b1bb9d811c50b5615312eaf" title="Get quest part text. " alt="" coords="588,587,721,613"/>
+<area shape="rect" id="node37" href="$classsql.html#af0e753f3af81ff1ff7f7582dcea4b0ed" title="Add an item to the players inventory. " alt="" coords="796,848,972,875"/>
+<area shape="rect" id="node22" href="$classnpc.html#a52d22585e441af4d8dde1d1a2658b2dc" title="Get position of NPC. " alt="" coords="594,797,715,824"/>
+<area shape="rect" id="node24" href="$classsql.html#a7f818b967453b1ae15ce4c5b28cf4765" title="Get the inventory. " alt="" coords="823,747,945,773"/>
+<area shape="rect" id="node25" href="$classitem.html#aafc61a4b7e2bd10300a6767e6dd7281e" title="std::string get_sprite() : Get the sprite from an item " alt="" coords="599,696,711,723"/>
+<area shape="rect" id="node26" href="$classsql.html#a060764a845c3a26c99c6f15470df9634" title="Get the sprite_path from an item. " alt="" coords="803,696,965,723"/>
+<area shape="rect" id="node28" href="$button__actions_8cpp.html#a94ef0400a00795316cd4e374db2af104" title="Convert a sf::vector2i to sf::Vector2f. " alt="" coords="576,645,733,672"/>
+<area shape="rect" id="node33" href="$classnpc.html#a2714b410c2e644040f69f1cf50d3bc50" title="Get interaction two NPC&#39;s. " alt="" coords="587,477,723,504"/>
+<area shape="rect" id="node34" href="$classnpc.html#aa6a71f7355403e4a108f3c4e8b6a3931" title="Get a bounds from a NPC. " alt="" coords="825,477,943,504"/>
+<area shape="rect" id="node38" href="$classsql.html#ac70e1da6d9e49f114bcf639fd1e6f86c" title="Execute a query. " alt="" coords="1020,797,1152,838"/>
+</map>

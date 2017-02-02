@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="item_8cpp" kind="file" language="C++">
+    <compoundname>item.cpp</compoundname>
+    <includes refid="item_8hpp" local="yes">item.hpp</includes>
+    <incdepgraph>
+      <node id="124">
+        <label>item.hpp</label>
+        <link refid="item_8hpp"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>string</label>
+      </node>
+      <node id="126">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="128">
+        <label>fstream</label>
+      </node>
+      <node id="132">
+        <label>SFML\Graphics.hpp</label>
+      </node>
+      <node id="131">
+        <label>vector</label>
+      </node>
+      <node id="125">
+        <label>sql.hpp</label>
+        <link refid="sql_8hpp"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>sstream</label>
+      </node>
+      <node id="127">
+        <label>iostream</label>
+      </node>
+      <node id="123">
+        <label>D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/item.cpp</label>
+        <link refid="item_8cpp"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="item_8hpp" kindref="compound">item.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classitem_1a235883f911ed8fad4679655a57d23d96" refkind="member"><highlight class="normal"><ref refid="classitem_1a235883f911ed8fad4679655a57d23d96" kindref="member">item::item</ref>(std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="classsql" kindref="compound">sql</ref><sp/>&amp;<sp/>database)<sp/>:</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>id(id),</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>database(database)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classitem_1ab7c2fa653e0f9a565283b60ca325f2a7" refkind="member"><highlight class="normal">std::string<sp/><ref refid="classitem_1ab7c2fa653e0f9a565283b60ca325f2a7" kindref="member">item::get_name</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>name_vector<sp/>=<sp/>database.<ref refid="classsql_1a7b49bcf5ac10f6421a5ecd62865e3316" kindref="member">get_name_from_id_inventory</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="button__actions_8hpp_1a9b45b3e13bd9167aab02e17e08916231" kindref="member">name</ref><sp/>=<sp/>name_vector.at(0);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="button__actions_8hpp_1a9b45b3e13bd9167aab02e17e08916231" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classitem_1aa5a9140482a7d88d6a3eea342cb0c082" refkind="member"><highlight class="normal">std::string<sp/><ref refid="classitem_1aa5a9140482a7d88d6a3eea342cb0c082" kindref="member">item::get_in_game_name</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>in_game_name_vector<sp/>=<sp/>database.<ref refid="classsql_1a62cd4910a9310621ca22fb3c322f52a4" kindref="member">get_in_game_name_from_id_inventory</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="button__actions_8hpp_1a9b45b3e13bd9167aab02e17e08916231" kindref="member">name</ref><sp/>=<sp/>in_game_name_vector.at(0);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="button__actions_8hpp_1a9b45b3e13bd9167aab02e17e08916231" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classitem_1aafc61a4b7e2bd10300a6767e6dd7281e" refkind="member"><highlight class="normal">sf::Sprite<sp/><ref refid="classitem_1aafc61a4b7e2bd10300a6767e6dd7281e" kindref="member">item::get_sprite</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>counter)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>sprite_vector<sp/>=<sp/>database.<ref refid="classsql_1a060764a845c3a26c99c6f15470df9634" kindref="member">get_sprite_inventory</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!texture.loadFromFile(sprite_vector.at(0)))<sp/>{<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>while<sp/>loading<sp/>sprite&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;<sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite.setTexture(texture);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y_counter<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(counter<sp/>%<sp/>4<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y_counter++;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//sprite.setPosition(362<sp/>+<sp/>(50<sp/>*<sp/>((counter<sp/>%<sp/>4)<sp/>+<sp/>1)),<sp/>412);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite.setPosition(362<sp/>+<sp/>(50<sp/>*<sp/>((counter<sp/>%<sp/>4)<sp/>+<sp/>1)),<sp/>362<sp/>+<sp/><sp/>50<sp/>*<sp/>y_counter);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sprite;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/item.cpp"/>
+  </compounddef>
+</doxygen>

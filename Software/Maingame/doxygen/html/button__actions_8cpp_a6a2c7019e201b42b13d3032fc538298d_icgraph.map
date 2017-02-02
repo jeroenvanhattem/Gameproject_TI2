@@ -1,0 +1,6 @@
+<map id="get_move_direction_from_button_keys" name="get_move_direction_from_button_keys">
+<area shape="rect" id="node2" href="$classgame.html#a2b80a1fbc6d723e78d3c86d2f8ff24d4" title="Loop that handles the game. " alt="" coords="199,5,325,32"/>
+<area shape="rect" id="node4" href="$classgame.html#a0eb06f984d04128ba7fba6fcca04bda3" title="Get the items from the database. " alt="" coords="187,57,337,98"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="407,5,458,32"/>
+<area shape="rect" id="node5" href="$classgame.html#a46eaf7a077e7f3ff0b5e229142358f00" title="The constructor. " alt="" coords="385,64,480,91"/>
+</map>

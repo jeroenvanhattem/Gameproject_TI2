@@ -37,9 +37,9 @@ public:
 	ability(std::string name, std::vector<sf::Sprite> & action, sf::Vector2f position);
 
 
-	/// Get the name of ability
+	/// Get the name of the ability
 	//
-	/// This method returns the name of an ability.\n
+	/// This method returns the name of the saved ability.\n
 	///
 	///
 	/// Return:
@@ -59,7 +59,7 @@ public:
 	/// Move the current ability
 	//
 	/// This method moves the position of the ability, \n
-	/// so that the ability sprite is printed on the right position.\n
+	/// so that the ability sprite is printed on the same position as the player or NPC.\n
 	///
 	///
 	/// Parameters:
@@ -79,6 +79,8 @@ public:
 	/// Print ability
 	//
 	/// This method draws the ability on the screen. \n
+	/// Because there are likely multiple sprites in an ability, \n
+	/// the sprite that have to be printed is handle by the current_action_step value. \n
 	///
 	///
 	/// Parameters:
@@ -92,7 +94,8 @@ public:
 	/// Add a sprite to the action
 	//
 	/// This method will add a new sprite to the action. \n
-	/// It can be used if the ability needs an extra sprite that is not loaded.\n
+	/// This method can be used if you think that the animation is not complete enough,\n
+	/// and want to add an extra sprite to the animation.\n
 	///
 	///
 	/// Parameters:
@@ -107,8 +110,37 @@ public:
 	///
 	void add_sprite_to_action(sf::Sprite t);
 
+
+	/// Get list of sprites from an ability
+	//
+	/// This method returns a list that contains all sprites from the ability. \n
+	///
+	///
+	/// Return:
+	/// -------
+	/// action : std::vector<sf::Sprite>\n
+	/// -> List of sprites, containing the ability.
+	///
+	///
+	/// Example:
+	/// --------
+	/// get_action()\n
+	/// {sprite1,sprite2,sprite3}
+	///
 	std::vector<sf::Sprite> get_action();
 
+
+	/// Skip to the next action step
+	//
+	/// This method moves the current_action_step to the next value. \n
+	///
+	///
+	/// Example:
+	/// --------
+	/// current_action_step = 5\n
+	/// next_step()\n
+	/// current_action_step = 6\n
+	///
 	void next_step();
 
 

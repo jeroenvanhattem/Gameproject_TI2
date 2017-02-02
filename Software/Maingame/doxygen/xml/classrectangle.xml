@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrectangle" kind="class" language="C++" prot="public">
+    <compoundname>rectangle</compoundname>
+    <basecompoundref refid="classfigure" prot="public" virt="non-virtual">figure</basecompoundref>
+    <includes refid="objects_8hpp" local="no">objects.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrectangle_1ae2c7b7085f2e7778bc97cec8816360aa" prot="private" static="no" mutable="no">
+        <type>sf::Vector2f</type>
+        <definition>sf::Vector2f rectangle::size_in</definition>
+        <argsstring></argsstring>
+        <name>size_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="50" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrectangle_1aad94646844fb2682cc972f734889c694" prot="private" static="no" mutable="no">
+        <type>sf::Color</type>
+        <definition>sf::Color rectangle::set_color</definition>
+        <argsstring></argsstring>
+        <name>set_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="51" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrectangle_1a22e5d579d5cec330a86d838e6c6e5602" prot="private" static="no" mutable="no">
+        <type>sf::RectangleShape</type>
+        <definition>sf::RectangleShape rectangle::rect</definition>
+        <argsstring></argsstring>
+        <name>rect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="52" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrectangle_1a455f57024598d3c84906766bc083a104" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rectangle::rectangle</definition>
+        <argsstring>(sf::Vector2f position, sf::Vector2f size, float outline_thickness, sf::Color color, sf::Color outline_color)</argsstring>
+        <name>rectangle</name>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>outline_thickness</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>outline_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="54" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.cpp" bodystart="41" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classrectangle_1a827e05afcb275c3e6fe29fc80337d8cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>sf::FloatRect</type>
+        <definition>sf::FloatRect rectangle::getBounds</definition>
+        <argsstring>()</argsstring>
+        <name>getBounds</name>
+        <reimplements refid="classfigure_1aca9a3924bc0883e1aa8e93c04887abbc">getBounds</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="55" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.cpp" bodystart="61" bodyend="63"/>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">leveleditor::editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrectangle_1aac9bb03014c071fdf932f6cfa3f34f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rectangle::draw</definition>
+        <argsstring>(sf::RenderWindow &amp;window)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classfigure_1a56d8a53a8bf2b82178aa476bac071596">draw</reimplements>
+        <param>
+          <type>sf::RenderWindow &amp;</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="57" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.cpp" bodystart="74" bodyend="77"/>
+        <references refid="classfigure_1a2196c51490b69027860fdb015913de19" compoundref="objects_8hpp" startline="10">figure::position</references>
+        <referencedby refid="classleveleditor_1ae819c7275982ef9e2891017985560c6d" compoundref="leveleditor_8cpp" startline="313" endline="317">leveleditor::draw_rectangle_store</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="50">
+        <label>figure</label>
+        <link refid="classfigure"/>
+      </node>
+      <node id="49">
+        <label>rectangle</label>
+        <link refid="classrectangle"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="52">
+        <label>figure</label>
+        <link refid="classfigure"/>
+      </node>
+      <node id="51">
+        <label>rectangle</label>
+        <link refid="classrectangle"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="48" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" bodystart="48" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classrectangle_1aac9bb03014c071fdf932f6cfa3f34f55" prot="public" virt="virtual"><scope>rectangle</scope><name>draw</name></member>
+      <member refid="classfigure_1a73a600829aee74a3ac635b4a7d0719b8" prot="public" virt="non-virtual"><scope>rectangle</scope><name>figure</name></member>
+      <member refid="classrectangle_1a827e05afcb275c3e6fe29fc80337d8cc" prot="public" virt="virtual"><scope>rectangle</scope><name>getBounds</name></member>
+      <member refid="classfigure_1a2290acc133127e643fab20c7ce9ab975" prot="public" virt="virtual"><scope>rectangle</scope><name>jump</name></member>
+      <member refid="classfigure_1a25bfb0a452b2b2fe60f7f01b08dab423" prot="public" virt="virtual"><scope>rectangle</scope><name>jump</name></member>
+      <member refid="classfigure_1ac7592a3b4cb4210fbd114c42d015c4e7" prot="public" virt="virtual"><scope>rectangle</scope><name>move</name></member>
+      <member refid="classfigure_1a2196c51490b69027860fdb015913de19" prot="public" virt="non-virtual"><scope>rectangle</scope><name>position</name></member>
+      <member refid="classrectangle_1a22e5d579d5cec330a86d838e6c6e5602" prot="private" virt="non-virtual"><scope>rectangle</scope><name>rect</name></member>
+      <member refid="classrectangle_1a455f57024598d3c84906766bc083a104" prot="public" virt="non-virtual"><scope>rectangle</scope><name>rectangle</name></member>
+      <member refid="classfigure_1aaaf0bac968262da5781ddcfbb6bcb687" prot="public" virt="non-virtual"><scope>rectangle</scope><name>selected</name></member>
+      <member refid="classrectangle_1aad94646844fb2682cc972f734889c694" prot="private" virt="non-virtual"><scope>rectangle</scope><name>set_color</name></member>
+      <member refid="classrectangle_1ae2c7b7085f2e7778bc97cec8816360aa" prot="private" virt="non-virtual"><scope>rectangle</scope><name>size_in</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,7 @@
+<map id="npc::get_current_action" name="npc::get_current_action">
+<area shape="rect" id="node2" href="$classnpc.html#af58658444d25eaa77aec883dd9d5592d" title="Get position of NPC. " alt="" coords="217,5,338,32"/>
+<area shape="rect" id="node4" href="$classplayer.html#afc7732284851b7f0d90b66a5d25931e2" title="Get current action the player. " alt="" coords="212,57,343,98"/>
+<area shape="rect" id="node3" href="$classplayer.html#a78d420774623e89cd896d3cb1d265b17" title="sf::Vector2f get_position() : Get position of player " alt="" coords="399,5,533,32"/>
+<area shape="rect" id="node5" href="$classgame.html#a0eb06f984d04128ba7fba6fcca04bda3" title="Get the items from the database. " alt="" coords="391,57,541,98"/>
+<area shape="rect" id="node6" href="$classgame.html#a46eaf7a077e7f3ff0b5e229142358f00" title="The constructor. " alt="" coords="589,64,684,91"/>
+</map>

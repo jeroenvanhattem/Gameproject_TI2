@@ -11,6 +11,25 @@ private:
 	sf::Texture texture;
 
 public:
+
+	/// Constructor
+	//
+	/// This method will crate an object of class item.\n
+	///
+	/// 
+	/// Parameters:
+	/// -----------
+	/// id : std::string \n
+	///	-> id of the item in the database.
+	///
+	/// database : sql& \n
+	///	-> refference to the sqlite database.\n
+	/// 
+	///
+	/// Example:
+	/// --------
+	/// item banana("1", database)\n
+	///
 	item(std::string id, sql & database);
 
 	/// std::string get_name() : Get the name from an item

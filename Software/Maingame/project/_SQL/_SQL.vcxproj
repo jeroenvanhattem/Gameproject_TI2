@@ -20,30 +20,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\ability.hpp" />
-    <ClInclude Include="..\..\src\background.hpp" />
     <ClInclude Include="..\..\src\button_actions.hpp" />
     <ClInclude Include="..\..\src\dialogbox.hpp" />
-    <ClInclude Include="..\..\src\exception_list.hpp" />
-    <ClInclude Include="..\..\src\file_reading_operators.hpp" />
     <ClInclude Include="..\..\src\game.hpp" />
+    <ClInclude Include="..\..\src\inventory.hpp" />
+    <ClInclude Include="..\..\src\item.hpp" />
     <ClInclude Include="..\..\src\leveleditor.hpp" />
     <ClInclude Include="..\..\src\main_menu.hpp" />
     <ClInclude Include="..\..\src\music.hpp" />
     <ClInclude Include="..\..\src\npc.hpp" />
     <ClInclude Include="..\..\src\objects.hpp" />
     <ClInclude Include="..\..\src\player.hpp" />
-    <ClInclude Include="..\..\src\sprite.hpp" />
     <ClInclude Include="..\..\src\sql.hpp" />
     <ClInclude Include="..\..\src\sqlite3.h" />
-    <ClInclude Include="..\..\src\template_functions.hpp" />
-    <ClInclude Include="..\..\src\tile.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\ability.cpp" />
-    <ClCompile Include="..\..\src\background.cpp" />
     <ClCompile Include="..\..\src\button_actions.cpp" />
     <ClCompile Include="..\..\src\dialogbox.cpp" />
-    <ClCompile Include="..\..\src\file_reading_operators.cpp" />
     <ClCompile Include="..\..\src\game.cpp" />
     <ClCompile Include="..\..\src\inventory.cpp" />
     <ClCompile Include="..\..\src\item.cpp" />
@@ -54,10 +48,8 @@
     <ClCompile Include="..\..\src\npc.cpp" />
     <ClCompile Include="..\..\src\objects.cpp" />
     <ClCompile Include="..\..\src\player.cpp" />
-    <ClCompile Include="..\..\src\sprite.cpp" />
     <ClCompile Include="..\..\src\sql.cpp" />
     <ClCompile Include="..\..\src\sqlite3.c" />
-    <ClCompile Include="..\..\src\tile.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DC937594-B760-4BE9-85AE-988CBE1598F6}</ProjectGuid>

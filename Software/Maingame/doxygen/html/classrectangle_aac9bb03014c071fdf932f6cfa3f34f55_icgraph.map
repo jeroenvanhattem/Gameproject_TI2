@@ -1,0 +1,4 @@
+<map id="rectangle::draw" name="rectangle::draw">
+<area shape="rect" id="node2" href="$classleveleditor.html#ae819c7275982ef9e2891017985560c6d" title="Draw the rectangle store on the screen. " alt="" coords="164,5,339,47"/>
+<area shape="rect" id="node3" href="$classleveleditor.html#a2ee968e4a8d305cdb1465397388b63f2" title="The main loop for the editor to stay working. " alt="" coords="387,13,537,39"/>
+</map>

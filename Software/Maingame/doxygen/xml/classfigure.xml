@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classfigure" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>figure</compoundname>
+    <derivedcompoundref refid="classcircle" prot="public" virt="non-virtual">circle</derivedcompoundref>
+    <derivedcompoundref refid="classpicture" prot="public" virt="non-virtual">picture</derivedcompoundref>
+    <derivedcompoundref refid="classrectangle" prot="public" virt="non-virtual">rectangle</derivedcompoundref>
+    <includes refid="objects_8hpp" local="no">objects.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classfigure_1a2196c51490b69027860fdb015913de19" prot="public" static="no" mutable="no">
+        <type>sf::Vector2f</type>
+        <definition>sf::Vector2f figure::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="10" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" bodystart="10" bodyend="-1"/>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">leveleditor::editor_loop</referencedby>
+        <referencedby refid="classfigure_1ac7592a3b4cb4210fbd114c42d015c4e7" compoundref="objects_8cpp" startline="53" endline="55">move</referencedby>
+        <referencedby refid="classcircle_1a49a37a81d863f524935be5953142886a" compoundref="objects_8cpp" startline="69" endline="72">circle::draw</referencedby>
+        <referencedby refid="classrectangle_1aac9bb03014c071fdf932f6cfa3f34f55" compoundref="objects_8cpp" startline="74" endline="77">rectangle::draw</referencedby>
+        <referencedby refid="classpicture_1ac69e8047651291091abbe2a8da545aa1" compoundref="objects_8cpp" startline="79" endline="82">picture::draw</referencedby>
+        <referencedby refid="classfigure_1a2290acc133127e643fab20c7ce9ab975" compoundref="objects_8cpp" startline="84" endline="86">jump</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classfigure_1aaaf0bac968262da5781ddcfbb6bcb687" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool figure::selected</definition>
+        <argsstring></argsstring>
+        <name>selected</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="11" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfigure_1a73a600829aee74a3ac635b4a7d0719b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>figure::figure</definition>
+        <argsstring>(sf::Vector2f position)</argsstring>
+        <name>figure</name>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="9" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classfigure_1aca9a3924bc0883e1aa8e93c04887abbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>sf::FloatRect</type>
+        <definition>virtual sf::FloatRect figure::getBounds</definition>
+        <argsstring>()=0</argsstring>
+        <name>getBounds</name>
+        <reimplementedby refid="classpicture_1a3a23c2ae495660c218f6f4e40e7e61cc">getBounds</reimplementedby>
+        <reimplementedby refid="classcircle_1a8e0193c47ce75d0aed9b3501dbdd0499">getBounds</reimplementedby>
+        <reimplementedby refid="classrectangle_1a827e05afcb275c3e6fe29fc80337d8cc">getBounds</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfigure_1a56d8a53a8bf2b82178aa476bac071596" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void figure::draw</definition>
+        <argsstring>(sf::RenderWindow &amp;window)=0</argsstring>
+        <name>draw</name>
+        <reimplementedby refid="classpicture_1ac69e8047651291091abbe2a8da545aa1">draw</reimplementedby>
+        <reimplementedby refid="classcircle_1a49a37a81d863f524935be5953142886a">draw</reimplementedby>
+        <reimplementedby refid="classrectangle_1aac9bb03014c071fdf932f6cfa3f34f55">draw</reimplementedby>
+        <param>
+          <type>sf::RenderWindow &amp;</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfigure_1ac7592a3b4cb4210fbd114c42d015c4e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void figure::move</definition>
+        <argsstring>(sf::Vector2f delta)</argsstring>
+        <name>move</name>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="15" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.cpp" bodystart="53" bodyend="55"/>
+        <references refid="classfigure_1a2196c51490b69027860fdb015913de19" compoundref="objects_8hpp" startline="10">position</references>
+      </memberdef>
+      <memberdef kind="function" id="classfigure_1a2290acc133127e643fab20c7ce9ab975" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void figure::jump</definition>
+        <argsstring>(sf::Vector2f target)</argsstring>
+        <name>jump</name>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="17" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.cpp" bodystart="84" bodyend="86"/>
+        <references refid="classfigure_1a2196c51490b69027860fdb015913de19" compoundref="objects_8hpp" startline="10">position</references>
+        <referencedby refid="classfigure_1a25bfb0a452b2b2fe60f7f01b08dab423" compoundref="objects_8cpp" startline="88" endline="93">jump</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classfigure_1a25bfb0a452b2b2fe60f7f01b08dab423" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void figure::jump</definition>
+        <argsstring>(sf::Vector2i target)</argsstring>
+        <name>jump</name>
+        <param>
+          <type>sf::Vector2i</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="18" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.cpp" bodystart="88" bodyend="93"/>
+        <references refid="classfigure_1a2290acc133127e643fab20c7ce9ab975" compoundref="objects_8cpp" startline="84" endline="86">jump</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>picture</label>
+        <link refid="classpicture"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>figure</label>
+        <link refid="classfigure"/>
+      </node>
+      <node id="21">
+        <label>rectangle</label>
+        <link refid="classrectangle"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>circle</label>
+        <link refid="classcircle"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" line="7" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/objects.hpp" bodystart="7" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classfigure_1a56d8a53a8bf2b82178aa476bac071596" prot="public" virt="pure-virtual"><scope>figure</scope><name>draw</name></member>
+      <member refid="classfigure_1a73a600829aee74a3ac635b4a7d0719b8" prot="public" virt="non-virtual"><scope>figure</scope><name>figure</name></member>
+      <member refid="classfigure_1aca9a3924bc0883e1aa8e93c04887abbc" prot="public" virt="pure-virtual"><scope>figure</scope><name>getBounds</name></member>
+      <member refid="classfigure_1a2290acc133127e643fab20c7ce9ab975" prot="public" virt="virtual"><scope>figure</scope><name>jump</name></member>
+      <member refid="classfigure_1a25bfb0a452b2b2fe60f7f01b08dab423" prot="public" virt="virtual"><scope>figure</scope><name>jump</name></member>
+      <member refid="classfigure_1ac7592a3b4cb4210fbd114c42d015c4e7" prot="public" virt="virtual"><scope>figure</scope><name>move</name></member>
+      <member refid="classfigure_1a2196c51490b69027860fdb015913de19" prot="public" virt="non-virtual"><scope>figure</scope><name>position</name></member>
+      <member refid="classfigure_1aaaf0bac968262da5781ddcfbb6bcb687" prot="public" virt="non-virtual"><scope>figure</scope><name>selected</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

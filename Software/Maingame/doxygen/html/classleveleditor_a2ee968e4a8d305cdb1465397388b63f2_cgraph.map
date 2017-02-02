@@ -1,0 +1,24 @@
+<map id="leveleditor::editor_loop" name="leveleditor::editor_loop">
+<area shape="rect" id="node2" href="$classleveleditor.html#aa5cd17c0004af09a706230a93abb10ee" title="Loop through the actions in the action class. " alt="" coords="221,5,375,32"/>
+<area shape="rect" id="node3" href="$classleveleditor.html#ae819c7275982ef9e2891017985560c6d" title="Draw the rectangle store on the screen. " alt="" coords="211,57,385,98"/>
+<area shape="rect" id="node5" href="$classleveleditor.html#afa6c25fa02db7ad3d904d6bb91b79643" title="Draw the background store. " alt="" coords="204,122,392,163"/>
+<area shape="rect" id="node6" href="$classleveleditor.html#a3478cade84f5ff58c06df2c173c9127d" title="Draw the temporary store. " alt="" coords="209,187,387,229"/>
+<area shape="rect" id="node7" href="$classsql.html#a29fe43df701460704744049aec28d58e" title="Get the names of all levels in the database. " alt="" coords="237,486,359,527"/>
+<area shape="rect" id="node13" href="$classsql.html#a9928c456c632f88d19cce26b8165bd6f" title="Get the ID&#39;s of all levels in the database. " alt="" coords="237,552,359,579"/>
+<area shape="rect" id="node14" href="$classsql.html#a5eb7fea00a56fe6ba33f602871798bc8" title="Get all background values of a level. " alt="" coords="213,421,383,462"/>
+<area shape="rect" id="node15" href="$classsql.html#a1dd21fbf729e949d804ba5509af2b295" title="Get all object values of a level. " alt="" coords="229,355,367,397"/>
+<area shape="rect" id="node16" href="$classleveleditor.html#ac87f89b0889c243ab43cfbbc7fd70836" title="Draw the tile store. " alt="" coords="229,705,367,746"/>
+<area shape="rect" id="node17" href="$classpicture.html#ac69e8047651291091abbe2a8da545aa1" title="picture::draw" alt="" coords="250,771,346,797"/>
+<area shape="rect" id="node18" href="$classsql.html#ac24a3682f7478f78508e3e433b637407" title="Create new map. " alt="" coords="235,653,361,680"/>
+<area shape="rect" id="node20" href="$classsql.html#a4c6195e2934d72569b45041039a2be63" title="Saves the tiles in the database. " alt="" coords="246,603,350,629"/>
+<area shape="rect" id="node21" href="$classsql.html#a0ea1aa772cb693be29da61c6cadffd86" title="Get id&#39;s from objects and tiles sprites. " alt="" coords="440,256,611,283"/>
+<area shape="rect" id="node22" href="$classsql.html#a2466fe5b0ec24e98190ee5763a4a69d1" title="Get all values from columns in sprites. " alt="" coords="452,309,599,350"/>
+<area shape="rect" id="node23" href="$classrectangle.html#a827e05afcb275c3e6fe29fc80337d8cc" title="rectangle::getBounds" alt="" coords="225,821,371,848"/>
+<area shape="rect" id="node4" href="$classrectangle.html#aac9bb03014c071fdf932f6cfa3f34f55" title="rectangle::draw" alt="" coords="470,64,581,91"/>
+<area shape="rect" id="node8" href="$classsql.html#a1cb74ab7343ef603490518715297be83" title="Get data from a column in a table in the database. " alt="" coords="477,485,574,512"/>
+<area shape="rect" id="node9" href="$classsql.html#a53dd323de395c13534e63a3482190777" title="Execute a query. " alt="" coords="659,421,791,462"/>
+<area shape="rect" id="node10" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="843,511,938,537"/>
+<area shape="rect" id="node12" href="$classsql.html#ad4d8bdf41eede1ae1363d0be8a2f60a9" title="Get saved result. " alt="" coords="839,428,943,455"/>
+<area shape="rect" id="node11" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="991,511,1095,537"/>
+<area shape="rect" id="node19" href="$classsql.html#ac70e1da6d9e49f114bcf639fd1e6f86c" title="Execute a query. " alt="" coords="459,595,591,637"/>
+</map>

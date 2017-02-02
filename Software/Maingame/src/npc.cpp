@@ -126,7 +126,7 @@ int npc::get_collision(sf::IntRect colliding_object) {
 	//player_bounds.height *= 2;
 
 	colliding_object.top *= 2;
-	colliding_object.width /= 2.5;
+	colliding_object.width = int(double(colliding_object.width) / 2.5);
 	//colliding_object.height *= 2;
 
 	if (player_bounds.intersects(colliding_object)) {
@@ -171,11 +171,14 @@ std::string npc::get_current_action() {
 }
 
 std::vector<sf::Sprite> npc::get_action(std::string action_to_get) {
+	std::vector<sf::Sprite>temp;
 	for (auto action : npc_actions) {
 		if (action->get_name() == action_to_get) {
-			return action->get_action();
+			temp = action->get_action();
+			break;
 		}
 	}
+	return temp;
 }
 
 npc::~npc() {

@@ -12,15 +12,6 @@ private:
 	std::string id;
 	sf::Vector2f position;
 	
-	/*
-	0) name
-	1) sprite_id
-	2) map
-	3) level
-	4) pos_x
-	5) pos_y
-	6) faction_id
-	*/
 	sql & database;
 
 	int sprite_size = 64;
@@ -28,33 +19,29 @@ private:
 	sf::RenderWindow & window;
 	std::string current_action = "walk_down";
 	
-	const std::vector<std::string>action_names = {
-		"cast_spell_up",
-		"cast_spell_left",
-		"cast_spell_down",
-		"cast_spell_right",
-		"poke_up",
-		"poke_left",
-		"poke_down",
-		"poke_right",
-		"walk_up",
-		"walk_left",
-		"walk_down",
-		"walk_right",
-		"slash_up",
-		"slash_left",
-		"slash_down",
-		"slash_right",
-		"shoot_arrow_up",
-		"shoot_arrow_left",
-		"shoot_arrow_down",
-		"shoot_arrow_right",
-		"die"
-	};
-
 	bool is_player = false;
 
+
+	/// Load all abilities
+	//
+	/// This method will load all abilities of an NPC sprite sheet.\n
+	///
 	void load_all_actions();
+	
+	
+	/// Load a npc ability
+	//
+	/// This method will load one ability of an NPC sprite sheet.\n
+	/// This ability has a certain ammount of steps and stands on a certain level in the sprite sheet.\n
+	///
+	/// Parameters:
+	/// -----------
+	/// action_name : std::string\n
+	/// -> name of the ability to load
+	///
+	/// steps_of_action : int \n
+	/// -> ammount of steps of the ability. \n
+	///
 	void load_action(std::string action_name, int steps_of_action, int level);
 	
 public:
@@ -151,9 +138,9 @@ public:
 	///
 	const void draw();
 
-	/// Get a sf::IntRect from the coordinates from the NPC
+	/// Get a bounds from a NPC
 	//
-	/// This function returns a sf::IntRect object which is created from the position and size of the NPC object\n
+	/// This function returns a sf::IntRect object which is created from the position and size of the NPC object.\n
 	/// 
 	/// Return:
 	/// -------
@@ -167,19 +154,19 @@ public:
 	///
 	sf::IntRect get_bounds();
 
-	/// int npc::get_interaction(npc & other_npc) : Get interaction between two NPC's
+	/// Get interaction two NPC's
 	//
-	/// Call the 'get_interaction' function to check for a collision with another NPC
+	/// Call the 'get_interaction' function to check for a collision with another NPC.
 	/// 
 	/// Parameters:
 	/// -----------
 	/// other_npc : NPC & \n
-	///	-> The NPC that will be check for a collision
+	///	-> The NPC that will be check for a collision.
 	///
 	/// Return:
 	/// -------
 	/// 0 / 1 : integer \n
-	///	-> Return a 1 if there's a collision detected, return a 0 if no collision is detected
+	///	-> Return a 1 if there's a collision detected, return a 0 if no collision is detected.
 	/// 
 	/// Example:
 	/// --------
@@ -190,31 +177,32 @@ public:
 
 
 
-	///Get interaction between a NPC and a sf::IntRect object
+	/// Get interaction NPC and object.
 	//
-	/// Call the 'get_collision' function to check for a collision with a sf::IntRect object
+	/// Call the 'get_collision' function to check for a collision with a sf::IntRect object.\n
 	/// 
 	/// Parameters:
 	/// -----------
 	/// colliding_object : sf::IntRect \n
-	///	-> The sf::IntRect that will be check for a collision
+	///	-> The sf::IntRect that will be check for a collision.\n
 	///
 	/// Return:
 	/// -------
 	/// 0 / 1 : integer \n
-	///	-> Return a 1 if there's a collision detected, return a 0 if no collision is detected
+	///	-> Return a 1 if there's a collision detected, return a 0 if no collision is detected.\n
 	/// 
 	/// Example:
 	/// --------
 	/// npc.get_collision(recangle) \n
 	/// return: {"1"}.
 	///
-
 	int get_collision(sf::IntRect colliding_object);
 
-	/// sf::Vector2f get_position() : Get position of NPC
+
+
+	/// Get position of NPC
 	//
-	/// When this function is called, it will return the position of the NPC
+	/// When this function is called, it will return the position of the NPC.\n
 	/// 
 	/// Return:
 	/// -------
@@ -228,9 +216,9 @@ public:
 	///
 	void set_position(sf::Vector2f given_position);
 
-	/// sf::Vector2f get_position() : Get position of NPC
+	/// Get position of NPC
 	//
-	/// When this function is called, it will return the position of the NPC
+	/// When this function is called, it will return the position of the NPC.
 	/// 
 	/// Return:
 	/// -------
@@ -244,25 +232,68 @@ public:
 	sf::Vector2f get_position() { return position; }
 
 
-	/// void show_action(std::string action_to_perform) : NPC acion
+	/// Get NPC action
 	//
-	/// This function displays the right action of the NPC, so the right spritepart that displays the current action of the NPC, like walking up
+	/// This function return a list of sprites that is asked from the NPC. \n
 	/// 
+	///
 	/// Parameters:
 	/// -----------
 	/// action_to_perform : std::string \n
-	///	-> The action that has to be shown
+	///	-> The action that has to be shown.
+	///
+	///
+	/// Return:
+	/// -----------
+	/// temp : std::vector<sf::Sprite> \n
+	///	-> list of sprites containing the sprites of an ability.
+	///
 	///
 	/// Example:
 	/// --------
-	/// show_action("walk_up") \n
-	/// -> Now the NPC seems to be walking up
+	/// get_action("walk_up") \n
+	/// -> {sprite1,sprite2,....}
 	///
-	///!unfinished
 	std::vector<sf::Sprite> npc::get_action(std::string action_to_get);
 
+
+	/// Get current action of NPC
+	//
+	/// This function returns the name of the current action of a NPC. \n
+	/// This is the action that the NPC is currently performing in the game.\n
+	/// 
+	///
+	/// Return:
+	/// -----------
+	/// current_action : std::string \n
+	///	-> Name of the current action from NPC.
+	///
+	///
+	/// Example:
+	/// --------
+	/// get_current_action() \n
+	/// -> "walk_up"
+	///
 	std::string get_current_action();
 
+
+	/// Perform an action.
+	//
+	/// This function shows one step of the asked ability. \n
+	/// This function has to be called in a loop that stops at the max size of the ability list. \n
+	/// 
+	///
+	/// Parameters:
+	/// -----------
+	/// action_to_show : std::string \n
+	///	-> Name of action.
+	///
+	///
+	/// Example:
+	/// --------
+	/// show_ability("shoot_arrow_up") \n
+	/// -> NPC will shoot an arrow northwards.
+	///
 	void show_ability(std::string action_to_show);
 
 

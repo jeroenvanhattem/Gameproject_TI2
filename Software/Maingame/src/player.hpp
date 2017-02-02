@@ -160,6 +160,7 @@ public:
 	/// position : sf::Vector2f \n
 	///	-> The position of the player
 	/// 
+	///
 	/// Example:
 	/// --------
 	/// get_position() \n
@@ -183,11 +184,60 @@ public:
 	///
 	std::vector<sf::Sprite> get_action(std::string action_to_get);
 
-
+	/// Get current action the player
+	//
+	/// This function returns the name of the current action of the player. \n
+	/// This is the action that the player is currently performing in the game.\n
+	/// 
+	///
+	/// Return:
+	/// -----------
+	/// current_action : std::string \n
+	///	-> Name of the current action from the player.
+	///
+	///
+	/// Example:
+	/// --------
+	/// get_current_action() \n
+	/// -> "walk_up"
+	///
 	std::string get_current_action();
 
+
+	/// Perform an action.
+	//
+	/// This function shows one step of the asked ability. \n
+	/// This function has to be called in a loop that stops at the max size of the ability list. \n
+	/// 
+	///
+	/// Parameters:
+	/// -----------
+	/// action_to_show : std::string \n
+	///	-> Name of action.
+	///
+	///
+	/// Example:
+	/// --------
+	/// show_ability("shoot_arrow_up") \n
+	/// -> the player will shoot an arrow northwards.
+	///
 	void show_ability(std::string action_to_show);
 
+
+	/// Get position of the player
+	//
+	/// When this function is called, it will return the position of the player.\n
+	/// 
+	/// Return:
+	/// -------
+	/// position : sf::Vector2f \n
+	///	-> The position of the player
+	/// 
+	/// Example:
+	/// --------
+	/// get_position() \n
+	/// -> return sf::Vector(200,200)
+	///
 	void set_position(sf::Vector2f new_position);
 
 

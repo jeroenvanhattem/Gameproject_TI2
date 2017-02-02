@@ -1,0 +1,859 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classleveleditor" kind="class" language="C++" prot="public">
+    <compoundname>leveleditor</compoundname>
+    <includes refid="leveleditor_8hpp" local="no">leveleditor.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classleveleditor_1ace10ab3736e90b40682ab9733b46d8f0" prot="private" static="no" mutable="no">
+        <type>sf::Vector2f</type>
+        <definition>sf::Vector2f leveleditor::levelsize</definition>
+        <argsstring></argsstring>
+        <name>levelsize</name>
+        <initializer>= { 0,0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="72" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a520e15cb7a61acba59ccd36a951479e5" prot="private" static="no" mutable="no">
+        <type>sf::Vector2f</type>
+        <definition>sf::Vector2f leveleditor::rect_size</definition>
+        <argsstring></argsstring>
+        <name>rect_size</name>
+        <initializer>= { 0,0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="73" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a07af571a23c704edfe87baef71265597" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classfigure" kindref="compound">figure</ref> * &gt;</type>
+        <definition>std::vector&lt;figure*&gt; leveleditor::rectangle_store</definition>
+        <argsstring></argsstring>
+        <name>rectangle_store</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="74" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1adb28cbc235cb4af8b3c4ce8d725a0672" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classpicture" kindref="compound">picture</ref> * &gt;</type>
+        <definition>std::vector&lt;picture*&gt; leveleditor::background_store</definition>
+        <argsstring></argsstring>
+        <name>background_store</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="75" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a0af5e07c57e50b3ad3d15d7ae64190ce" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classpicture" kindref="compound">picture</ref> * &gt;</type>
+        <definition>std::vector&lt;picture*&gt; leveleditor::tile_store</definition>
+        <argsstring></argsstring>
+        <name>tile_store</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="76" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1aebecc1e7c65f9bfd0da843b138fd9e68" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classpicture" kindref="compound">picture</ref> * &gt;</type>
+        <definition>std::vector&lt;picture*&gt; leveleditor::temporary_store</definition>
+        <argsstring></argsstring>
+        <name>temporary_store</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="77" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a03a8753b5312938d83c67b0873014f6e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classdialogbox" kindref="compound">dialogbox</ref> * &gt;</type>
+        <definition>std::vector&lt;dialogbox*&gt; leveleditor::level_buttons</definition>
+        <argsstring></argsstring>
+        <name>level_buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="78" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a02e37e18772af606dce2ee96d59dc7ae" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; leveleditor::level_ids</definition>
+        <argsstring></argsstring>
+        <name>level_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="80" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a36fa2dbff8ca9dfddb8ff3b6b331e275" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::vector&lt;std::string&gt; &gt; leveleditor::background_values_map</definition>
+        <argsstring></argsstring>
+        <name>background_values_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="81" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1aec34dfe3c55f923f1a04b63040f70050" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::vector&lt;std::string&gt; &gt; leveleditor::object_values_map</definition>
+        <argsstring></argsstring>
+        <name>object_values_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="82" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1acb425c1934ea523a6850a160610385d5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string leveleditor::active_level</definition>
+        <argsstring></argsstring>
+        <name>active_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="83" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a95edfc93a38089da61375eef9e65606e" prot="private" static="no" mutable="no">
+        <type>sf::RenderWindow &amp;</type>
+        <definition>sf::RenderWindow&amp; leveleditor::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="85" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a1b1594767de698a60f38e91690a55a36" prot="private" static="no" mutable="no">
+        <type><ref refid="classsql" kindref="compound">sql</ref> &amp;</type>
+        <definition>sql&amp; leveleditor::database</definition>
+        <argsstring></argsstring>
+        <name>database</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="86" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a8ba58913d3035bc9ae363e1ce72279d3" prot="private" static="no" mutable="no">
+        <type><ref refid="classpicture" kindref="compound">picture</ref></type>
+        <definition>picture leveleditor::back_to_menu_button</definition>
+        <argsstring></argsstring>
+        <name>back_to_menu_button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="87" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1ac05afa3b3ddd67cc6be6df6a43f1526f" prot="private" static="no" mutable="no">
+        <type><ref refid="classpicture" kindref="compound">picture</ref></type>
+        <definition>picture leveleditor::save_level_button</definition>
+        <argsstring></argsstring>
+        <name>save_level_button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="88" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1aa227a29f049d0b381c05b0e08ea12775" prot="private" static="no" mutable="no">
+        <type><ref refid="classpicture" kindref="compound">picture</ref></type>
+        <definition>picture leveleditor::new_game_button</definition>
+        <argsstring></argsstring>
+        <name>new_game_button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="89" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1adc1e2055b7a34c0719af86f0778b8954" prot="private" static="no" mutable="no">
+        <type><ref refid="classpicture" kindref="compound">picture</ref></type>
+        <definition>picture leveleditor::load_game_button</definition>
+        <argsstring></argsstring>
+        <name>load_game_button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="90" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a45f7bffb16d54852e0e24902d23f3a91" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool leveleditor::pressed_esc</definition>
+        <argsstring></argsstring>
+        <name>pressed_esc</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="91" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a31762448e212fa345f3a3b6d5ce81d66" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool leveleditor::pressed_load_game</definition>
+        <argsstring></argsstring>
+        <name>pressed_load_game</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="92" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a17bf53d8483496da9967d5344293db54" prot="private" static="no" mutable="no">
+        <type><ref refid="classaction" kindref="compound">action</ref></type>
+        <definition>action leveleditor::actions[12]</definition>
+        <argsstring>[12]</argsstring>
+        <name>actions</name>
+        <initializer>= {
+		<ref refid="classaction" kindref="compound">action</ref>(sf::Keyboard::Left,  [&amp;]() {view1.move(-16, 0); }),
+		<ref refid="classaction" kindref="compound">action</ref>(sf::Keyboard::Right, [&amp;]() {view1.move(16, 0); }),
+		<ref refid="classaction" kindref="compound">action</ref>(sf::Keyboard::Up,    [&amp;]() {view1.move(0, -32); }),
+		<ref refid="classaction" kindref="compound">action</ref>(sf::Keyboard::Down,  [&amp;]() {view1.move(0, 32); }),
+		<ref refid="classaction" kindref="compound">action</ref>(sf::Keyboard::Z,     [&amp;]() {view1.zoom(0.9f); }),
+		action(sf::Keyboard::X,		[&amp;]() {view1.zoom(1.1f); }),
+		action(sf::Mouse::Left,     [&amp;]() {if (is_object_under_mouse(rectangle_store, view1)) { create_object(get_position_from_rectangle_under_mouse()); } }),
+		action(sf::Mouse::Left,		[&amp;]() {if (is_object_under_mouse(tile_store, view2)) { set_selected(); } }),
+		action(sf::Keyboard::S,		[&amp;]() {view2.move(0,5); }),
+		action(sf::Keyboard::W,		[&amp;]() {view2.move(0,-5); }),
+		action(sf::Keyboard::C,     [&amp;]() {remove_object_under_mouse(); }),
+		action(sf::Keyboard::BackSpace, [&amp;]() {remove_last_object(); })
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="94" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classleveleditor_1a8a6367bede4a3a13c41f764f1ac628a4" prot="public" static="no" mutable="no">
+        <type>sf::View</type>
+        <definition>sf::View leveleditor::view1</definition>
+        <argsstring></argsstring>
+        <name>view1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="338" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="338" bodyend="-1"/>
+        <referencedby refid="classleveleditor_1a5dfc809a9bac07ffa88ce921c077f017" compoundref="leveleditor_8cpp" startline="3" endline="34">leveleditor</referencedby>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1aa6730359d22f4ea8f82347e29af75afa" prot="public" static="no" mutable="no">
+        <type>sf::View</type>
+        <definition>sf::View leveleditor::view2</definition>
+        <argsstring></argsstring>
+        <name>view2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="339" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="339" bodyend="-1"/>
+        <referencedby refid="classleveleditor_1a5dfc809a9bac07ffa88ce921c077f017" compoundref="leveleditor_8cpp" startline="3" endline="34">leveleditor</referencedby>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a2051eecaa725f921ef9520030c713a0b" prot="public" static="no" mutable="no">
+        <type>sf::View</type>
+        <definition>sf::View leveleditor::view3</definition>
+        <argsstring></argsstring>
+        <name>view3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="340" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="340" bodyend="-1"/>
+        <referencedby refid="classleveleditor_1a5dfc809a9bac07ffa88ce921c077f017" compoundref="leveleditor_8cpp" startline="3" endline="34">leveleditor</referencedby>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classleveleditor_1a73061ee47d22e443922a460cb97d2ed3" prot="public" static="no" mutable="no">
+        <type>sf::View</type>
+        <definition>sf::View leveleditor::view4</definition>
+        <argsstring></argsstring>
+        <name>view4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="341" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="341" bodyend="-1"/>
+        <referencedby refid="classleveleditor_1a5dfc809a9bac07ffa88ce921c077f017" compoundref="leveleditor_8cpp" startline="3" endline="34">leveleditor</referencedby>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">editor_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classleveleditor_1aefcb8b0819a53d39936400d5c4f4952e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool leveleditor::button_pressed</definition>
+        <argsstring>(dialogbox &amp;object, sf::View &amp;view)</argsstring>
+        <name>button_pressed</name>
+        <param>
+          <type><ref refid="classdialogbox" kindref="compound">dialogbox</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>sf::View &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Check if a button is pressed at the given view. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Parameters: </heading>
+</para><para>object : dialogbox&amp; <linebreak/>
+-&gt; A dialog object.</para><para>view : view&amp; <linebreak/>
+-&gt; A view.</para><para><heading level="2">Return: </heading>
+</para><para>bool : bool <linebreak/>
+-&gt; returns true if left mouse button is pressed on the given dialogbox.</para><para><heading level="2">Example: </heading>
+</para><para>Get_data(dialogbox, view1) <linebreak/>
+return: {true}. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="130" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1ace9678fd4d5cdce53584dcc55d4e7c7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::get_items_from_database</definition>
+        <argsstring>(std::map&lt; std::string, std::vector&lt; std::string &gt;&gt; &amp;item_values_map)</argsstring>
+        <name>get_items_from_database</name>
+        <param>
+          <type>std::map&lt; std::string, std::vector&lt; std::string &gt;&gt; &amp;</type>
+          <declname>item_values_map</declname>
+        </param>
+        <briefdescription>
+<para>Get data from the database by giving a map. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Parameters: </heading>
+</para><para>map vector : std::map&lt;std::string, std::vector&lt;std::string&gt;&gt;&amp; <linebreak/>
+-&gt; a map vector which contains a string with all the database values.</para><para><heading level="2">Return: </heading>
+</para><para>vector : std::vector&lt;object&gt; <linebreak/>
+-&gt; returns a vector with all the objects from the database.</para><para><heading level="2">Example: </heading>
+</para><para>get_items_from_database(object_map) <linebreak/>
+-&gt; item_map is now filled with objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="150" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="164" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1a675038d66c5ea045d4e3b922e28a23ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::load_rectangles</definition>
+        <argsstring>()</argsstring>
+        <name>load_rectangles</name>
+        <briefdescription>
+<para>This function loads all background rectangles in the background vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will fill the rectangle_store with rectangles. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="157" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="186" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1ad34dad62ef7c5ea26250b97e9803776a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::load_tile_list</definition>
+        <argsstring>()</argsstring>
+        <name>load_tile_list</name>
+        <briefdescription>
+<para>This method loads all tiles which can be choosen at the right side of the level editor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will fill the tile_store with objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="164" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="223" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1a6579d63ca18e84f7a335bf8072f798cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::set_selected</definition>
+        <argsstring>()</argsstring>
+        <name>set_selected</name>
+        <briefdescription>
+<para>Set a object from the tile list as selected when there is clicked on it. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is used in the code to be able to switch between objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="171" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="302" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1aa2b54b93aa87f704d841f6ccd59b4e38" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::remove_last_object</definition>
+        <argsstring>()</argsstring>
+        <name>remove_last_object</name>
+        <briefdescription>
+<para>Removes the last object from the temporary store. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function removes the last object from the temporary store. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="178" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="204" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1a89e3b4fb65aa6db692a2f4db65e6dba2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool leveleditor::remove_object_under_mouse</definition>
+        <argsstring>()</argsstring>
+        <name>remove_object_under_mouse</name>
+        <briefdescription>
+<para>This function removes the object under the mouse by pressing c. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Return: </heading>
+</para><para>bool : bool <linebreak/>
+-&gt; returns a bool.</para><para><heading level="2">Example: </heading>
+</para><para>remove_object_under_mouse() -&gt; true </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="194" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="211" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1a3d09ece44892be49f42c62b3cdcada0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::create_object</definition>
+        <argsstring>(sf::Vector2f position)</argsstring>
+        <name>create_object</name>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Creates an object which is selected at the given position. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Parameters: </heading>
+</para><para>position : sf::Vector2f -&gt; position for object</para><para><heading level="2">Example: </heading>
+</para><para>Create_object({100,50}) Creates a selected object at position {100,50}. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="210" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="195" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1ac2de1ac26fa5f7e10ca834e6448b1b6b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sf::Vector2f</type>
+        <definition>sf::Vector2f leveleditor::convert_to_coords</definition>
+        <argsstring>(sf::View &amp;view)</argsstring>
+        <name>convert_to_coords</name>
+        <param>
+          <type>sf::View &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Converts a mouse position to map coords on the given view. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Parameters: </heading>
+</para><para>view : sf::View&amp; <linebreak/>
+-&gt; view of the editor</para><para><heading level="2">Return: </heading>
+</para><para>vector : sf::Vector2f <linebreak/>
+-&gt; A vector converted to mapcoords.</para><para><heading level="2">Example: </heading>
+</para><para>convert_to_coords(view1); -&gt; (256,596) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="232" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="271" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1ac6bf4571731b8283feb4c20d1391fa8b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sf::Vector2f</type>
+        <definition>sf::Vector2f leveleditor::get_position_from_rectangle_under_mouse</definition>
+        <argsstring>()</argsstring>
+        <name>get_position_from_rectangle_under_mouse</name>
+        <briefdescription>
+<para>Get the position of the rectangle from rectangle store under the mouse. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Return: </heading>
+</para><para>position : sf::Vector2f <linebreak/>
+-&gt; A vector2f position.</para><para><heading level="2">Example: </heading>
+</para><para>get_position_from_rectangle_under_mouse() <linebreak/>
+-&gt; (234,262) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="247" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="275" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1a0c983ad2887a677d22fbea4eed0ec7d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool leveleditor::is_object_under_mouse</definition>
+        <argsstring>(std::vector&lt; picture *&gt; &amp;vector, sf::View &amp;view)</argsstring>
+        <name>is_object_under_mouse</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classpicture" kindref="compound">picture</ref> *&gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>sf::View &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Check if a picture object is under the mouse. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Parameters: </heading>
+</para><para>vector : std::vector&lt;picture*&gt;&amp; <linebreak/>
+-&gt; Give a picture vector with the function.</para><para>view : sf::View <linebreak/>
+-&gt; Give a view with the function.</para><para><heading level="2">Return: </heading>
+</para><para>picture_under_mouse : bool <linebreak/>
+-&gt; Returns true if the mouse is on a object. <linebreak/>
+ <heading level="2">Example: </heading>
+</para><para>is_object_under_mouse(picture_vector, view1) <linebreak/>
+-&gt; true </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="270" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="293" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1af11cad8cf1e7999a04f6a8f2a4950794" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool leveleditor::is_object_under_mouse</definition>
+        <argsstring>(std::vector&lt; figure *&gt; &amp;vector, sf::View &amp;view)</argsstring>
+        <name>is_object_under_mouse</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classfigure" kindref="compound">figure</ref> *&gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>sf::View &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Check if a figure object is under the mouse. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Parameters: </heading>
+</para><para>vector : std::vector&lt;picture*&gt;&amp; <linebreak/>
+-&gt; Give a figure vector with the function. <linebreak/>
+ view : sf::View <linebreak/>
+-&gt; Give a view with the function. <linebreak/>
+</para><para><heading level="2">Return: </heading>
+</para><para>figure_under_mouse : bool <linebreak/>
+-&gt; Returns true if the mouse is on a object. <linebreak/>
+</para><para><heading level="2">Example: </heading>
+</para><para>is_object_under_mouse(figure_vector, view2) <linebreak/>
+-&gt; true <linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="295" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="284" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1aaa46d78a5b4630364b7b8f115b23dcff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool leveleditor::is_button_pressed</definition>
+        <argsstring>(picture &amp;object, sf::View &amp;view)</argsstring>
+        <name>is_button_pressed</name>
+        <param>
+          <type><ref refid="classpicture" kindref="compound">picture</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>sf::View &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Check if a button is pressed at the given view. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Parameters: </heading>
+</para><para>object : &apos;picture&amp; <linebreak/>
+-&gt; A picture object. <linebreak/>
+ view : view&amp; <linebreak/>
+-&gt; A view. <linebreak/>
+ <heading level="2">Return: </heading>
+</para><para>button_pressed : bool <linebreak/>
+-&gt; returns true if left mouse button is pressed on the given picture. <linebreak/>
+ <heading level="2">Example: </heading>
+</para><para>Get_data(picture, view1) <linebreak/>
+-&gt; true <linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="318" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1aa44f48b9869b3d5e0ce0429c6916e2b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool leveleditor::menu_options</definition>
+        <argsstring>()</argsstring>
+        <name>menu_options</name>
+        <briefdescription>
+<para>Looks if a menu button is pressed. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Return: </heading>
+</para><para>back_to_menu_button_pressed : bool <linebreak/>
+-&gt; returns true if the back to menu button is pressed. <linebreak/>
+sets other variables in the hpp on true or false if a button is pressed. <linebreak/>
+ <heading level="2">Example: </heading>
+</para><para>menu_options() <linebreak/>
+-&gt; true <linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="334" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="121" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classleveleditor_1a5dfc809a9bac07ffa88ce921c077f017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>leveleditor::leveleditor</definition>
+        <argsstring>(sf::Vector2f levelsize, sf::Vector2f tilesize, sf::RenderWindow &amp;window, sql &amp;database)</argsstring>
+        <name>leveleditor</name>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>levelsize</declname>
+        </param>
+        <param>
+          <type>sf::Vector2f</type>
+          <declname>tilesize</declname>
+        </param>
+        <param>
+          <type>sf::RenderWindow &amp;</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="classsql" kindref="compound">sql</ref> &amp;</type>
+          <declname>database</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">This will create a leveleditor object.  Parameters: </heading>
+</para><para>levelsize : sf::Vector2f <linebreak/>
+-&gt; Give the levelsize with the function. <linebreak/>
+ tilesize : sf::Vector2f <linebreak/>
+-&gt; Give the tilesize with the function. <linebreak/>
+ window : sf::RenderWindow&amp; <linebreak/>
+-&gt; Give a window with the function where the leveleditor needs to be drawn at. <linebreak/>
+ database : sql&amp; <linebreak/>
+-&gt; Give the database to the function.<linebreak/>
+ <heading level="2">Example: </heading>
+</para><para>leveleditor({1080,1080}, {32,32}, window, database); <linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="365" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="3" bodyend="34"/>
+        <references refid="classleveleditor_1a8a6367bede4a3a13c41f764f1ac628a4" compoundref="leveleditor_8hpp" startline="338">view1</references>
+        <references refid="classleveleditor_1aa6730359d22f4ea8f82347e29af75afa" compoundref="leveleditor_8hpp" startline="339">view2</references>
+        <references refid="classleveleditor_1a2051eecaa725f921ef9520030c713a0b" compoundref="leveleditor_8hpp" startline="340">view3</references>
+        <references refid="classleveleditor_1a73061ee47d22e443922a460cb97d2ed3" compoundref="leveleditor_8hpp" startline="341">view4</references>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::editor_loop</definition>
+        <argsstring>()</argsstring>
+        <name>editor_loop</name>
+        <briefdescription>
+<para>The main loop for the editor to stay working. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Example: </heading>
+</para><para><ref refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" kindref="member">editor_loop()</ref>; <linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="374" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="36" bodyend="119"/>
+        <references refid="classleveleditor_1a8a6367bede4a3a13c41f764f1ac628a4" compoundref="leveleditor_8hpp" startline="338">view1</references>
+        <references refid="classleveleditor_1aa5cd17c0004af09a706230a93abb10ee" compoundref="leveleditor_8cpp" startline="337" endline="341">get_actions</references>
+        <references refid="classleveleditor_1ae819c7275982ef9e2891017985560c6d" compoundref="leveleditor_8cpp" startline="313" endline="317">draw_rectangle_store</references>
+        <references refid="classleveleditor_1afa6c25fa02db7ad3d904d6bb91b79643" compoundref="leveleditor_8cpp" startline="319" endline="323">draw_background_store</references>
+        <references refid="classleveleditor_1a3478cade84f5ff58c06df2c173c9127d" compoundref="leveleditor_8cpp" startline="325" endline="329">draw_temporary_store</references>
+        <references refid="classleveleditor_1a73061ee47d22e443922a460cb97d2ed3" compoundref="leveleditor_8hpp" startline="341">view4</references>
+        <references refid="classsql_1a29fe43df701460704744049aec28d58e" compoundref="sql_8cpp" startline="389" endline="392">sql::get_available_levels</references>
+        <references refid="classsql_1a9928c456c632f88d19cce26b8165bd6f" compoundref="sql_8cpp" startline="394" endline="397">sql::get_level_ids</references>
+        <references refid="button__actions_8hpp_1ad0da36b2558901e21e7a30f6c227a45e" compoundref="button__actions_8hpp" startline="8">x</references>
+        <references refid="classsql_1a5eb7fea00a56fe6ba33f602871798bc8" compoundref="sql_8cpp" startline="452" endline="499">sql::get_level_background_value</references>
+        <references refid="classsql_1a1dd21fbf729e949d804ba5509af2b295" compoundref="sql_8cpp" startline="401" endline="449">sql::get_level_object_value</references>
+        <references refid="classleveleditor_1aa6730359d22f4ea8f82347e29af75afa" compoundref="leveleditor_8hpp" startline="339">view2</references>
+        <references refid="classleveleditor_1ac87f89b0889c243ab43cfbbc7fd70836" compoundref="leveleditor_8cpp" startline="331" endline="335">draw_tile_store</references>
+        <references refid="classleveleditor_1a2051eecaa725f921ef9520030c713a0b" compoundref="leveleditor_8hpp" startline="340">view3</references>
+        <references refid="classpicture_1ac69e8047651291091abbe2a8da545aa1" compoundref="objects_8cpp" startline="79" endline="82">picture::draw</references>
+        <references refid="classsql_1ac24a3682f7478f78508e3e433b637407" compoundref="sql_8cpp" startline="279" endline="290">sql::set_new_map</references>
+        <references refid="classsql_1a4c6195e2934d72569b45041039a2be63" compoundref="sql_8cpp" startline="293" endline="386">sql::save_tiles</references>
+        <references refid="button__actions_8hpp_1aa4f0d3eebc3c443f9be81bf48561a217" compoundref="button__actions_8hpp" startline="8">y</references>
+        <references refid="classsql_1a0ea1aa772cb693be29da61c6cadffd86" compoundref="sql_8cpp" startline="226" endline="236">sql::get_object_sprite_ids</references>
+        <references refid="classsql_1a2466fe5b0ec24e98190ee5763a4a69d1" compoundref="sql_8cpp" startline="239" endline="275">sql::get_object_sprite_value</references>
+        <references refid="classrectangle_1a827e05afcb275c3e6fe29fc80337d8cc" compoundref="objects_8cpp" startline="61" endline="63">rectangle::getBounds</references>
+        <references refid="classfigure_1a2196c51490b69027860fdb015913de19" compoundref="objects_8hpp" startline="10">figure::position</references>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1aa5cd17c0004af09a706230a93abb10ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::get_actions</definition>
+        <argsstring>()</argsstring>
+        <name>get_actions</name>
+        <briefdescription>
+<para>Loop through the actions in the action class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="380" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="337" bodyend="341"/>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1ae819c7275982ef9e2891017985560c6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::draw_rectangle_store</definition>
+        <argsstring>()</argsstring>
+        <name>draw_rectangle_store</name>
+        <briefdescription>
+<para>Draw the rectangle store on the screen. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Example: </heading>
+</para><para><ref refid="classleveleditor_1ae819c7275982ef9e2891017985560c6d" kindref="member">draw_rectangle_store()</ref> <linebreak/>
+rectangle_store is now drawn on the screen. <linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="390" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="313" bodyend="317"/>
+        <references refid="classrectangle_1aac9bb03014c071fdf932f6cfa3f34f55" compoundref="objects_8cpp" startline="74" endline="77">rectangle::draw</references>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1afa6c25fa02db7ad3d904d6bb91b79643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::draw_background_store</definition>
+        <argsstring>()</argsstring>
+        <name>draw_background_store</name>
+        <briefdescription>
+<para>Draw the background store. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Example: </heading>
+</para><para><ref refid="classleveleditor_1afa6c25fa02db7ad3d904d6bb91b79643" kindref="member">draw_background_store()</ref> <linebreak/>
+background_store is now drawn on the screen. <linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="400" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="319" bodyend="323"/>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1ac87f89b0889c243ab43cfbbc7fd70836" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::draw_tile_store</definition>
+        <argsstring>()</argsstring>
+        <name>draw_tile_store</name>
+        <briefdescription>
+<para>Draw the tile store. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Example: </heading>
+</para><para><ref refid="classleveleditor_1ac87f89b0889c243ab43cfbbc7fd70836" kindref="member">draw_tile_store()</ref> <linebreak/>
+Draw the objects from the tile_store. <linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="410" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="331" bodyend="335"/>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">editor_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classleveleditor_1a3478cade84f5ff58c06df2c173c9127d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leveleditor::draw_temporary_store</definition>
+        <argsstring>()</argsstring>
+        <name>draw_temporary_store</name>
+        <briefdescription>
+<para>Draw the temporary store. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">Example: </heading>
+</para><para><ref refid="classleveleditor_1a3478cade84f5ff58c06df2c173c9127d" kindref="member">draw_temporary_store()</ref> <linebreak/>
+Draw the objects from the temporary_store. <linebreak/>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="420" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.cpp" bodystart="325" bodyend="329"/>
+        <referencedby refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" compoundref="leveleditor_8cpp" startline="36" endline="119">editor_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" line="70" column="1" bodyfile="D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/leveleditor.hpp" bodystart="70" bodyend="421"/>
+    <listofallmembers>
+      <member refid="classleveleditor_1a17bf53d8483496da9967d5344293db54" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>actions</name></member>
+      <member refid="classleveleditor_1acb425c1934ea523a6850a160610385d5" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>active_level</name></member>
+      <member refid="classleveleditor_1a8ba58913d3035bc9ae363e1ce72279d3" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>back_to_menu_button</name></member>
+      <member refid="classleveleditor_1adb28cbc235cb4af8b3c4ce8d725a0672" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>background_store</name></member>
+      <member refid="classleveleditor_1a36fa2dbff8ca9dfddb8ff3b6b331e275" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>background_values_map</name></member>
+      <member refid="classleveleditor_1aefcb8b0819a53d39936400d5c4f4952e" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>button_pressed</name></member>
+      <member refid="classleveleditor_1ac2de1ac26fa5f7e10ca834e6448b1b6b" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>convert_to_coords</name></member>
+      <member refid="classleveleditor_1a3d09ece44892be49f42c62b3cdcada0c" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>create_object</name></member>
+      <member refid="classleveleditor_1a1b1594767de698a60f38e91690a55a36" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>database</name></member>
+      <member refid="classleveleditor_1afa6c25fa02db7ad3d904d6bb91b79643" prot="public" virt="non-virtual"><scope>leveleditor</scope><name>draw_background_store</name></member>
+      <member refid="classleveleditor_1ae819c7275982ef9e2891017985560c6d" prot="public" virt="non-virtual"><scope>leveleditor</scope><name>draw_rectangle_store</name></member>
+      <member refid="classleveleditor_1a3478cade84f5ff58c06df2c173c9127d" prot="public" virt="non-virtual"><scope>leveleditor</scope><name>draw_temporary_store</name></member>
+      <member refid="classleveleditor_1ac87f89b0889c243ab43cfbbc7fd70836" prot="public" virt="non-virtual"><scope>leveleditor</scope><name>draw_tile_store</name></member>
+      <member refid="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2" prot="public" virt="non-virtual"><scope>leveleditor</scope><name>editor_loop</name></member>
+      <member refid="classleveleditor_1aa5cd17c0004af09a706230a93abb10ee" prot="public" virt="non-virtual"><scope>leveleditor</scope><name>get_actions</name></member>
+      <member refid="classleveleditor_1ace9678fd4d5cdce53584dcc55d4e7c7b" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>get_items_from_database</name></member>
+      <member refid="classleveleditor_1ac6bf4571731b8283feb4c20d1391fa8b" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>get_position_from_rectangle_under_mouse</name></member>
+      <member refid="classleveleditor_1aaa46d78a5b4630364b7b8f115b23dcff" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>is_button_pressed</name></member>
+      <member refid="classleveleditor_1a0c983ad2887a677d22fbea4eed0ec7d4" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>is_object_under_mouse</name></member>
+      <member refid="classleveleditor_1af11cad8cf1e7999a04f6a8f2a4950794" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>is_object_under_mouse</name></member>
+      <member refid="classleveleditor_1a03a8753b5312938d83c67b0873014f6e" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>level_buttons</name></member>
+      <member refid="classleveleditor_1a02e37e18772af606dce2ee96d59dc7ae" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>level_ids</name></member>
+      <member refid="classleveleditor_1a5dfc809a9bac07ffa88ce921c077f017" prot="public" virt="non-virtual"><scope>leveleditor</scope><name>leveleditor</name></member>
+      <member refid="classleveleditor_1ace10ab3736e90b40682ab9733b46d8f0" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>levelsize</name></member>
+      <member refid="classleveleditor_1adc1e2055b7a34c0719af86f0778b8954" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>load_game_button</name></member>
+      <member refid="classleveleditor_1a675038d66c5ea045d4e3b922e28a23ec" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>load_rectangles</name></member>
+      <member refid="classleveleditor_1ad34dad62ef7c5ea26250b97e9803776a" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>load_tile_list</name></member>
+      <member refid="classleveleditor_1aa44f48b9869b3d5e0ce0429c6916e2b9" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>menu_options</name></member>
+      <member refid="classleveleditor_1aa227a29f049d0b381c05b0e08ea12775" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>new_game_button</name></member>
+      <member refid="classleveleditor_1aec34dfe3c55f923f1a04b63040f70050" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>object_values_map</name></member>
+      <member refid="classleveleditor_1a45f7bffb16d54852e0e24902d23f3a91" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>pressed_esc</name></member>
+      <member refid="classleveleditor_1a31762448e212fa345f3a3b6d5ce81d66" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>pressed_load_game</name></member>
+      <member refid="classleveleditor_1a520e15cb7a61acba59ccd36a951479e5" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>rect_size</name></member>
+      <member refid="classleveleditor_1a07af571a23c704edfe87baef71265597" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>rectangle_store</name></member>
+      <member refid="classleveleditor_1aa2b54b93aa87f704d841f6ccd59b4e38" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>remove_last_object</name></member>
+      <member refid="classleveleditor_1a89e3b4fb65aa6db692a2f4db65e6dba2" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>remove_object_under_mouse</name></member>
+      <member refid="classleveleditor_1ac05afa3b3ddd67cc6be6df6a43f1526f" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>save_level_button</name></member>
+      <member refid="classleveleditor_1a6579d63ca18e84f7a335bf8072f798cc" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>set_selected</name></member>
+      <member refid="classleveleditor_1aebecc1e7c65f9bfd0da843b138fd9e68" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>temporary_store</name></member>
+      <member refid="classleveleditor_1a0af5e07c57e50b3ad3d15d7ae64190ce" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>tile_store</name></member>
+      <member refid="classleveleditor_1a8a6367bede4a3a13c41f764f1ac628a4" prot="public" virt="non-virtual"><scope>leveleditor</scope><name>view1</name></member>
+      <member refid="classleveleditor_1aa6730359d22f4ea8f82347e29af75afa" prot="public" virt="non-virtual"><scope>leveleditor</scope><name>view2</name></member>
+      <member refid="classleveleditor_1a2051eecaa725f921ef9520030c713a0b" prot="public" virt="non-virtual"><scope>leveleditor</scope><name>view3</name></member>
+      <member refid="classleveleditor_1a73061ee47d22e443922a460cb97d2ed3" prot="public" virt="non-virtual"><scope>leveleditor</scope><name>view4</name></member>
+      <member refid="classleveleditor_1a95edfc93a38089da61375eef9e65606e" prot="private" virt="non-virtual"><scope>leveleditor</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

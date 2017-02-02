@@ -3,6 +3,7 @@
 game::game(sf::RenderWindow & window, sql & database, sf::Vector2f levelsize) :
 	window(window),
 	database(database),
+	inv(window, database),
 	levelsize(levelsize),
 	arno(window, database, "1"),
 	dialogbox("../../bin/pictures/dialog_box.png", "../../bin/pictures/game_font.ttf", {200, 800})
@@ -75,6 +76,14 @@ void game::game_loop() {
 		}
 		
 		interact("1");
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::I)) {
+			//while (sf::Keyboard::isKeyPressed(sf::Keyboard::I)){
+			inv.get_inventory();
+			while (!sf::Keyboard::isKeyPressed(sf::Keyboard::I));
+			//}
+		}
+
 
 		window.display();
 		

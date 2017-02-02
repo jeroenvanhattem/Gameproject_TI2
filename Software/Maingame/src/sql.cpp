@@ -119,6 +119,46 @@ std::vector<std::string> sql::get_result() {
 }
 
 
+std::vector<std::string> sql::get_inventory() {
+	std::ostringstream query;
+	query << "SELECT item_id "
+		<< " FROM inventory;";
+
+	std::string query_string = query.str();
+	return execute_query_with_return(query_string.c_str());
+
+}
+
+std::vector<std::string> sql::get_name_from_id_inventory(std::string item_id) {
+	std::ostringstream query;
+	query << "SELECT name "
+		<< " FROM item"
+		<< " WHERE id = " << item_id << ";";
+
+	std::string query_string = query.str();
+	return execute_query_with_return(query_string.c_str());
+}
+
+std::vector<std::string> sql::get_sprite_inventory(std::string item_id) {
+	std::ostringstream query;
+	query << "SELECT sprite "
+		<< " FROM item"
+		<< " WHERE id = " << item_id << ";";
+
+	std::string query_string = query.str();
+	return execute_query_with_return(query_string.c_str());
+}
+
+std::vector<std::string> sql::get_in_game_name_from_id_inventory(std::string item_id) {
+	std::ostringstream query;
+	query << "SELECT in_game_name "
+		<< " FROM item"
+		<< " WHERE id = " << item_id << ";";
+
+	std::string query_string = query.str();
+	return execute_query_with_return(query_string.c_str());
+}
+
 
 std::vector<std::string> sql::get_player_value(int save, std::string variable_name) {
 	std::ostringstream query;

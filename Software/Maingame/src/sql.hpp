@@ -211,6 +211,83 @@ public:
 	///
 	static std::vector<std::string> get_result();
 	
+
+	/// std::vector<std::string> get_name_from_id_inventory(std::string item_id) : Get the name from an item
+	//
+	/// This function returns the name of an item by using its ID
+	/// 
+	/// Parameters:
+	/// -----------
+	/// item_id : std::string \n
+	///	-> The ID of the item
+	/// Return:
+	/// -------
+	/// name : std::vector<std::string> \n
+	///	-> The name of the requested item
+	/// 
+	/// Example:
+	/// --------
+	/// get_name_from_id_inventory("1") \n
+	/// -> tokato_gloves
+	///
+	std::vector<std::string> get_name_from_id_inventory(std::string item_id);
+
+	/// std::vector<std::string> get_sprite_ivnentory(std::string item_id) : Get the sprite_path from an item
+	//
+	/// This function returns the name of an item by using its ID
+	/// 
+	/// Parameters:
+	/// -----------
+	/// sprite_path : std::string \n
+	///	-> The ID of the item
+	/// Return:
+	/// -------
+	/// sprite_path : std::vector<std::string> \n
+	///	-> The sprite_path of the requested item
+	/// 
+	/// Example:
+	/// --------
+	/// get_sprite_inventory("1") \n
+	/// -> "../../bin/objects/banana.gif"
+	///
+	std::vector<std::string> get_sprite_inventory(std::string item_id);
+
+	/// std::vector<std::string> get_in_game_name_from_id_inventory(std::string item_id) : Get the name from an item
+	//
+	/// This function returns the name of an item by using its ID
+	/// 
+	/// Parameters:
+	/// -----------
+	/// item_id : std::string \n
+	///	-> The ID of the item
+	/// Return:
+	/// -------
+	/// name : std::vector<std::string> \n
+	///	-> The in game name of the requested item
+	/// 
+	/// Example:
+	/// --------
+	/// get_name_from_id_inventory("1") \n
+	/// -> Tokato Gloves
+	///
+	std::vector<std::string> get_in_game_name_from_id_inventory(std::string item_id);
+
+	/// std::vector<std::string> get_inventory() : Get the inventory
+	//
+	/// This function retrieves the inventory and its values and puts it into a vector
+	/// 
+	/// Return:
+	/// -------
+	/// inventory_vector : std::vector<std::string> \n
+	///	-> This vector contains the items in the inventory
+	/// 
+	/// Example:
+	/// --------
+	/// get_inventory() \n
+	/// -> <"1", "2", "2", "3">
+	///
+	std::vector<std::string> get_inventory();
+
 	
 	/// Save result to static value.
 	//

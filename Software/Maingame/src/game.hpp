@@ -12,6 +12,7 @@
 #include "npc.hpp"
 #include "player.hpp"
 #include "leveleditor.hpp"
+#include "inventory.hpp"
 
 class game {
 private:
@@ -21,6 +22,7 @@ private:
 	sf::RenderWindow & window;
 	sf::View game_view;
 	sf::View dialogbox_view;
+	inventory inv;
 	sf::Vector2f levelsize;
 	std::vector<picture*> background_store;
 	std::vector<npc*>npc_list;

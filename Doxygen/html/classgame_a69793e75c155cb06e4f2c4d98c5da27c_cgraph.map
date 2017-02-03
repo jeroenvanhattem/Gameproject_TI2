@@ -1,0 +1,8 @@
+<map id="game::game_viewer" name="game::game_viewer">
+<area shape="rect" id="node2" href="$classgame.html#ae263cdc30dcc916b98b0ddbbf0a6fccc" title="Checkt left edge of screen. " alt="" coords="189,5,355,47"/>
+<area shape="rect" id="node5" href="$classgame.html#a273013552bc7ad8fef9d9192aad3cc0c" title="Checkt right edge of screen. " alt="" coords="189,71,355,112"/>
+<area shape="rect" id="node6" href="$classgame.html#abb1c33c5a73de27e4ebd20e1b61dc3dc" title="Checkt upper edge of screen. " alt="" coords="189,136,355,177"/>
+<area shape="rect" id="node7" href="$classgame.html#a34a5241e205d0985a9e477a3dd77ba08" title="Checkt buttom edge of screen. " alt="" coords="189,201,355,243"/>
+<area shape="rect" id="node3" href="$button__actions_8cpp.html#a067f53aa6474ce70abccc5bbd28ad01d" title="Get the position of the mouse. " alt="" coords="403,111,541,138"/>
+<area shape="rect" id="node4" href="$button__actions_8cpp.html#a94ef0400a00795316cd4e374db2af104" title="Convert a sf::vector2i to sf::Vector2f. " alt="" coords="589,111,747,138"/>
+</map>

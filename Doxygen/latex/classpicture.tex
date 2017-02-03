@@ -1,0 +1,197 @@
+\hypertarget{classpicture}{}\section{picture Class Reference}
+\label{classpicture}\index{picture@{picture}}
+
+
+{\ttfamily \#include $<$objects.\+hpp$>$}
+
+
+
+Inheritance diagram for picture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classpicture__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for picture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classpicture__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpicture_af52694740d10d5bad731e3cce8c1dd1a}{picture} (std\+::string \hyperlink{classpicture_ab294409095c573549bdc79f9e6d31024}{picture\+\_\+path}, sf\+::\+Vector2f \hyperlink{classfigure_a2196c51490b69027860fdb015913de19}{position}, sf\+::\+Vector2f \hyperlink{classpicture_adff8f66e606a6c2e9a8f8b76d4ced587}{tile\+\_\+size})
+\item 
+sf\+::\+Float\+Rect \hyperlink{classpicture_a3a23c2ae495660c218f6f4e40e7e61cc}{get\+Bounds} ()
+\item 
+void \hyperlink{classpicture_a98bd5bdea80247573c1b155a5df5bea2}{rotate} (float angle)
+\item 
+void \hyperlink{classpicture_a4222d8d8a5be3d0775b741049064714f}{set\+\_\+transpirantie} (int value)
+\item 
+void \hyperlink{classpicture_ac69e8047651291091abbe2a8da545aa1}{draw} (sf\+::\+Render\+Window \&window)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classpicture_ab294409095c573549bdc79f9e6d31024}{picture\+\_\+path}
+\item 
+sf\+::\+Vector2f \hyperlink{classpicture_adff8f66e606a6c2e9a8f8b76d4ced587}{tile\+\_\+size}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Texture \hyperlink{classpicture_a030e9c03d143b019986e9a5346746c11}{texture}
+\item 
+sf\+::\+Sprite \hyperlink{classpicture_abbfcd0b2bcba33144c7e3f34a19f7071}{sprite}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file objects.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpicture_af52694740d10d5bad731e3cce8c1dd1a}\label{classpicture_af52694740d10d5bad731e3cce8c1dd1a}} 
+\index{picture@{picture}!picture@{picture}}
+\index{picture@{picture}!picture@{picture}}
+\subsubsection{\texorpdfstring{picture()}{picture()}}
+{\footnotesize\ttfamily picture\+::picture (\begin{DoxyParamCaption}\item[{std\+::string}]{picture\+\_\+path,  }\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{tile\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file objects.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpicture_ac69e8047651291091abbe2a8da545aa1}\label{classpicture_ac69e8047651291091abbe2a8da545aa1}} 
+\index{picture@{picture}!draw@{draw}}
+\index{draw@{draw}!picture@{picture}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void picture\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classfigure_a56d8a53a8bf2b82178aa476bac071596}{figure}.
+
+
+
+Definition at line 79 of file objects.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpicture_ac69e8047651291091abbe2a8da545aa1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classpicture_a3a23c2ae495660c218f6f4e40e7e61cc}\label{classpicture_a3a23c2ae495660c218f6f4e40e7e61cc}} 
+\index{picture@{picture}!get\+Bounds@{get\+Bounds}}
+\index{get\+Bounds@{get\+Bounds}!picture@{picture}}
+\subsubsection{\texorpdfstring{get\+Bounds()}{getBounds()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect picture\+::get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classfigure_aca9a3924bc0883e1aa8e93c04887abbc}{figure}.
+
+
+
+Definition at line 65 of file objects.\+cpp.
+
+\mbox{\Hypertarget{classpicture_a98bd5bdea80247573c1b155a5df5bea2}\label{classpicture_a98bd5bdea80247573c1b155a5df5bea2}} 
+\index{picture@{picture}!rotate@{rotate}}
+\index{rotate@{rotate}!picture@{picture}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void picture\+::rotate (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file objects.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classpicture_a98bd5bdea80247573c1b155a5df5bea2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classpicture_a4222d8d8a5be3d0775b741049064714f}\label{classpicture_a4222d8d8a5be3d0775b741049064714f}} 
+\index{picture@{picture}!set\+\_\+transpirantie@{set\+\_\+transpirantie}}
+\index{set\+\_\+transpirantie@{set\+\_\+transpirantie}!picture@{picture}}
+\subsubsection{\texorpdfstring{set\+\_\+transpirantie()}{set\_transpirantie()}}
+{\footnotesize\ttfamily void picture\+::set\+\_\+transpirantie (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file objects.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpicture_a4222d8d8a5be3d0775b741049064714f_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpicture_ab294409095c573549bdc79f9e6d31024}\label{classpicture_ab294409095c573549bdc79f9e6d31024}} 
+\index{picture@{picture}!picture\+\_\+path@{picture\+\_\+path}}
+\index{picture\+\_\+path@{picture\+\_\+path}!picture@{picture}}
+\subsubsection{\texorpdfstring{picture\+\_\+path}{picture\_path}}
+{\footnotesize\ttfamily std\+::string picture\+::picture\+\_\+path}
+
+
+
+Definition at line 28 of file objects.\+hpp.
+
+\mbox{\Hypertarget{classpicture_abbfcd0b2bcba33144c7e3f34a19f7071}\label{classpicture_abbfcd0b2bcba33144c7e3f34a19f7071}} 
+\index{picture@{picture}!sprite@{sprite}}
+\index{sprite@{sprite}!picture@{picture}}
+\subsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite picture\+::sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 24 of file objects.\+hpp.
+
+\mbox{\Hypertarget{classpicture_a030e9c03d143b019986e9a5346746c11}\label{classpicture_a030e9c03d143b019986e9a5346746c11}} 
+\index{picture@{picture}!texture@{texture}}
+\index{texture@{texture}!picture@{picture}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily sf\+::\+Texture picture\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 23 of file objects.\+hpp.
+
+\mbox{\Hypertarget{classpicture_adff8f66e606a6c2e9a8f8b76d4ced587}\label{classpicture_adff8f66e606a6c2e9a8f8b76d4ced587}} 
+\index{picture@{picture}!tile\+\_\+size@{tile\+\_\+size}}
+\index{tile\+\_\+size@{tile\+\_\+size}!picture@{picture}}
+\subsubsection{\texorpdfstring{tile\+\_\+size}{tile\_size}}
+{\footnotesize\ttfamily sf\+::\+Vector2f picture\+::tile\+\_\+size}
+
+
+
+Definition at line 29 of file objects.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{objects_8hpp}{objects.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{objects_8cpp}{objects.\+cpp}\end{DoxyCompactItemize}

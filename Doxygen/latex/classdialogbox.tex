@@ -1,0 +1,254 @@
+\hypertarget{classdialogbox}{}\section{dialogbox Class Reference}
+\label{classdialogbox}\index{dialogbox@{dialogbox}}
+
+
+{\ttfamily \#include $<$dialogbox.\+hpp$>$}
+
+
+
+Collaboration diagram for dialogbox\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classdialogbox__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdialogbox_a44b14d7932ab0866ba2d3708d406bfb7}{dialogbox} (std\+::string box\+\_\+path, std\+::string \hyperlink{classdialogbox_a11fd386b5bb381072262a574ea25c8c3}{font\+\_\+path}, sf\+::\+Vector2f \hyperlink{classdialogbox_a05031b5d9149389d301638da9005e744}{position})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classdialogbox_a722438dee05d120c77871b1ec9d26cf5}{draw} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Draw the dialogbox. \end{DoxyCompactList}\item 
+void \hyperlink{classdialogbox_ab9d8f8b65c3a54ccaea57a941d43a176}{text\+\_\+input} (std\+::string sentence, int char\+\_\+size, sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Set text in the dialogbox. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \hyperlink{classdialogbox_aeb83bd7a568feeb4be10a0335838ae2a}{get\+Bounds} ()
+\begin{DoxyCompactList}\small\item\em Get bounds of dialogbox. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classdialogbox_a227a4bab170830377e3b954c80341570}{last\+\_\+text}
+\item 
+sf\+::\+Text \hyperlink{classdialogbox_a710d3c7c4f21676a560d6825ff22a152}{text}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Font \hyperlink{classdialogbox_a37ebf2968cfa80f0cdde35d2722f40ad}{font}
+\item 
+std\+::string \hyperlink{classdialogbox_a11fd386b5bb381072262a574ea25c8c3}{font\+\_\+path}
+\item 
+sf\+::\+Vector2f \hyperlink{classdialogbox_a05031b5d9149389d301638da9005e744}{position}
+\item 
+\hyperlink{classpicture}{picture} \hyperlink{classdialogbox_aa0686bdcc541c36e19ba3122befe1978}{box}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file dialogbox.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdialogbox_a44b14d7932ab0866ba2d3708d406bfb7}\label{classdialogbox_a44b14d7932ab0866ba2d3708d406bfb7}} 
+\index{dialogbox@{dialogbox}!dialogbox@{dialogbox}}
+\index{dialogbox@{dialogbox}!dialogbox@{dialogbox}}
+\subsubsection{\texorpdfstring{dialogbox()}{dialogbox()}}
+{\footnotesize\ttfamily dialogbox\+::dialogbox (\begin{DoxyParamCaption}\item[{std\+::string}]{box\+\_\+path,  }\item[{std\+::string}]{font\+\_\+path,  }\item[{sf\+::\+Vector2f}]{position }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+This method will create a object of this class.
+
+\subsubsection*{Parameters\+: }
+
+box path \+: std\+::string ~\newline
+-\/$>$ The path which contains the background of the dialogbox. ~\newline
+ font\+\_\+path \+: std\+::string ~\newline
+-\/$>$ The path which contains font of the text in the dialogbox. ~\newline
+ position \+: sf\+::vector2f ~\newline
+-\/$>$ This is the position of the dialogbox on the screen. ~\newline
+ \subsubsection*{Example\+: }
+
+dialogbox d(\char`\"{}background.\+png\char`\"{}, \char`\"{}font.\+ttf\char`\"{}, \{200, 800\}); 
+
+Definition at line 3 of file dialogbox.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdialogbox_a722438dee05d120c77871b1ec9d26cf5}\label{classdialogbox_a722438dee05d120c77871b1ec9d26cf5}} 
+\index{dialogbox@{dialogbox}!draw@{draw}}
+\index{draw@{draw}!dialogbox@{dialogbox}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void dialogbox\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Draw the dialogbox. 
+
+This method draws the dialogbox on the screen.
+
+\subsubsection*{Parameters\+: }
+
+window \+: sf\+::\+Render\+Window\& ~\newline
+-\/$>$ The window where the dialogbox is shown on. ~\newline
+
+
+\subsubsection*{Example\+: }
+
+dialogbox.\+draw(window); 
+
+Definition at line 15 of file dialogbox.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classdialogbox_a722438dee05d120c77871b1ec9d26cf5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdialogbox_a722438dee05d120c77871b1ec9d26cf5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classdialogbox_aeb83bd7a568feeb4be10a0335838ae2a}\label{classdialogbox_aeb83bd7a568feeb4be10a0335838ae2a}} 
+\index{dialogbox@{dialogbox}!get\+Bounds@{get\+Bounds}}
+\index{get\+Bounds@{get\+Bounds}!dialogbox@{dialogbox}}
+\subsubsection{\texorpdfstring{get\+Bounds()}{getBounds()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect dialogbox\+::get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get bounds of dialogbox. 
+
+This method will return the boundary of the text in the dialogbox.
+
+\subsubsection*{Return\+: }
+
+sf\+::\+Float\+Rect \+: sf\+::\+Float\+Rect -\/$>$ The boundary of the text in the dialogbox.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classdialogbox_aeb83bd7a568feeb4be10a0335838ae2a}{get\+Bounds()}; -\/$>$ (100,100,50,50) 
+
+Definition at line 27 of file dialogbox.\+cpp.
+
+\mbox{\Hypertarget{classdialogbox_ab9d8f8b65c3a54ccaea57a941d43a176}\label{classdialogbox_ab9d8f8b65c3a54ccaea57a941d43a176}} 
+\index{dialogbox@{dialogbox}!text\+\_\+input@{text\+\_\+input}}
+\index{text\+\_\+input@{text\+\_\+input}!dialogbox@{dialogbox}}
+\subsubsection{\texorpdfstring{text\+\_\+input()}{text\_input()}}
+{\footnotesize\ttfamily void dialogbox\+::text\+\_\+input (\begin{DoxyParamCaption}\item[{std\+::string}]{sentence,  }\item[{int}]{char\+\_\+size,  }\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Set text in the dialogbox. 
+
+This method sets a given text in a dialogbox. ~\newline
+Also is the font size given and in what color the text should appear. ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+sentence \+: std\+::string ~\newline
+-\/$>$ The sentence which is shown in the dialogbox.
+
+char\+\_\+size \+: int ~\newline
+-\/$>$ The size of the characters in the dialogbox.
+
+color \+: sf\+::\+Color ~\newline
+-\/$>$ The color of the text.
+
+\subsubsection*{Example\+: }
+
+text\+\_\+input(\char`\"{}hey\char`\"{}, 30, sf\+::\+Color\+::\+Red); 
+
+Definition at line 20 of file dialogbox.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdialogbox_ab9d8f8b65c3a54ccaea57a941d43a176_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classdialogbox_aa0686bdcc541c36e19ba3122befe1978}\label{classdialogbox_aa0686bdcc541c36e19ba3122befe1978}} 
+\index{dialogbox@{dialogbox}!box@{box}}
+\index{box@{box}!dialogbox@{dialogbox}}
+\subsubsection{\texorpdfstring{box}{box}}
+{\footnotesize\ttfamily \hyperlink{classpicture}{picture} dialogbox\+::box\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file dialogbox.\+hpp.
+
+\mbox{\Hypertarget{classdialogbox_a37ebf2968cfa80f0cdde35d2722f40ad}\label{classdialogbox_a37ebf2968cfa80f0cdde35d2722f40ad}} 
+\index{dialogbox@{dialogbox}!font@{font}}
+\index{font@{font}!dialogbox@{dialogbox}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily sf\+::\+Font dialogbox\+::font\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 10 of file dialogbox.\+hpp.
+
+\mbox{\Hypertarget{classdialogbox_a11fd386b5bb381072262a574ea25c8c3}\label{classdialogbox_a11fd386b5bb381072262a574ea25c8c3}} 
+\index{dialogbox@{dialogbox}!font\+\_\+path@{font\+\_\+path}}
+\index{font\+\_\+path@{font\+\_\+path}!dialogbox@{dialogbox}}
+\subsubsection{\texorpdfstring{font\+\_\+path}{font\_path}}
+{\footnotesize\ttfamily std\+::string dialogbox\+::font\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file dialogbox.\+hpp.
+
+\mbox{\Hypertarget{classdialogbox_a227a4bab170830377e3b954c80341570}\label{classdialogbox_a227a4bab170830377e3b954c80341570}} 
+\index{dialogbox@{dialogbox}!last\+\_\+text@{last\+\_\+text}}
+\index{last\+\_\+text@{last\+\_\+text}!dialogbox@{dialogbox}}
+\subsubsection{\texorpdfstring{last\+\_\+text}{last\_text}}
+{\footnotesize\ttfamily std\+::string dialogbox\+::last\+\_\+text}
+
+
+
+Definition at line 16 of file dialogbox.\+hpp.
+
+\mbox{\Hypertarget{classdialogbox_a05031b5d9149389d301638da9005e744}\label{classdialogbox_a05031b5d9149389d301638da9005e744}} 
+\index{dialogbox@{dialogbox}!position@{position}}
+\index{position@{position}!dialogbox@{dialogbox}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily sf\+::\+Vector2f dialogbox\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file dialogbox.\+hpp.
+
+\mbox{\Hypertarget{classdialogbox_a710d3c7c4f21676a560d6825ff22a152}\label{classdialogbox_a710d3c7c4f21676a560d6825ff22a152}} 
+\index{dialogbox@{dialogbox}!text@{text}}
+\index{text@{text}!dialogbox@{dialogbox}}
+\subsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily sf\+::\+Text dialogbox\+::text}
+
+
+
+Definition at line 17 of file dialogbox.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{dialogbox_8hpp}{dialogbox.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{dialogbox_8cpp}{dialogbox.\+cpp}\end{DoxyCompactItemize}

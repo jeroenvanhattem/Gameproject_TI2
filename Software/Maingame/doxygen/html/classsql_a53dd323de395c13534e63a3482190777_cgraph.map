@@ -1,5 +1,0 @@
-<map id="sql::execute_query_with_return" name="sql::execute_query_with_return">
-<area shape="rect" id="node2" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="190,5,285,32"/>
-<area shape="rect" id="node4" href="$classsql.html#ad4d8bdf41eede1ae1363d0be8a2f60a9" title="Get saved result. " alt="" coords="185,56,289,83"/>
-<area shape="rect" id="node3" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="337,5,441,32"/>
-</map>

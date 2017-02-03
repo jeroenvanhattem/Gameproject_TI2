@@ -1,0 +1,153 @@
+.TH "item" 3 "Fri Feb 3 2017" "Version Version: alpha v1.5" "Git Gud: The adventures of the hungover" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+item
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <item\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBitem\fP (std::string \fBid\fP, \fBsql\fP &\fBdatabase\fP)"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "std::string \fBget_name\fP ()"
+.br
+.RI "std::string \fBget_name()\fP : Get the name from an item "
+.ti -1c
+.RI "std::string \fBget_in_game_name\fP ()"
+.br
+.RI "std::string \fBget_name()\fP : Get the in game name from an item "
+.ti -1c
+.RI "sf::Sprite \fBget_sprite\fP (int counter)"
+.br
+.RI "std::string \fBget_sprite()\fP : Get the sprite from an item "
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBid\fP"
+.br
+.ti -1c
+.RI "\fBsql\fP & \fBdatabase\fP"
+.br
+.ti -1c
+.RI "sf::Sprite \fBsprite\fP"
+.br
+.ti -1c
+.RI "sf::Texture \fBtexture\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 5 of file item\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "item::item (std::string id, \fBsql\fP & database)"
+
+.PP
+Constructor\&. This method will crate an object of class item\&.
+.br
+.PP
+.SS "Parameters: "
+.PP
+id : std::string 
+.br
+-> id of the item in the database\&.
+.PP
+database : sql& 
+.br
+-> refference to the sqlite database\&.
+.br
+.PP
+.SS "Example: "
+.PP
+item banana('1', database)
+.br
+
+.PP
+Definition at line 3 of file item\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::string item::get_in_game_name ()"
+
+.PP
+std::string \fBget_name()\fP : Get the in game name from an item This function returns the in game name of an item by using its ID
+.PP
+.SS "Return: "
+.PP
+name : std::vector<std::string> 
+.br
+-> The in game name of the requested item
+.PP
+.SS "Example: "
+.PP
+\fBget_in_game_name()\fP 
+.br
+-> Tokato Gloves 
+.PP
+Definition at line 15 of file item\&.cpp\&.
+.SS "std::string item::get_name ()"
+
+.PP
+std::string \fBget_name()\fP : Get the name from an item This function returns the name of an item by using its ID
+.PP
+.SS "Return: "
+.PP
+name : std::vector<std::string> 
+.br
+-> The name of the requested item
+.PP
+.SS "Example: "
+.PP
+\fBget_name()\fP 
+.br
+-> tokato_gloves 
+.PP
+Definition at line 8 of file item\&.cpp\&.
+.SS "sf::Sprite item::get_sprite (int counter)"
+
+.PP
+std::string \fBget_sprite()\fP : Get the sprite from an item This function returns the sprite of an item by using its ID
+.PP
+.SS "Return: "
+.PP
+sprite : sf::Sprite 
+.br
+-> The sprite of the requested item
+.PP
+.SS "Example: "
+.PP
+\fBget_sprite()\fP 
+.br
+-> sf::Sprite 
+.PP
+Definition at line 22 of file item\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBsql\fP& item::database\fC [private]\fP"
+
+.PP
+Definition at line 8 of file item\&.hpp\&.
+.SS "std::string item::id\fC [private]\fP"
+
+.PP
+Definition at line 7 of file item\&.hpp\&.
+.SS "sf::Sprite item::sprite\fC [private]\fP"
+
+.PP
+Definition at line 10 of file item\&.hpp\&.
+.SS "sf::Texture item::texture\fC [private]\fP"
+
+.PP
+Definition at line 11 of file item\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Git Gud: The adventures of the hungover from the source code\&.

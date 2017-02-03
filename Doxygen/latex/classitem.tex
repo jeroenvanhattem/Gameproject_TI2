@@ -1,0 +1,233 @@
+\hypertarget{classitem}{}\section{item Class Reference}
+\label{classitem}\index{item@{item}}
+
+
+{\ttfamily \#include $<$item.\+hpp$>$}
+
+
+
+Collaboration diagram for item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classitem__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classitem_a235883f911ed8fad4679655a57d23d96}{item} (std\+::string \hyperlink{classitem_af512775a194b958ca9630d59ed0daf27}{id}, \hyperlink{classsql}{sql} \&\hyperlink{classitem_a0a822c97c7e59706475fc5e541926df3}{database})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classitem_ab7c2fa653e0f9a565283b60ca325f2a7}{get\+\_\+name} ()
+\begin{DoxyCompactList}\small\item\em std\+::string \hyperlink{classitem_ab7c2fa653e0f9a565283b60ca325f2a7}{get\+\_\+name()} \+: Get the name from an item \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classitem_aa5a9140482a7d88d6a3eea342cb0c082}{get\+\_\+in\+\_\+game\+\_\+name} ()
+\begin{DoxyCompactList}\small\item\em std\+::string \hyperlink{classitem_ab7c2fa653e0f9a565283b60ca325f2a7}{get\+\_\+name()} \+: Get the in game name from an item \end{DoxyCompactList}\item 
+sf\+::\+Sprite \hyperlink{classitem_aafc61a4b7e2bd10300a6767e6dd7281e}{get\+\_\+sprite} (int counter)
+\begin{DoxyCompactList}\small\item\em std\+::string \hyperlink{classitem_aafc61a4b7e2bd10300a6767e6dd7281e}{get\+\_\+sprite()} \+: Get the sprite from an item \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classitem_af512775a194b958ca9630d59ed0daf27}{id}
+\item 
+\hyperlink{classsql}{sql} \& \hyperlink{classitem_a0a822c97c7e59706475fc5e541926df3}{database}
+\item 
+sf\+::\+Sprite \hyperlink{classitem_adb991244770ef45558a35510f38ffb04}{sprite}
+\item 
+sf\+::\+Texture \hyperlink{classitem_af2fe0df797bc29b4b907e03823df5c3c}{texture}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 5 of file item.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classitem_a235883f911ed8fad4679655a57d23d96}\label{classitem_a235883f911ed8fad4679655a57d23d96}} 
+\index{item@{item}!item@{item}}
+\index{item@{item}!item@{item}}
+\subsubsection{\texorpdfstring{item()}{item()}}
+{\footnotesize\ttfamily item\+::item (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{\hyperlink{classsql}{sql} \&}]{database }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+This method will crate an object of class item.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+id \+: std\+::string ~\newline
+-\/$>$ id of the item in the database.
+
+database \+: sql\& ~\newline
+-\/$>$ refference to the sqlite database.~\newline
+
+
+\subsubsection*{Example\+: }
+
+item banana(\char`\"{}1\char`\"{}, database)~\newline
+
+
+Definition at line 3 of file item.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classitem_aa5a9140482a7d88d6a3eea342cb0c082}\label{classitem_aa5a9140482a7d88d6a3eea342cb0c082}} 
+\index{item@{item}!get\+\_\+in\+\_\+game\+\_\+name@{get\+\_\+in\+\_\+game\+\_\+name}}
+\index{get\+\_\+in\+\_\+game\+\_\+name@{get\+\_\+in\+\_\+game\+\_\+name}!item@{item}}
+\subsubsection{\texorpdfstring{get\+\_\+in\+\_\+game\+\_\+name()}{get\_in\_game\_name()}}
+{\footnotesize\ttfamily std\+::string item\+::get\+\_\+in\+\_\+game\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+std\+::string \hyperlink{classitem_ab7c2fa653e0f9a565283b60ca325f2a7}{get\+\_\+name()} \+: Get the in game name from an item 
+
+This function returns the in game name of an item by using its ID
+
+\subsubsection*{Return\+: }
+
+name \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ The in game name of the requested item
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classitem_aa5a9140482a7d88d6a3eea342cb0c082}{get\+\_\+in\+\_\+game\+\_\+name()} ~\newline
+-\/$>$ Tokato Gloves 
+
+Definition at line 15 of file item.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classitem_aa5a9140482a7d88d6a3eea342cb0c082_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classitem_ab7c2fa653e0f9a565283b60ca325f2a7}\label{classitem_ab7c2fa653e0f9a565283b60ca325f2a7}} 
+\index{item@{item}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!item@{item}}
+\subsubsection{\texorpdfstring{get\+\_\+name()}{get\_name()}}
+{\footnotesize\ttfamily std\+::string item\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+std\+::string \hyperlink{classitem_ab7c2fa653e0f9a565283b60ca325f2a7}{get\+\_\+name()} \+: Get the name from an item 
+
+This function returns the name of an item by using its ID
+
+\subsubsection*{Return\+: }
+
+name \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ The name of the requested item
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classitem_ab7c2fa653e0f9a565283b60ca325f2a7}{get\+\_\+name()} ~\newline
+-\/$>$ tokato\+\_\+gloves 
+
+Definition at line 8 of file item.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classitem_ab7c2fa653e0f9a565283b60ca325f2a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classitem_aafc61a4b7e2bd10300a6767e6dd7281e}\label{classitem_aafc61a4b7e2bd10300a6767e6dd7281e}} 
+\index{item@{item}!get\+\_\+sprite@{get\+\_\+sprite}}
+\index{get\+\_\+sprite@{get\+\_\+sprite}!item@{item}}
+\subsubsection{\texorpdfstring{get\+\_\+sprite()}{get\_sprite()}}
+{\footnotesize\ttfamily sf\+::\+Sprite item\+::get\+\_\+sprite (\begin{DoxyParamCaption}\item[{int}]{counter }\end{DoxyParamCaption})}
+
+
+
+std\+::string \hyperlink{classitem_aafc61a4b7e2bd10300a6767e6dd7281e}{get\+\_\+sprite()} \+: Get the sprite from an item 
+
+This function returns the sprite of an item by using its ID
+
+\subsubsection*{Return\+: }
+
+sprite \+: sf\+::\+Sprite ~\newline
+-\/$>$ The sprite of the requested item
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classitem_aafc61a4b7e2bd10300a6767e6dd7281e}{get\+\_\+sprite()} ~\newline
+-\/$>$ sf\+::\+Sprite 
+
+Definition at line 22 of file item.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classitem_aafc61a4b7e2bd10300a6767e6dd7281e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classitem_aafc61a4b7e2bd10300a6767e6dd7281e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classitem_a0a822c97c7e59706475fc5e541926df3}\label{classitem_a0a822c97c7e59706475fc5e541926df3}} 
+\index{item@{item}!database@{database}}
+\index{database@{database}!item@{item}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily \hyperlink{classsql}{sql}\& item\+::database\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 8 of file item.\+hpp.
+
+\mbox{\Hypertarget{classitem_af512775a194b958ca9630d59ed0daf27}\label{classitem_af512775a194b958ca9630d59ed0daf27}} 
+\index{item@{item}!id@{id}}
+\index{id@{id}!item@{item}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily std\+::string item\+::id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 7 of file item.\+hpp.
+
+\mbox{\Hypertarget{classitem_adb991244770ef45558a35510f38ffb04}\label{classitem_adb991244770ef45558a35510f38ffb04}} 
+\index{item@{item}!sprite@{sprite}}
+\index{sprite@{sprite}!item@{item}}
+\subsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite item\+::sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 10 of file item.\+hpp.
+
+\mbox{\Hypertarget{classitem_af2fe0df797bc29b4b907e03823df5c3c}\label{classitem_af2fe0df797bc29b4b907e03823df5c3c}} 
+\index{item@{item}!texture@{texture}}
+\index{texture@{texture}!item@{item}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily sf\+::\+Texture item\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file item.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{item_8hpp}{item.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{item_8cpp}{item.\+cpp}\end{DoxyCompactItemize}

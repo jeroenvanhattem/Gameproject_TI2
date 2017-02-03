@@ -1,7 +1,0 @@
-<map id="npc::get_action" name="npc::get_action">
-<area shape="rect" id="node2" href="$classnpc.html#af58658444d25eaa77aec883dd9d5592d" title="Get position of NPC. " alt="" coords="166,8,287,35"/>
-<area shape="rect" id="node4" href="$classplayer.html#a676129193d589a975d7a86429a37b1b7" title="void show_action(std::string action_to_perform) : Player acion " alt="" coords="164,60,289,87"/>
-<area shape="rect" id="node3" href="$classplayer.html#a78d420774623e89cd896d3cb1d265b17" title="sf::Vector2f get_position() : Get position of player " alt="" coords="345,5,480,32"/>
-<area shape="rect" id="node5" href="$classgame.html#a0eb06f984d04128ba7fba6fcca04bda3" title="Get the items from the database. " alt="" coords="337,57,488,98"/>
-<area shape="rect" id="node6" href="$classgame.html#a46eaf7a077e7f3ff0b5e229142358f00" title="The constructor. " alt="" coords="536,64,631,91"/>
-</map>

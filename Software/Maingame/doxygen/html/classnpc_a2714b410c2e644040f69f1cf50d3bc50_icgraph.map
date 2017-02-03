@@ -1,7 +1,0 @@
-<map id="npc::get_interaction" name="npc::get_interaction">
-<area shape="rect" id="node2" href="$classplayer.html#ad93507550867df5598b86b73de01ec12" title="int npc::get_interaction(npc &amp; other_npc) : Get interaction between the player and a NPC ..." alt="" coords="189,35,340,61"/>
-<area shape="rect" id="node3" href="$classgame.html#a2b80a1fbc6d723e78d3c86d2f8ff24d4" title="Loop that handles the game. " alt="" coords="401,5,526,32"/>
-<area shape="rect" id="node5" href="$classgame.html#a0eb06f984d04128ba7fba6fcca04bda3" title="Get the items from the database. " alt="" coords="388,57,539,98"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="609,5,659,32"/>
-<area shape="rect" id="node6" href="$classgame.html#a46eaf7a077e7f3ff0b5e229142358f00" title="The constructor. " alt="" coords="587,64,681,91"/>
-</map>

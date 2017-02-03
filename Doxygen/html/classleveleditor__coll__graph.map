@@ -1,0 +1,6 @@
+<map id="leveleditor" name="leveleditor">
+<area shape="rect" id="node2" href="$classaction.html" title="{action\n|&#45; condition\l&#45; work\l|+ action()\l+ action()\l+ action()\l+ action()\l+ operator()()\l}" alt="" coords="5,337,103,488"/>
+<area shape="rect" id="node3" href="$classsql.html" title="{sql\n|&#45; database\l&#45; database_path\l&#45; rc\l&#45; connection\l&#45; _ERROR_MESSAGE\l&#45; data\l|+ sql()\l+ ~sql()\l+ get_data()\l+ get_data()\l+ change_data()\l+ add_data()\l+ execute_query_without\l_return()\l+ execute_query_with\l_return()\l+ get_name_from_id_inventory()\l+ get_sprite_inventory()\land 20 more...\l+ get_result()\l+ set_result()\l+ callback()\l&#45; check_query_request()\l}" alt="" coords="127,220,333,605"/>
+<area shape="rect" id="node4" href="$classpicture.html" title="{picture\n|+ picture_path\l+ tile_size\l&#45; texture\l&#45; sprite\l|+ picture()\l+ getBounds()\l+ rotate()\l+ set_transpirantie()\l+ draw()\l}" alt="" coords="358,323,497,503"/>
+<area shape="rect" id="node5" href="$classfigure.html" title="{figure\n|+ position\l+ selected\l|+ figure()\l+ getBounds()\l+ draw()\l+ move()\l+ jump()\l+ jump()\l}" alt="" coords="375,5,479,171"/>
+</map>

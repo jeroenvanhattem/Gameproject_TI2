@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classpicture">
+<title>picture class Reference</title>
+<para>
+    <programlisting>#include <link linkend="objects_8hpp">&lt;objects.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for picture</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classpicture__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for picture</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classpicture__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Texture texture</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Sprite sprite</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string picture_path</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f tile_size</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classpicture_1af52694740d10d5bad731e3cce8c1dd1a">picture</link> (
+std::string picture_path, sf::Vector2f position, sf::Vector2f tile_size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::FloatRect <link linkend="classpicture_1a3a23c2ae495660c218f6f4e40e7e61cc">getBounds</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classpicture_1a98bd5bdea80247573c1b155a5df5bea2">rotate</link> (
+float angle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classpicture_1a4222d8d8a5be3d0775b741049064714f">set_transpirantie</link> (
+int value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classpicture_1ac69e8047651291091abbe2a8da545aa1">draw</link> (
+sf::RenderWindow &amp; window)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classpicture_1af52694740d10d5bad731e3cce8c1dd1a">
+                <title>picture::picture (std::string picture_path, sf::Vector2f position, sf::Vector2f tile_size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classpicture_1a3a23c2ae495660c218f6f4e40e7e61cc">
+                <title>sf::FloatRect picture::getBounds ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classpicture_1a98bd5bdea80247573c1b155a5df5bea2">
+                <title>void picture::rotate (float angle)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classpicture_1a4222d8d8a5be3d0775b741049064714f">
+                <title>void picture::set_transpirantie (int value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classpicture_1ac69e8047651291091abbe2a8da545aa1">
+                <title>void picture::draw (sf::RenderWindow &amp;window)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

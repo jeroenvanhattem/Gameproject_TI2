@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classdialogbox">
+<title>dialogbox class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dialogbox_8hpp">&lt;dialogbox.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for dialogbox</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classdialogbox__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for dialogbox</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classdialogbox__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Font font</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string font_path</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f position</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>picture box</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string last_text</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Text text</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classdialogbox_1a44b14d7932ab0866ba2d3708d406bfb7">dialogbox</link> (
+std::string box_path, std::string font_path, sf::Vector2f position)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classdialogbox_1a722438dee05d120c77871b1ec9d26cf5">draw</link> (
+sf::RenderWindow &amp; window)<para><emphasis>Draw the dialogbox.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classdialogbox_1ab9d8f8b65c3a54ccaea57a941d43a176">text_input</link> (
+std::string sentence, int char_size, sf::Color color)<para><emphasis>Set text in the dialogbox.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::FloatRect <link linkend="classdialogbox_1aeb83bd7a568feeb4be10a0335838ae2a">getBounds</link> (
+)<para><emphasis>Get bounds of dialogbox.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classdialogbox_1a44b14d7932ab0866ba2d3708d406bfb7">
+                <title>dialogbox::dialogbox (std::string box_path, std::string font_path, sf::Vector2f position)</title> <emphasis>Constructor.</emphasis>
+                
+<para>This method will create a object of this class.</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>box path : std::string 
+<literallayout>
+</literallayout>
+-&gt; The path which contains the background of the dialogbox. 
+<literallayout>
+</literallayout>
+ font_path : std::string 
+<literallayout>
+</literallayout>
+-&gt; The path which contains font of the text in the dialogbox. 
+<literallayout>
+</literallayout>
+ position : sf::vector2f 
+<literallayout>
+</literallayout>
+-&gt; This is the position of the dialogbox on the screen. 
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>dialogbox d(&quot;background.png&quot;, &quot;font.ttf&quot;, {200, 800}); </para>
+
+            </section>
+            <section xml:id="classdialogbox_1a722438dee05d120c77871b1ec9d26cf5">
+                <title>void dialogbox::draw (sf::RenderWindow &amp;window)</title> <emphasis>Draw the dialogbox.</emphasis>
+                
+<para>This method draws the dialogbox on the screen.</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>window : sf::RenderWindow&amp; 
+<literallayout>
+</literallayout>
+-&gt; The window where the dialogbox is shown on. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>dialogbox.draw(window); </para>
+
+            </section>
+            <section xml:id="classdialogbox_1ab9d8f8b65c3a54ccaea57a941d43a176">
+                <title>void dialogbox::text_input (std::string sentence, int char_size, sf::Color color)</title> <emphasis>Set text in the dialogbox.</emphasis>
+                
+<para>This method sets a given text in a dialogbox. 
+<literallayout>
+</literallayout>
+Also is the font size given and in what color the text should appear. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>sentence : std::string 
+<literallayout>
+</literallayout>
+-&gt; The sentence which is shown in the dialogbox.</para>
+
+<para>char_size : int 
+<literallayout>
+</literallayout>
+-&gt; The size of the characters in the dialogbox.</para>
+
+<para>color : sf::Color 
+<literallayout>
+</literallayout>
+-&gt; The color of the text.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>text_input(&quot;hey&quot;, 30, sf::Color::Red); </para>
+
+            </section>
+            <section xml:id="classdialogbox_1aeb83bd7a568feeb4be10a0335838ae2a">
+                <title>sf::FloatRect dialogbox::getBounds ()</title> <emphasis>Get bounds of dialogbox.</emphasis>
+                
+<para>This method will return the boundary of the text in the dialogbox.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>sf::FloatRect : sf::FloatRect -&gt; The boundary of the text in the dialogbox.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classdialogbox_1aeb83bd7a568feeb4be10a0335838ae2a">getBounds()</link>; -&gt; (100,100,50,50) </para>
+
+            </section>
+</section>

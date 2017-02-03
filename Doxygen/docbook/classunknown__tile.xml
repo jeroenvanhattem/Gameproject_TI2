@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classunknown__tile">
+<title>unknown_tile class Reference</title>
+<para>
+    <programlisting>#include <link linkend="exception__list_8hpp">&lt;exception_list.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for unknown_tile</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classunknown__tile__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for unknown_tile</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classunknown__tile__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string s</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classunknown__tile_1a461cac6c68bff3bb3840332dac3930a7">unknown_tile</link> (
+const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="classunknown__tile_1acb0d54524c73e359ac6f222a698fc30c">what</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classunknown__tile_1a461cac6c68bff3bb3840332dac3930a7">
+                <title>unknown_tile::unknown_tile (const std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classunknown__tile_1acb0d54524c73e359ac6f222a698fc30c">
+                <title>const char* unknown_tile::what () const override</title> <emphasis></emphasis>
+                
+            </section>
+</section>

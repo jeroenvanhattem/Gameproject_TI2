@@ -1,0 +1,117 @@
+.TH "inventory" 3 "Fri Feb 3 2017" "Version Version: alpha v1.5" "Git Gud: The adventures of the hungover" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+inventory
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <inventory\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBinventory\fP (sf::RenderWindow &\fBwindow\fP, \fBsql\fP &\fBdatabase\fP)"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "void \fBget_inventory\fP ()"
+.br
+.RI "void \fBget_inventory()\fP : Get the inventory "
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::RenderWindow & \fBwindow\fP"
+.br
+.ti -1c
+.RI "\fBsql\fP & \fBdatabase\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBitem\fP > \fBinventory_vector\fP"
+.br
+.ti -1c
+.RI "int \fBcounter\fP = 1"
+.br
+.ti -1c
+.RI "sf::Sprite \fBinventory_sprite\fP"
+.br
+.ti -1c
+.RI "sf::Texture \fBinventory_texture\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 9 of file inventory\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "inventory::inventory (sf::RenderWindow & window, \fBsql\fP & database)"
+
+.PP
+Constructor\&. This method will crate an object of class inventory\&.
+.br
+.PP
+.SS "Parameters: "
+.PP
+window : sf::Renderwindow& 
+.br
+-> window the inventory hs to be drawn one\&.
+.PP
+database : sql& 
+.br
+-> refference to the sqlite database\&.
+.br
+.PP
+.SS "Example: "
+.PP
+inventory inv(window, database)
+.br
+
+.PP
+Definition at line 3 of file inventory\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void inventory::get_inventory ()"
+
+.PP
+void \fBget_inventory()\fP : Get the inventory This function returns the items in the inventory
+.PP
+.SS "Example: "
+.PP
+get_inventory(1) 
+.br
+-> Shows the items in the inventory 
+.PP
+Definition at line 8 of file inventory\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int inventory::counter = 1\fC [private]\fP"
+
+.PP
+Definition at line 15 of file inventory\&.hpp\&.
+.SS "\fBsql\fP& inventory::database\fC [private]\fP"
+
+.PP
+Definition at line 12 of file inventory\&.hpp\&.
+.SS "sf::Sprite inventory::inventory_sprite\fC [private]\fP"
+
+.PP
+Definition at line 17 of file inventory\&.hpp\&.
+.SS "sf::Texture inventory::inventory_texture\fC [private]\fP"
+
+.PP
+Definition at line 18 of file inventory\&.hpp\&.
+.SS "std::vector<\fBitem\fP> inventory::inventory_vector\fC [private]\fP"
+
+.PP
+Definition at line 13 of file inventory\&.hpp\&.
+.SS "sf::RenderWindow& inventory::window\fC [private]\fP"
+
+.PP
+Definition at line 11 of file inventory\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Git Gud: The adventures of the hungover from the source code\&.

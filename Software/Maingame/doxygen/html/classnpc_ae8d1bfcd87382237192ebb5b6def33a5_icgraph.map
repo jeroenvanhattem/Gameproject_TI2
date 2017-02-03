@@ -1,5 +1,0 @@
-<map id="npc::move" name="npc::move">
-<area shape="rect" id="node2" href="$classplayer.html#a0f6538451ec51b4407cca22294451443" title="void move() : Move the player " alt="" coords="135,13,229,39"/>
-<area shape="rect" id="node3" href="$classgame.html#a0eb06f984d04128ba7fba6fcca04bda3" title="Get the items from the database. " alt="" coords="277,5,428,47"/>
-<area shape="rect" id="node4" href="$classgame.html#a46eaf7a077e7f3ff0b5e229142358f00" title="The constructor. " alt="" coords="476,13,571,39"/>
-</map>

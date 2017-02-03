@@ -1,0 +1,823 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classleveleditor">
+<title>leveleditor class Reference</title>
+<para>
+    <programlisting>#include <link linkend="leveleditor_8hpp">&lt;leveleditor.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for leveleditor</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classleveleditor__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for leveleditor</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classleveleditor__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f levelsize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f rect_size</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; figure * &gt; rectangle_store</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; picture * &gt; background_store</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; picture * &gt; tile_store</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; picture * &gt; temporary_store</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; dialogbox * &gt; level_buttons</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; level_ids</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; background_values_map</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; object_values_map</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string active_level</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RenderWindow &amp; window</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sql &amp; database</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>picture back_to_menu_button</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>picture save_level_button</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>picture new_game_button</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>picture load_game_button</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool pressed_esc</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool pressed_load_game</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>action actions[12]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::View view1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::View view2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::View view3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::View view4</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classleveleditor_1aefcb8b0819a53d39936400d5c4f4952e">button_pressed</link> (
+<link linkend="classdialogbox">dialogbox</link> &amp; object, sf::View &amp; view)<para><emphasis>Check if a button is pressed at the given view.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1ace9678fd4d5cdce53584dcc55d4e7c7b">get_items_from_database</link> (
+std::map&lt; std::string, std::vector&lt; std::string &gt;&gt; &amp; item_values_map)<para><emphasis>Get data from the database by giving a map.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1a675038d66c5ea045d4e3b922e28a23ec">load_rectangles</link> (
+)<para><emphasis>This function loads all background rectangles in the background vector.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1ad34dad62ef7c5ea26250b97e9803776a">load_tile_list</link> (
+)<para><emphasis>This method loads all tiles which can be choosen at the right side of the level editor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1a6579d63ca18e84f7a335bf8072f798cc">set_selected</link> (
+)<para><emphasis>Set a object from the tile list as selected when there is clicked on it.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1aa2b54b93aa87f704d841f6ccd59b4e38">remove_last_object</link> (
+)<para><emphasis>Removes the last object from the temporary store.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classleveleditor_1a89e3b4fb65aa6db692a2f4db65e6dba2">remove_object_under_mouse</link> (
+)<para><emphasis>This function removes the object under the mouse by pressing c.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1a3d09ece44892be49f42c62b3cdcada0c">create_object</link> (
+sf::Vector2f position)<para><emphasis>Creates an object which is selected at the given position.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="classleveleditor_1ac2de1ac26fa5f7e10ca834e6448b1b6b">convert_to_coords</link> (
+sf::View &amp; view)<para><emphasis>Converts a mouse position to map coords on the given view.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="classleveleditor_1ac6bf4571731b8283feb4c20d1391fa8b">get_position_from_rectangle_under_mouse</link> (
+)<para><emphasis>Get the position of the rectangle from rectangle store under the mouse.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classleveleditor_1a0c983ad2887a677d22fbea4eed0ec7d4">is_object_under_mouse</link> (
+std::vector&lt; <link linkend="classpicture">picture</link> *&gt; &amp; vector, sf::View &amp; view)<para><emphasis>Check if a picture object is under the mouse.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classleveleditor_1af11cad8cf1e7999a04f6a8f2a4950794">is_object_under_mouse</link> (
+std::vector&lt; <link linkend="classfigure">figure</link> *&gt; &amp; vector, sf::View &amp; view)<para><emphasis>Check if a figure object is under the mouse.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classleveleditor_1aaa46d78a5b4630364b7b8f115b23dcff">is_button_pressed</link> (
+<link linkend="classpicture">picture</link> &amp; object, sf::View &amp; view)<para><emphasis>Check if a button is pressed at the given view.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classleveleditor_1aa44f48b9869b3d5e0ce0429c6916e2b9">menu_options</link> (
+)<para><emphasis>Looks if a menu button is pressed.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classleveleditor_1a5dfc809a9bac07ffa88ce921c077f017">leveleditor</link> (
+sf::Vector2f levelsize, sf::Vector2f tilesize, sf::RenderWindow &amp; window, <link linkend="classsql">sql</link> &amp; database)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2">editor_loop</link> (
+)<para><emphasis>The main loop for the editor to stay working.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1aa5cd17c0004af09a706230a93abb10ee">get_actions</link> (
+)<para><emphasis>Loop through the actions in the action class.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1ae819c7275982ef9e2891017985560c6d">draw_rectangle_store</link> (
+)<para><emphasis>Draw the rectangle store on the screen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1afa6c25fa02db7ad3d904d6bb91b79643">draw_background_store</link> (
+)<para><emphasis>Draw the background store.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1ac87f89b0889c243ab43cfbbc7fd70836">draw_tile_store</link> (
+)<para><emphasis>Draw the tile store.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classleveleditor_1a3478cade84f5ff58c06df2c173c9127d">draw_temporary_store</link> (
+)<para><emphasis>Draw the temporary store.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classleveleditor_1aefcb8b0819a53d39936400d5c4f4952e">
+                <title>bool leveleditor::button_pressed (dialogbox &amp;object, sf::View &amp;view)</title> <emphasis>Check if a button is pressed at the given view.</emphasis>
+                
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>object : dialogbox&amp; 
+<literallayout>
+</literallayout>
+-&gt; A dialog object.</para>
+
+<para>view : view&amp; 
+<literallayout>
+</literallayout>
+-&gt; A view.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>bool : bool 
+<literallayout>
+</literallayout>
+-&gt; returns true if left mouse button is pressed on the given dialogbox.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>Get_data(dialogbox, view1) 
+<literallayout>
+</literallayout>
+return: {true}. </para>
+
+            </section>
+            <section xml:id="classleveleditor_1ace9678fd4d5cdce53584dcc55d4e7c7b">
+                <title>void leveleditor::get_items_from_database (std::map&lt; std::string, std::vector&lt; std::string &gt;&gt; &amp;item_values_map)</title> <emphasis>Get data from the database by giving a map.</emphasis>
+                
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>map vector : std::map&lt;std::string, std::vector&lt;std::string&gt;&gt;&amp; 
+<literallayout>
+</literallayout>
+-&gt; a map vector which contains a string with all the database values.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>vector : std::vector&lt;object&gt; 
+<literallayout>
+</literallayout>
+-&gt; returns a vector with all the objects from the database.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_items_from_database(object_map) 
+<literallayout>
+</literallayout>
+-&gt; item_map is now filled with objects. </para>
+
+            </section>
+            <section xml:id="classleveleditor_1a675038d66c5ea045d4e3b922e28a23ec">
+                <title>void leveleditor::load_rectangles ()</title> <emphasis>This function loads all background rectangles in the background vector.</emphasis>
+                
+<para>This method will fill the rectangle_store with rectangles. </para>
+
+            </section>
+            <section xml:id="classleveleditor_1ad34dad62ef7c5ea26250b97e9803776a">
+                <title>void leveleditor::load_tile_list ()</title> <emphasis>This method loads all tiles which can be choosen at the right side of the level editor.</emphasis>
+                
+<para>This method will fill the tile_store with objects. </para>
+
+            </section>
+            <section xml:id="classleveleditor_1a6579d63ca18e84f7a335bf8072f798cc">
+                <title>void leveleditor::set_selected ()</title> <emphasis>Set a object from the tile list as selected when there is clicked on it.</emphasis>
+                
+<para>This method is used in the code to be able to switch between objects. </para>
+
+            </section>
+            <section xml:id="classleveleditor_1aa2b54b93aa87f704d841f6ccd59b4e38">
+                <title>void leveleditor::remove_last_object ()</title> <emphasis>Removes the last object from the temporary store.</emphasis>
+                
+<para>This function removes the last object from the temporary store. </para>
+
+            </section>
+            <section xml:id="classleveleditor_1a89e3b4fb65aa6db692a2f4db65e6dba2">
+                <title>bool leveleditor::remove_object_under_mouse ()</title> <emphasis>This function removes the object under the mouse by pressing c.</emphasis>
+                
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>bool : bool 
+<literallayout>
+</literallayout>
+-&gt; returns a bool.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classleveleditor_1a89e3b4fb65aa6db692a2f4db65e6dba2">remove_object_under_mouse()</link> -&gt; true </para>
+
+            </section>
+            <section xml:id="classleveleditor_1a3d09ece44892be49f42c62b3cdcada0c">
+                <title>void leveleditor::create_object (sf::Vector2f position)</title> <emphasis>Creates an object which is selected at the given position.</emphasis>
+                
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>position : sf::Vector2f -&gt; position for object</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>Create_object({100,50}) Creates a selected object at position {100,50}. </para>
+
+            </section>
+            <section xml:id="classleveleditor_1ac2de1ac26fa5f7e10ca834e6448b1b6b">
+                <title>sf::Vector2f leveleditor::convert_to_coords (sf::View &amp;view)</title> <emphasis>Converts a mouse position to map coords on the given view.</emphasis>
+                
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>view : sf::View&amp; 
+<literallayout>
+</literallayout>
+-&gt; view of the editor</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>vector : sf::Vector2f 
+<literallayout>
+</literallayout>
+-&gt; A vector converted to mapcoords.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>convert_to_coords(view1); -&gt; (256,596) </para>
+
+            </section>
+            <section xml:id="classleveleditor_1ac6bf4571731b8283feb4c20d1391fa8b">
+                <title>sf::Vector2f leveleditor::get_position_from_rectangle_under_mouse ()</title> <emphasis>Get the position of the rectangle from rectangle store under the mouse.</emphasis>
+                
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>position : sf::Vector2f 
+<literallayout>
+</literallayout>
+-&gt; A vector2f position.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classleveleditor_1ac6bf4571731b8283feb4c20d1391fa8b">get_position_from_rectangle_under_mouse()</link> 
+<literallayout>
+</literallayout>
+-&gt; (234,262) </para>
+
+            </section>
+            <section xml:id="classleveleditor_1a0c983ad2887a677d22fbea4eed0ec7d4">
+                <title>bool leveleditor::is_object_under_mouse (std::vector&lt; picture *&gt; &amp;vector, sf::View &amp;view)</title> <emphasis>Check if a picture object is under the mouse.</emphasis>
+                
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>vector : std::vector&lt;picture*&gt;&amp; 
+<literallayout>
+</literallayout>
+-&gt; Give a picture vector with the function.</para>
+
+<para>view : sf::View 
+<literallayout>
+</literallayout>
+-&gt; Give a view with the function.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>picture_under_mouse : bool 
+<literallayout>
+</literallayout>
+-&gt; Returns true if the mouse is on a object. 
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>is_object_under_mouse(picture_vector, view1) 
+<literallayout>
+</literallayout>
+-&gt; true </para>
+
+            </section>
+            <section xml:id="classleveleditor_1af11cad8cf1e7999a04f6a8f2a4950794">
+                <title>bool leveleditor::is_object_under_mouse (std::vector&lt; figure *&gt; &amp;vector, sf::View &amp;view)</title> <emphasis>Check if a figure object is under the mouse.</emphasis>
+                
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>vector : std::vector&lt;picture*&gt;&amp; 
+<literallayout>
+</literallayout>
+-&gt; Give a figure vector with the function. 
+<literallayout>
+</literallayout>
+ view : sf::View 
+<literallayout>
+</literallayout>
+-&gt; Give a view with the function. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>figure_under_mouse : bool 
+<literallayout>
+</literallayout>
+-&gt; Returns true if the mouse is on a object. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>is_object_under_mouse(figure_vector, view2) 
+<literallayout>
+</literallayout>
+-&gt; true 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classleveleditor_1aaa46d78a5b4630364b7b8f115b23dcff">
+                <title>bool leveleditor::is_button_pressed (picture &amp;object, sf::View &amp;view)</title> <emphasis>Check if a button is pressed at the given view.</emphasis>
+                
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>object : &apos;picture&amp; 
+<literallayout>
+</literallayout>
+-&gt; A picture object. 
+<literallayout>
+</literallayout>
+ view : view&amp; 
+<literallayout>
+</literallayout>
+-&gt; A view. 
+<literallayout>
+</literallayout>
+ <formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>button_pressed : bool 
+<literallayout>
+</literallayout>
+-&gt; returns true if left mouse button is pressed on the given picture. 
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>Get_data(picture, view1) 
+<literallayout>
+</literallayout>
+-&gt; true 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classleveleditor_1aa44f48b9869b3d5e0ce0429c6916e2b9">
+                <title>bool leveleditor::menu_options ()</title> <emphasis>Looks if a menu button is pressed.</emphasis>
+                
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>back_to_menu_button_pressed : bool 
+<literallayout>
+</literallayout>
+-&gt; returns true if the back to menu button is pressed. 
+<literallayout>
+</literallayout>
+sets other variables in the hpp on true or false if a button is pressed. 
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classleveleditor_1aa44f48b9869b3d5e0ce0429c6916e2b9">menu_options()</link> 
+<literallayout>
+</literallayout>
+-&gt; true 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classleveleditor_1a5dfc809a9bac07ffa88ce921c077f017">
+                <title>leveleditor::leveleditor (sf::Vector2f levelsize, sf::Vector2f tilesize, sf::RenderWindow &amp;window, sql &amp;database)</title> <emphasis>Constructor.</emphasis>
+                
+<para><formalpara><title>This will create a leveleditor object.  Parameters: </title></formalpara>
+</para>
+
+<para>levelsize : sf::Vector2f 
+<literallayout>
+</literallayout>
+-&gt; Give the levelsize with the function. 
+<literallayout>
+</literallayout>
+ tilesize : sf::Vector2f 
+<literallayout>
+</literallayout>
+-&gt; Give the tilesize with the function. 
+<literallayout>
+</literallayout>
+ window : sf::RenderWindow&amp; 
+<literallayout>
+</literallayout>
+-&gt; Give a window with the function where the leveleditor needs to be drawn at. 
+<literallayout>
+</literallayout>
+ database : sql&amp; 
+<literallayout>
+</literallayout>
+-&gt; Give the database to the function.
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>leveleditor({1080,1080}, {32,32}, window, database); 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2">
+                <title>void leveleditor::editor_loop ()</title> <emphasis>The main loop for the editor to stay working.</emphasis>
+                
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classleveleditor_1a2ee968e4a8d305cdb1465397388b63f2">editor_loop()</link>; 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classleveleditor_1aa5cd17c0004af09a706230a93abb10ee">
+                <title>void leveleditor::get_actions ()</title> <emphasis>Loop through the actions in the action class.</emphasis>
+                
+            </section>
+            <section xml:id="classleveleditor_1ae819c7275982ef9e2891017985560c6d">
+                <title>void leveleditor::draw_rectangle_store ()</title> <emphasis>Draw the rectangle store on the screen.</emphasis>
+                
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classleveleditor_1ae819c7275982ef9e2891017985560c6d">draw_rectangle_store()</link> 
+<literallayout>
+</literallayout>
+rectangle_store is now drawn on the screen. 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classleveleditor_1afa6c25fa02db7ad3d904d6bb91b79643">
+                <title>void leveleditor::draw_background_store ()</title> <emphasis>Draw the background store.</emphasis>
+                
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classleveleditor_1afa6c25fa02db7ad3d904d6bb91b79643">draw_background_store()</link> 
+<literallayout>
+</literallayout>
+background_store is now drawn on the screen. 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classleveleditor_1ac87f89b0889c243ab43cfbbc7fd70836">
+                <title>void leveleditor::draw_tile_store ()</title> <emphasis>Draw the tile store.</emphasis>
+                
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classleveleditor_1ac87f89b0889c243ab43cfbbc7fd70836">draw_tile_store()</link> 
+<literallayout>
+</literallayout>
+Draw the objects from the tile_store. 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classleveleditor_1a3478cade84f5ff58c06df2c173c9127d">
+                <title>void leveleditor::draw_temporary_store ()</title> <emphasis>Draw the temporary store.</emphasis>
+                
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classleveleditor_1a3478cade84f5ff58c06df2c173c9127d">draw_temporary_store()</link> 
+<literallayout>
+</literallayout>
+Draw the objects from the temporary_store. 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+</section>

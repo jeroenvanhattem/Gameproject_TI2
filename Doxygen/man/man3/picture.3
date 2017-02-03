@@ -1,0 +1,104 @@
+.TH "picture" 3 "Fri Feb 3 2017" "Version Version: alpha v1.5" "Git Gud: The adventures of the hungover" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+picture
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <objects\&.hpp>\fP
+.PP
+Inherits \fBfigure\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBpicture\fP (std::string \fBpicture_path\fP, sf::Vector2f \fBposition\fP, sf::Vector2f \fBtile_size\fP)"
+.br
+.ti -1c
+.RI "sf::FloatRect \fBgetBounds\fP ()"
+.br
+.ti -1c
+.RI "void \fBrotate\fP (float angle)"
+.br
+.ti -1c
+.RI "void \fBset_transpirantie\fP (int value)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (sf::RenderWindow &window)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBpicture_path\fP"
+.br
+.ti -1c
+.RI "sf::Vector2f \fBtile_size\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::Texture \fBtexture\fP"
+.br
+.ti -1c
+.RI "sf::Sprite \fBsprite\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 21 of file objects\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "picture::picture (std::string picture_path, sf::Vector2f position, sf::Vector2f tile_size)"
+
+.PP
+Definition at line 8 of file objects\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void picture::draw (sf::RenderWindow & window)\fC [virtual]\fP"
+
+.PP
+Implements \fBfigure\fP\&.
+.PP
+Definition at line 79 of file objects\&.cpp\&.
+.SS "sf::FloatRect picture::getBounds ()\fC [virtual]\fP"
+
+.PP
+Implements \fBfigure\fP\&.
+.PP
+Definition at line 65 of file objects\&.cpp\&.
+.SS "void picture::rotate (float angle)"
+
+.PP
+Definition at line 20 of file objects\&.cpp\&.
+.SS "void picture::set_transpirantie (int value)"
+
+.PP
+Definition at line 24 of file objects\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string picture::picture_path"
+
+.PP
+Definition at line 28 of file objects\&.hpp\&.
+.SS "sf::Sprite picture::sprite\fC [private]\fP"
+
+.PP
+Definition at line 24 of file objects\&.hpp\&.
+.SS "sf::Texture picture::texture\fC [private]\fP"
+
+.PP
+Definition at line 23 of file objects\&.hpp\&.
+.SS "sf::Vector2f picture::tile_size"
+
+.PP
+Definition at line 29 of file objects\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Git Gud: The adventures of the hungover from the source code\&.

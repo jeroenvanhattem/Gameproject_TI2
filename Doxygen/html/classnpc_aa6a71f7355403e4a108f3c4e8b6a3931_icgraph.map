@@ -1,0 +1,11 @@
+<map id="npc::get_bounds" name="npc::get_bounds">
+<area shape="rect" id="node2" href="$classnpc.html#a64342e70f2e8c3afde210ffa77e1e54e" title="Get interaction NPC and object. " alt="" coords="179,24,301,50"/>
+<area shape="rect" id="node8" href="$classnpc.html#a2714b410c2e644040f69f1cf50d3bc50" title="Get interaction two NPC&#39;s. " alt="" coords="172,74,308,101"/>
+<area shape="rect" id="node3" href="$classplayer.html#aa405bc495c5a6bced7740352abd4249f" title="int get_collision(sf::IntRect colliding_object) : Get interaction between a NPC and a sf::IntRect obj..." alt="" coords="363,24,500,50"/>
+<area shape="rect" id="node4" href="$classgame.html#ab13015cdc535671de1dd7a5a7970a238" title="Moves the player. " alt="" coords="555,24,689,50"/>
+<area shape="rect" id="node5" href="$classgame.html#a2b80a1fbc6d723e78d3c86d2f8ff24d4" title="Loop that handles the game. " alt="" coords="952,24,1077,50"/>
+<area shape="rect" id="node7" href="$classgame.html#af99a7ac774385373a015bd3082049bd2" title="Show beginning dialogues. " alt="" coords="737,24,904,50"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1125,24,1176,50"/>
+<area shape="rect" id="node9" href="$classplayer.html#ad93507550867df5598b86b73de01ec12" title="int npc::get_interaction(npc &amp; other_npc) : Get interaction between the player and a NPC ..." alt="" coords="356,74,507,101"/>
+<area shape="rect" id="node10" href="$classgame.html#a61adfafa4d31548fc94c853f10b9bf3b" title="Interact with a NPC. " alt="" coords="768,74,873,101"/>
+</map>

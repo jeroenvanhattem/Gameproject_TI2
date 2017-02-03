@@ -1,0 +1,1512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classsql">
+<title>sql class Reference</title>
+<para>
+    <programlisting>#include <link linkend="sql_8hpp">&lt;sql.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for sql</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classsql__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for sql</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classsql__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sqlite3 * database</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string database_path</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int rc</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int connection</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>char * _ERROR_MESSAGE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * data</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classsql_1a4bdab1846b3789ddd83521d5eec019b5">check_query_request</link> (
+)<para><emphasis>Checks if query is executed correctly.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classsql_1ac9b186df2a51d7eda72cd4a9c34c0624">sql</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classsql_1a67805540e55f3cfb1849178023aa39b2">~sql</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a1cb74ab7343ef603490518715297be83">get_data</link> (
+char * table, char * columnname)<para><emphasis>Get data from a column in a table in the database.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1afbf7d36239ee07a23d06c72f2fd1b93c">get_data</link> (
+char * table, char * columnname, char * condition1, char * condition2)<para><emphasis>Get data from a column in a table in the database with condition.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classsql_1aa6a8501373e0cd73d48bee389353d6ea">change_data</link> (
+char * table, char * condition1, char * condition2, char * columnname, char * new_value)<para><emphasis>Change values in the database.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classsql_1a94c4df2d61461e99d3767f1b37163c2f">add_data</link> (
+char * table, const char * values)<para><emphasis>Add a new value to database.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classsql_1ac70e1da6d9e49f114bcf639fd1e6f86c">execute_query_without_return</link> (
+const char * to_be_executed)<para><emphasis>Execute a query.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a53dd323de395c13534e63a3482190777">execute_query_with_return</link> (
+const char * to_be_executed)<para><emphasis>Execute a query.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a7b49bcf5ac10f6421a5ecd62865e3316">get_name_from_id_inventory</link> (
+std::string item_id)<para><emphasis>Get the name from an item.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a060764a845c3a26c99c6f15470df9634">get_sprite_inventory</link> (
+std::string item_id)<para><emphasis>Get the sprite_path from an item.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a62cd4910a9310621ca22fb3c322f52a4">get_in_game_name_from_id_inventory</link> (
+std::string item_id)<para><emphasis>Get the name from an item.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a7f818b967453b1ae15ce4c5b28cf4765">get_inventory</link> (
+)<para><emphasis>Get the inventory.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1ae560c01f2e8e57cee454ecd8e38616eb">get_player_value</link> (
+int save, std::string variable_name)<para><emphasis>Get value of a column from the player.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a370d018617316ff6489cbb97565b7af9">get_player_sprite</link> (
+int save)<para><emphasis>Get sprite sheet of the player.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a251f53bb3d5d98f821713a42212276e9">get_player_value</link> (
+std::string npc_id)<para><emphasis>Get value of the player.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classsql_1af0e753f3af81ff1ff7f7582dcea4b0ed">add_item_to_inventory</link> (
+std::string item_id)<para><emphasis>Add an item to the players inventory.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1af04403a0cab4ee13a6f70b396e5b3a20">get_npc_value</link> (
+std::string npc_id)<para><emphasis>Get all values from columns in NPC.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1ae854372bac3fc5e681287e3cbf5b03de">get_number_of_npcs</link> (
+)<para><emphasis>Get all id&apos;s of the NPC&apos;s.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a0ea1aa772cb693be29da61c6cadffd86">get_object_sprite_ids</link> (
+)<para><emphasis>Get id&apos;s from objects and tiles sprites.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a2466fe5b0ec24e98190ee5763a4a69d1">get_object_sprite_value</link> (
+std::string object_id)<para><emphasis>Get all values from columns in sprites.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classsql_1ac24a3682f7478f78508e3e433b637407">set_new_map</link> (
+std::string map_name, int background_music)<para><emphasis>Create new map.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classsql_1a4c6195e2934d72569b45041039a2be63">save_tiles</link> (
+std::string tile_path, int pos_x, int pos_y, std::string map_name)<para><emphasis>Saves the tiles in the database.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a29fe43df701460704744049aec28d58e">get_available_levels</link> (
+)<para><emphasis>Get the names of all levels in the database.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a9928c456c632f88d19cce26b8165bd6f">get_level_ids</link> (
+)<para><emphasis>Get the ID&apos;s of all levels in the database.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; <link linkend="classsql_1a1dd21fbf729e949d804ba5509af2b295">get_level_object_value</link> (
+std::string level_id)<para><emphasis>Get all object values of a level.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::IntRect <link linkend="classsql_1af126860a2afcf82e53c9f895577bab76">get_collision_objects</link> (
+std::vector&lt; std::string &gt; objects)<para><emphasis>Get the not walkable objects.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; <link linkend="classsql_1a5eb7fea00a56fe6ba33f602871798bc8">get_level_background_value</link> (
+std::string level_id)<para><emphasis>Get all background values of a level.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1ae959c21f71c8f9b1df8bde932a6c484b">get_music</link> (
+std::string map_id)<para><emphasis>Get music of consisting map.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a59249e218b1bb9d811c50b5615312eaf">get_quest_text</link> (
+std::string quest_id, std::string part)<para><emphasis>Get quest part text.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; <link linkend="classsql_1a9f75a32a77a498b1a328a53ade518ce7">get_quest_parts</link> (
+std::string quest_id)<para><emphasis>Get all part numbers from quest.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static std::vector&lt; std::string &gt; <link linkend="classsql_1ad4d8bdf41eede1ae1363d0be8a2f60a9">get_result</link> (
+)<para><emphasis>Get saved result.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="classsql_1ad28cc81f2ee03c6a15d26ff216353d71">set_result</link> (
+char * x)<para><emphasis>Save result to static value.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="classsql_1aff61710f28dd54827b67a99c24fbdb0d">callback</link> (
+void * NotUsed, int argc, char ** argv, char ** azColName)<para><emphasis>Get value from database.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classsql_1a4bdab1846b3789ddd83521d5eec019b5">
+                <title>void sql::check_query_request ()</title> <emphasis>Checks if query is executed correctly.</emphasis>
+                
+<para>This method checks if the executed query is correctly procesed.
+<literallayout>
+</literallayout>
+If that is not the case this function will print an error on the command prompt.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classsql_1a4bdab1846b3789ddd83521d5eec019b5">check_query_request()</link>
+<literallayout>
+</literallayout>
+<emphasis>no error, so do nothing</emphasis> </para>
+
+            </section>
+            <section xml:id="classsql_1ac9b186df2a51d7eda72cd4a9c34c0624">
+                <title>sql::sql ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classsql_1a67805540e55f3cfb1849178023aa39b2">
+                <title>sql::~sql ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classsql_1a1cb74ab7343ef603490518715297be83">
+                <title>std::vector&lt; std::string &gt; sql::get_data (char *table, char *columnname)</title> <emphasis>Get data from a column in a table in the database.</emphasis>
+                
+<para>This method gets the data from a column in a table in the database.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>table : char* 
+<literallayout>
+</literallayout>
+-&gt; Table name in the database</para>
+
+<para>column : char* 
+<literallayout>
+</literallayout>
+-&gt; Column name in the database</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>Get_data(&quot;player&quot;, &quot;level&quot;) 
+<literallayout>
+</literallayout>
+return: {&quot;1&quot;}. </para>
+
+            </section>
+            <section xml:id="classsql_1afbf7d36239ee07a23d06c72f2fd1b93c">
+                <title>std::vector&lt; std::string &gt; sql::get_data (char *table, char *columnname, char *condition1, char *condition2)</title> <emphasis>Get data from a column in a table in the database with condition.</emphasis>
+                
+<para>This method gets the data from a table in the database,
+<literallayout>
+</literallayout>
+where the value of the given column meets the condition values.</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>table : char* 
+<literallayout>
+</literallayout>
+-&gt; Table name in the database</para>
+
+<para>column : char* 
+<literallayout>
+</literallayout>
+-&gt; Column name in the database</para>
+
+<para>condition1 : char* 
+<literallayout>
+</literallayout>
+-&gt; First condition of the Where statement in the SQL query.</para>
+
+<para>condition2 : char* 
+<literallayout>
+</literallayout>
+-&gt; Second condition of the Where statement in the SQL query.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>Get_data(&quot;player&quot;, &quot;name&quot;,&quot;id&quot;,&quot;1&quot;) 
+<literallayout>
+</literallayout>
+return: {&quot;arno&quot;}. </para>
+
+            </section>
+            <section xml:id="classsql_1aa6a8501373e0cd73d48bee389353d6ea">
+                <title>void sql::change_data (char *table, char *condition1, char *condition2, char *columnname, char *new_value)</title> <emphasis>Change values in the database.</emphasis>
+                
+<para>This method overwrites data in the database, where the value of the given column meets the condition values.</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>table : char* 
+<literallayout>
+</literallayout>
+-&gt; Table name in the database</para>
+
+<para>condition1 : char* 
+<literallayout>
+</literallayout>
+-&gt; First condition of the Where statement in the SQL query.</para>
+
+<para>condition2 : char* 
+<literallayout>
+</literallayout>
+-&gt; Second condition of the Where statement in the SQL query.</para>
+
+<para>columnname : char* 
+<literallayout>
+</literallayout>
+-&gt; Column name in the database</para>
+
+<para>new_value : char* 
+<literallayout>
+</literallayout>
+-&gt; New value to be set in the specified column value</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>change_data(&quot;player&quot;,&quot;id&quot;,&quot;1&quot;,&quot;name&quot;,&quot;pieter&quot;)
+<literallayout>
+</literallayout>
+The name of the player is now &quot;pieter&quot; instead of &quot;arno&quot; </para>
+
+            </section>
+            <section xml:id="classsql_1a94c4df2d61461e99d3767f1b37163c2f">
+                <title>void sql::add_data (char *table, const char *values)</title> <emphasis>Add a new value to database.</emphasis>
+                
+<para>This method adds a new value in the given table of the database.
+<literallayout>
+</literallayout>
+The parameter &quot;value&quot; is consists all the column values except the id,
+<literallayout>
+</literallayout>
+because the this value has auto increment.</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>table : char* 
+<literallayout>
+</literallayout>
+-&gt; Table name in the database</para>
+
+<para>values : char* 
+<literallayout>
+</literallayout>
+-&gt; column values to add in the database.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>add_data(&quot;sprites&quot;,&quot;&apos;../../bin/objects/new_pic.png&apos;, new pic , 64 , 64&quot;)
+<literallayout>
+</literallayout>
+There is now a new record in the database with the given values. </para>
+
+            </section>
+            <section xml:id="classsql_1ac70e1da6d9e49f114bcf639fd1e6f86c">
+                <title>void sql::execute_query_without_return (const char *to_be_executed)</title> <emphasis>Execute a query.</emphasis>
+                
+<para>This method executes a given query that has no return value.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>to_be_executed : const char* 
+<literallayout>
+</literallayout>
+-&gt; Query to be executed</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>execute_query_without_return(&quot;INSERT INTO sprites VALUES(NULL, &apos;../../bin/objects/new_pic.png&apos;, new pic , 64 , 64);&quot;)
+<literallayout>
+</literallayout>
+There is now a new record in the database with the given values. </para>
+
+            </section>
+            <section xml:id="classsql_1a53dd323de395c13534e63a3482190777">
+                <title>std::vector&lt; std::string &gt; sql::execute_query_with_return (const char *to_be_executed)</title> <emphasis>Execute a query.</emphasis>
+                
+<para>This method executes a given query that has a return value.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>to_be_executed : const char* 
+<literallayout>
+</literallayout>
+-&gt; Query to be executed</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>execute_query_with_return(&quot;SELECT name FROM player WHERE id == 1;&quot;)
+<literallayout>
+</literallayout>
+Return: {&quot;arno&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1a7b49bcf5ac10f6421a5ecd62865e3316">
+                <title>std::vector&lt; std::string &gt; sql::get_name_from_id_inventory (std::string item_id)</title> <emphasis>Get the name from an item.</emphasis>
+                
+<para>This function returns the name of an item by using its ID.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>item_id : std::string 
+<literallayout>
+</literallayout>
+-&gt; The ID of the item. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>name : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; The name of the requested item.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_name_from_id_inventory(&quot;1&quot;) 
+<literallayout>
+</literallayout>
+-&gt; tokato_gloves </para>
+
+            </section>
+            <section xml:id="classsql_1a060764a845c3a26c99c6f15470df9634">
+                <title>std::vector&lt; std::string &gt; sql::get_sprite_inventory (std::string item_id)</title> <emphasis>Get the sprite_path from an item.</emphasis>
+                
+<para>This function returns the name of an item by using its ID.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>sprite_path : std::string 
+<literallayout>
+</literallayout>
+-&gt; The ID of the item.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>sprite_path : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; The sprite_path of the requested item.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_sprite_inventory(&quot;1&quot;) 
+<literallayout>
+</literallayout>
+-&gt; &quot;../../bin/objects/banana.gif&quot; </para>
+
+            </section>
+            <section xml:id="classsql_1a62cd4910a9310621ca22fb3c322f52a4">
+                <title>std::vector&lt; std::string &gt; sql::get_in_game_name_from_id_inventory (std::string item_id)</title> <emphasis>Get the name from an item.</emphasis>
+                
+<para>This function returns the name of an item by using its ID.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>item_id : std::string 
+<literallayout>
+</literallayout>
+-&gt; The ID of the item.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>name : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; The in game name of the requested item.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_name_from_id_inventory(&quot;1&quot;) 
+<literallayout>
+</literallayout>
+-&gt; Tokato Gloves </para>
+
+            </section>
+            <section xml:id="classsql_1a7f818b967453b1ae15ce4c5b28cf4765">
+                <title>std::vector&lt; std::string &gt; sql::get_inventory ()</title> <emphasis>Get the inventory.</emphasis>
+                
+<para>This function retrieves the inventory and its values and puts it into a vector. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>inventory_vector : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; This vector contains the items in the inventory</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classsql_1a7f818b967453b1ae15ce4c5b28cf4765">get_inventory()</link> 
+<literallayout>
+</literallayout>
+-&gt; {&quot;1&quot;, &quot;2&quot;, &quot;2&quot;, &quot;3&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1ae560c01f2e8e57cee454ecd8e38616eb">
+                <title>std::vector&lt; std::string &gt; sql::get_player_value (int save, std::string variable_name)</title> <emphasis>Get value of a column from the player.</emphasis>
+                
+<para>This method returns a column value of the player.
+<literallayout>
+</literallayout>
+The save is equal the the player id in the database,
+<literallayout>
+</literallayout>
+this is because the player can have multiple saved games.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>save : int 
+<literallayout>
+</literallayout>
+-&gt; Save of the player and player id in the database.</para>
+
+<para>variable_name : std::string 
+<literallayout>
+</literallayout>
+-&gt; Columnname from what the value is requested.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_player_value(1,&quot;name&quot;)
+<literallayout>
+</literallayout>
+-&gt; {&quot;arno&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1a370d018617316ff6489cbb97565b7af9">
+                <title>std::vector&lt; std::string &gt; sql::get_player_sprite (int save)</title> <emphasis>Get sprite sheet of the player.</emphasis>
+                
+<para>This method returns the sprite sheet of the player.
+<literallayout>
+</literallayout>
+The save is equal the the player id in the database,
+<literallayout>
+</literallayout>
+this is because the player can have multiple saved games.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>save : int 
+<literallayout>
+</literallayout>
+-&gt; Save of the player and player id in the database.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_player_sprite(1)
+<literallayout>
+</literallayout>
+-&gt; {&quot;../../bin/sprite_sheets/player_sprite.png&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1a251f53bb3d5d98f821713a42212276e9">
+                <title>std::vector&lt; std::string &gt; sql::get_player_value (std::string npc_id)</title> <emphasis>Get value of the player.</emphasis>
+                
+<para>This method returns the value of a player.
+<literallayout>
+</literallayout>
+The player value is calculated on the player_id.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>npc_id : std::string 
+<literallayout>
+</literallayout>
+-&gt; Save of the player and player id in the database.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_player_sprite(1)
+<literallayout>
+</literallayout>
+-&gt; {&quot;../../bin/sprite_sheets/player_sprite.png&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1af0e753f3af81ff1ff7f7582dcea4b0ed">
+                <title>void sql::add_item_to_inventory (std::string item_id)</title> <emphasis>Add an item to the players inventory.</emphasis>
+                
+<para>This function will give the player an item that will be stored in the inventory table in the database.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>item_name : std::string -&gt; The name of the item that has to be given</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>add_item_to_inventory(&quot;1&quot;); -&gt; Adds a banana to the users inventory </para>
+
+            </section>
+            <section xml:id="classsql_1af04403a0cab4ee13a6f70b396e5b3a20">
+                <title>std::vector&lt; std::string &gt; sql::get_npc_value (std::string npc_id)</title> <emphasis>Get all values from columns in NPC.</emphasis>
+                
+<para>This method returns all column values of a NPC.
+<literallayout>
+</literallayout>
+ The order of the returning values in the vector is:
+<literallayout>
+</literallayout>
+ index | name of value 
+<literallayout>
+</literallayout>
+----------------------&#8212; 
+<literallayout>
+</literallayout>
+ 0 | name 
+<literallayout>
+</literallayout>
+ 1 | level 
+<literallayout>
+</literallayout>
+ 2 | class_id 
+<literallayout>
+</literallayout>
+ 3 | sprite_id 
+<literallayout>
+</literallayout>
+ 4 | position_x 
+<literallayout>
+</literallayout>
+ 5 | position_y 
+<literallayout>
+</literallayout>
+ 6 | quest_id 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>npc_id : std::string 
+<literallayout>
+</literallayout>
+-&gt; ID of the NPC from whom the values are asked.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_npc_value(&quot;1&quot;)
+<literallayout>
+</literallayout>
+-&gt; {&quot;arno&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1ae854372bac3fc5e681287e3cbf5b03de">
+                <title>std::vector&lt; std::string &gt; sql::get_number_of_npcs ()</title> <emphasis>Get all id&apos;s of the NPC&apos;s.</emphasis>
+                
+<para>This method returns all id values of the NPC table.
+<literallayout>
+</literallayout>
+The lengths of the vector is equal to how many NPC&apos;s there are in the table.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classsql_1ae854372bac3fc5e681287e3cbf5b03de">get_number_of_npcs()</link>
+<literallayout>
+</literallayout>
+-&gt; {&quot;1&quot;,&quot;2&quot;,&quot;5&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1a0ea1aa772cb693be29da61c6cadffd86">
+                <title>std::vector&lt; std::string &gt; sql::get_object_sprite_ids ()</title> <emphasis>Get id&apos;s from objects and tiles sprites.</emphasis>
+                
+<para>This method returns all sprite id values of tiles and objects.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classsql_1a0ea1aa772cb693be29da61c6cadffd86">get_object_sprite_ids()</link>
+<literallayout>
+</literallayout>
+-&gt; {&quot;1&quot;,&quot;2&quot;,&quot;5&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1a2466fe5b0ec24e98190ee5763a4a69d1">
+                <title>std::vector&lt; std::string &gt; sql::get_object_sprite_value (std::string object_id)</title> <emphasis>Get all values from columns in sprites.</emphasis>
+                
+<para>This method returns all column values of a a sprite.
+<literallayout>
+</literallayout>
+The order of the returning values in the vector is:
+<literallayout>
+</literallayout>
+ index | name of value 
+<literallayout>
+</literallayout>
+----------------------&#8212; 
+<literallayout>
+</literallayout>
+ 0 | path 
+<literallayout>
+</literallayout>
+ 1 | name 
+<literallayout>
+</literallayout>
+ 2 | sprite_size_x 
+<literallayout>
+</literallayout>
+ 3 | sprite_size_y 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>object_id : std::string 
+<literallayout>
+</literallayout>
+-&gt; ID of the object/tile from what the values are asked.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_object_sprite_value(&quot;1&quot;) 
+<literallayout>
+</literallayout>
+-&gt; {&quot;../../bin/objects/road1.png&quot;, &quot;road1&quot;,&quot;32&quot;,&quot;32&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1ac24a3682f7478f78508e3e433b637407">
+                <title>void sql::set_new_map (std::string map_name, int background_music)</title> <emphasis>Create new map.</emphasis>
+                
+<para>This method creates a new record in the maps table.
+<literallayout>
+</literallayout>
+This record consists the map_id, map name and the corresponding background music.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>map_name : std::string 
+<literallayout>
+</literallayout>
+-&gt; name of the level that has to be created.</para>
+
+<para>background_music : int 
+<literallayout>
+</literallayout>
+-&gt; id of the background music of the level.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>set_new_map(&quot;level1&quot;,1)
+<literallayout>
+</literallayout>
+There is now a new maps record in the database,
+<literallayout>
+</literallayout>
+that has the name level1 with brackground_id 1.
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classsql_1a4c6195e2934d72569b45041039a2be63">
+                <title>void sql::save_tiles (std::string tile_path, int pos_x, int pos_y, std::string map_name)</title> <emphasis>Saves the tiles in the database.</emphasis>
+                
+<para>This method saves a tile in the database.
+<literallayout>
+</literallayout>
+The tile values will be filterd if it is an object or an background tile.
+<literallayout>
+</literallayout>
+It is very importend that if you want to save the level, that the map_name is spelled correctly.
+<literallayout>
+</literallayout>
+If the map_name is not correctly spelled or if it doesn&apos;t exist, the level cannot be saved. 
+<literallayout>
+</literallayout>
+The same counts for the tile path. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>tile_path : std::string 
+<literallayout>
+</literallayout>
+-&gt; path to the consisting image of the object/tile.</para>
+
+<para>pos_x : int 
+<literallayout>
+</literallayout>
+-&gt; x position where the object/tile should be placed in the map.</para>
+
+<para>pos_y : int 
+<literallayout>
+</literallayout>
+-&gt; y position where the object/tile should be placed in the map.</para>
+
+<para>map_name : std::string 
+<literallayout>
+</literallayout>
+-&gt; name of the map where the object/tile will be placed in.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>save_tiles(&quot;../../bin/objects/example.png&quot;,10,10,&quot;level1&quot;)
+<literallayout>
+</literallayout>
+This object is now saved in the objects table, 
+<literallayout>
+</literallayout>
+with a refference that is has to be placed in level1.
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classsql_1a29fe43df701460704744049aec28d58e">
+                <title>std::vector&lt; std::string &gt; sql::get_available_levels ()</title> <emphasis>Get the names of all levels in the database.</emphasis>
+                
+<para>This method returns all names of the levels that are in the database.
+<literallayout>
+</literallayout>
+This can be usefull so you can know if a level already exists. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classsql_1a29fe43df701460704744049aec28d58e">get_available_levels()</link>
+<literallayout>
+</literallayout>
+-&gt; {&quot;level1&quot;,&quot;level2&quot;,&quot;level5&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1a9928c456c632f88d19cce26b8165bd6f">
+                <title>std::vector&lt; std::string &gt; sql::get_level_ids ()</title> <emphasis>Get the ID&apos;s of all levels in the database.</emphasis>
+                
+<para>This method returns all ID&apos;s of the levels that are in the database.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classsql_1a9928c456c632f88d19cce26b8165bd6f">get_level_ids()</link>
+<literallayout>
+</literallayout>
+-&gt; {&quot;1&quot;,&quot;2&quot;,&quot;5&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1a1dd21fbf729e949d804ba5509af2b295">
+                <title>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; sql::get_level_object_value (std::string level_id)</title> <emphasis>Get all object values of a level.</emphasis>
+                
+<para>This method returns the values of all objects that are assigned to the given level ID.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>level_id : std::string 
+<literallayout>
+</literallayout>
+-&gt; id of the level from what the objects have to be loaded.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; 
+<literallayout>
+</literallayout>
+-&gt; map that contains the asked data in the form of strings with name as key.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_level_object_value(&quot;level1&quot;) 
+<literallayout>
+</literallayout>
+-&gt; {&quot;road1&quot;:{&quot;../../bin/objects/example.png&quot;,&quot;120&quot;,&quot;150&quot;,&quot;1&quot;}} </para>
+
+            </section>
+            <section xml:id="classsql_1af126860a2afcf82e53c9f895577bab76">
+                <title>sf::IntRect sql::get_collision_objects (std::vector&lt; std::string &gt; objects)</title> <emphasis>Get the not walkable objects.</emphasis>
+                
+<para>This method returns the hitbox of an object that is not walkable.
+<literallayout>
+</literallayout>
+The hitbox can be used to calculate the collision detection on. 
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>objects : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; values of one opbject.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>collision_rects : sf::IntRect 
+<literallayout>
+</literallayout>
+-&gt; Hitbox of the not walkable object.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_collision_objects({...}) 
+<literallayout>
+</literallayout>
+-&gt; (100,100,50,50) </para>
+
+            </section>
+            <section xml:id="classsql_1a5eb7fea00a56fe6ba33f602871798bc8">
+                <title>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; sql::get_level_background_value (std::string level_id)</title> <emphasis>Get all background values of a level.</emphasis>
+                
+<para>This method returns the values of all background tiles that are assigned to the given level ID.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>level_id : std::string 
+<literallayout>
+</literallayout>
+-&gt; id of the level from what the background tiles have to be loaded.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::map&lt; std::string, std::vector&lt;std::string&gt; &gt; 
+<literallayout>
+</literallayout>
+-&gt; Map that contains the asked data in the form of strings with name as key.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_level_object_value(&quot;level1&quot;) 
+<literallayout>
+</literallayout>
+{&quot;road1&quot;:{&quot;../../bin/tiles/example.png&quot;,&quot;120&quot;,&quot;150&quot;,&quot;1&quot;}} </para>
+
+            </section>
+            <section xml:id="classsql_1ae959c21f71c8f9b1df8bde932a6c484b">
+                <title>std::vector&lt; std::string &gt; sql::get_music (std::string map_id)</title> <emphasis>Get music of consisting map.</emphasis>
+                
+<para>This method returns the path of a music file what is the background music of a level. 
+<literallayout>
+</literallayout>
+The values are searched by the ID of the map. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>map_id : std::string 
+<literallayout>
+</literallayout>
+-&gt; ID of the level where the music file is requested.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; list that contains the asked data in the form of strings.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_music(&quot;17&quot;) 
+<literallayout>
+</literallayout>
+-&gt; ../../bin/music/x_gon_give_it_to_ya.wav </para>
+
+            </section>
+            <section xml:id="classsql_1a59249e218b1bb9d811c50b5615312eaf">
+                <title>std::vector&lt; std::string &gt; sql::get_quest_text (std::string quest_id, std::string part)</title> <emphasis>Get quest part text.</emphasis>
+                
+<para>This method returns the text of a quest part. 
+<literallayout>
+</literallayout>
+The values are searched by the ID of the of the quest and the given part number. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>quest_id : std::string 
+<literallayout>
+</literallayout>
+-&gt; ID of the quest from what the text is requested.
+<literallayout>
+</literallayout>
+ part : std::string 
+<literallayout>
+</literallayout>
+-&gt; number of the part in the quest where the text is requested from. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; list that contains the asked data in the form of strings.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_quest_text(&quot;17&quot;) 
+<literallayout>
+</literallayout>
+-&gt; {&quot;Hello.&quot;,&quot;welcome&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1a9f75a32a77a498b1a328a53ade518ce7">
+                <title>std::vector&lt; std::string &gt; sql::get_quest_parts (std::string quest_id)</title> <emphasis>Get all part numbers from quest.</emphasis>
+                
+<para>This method returns the numbers of quest parts of a quest. 
+<literallayout>
+</literallayout>
+The values are searched by the ID of the quest. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>quest_id : std::string 
+<literallayout>
+</literallayout>
+-&gt; ID of the quest from what the text is requested.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; list that contains the asked data in the form of strings.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_quest_parts(&quot;1&quot;) 
+<literallayout>
+</literallayout>
+-&gt; {&quot;1&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1ad4d8bdf41eede1ae1363d0be8a2f60a9">
+                <title>std::vector&lt; std::string &gt; sql::get_result ()</title> <emphasis>Get saved result.</emphasis>
+                
+<para>This method returns the result that is stored in the global result value.
+<literallayout>
+</literallayout>
+the result value is a global and static because it is set by the callback function.
+<literallayout>
+</literallayout>
+ <formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>list_of_data : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; List that contains the asked data in the form of strings.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classsql_1ad4d8bdf41eede1ae1363d0be8a2f60a9">get_result()</link>
+<literallayout>
+</literallayout>
+Return: {&quot;arno&quot;} </para>
+
+            </section>
+            <section xml:id="classsql_1ad28cc81f2ee03c6a15d26ff216353d71">
+                <title>static void sql::set_result (char *x)</title> <emphasis>Save result to static value.</emphasis>
+                
+<para>This method adds a new value, what is a result of an query,
+<literallayout>
+</literallayout>
+to the static string vector result.
+<literallayout>
+</literallayout>
+It does not overwrite it because there could be a result of multiple strings.
+<literallayout>
+</literallayout>
+This function is only called by the static callback function.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>x : char* 
+<literallayout>
+</literallayout>
+-&gt; Query result to add.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>set_result(&quot;arno&quot;)
+<literallayout>
+</literallayout>
+Last value in result is now &quot;arno&quot;. </para>
+
+            </section>
+            <section xml:id="classsql_1aff61710f28dd54827b67a99c24fbdb0d">
+                <title>int sql::callback (void *NotUsed, int argc, char **argv, char **azColName)</title> <emphasis>Get value from database.</emphasis>
+                
+<para>This method is used to get the value from the database. What the function does is explained in the sqlite3.hpp file. In this class we use it to store the found data in a global static value. </para>
+
+            </section>
+</section>

@@ -1,5 +1,0 @@
-<map id="npc::set_action" name="npc::set_action">
-<area shape="rect" id="node2" href="$classplayer.html#aa673c84d7b56badc58d7c467325cbf88" title="void set_action(std::string s) : Set action of the player " alt="" coords="164,13,289,39"/>
-<area shape="rect" id="node3" href="$classgame.html#a0eb06f984d04128ba7fba6fcca04bda3" title="Get the items from the database. " alt="" coords="337,5,488,47"/>
-<area shape="rect" id="node4" href="$classgame.html#a46eaf7a077e7f3ff0b5e229142358f00" title="The constructor. " alt="" coords="536,13,631,39"/>
-</map>

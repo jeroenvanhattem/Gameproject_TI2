@@ -1,7 +1,0 @@
-<map id="item::get_in_game_name" name="item::get_in_game_name">
-<area shape="rect" id="node2" href="$classsql.html#a62cd4910a9310621ca22fb3c322f52a4" title="Get the name from an item. " alt="" coords="221,23,381,65"/>
-<area shape="rect" id="node3" href="$classsql.html#a53dd323de395c13534e63a3482190777" title="Execute a query. " alt="" coords="429,23,561,65"/>
-<area shape="rect" id="node4" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="614,5,709,32"/>
-<area shape="rect" id="node6" href="$classsql.html#ad4d8bdf41eede1ae1363d0be8a2f60a9" title="Get saved result. " alt="" coords="609,56,713,83"/>
-<area shape="rect" id="node5" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="761,5,865,32"/>
-</map>

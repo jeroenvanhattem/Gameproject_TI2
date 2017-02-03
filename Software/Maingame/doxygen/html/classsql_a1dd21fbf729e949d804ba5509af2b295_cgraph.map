@@ -1,7 +1,0 @@
-<map id="sql::get_level_object_value" name="sql::get_level_object_value">
-<area shape="rect" id="node2" href="$classsql.html#a1cb74ab7343ef603490518715297be83" title="Get data from a column in a table in the database. " alt="" coords="192,5,289,32"/>
-<area shape="rect" id="node3" href="$classsql.html#a53dd323de395c13534e63a3482190777" title="Execute a query. " alt="" coords="337,23,469,65"/>
-<area shape="rect" id="node4" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="522,5,617,32"/>
-<area shape="rect" id="node6" href="$classsql.html#ad4d8bdf41eede1ae1363d0be8a2f60a9" title="Get saved result. " alt="" coords="517,56,621,83"/>
-<area shape="rect" id="node5" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="669,5,773,32"/>
-</map>

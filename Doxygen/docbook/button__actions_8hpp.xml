@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="button__actions_8hpp">
+    <title>button_actions.hpp File Reference</title>
+    <programlisting>#include &lt;SFML\Graphics.hpp&gt;</programlisting>
+<para>Include dependency diagram for button_actions.hpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="button__actions_8hpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for button_actions.hpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="button__actions_8hpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+        </section>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Keyboard::Key <link linkend="button__actions_8hpp_1a2e21a2810e34d3df6a08f9ce18ce760d">Key</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="button__actions_8hpp_1a9b45b3e13bd9167aab02e17e08916231">name</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="button__actions_8hpp_1ad0da36b2558901e21e7a30f6c227a45e">x</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="button__actions_8hpp_1aa4f0d3eebc3c443f9be81bf48561a217">y</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const struct @0 <link linkend="button__actions_8hpp_1a482463c81347dda7bee1190e25bdb0a1">actions</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Mouse::Button <link linkend="button__actions_8hpp_1a0765116058c6d804c6a3e99a2e55a704">mouse_key</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const struct @1 <link linkend="button__actions_8hpp_1aa3b9a687b77321bb0bf1bba117df6d51">skills</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="button__actions_8hpp_1a94ef0400a00795316cd4e374db2af104">Vector2f_from_Vector2i</link> (
+sf::Vector2i vector)<para><emphasis>Convert a sf::vector2i to sf::Vector2f.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="button__actions_8hpp_1aac3d825fa7b0f54fd0340a611b9639d5">get_skill_from_button_keys</link> (
+)<para><emphasis>Check if skill button is pressed.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="button__actions_8hpp_1a6a2c7019e201b42b13d3032fc538298d">get_move_direction_from_button_keys</link> (
+)<para><emphasis>Get the move direction if move button is pressed.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="button__actions_8hpp_1a147658cb884fa19f4a0a255ea858b7b8">get_action_name_from_button_keys</link> (
+)<para><emphasis>Get the name of a move if move button is pressed.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="button__actions_8hpp_1a067f53aa6474ce70abccc5bbd28ad01d">get_mouse_position</link> (
+sf::RenderWindow &amp; window)<para><emphasis>Get the position of the mouse.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="button__actions_8hpp_1a66f5c6d1b29c823603568294cf3702ea">check_mouse</link> (
+)<para><emphasis>Check if left mouse button is pressed.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/button_actions.hpp</para>
+    </simplesect>
+</section>

@@ -1,4 +1,0 @@
-<map id="sql::execute_query_without_return" name="sql::execute_query_without_return">
-<area shape="rect" id="node2" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="185,13,280,39"/>
-<area shape="rect" id="node3" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="328,13,432,39"/>
-</map>

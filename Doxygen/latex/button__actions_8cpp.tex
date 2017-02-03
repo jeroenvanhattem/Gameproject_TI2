@@ -1,0 +1,244 @@
+\hypertarget{button__actions_8cpp}{}\section{D\+:/\+Documents-\/(D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/button\+\_\+actions.cpp File Reference}
+\label{button__actions_8cpp}\index{D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/button\+\_\+actions.\+cpp@{D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/button\+\_\+actions.\+cpp}}
+{\ttfamily \#include \char`\"{}button\+\_\+actions.\+hpp\char`\"{}}\newline
+Include dependency graph for button\+\_\+actions.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{button__actions_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vector2f \hyperlink{button__actions_8cpp_a94ef0400a00795316cd4e374db2af104}{Vector2f\+\_\+from\+\_\+\+Vector2i} (sf\+::\+Vector2i vector)
+\begin{DoxyCompactList}\small\item\em Convert a sf\+::vector2i to sf\+::\+Vector2f. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \hyperlink{button__actions_8cpp_a6a2c7019e201b42b13d3032fc538298d}{get\+\_\+move\+\_\+direction\+\_\+from\+\_\+button\+\_\+keys} ()
+\begin{DoxyCompactList}\small\item\em Get the move direction if move button is pressed. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{button__actions_8cpp_aac3d825fa7b0f54fd0340a611b9639d5}{get\+\_\+skill\+\_\+from\+\_\+button\+\_\+keys} ()
+\begin{DoxyCompactList}\small\item\em Check if skill button is pressed. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{button__actions_8cpp_a147658cb884fa19f4a0a255ea858b7b8}{get\+\_\+action\+\_\+name\+\_\+from\+\_\+button\+\_\+keys} ()
+\begin{DoxyCompactList}\small\item\em Get the name of a move if move button is pressed. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \hyperlink{button__actions_8cpp_a067f53aa6474ce70abccc5bbd28ad01d}{get\+\_\+mouse\+\_\+position} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Get the position of the mouse. \end{DoxyCompactList}\item 
+bool \hyperlink{button__actions_8cpp_a66f5c6d1b29c823603568294cf3702ea}{check\+\_\+mouse} ()
+\begin{DoxyCompactList}\small\item\em Check if left mouse button is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{button__actions_8cpp_a66f5c6d1b29c823603568294cf3702ea}\label{button__actions_8cpp_a66f5c6d1b29c823603568294cf3702ea}} 
+\index{button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}!check\+\_\+mouse@{check\+\_\+mouse}}
+\index{check\+\_\+mouse@{check\+\_\+mouse}!button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+mouse()}{check\_mouse()}}
+{\footnotesize\ttfamily bool check\+\_\+mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if left mouse button is pressed. 
+
+This method will check if the left mouse button is pressed. ~\newline
+If that is the case the function will return true. ~\newline
+
+
+\subsubsection*{Return\+: }
+
+button\+\_\+pressed \+: bool ~\newline
+-\/$>$ If the mousebutton is pressed.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{button__actions_8hpp_a66f5c6d1b29c823603568294cf3702ea}{check\+\_\+mouse()} ~\newline
+-\/$>$ true 
+
+Definition at line 50 of file button\+\_\+actions.\+cpp.
+
+\mbox{\Hypertarget{button__actions_8cpp_a147658cb884fa19f4a0a255ea858b7b8}\label{button__actions_8cpp_a147658cb884fa19f4a0a255ea858b7b8}} 
+\index{button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}!get\+\_\+action\+\_\+name\+\_\+from\+\_\+button\+\_\+keys@{get\+\_\+action\+\_\+name\+\_\+from\+\_\+button\+\_\+keys}}
+\index{get\+\_\+action\+\_\+name\+\_\+from\+\_\+button\+\_\+keys@{get\+\_\+action\+\_\+name\+\_\+from\+\_\+button\+\_\+keys}!button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+action\+\_\+name\+\_\+from\+\_\+button\+\_\+keys()}{get\_action\_name\_from\_button\_keys()}}
+{\footnotesize\ttfamily std\+::string get\+\_\+action\+\_\+name\+\_\+from\+\_\+button\+\_\+keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of a move if move button is pressed. 
+
+This method will return the name from a move if one of the buttons, ~\newline
+in the defined struct of move action buttons, is pressed. ~\newline
+
+
+\subsubsection*{Return\+: }
+
+direction \+: sf\+::\+Vector2f ~\newline
+-\/$>$ Direction in which the player should move.~\newline
+
+
+\subsubsection*{Example\+: }
+
+\hyperlink{button__actions_8hpp_a147658cb884fa19f4a0a255ea858b7b8}{get\+\_\+action\+\_\+name\+\_\+from\+\_\+button\+\_\+keys()} ~\newline
+-\/$>$ \char`\"{}walk\+\_\+up\char`\"{} 
+
+Definition at line 35 of file button\+\_\+actions.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button__actions_8cpp_a147658cb884fa19f4a0a255ea858b7b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{button__actions_8cpp_a067f53aa6474ce70abccc5bbd28ad01d}\label{button__actions_8cpp_a067f53aa6474ce70abccc5bbd28ad01d}} 
+\index{button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}!get\+\_\+mouse\+\_\+position@{get\+\_\+mouse\+\_\+position}}
+\index{get\+\_\+mouse\+\_\+position@{get\+\_\+mouse\+\_\+position}!button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+mouse\+\_\+position()}{get\_mouse\_position()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f get\+\_\+mouse\+\_\+position (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Get the position of the mouse. 
+
+This method will return the position of the mouse on the window. ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+window \+: sf\+::\+Render\+Window\& -\/$>$ window to check the mouse on.
+
+\subsubsection*{Return\+: }
+
+mouse position \+: sf\+::\+Vector2f ~\newline
+-\/$>$ Direction in which the player should move.~\newline
+
+
+\subsubsection*{Example\+: }
+
+get\+\_\+mouse\+\_\+position( window) ~\newline
+-\/$>$ \{100, 100\} 
+
+Definition at line 46 of file button\+\_\+actions.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{button__actions_8cpp_a067f53aa6474ce70abccc5bbd28ad01d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button__actions_8cpp_a067f53aa6474ce70abccc5bbd28ad01d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{button__actions_8cpp_a6a2c7019e201b42b13d3032fc538298d}\label{button__actions_8cpp_a6a2c7019e201b42b13d3032fc538298d}} 
+\index{button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}!get\+\_\+move\+\_\+direction\+\_\+from\+\_\+button\+\_\+keys@{get\+\_\+move\+\_\+direction\+\_\+from\+\_\+button\+\_\+keys}}
+\index{get\+\_\+move\+\_\+direction\+\_\+from\+\_\+button\+\_\+keys@{get\+\_\+move\+\_\+direction\+\_\+from\+\_\+button\+\_\+keys}!button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+move\+\_\+direction\+\_\+from\+\_\+button\+\_\+keys()}{get\_move\_direction\_from\_button\_keys()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f get\+\_\+move\+\_\+direction\+\_\+from\+\_\+button\+\_\+keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the move direction if move button is pressed. 
+
+This method will check if one of the buttons in the defined struct of move action buttons is pressed. ~\newline
+if that is the case, the method will return the move direction of the consisting move. ~\newline
+
+
+\subsubsection*{Return\+: }
+
+direction \+: sf\+::\+Vector2f ~\newline
+-\/$>$ Direction in which the player should move.~\newline
+
+
+\subsubsection*{Example\+: }
+
+get\+\_\+move\+\_\+direction\+\_\+from\+\_\+button\+\_\+keys ~\newline
+-\/$>$ \{-\/1, 0\} 
+
+Definition at line 11 of file button\+\_\+actions.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button__actions_8cpp_a6a2c7019e201b42b13d3032fc538298d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{button__actions_8cpp_aac3d825fa7b0f54fd0340a611b9639d5}\label{button__actions_8cpp_aac3d825fa7b0f54fd0340a611b9639d5}} 
+\index{button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}!get\+\_\+skill\+\_\+from\+\_\+button\+\_\+keys@{get\+\_\+skill\+\_\+from\+\_\+button\+\_\+keys}}
+\index{get\+\_\+skill\+\_\+from\+\_\+button\+\_\+keys@{get\+\_\+skill\+\_\+from\+\_\+button\+\_\+keys}!button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+skill\+\_\+from\+\_\+button\+\_\+keys()}{get\_skill\_from\_button\_keys()}}
+{\footnotesize\ttfamily std\+::string get\+\_\+skill\+\_\+from\+\_\+button\+\_\+keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if skill button is pressed. 
+
+This method will check if one of the buttons in the defined struct of skill\+\_\+buttons is pressed. ~\newline
+if that is the case, the method will return the name of the consisting skill. ~\newline
+
+
+\subsubsection*{Return\+: }
+
+skill\+\_\+name \+: std\+::string ~\newline
+-\/$>$ name of the skill button that is pressed.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{button__actions_8hpp_aac3d825fa7b0f54fd0340a611b9639d5}{get\+\_\+skill\+\_\+from\+\_\+button\+\_\+keys()} ~\newline
+-\/$>$ \char`\"{}shoot\+\_\+arrow\char`\"{} 
+
+Definition at line 25 of file button\+\_\+actions.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button__actions_8cpp_aac3d825fa7b0f54fd0340a611b9639d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{button__actions_8cpp_a94ef0400a00795316cd4e374db2af104}\label{button__actions_8cpp_a94ef0400a00795316cd4e374db2af104}} 
+\index{button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}!Vector2f\+\_\+from\+\_\+\+Vector2i@{Vector2f\+\_\+from\+\_\+\+Vector2i}}
+\index{Vector2f\+\_\+from\+\_\+\+Vector2i@{Vector2f\+\_\+from\+\_\+\+Vector2i}!button\+\_\+actions.\+cpp@{button\+\_\+actions.\+cpp}}
+\subsubsection{\texorpdfstring{Vector2f\+\_\+from\+\_\+\+Vector2i()}{Vector2f\_from\_Vector2i()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Vector2f\+\_\+from\+\_\+\+Vector2i (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2i}]{vector }\end{DoxyParamCaption})}
+
+
+
+Convert a sf\+::vector2i to sf\+::\+Vector2f. 
+
+This method will convert a sf\+::\+Vector2i (a vector consisting 2 integer values), ~\newline
+to a sf\+::\+Vector2f (a vector consisting 2 float values). ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+vector \+: sf\+::\+Vector2f ~\newline
+-\/$>$ Position to be converted.
+
+\subsubsection*{Return\+: }
+
+Converted sf\+::\+Vector2i \+: sf\+::\+Vector2f ~\newline
+-\/$>$ Converted vector2i.
+
+\subsubsection*{Example\+: }
+
+Vector2f\+\_\+from\+\_\+\+Vector2i(\{100 \+: int, 100 \+: int\}) ~\newline
+-\/$>$ \{100 \+: float, 100 \+: float\} 
+
+Definition at line 6 of file button\+\_\+actions.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button__actions_8cpp_a94ef0400a00795316cd4e374db2af104_icgraph}
+\end{center}
+\end{figure}

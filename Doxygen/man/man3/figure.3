@@ -1,0 +1,89 @@
+.TH "figure" 3 "Fri Feb 3 2017" "Version Version: alpha v1.5" "Git Gud: The adventures of the hungover" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+figure
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <objects\&.hpp>\fP
+.PP
+Inherited by \fBcircle\fP, \fBpicture\fP, and \fBrectangle\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBfigure\fP (sf::Vector2f \fBposition\fP)"
+.br
+.ti -1c
+.RI "virtual sf::FloatRect \fBgetBounds\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (sf::RenderWindow &window)=0"
+.br
+.ti -1c
+.RI "virtual void \fBmove\fP (sf::Vector2f delta)"
+.br
+.ti -1c
+.RI "virtual void \fBjump\fP (sf::Vector2f target)"
+.br
+.ti -1c
+.RI "virtual void \fBjump\fP (sf::Vector2i target)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::Vector2f \fBposition\fP"
+.br
+.ti -1c
+.RI "bool \fBselected\fP = 0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 7 of file objects\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "figure::figure (sf::Vector2f position)"
+
+.PP
+Definition at line 4 of file objects\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void figure::draw (sf::RenderWindow & window)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBrectangle\fP, \fBcircle\fP, and \fBpicture\fP\&.
+.SS "virtual sf::FloatRect figure::getBounds ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBrectangle\fP, \fBcircle\fP, and \fBpicture\fP\&.
+.SS "void figure::jump (sf::Vector2f target)\fC [virtual]\fP"
+
+.PP
+Definition at line 84 of file objects\&.cpp\&.
+.SS "void figure::jump (sf::Vector2i target)\fC [virtual]\fP"
+
+.PP
+Definition at line 88 of file objects\&.cpp\&.
+.SS "void figure::move (sf::Vector2f delta)\fC [virtual]\fP"
+
+.PP
+Definition at line 53 of file objects\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "sf::Vector2f figure::position"
+
+.PP
+Definition at line 10 of file objects\&.hpp\&.
+.SS "bool figure::selected = 0"
+
+.PP
+Definition at line 11 of file objects\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Git Gud: The adventures of the hungover from the source code\&.

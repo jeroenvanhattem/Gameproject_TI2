@@ -1,0 +1,991 @@
+\hypertarget{classgame}{}\section{game Class Reference}
+\label{classgame}\index{game@{game}}
+
+
+{\ttfamily \#include $<$game.\+hpp$>$}
+
+
+
+Collaboration diagram for game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classgame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgame_a46eaf7a077e7f3ff0b5e229142358f00}{game} (sf\+::\+Render\+Window \&\hyperlink{classgame_af7435cad08a8114c7598bc99f5b6496e}{window}, \hyperlink{classsql}{sql} \&\hyperlink{classgame_aa6c2206b4735cd2c90f934384c350e0a}{database}, sf\+::\+Vector2f \hyperlink{classgame_abccd2ff11b53d33fde0ee8ab50c29972}{levelsize})
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a2b80a1fbc6d723e78d3c86d2f8ff24d4}{game\+\_\+loop} ()
+\begin{DoxyCompactList}\small\item\em Loop that handles the game. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a0eb06f984d04128ba7fba6fcca04bda3}{get\+\_\+items\+\_\+from\+\_\+database} (std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$$>$ \&item\+\_\+values\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Get the items from the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classgame_ae263cdc30dcc916b98b0ddbbf0a6fccc}{mouse\+\_\+intersects\+\_\+left\+\_\+edge} (sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em Checkt left edge of screen. \end{DoxyCompactList}\item 
+bool \hyperlink{classgame_a273013552bc7ad8fef9d9192aad3cc0c}{mouse\+\_\+intersects\+\_\+right\+\_\+edge} (sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em Checkt right edge of screen. \end{DoxyCompactList}\item 
+bool \hyperlink{classgame_abb1c33c5a73de27e4ebd20e1b61dc3dc}{mouse\+\_\+intersects\+\_\+upper\+\_\+edge} (sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em Checkt upper edge of screen. \end{DoxyCompactList}\item 
+bool \hyperlink{classgame_a34a5241e205d0985a9e477a3dd77ba08}{mouse\+\_\+intersects\+\_\+down\+\_\+edge} (sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em Checkt buttom edge of screen. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a69793e75c155cb06e4f2c4d98c5da27c}{game\+\_\+viewer} ()
+\begin{DoxyCompactList}\small\item\em Activate game\+\_\+viewr. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a961fe8a42a2c0bc1ef62ef17c7c64f06}{draw\+\_\+npc} ()
+\begin{DoxyCompactList}\small\item\em Draw N\+PC\textquotesingle{}s on the window. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a3718980f99cd44e9c882c2aa67368450}{load\+\_\+npc} ()
+\begin{DoxyCompactList}\small\item\em Get all the N\+PC\textquotesingle{}s. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_af99a7ac774385373a015bd3082049bd2}{view\+\_\+start\+\_\+dialogs} ()
+\begin{DoxyCompactList}\small\item\em Show beginning dialogues. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a4cf9147e06874edfc6190db64d719dec}{draw\+\_\+background\+\_\+store} ()
+\begin{DoxyCompactList}\small\item\em Show the store on the window. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_ab13015cdc535671de1dd7a5a7970a238}{move\+\_\+player} ()
+\begin{DoxyCompactList}\small\item\em Moves the player. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a4982a1c81b1a52b8f050ef48dea86743}{draw\+\_\+player} ()
+\begin{DoxyCompactList}\small\item\em Draws the player on the screen. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a50870549f1abdbc924743d8173ced15d}{perform\+\_\+player\+\_\+action} (std\+::string \hyperlink{classaction}{action})
+\begin{DoxyCompactList}\small\item\em Show the sprite that belongs to the action. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a5b71f711786b1b48343dd02d31551a69}{perform\+\_\+npc\+\_\+action} (std\+::string npc\+\_\+name, std\+::string \hyperlink{classaction}{action})
+\begin{DoxyCompactList}\small\item\em Show the sprite that belongs to the action. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a478a3366ffd0e10713b0abc3adb65696}{player\+\_\+skill} ()
+\begin{DoxyCompactList}\small\item\em Show action if action button pressed. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a61adfafa4d31548fc94c853f10b9bf3b}{interact} ()
+\begin{DoxyCompactList}\small\item\em Interact with a N\+PC. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_aa78cf955c292ac2bd75fa385a946cd6e}{interact} (std\+::string item\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Interact with a object or tile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classplayer}{player} \hyperlink{classgame_abea612890f55555c354cb24bd521b784}{arno}
+\item 
+\hyperlink{classdialogbox}{dialogbox} \hyperlink{classgame_a2ea8501912521b1b00dcd29284039234}{dialogbox}
+\item 
+\hyperlink{classsql}{sql} \& \hyperlink{classgame_aa6c2206b4735cd2c90f934384c350e0a}{database}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{classgame_af7435cad08a8114c7598bc99f5b6496e}{window}
+\item 
+sf\+::\+View \hyperlink{classgame_ac607d12774a2ebf6fb3cf24a60f47fed}{game\+\_\+view}
+\item 
+sf\+::\+View \hyperlink{classgame_aead46333e3eb81e970a9d10d0b2481c9}{dialogbox\+\_\+view}
+\item 
+\hyperlink{classinventory}{inventory} \hyperlink{classgame_a4bfc9c9555fc75525ba0d8719827e749}{inv}
+\item 
+sf\+::\+Vector2f \hyperlink{classgame_abccd2ff11b53d33fde0ee8ab50c29972}{levelsize}
+\item 
+std\+::vector$<$ \hyperlink{classpicture}{picture} $\ast$ $>$ \hyperlink{classgame_ad39555b6aeb922c481a4f37500280d96}{background\+\_\+store}
+\item 
+std\+::vector$<$ \hyperlink{classnpc}{npc} $\ast$ $>$ \hyperlink{classgame_af427a7b929715c637cb10a4894386ead}{npc\+\_\+list}
+\item 
+std\+::vector$<$ sf\+::\+Int\+Rect $>$ \hyperlink{classgame_ab83d40295556a456fd5f976335609ab1}{collision\+\_\+objects}
+\item 
+std\+::vector$<$ sf\+::\+Int\+Rect $>$ \hyperlink{classgame_a961d3da89b2af402aff6c9f7c2a2b81c}{collision\+\_\+backgrounds}
+\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \hyperlink{classgame_a839db13cc77624fa6a671b46bbf02b28}{background\+\_\+values\+\_\+map}
+\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \hyperlink{classgame_a7fcd329ec94a2aa84d486e67978d417a}{object\+\_\+values\+\_\+map}
+\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \hyperlink{classgame_a601fdbb561a442a318906ad9b57536f0}{begin\+\_\+stories}
+\item 
+bool \hyperlink{classgame_ae82c66167f3bf9cd4892a9e0ec6c3ba6}{game\+\_\+begin} = false
+\item 
+bool \hyperlink{classgame_ac28a00d246bdb9b92858bd876c6edd0e}{first\+\_\+dialog\+\_\+done} = false
+\item 
+int \hyperlink{classgame_a278222f919fb52fb2f87e45be40fb571}{count} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file game.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgame_a46eaf7a077e7f3ff0b5e229142358f00}\label{classgame_a46eaf7a077e7f3ff0b5e229142358f00}} 
+\index{game@{game}!game@{game}}
+\index{game@{game}!game@{game}}
+\subsubsection{\texorpdfstring{game()}{game()}}
+{\footnotesize\ttfamily game\+::game (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{classsql}{sql} \&}]{database,  }\item[{sf\+::\+Vector2f}]{levelsize }\end{DoxyParamCaption})}
+
+
+
+The constructor. 
+
+The constructor of the \textquotesingle{}game\textquotesingle{} class, this creates a game object.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+levelsize \+: sf\+::\+Vector2f ~\newline
+-\/$>$ The size of the level
+
+database \+: sql \& ~\newline
+-\/$>$ A \textquotesingle{}SQ\textquotesingle{} object, this will be used to get information from the database
+
+window \+:sf\+::\+Render\+Window ~\newline
+-\/$>$ The window on which the game has to be drawn
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classgame}{game(window, database, levelsize)} ~\newline
+
+\begin{DoxyItemize}
+\item $>$ This will create a \textquotesingle{}game\textquotesingle{} object 
+\end{DoxyItemize}
+
+Definition at line 3 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a46eaf7a077e7f3ff0b5e229142358f00_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgame_a4cf9147e06874edfc6190db64d719dec}\label{classgame_a4cf9147e06874edfc6190db64d719dec}} 
+\index{game@{game}!draw\+\_\+background\+\_\+store@{draw\+\_\+background\+\_\+store}}
+\index{draw\+\_\+background\+\_\+store@{draw\+\_\+background\+\_\+store}!game@{game}}
+\subsubsection{\texorpdfstring{draw\+\_\+background\+\_\+store()}{draw\_background\_store()}}
+{\footnotesize\ttfamily void game\+::draw\+\_\+background\+\_\+store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Show the store on the window. 
+
+This function retrieves the background of the store from the vector it\textquotesingle{}s in and displays it on the screen.~\newline
+
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classgame_a4cf9147e06874edfc6190db64d719dec}{draw\+\_\+background\+\_\+store()} ~\newline
+-\/$>$ The store will be shown on the window 
+
+Definition at line 250 of file game.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a4cf9147e06874edfc6190db64d719dec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a961fe8a42a2c0bc1ef62ef17c7c64f06}\label{classgame_a961fe8a42a2c0bc1ef62ef17c7c64f06}} 
+\index{game@{game}!draw\+\_\+npc@{draw\+\_\+npc}}
+\index{draw\+\_\+npc@{draw\+\_\+npc}!game@{game}}
+\subsubsection{\texorpdfstring{draw\+\_\+npc()}{draw\_npc()}}
+{\footnotesize\ttfamily void game\+::draw\+\_\+npc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draw N\+PC\textquotesingle{}s on the window. 
+
+This function will go through a vector which contains N\+PC objects, their draw function will be called on all of them one by one.~\newline
+
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classgame_a961fe8a42a2c0bc1ef62ef17c7c64f06}{draw\+\_\+npc()} ~\newline
+-\/$>$ Drawing the N\+PC\textquotesingle{}s on the window 
+
+Definition at line 257 of file game.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a961fe8a42a2c0bc1ef62ef17c7c64f06_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a4982a1c81b1a52b8f050ef48dea86743}\label{classgame_a4982a1c81b1a52b8f050ef48dea86743}} 
+\index{game@{game}!draw\+\_\+player@{draw\+\_\+player}}
+\index{draw\+\_\+player@{draw\+\_\+player}!game@{game}}
+\subsubsection{\texorpdfstring{draw\+\_\+player()}{draw\_player()}}
+{\footnotesize\ttfamily void game\+::draw\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draws the player on the screen. 
+
+This function calls the draw function from the \textquotesingle{}player\textquotesingle{} class, which will then draw the player on the screen.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classgame_ab13015cdc535671de1dd7a5a7970a238}{move\+\_\+player()} ~\newline
+-\/$>$ Player will be shown on the screen 
+
+Definition at line 323 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a4982a1c81b1a52b8f050ef48dea86743_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a4982a1c81b1a52b8f050ef48dea86743_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a2b80a1fbc6d723e78d3c86d2f8ff24d4}\label{classgame_a2b80a1fbc6d723e78d3c86d2f8ff24d4}} 
+\index{game@{game}!game\+\_\+loop@{game\+\_\+loop}}
+\index{game\+\_\+loop@{game\+\_\+loop}!game@{game}}
+\subsubsection{\texorpdfstring{game\+\_\+loop()}{game\_loop()}}
+{\footnotesize\ttfamily void game\+::game\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loop that handles the game. 
+
+This funtion will execute everything that will be needed to run the game, ~\newline
+like drawing the window, loading the N\+PC\textquotesingle{}s and working with them
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classgame_a2b80a1fbc6d723e78d3c86d2f8ff24d4}{game\+\_\+loop()} ~\newline
+
+\begin{DoxyItemize}
+\item $>$ This will start the game 
+\end{DoxyItemize}
+
+Definition at line 52 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a2b80a1fbc6d723e78d3c86d2f8ff24d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classgame_a2b80a1fbc6d723e78d3c86d2f8ff24d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a69793e75c155cb06e4f2c4d98c5da27c}\label{classgame_a69793e75c155cb06e4f2c4d98c5da27c}} 
+\index{game@{game}!game\+\_\+viewer@{game\+\_\+viewer}}
+\index{game\+\_\+viewer@{game\+\_\+viewer}!game@{game}}
+\subsubsection{\texorpdfstring{game\+\_\+viewer()}{game\_viewer()}}
+{\footnotesize\ttfamily void game\+::game\+\_\+viewer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Activate game\+\_\+viewr. 
+
+This function is used to activate the game\+\_\+viewer. ~\newline
+ \subsubsection*{Example\+: }
+
+\hyperlink{classgame_a69793e75c155cb06e4f2c4d98c5da27c}{game\+\_\+viewer()}; 
+
+Definition at line 98 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a69793e75c155cb06e4f2c4d98c5da27c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a69793e75c155cb06e4f2c4d98c5da27c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a0eb06f984d04128ba7fba6fcca04bda3}\label{classgame_a0eb06f984d04128ba7fba6fcca04bda3}} 
+\index{game@{game}!get\+\_\+items\+\_\+from\+\_\+database@{get\+\_\+items\+\_\+from\+\_\+database}}
+\index{get\+\_\+items\+\_\+from\+\_\+database@{get\+\_\+items\+\_\+from\+\_\+database}!game@{game}}
+\subsubsection{\texorpdfstring{get\+\_\+items\+\_\+from\+\_\+database()}{get\_items\_from\_database()}}
+{\footnotesize\ttfamily void game\+::get\+\_\+items\+\_\+from\+\_\+database (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$$>$ \&}]{item\+\_\+values\+\_\+map }\end{DoxyParamCaption})}
+
+
+
+Get the items from the database. 
+
+This function gets all the items from the database and places it in a std\+::map.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+item\+\_\+values\+\_\+map \+: std\+::map$<$std\+::string, std\+::vector$<$std\+::string$>$$>$ \& ~\newline
+-\/$>$ The map that contains all the items and its location
+
+\subsubsection*{Example\+: }
+
+get\+\_\+items\+\_\+from\+\_\+database(background\+\_\+values\+\_\+map) ~\newline
+
+\begin{DoxyItemize}
+\item $>$ The std\+::map will be filled with the items 
+\end{DoxyItemize}
+
+Definition at line 236 of file game.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classgame_a0eb06f984d04128ba7fba6fcca04bda3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a61adfafa4d31548fc94c853f10b9bf3b}\label{classgame_a61adfafa4d31548fc94c853f10b9bf3b}} 
+\index{game@{game}!interact@{interact}}
+\index{interact@{interact}!game@{game}}
+\subsubsection{\texorpdfstring{interact()}{interact()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void game\+::interact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Interact with a N\+PC. 
+
+Call the \textquotesingle{}interact\textquotesingle{} function to see if the player can interact with a player.~\newline
+
+
+\subsubsection*{Example\+: }
+
+player.\+interact() ~\newline
+-\/$>$ Executing the function which will show text on the screen 
+
+Definition at line 184 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a61adfafa4d31548fc94c853f10b9bf3b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a61adfafa4d31548fc94c853f10b9bf3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_aa78cf955c292ac2bd75fa385a946cd6e}\label{classgame_aa78cf955c292ac2bd75fa385a946cd6e}} 
+\index{game@{game}!interact@{interact}}
+\index{interact@{interact}!game@{game}}
+\subsubsection{\texorpdfstring{interact()}{interact()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void game\+::interact (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Interact with a object or tile. 
+
+Call the \textquotesingle{}interact\textquotesingle{} function to see if the player can interact with a player.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+item\+\_\+name \+: std\+::string~\newline
+-\/$>$ The name of an item which will be given to the player
+
+\subsubsection*{Example\+: }
+
+player.\+interact(\char`\"{}banana\char`\"{}) ~\newline
+
+\begin{DoxyItemize}
+\item $>$ Give the player an item and update this in the database 
+\end{DoxyItemize}
+
+Definition at line 210 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_aa78cf955c292ac2bd75fa385a946cd6e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a3718980f99cd44e9c882c2aa67368450}\label{classgame_a3718980f99cd44e9c882c2aa67368450}} 
+\index{game@{game}!load\+\_\+npc@{load\+\_\+npc}}
+\index{load\+\_\+npc@{load\+\_\+npc}!game@{game}}
+\subsubsection{\texorpdfstring{load\+\_\+npc()}{load\_npc()}}
+{\footnotesize\ttfamily void game\+::load\+\_\+npc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Get all the N\+PC\textquotesingle{}s. 
+
+This function will retrieve all the N\+PC\textquotesingle{}s from the database and put them in the \textquotesingle{}npc\+\_\+list\textquotesingle{} vector.~\newline
+
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classgame_a3718980f99cd44e9c882c2aa67368450}{load\+\_\+npc()} ~\newline
+-\/$>$ The npc\+\_\+list vector will be filled with N\+PC objects from the database 
+
+Definition at line 263 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a3718980f99cd44e9c882c2aa67368450_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classgame_a3718980f99cd44e9c882c2aa67368450_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a34a5241e205d0985a9e477a3dd77ba08}\label{classgame_a34a5241e205d0985a9e477a3dd77ba08}} 
+\index{game@{game}!mouse\+\_\+intersects\+\_\+down\+\_\+edge@{mouse\+\_\+intersects\+\_\+down\+\_\+edge}}
+\index{mouse\+\_\+intersects\+\_\+down\+\_\+edge@{mouse\+\_\+intersects\+\_\+down\+\_\+edge}!game@{game}}
+\subsubsection{\texorpdfstring{mouse\+\_\+intersects\+\_\+down\+\_\+edge()}{mouse\_intersects\_down\_edge()}}
+{\footnotesize\ttfamily bool game\+::mouse\+\_\+intersects\+\_\+down\+\_\+edge (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checkt buttom edge of screen. 
+
+This function checks if the mouse intersects with the down edge of the screen.~\newline
+ \subsubsection*{Parameters\+: }
+
+view \+: sf\+::\+View\&~\newline
+-\/$>$ The view is given with the function.
+
+\subsubsection*{Example\+: }
+
+mouse\+\_\+intersects\+\_\+down\+\_\+edge(view1); 
+
+Definition at line 117 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a34a5241e205d0985a9e477a3dd77ba08_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a34a5241e205d0985a9e477a3dd77ba08_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_ae263cdc30dcc916b98b0ddbbf0a6fccc}\label{classgame_ae263cdc30dcc916b98b0ddbbf0a6fccc}} 
+\index{game@{game}!mouse\+\_\+intersects\+\_\+left\+\_\+edge@{mouse\+\_\+intersects\+\_\+left\+\_\+edge}}
+\index{mouse\+\_\+intersects\+\_\+left\+\_\+edge@{mouse\+\_\+intersects\+\_\+left\+\_\+edge}!game@{game}}
+\subsubsection{\texorpdfstring{mouse\+\_\+intersects\+\_\+left\+\_\+edge()}{mouse\_intersects\_left\_edge()}}
+{\footnotesize\ttfamily bool game\+::mouse\+\_\+intersects\+\_\+left\+\_\+edge (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checkt left edge of screen. 
+
+This function checks if the mouse intersects with the left edge of the screen.~\newline
+ \subsubsection*{Parameters\+: }
+
+view \+: sf\+::\+View\&~\newline
+-\/$>$ The view is given with the function.
+
+\subsubsection*{Example\+: }
+
+mouse\+\_\+intersects\+\_\+left\+\_\+edge(view1); 
+
+Definition at line 105 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_ae263cdc30dcc916b98b0ddbbf0a6fccc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_ae263cdc30dcc916b98b0ddbbf0a6fccc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a273013552bc7ad8fef9d9192aad3cc0c}\label{classgame_a273013552bc7ad8fef9d9192aad3cc0c}} 
+\index{game@{game}!mouse\+\_\+intersects\+\_\+right\+\_\+edge@{mouse\+\_\+intersects\+\_\+right\+\_\+edge}}
+\index{mouse\+\_\+intersects\+\_\+right\+\_\+edge@{mouse\+\_\+intersects\+\_\+right\+\_\+edge}!game@{game}}
+\subsubsection{\texorpdfstring{mouse\+\_\+intersects\+\_\+right\+\_\+edge()}{mouse\_intersects\_right\_edge()}}
+{\footnotesize\ttfamily bool game\+::mouse\+\_\+intersects\+\_\+right\+\_\+edge (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checkt right edge of screen. 
+
+This function checks if the mouse intersects with the right edge of the screen.~\newline
+ \subsubsection*{Parameters\+: }
+
+view \+: sf\+::\+View\&~\newline
+-\/$>$ The view is given with the function.
+
+\subsubsection*{Example\+: }
+
+mouse\+\_\+intersects\+\_\+right\+\_\+edge(view1); 
+
+Definition at line 109 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a273013552bc7ad8fef9d9192aad3cc0c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a273013552bc7ad8fef9d9192aad3cc0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_abb1c33c5a73de27e4ebd20e1b61dc3dc}\label{classgame_abb1c33c5a73de27e4ebd20e1b61dc3dc}} 
+\index{game@{game}!mouse\+\_\+intersects\+\_\+upper\+\_\+edge@{mouse\+\_\+intersects\+\_\+upper\+\_\+edge}}
+\index{mouse\+\_\+intersects\+\_\+upper\+\_\+edge@{mouse\+\_\+intersects\+\_\+upper\+\_\+edge}!game@{game}}
+\subsubsection{\texorpdfstring{mouse\+\_\+intersects\+\_\+upper\+\_\+edge()}{mouse\_intersects\_upper\_edge()}}
+{\footnotesize\ttfamily bool game\+::mouse\+\_\+intersects\+\_\+upper\+\_\+edge (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checkt upper edge of screen. 
+
+This function checks if the mouse intersects with the upper edge of the screen.~\newline
+ \subsubsection*{Parameters\+: }
+
+view \+: sf\+::\+View\&~\newline
+-\/$>$ The view is given with the function.
+
+\subsubsection*{Example\+: }
+
+mouse\+\_\+intersects\+\_\+upper\+\_\+edge(view1); 
+
+Definition at line 113 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_abb1c33c5a73de27e4ebd20e1b61dc3dc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_abb1c33c5a73de27e4ebd20e1b61dc3dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_ab13015cdc535671de1dd7a5a7970a238}\label{classgame_ab13015cdc535671de1dd7a5a7970a238}} 
+\index{game@{game}!move\+\_\+player@{move\+\_\+player}}
+\index{move\+\_\+player@{move\+\_\+player}!game@{game}}
+\subsubsection{\texorpdfstring{move\+\_\+player()}{move\_player()}}
+{\footnotesize\ttfamily void game\+::move\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Moves the player. 
+
+This function will move the player as long as there\textquotesingle{}s no collision. ~\newline
+When there\textquotesingle{}s a collision the player will be set back to its previous position before the collision.~\newline
+
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classgame_ab13015cdc535671de1dd7a5a7970a238}{move\+\_\+player()} ~\newline
+-\/$>$ Move the player 
+
+Definition at line 294 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_ab13015cdc535671de1dd7a5a7970a238_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_ab13015cdc535671de1dd7a5a7970a238_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a5b71f711786b1b48343dd02d31551a69}\label{classgame_a5b71f711786b1b48343dd02d31551a69}} 
+\index{game@{game}!perform\+\_\+npc\+\_\+action@{perform\+\_\+npc\+\_\+action}}
+\index{perform\+\_\+npc\+\_\+action@{perform\+\_\+npc\+\_\+action}!game@{game}}
+\subsubsection{\texorpdfstring{perform\+\_\+npc\+\_\+action()}{perform\_npc\_action()}}
+{\footnotesize\ttfamily void game\+::perform\+\_\+npc\+\_\+action (\begin{DoxyParamCaption}\item[{std\+::string}]{npc\+\_\+name,  }\item[{std\+::string}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Show the sprite that belongs to the action. 
+
+This function shows the action the belongs to the state of the N\+PC, if it walks up, the sprite will be shown of the N\+PC walking up.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+action \+: std\+::string~\newline
+-\/$>$ The name of the action that must be performed.
+
+npc\+\_\+name \+: std\+::string~\newline
+-\/$>$ The name of the N\+PC on which this function must be executed.
+
+\subsubsection*{Example\+: }
+
+perform\+\_\+npc\+\_\+action(\char`\"{}henk\char`\"{}, \char`\"{}walk\+\_\+up\char`\"{}) ~\newline
+
+\begin{DoxyItemize}
+\item $>$ The N\+PC will be shown doing something, like walking up, walking down or dying 
+\end{DoxyItemize}
+
+Definition at line 344 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a5b71f711786b1b48343dd02d31551a69_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a50870549f1abdbc924743d8173ced15d}\label{classgame_a50870549f1abdbc924743d8173ced15d}} 
+\index{game@{game}!perform\+\_\+player\+\_\+action@{perform\+\_\+player\+\_\+action}}
+\index{perform\+\_\+player\+\_\+action@{perform\+\_\+player\+\_\+action}!game@{game}}
+\subsubsection{\texorpdfstring{perform\+\_\+player\+\_\+action()}{perform\_player\_action()}}
+{\footnotesize\ttfamily void game\+::perform\+\_\+player\+\_\+action (\begin{DoxyParamCaption}\item[{std\+::string}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Show the sprite that belongs to the action. 
+
+This function shows the action the belongs to the state of the player, ~\newline
+if he walks up, the sprite will be shown of the player walking up. ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+action \+: std\+::string~\newline
+-\/$>$ The name of the action that must be performed
+
+\subsubsection*{Example\+: }
+
+perform\+\_\+player\+\_\+action(\char`\"{}walk\+\_\+up\char`\"{}) ~\newline
+
+\begin{DoxyItemize}
+\item $>$ The player will be shown doing something, like walking up, walking down or dying 
+\end{DoxyItemize}
+
+Definition at line 327 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a50870549f1abdbc924743d8173ced15d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a50870549f1abdbc924743d8173ced15d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_a478a3366ffd0e10713b0abc3adb65696}\label{classgame_a478a3366ffd0e10713b0abc3adb65696}} 
+\index{game@{game}!player\+\_\+skill@{player\+\_\+skill}}
+\index{player\+\_\+skill@{player\+\_\+skill}!game@{game}}
+\subsubsection{\texorpdfstring{player\+\_\+skill()}{player\_skill()}}
+{\footnotesize\ttfamily void game\+::player\+\_\+skill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Show action if action button pressed. 
+
+This method will let the player perform a certain skill if the consisting button is pressed. ~\newline
+The consisting keys and buttons are defined in button\+\_\+actions.~\newline
+
+
+Definition at line 269 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a478a3366ffd0e10713b0abc3adb65696_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_a478a3366ffd0e10713b0abc3adb65696_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgame_af99a7ac774385373a015bd3082049bd2}\label{classgame_af99a7ac774385373a015bd3082049bd2}} 
+\index{game@{game}!view\+\_\+start\+\_\+dialogs@{view\+\_\+start\+\_\+dialogs}}
+\index{view\+\_\+start\+\_\+dialogs@{view\+\_\+start\+\_\+dialogs}!game@{game}}
+\subsubsection{\texorpdfstring{view\+\_\+start\+\_\+dialogs()}{view\_start\_dialogs()}}
+{\footnotesize\ttfamily void game\+::view\+\_\+start\+\_\+dialogs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Show beginning dialogues. 
+
+This function shows the the dialogs that will be shown in the beginning of the game.~\newline
+
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classgame_af99a7ac774385373a015bd3082049bd2}{view\+\_\+start\+\_\+dialogs()} ~\newline
+-\/$>$ Dialogues will be shown on the bottom of the screen 
+
+Definition at line 121 of file game.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_af99a7ac774385373a015bd3082049bd2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_af99a7ac774385373a015bd3082049bd2_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgame_abea612890f55555c354cb24bd521b784}\label{classgame_abea612890f55555c354cb24bd521b784}} 
+\index{game@{game}!arno@{arno}}
+\index{arno@{arno}!game@{game}}
+\subsubsection{\texorpdfstring{arno}{arno}}
+{\footnotesize\ttfamily \hyperlink{classplayer}{player} game\+::arno\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_ad39555b6aeb922c481a4f37500280d96}\label{classgame_ad39555b6aeb922c481a4f37500280d96}} 
+\index{game@{game}!background\+\_\+store@{background\+\_\+store}}
+\index{background\+\_\+store@{background\+\_\+store}!game@{game}}
+\subsubsection{\texorpdfstring{background\+\_\+store}{background\_store}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classpicture}{picture}$\ast$$>$ game\+::background\+\_\+store\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 27 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_a839db13cc77624fa6a671b46bbf02b28}\label{classgame_a839db13cc77624fa6a671b46bbf02b28}} 
+\index{game@{game}!background\+\_\+values\+\_\+map@{background\+\_\+values\+\_\+map}}
+\index{background\+\_\+values\+\_\+map@{background\+\_\+values\+\_\+map}!game@{game}}
+\subsubsection{\texorpdfstring{background\+\_\+values\+\_\+map}{background\_values\_map}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::vector$<$std\+::string$>$ $>$ game\+::background\+\_\+values\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_a601fdbb561a442a318906ad9b57536f0}\label{classgame_a601fdbb561a442a318906ad9b57536f0}} 
+\index{game@{game}!begin\+\_\+stories@{begin\+\_\+stories}}
+\index{begin\+\_\+stories@{begin\+\_\+stories}!game@{game}}
+\subsubsection{\texorpdfstring{begin\+\_\+stories}{begin\_stories}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::vector$<$std\+::string$>$ $>$ game\+::begin\+\_\+stories\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_a961d3da89b2af402aff6c9f7c2a2b81c}\label{classgame_a961d3da89b2af402aff6c9f7c2a2b81c}} 
+\index{game@{game}!collision\+\_\+backgrounds@{collision\+\_\+backgrounds}}
+\index{collision\+\_\+backgrounds@{collision\+\_\+backgrounds}!game@{game}}
+\subsubsection{\texorpdfstring{collision\+\_\+backgrounds}{collision\_backgrounds}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Int\+Rect$>$ game\+::collision\+\_\+backgrounds\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_ab83d40295556a456fd5f976335609ab1}\label{classgame_ab83d40295556a456fd5f976335609ab1}} 
+\index{game@{game}!collision\+\_\+objects@{collision\+\_\+objects}}
+\index{collision\+\_\+objects@{collision\+\_\+objects}!game@{game}}
+\subsubsection{\texorpdfstring{collision\+\_\+objects}{collision\_objects}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Int\+Rect$>$ game\+::collision\+\_\+objects\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_a278222f919fb52fb2f87e45be40fb571}\label{classgame_a278222f919fb52fb2f87e45be40fb571}} 
+\index{game@{game}!count@{count}}
+\index{count@{count}!game@{game}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily int game\+::count = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 37 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_aa6c2206b4735cd2c90f934384c350e0a}\label{classgame_aa6c2206b4735cd2c90f934384c350e0a}} 
+\index{game@{game}!database@{database}}
+\index{database@{database}!game@{game}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily \hyperlink{classsql}{sql}\& game\+::database\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 21 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_a2ea8501912521b1b00dcd29284039234}\label{classgame_a2ea8501912521b1b00dcd29284039234}} 
+\index{game@{game}!dialogbox@{dialogbox}}
+\index{dialogbox@{dialogbox}!game@{game}}
+\subsubsection{\texorpdfstring{dialogbox}{dialogbox}}
+{\footnotesize\ttfamily \hyperlink{classdialogbox}{dialogbox} game\+::dialogbox\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 20 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_aead46333e3eb81e970a9d10d0b2481c9}\label{classgame_aead46333e3eb81e970a9d10d0b2481c9}} 
+\index{game@{game}!dialogbox\+\_\+view@{dialogbox\+\_\+view}}
+\index{dialogbox\+\_\+view@{dialogbox\+\_\+view}!game@{game}}
+\subsubsection{\texorpdfstring{dialogbox\+\_\+view}{dialogbox\_view}}
+{\footnotesize\ttfamily sf\+::\+View game\+::dialogbox\+\_\+view\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 24 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_ac28a00d246bdb9b92858bd876c6edd0e}\label{classgame_ac28a00d246bdb9b92858bd876c6edd0e}} 
+\index{game@{game}!first\+\_\+dialog\+\_\+done@{first\+\_\+dialog\+\_\+done}}
+\index{first\+\_\+dialog\+\_\+done@{first\+\_\+dialog\+\_\+done}!game@{game}}
+\subsubsection{\texorpdfstring{first\+\_\+dialog\+\_\+done}{first\_dialog\_done}}
+{\footnotesize\ttfamily bool game\+::first\+\_\+dialog\+\_\+done = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 36 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_ae82c66167f3bf9cd4892a9e0ec6c3ba6}\label{classgame_ae82c66167f3bf9cd4892a9e0ec6c3ba6}} 
+\index{game@{game}!game\+\_\+begin@{game\+\_\+begin}}
+\index{game\+\_\+begin@{game\+\_\+begin}!game@{game}}
+\subsubsection{\texorpdfstring{game\+\_\+begin}{game\_begin}}
+{\footnotesize\ttfamily bool game\+::game\+\_\+begin = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_ac607d12774a2ebf6fb3cf24a60f47fed}\label{classgame_ac607d12774a2ebf6fb3cf24a60f47fed}} 
+\index{game@{game}!game\+\_\+view@{game\+\_\+view}}
+\index{game\+\_\+view@{game\+\_\+view}!game@{game}}
+\subsubsection{\texorpdfstring{game\+\_\+view}{game\_view}}
+{\footnotesize\ttfamily sf\+::\+View game\+::game\+\_\+view\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 23 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_a4bfc9c9555fc75525ba0d8719827e749}\label{classgame_a4bfc9c9555fc75525ba0d8719827e749}} 
+\index{game@{game}!inv@{inv}}
+\index{inv@{inv}!game@{game}}
+\subsubsection{\texorpdfstring{inv}{inv}}
+{\footnotesize\ttfamily \hyperlink{classinventory}{inventory} game\+::inv\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_abccd2ff11b53d33fde0ee8ab50c29972}\label{classgame_abccd2ff11b53d33fde0ee8ab50c29972}} 
+\index{game@{game}!levelsize@{levelsize}}
+\index{levelsize@{levelsize}!game@{game}}
+\subsubsection{\texorpdfstring{levelsize}{levelsize}}
+{\footnotesize\ttfamily sf\+::\+Vector2f game\+::levelsize\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 26 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_af427a7b929715c637cb10a4894386ead}\label{classgame_af427a7b929715c637cb10a4894386ead}} 
+\index{game@{game}!npc\+\_\+list@{npc\+\_\+list}}
+\index{npc\+\_\+list@{npc\+\_\+list}!game@{game}}
+\subsubsection{\texorpdfstring{npc\+\_\+list}{npc\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classnpc}{npc}$\ast$$>$ game\+::npc\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_a7fcd329ec94a2aa84d486e67978d417a}\label{classgame_a7fcd329ec94a2aa84d486e67978d417a}} 
+\index{game@{game}!object\+\_\+values\+\_\+map@{object\+\_\+values\+\_\+map}}
+\index{object\+\_\+values\+\_\+map@{object\+\_\+values\+\_\+map}!game@{game}}
+\subsubsection{\texorpdfstring{object\+\_\+values\+\_\+map}{object\_values\_map}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::vector$<$std\+::string$>$ $>$ game\+::object\+\_\+values\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file game.\+hpp.
+
+\mbox{\Hypertarget{classgame_af7435cad08a8114c7598bc99f5b6496e}\label{classgame_af7435cad08a8114c7598bc99f5b6496e}} 
+\index{game@{game}!window@{window}}
+\index{window@{window}!game@{game}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& game\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 22 of file game.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{game_8hpp}{game.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{game_8cpp}{game.\+cpp}\end{DoxyCompactItemize}

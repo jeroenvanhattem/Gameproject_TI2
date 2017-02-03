@@ -1,0 +1,4 @@
+<map id="main_menu" name="main_menu">
+<area shape="rect" id="node2" href="$classpicture.html" title="{picture\n|+ picture_path\l+ tile_size\l&#45; texture\l&#45; sprite\l|+ picture()\l+ getBounds()\l+ rotate()\l+ set_transpirantie()\l+ draw()\l}" alt="" coords="5,220,144,400"/>
+<area shape="rect" id="node3" href="$classfigure.html" title="{figure\n|+ position\l+ selected\l|+ figure()\l+ getBounds()\l+ draw()\l+ move()\l+ jump()\l+ jump()\l}" alt="" coords="23,5,127,171"/>
+</map>

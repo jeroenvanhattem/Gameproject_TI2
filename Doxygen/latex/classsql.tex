@@ -1,0 +1,1618 @@
+\hypertarget{classsql}{}\section{sql Class Reference}
+\label{classsql}\index{sql@{sql}}
+
+
+{\ttfamily \#include $<$sql.\+hpp$>$}
+
+
+
+Collaboration diagram for sql\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classsql__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsql_ac9b186df2a51d7eda72cd4a9c34c0624}{sql} ()
+\item 
+\hyperlink{classsql_a67805540e55f3cfb1849178023aa39b2}{$\sim$sql} ()
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a1cb74ab7343ef603490518715297be83}{get\+\_\+data} (char $\ast$table, char $\ast$columnname)
+\begin{DoxyCompactList}\small\item\em Get data from a column in a table in the database. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_afbf7d36239ee07a23d06c72f2fd1b93c}{get\+\_\+data} (char $\ast$table, char $\ast$columnname, char $\ast$condition1, char $\ast$condition2)
+\begin{DoxyCompactList}\small\item\em Get data from a column in a table in the database with condition. \end{DoxyCompactList}\item 
+void \hyperlink{classsql_aa6a8501373e0cd73d48bee389353d6ea}{change\+\_\+data} (char $\ast$table, char $\ast$condition1, char $\ast$condition2, char $\ast$columnname, char $\ast$new\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Change values in the database. \end{DoxyCompactList}\item 
+void \hyperlink{classsql_a94c4df2d61461e99d3767f1b37163c2f}{add\+\_\+data} (char $\ast$table, const char $\ast$values)
+\begin{DoxyCompactList}\small\item\em Add a new value to database. \end{DoxyCompactList}\item 
+void \hyperlink{classsql_ac70e1da6d9e49f114bcf639fd1e6f86c}{execute\+\_\+query\+\_\+without\+\_\+return} (const char $\ast$to\+\_\+be\+\_\+executed)
+\begin{DoxyCompactList}\small\item\em Execute a query. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a53dd323de395c13534e63a3482190777}{execute\+\_\+query\+\_\+with\+\_\+return} (const char $\ast$to\+\_\+be\+\_\+executed)
+\begin{DoxyCompactList}\small\item\em Execute a query. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a7b49bcf5ac10f6421a5ecd62865e3316}{get\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory} (std\+::string item\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Get the name from an item. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a060764a845c3a26c99c6f15470df9634}{get\+\_\+sprite\+\_\+inventory} (std\+::string item\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Get the sprite\+\_\+path from an item. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a62cd4910a9310621ca22fb3c322f52a4}{get\+\_\+in\+\_\+game\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory} (std\+::string item\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Get the name from an item. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a7f818b967453b1ae15ce4c5b28cf4765}{get\+\_\+inventory} ()
+\begin{DoxyCompactList}\small\item\em Get the inventory. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_ae560c01f2e8e57cee454ecd8e38616eb}{get\+\_\+player\+\_\+value} (int save, std\+::string variable\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get value of a column from the player. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a370d018617316ff6489cbb97565b7af9}{get\+\_\+player\+\_\+sprite} (int save)
+\begin{DoxyCompactList}\small\item\em Get sprite sheet of the player. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a251f53bb3d5d98f821713a42212276e9}{get\+\_\+player\+\_\+value} (std\+::string npc\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Get value of the player. \end{DoxyCompactList}\item 
+void \hyperlink{classsql_af0e753f3af81ff1ff7f7582dcea4b0ed}{add\+\_\+item\+\_\+to\+\_\+inventory} (std\+::string item\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Add an item to the players inventory. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_af04403a0cab4ee13a6f70b396e5b3a20}{get\+\_\+npc\+\_\+value} (std\+::string npc\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Get all values from columns in N\+PC. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_ae854372bac3fc5e681287e3cbf5b03de}{get\+\_\+number\+\_\+of\+\_\+npcs} ()
+\begin{DoxyCompactList}\small\item\em Get all id\textquotesingle{}s of the N\+PC\textquotesingle{}s. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a0ea1aa772cb693be29da61c6cadffd86}{get\+\_\+object\+\_\+sprite\+\_\+ids} ()
+\begin{DoxyCompactList}\small\item\em Get id\textquotesingle{}s from objects and tiles sprites. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a2466fe5b0ec24e98190ee5763a4a69d1}{get\+\_\+object\+\_\+sprite\+\_\+value} (std\+::string object\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Get all values from columns in sprites. \end{DoxyCompactList}\item 
+void \hyperlink{classsql_ac24a3682f7478f78508e3e433b637407}{set\+\_\+new\+\_\+map} (std\+::string map\+\_\+name, int background\+\_\+music)
+\begin{DoxyCompactList}\small\item\em Create new map. \end{DoxyCompactList}\item 
+void \hyperlink{classsql_a4c6195e2934d72569b45041039a2be63}{save\+\_\+tiles} (std\+::string tile\+\_\+path, int pos\+\_\+x, int pos\+\_\+y, std\+::string map\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Saves the tiles in the database. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a29fe43df701460704744049aec28d58e}{get\+\_\+available\+\_\+levels} ()
+\begin{DoxyCompactList}\small\item\em Get the names of all levels in the database. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a9928c456c632f88d19cce26b8165bd6f}{get\+\_\+level\+\_\+ids} ()
+\begin{DoxyCompactList}\small\item\em Get the ID\textquotesingle{}s of all levels in the database. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \hyperlink{classsql_a1dd21fbf729e949d804ba5509af2b295}{get\+\_\+level\+\_\+object\+\_\+value} (std\+::string level\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Get all object values of a level. \end{DoxyCompactList}\item 
+sf\+::\+Int\+Rect \hyperlink{classsql_af126860a2afcf82e53c9f895577bab76}{get\+\_\+collision\+\_\+objects} (std\+::vector$<$ std\+::string $>$ objects)
+\begin{DoxyCompactList}\small\item\em Get the not walkable objects. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \hyperlink{classsql_a5eb7fea00a56fe6ba33f602871798bc8}{get\+\_\+level\+\_\+background\+\_\+value} (std\+::string level\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Get all background values of a level. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_ae959c21f71c8f9b1df8bde932a6c484b}{get\+\_\+music} (std\+::string map\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Get music of consisting map. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a59249e218b1bb9d811c50b5615312eaf}{get\+\_\+quest\+\_\+text} (std\+::string quest\+\_\+id, std\+::string part)
+\begin{DoxyCompactList}\small\item\em Get quest part text. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_a9f75a32a77a498b1a328a53ade518ce7}{get\+\_\+quest\+\_\+parts} (std\+::string quest\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Get all part numbers from quest. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{classsql_ad4d8bdf41eede1ae1363d0be8a2f60a9}{get\+\_\+result} ()
+\begin{DoxyCompactList}\small\item\em Get saved result. \end{DoxyCompactList}\item 
+static void \hyperlink{classsql_ad28cc81f2ee03c6a15d26ff216353d71}{set\+\_\+result} (char $\ast$\hyperlink{button__actions_8hpp_ad0da36b2558901e21e7a30f6c227a45e}{x})
+\begin{DoxyCompactList}\small\item\em Save result to static value. \end{DoxyCompactList}\item 
+static int \hyperlink{classsql_aff61710f28dd54827b67a99c24fbdb0d}{callback} (void $\ast$Not\+Used, int argc, char $\ast$$\ast$argv, char $\ast$$\ast$az\+Col\+Name)
+\begin{DoxyCompactList}\small\item\em Get value from database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsql_a4bdab1846b3789ddd83521d5eec019b5}{check\+\_\+query\+\_\+request} ()
+\begin{DoxyCompactList}\small\item\em Checks if query is executed correctly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sqlite3 $\ast$ \hyperlink{classsql_a16d6812a301ce81d856e7d5800bf20fd}{database}
+\item 
+std\+::string \hyperlink{classsql_aa0b79c68df90d2e2a3f829e25a44b878}{database\+\_\+path} = \char`\"{}../../bin/database.\+db\char`\"{}
+\item 
+int \hyperlink{classsql_a1ad7137a182503f7676b53f6fa2786ed}{rc}
+\item 
+int \hyperlink{classsql_a9eacc4ecb1f8cb870c2234adba85d31f}{connection}
+\item 
+char $\ast$ \hyperlink{classsql_a2d17635b5b4cf20d48ba354e2330b734}{\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+E\+S\+S\+A\+GE} = 0
+\item 
+const char $\ast$ \hyperlink{classsql_a88d67d82b4bd8be3d1e31719a0d8f35e}{data} = \char`\"{}Callback function called\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file sql.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsql_ac9b186df2a51d7eda72cd4a9c34c0624}\label{classsql_ac9b186df2a51d7eda72cd4a9c34c0624}} 
+\index{sql@{sql}!sql@{sql}}
+\index{sql@{sql}!sql@{sql}}
+\subsubsection{\texorpdfstring{sql()}{sql()}}
+{\footnotesize\ttfamily sql\+::sql (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file sql.\+cpp.
+
+\mbox{\Hypertarget{classsql_a67805540e55f3cfb1849178023aa39b2}\label{classsql_a67805540e55f3cfb1849178023aa39b2}} 
+\index{sql@{sql}!````~sql@{$\sim$sql}}
+\index{````~sql@{$\sim$sql}!sql@{sql}}
+\subsubsection{\texorpdfstring{$\sim$sql()}{~sql()}}
+{\footnotesize\ttfamily sql\+::$\sim$sql (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file sql.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsql_a94c4df2d61461e99d3767f1b37163c2f}\label{classsql_a94c4df2d61461e99d3767f1b37163c2f}} 
+\index{sql@{sql}!add\+\_\+data@{add\+\_\+data}}
+\index{add\+\_\+data@{add\+\_\+data}!sql@{sql}}
+\subsubsection{\texorpdfstring{add\+\_\+data()}{add\_data()}}
+{\footnotesize\ttfamily void sql\+::add\+\_\+data (\begin{DoxyParamCaption}\item[{char $\ast$}]{table,  }\item[{const char $\ast$}]{values }\end{DoxyParamCaption})}
+
+
+
+Add a new value to database. 
+
+This method adds a new value in the given table of the database.~\newline
+The parameter \char`\"{}value\char`\"{} is consists all the column values except the id,~\newline
+because the this value has auto increment.
+
+\subsubsection*{Parameters\+: }
+
+table \+: char$\ast$ ~\newline
+-\/$>$ Table name in the database
+
+values \+: char$\ast$ ~\newline
+-\/$>$ column values to add in the database.
+
+\subsubsection*{Example\+: }
+
+add\+\_\+data(\char`\"{}sprites\char`\"{},\char`\"{}\textquotesingle{}../../bin/objects/new\+\_\+pic.\+png\textquotesingle{}, new pic , 64 , 64\char`\"{})~\newline
+There is now a new record in the database with the given values. 
+
+Definition at line 74 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a94c4df2d61461e99d3767f1b37163c2f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_af0e753f3af81ff1ff7f7582dcea4b0ed}\label{classsql_af0e753f3af81ff1ff7f7582dcea4b0ed}} 
+\index{sql@{sql}!add\+\_\+item\+\_\+to\+\_\+inventory@{add\+\_\+item\+\_\+to\+\_\+inventory}}
+\index{add\+\_\+item\+\_\+to\+\_\+inventory@{add\+\_\+item\+\_\+to\+\_\+inventory}!sql@{sql}}
+\subsubsection{\texorpdfstring{add\+\_\+item\+\_\+to\+\_\+inventory()}{add\_item\_to\_inventory()}}
+{\footnotesize\ttfamily void sql\+::add\+\_\+item\+\_\+to\+\_\+inventory (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Add an item to the players inventory. 
+
+This function will give the player an item that will be stored in the inventory table in the database.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+item\+\_\+name \+: std\+::string -\/$>$ The name of the item that has to be given
+
+\subsubsection*{Example\+: }
+
+add\+\_\+item\+\_\+to\+\_\+inventory(\char`\"{}1\char`\"{}); -\/$>$ Adds a banana to the users inventory 
+
+Definition at line 83 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_af0e753f3af81ff1ff7f7582dcea4b0ed_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_af0e753f3af81ff1ff7f7582dcea4b0ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_aff61710f28dd54827b67a99c24fbdb0d}\label{classsql_aff61710f28dd54827b67a99c24fbdb0d}} 
+\index{sql@{sql}!callback@{callback}}
+\index{callback@{callback}!sql@{sql}}
+\subsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily int sql\+::callback (\begin{DoxyParamCaption}\item[{void $\ast$}]{Not\+Used,  }\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{char $\ast$$\ast$}]{az\+Col\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get value from database. 
+
+This method is used to get the value from the database. What the function does is explained in the sqlite3.\+hpp file. In this class we use it to store the found data in a global static value. 
+
+Definition at line 29 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_aff61710f28dd54827b67a99c24fbdb0d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_aff61710f28dd54827b67a99c24fbdb0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_aa6a8501373e0cd73d48bee389353d6ea}\label{classsql_aa6a8501373e0cd73d48bee389353d6ea}} 
+\index{sql@{sql}!change\+\_\+data@{change\+\_\+data}}
+\index{change\+\_\+data@{change\+\_\+data}!sql@{sql}}
+\subsubsection{\texorpdfstring{change\+\_\+data()}{change\_data()}}
+{\footnotesize\ttfamily void sql\+::change\+\_\+data (\begin{DoxyParamCaption}\item[{char $\ast$}]{table,  }\item[{char $\ast$}]{condition1,  }\item[{char $\ast$}]{condition2,  }\item[{char $\ast$}]{columnname,  }\item[{char $\ast$}]{new\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Change values in the database. 
+
+This method overwrites data in the database, where the value of the given column meets the condition values.
+
+\subsubsection*{Parameters\+: }
+
+table \+: char$\ast$ ~\newline
+-\/$>$ Table name in the database
+
+condition1 \+: char$\ast$ ~\newline
+-\/$>$ First condition of the Where statement in the S\+QL query.
+
+condition2 \+: char$\ast$ ~\newline
+-\/$>$ Second condition of the Where statement in the S\+QL query.
+
+columnname \+: char$\ast$ ~\newline
+-\/$>$ Column name in the database
+
+new\+\_\+value \+: char$\ast$ ~\newline
+-\/$>$ New value to be set in the specified column value
+
+\subsubsection*{Example\+: }
+
+change\+\_\+data(\char`\"{}player\char`\"{},\char`\"{}id\char`\"{},\char`\"{}1\char`\"{},\char`\"{}name\char`\"{},\char`\"{}pieter\char`\"{})~\newline
+The name of the player is now \char`\"{}pieter\char`\"{} instead of \char`\"{}arno\char`\"{} 
+
+Definition at line 93 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_aa6a8501373e0cd73d48bee389353d6ea_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a4bdab1846b3789ddd83521d5eec019b5}\label{classsql_a4bdab1846b3789ddd83521d5eec019b5}} 
+\index{sql@{sql}!check\+\_\+query\+\_\+request@{check\+\_\+query\+\_\+request}}
+\index{check\+\_\+query\+\_\+request@{check\+\_\+query\+\_\+request}!sql@{sql}}
+\subsubsection{\texorpdfstring{check\+\_\+query\+\_\+request()}{check\_query\_request()}}
+{\footnotesize\ttfamily void sql\+::check\+\_\+query\+\_\+request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checks if query is executed correctly. 
+
+This method checks if the executed query is correctly procesed.~\newline
+If that is not the case this function will print an error on the command prompt.~\newline
+
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classsql_a4bdab1846b3789ddd83521d5eec019b5}{check\+\_\+query\+\_\+request()}~\newline
+{\itshape no error, so do nothing} 
+
+Definition at line 36 of file sql.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a4bdab1846b3789ddd83521d5eec019b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a53dd323de395c13534e63a3482190777}\label{classsql_a53dd323de395c13534e63a3482190777}} 
+\index{sql@{sql}!execute\+\_\+query\+\_\+with\+\_\+return@{execute\+\_\+query\+\_\+with\+\_\+return}}
+\index{execute\+\_\+query\+\_\+with\+\_\+return@{execute\+\_\+query\+\_\+with\+\_\+return}!sql@{sql}}
+\subsubsection{\texorpdfstring{execute\+\_\+query\+\_\+with\+\_\+return()}{execute\_query\_with\_return()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::execute\+\_\+query\+\_\+with\+\_\+return (\begin{DoxyParamCaption}\item[{const char $\ast$}]{to\+\_\+be\+\_\+executed }\end{DoxyParamCaption})}
+
+
+
+Execute a query. 
+
+This method executes a given query that has a return value.~\newline
+ \subsubsection*{Parameters\+: }
+
+to\+\_\+be\+\_\+executed \+: const char$\ast$ ~\newline
+-\/$>$ Query to be executed
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+execute\+\_\+query\+\_\+with\+\_\+return(\char`\"{}\+S\+E\+L\+E\+C\+T name F\+R\+O\+M player W\+H\+E\+R\+E id == 1;\char`\"{})~\newline
+Return\+: \{\char`\"{}arno\char`\"{}\} 
+
+Definition at line 48 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a53dd323de395c13534e63a3482190777_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a53dd323de395c13534e63a3482190777_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_ac70e1da6d9e49f114bcf639fd1e6f86c}\label{classsql_ac70e1da6d9e49f114bcf639fd1e6f86c}} 
+\index{sql@{sql}!execute\+\_\+query\+\_\+without\+\_\+return@{execute\+\_\+query\+\_\+without\+\_\+return}}
+\index{execute\+\_\+query\+\_\+without\+\_\+return@{execute\+\_\+query\+\_\+without\+\_\+return}!sql@{sql}}
+\subsubsection{\texorpdfstring{execute\+\_\+query\+\_\+without\+\_\+return()}{execute\_query\_without\_return()}}
+{\footnotesize\ttfamily void sql\+::execute\+\_\+query\+\_\+without\+\_\+return (\begin{DoxyParamCaption}\item[{const char $\ast$}]{to\+\_\+be\+\_\+executed }\end{DoxyParamCaption})}
+
+
+
+Execute a query. 
+
+This method executes a given query that has no return value.~\newline
+ \subsubsection*{Parameters\+: }
+
+to\+\_\+be\+\_\+executed \+: const char$\ast$ ~\newline
+-\/$>$ Query to be executed
+
+\subsubsection*{Example\+: }
+
+execute\+\_\+query\+\_\+without\+\_\+return(\char`\"{}\+I\+N\+S\+E\+R\+T I\+N\+T\+O sprites V\+A\+L\+U\+E\+S(\+N\+U\+L\+L, \textquotesingle{}../../bin/objects/new\+\_\+pic.\+png\textquotesingle{}, new pic , 64 , 64);\char`\"{})~\newline
+There is now a new record in the database with the given values. 
+
+Definition at line 43 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ac70e1da6d9e49f114bcf639fd1e6f86c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ac70e1da6d9e49f114bcf639fd1e6f86c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a29fe43df701460704744049aec28d58e}\label{classsql_a29fe43df701460704744049aec28d58e}} 
+\index{sql@{sql}!get\+\_\+available\+\_\+levels@{get\+\_\+available\+\_\+levels}}
+\index{get\+\_\+available\+\_\+levels@{get\+\_\+available\+\_\+levels}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+available\+\_\+levels()}{get\_available\_levels()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+available\+\_\+levels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the names of all levels in the database. 
+
+This method returns all names of the levels that are in the database.~\newline
+This can be usefull so you can know if a level already exists. ~\newline
+
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classsql_a29fe43df701460704744049aec28d58e}{get\+\_\+available\+\_\+levels()}~\newline
+-\/$>$ \{\char`\"{}level1\char`\"{},\char`\"{}level2\char`\"{},\char`\"{}level5\char`\"{}\} 
+
+Definition at line 389 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a29fe43df701460704744049aec28d58e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a29fe43df701460704744049aec28d58e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_af126860a2afcf82e53c9f895577bab76}\label{classsql_af126860a2afcf82e53c9f895577bab76}} 
+\index{sql@{sql}!get\+\_\+collision\+\_\+objects@{get\+\_\+collision\+\_\+objects}}
+\index{get\+\_\+collision\+\_\+objects@{get\+\_\+collision\+\_\+objects}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+collision\+\_\+objects()}{get\_collision\_objects()}}
+{\footnotesize\ttfamily sf\+::\+Int\+Rect sql\+::get\+\_\+collision\+\_\+objects (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{objects }\end{DoxyParamCaption})}
+
+
+
+Get the not walkable objects. 
+
+This method returns the hitbox of an object that is not walkable.~\newline
+The hitbox can be used to calculate the collision detection on. ~\newline
+ \subsubsection*{Parameters\+: }
+
+objects \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ values of one opbject.
+
+\subsubsection*{Return\+: }
+
+collision\+\_\+rects \+: sf\+::\+Int\+Rect ~\newline
+-\/$>$ Hitbox of the not walkable object.~\newline
+
+
+\subsubsection*{Example\+: }
+
+get\+\_\+collision\+\_\+objects(\{...\}) ~\newline
+-\/$>$ (100,100,50,50) 
+
+Definition at line 502 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_af126860a2afcf82e53c9f895577bab76_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_af126860a2afcf82e53c9f895577bab76_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a1cb74ab7343ef603490518715297be83}\label{classsql_a1cb74ab7343ef603490518715297be83}} 
+\index{sql@{sql}!get\+\_\+data@{get\+\_\+data}}
+\index{get\+\_\+data@{get\+\_\+data}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+data()}{get\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+data (\begin{DoxyParamCaption}\item[{char $\ast$}]{table,  }\item[{char $\ast$}]{columnname }\end{DoxyParamCaption})}
+
+
+
+Get data from a column in a table in the database. 
+
+This method gets the data from a column in a table in the database.~\newline
+ \subsubsection*{Parameters\+: }
+
+table \+: char$\ast$ ~\newline
+-\/$>$ Table name in the database
+
+column \+: char$\ast$ ~\newline
+-\/$>$ Column name in the database
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+Get\+\_\+data(\char`\"{}player\char`\"{}, \char`\"{}level\char`\"{}) ~\newline
+return\+: \{\char`\"{}1\char`\"{}\}. 
+
+Definition at line 66 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a1cb74ab7343ef603490518715297be83_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a1cb74ab7343ef603490518715297be83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_afbf7d36239ee07a23d06c72f2fd1b93c}\label{classsql_afbf7d36239ee07a23d06c72f2fd1b93c}} 
+\index{sql@{sql}!get\+\_\+data@{get\+\_\+data}}
+\index{get\+\_\+data@{get\+\_\+data}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+data()}{get\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+data (\begin{DoxyParamCaption}\item[{char $\ast$}]{table,  }\item[{char $\ast$}]{columnname,  }\item[{char $\ast$}]{condition1,  }\item[{char $\ast$}]{condition2 }\end{DoxyParamCaption})}
+
+
+
+Get data from a column in a table in the database with condition. 
+
+This method gets the data from a table in the database,~\newline
+where the value of the given column meets the condition values.
+
+\subsubsection*{Parameters\+: }
+
+table \+: char$\ast$ ~\newline
+-\/$>$ Table name in the database
+
+column \+: char$\ast$ ~\newline
+-\/$>$ Column name in the database
+
+condition1 \+: char$\ast$ ~\newline
+-\/$>$ First condition of the Where statement in the S\+QL query.
+
+condition2 \+: char$\ast$ ~\newline
+-\/$>$ Second condition of the Where statement in the S\+QL query.
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+Get\+\_\+data(\char`\"{}player\char`\"{}, \char`\"{}name\char`\"{},\char`\"{}id\char`\"{},\char`\"{}1\char`\"{}) ~\newline
+return\+: \{\char`\"{}arno\char`\"{}\}. 
+
+Definition at line 57 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_afbf7d36239ee07a23d06c72f2fd1b93c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a62cd4910a9310621ca22fb3c322f52a4}\label{classsql_a62cd4910a9310621ca22fb3c322f52a4}} 
+\index{sql@{sql}!get\+\_\+in\+\_\+game\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory@{get\+\_\+in\+\_\+game\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory}}
+\index{get\+\_\+in\+\_\+game\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory@{get\+\_\+in\+\_\+game\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+in\+\_\+game\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory()}{get\_in\_game\_name\_from\_id\_inventory()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+in\+\_\+game\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Get the name from an item. 
+
+This function returns the name of an item by using its ID.~\newline
+ \subsubsection*{Parameters\+: }
+
+item\+\_\+id \+: std\+::string ~\newline
+-\/$>$ The ID of the item.
+
+\subsubsection*{Return\+: }
+
+name \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ The in game name of the requested item.
+
+\subsubsection*{Example\+: }
+
+get\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory(\char`\"{}1\char`\"{}) ~\newline
+-\/$>$ Tokato Gloves 
+
+Definition at line 144 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a62cd4910a9310621ca22fb3c322f52a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a62cd4910a9310621ca22fb3c322f52a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a7f818b967453b1ae15ce4c5b28cf4765}\label{classsql_a7f818b967453b1ae15ce4c5b28cf4765}} 
+\index{sql@{sql}!get\+\_\+inventory@{get\+\_\+inventory}}
+\index{get\+\_\+inventory@{get\+\_\+inventory}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+inventory()}{get\_inventory()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the inventory. 
+
+This function retrieves the inventory and its values and puts it into a vector. ~\newline
+
+
+\subsubsection*{Return\+: }
+
+inventory\+\_\+vector \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ This vector contains the items in the inventory
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classsql_a7f818b967453b1ae15ce4c5b28cf4765}{get\+\_\+inventory()} ~\newline
+-\/$>$ \{\char`\"{}1\char`\"{}, \char`\"{}2\char`\"{}, \char`\"{}2\char`\"{}, \char`\"{}3\char`\"{}\} 
+
+Definition at line 114 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a7f818b967453b1ae15ce4c5b28cf4765_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a7f818b967453b1ae15ce4c5b28cf4765_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a5eb7fea00a56fe6ba33f602871798bc8}\label{classsql_a5eb7fea00a56fe6ba33f602871798bc8}} 
+\index{sql@{sql}!get\+\_\+level\+\_\+background\+\_\+value@{get\+\_\+level\+\_\+background\+\_\+value}}
+\index{get\+\_\+level\+\_\+background\+\_\+value@{get\+\_\+level\+\_\+background\+\_\+value}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+level\+\_\+background\+\_\+value()}{get\_level\_background\_value()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ sql\+::get\+\_\+level\+\_\+background\+\_\+value (\begin{DoxyParamCaption}\item[{std\+::string}]{level\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Get all background values of a level. 
+
+This method returns the values of all background tiles that are assigned to the given level ID.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+level\+\_\+id \+: std\+::string ~\newline
+-\/$>$ id of the level from what the background tiles have to be loaded.
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::map$<$ std\+::string, std\+::vector$<$std\+::string$>$ $>$ ~\newline
+-\/$>$ Map that contains the asked data in the form of strings with name as key.~\newline
+
+
+\subsubsection*{Example\+: }
+
+get\+\_\+level\+\_\+object\+\_\+value(\char`\"{}level1\char`\"{}) ~\newline
+\{\char`\"{}road1\char`\"{}\+:\{\char`\"{}../../bin/tiles/example.\+png\char`\"{},\char`\"{}120\char`\"{},\char`\"{}150\char`\"{},\char`\"{}1\char`\"{}\}\} 
+
+Definition at line 452 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a5eb7fea00a56fe6ba33f602871798bc8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a5eb7fea00a56fe6ba33f602871798bc8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a9928c456c632f88d19cce26b8165bd6f}\label{classsql_a9928c456c632f88d19cce26b8165bd6f}} 
+\index{sql@{sql}!get\+\_\+level\+\_\+ids@{get\+\_\+level\+\_\+ids}}
+\index{get\+\_\+level\+\_\+ids@{get\+\_\+level\+\_\+ids}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+level\+\_\+ids()}{get\_level\_ids()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+level\+\_\+ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the ID\textquotesingle{}s of all levels in the database. 
+
+This method returns all ID\textquotesingle{}s of the levels that are in the database.~\newline
+
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classsql_a9928c456c632f88d19cce26b8165bd6f}{get\+\_\+level\+\_\+ids()}~\newline
+-\/$>$ \{\char`\"{}1\char`\"{},\char`\"{}2\char`\"{},\char`\"{}5\char`\"{}\} 
+
+Definition at line 394 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a9928c456c632f88d19cce26b8165bd6f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a9928c456c632f88d19cce26b8165bd6f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a1dd21fbf729e949d804ba5509af2b295}\label{classsql_a1dd21fbf729e949d804ba5509af2b295}} 
+\index{sql@{sql}!get\+\_\+level\+\_\+object\+\_\+value@{get\+\_\+level\+\_\+object\+\_\+value}}
+\index{get\+\_\+level\+\_\+object\+\_\+value@{get\+\_\+level\+\_\+object\+\_\+value}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+level\+\_\+object\+\_\+value()}{get\_level\_object\_value()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ sql\+::get\+\_\+level\+\_\+object\+\_\+value (\begin{DoxyParamCaption}\item[{std\+::string}]{level\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Get all object values of a level. 
+
+This method returns the values of all objects that are assigned to the given level ID.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+level\+\_\+id \+: std\+::string ~\newline
+-\/$>$ id of the level from what the objects have to be loaded.
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::map$<$std\+::string, std\+::vector$<$std\+::string$>$$>$ ~\newline
+-\/$>$ map that contains the asked data in the form of strings with name as key.~\newline
+
+
+\subsubsection*{Example\+: }
+
+get\+\_\+level\+\_\+object\+\_\+value(\char`\"{}level1\char`\"{}) ~\newline
+-\/$>$ \{\char`\"{}road1\char`\"{}\+:\{\char`\"{}../../bin/objects/example.\+png\char`\"{},\char`\"{}120\char`\"{},\char`\"{}150\char`\"{},\char`\"{}1\char`\"{}\}\} 
+
+Definition at line 401 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a1dd21fbf729e949d804ba5509af2b295_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a1dd21fbf729e949d804ba5509af2b295_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_ae959c21f71c8f9b1df8bde932a6c484b}\label{classsql_ae959c21f71c8f9b1df8bde932a6c484b}} 
+\index{sql@{sql}!get\+\_\+music@{get\+\_\+music}}
+\index{get\+\_\+music@{get\+\_\+music}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+music()}{get\_music()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+music (\begin{DoxyParamCaption}\item[{std\+::string}]{map\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Get music of consisting map. 
+
+This method returns the path of a music file what is the background music of a level. ~\newline
+The values are searched by the ID of the map. ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+map\+\_\+id \+: std\+::string ~\newline
+-\/$>$ ID of the level where the music file is requested.
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ list that contains the asked data in the form of strings.~\newline
+
+
+\subsubsection*{Example\+: }
+
+get\+\_\+music(\char`\"{}17\char`\"{}) ~\newline
+-\/$>$ ../../bin/music/x\+\_\+gon\+\_\+give\+\_\+it\+\_\+to\+\_\+ya.wav 
+
+Definition at line 591 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ae959c21f71c8f9b1df8bde932a6c484b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ae959c21f71c8f9b1df8bde932a6c484b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a7b49bcf5ac10f6421a5ecd62865e3316}\label{classsql_a7b49bcf5ac10f6421a5ecd62865e3316}} 
+\index{sql@{sql}!get\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory@{get\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory}}
+\index{get\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory@{get\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory()}{get\_name\_from\_id\_inventory()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Get the name from an item. 
+
+This function returns the name of an item by using its ID.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+item\+\_\+id \+: std\+::string ~\newline
+-\/$>$ The ID of the item. ~\newline
+
+
+\subsubsection*{Return\+: }
+
+name \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ The name of the requested item.
+
+\subsubsection*{Example\+: }
+
+get\+\_\+name\+\_\+from\+\_\+id\+\_\+inventory(\char`\"{}1\char`\"{}) ~\newline
+-\/$>$ tokato\+\_\+gloves 
+
+Definition at line 124 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a7b49bcf5ac10f6421a5ecd62865e3316_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classsql_a7b49bcf5ac10f6421a5ecd62865e3316_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_af04403a0cab4ee13a6f70b396e5b3a20}\label{classsql_af04403a0cab4ee13a6f70b396e5b3a20}} 
+\index{sql@{sql}!get\+\_\+npc\+\_\+value@{get\+\_\+npc\+\_\+value}}
+\index{get\+\_\+npc\+\_\+value@{get\+\_\+npc\+\_\+value}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+npc\+\_\+value()}{get\_npc\_value()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+npc\+\_\+value (\begin{DoxyParamCaption}\item[{std\+::string}]{npc\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Get all values from columns in N\+PC. 
+
+This method returns all column values of a N\+PC.~\newline
+ The order of the returning values in the vector is\+:~\newline
+ index $\vert$ name of value ~\newline
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- ~\newline
+ 0 $\vert$ name ~\newline
+ 1 $\vert$ level ~\newline
+ 2 $\vert$ class\+\_\+id ~\newline
+ 3 $\vert$ sprite\+\_\+id ~\newline
+ 4 $\vert$ position\+\_\+x ~\newline
+ 5 $\vert$ position\+\_\+y ~\newline
+ 6 $\vert$ quest\+\_\+id ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+npc\+\_\+id \+: std\+::string ~\newline
+-\/$>$ ID of the N\+PC from whom the values are asked.
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+get\+\_\+npc\+\_\+value(\char`\"{}1\char`\"{})~\newline
+-\/$>$ \{\char`\"{}arno\char`\"{}\} 
+
+Definition at line 183 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_af04403a0cab4ee13a6f70b396e5b3a20_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_af04403a0cab4ee13a6f70b396e5b3a20_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_ae854372bac3fc5e681287e3cbf5b03de}\label{classsql_ae854372bac3fc5e681287e3cbf5b03de}} 
+\index{sql@{sql}!get\+\_\+number\+\_\+of\+\_\+npcs@{get\+\_\+number\+\_\+of\+\_\+npcs}}
+\index{get\+\_\+number\+\_\+of\+\_\+npcs@{get\+\_\+number\+\_\+of\+\_\+npcs}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+number\+\_\+of\+\_\+npcs()}{get\_number\_of\_npcs()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+number\+\_\+of\+\_\+npcs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all id\textquotesingle{}s of the N\+PC\textquotesingle{}s. 
+
+This method returns all id values of the N\+PC table.~\newline
+The lengths of the vector is equal to how many N\+PC\textquotesingle{}s there are in the table.~\newline
+
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classsql_ae854372bac3fc5e681287e3cbf5b03de}{get\+\_\+number\+\_\+of\+\_\+npcs()}~\newline
+-\/$>$ \{\char`\"{}1\char`\"{},\char`\"{}2\char`\"{},\char`\"{}5\char`\"{}\} 
+
+Definition at line 178 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ae854372bac3fc5e681287e3cbf5b03de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ae854372bac3fc5e681287e3cbf5b03de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a0ea1aa772cb693be29da61c6cadffd86}\label{classsql_a0ea1aa772cb693be29da61c6cadffd86}} 
+\index{sql@{sql}!get\+\_\+object\+\_\+sprite\+\_\+ids@{get\+\_\+object\+\_\+sprite\+\_\+ids}}
+\index{get\+\_\+object\+\_\+sprite\+\_\+ids@{get\+\_\+object\+\_\+sprite\+\_\+ids}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+object\+\_\+sprite\+\_\+ids()}{get\_object\_sprite\_ids()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+object\+\_\+sprite\+\_\+ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get id\textquotesingle{}s from objects and tiles sprites. 
+
+This method returns all sprite id values of tiles and objects.~\newline
+
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classsql_a0ea1aa772cb693be29da61c6cadffd86}{get\+\_\+object\+\_\+sprite\+\_\+ids()}~\newline
+-\/$>$ \{\char`\"{}1\char`\"{},\char`\"{}2\char`\"{},\char`\"{}5\char`\"{}\} 
+
+Definition at line 226 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a0ea1aa772cb693be29da61c6cadffd86_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a0ea1aa772cb693be29da61c6cadffd86_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a2466fe5b0ec24e98190ee5763a4a69d1}\label{classsql_a2466fe5b0ec24e98190ee5763a4a69d1}} 
+\index{sql@{sql}!get\+\_\+object\+\_\+sprite\+\_\+value@{get\+\_\+object\+\_\+sprite\+\_\+value}}
+\index{get\+\_\+object\+\_\+sprite\+\_\+value@{get\+\_\+object\+\_\+sprite\+\_\+value}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+object\+\_\+sprite\+\_\+value()}{get\_object\_sprite\_value()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+object\+\_\+sprite\+\_\+value (\begin{DoxyParamCaption}\item[{std\+::string}]{object\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Get all values from columns in sprites. 
+
+This method returns all column values of a a sprite.~\newline
+The order of the returning values in the vector is\+:~\newline
+ index $\vert$ name of value ~\newline
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- ~\newline
+ 0 $\vert$ path ~\newline
+ 1 $\vert$ name ~\newline
+ 2 $\vert$ sprite\+\_\+size\+\_\+x ~\newline
+ 3 $\vert$ sprite\+\_\+size\+\_\+y ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+object\+\_\+id \+: std\+::string ~\newline
+-\/$>$ ID of the object/tile from what the values are asked.
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+get\+\_\+object\+\_\+sprite\+\_\+value(\char`\"{}1\char`\"{}) ~\newline
+-\/$>$ \{\char`\"{}../../bin/objects/road1.\+png\char`\"{}, \char`\"{}road1\char`\"{},\char`\"{}32\char`\"{},\char`\"{}32\char`\"{}\} 
+
+Definition at line 239 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a2466fe5b0ec24e98190ee5763a4a69d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a2466fe5b0ec24e98190ee5763a4a69d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a370d018617316ff6489cbb97565b7af9}\label{classsql_a370d018617316ff6489cbb97565b7af9}} 
+\index{sql@{sql}!get\+\_\+player\+\_\+sprite@{get\+\_\+player\+\_\+sprite}}
+\index{get\+\_\+player\+\_\+sprite@{get\+\_\+player\+\_\+sprite}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+player\+\_\+sprite()}{get\_player\_sprite()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+player\+\_\+sprite (\begin{DoxyParamCaption}\item[{int}]{save }\end{DoxyParamCaption})}
+
+
+
+Get sprite sheet of the player. 
+
+This method returns the sprite sheet of the player.~\newline
+The save is equal the the player id in the database,~\newline
+this is because the player can have multiple saved games.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+save \+: int ~\newline
+-\/$>$ Save of the player and player id in the database.
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+get\+\_\+player\+\_\+sprite(1)~\newline
+-\/$>$ \{\char`\"{}../../bin/sprite\+\_\+sheets/player\+\_\+sprite.\+png\char`\"{}\} 
+
+Definition at line 166 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a370d018617316ff6489cbb97565b7af9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a370d018617316ff6489cbb97565b7af9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_ae560c01f2e8e57cee454ecd8e38616eb}\label{classsql_ae560c01f2e8e57cee454ecd8e38616eb}} 
+\index{sql@{sql}!get\+\_\+player\+\_\+value@{get\+\_\+player\+\_\+value}}
+\index{get\+\_\+player\+\_\+value@{get\+\_\+player\+\_\+value}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+player\+\_\+value()}{get\_player\_value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+player\+\_\+value (\begin{DoxyParamCaption}\item[{int}]{save,  }\item[{std\+::string}]{variable\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Get value of a column from the player. 
+
+This method returns a column value of the player.~\newline
+The save is equal the the player id in the database,~\newline
+this is because the player can have multiple saved games.~\newline
+ \subsubsection*{Parameters\+: }
+
+save \+: int ~\newline
+-\/$>$ Save of the player and player id in the database.
+
+variable\+\_\+name \+: std\+::string ~\newline
+-\/$>$ Columnname from what the value is requested.
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+get\+\_\+player\+\_\+value(1,\char`\"{}name\char`\"{})~\newline
+-\/$>$ \{\char`\"{}arno\char`\"{}\} 
+
+Definition at line 155 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ae560c01f2e8e57cee454ecd8e38616eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ae560c01f2e8e57cee454ecd8e38616eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a251f53bb3d5d98f821713a42212276e9}\label{classsql_a251f53bb3d5d98f821713a42212276e9}} 
+\index{sql@{sql}!get\+\_\+player\+\_\+value@{get\+\_\+player\+\_\+value}}
+\index{get\+\_\+player\+\_\+value@{get\+\_\+player\+\_\+value}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+player\+\_\+value()}{get\_player\_value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+player\+\_\+value (\begin{DoxyParamCaption}\item[{std\+::string}]{npc\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Get value of the player. 
+
+This method returns the value of a player.~\newline
+The player value is calculated on the player\+\_\+id.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+npc\+\_\+id \+: std\+::string ~\newline
+-\/$>$ Save of the player and player id in the database.
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+get\+\_\+player\+\_\+sprite(1)~\newline
+-\/$>$ \{\char`\"{}../../bin/sprite\+\_\+sheets/player\+\_\+sprite.\+png\char`\"{}\} 
+
+Definition at line 542 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a251f53bb3d5d98f821713a42212276e9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a9f75a32a77a498b1a328a53ade518ce7}\label{classsql_a9f75a32a77a498b1a328a53ade518ce7}} 
+\index{sql@{sql}!get\+\_\+quest\+\_\+parts@{get\+\_\+quest\+\_\+parts}}
+\index{get\+\_\+quest\+\_\+parts@{get\+\_\+quest\+\_\+parts}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+quest\+\_\+parts()}{get\_quest\_parts()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+quest\+\_\+parts (\begin{DoxyParamCaption}\item[{std\+::string}]{quest\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Get all part numbers from quest. 
+
+This method returns the numbers of quest parts of a quest. ~\newline
+The values are searched by the ID of the quest. ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+quest\+\_\+id \+: std\+::string ~\newline
+-\/$>$ ID of the quest from what the text is requested.~\newline
+
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ list that contains the asked data in the form of strings.~\newline
+
+
+\subsubsection*{Example\+: }
+
+get\+\_\+quest\+\_\+parts(\char`\"{}1\char`\"{}) ~\newline
+-\/$>$ \{\char`\"{}1\char`\"{},\char`\"{}3\char`\"{},\char`\"{}4\char`\"{},\char`\"{}5\char`\"{},\char`\"{}6\char`\"{}\} 
+
+Definition at line 636 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a9f75a32a77a498b1a328a53ade518ce7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a9f75a32a77a498b1a328a53ade518ce7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a59249e218b1bb9d811c50b5615312eaf}\label{classsql_a59249e218b1bb9d811c50b5615312eaf}} 
+\index{sql@{sql}!get\+\_\+quest\+\_\+text@{get\+\_\+quest\+\_\+text}}
+\index{get\+\_\+quest\+\_\+text@{get\+\_\+quest\+\_\+text}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+quest\+\_\+text()}{get\_quest\_text()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+quest\+\_\+text (\begin{DoxyParamCaption}\item[{std\+::string}]{quest\+\_\+id,  }\item[{std\+::string}]{part }\end{DoxyParamCaption})}
+
+
+
+Get quest part text. 
+
+This method returns the text of a quest part. ~\newline
+The values are searched by the ID of the of the quest and the given part number. ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+quest\+\_\+id \+: std\+::string ~\newline
+-\/$>$ ID of the quest from what the text is requested.~\newline
+ part \+: std\+::string ~\newline
+-\/$>$ number of the part in the quest where the text is requested from. ~\newline
+
+
+\subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ list that contains the asked data in the form of strings.~\newline
+
+
+\subsubsection*{Example\+: }
+
+get\+\_\+quest\+\_\+text(\char`\"{}17\char`\"{}) ~\newline
+-\/$>$ \{\char`\"{}\+Hello.\char`\"{},\char`\"{}welcome\char`\"{}\} 
+
+Definition at line 607 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a59249e218b1bb9d811c50b5615312eaf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a59249e218b1bb9d811c50b5615312eaf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_ad4d8bdf41eede1ae1363d0be8a2f60a9}\label{classsql_ad4d8bdf41eede1ae1363d0be8a2f60a9}} 
+\index{sql@{sql}!get\+\_\+result@{get\+\_\+result}}
+\index{get\+\_\+result@{get\+\_\+result}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+result()}{get\_result()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get saved result. 
+
+This method returns the result that is stored in the global result value.~\newline
+the result value is a global and static because it is set by the callback function.~\newline
+ \subsubsection*{Return\+: }
+
+list\+\_\+of\+\_\+data \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ List that contains the asked data in the form of strings.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classsql_ad4d8bdf41eede1ae1363d0be8a2f60a9}{get\+\_\+result()}~\newline
+Return\+: \{\char`\"{}arno\char`\"{}\} 
+
+Definition at line 103 of file sql.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ad4d8bdf41eede1ae1363d0be8a2f60a9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a060764a845c3a26c99c6f15470df9634}\label{classsql_a060764a845c3a26c99c6f15470df9634}} 
+\index{sql@{sql}!get\+\_\+sprite\+\_\+inventory@{get\+\_\+sprite\+\_\+inventory}}
+\index{get\+\_\+sprite\+\_\+inventory@{get\+\_\+sprite\+\_\+inventory}!sql@{sql}}
+\subsubsection{\texorpdfstring{get\+\_\+sprite\+\_\+inventory()}{get\_sprite\_inventory()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ sql\+::get\+\_\+sprite\+\_\+inventory (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Get the sprite\+\_\+path from an item. 
+
+This function returns the name of an item by using its ID.~\newline
+ \subsubsection*{Parameters\+: }
+
+sprite\+\_\+path \+: std\+::string ~\newline
+-\/$>$ The ID of the item.
+
+\subsubsection*{Return\+: }
+
+sprite\+\_\+path \+: std\+::vector$<$std\+::string$>$ ~\newline
+-\/$>$ The sprite\+\_\+path of the requested item.
+
+\subsubsection*{Example\+: }
+
+get\+\_\+sprite\+\_\+inventory(\char`\"{}1\char`\"{}) ~\newline
+-\/$>$ \char`\"{}../../bin/objects/banana.\+gif\char`\"{} 
+
+Definition at line 134 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a060764a845c3a26c99c6f15470df9634_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a060764a845c3a26c99c6f15470df9634_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_a4c6195e2934d72569b45041039a2be63}\label{classsql_a4c6195e2934d72569b45041039a2be63}} 
+\index{sql@{sql}!save\+\_\+tiles@{save\+\_\+tiles}}
+\index{save\+\_\+tiles@{save\+\_\+tiles}!sql@{sql}}
+\subsubsection{\texorpdfstring{save\+\_\+tiles()}{save\_tiles()}}
+{\footnotesize\ttfamily void sql\+::save\+\_\+tiles (\begin{DoxyParamCaption}\item[{std\+::string}]{tile\+\_\+path,  }\item[{int}]{pos\+\_\+x,  }\item[{int}]{pos\+\_\+y,  }\item[{std\+::string}]{map\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Saves the tiles in the database. 
+
+This method saves a tile in the database.~\newline
+The tile values will be filterd if it is an object or an background tile.~\newline
+It is very importend that if you want to save the level, that the map\+\_\+name is spelled correctly.~\newline
+If the map\+\_\+name is not correctly spelled or if it doesn\textquotesingle{}t exist, the level cannot be saved. ~\newline
+The same counts for the tile path. ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+tile\+\_\+path \+: std\+::string ~\newline
+-\/$>$ path to the consisting image of the object/tile.
+
+pos\+\_\+x \+: int ~\newline
+-\/$>$ x position where the object/tile should be placed in the map.
+
+pos\+\_\+y \+: int ~\newline
+-\/$>$ y position where the object/tile should be placed in the map.
+
+map\+\_\+name \+: std\+::string ~\newline
+-\/$>$ name of the map where the object/tile will be placed in.
+
+\subsubsection*{Example\+: }
+
+save\+\_\+tiles(\char`\"{}../../bin/objects/example.\+png\char`\"{},10,10,\char`\"{}level1\char`\"{})~\newline
+This object is now saved in the objects table, ~\newline
+with a refference that is has to be placed in level1.~\newline
+
+
+Definition at line 293 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a4c6195e2934d72569b45041039a2be63_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_a4c6195e2934d72569b45041039a2be63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_ac24a3682f7478f78508e3e433b637407}\label{classsql_ac24a3682f7478f78508e3e433b637407}} 
+\index{sql@{sql}!set\+\_\+new\+\_\+map@{set\+\_\+new\+\_\+map}}
+\index{set\+\_\+new\+\_\+map@{set\+\_\+new\+\_\+map}!sql@{sql}}
+\subsubsection{\texorpdfstring{set\+\_\+new\+\_\+map()}{set\_new\_map()}}
+{\footnotesize\ttfamily void sql\+::set\+\_\+new\+\_\+map (\begin{DoxyParamCaption}\item[{std\+::string}]{map\+\_\+name,  }\item[{int}]{background\+\_\+music }\end{DoxyParamCaption})}
+
+
+
+Create new map. 
+
+This method creates a new record in the maps table.~\newline
+This record consists the map\+\_\+id, map name and the corresponding background music.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+map\+\_\+name \+: std\+::string ~\newline
+-\/$>$ name of the level that has to be created.
+
+background\+\_\+music \+: int ~\newline
+-\/$>$ id of the background music of the level.
+
+\subsubsection*{Example\+: }
+
+set\+\_\+new\+\_\+map(\char`\"{}level1\char`\"{},1)~\newline
+There is now a new maps record in the database,~\newline
+that has the name level1 with brackground\+\_\+id 1.~\newline
+
+
+Definition at line 279 of file sql.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ac24a3682f7478f78508e3e433b637407_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ac24a3682f7478f78508e3e433b637407_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsql_ad28cc81f2ee03c6a15d26ff216353d71}\label{classsql_ad28cc81f2ee03c6a15d26ff216353d71}} 
+\index{sql@{sql}!set\+\_\+result@{set\+\_\+result}}
+\index{set\+\_\+result@{set\+\_\+result}!sql@{sql}}
+\subsubsection{\texorpdfstring{set\+\_\+result()}{set\_result()}}
+{\footnotesize\ttfamily static void sql\+::set\+\_\+result (\begin{DoxyParamCaption}\item[{char $\ast$}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Save result to static value. 
+
+This method adds a new value, what is a result of an query,~\newline
+to the static string vector result.~\newline
+It does not overwrite it because there could be a result of multiple strings.~\newline
+This function is only called by the static callback function.~\newline
+ \subsubsection*{Parameters\+: }
+
+x \+: char$\ast$ ~\newline
+-\/$>$ Query result to add.
+
+\subsubsection*{Example\+: }
+
+set\+\_\+result(\char`\"{}arno\char`\"{})~\newline
+Last value in result is now \char`\"{}arno\char`\"{}. 
+
+Definition at line 321 of file sql.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ad28cc81f2ee03c6a15d26ff216353d71_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsql_ad28cc81f2ee03c6a15d26ff216353d71_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classsql_a2d17635b5b4cf20d48ba354e2330b734}\label{classsql_a2d17635b5b4cf20d48ba354e2330b734}} 
+\index{sql@{sql}!\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+E\+S\+S\+A\+GE@{\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+E\+S\+S\+A\+GE}}
+\index{\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+E\+S\+S\+A\+GE@{\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+E\+S\+S\+A\+GE}!sql@{sql}}
+\subsubsection{\texorpdfstring{\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+E\+S\+S\+A\+GE}{\_ERROR\_MESSAGE}}
+{\footnotesize\ttfamily char$\ast$ sql\+::\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+E\+S\+S\+A\+GE = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 21 of file sql.\+hpp.
+
+\mbox{\Hypertarget{classsql_a9eacc4ecb1f8cb870c2234adba85d31f}\label{classsql_a9eacc4ecb1f8cb870c2234adba85d31f}} 
+\index{sql@{sql}!connection@{connection}}
+\index{connection@{connection}!sql@{sql}}
+\subsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily int sql\+::connection\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file sql.\+hpp.
+
+\mbox{\Hypertarget{classsql_a88d67d82b4bd8be3d1e31719a0d8f35e}\label{classsql_a88d67d82b4bd8be3d1e31719a0d8f35e}} 
+\index{sql@{sql}!data@{data}}
+\index{data@{data}!sql@{sql}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily const char$\ast$ sql\+::data = \char`\"{}Callback function called\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 22 of file sql.\+hpp.
+
+\mbox{\Hypertarget{classsql_a16d6812a301ce81d856e7d5800bf20fd}\label{classsql_a16d6812a301ce81d856e7d5800bf20fd}} 
+\index{sql@{sql}!database@{database}}
+\index{database@{database}!sql@{sql}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily sqlite3$\ast$ sql\+::database\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 15 of file sql.\+hpp.
+
+\mbox{\Hypertarget{classsql_aa0b79c68df90d2e2a3f829e25a44b878}\label{classsql_aa0b79c68df90d2e2a3f829e25a44b878}} 
+\index{sql@{sql}!database\+\_\+path@{database\+\_\+path}}
+\index{database\+\_\+path@{database\+\_\+path}!sql@{sql}}
+\subsubsection{\texorpdfstring{database\+\_\+path}{database\_path}}
+{\footnotesize\ttfamily std\+::string sql\+::database\+\_\+path = \char`\"{}../../bin/database.\+db\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 16 of file sql.\+hpp.
+
+\mbox{\Hypertarget{classsql_a1ad7137a182503f7676b53f6fa2786ed}\label{classsql_a1ad7137a182503f7676b53f6fa2786ed}} 
+\index{sql@{sql}!rc@{rc}}
+\index{rc@{rc}!sql@{sql}}
+\subsubsection{\texorpdfstring{rc}{rc}}
+{\footnotesize\ttfamily int sql\+::rc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file sql.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{sql_8hpp}{sql.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{sql_8cpp}{sql.\+cpp}\end{DoxyCompactItemize}

@@ -1,8 +1,0 @@
-<map id="npc::npc" name="npc::npc">
-<area shape="rect" id="node2" href="$classsql.html#ae560c01f2e8e57cee454ecd8e38616eb" title="Get value of a column from the player. " alt="" coords="125,5,268,32"/>
-<area shape="rect" id="node7" href="$classsql.html#af04403a0cab4ee13a6f70b396e5b3a20" title="Get all values from columns in NPC. " alt="" coords="132,56,261,83"/>
-<area shape="rect" id="node3" href="$classsql.html#a53dd323de395c13534e63a3482190777" title="Execute a query. " alt="" coords="316,23,448,65"/>
-<area shape="rect" id="node4" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="501,5,595,32"/>
-<area shape="rect" id="node6" href="$classsql.html#ad4d8bdf41eede1ae1363d0be8a2f60a9" title="Get saved result. " alt="" coords="496,56,600,83"/>
-<area shape="rect" id="node5" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="648,5,752,32"/>
-</map>

@@ -1,0 +1,109 @@
+.TH "action" 3 "Fri Feb 3 2017" "Version Version: alpha v1.5" "Git Gud: The adventures of the hungover" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+action
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <leveleditor\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBaction\fP (std::function< bool() > \fBcondition\fP, std::function< void() > \fBwork\fP)"
+.br
+.RI "Template function for bool\&. "
+.ti -1c
+.RI "\fBaction\fP (std::function< void() > \fBwork\fP)"
+.br
+.RI "Template function for void\&. "
+.ti -1c
+.RI "\fBaction\fP (\fBsf::Keyboard::Key\fP key, std::function< void() > \fBwork\fP)"
+.br
+.RI "Template function for key pressing\&. "
+.ti -1c
+.RI "\fBaction\fP (sf::Mouse::Button button, std::function< void() > \fBwork\fP)"
+.br
+.RI "Template function for mouse button\&. "
+.ti -1c
+.RI "void \fBoperator()\fP ()"
+.br
+.RI "Overloader for \fBoperator()()\fP "
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::function< bool() > \fBcondition\fP"
+.br
+.ti -1c
+.RI "std::function< void() > \fBwork\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 11 of file leveleditor\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "action::action (std::function< bool() > condition, std::function< void() > work)\fC [inline]\fP"
+
+.PP
+Template function for bool\&. This method will create a boolean function with a specified use\&. 
+.br
+ 
+.PP
+Definition at line 21 of file leveleditor\&.hpp\&.
+.SS "action::action (std::function< void() > work)\fC [inline]\fP"
+
+.PP
+Template function for void\&. This method will create a void function with a specified use\&. 
+.br
+ 
+.PP
+Definition at line 31 of file leveleditor\&.hpp\&.
+.SS "action::action (\fBsf::Keyboard::Key\fP key, std::function< void() > work)\fC [inline]\fP"
+
+.PP
+Template function for key pressing\&. This method will create a boolean function with a specified use\&. 
+.br
+And returns if a specified key is pressed\&. 
+.br
+
+.PP
+Definition at line 42 of file leveleditor\&.hpp\&.
+.SS "action::action (sf::Mouse::Button button, std::function< void() > work)\fC [inline]\fP"
+
+.PP
+Template function for mouse button\&. This method will create a boolean function with a specified use\&. 
+.br
+And returns if a specified mouse button is pressed\&. 
+.br
+
+.PP
+Definition at line 53 of file leveleditor\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void action::operator() ()\fC [inline]\fP"
+
+.PP
+Overloader for \fBoperator()()\fP This method creates the \fBoperator()()\fP so it can be used in this class\&. 
+.br
+
+.PP
+Definition at line 63 of file leveleditor\&.hpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::function< bool() > action::condition\fC [private]\fP"
+
+.PP
+Definition at line 13 of file leveleditor\&.hpp\&.
+.SS "std::function< void() > action::work\fC [private]\fP"
+
+.PP
+Definition at line 14 of file leveleditor\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Git Gud: The adventures of the hungover from the source code\&.

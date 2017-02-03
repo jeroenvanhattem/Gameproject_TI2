@@ -1,0 +1,662 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnpc">
+<title>npc class Reference</title>
+<para>
+    <programlisting>#include <link linkend="npc_8hpp">&lt;npc.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for npc</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnpc__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for npc</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnpc__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; ability * &gt; npc_actions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; npc_values</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string id</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f position</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sql &amp; database</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int sprite_size</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Texture texture</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RenderWindow &amp; window</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string current_action</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool is_player</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classnpc_1a357fc1c053fb6fe0e09c03d72f63191a">load_all_actions</link> (
+)<para><emphasis>Load all abilities.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classnpc_1a3f32867195150317774af508034f0a41">load_action</link> (
+std::string action_name, int steps_of_action, int level)<para><emphasis>Load a npc ability.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnpc_1ac99eae829579a6f49387bd44129ec33a">npc</link> (
+sf::RenderWindow &amp; window, <link linkend="classsql">sql</link> &amp; database, std::string npc_id, bool is_player)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classnpc_1ae8d1bfcd87382237192ebb5b6def33a5">move</link> (
+sf::Vector2f delta)<para><emphasis>Move the npc.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classnpc_1aa86a880284a09f9fc3358a61a74be1b9">set_action</link> (
+std::string s)<para><emphasis>set action of npc</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="classnpc_1a670b40abcf52e0615883622324ac3bc9">get_name</link> (
+)<para><emphasis>Get the name of npc.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const void <link linkend="classnpc_1a1adf71c32d8948c9718568d1a2a6d9a7">draw</link> (
+)<para><emphasis>void draw() : Print NPC</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::IntRect <link linkend="classnpc_1aa6a71f7355403e4a108f3c4e8b6a3931">get_bounds</link> (
+)<para><emphasis>Get a bounds from a NPC.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classnpc_1a2714b410c2e644040f69f1cf50d3bc50">get_interaction</link> (
+<link linkend="classnpc">npc</link> &amp; other_npc)<para><emphasis>Get interaction two NPC&apos;s.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classnpc_1a64342e70f2e8c3afde210ffa77e1e54e">get_collision</link> (
+sf::IntRect colliding_object)<para><emphasis>Get interaction NPC and object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classnpc_1a52d22585e441af4d8dde1d1a2658b2dc">set_position</link> (
+sf::Vector2f given_position)<para><emphasis>Get position of NPC.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="classnpc_1af58658444d25eaa77aec883dd9d5592d">get_position</link> (
+)<para><emphasis>Get position of NPC.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; sf::Sprite &gt; <link linkend="classnpc_1a78bc2f0af05b44a6a8e71fa3853c0920">get_action</link> (
+std::string action_to_get)<para><emphasis>Get NPC action.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="classnpc_1a61315bb51941237b6b2c0fb578f3e5ee">get_current_action</link> (
+)<para><emphasis>Get current action of NPC.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classnpc_1a2a5bbed340b918265dabc2dcfb5d07b6">show_ability</link> (
+std::string action_to_show)<para><emphasis>Perform an action.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnpc_1a77e7e3430ee5ff383f7a16b4b3e07fa1">~npc</link> (
+)<para><emphasis>Decontructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnpc_1a357fc1c053fb6fe0e09c03d72f63191a">
+                <title>void npc::load_all_actions ()</title> <emphasis>Load all abilities.</emphasis>
+                
+<para>This method will load all abilities of an NPC sprite sheet.
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classnpc_1a3f32867195150317774af508034f0a41">
+                <title>void npc::load_action (std::string action_name, int steps_of_action, int level)</title> <emphasis>Load a npc ability.</emphasis>
+                
+<para>This method will load one ability of an NPC sprite sheet.
+<literallayout>
+</literallayout>
+This ability has a certain ammount of steps and stands on a certain level in the sprite sheet.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>action_name : std::string
+<literallayout>
+</literallayout>
+-&gt; name of the ability to load</para>
+
+<para>steps_of_action : int 
+<literallayout>
+</literallayout>
+-&gt; ammount of steps of the ability. 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classnpc_1ac99eae829579a6f49387bd44129ec33a">
+                <title>npc::npc (sf::RenderWindow &amp;window, sql &amp;database, std::string npc_id, bool is_player=false)</title> <emphasis>Constructor.</emphasis>
+                
+<para>This method will crate an object of class npc.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>window : sf::RenderWindow 
+<literallayout>
+</literallayout>
+-&gt; window where content will be drawn on.</para>
+
+<para>database : sql 
+<literallayout>
+</literallayout>
+-&gt; referrence to the database class.
+<literallayout>
+</literallayout>
+ npc_id : sf::string 
+<literallayout>
+</literallayout>
+-&gt; id of the npc that has to be drawn.</para>
+
+<para>is_player : bool 
+<literallayout>
+</literallayout>
+-&gt; boolean to select if this npc is the player or not.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>ability a(window, database, &quot;1&quot;)
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classnpc_1ae8d1bfcd87382237192ebb5b6def33a5">
+                <title>void npc::move (sf::Vector2f delta)</title> <emphasis>Move the npc.</emphasis>
+                
+<para>This method moves the position an npc.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>delta : sf::Vector2f
+<literallayout>
+</literallayout>
+-&gt; new position of the npc.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>move({2,0})
+<literallayout>
+</literallayout>
+npc has moved 2 pixels to the right
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classnpc_1aa86a880284a09f9fc3358a61a74be1b9">
+                <title>void npc::set_action (std::string s=&quot;0&quot;)</title> <emphasis>set action of npc</emphasis>
+                
+<para>This method sets the current action of the npc.
+<literallayout>
+</literallayout>
+The standard value is walk down.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>s : std::string
+<literallayout>
+</literallayout>
+-&gt; name of the action that has to be set on active.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>set_action(&quot;walk_up&quot;)
+<literallayout>
+</literallayout>
+npc is now set for walking up.
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classnpc_1a670b40abcf52e0615883622324ac3bc9">
+                <title>std::string npc::get_name ()</title> <emphasis>Get the name of npc.</emphasis>
+                
+<para>This method returns the name of an npc.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>name : std::String
+<literallayout>
+</literallayout>
+-&gt; name of the ability</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classnpc_1a670b40abcf52e0615883622324ac3bc9">get_name()</link>
+<literallayout>
+</literallayout>
+&quot;monk&quot;
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classnpc_1a1adf71c32d8948c9718568d1a2a6d9a7">
+                <title>const void npc::draw ()</title> <emphasis>void draw() : Print NPC</emphasis>
+                
+<para>This method draws the NPC on the screen. 
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classnpc_1a1adf71c32d8948c9718568d1a2a6d9a7">draw()</link>
+<literallayout>
+</literallayout>
+-&gt; Draw the NPC on the screen </para>
+
+            </section>
+            <section xml:id="classnpc_1aa6a71f7355403e4a108f3c4e8b6a3931">
+                <title>sf::IntRect npc::get_bounds ()</title> <emphasis>Get a bounds from a NPC.</emphasis>
+                
+<para>This function returns a sf::IntRect object which is created from the position and size of the NPC object.
+<literallayout>
+</literallayout>
+ <formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>intrect_object : sf::IntRect 
+<literallayout>
+</literallayout>
+-&gt; a sf::IntRect object using the position and size of the NPC object</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classnpc_1aa6a71f7355403e4a108f3c4e8b6a3931">get_bounds()</link> 
+<literallayout>
+</literallayout>
+return: sf::IntRect(100, 100, 30, 30) . </para>
+
+            </section>
+            <section xml:id="classnpc_1a2714b410c2e644040f69f1cf50d3bc50">
+                <title>int npc::get_interaction (npc &amp;other_npc)</title> <emphasis>Get interaction two NPC&apos;s.</emphasis>
+                
+<para>Call the &apos;get_interaction&apos; function to check for a collision with another NPC.</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>other_npc : NPC &amp; 
+<literallayout>
+</literallayout>
+-&gt; The NPC that will be check for a collision.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>0 / 1 : integer 
+<literallayout>
+</literallayout>
+-&gt; Return a 1 if there&apos;s a collision detected, return a 0 if no collision is detected.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_interaction(*other_npc) 
+<literallayout>
+</literallayout>
+-&gt; return: {&quot;1&quot;}. </para>
+
+            </section>
+            <section xml:id="classnpc_1a64342e70f2e8c3afde210ffa77e1e54e">
+                <title>int npc::get_collision (sf::IntRect colliding_object)</title> <emphasis>Get interaction NPC and object.</emphasis>
+                
+<para>Call the &apos;get_collision&apos; function to check for a collision with a sf::IntRect object.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>colliding_object : sf::IntRect 
+<literallayout>
+</literallayout>
+-&gt; The sf::IntRect that will be check for a collision.
+<literallayout>
+</literallayout>
+ <formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>0 / 1 : integer 
+<literallayout>
+</literallayout>
+-&gt; Return a 1 if there&apos;s a collision detected, return a 0 if no collision is detected.
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>npc.get_collision(recangle) 
+<literallayout>
+</literallayout>
+return: {&quot;1&quot;}. </para>
+
+            </section>
+            <section xml:id="classnpc_1a52d22585e441af4d8dde1d1a2658b2dc">
+                <title>void npc::set_position (sf::Vector2f given_position)</title> <emphasis>Get position of NPC.</emphasis>
+                
+<para>When this function is called, it will return the position of the NPC.
+<literallayout>
+</literallayout>
+ <formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>position : sf::Vector2f 
+<literallayout>
+</literallayout>
+-&gt; The position of the NPC</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classnpc_1af58658444d25eaa77aec883dd9d5592d">get_position()</link> 
+<literallayout>
+</literallayout>
+-&gt; return sf::Vector(200,200) </para>
+
+            </section>
+            <section xml:id="classnpc_1af58658444d25eaa77aec883dd9d5592d">
+                <title>sf::Vector2f npc::get_position ()</title> <emphasis>Get position of NPC.</emphasis>
+                
+<para>When this function is called, it will return the position of the NPC.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>position : sf::Vector2f 
+<literallayout>
+</literallayout>
+-&gt; The position of the NPC</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classnpc_1af58658444d25eaa77aec883dd9d5592d">get_position()</link> 
+<literallayout>
+</literallayout>
+-&gt; return sf::Vector(200,200) </para>
+
+            </section>
+            <section xml:id="classnpc_1a78bc2f0af05b44a6a8e71fa3853c0920">
+                <title>std::vector&lt; sf::Sprite &gt; npc::get_action (std::string action_to_get)</title> <emphasis>Get NPC action.</emphasis>
+                
+<para>This function return a list of sprites that is asked from the NPC. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>action_to_perform : std::string 
+<literallayout>
+</literallayout>
+-&gt; The action that has to be shown.</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>temp : std::vector&lt;sf::Sprite&gt; 
+<literallayout>
+</literallayout>
+-&gt; list of sprites containing the sprites of an ability.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_action(&quot;walk_up&quot;) 
+<literallayout>
+</literallayout>
+-&gt; {sprite1,sprite2,....} </para>
+
+            </section>
+            <section xml:id="classnpc_1a61315bb51941237b6b2c0fb578f3e5ee">
+                <title>std::string npc::get_current_action ()</title> <emphasis>Get current action of NPC.</emphasis>
+                
+<para>This function returns the name of the current action of a NPC. 
+<literallayout>
+</literallayout>
+This is the action that the NPC is currently performing in the game.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>current_action : std::string 
+<literallayout>
+</literallayout>
+-&gt; Name of the current action from NPC.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classnpc_1a61315bb51941237b6b2c0fb578f3e5ee">get_current_action()</link> 
+<literallayout>
+</literallayout>
+-&gt; &quot;walk_up&quot; </para>
+
+            </section>
+            <section xml:id="classnpc_1a2a5bbed340b918265dabc2dcfb5d07b6">
+                <title>void npc::show_ability (std::string action_to_show)</title> <emphasis>Perform an action.</emphasis>
+                
+<para>This function shows one step of the asked ability. 
+<literallayout>
+</literallayout>
+This function has to be called in a loop that stops at the max size of the ability list. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>action_to_show : std::string 
+<literallayout>
+</literallayout>
+-&gt; Name of action.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>show_ability(&quot;shoot_arrow_up&quot;) 
+<literallayout>
+</literallayout>
+-&gt; NPC will shoot an arrow northwards. </para>
+
+            </section>
+            <section xml:id="classnpc_1a77e7e3430ee5ff383f7a16b4b3e07fa1">
+                <title>npc::~npc ()</title> <emphasis>Decontructor.</emphasis>
+                
+<para>Will be called when the object is deleted. 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+</section>

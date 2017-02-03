@@ -1,0 +1,4 @@
+<map id="game::draw_player" name="game::draw_player">
+<area shape="rect" id="node2" href="$classplayer.html#a67423ce10d4abb42775868f978d04247" title="void draw() : Print player " alt="" coords="184,5,276,32"/>
+<area shape="rect" id="node3" href="$classnpc.html#a1adf71c32d8948c9718568d1a2a6d9a7" title="void draw() : Print NPC " alt="" coords="324,5,403,32"/>
+</map>

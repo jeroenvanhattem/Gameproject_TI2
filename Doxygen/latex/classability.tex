@@ -1,0 +1,319 @@
+\hypertarget{classability}{}\section{ability Class Reference}
+\label{classability}\index{ability@{ability}}
+
+
+{\ttfamily \#include $<$ability.\+hpp$>$}
+
+
+
+Collaboration diagram for ability\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classability__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classability_a467a2d8bf397119e9856d1cf8d2c58bc}{ability} (std\+::string \hyperlink{classability_a0064d2793f684924720a08b059ec2ee0}{name}, std\+::vector$<$ sf\+::\+Sprite $>$ \&\hyperlink{classaction}{action}, sf\+::\+Vector2f \hyperlink{classability_a36d5b1ac8a8a2df0f1790f3ddf320fad}{position})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classability_a83c4b418a33a2a7f44c3883abfeac4fb}{get\+\_\+name} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the ability. \end{DoxyCompactList}\item 
+void \hyperlink{classability_ae34dc7ddb4b0fdb1b00e70ce1860456e}{move} (sf\+::\+Vector2f new\+\_\+position)
+\begin{DoxyCompactList}\small\item\em Move the current ability. \end{DoxyCompactList}\item 
+const void \hyperlink{classability_a5cc662aeebc530c01b7bd5ed9328a54e}{draw} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Print ability. \end{DoxyCompactList}\item 
+void \hyperlink{classability_a3c6429af67529f039161a35f70caca6f}{add\+\_\+sprite\+\_\+to\+\_\+action} (sf\+::\+Sprite t)
+\begin{DoxyCompactList}\small\item\em Add a sprite to the action. \end{DoxyCompactList}\item 
+std\+::vector$<$ sf\+::\+Sprite $>$ \hyperlink{classability_adeb10a7af2d372637d56395792ac918f}{get\+\_\+action} ()
+\begin{DoxyCompactList}\small\item\em Get list of sprites from an ability. \end{DoxyCompactList}\item 
+void \hyperlink{classability_aed378a7d8a69e8a50347bcc03c0cffb3}{next\+\_\+step} ()
+\begin{DoxyCompactList}\small\item\em Skip to the next action step. \end{DoxyCompactList}\item 
+\hyperlink{classability_a6eedfacfa97cb7195dee8e9c0cccb54d}{$\sim$ability} ()
+\begin{DoxyCompactList}\small\item\em Decontructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classability_a0064d2793f684924720a08b059ec2ee0}{name}
+\item 
+std\+::vector$<$ sf\+::\+Sprite $>$ \hyperlink{classability_aaccb2020f374c640eddfce7f1a669821}{action}
+\item 
+sf\+::\+Vector2f \hyperlink{classability_a36d5b1ac8a8a2df0f1790f3ddf320fad}{position}
+\item 
+int \hyperlink{classability_a5dbf426e4716c3cc09a8ec0dafb148a0}{current\+\_\+action\+\_\+step} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file ability.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classability_a467a2d8bf397119e9856d1cf8d2c58bc}\label{classability_a467a2d8bf397119e9856d1cf8d2c58bc}} 
+\index{ability@{ability}!ability@{ability}}
+\index{ability@{ability}!ability@{ability}}
+\subsubsection{\texorpdfstring{ability()}{ability()}}
+{\footnotesize\ttfamily ability\+::ability (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::vector$<$ sf\+::\+Sprite $>$ \&}]{action,  }\item[{sf\+::\+Vector2f}]{position }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+This method will crate an object of class ability.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+name \+: std\+::string ~\newline
+-\/$>$ name of the ability to be loaded.
+
+action \+: std\+::vector$<$sf\+::\+Sprite$>$ ~\newline
+-\/$>$ list of sprites that the animation of the ability needs.~\newline
+ position \+: sf\+::\+Vector2f ~\newline
+-\/$>$ position of the player, so the ability is loaded on that spot.
+
+\subsubsection*{Example\+: }
+
+ability a(\char`\"{}arno\char`\"{}, \{...\}, \{100,100\})~\newline
+
+
+Definition at line 5 of file ability.\+cpp.
+
+\mbox{\Hypertarget{classability_a6eedfacfa97cb7195dee8e9c0cccb54d}\label{classability_a6eedfacfa97cb7195dee8e9c0cccb54d}} 
+\index{ability@{ability}!````~ability@{$\sim$ability}}
+\index{````~ability@{$\sim$ability}!ability@{ability}}
+\subsubsection{\texorpdfstring{$\sim$ability()}{~ability()}}
+{\footnotesize\ttfamily ability\+::$\sim$ability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Decontructor. 
+
+Will be called when the object is deleted. ~\newline
+
+
+Definition at line 62 of file ability.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classability_a3c6429af67529f039161a35f70caca6f}\label{classability_a3c6429af67529f039161a35f70caca6f}} 
+\index{ability@{ability}!add\+\_\+sprite\+\_\+to\+\_\+action@{add\+\_\+sprite\+\_\+to\+\_\+action}}
+\index{add\+\_\+sprite\+\_\+to\+\_\+action@{add\+\_\+sprite\+\_\+to\+\_\+action}!ability@{ability}}
+\subsubsection{\texorpdfstring{add\+\_\+sprite\+\_\+to\+\_\+action()}{add\_sprite\_to\_action()}}
+{\footnotesize\ttfamily void ability\+::add\+\_\+sprite\+\_\+to\+\_\+action (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite}]{t }\end{DoxyParamCaption})}
+
+
+
+Add a sprite to the action. 
+
+This method will add a new sprite to the action. ~\newline
+This method can be used if you think that the animation is not complete enough,~\newline
+and want to add an extra sprite to the animation.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+t \+: sf\+::\+Sprite~\newline
+-\/$>$ new sprite that will be added to the ability.
+
+\subsubsection*{Example\+: }
+
+add\+\_\+sprite\+\_\+to\+\_\+action(example\+\_\+sprite)~\newline
+
+
+Definition at line 52 of file ability.\+cpp.
+
+\mbox{\Hypertarget{classability_a5cc662aeebc530c01b7bd5ed9328a54e}\label{classability_a5cc662aeebc530c01b7bd5ed9328a54e}} 
+\index{ability@{ability}!draw@{draw}}
+\index{draw@{draw}!ability@{ability}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily const void ability\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Print ability. 
+
+This method draws the ability on the screen. ~\newline
+Because there are likely multiple sprites in an ability, ~\newline
+the sprite that have to be printed is handle by the current\+\_\+action\+\_\+step value. ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+window \+: sf\+::\+Render\+Window~\newline
+-\/$>$ window where the ability have to be drawn on.~\newline
+
+
+Definition at line 48 of file ability.\+cpp.
+
+\mbox{\Hypertarget{classability_adeb10a7af2d372637d56395792ac918f}\label{classability_adeb10a7af2d372637d56395792ac918f}} 
+\index{ability@{ability}!get\+\_\+action@{get\+\_\+action}}
+\index{get\+\_\+action@{get\+\_\+action}!ability@{ability}}
+\subsubsection{\texorpdfstring{get\+\_\+action()}{get\_action()}}
+{\footnotesize\ttfamily std\+::vector$<$ sf\+::\+Sprite $>$ ability\+::get\+\_\+action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get list of sprites from an ability. 
+
+This method returns a list that contains all sprites from the ability. ~\newline
+
+
+\subsubsection*{Return\+: }
+
+action \+: std\+::vector$<$sf\+::\+Sprite$>$~\newline
+-\/$>$ List of sprites, containing the ability.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classability_adeb10a7af2d372637d56395792ac918f}{get\+\_\+action()}~\newline
+\{sprite1,sprite2,sprite3\} 
+
+Definition at line 56 of file ability.\+cpp.
+
+\mbox{\Hypertarget{classability_a83c4b418a33a2a7f44c3883abfeac4fb}\label{classability_a83c4b418a33a2a7f44c3883abfeac4fb}} 
+\index{ability@{ability}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!ability@{ability}}
+\subsubsection{\texorpdfstring{get\+\_\+name()}{get\_name()}}
+{\footnotesize\ttfamily std\+::string ability\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the ability. 
+
+This method returns the name of the saved ability.~\newline
+
+
+\subsubsection*{Return\+: }
+
+name \+: std\+::\+String~\newline
+-\/$>$ name of the ability
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classability_a83c4b418a33a2a7f44c3883abfeac4fb}{get\+\_\+name()}~\newline
+\char`\"{}walk\+\_\+up\char`\"{}~\newline
+
+
+Definition at line 15 of file ability.\+cpp.
+
+\mbox{\Hypertarget{classability_ae34dc7ddb4b0fdb1b00e70ce1860456e}\label{classability_ae34dc7ddb4b0fdb1b00e70ce1860456e}} 
+\index{ability@{ability}!move@{move}}
+\index{move@{move}!ability@{ability}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void ability\+::move (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{new\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Move the current ability. 
+
+This method moves the position of the ability, ~\newline
+so that the ability sprite is printed on the same position as the player or N\+PC.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+new\+\_\+position \+: sf\+::\+Vector2f~\newline
+-\/$>$ new position of the ability sprite
+
+\subsubsection*{Example\+: }
+
+move(\{200,200\})~\newline
+ability position now set on 200, 200~\newline
+
+
+Definition at line 19 of file ability.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classability_ae34dc7ddb4b0fdb1b00e70ce1860456e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classability_aed378a7d8a69e8a50347bcc03c0cffb3}\label{classability_aed378a7d8a69e8a50347bcc03c0cffb3}} 
+\index{ability@{ability}!next\+\_\+step@{next\+\_\+step}}
+\index{next\+\_\+step@{next\+\_\+step}!ability@{ability}}
+\subsubsection{\texorpdfstring{next\+\_\+step()}{next\_step()}}
+{\footnotesize\ttfamily void ability\+::next\+\_\+step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Skip to the next action step. 
+
+This method moves the current\+\_\+action\+\_\+step to the next value. ~\newline
+
+
+\subsubsection*{Example\+: }
+
+current\+\_\+action\+\_\+step = 5~\newline
+\hyperlink{classability_aed378a7d8a69e8a50347bcc03c0cffb3}{next\+\_\+step()}~\newline
+current\+\_\+action\+\_\+step = 6~\newline
+
+
+Definition at line 37 of file ability.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classability_aed378a7d8a69e8a50347bcc03c0cffb3_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classability_aaccb2020f374c640eddfce7f1a669821}\label{classability_aaccb2020f374c640eddfce7f1a669821}} 
+\index{ability@{ability}!action@{action}}
+\index{action@{action}!ability@{ability}}
+\subsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Sprite$>$ ability\+::action\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 9 of file ability.\+hpp.
+
+\mbox{\Hypertarget{classability_a5dbf426e4716c3cc09a8ec0dafb148a0}\label{classability_a5dbf426e4716c3cc09a8ec0dafb148a0}} 
+\index{ability@{ability}!current\+\_\+action\+\_\+step@{current\+\_\+action\+\_\+step}}
+\index{current\+\_\+action\+\_\+step@{current\+\_\+action\+\_\+step}!ability@{ability}}
+\subsubsection{\texorpdfstring{current\+\_\+action\+\_\+step}{current\_action\_step}}
+{\footnotesize\ttfamily int ability\+::current\+\_\+action\+\_\+step = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file ability.\+hpp.
+
+\mbox{\Hypertarget{classability_a0064d2793f684924720a08b059ec2ee0}\label{classability_a0064d2793f684924720a08b059ec2ee0}} 
+\index{ability@{ability}!name@{name}}
+\index{name@{name}!ability@{ability}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string ability\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 8 of file ability.\+hpp.
+
+\mbox{\Hypertarget{classability_a36d5b1ac8a8a2df0f1790f3ddf320fad}\label{classability_a36d5b1ac8a8a2df0f1790f3ddf320fad}} 
+\index{ability@{ability}!position@{position}}
+\index{position@{position}!ability@{ability}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily sf\+::\+Vector2f ability\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 10 of file ability.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{ability_8hpp}{ability.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{ability_8cpp}{ability.\+cpp}\end{DoxyCompactItemize}

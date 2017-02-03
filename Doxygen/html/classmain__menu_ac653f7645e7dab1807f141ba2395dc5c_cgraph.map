@@ -1,0 +1,5 @@
+<map id="main_menu::show_menu" name="main_menu::show_menu">
+<area shape="rect" id="node2" href="$classmain__menu.html#a2f5aeef38a566a25311f77bc24b8c8b5" title="main_menu::draw_main_menu" alt="" coords="220,5,419,32"/>
+<area shape="rect" id="node4" href="$classmain__menu.html#a9314da13b6b8a7cd40dee3d45f029835" title="Ceck if a button is pressed. " alt="" coords="226,56,413,83"/>
+<area shape="rect" id="node3" href="$classpicture.html#ac69e8047651291091abbe2a8da545aa1" title="picture::draw" alt="" coords="467,5,563,32"/>
+</map>

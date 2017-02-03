@@ -1,0 +1,4 @@
+<map id="game::perform_npc_action" name="game::perform_npc_action">
+<area shape="rect" id="node2" href="$classgame.html#a4cf9147e06874edfc6190db64d719dec" title="Show the store on the window. " alt="" coords="228,5,391,47"/>
+<area shape="rect" id="node3" href="$classgame.html#a961fe8a42a2c0bc1ef62ef17c7c64f06" title="Draw NPC&#39;s on the window. " alt="" coords="251,71,368,98"/>
+</map>

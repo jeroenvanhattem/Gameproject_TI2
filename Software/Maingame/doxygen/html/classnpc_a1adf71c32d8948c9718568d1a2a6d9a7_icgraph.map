@@ -1,6 +1,0 @@
-<map id="npc::draw" name="npc::draw">
-<area shape="rect" id="node2" href="$classplayer.html#a1a369fcd087aa48f9241fb20c8df52f3" title="Constructor. " alt="" coords="132,5,232,32"/>
-<area shape="rect" id="node3" href="$classplayer.html#a67423ce10d4abb42775868f978d04247" title="void draw() : Print player " alt="" coords="136,56,228,83"/>
-<area shape="rect" id="node4" href="$classgame.html#a0eb06f984d04128ba7fba6fcca04bda3" title="Get the items from the database. " alt="" coords="280,49,431,90"/>
-<area shape="rect" id="node5" href="$classgame.html#a46eaf7a077e7f3ff0b5e229142358f00" title="The constructor. " alt="" coords="479,56,573,83"/>
-</map>

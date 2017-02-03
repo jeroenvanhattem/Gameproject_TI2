@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classcircle">
+<title>circle class Reference</title>
+<para>
+    <programlisting>#include <link linkend="objects_8hpp">&lt;objects.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for circle</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classcircle__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for circle</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classcircle__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float size_in</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Color set_color</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::CircleShape circ</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classcircle_1a9ebace5a33bb9ab0487d0d1bc7ece817">circle</link> (
+sf::Vector2f position, float size, sf::Color color)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::FloatRect <link linkend="classcircle_1a8e0193c47ce75d0aed9b3501dbdd0499">getBounds</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classcircle_1a49a37a81d863f524935be5953142886a">draw</link> (
+sf::RenderWindow &amp; window)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classcircle_1a9ebace5a33bb9ab0487d0d1bc7ece817">
+                <title>circle::circle (sf::Vector2f position, float size, sf::Color color)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classcircle_1a8e0193c47ce75d0aed9b3501dbdd0499">
+                <title>sf::FloatRect circle::getBounds ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classcircle_1a49a37a81d863f524935be5953142886a">
+                <title>void circle::draw (sf::RenderWindow &amp;window)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

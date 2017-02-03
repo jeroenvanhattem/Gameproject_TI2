@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classmusic">
+<title>music class Reference</title>
+<para>
+    <programlisting>#include <link linkend="music_8hpp">&lt;music.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for music</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classmusic__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for music</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classmusic__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::SoundBuffer buffer</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Sound sound</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Music intro</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sql database</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string path</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classmusic_1a08986f41efee0ffe77fcf819dd1bfc2d">music</link> (
+<link linkend="classsql">sql</link> &amp; database, sf::SoundBuffer buffer, sf::Sound sound)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classmusic_1aeb639e45c64ee79496e8ec6187cfcf70">set_volume</link> (
+int i)<para><emphasis>Set music volume.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classmusic_1ae7835578f75b785e1ef2a3d0db9420b9">play_music_from_map</link> (
+std::string map_id)<para><emphasis>Play map music.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classmusic_1ae89df284db606b4fb68f9e99702a6872">stop_music</link> (
+)<para><emphasis>Stop the music.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classmusic_1a08986f41efee0ffe77fcf819dd1bfc2d">
+                <title>music::music (sql &amp;database, sf::SoundBuffer buffer, sf::Sound sound)</title> <emphasis>Constructor.</emphasis>
+                
+<para>This method will crate an object of class music.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>database : sql&amp; 
+<literallayout>
+</literallayout>
+-&gt; refference to the sqlite database.
+<literallayout>
+</literallayout>
+ buffer : sf::SoundBuffer 
+<literallayout>
+</literallayout>
+-&gt; a sf::SoundBuffer.
+<literallayout>
+</literallayout>
+ sound : sf::Sound 
+<literallayout>
+</literallayout>
+-&gt; a sf::sound.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>music m(database, buffer, sound)
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classmusic_1aeb639e45c64ee79496e8ec6187cfcf70">
+                <title>void music::set_volume (int i)</title> <emphasis>Set music volume.</emphasis>
+                
+<para>This function changes the volume of the played music 
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>i : int 
+<literallayout>
+</literallayout>
+-&gt; The volume strength 
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>set_volume(100) 
+<literallayout>
+</literallayout>
+-&gt; Volume has been set to 100 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classmusic_1ae7835578f75b785e1ef2a3d0db9420b9">
+                <title>void music::play_music_from_map (std::string map_id)</title> <emphasis>Play map music.</emphasis>
+                
+<para>Play the music that belongs to a specific map 
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>map_id : std::string 
+<literallayout>
+</literallayout>
+-&gt; The map of which the music has to be played 
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>play_music_from_map(&quot;1&quot;) 
+<literallayout>
+</literallayout>
+-&gt; Play the music from map 1 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classmusic_1ae89df284db606b4fb68f9e99702a6872">
+                <title>void music::stop_music ()</title> <emphasis>Stop the music.</emphasis>
+                
+<para>This function stops the music 
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classmusic_1ae89df284db606b4fb68f9e99702a6872">stop_music()</link> 
+<literallayout>
+</literallayout>
+-&gt; Music has been stopped 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+</section>

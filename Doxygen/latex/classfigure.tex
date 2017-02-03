@@ -1,0 +1,166 @@
+\hypertarget{classfigure}{}\section{figure Class Reference}
+\label{classfigure}\index{figure@{figure}}
+
+
+{\ttfamily \#include $<$objects.\+hpp$>$}
+
+
+
+Inheritance diagram for figure\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classfigure__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for figure\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classfigure__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfigure_a73a600829aee74a3ac635b4a7d0719b8}{figure} (sf\+::\+Vector2f \hyperlink{classfigure_a2196c51490b69027860fdb015913de19}{position})
+\item 
+virtual sf\+::\+Float\+Rect \hyperlink{classfigure_aca9a3924bc0883e1aa8e93c04887abbc}{get\+Bounds} ()=0
+\item 
+virtual void \hyperlink{classfigure_a56d8a53a8bf2b82178aa476bac071596}{draw} (sf\+::\+Render\+Window \&window)=0
+\item 
+virtual void \hyperlink{classfigure_ac7592a3b4cb4210fbd114c42d015c4e7}{move} (sf\+::\+Vector2f delta)
+\item 
+virtual void \hyperlink{classfigure_a2290acc133127e643fab20c7ce9ab975}{jump} (sf\+::\+Vector2f target)
+\item 
+virtual void \hyperlink{classfigure_a25bfb0a452b2b2fe60f7f01b08dab423}{jump} (sf\+::\+Vector2i target)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vector2f \hyperlink{classfigure_a2196c51490b69027860fdb015913de19}{position}
+\item 
+bool \hyperlink{classfigure_aaaf0bac968262da5781ddcfbb6bcb687}{selected} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file objects.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfigure_a73a600829aee74a3ac635b4a7d0719b8}\label{classfigure_a73a600829aee74a3ac635b4a7d0719b8}} 
+\index{figure@{figure}!figure@{figure}}
+\index{figure@{figure}!figure@{figure}}
+\subsubsection{\texorpdfstring{figure()}{figure()}}
+{\footnotesize\ttfamily figure\+::figure (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file objects.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classfigure_a56d8a53a8bf2b82178aa476bac071596}\label{classfigure_a56d8a53a8bf2b82178aa476bac071596}} 
+\index{figure@{figure}!draw@{draw}}
+\index{draw@{draw}!figure@{figure}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void figure\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classrectangle_aac9bb03014c071fdf932f6cfa3f34f55}{rectangle}, \hyperlink{classcircle_a49a37a81d863f524935be5953142886a}{circle}, and \hyperlink{classpicture_ac69e8047651291091abbe2a8da545aa1}{picture}.
+
+\mbox{\Hypertarget{classfigure_aca9a3924bc0883e1aa8e93c04887abbc}\label{classfigure_aca9a3924bc0883e1aa8e93c04887abbc}} 
+\index{figure@{figure}!get\+Bounds@{get\+Bounds}}
+\index{get\+Bounds@{get\+Bounds}!figure@{figure}}
+\subsubsection{\texorpdfstring{get\+Bounds()}{getBounds()}}
+{\footnotesize\ttfamily virtual sf\+::\+Float\+Rect figure\+::get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classrectangle_a827e05afcb275c3e6fe29fc80337d8cc}{rectangle}, \hyperlink{classcircle_a8e0193c47ce75d0aed9b3501dbdd0499}{circle}, and \hyperlink{classpicture_a3a23c2ae495660c218f6f4e40e7e61cc}{picture}.
+
+\mbox{\Hypertarget{classfigure_a2290acc133127e643fab20c7ce9ab975}\label{classfigure_a2290acc133127e643fab20c7ce9ab975}} 
+\index{figure@{figure}!jump@{jump}}
+\index{jump@{jump}!figure@{figure}}
+\subsubsection{\texorpdfstring{jump()}{jump()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void figure\+::jump (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 84 of file objects.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classfigure_a2290acc133127e643fab20c7ce9ab975_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classfigure_a25bfb0a452b2b2fe60f7f01b08dab423}\label{classfigure_a25bfb0a452b2b2fe60f7f01b08dab423}} 
+\index{figure@{figure}!jump@{jump}}
+\index{jump@{jump}!figure@{figure}}
+\subsubsection{\texorpdfstring{jump()}{jump()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void figure\+::jump (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2i}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 88 of file objects.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classfigure_a25bfb0a452b2b2fe60f7f01b08dab423_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classfigure_ac7592a3b4cb4210fbd114c42d015c4e7}\label{classfigure_ac7592a3b4cb4210fbd114c42d015c4e7}} 
+\index{figure@{figure}!move@{move}}
+\index{move@{move}!figure@{figure}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void figure\+::move (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 53 of file objects.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classfigure_a2196c51490b69027860fdb015913de19}\label{classfigure_a2196c51490b69027860fdb015913de19}} 
+\index{figure@{figure}!position@{position}}
+\index{position@{position}!figure@{figure}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily sf\+::\+Vector2f figure\+::position}
+
+
+
+Definition at line 10 of file objects.\+hpp.
+
+\mbox{\Hypertarget{classfigure_aaaf0bac968262da5781ddcfbb6bcb687}\label{classfigure_aaaf0bac968262da5781ddcfbb6bcb687}} 
+\index{figure@{figure}!selected@{selected}}
+\index{selected@{selected}!figure@{figure}}
+\subsubsection{\texorpdfstring{selected}{selected}}
+{\footnotesize\ttfamily bool figure\+::selected = 0}
+
+
+
+Definition at line 11 of file objects.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{objects_8hpp}{objects.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{objects_8cpp}{objects.\+cpp}\end{DoxyCompactItemize}

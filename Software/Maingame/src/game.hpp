@@ -1,5 +1,4 @@
-#ifndef _game_HPP
-#define _game_HPP
+#pragma once
 
 #include <SFML\Graphics.hpp>
 #include <iostream>
@@ -252,5 +251,3 @@ public:
 	///
 	void get_items_from_database(std::map<std::string, std::vector<std::string>> & item_values_map);
 };
-
-#endif

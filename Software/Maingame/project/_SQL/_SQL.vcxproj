@@ -24,8 +24,9 @@
     <ClInclude Include="..\..\src\button_actions.hpp" />
     <ClInclude Include="..\..\src\dialogbox.hpp" />
     <ClInclude Include="..\..\src\exception_list.hpp" />
-    <ClInclude Include="..\..\src\file_reading_operators.hpp" />
     <ClInclude Include="..\..\src\game.hpp" />
+    <ClInclude Include="..\..\src\inventory.hpp" />
+    <ClInclude Include="..\..\src\item.hpp" />
     <ClInclude Include="..\..\src\leveleditor.hpp" />
     <ClInclude Include="..\..\src\main_menu.hpp" />
     <ClInclude Include="..\..\src\music.hpp" />
@@ -120,7 +121,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\..\bin\</OutDir>
+    <OutDir>..\..\bin</OutDir>
     <IntDir>../../bin/$(Platform)/$(Configuration)/</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

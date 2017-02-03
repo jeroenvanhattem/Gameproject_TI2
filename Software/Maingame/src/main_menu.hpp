@@ -19,6 +19,16 @@ public:
 	picture gid_gud;
 
 	main_menu(sf::RenderWindow & window);
+
+	/// Show menu
+	//
+	/// This method shows the menu.\n
+	///
+	/// Example:
+	/// --------
+	/// show_menu() \n
+	/// -> You can now see the menu
+	///
 	void show_menu();
 	bool button_pressed(picture & object, sf::View & view);
 	void load_screen();

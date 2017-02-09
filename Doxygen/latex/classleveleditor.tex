@@ -1,0 +1,1020 @@
+\hypertarget{classleveleditor}{}\section{leveleditor Class Reference}
+\label{classleveleditor}\index{leveleditor@{leveleditor}}
+
+
+{\ttfamily \#include $<$leveleditor.\+hpp$>$}
+
+
+
+Collaboration diagram for leveleditor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classleveleditor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classleveleditor_a5dfc809a9bac07ffa88ce921c077f017}{leveleditor} (sf\+::\+Vector2f \hyperlink{classleveleditor_ace10ab3736e90b40682ab9733b46d8f0}{levelsize}, sf\+::\+Vector2f tilesize, sf\+::\+Render\+Window \&\hyperlink{classleveleditor_a95edfc93a38089da61375eef9e65606e}{window}, \hyperlink{classsql}{sql} \&\hyperlink{classleveleditor_a1b1594767de698a60f38e91690a55a36}{database})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_a2ee968e4a8d305cdb1465397388b63f2}{editor\+\_\+loop} ()
+\begin{DoxyCompactList}\small\item\em The main loop for the editor to stay working. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_aa5cd17c0004af09a706230a93abb10ee}{get\+\_\+actions} ()
+\begin{DoxyCompactList}\small\item\em Loop through the actions in the action class. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_ae819c7275982ef9e2891017985560c6d}{draw\+\_\+rectangle\+\_\+store} ()
+\begin{DoxyCompactList}\small\item\em Draw the rectangle store on the screen. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_afa6c25fa02db7ad3d904d6bb91b79643}{draw\+\_\+background\+\_\+store} ()
+\begin{DoxyCompactList}\small\item\em Draw the background store. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_ac87f89b0889c243ab43cfbbc7fd70836}{draw\+\_\+tile\+\_\+store} ()
+\begin{DoxyCompactList}\small\item\em Draw the tile store. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_a3478cade84f5ff58c06df2c173c9127d}{draw\+\_\+temporary\+\_\+store} ()
+\begin{DoxyCompactList}\small\item\em Draw the temporary store. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+View \hyperlink{classleveleditor_a8a6367bede4a3a13c41f764f1ac628a4}{view1}
+\item 
+sf\+::\+View \hyperlink{classleveleditor_aa6730359d22f4ea8f82347e29af75afa}{view2}
+\item 
+sf\+::\+View \hyperlink{classleveleditor_a2051eecaa725f921ef9520030c713a0b}{view3}
+\item 
+sf\+::\+View \hyperlink{classleveleditor_a73061ee47d22e443922a460cb97d2ed3}{view4}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classleveleditor_aefcb8b0819a53d39936400d5c4f4952e}{button\+\_\+pressed} (\hyperlink{classdialogbox}{dialogbox} \&object, sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em Check if a button is pressed at the given view. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_ace9678fd4d5cdce53584dcc55d4e7c7b}{get\+\_\+items\+\_\+from\+\_\+database} (std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$$>$ \&item\+\_\+values\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Get data from the database by giving a map. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_a675038d66c5ea045d4e3b922e28a23ec}{load\+\_\+rectangles} ()
+\begin{DoxyCompactList}\small\item\em This function loads all background rectangles in the background vector. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_ad34dad62ef7c5ea26250b97e9803776a}{load\+\_\+tile\+\_\+list} ()
+\begin{DoxyCompactList}\small\item\em This method loads all tiles which can be choosen at the right side of the level editor. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_a6579d63ca18e84f7a335bf8072f798cc}{set\+\_\+selected} ()
+\begin{DoxyCompactList}\small\item\em Set a object from the tile list as selected when there is clicked on it. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_aa2b54b93aa87f704d841f6ccd59b4e38}{remove\+\_\+last\+\_\+object} ()
+\begin{DoxyCompactList}\small\item\em Removes the last object from the temporary store. \end{DoxyCompactList}\item 
+bool \hyperlink{classleveleditor_a89e3b4fb65aa6db692a2f4db65e6dba2}{remove\+\_\+object\+\_\+under\+\_\+mouse} ()
+\begin{DoxyCompactList}\small\item\em This function removes the object under the mouse by pressing c. \end{DoxyCompactList}\item 
+void \hyperlink{classleveleditor_a3d09ece44892be49f42c62b3cdcada0c}{create\+\_\+object} (sf\+::\+Vector2f position)
+\begin{DoxyCompactList}\small\item\em Creates an object which is selected at the given position. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \hyperlink{classleveleditor_ac2de1ac26fa5f7e10ca834e6448b1b6b}{convert\+\_\+to\+\_\+coords} (sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em Converts a mouse position to map coords on the given view. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \hyperlink{classleveleditor_ac6bf4571731b8283feb4c20d1391fa8b}{get\+\_\+position\+\_\+from\+\_\+rectangle\+\_\+under\+\_\+mouse} ()
+\begin{DoxyCompactList}\small\item\em Get the position of the rectangle from rectangle store under the mouse. \end{DoxyCompactList}\item 
+bool \hyperlink{classleveleditor_a0c983ad2887a677d22fbea4eed0ec7d4}{is\+\_\+object\+\_\+under\+\_\+mouse} (std\+::vector$<$ \hyperlink{classpicture}{picture} $\ast$$>$ \&vector, sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em Check if a picture object is under the mouse. \end{DoxyCompactList}\item 
+bool \hyperlink{classleveleditor_af11cad8cf1e7999a04f6a8f2a4950794}{is\+\_\+object\+\_\+under\+\_\+mouse} (std\+::vector$<$ \hyperlink{classfigure}{figure} $\ast$$>$ \&vector, sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em Check if a figure object is under the mouse. \end{DoxyCompactList}\item 
+bool \hyperlink{classleveleditor_aaa46d78a5b4630364b7b8f115b23dcff}{is\+\_\+button\+\_\+pressed} (\hyperlink{classpicture}{picture} \&object, sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em Check if a button is pressed at the given view. \end{DoxyCompactList}\item 
+bool \hyperlink{classleveleditor_aa44f48b9869b3d5e0ce0429c6916e2b9}{menu\+\_\+options} ()
+\begin{DoxyCompactList}\small\item\em Looks if a menu button is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vector2f \hyperlink{classleveleditor_ace10ab3736e90b40682ab9733b46d8f0}{levelsize} = \{ 0,0 \}
+\item 
+sf\+::\+Vector2f \hyperlink{classleveleditor_a520e15cb7a61acba59ccd36a951479e5}{rect\+\_\+size} = \{ 0,0 \}
+\item 
+std\+::vector$<$ \hyperlink{classfigure}{figure} $\ast$ $>$ \hyperlink{classleveleditor_a07af571a23c704edfe87baef71265597}{rectangle\+\_\+store}
+\item 
+std\+::vector$<$ \hyperlink{classpicture}{picture} $\ast$ $>$ \hyperlink{classleveleditor_adb28cbc235cb4af8b3c4ce8d725a0672}{background\+\_\+store}
+\item 
+std\+::vector$<$ \hyperlink{classpicture}{picture} $\ast$ $>$ \hyperlink{classleveleditor_a0af5e07c57e50b3ad3d15d7ae64190ce}{tile\+\_\+store}
+\item 
+std\+::vector$<$ \hyperlink{classpicture}{picture} $\ast$ $>$ \hyperlink{classleveleditor_aebecc1e7c65f9bfd0da843b138fd9e68}{temporary\+\_\+store}
+\item 
+std\+::vector$<$ \hyperlink{classdialogbox}{dialogbox} $\ast$ $>$ \hyperlink{classleveleditor_a03a8753b5312938d83c67b0873014f6e}{level\+\_\+buttons}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classleveleditor_a02e37e18772af606dce2ee96d59dc7ae}{level\+\_\+ids}
+\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \hyperlink{classleveleditor_a36fa2dbff8ca9dfddb8ff3b6b331e275}{background\+\_\+values\+\_\+map}
+\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \hyperlink{classleveleditor_aec34dfe3c55f923f1a04b63040f70050}{object\+\_\+values\+\_\+map}
+\item 
+std\+::string \hyperlink{classleveleditor_acb425c1934ea523a6850a160610385d5}{active\+\_\+level}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{classleveleditor_a95edfc93a38089da61375eef9e65606e}{window}
+\item 
+\hyperlink{classsql}{sql} \& \hyperlink{classleveleditor_a1b1594767de698a60f38e91690a55a36}{database}
+\item 
+\hyperlink{classpicture}{picture} \hyperlink{classleveleditor_a8ba58913d3035bc9ae363e1ce72279d3}{back\+\_\+to\+\_\+menu\+\_\+button}
+\item 
+\hyperlink{classpicture}{picture} \hyperlink{classleveleditor_ac05afa3b3ddd67cc6be6df6a43f1526f}{save\+\_\+level\+\_\+button}
+\item 
+\hyperlink{classpicture}{picture} \hyperlink{classleveleditor_aa227a29f049d0b381c05b0e08ea12775}{new\+\_\+game\+\_\+button}
+\item 
+\hyperlink{classpicture}{picture} \hyperlink{classleveleditor_adc1e2055b7a34c0719af86f0778b8954}{load\+\_\+game\+\_\+button}
+\item 
+bool \hyperlink{classleveleditor_a45f7bffb16d54852e0e24902d23f3a91}{pressed\+\_\+esc} = true
+\item 
+bool \hyperlink{classleveleditor_a31762448e212fa345f3a3b6d5ce81d66}{pressed\+\_\+load\+\_\+game} = false
+\item 
+\hyperlink{classaction}{action} \hyperlink{classleveleditor_a17bf53d8483496da9967d5344293db54}{actions} \mbox{[}12\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 70 of file leveleditor.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveleditor_a5dfc809a9bac07ffa88ce921c077f017}\label{classleveleditor_a5dfc809a9bac07ffa88ce921c077f017}} 
+\index{leveleditor@{leveleditor}!leveleditor@{leveleditor}}
+\index{leveleditor@{leveleditor}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{leveleditor()}{leveleditor()}}
+{\footnotesize\ttfamily leveleditor\+::leveleditor (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{levelsize,  }\item[{sf\+::\+Vector2f}]{tilesize,  }\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{classsql}{sql} \&}]{database }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\subsubsection*{This will create a leveleditor object.  Parameters\+: }
+
+levelsize \+: sf\+::\+Vector2f ~\newline
+-\/$>$ Give the levelsize with the function. ~\newline
+ tilesize \+: sf\+::\+Vector2f ~\newline
+-\/$>$ Give the tilesize with the function. ~\newline
+ window \+: sf\+::\+Render\+Window\& ~\newline
+-\/$>$ Give a window with the function where the leveleditor needs to be drawn at. ~\newline
+ database \+: sql\& ~\newline
+-\/$>$ Give the database to the function.~\newline
+ \subsubsection*{Example\+: }
+
+leveleditor(\{1080,1080\}, \{32,32\}, window, database); ~\newline
+
+
+Definition at line 3 of file leveleditor.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_a5dfc809a9bac07ffa88ce921c077f017_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveleditor_aefcb8b0819a53d39936400d5c4f4952e}\label{classleveleditor_aefcb8b0819a53d39936400d5c4f4952e}} 
+\index{leveleditor@{leveleditor}!button\+\_\+pressed@{button\+\_\+pressed}}
+\index{button\+\_\+pressed@{button\+\_\+pressed}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{button\+\_\+pressed()}{button\_pressed()}}
+{\footnotesize\ttfamily bool leveleditor\+::button\+\_\+pressed (\begin{DoxyParamCaption}\item[{\hyperlink{classdialogbox}{dialogbox} \&}]{object,  }\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if a button is pressed at the given view. 
+
+\subsubsection*{Parameters\+: }
+
+object \+: dialogbox\& ~\newline
+-\/$>$ A dialog object.
+
+view \+: view\& ~\newline
+-\/$>$ A view.
+
+\subsubsection*{Return\+: }
+
+bool \+: bool ~\newline
+-\/$>$ returns true if left mouse button is pressed on the given dialogbox.
+
+\subsubsection*{Example\+: }
+
+Get\+\_\+data(dialogbox, view1) ~\newline
+return\+: \{true\}. 
+
+Definition at line 182 of file leveleditor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classleveleditor_aefcb8b0819a53d39936400d5c4f4952e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_ac2de1ac26fa5f7e10ca834e6448b1b6b}\label{classleveleditor_ac2de1ac26fa5f7e10ca834e6448b1b6b}} 
+\index{leveleditor@{leveleditor}!convert\+\_\+to\+\_\+coords@{convert\+\_\+to\+\_\+coords}}
+\index{convert\+\_\+to\+\_\+coords@{convert\+\_\+to\+\_\+coords}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{convert\+\_\+to\+\_\+coords()}{convert\_to\_coords()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f leveleditor\+::convert\+\_\+to\+\_\+coords (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Converts a mouse position to map coords on the given view. 
+
+\subsubsection*{Parameters\+: }
+
+view \+: sf\+::\+View\& ~\newline
+-\/$>$ view of the editor
+
+\subsubsection*{Return\+: }
+
+vector \+: sf\+::\+Vector2f ~\newline
+-\/$>$ A vector converted to mapcoords.
+
+\subsubsection*{Example\+: }
+
+convert\+\_\+to\+\_\+coords(view1); -\/$>$ (256,596) 
+
+Definition at line 271 of file leveleditor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_ac2de1ac26fa5f7e10ca834e6448b1b6b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_a3d09ece44892be49f42c62b3cdcada0c}\label{classleveleditor_a3d09ece44892be49f42c62b3cdcada0c}} 
+\index{leveleditor@{leveleditor}!create\+\_\+object@{create\+\_\+object}}
+\index{create\+\_\+object@{create\+\_\+object}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{create\+\_\+object()}{create\_object()}}
+{\footnotesize\ttfamily void leveleditor\+::create\+\_\+object (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates an object which is selected at the given position. 
+
+\subsubsection*{Parameters\+: }
+
+position \+: sf\+::\+Vector2f -\/$>$ position for object
+
+\subsubsection*{Example\+: }
+
+Create\+\_\+object(\{100,50\}) Creates a selected object at position \{100,50\}. 
+
+Definition at line 195 of file leveleditor.\+cpp.
+
+\mbox{\Hypertarget{classleveleditor_afa6c25fa02db7ad3d904d6bb91b79643}\label{classleveleditor_afa6c25fa02db7ad3d904d6bb91b79643}} 
+\index{leveleditor@{leveleditor}!draw\+\_\+background\+\_\+store@{draw\+\_\+background\+\_\+store}}
+\index{draw\+\_\+background\+\_\+store@{draw\+\_\+background\+\_\+store}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{draw\+\_\+background\+\_\+store()}{draw\_background\_store()}}
+{\footnotesize\ttfamily void leveleditor\+::draw\+\_\+background\+\_\+store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw the background store. 
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classleveleditor_afa6c25fa02db7ad3d904d6bb91b79643}{draw\+\_\+background\+\_\+store()} ~\newline
+background\+\_\+store is now drawn on the screen. ~\newline
+
+
+Definition at line 319 of file leveleditor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_afa6c25fa02db7ad3d904d6bb91b79643_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_ae819c7275982ef9e2891017985560c6d}\label{classleveleditor_ae819c7275982ef9e2891017985560c6d}} 
+\index{leveleditor@{leveleditor}!draw\+\_\+rectangle\+\_\+store@{draw\+\_\+rectangle\+\_\+store}}
+\index{draw\+\_\+rectangle\+\_\+store@{draw\+\_\+rectangle\+\_\+store}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{draw\+\_\+rectangle\+\_\+store()}{draw\_rectangle\_store()}}
+{\footnotesize\ttfamily void leveleditor\+::draw\+\_\+rectangle\+\_\+store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw the rectangle store on the screen. 
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classleveleditor_ae819c7275982ef9e2891017985560c6d}{draw\+\_\+rectangle\+\_\+store()} ~\newline
+rectangle\+\_\+store is now drawn on the screen. ~\newline
+
+
+Definition at line 313 of file leveleditor.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classleveleditor_ae819c7275982ef9e2891017985560c6d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_ae819c7275982ef9e2891017985560c6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_a3478cade84f5ff58c06df2c173c9127d}\label{classleveleditor_a3478cade84f5ff58c06df2c173c9127d}} 
+\index{leveleditor@{leveleditor}!draw\+\_\+temporary\+\_\+store@{draw\+\_\+temporary\+\_\+store}}
+\index{draw\+\_\+temporary\+\_\+store@{draw\+\_\+temporary\+\_\+store}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{draw\+\_\+temporary\+\_\+store()}{draw\_temporary\_store()}}
+{\footnotesize\ttfamily void leveleditor\+::draw\+\_\+temporary\+\_\+store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw the temporary store. 
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classleveleditor_a3478cade84f5ff58c06df2c173c9127d}{draw\+\_\+temporary\+\_\+store()} ~\newline
+Draw the objects from the temporary\+\_\+store. ~\newline
+
+
+Definition at line 325 of file leveleditor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_a3478cade84f5ff58c06df2c173c9127d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_ac87f89b0889c243ab43cfbbc7fd70836}\label{classleveleditor_ac87f89b0889c243ab43cfbbc7fd70836}} 
+\index{leveleditor@{leveleditor}!draw\+\_\+tile\+\_\+store@{draw\+\_\+tile\+\_\+store}}
+\index{draw\+\_\+tile\+\_\+store@{draw\+\_\+tile\+\_\+store}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{draw\+\_\+tile\+\_\+store()}{draw\_tile\_store()}}
+{\footnotesize\ttfamily void leveleditor\+::draw\+\_\+tile\+\_\+store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw the tile store. 
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classleveleditor_ac87f89b0889c243ab43cfbbc7fd70836}{draw\+\_\+tile\+\_\+store()} ~\newline
+Draw the objects from the tile\+\_\+store. ~\newline
+
+
+Definition at line 331 of file leveleditor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classleveleditor_ac87f89b0889c243ab43cfbbc7fd70836_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_a2ee968e4a8d305cdb1465397388b63f2}\label{classleveleditor_a2ee968e4a8d305cdb1465397388b63f2}} 
+\index{leveleditor@{leveleditor}!editor\+\_\+loop@{editor\+\_\+loop}}
+\index{editor\+\_\+loop@{editor\+\_\+loop}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{editor\+\_\+loop()}{editor\_loop()}}
+{\footnotesize\ttfamily void leveleditor\+::editor\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The main loop for the editor to stay working. 
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classleveleditor_a2ee968e4a8d305cdb1465397388b63f2}{editor\+\_\+loop()}; ~\newline
+
+
+Definition at line 36 of file leveleditor.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_a2ee968e4a8d305cdb1465397388b63f2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_aa5cd17c0004af09a706230a93abb10ee}\label{classleveleditor_aa5cd17c0004af09a706230a93abb10ee}} 
+\index{leveleditor@{leveleditor}!get\+\_\+actions@{get\+\_\+actions}}
+\index{get\+\_\+actions@{get\+\_\+actions}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{get\+\_\+actions()}{get\_actions()}}
+{\footnotesize\ttfamily void leveleditor\+::get\+\_\+actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loop through the actions in the action class. 
+
+
+
+Definition at line 337 of file leveleditor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classleveleditor_aa5cd17c0004af09a706230a93abb10ee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_ace9678fd4d5cdce53584dcc55d4e7c7b}\label{classleveleditor_ace9678fd4d5cdce53584dcc55d4e7c7b}} 
+\index{leveleditor@{leveleditor}!get\+\_\+items\+\_\+from\+\_\+database@{get\+\_\+items\+\_\+from\+\_\+database}}
+\index{get\+\_\+items\+\_\+from\+\_\+database@{get\+\_\+items\+\_\+from\+\_\+database}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{get\+\_\+items\+\_\+from\+\_\+database()}{get\_items\_from\_database()}}
+{\footnotesize\ttfamily void leveleditor\+::get\+\_\+items\+\_\+from\+\_\+database (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$$>$ \&}]{item\+\_\+values\+\_\+map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Get data from the database by giving a map. 
+
+\subsubsection*{Parameters\+: }
+
+map vector \+: std\+::map$<$std\+::string, std\+::vector$<$std\+::string$>$$>$\& ~\newline
+-\/$>$ a map vector which contains a string with all the database values.
+
+\subsubsection*{Return\+: }
+
+vector \+: std\+::vector$<$object$>$ ~\newline
+-\/$>$ returns a vector with all the objects from the database.
+
+\subsubsection*{Example\+: }
+
+get\+\_\+items\+\_\+from\+\_\+database(object\+\_\+map) ~\newline
+-\/$>$ item\+\_\+map is now filled with objects. 
+
+Definition at line 164 of file leveleditor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classleveleditor_ace9678fd4d5cdce53584dcc55d4e7c7b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_ac6bf4571731b8283feb4c20d1391fa8b}\label{classleveleditor_ac6bf4571731b8283feb4c20d1391fa8b}} 
+\index{leveleditor@{leveleditor}!get\+\_\+position\+\_\+from\+\_\+rectangle\+\_\+under\+\_\+mouse@{get\+\_\+position\+\_\+from\+\_\+rectangle\+\_\+under\+\_\+mouse}}
+\index{get\+\_\+position\+\_\+from\+\_\+rectangle\+\_\+under\+\_\+mouse@{get\+\_\+position\+\_\+from\+\_\+rectangle\+\_\+under\+\_\+mouse}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{get\+\_\+position\+\_\+from\+\_\+rectangle\+\_\+under\+\_\+mouse()}{get\_position\_from\_rectangle\_under\_mouse()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f leveleditor\+::get\+\_\+position\+\_\+from\+\_\+rectangle\+\_\+under\+\_\+mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Get the position of the rectangle from rectangle store under the mouse. 
+
+\subsubsection*{Return\+: }
+
+position \+: sf\+::\+Vector2f ~\newline
+-\/$>$ A vector2f position.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classleveleditor_ac6bf4571731b8283feb4c20d1391fa8b}{get\+\_\+position\+\_\+from\+\_\+rectangle\+\_\+under\+\_\+mouse()} ~\newline
+-\/$>$ (234,262) 
+
+Definition at line 275 of file leveleditor.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_ac6bf4571731b8283feb4c20d1391fa8b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_aaa46d78a5b4630364b7b8f115b23dcff}\label{classleveleditor_aaa46d78a5b4630364b7b8f115b23dcff}} 
+\index{leveleditor@{leveleditor}!is\+\_\+button\+\_\+pressed@{is\+\_\+button\+\_\+pressed}}
+\index{is\+\_\+button\+\_\+pressed@{is\+\_\+button\+\_\+pressed}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{is\+\_\+button\+\_\+pressed()}{is\_button\_pressed()}}
+{\footnotesize\ttfamily bool leveleditor\+::is\+\_\+button\+\_\+pressed (\begin{DoxyParamCaption}\item[{\hyperlink{classpicture}{picture} \&}]{object,  }\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if a button is pressed at the given view. 
+
+\subsubsection*{Parameters\+: }
+
+object \+: \textquotesingle{}picture\& ~\newline
+-\/$>$ A picture object. ~\newline
+ view \+: view\& ~\newline
+-\/$>$ A view. ~\newline
+ \subsubsection*{Return\+: }
+
+button\+\_\+pressed \+: bool ~\newline
+-\/$>$ returns true if left mouse button is pressed on the given picture. ~\newline
+ \subsubsection*{Example\+: }
+
+Get\+\_\+data(picture, view1) ~\newline
+-\/$>$ true ~\newline
+
+
+Definition at line 178 of file leveleditor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_aaa46d78a5b4630364b7b8f115b23dcff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_a0c983ad2887a677d22fbea4eed0ec7d4}\label{classleveleditor_a0c983ad2887a677d22fbea4eed0ec7d4}} 
+\index{leveleditor@{leveleditor}!is\+\_\+object\+\_\+under\+\_\+mouse@{is\+\_\+object\+\_\+under\+\_\+mouse}}
+\index{is\+\_\+object\+\_\+under\+\_\+mouse@{is\+\_\+object\+\_\+under\+\_\+mouse}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{is\+\_\+object\+\_\+under\+\_\+mouse()}{is\_object\_under\_mouse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool leveleditor\+::is\+\_\+object\+\_\+under\+\_\+mouse (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classpicture}{picture} $\ast$$>$ \&}]{vector,  }\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if a picture object is under the mouse. 
+
+\subsubsection*{Parameters\+: }
+
+vector \+: std\+::vector$<$picture$\ast$$>$\& ~\newline
+-\/$>$ Give a picture vector with the function.
+
+view \+: sf\+::\+View ~\newline
+-\/$>$ Give a view with the function.
+
+\subsubsection*{Return\+: }
+
+picture\+\_\+under\+\_\+mouse \+: bool ~\newline
+-\/$>$ Returns true if the mouse is on a object. ~\newline
+ \subsubsection*{Example\+: }
+
+is\+\_\+object\+\_\+under\+\_\+mouse(picture\+\_\+vector, view1) ~\newline
+-\/$>$ true 
+
+Definition at line 293 of file leveleditor.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classleveleditor_a0c983ad2887a677d22fbea4eed0ec7d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_af11cad8cf1e7999a04f6a8f2a4950794}\label{classleveleditor_af11cad8cf1e7999a04f6a8f2a4950794}} 
+\index{leveleditor@{leveleditor}!is\+\_\+object\+\_\+under\+\_\+mouse@{is\+\_\+object\+\_\+under\+\_\+mouse}}
+\index{is\+\_\+object\+\_\+under\+\_\+mouse@{is\+\_\+object\+\_\+under\+\_\+mouse}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{is\+\_\+object\+\_\+under\+\_\+mouse()}{is\_object\_under\_mouse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool leveleditor\+::is\+\_\+object\+\_\+under\+\_\+mouse (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classfigure}{figure} $\ast$$>$ \&}]{vector,  }\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if a figure object is under the mouse. 
+
+\subsubsection*{Parameters\+: }
+
+vector \+: std\+::vector$<$picture$\ast$$>$\& ~\newline
+-\/$>$ Give a figure vector with the function. ~\newline
+ view \+: sf\+::\+View ~\newline
+-\/$>$ Give a view with the function. ~\newline
+
+
+\subsubsection*{Return\+: }
+
+figure\+\_\+under\+\_\+mouse \+: bool ~\newline
+-\/$>$ Returns true if the mouse is on a object. ~\newline
+
+
+\subsubsection*{Example\+: }
+
+is\+\_\+object\+\_\+under\+\_\+mouse(figure\+\_\+vector, view2) ~\newline
+-\/$>$ true ~\newline
+
+
+Definition at line 284 of file leveleditor.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classleveleditor_af11cad8cf1e7999a04f6a8f2a4950794_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_a675038d66c5ea045d4e3b922e28a23ec}\label{classleveleditor_a675038d66c5ea045d4e3b922e28a23ec}} 
+\index{leveleditor@{leveleditor}!load\+\_\+rectangles@{load\+\_\+rectangles}}
+\index{load\+\_\+rectangles@{load\+\_\+rectangles}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{load\+\_\+rectangles()}{load\_rectangles()}}
+{\footnotesize\ttfamily void leveleditor\+::load\+\_\+rectangles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This function loads all background rectangles in the background vector. 
+
+This method will fill the rectangle\+\_\+store with rectangles. 
+
+Definition at line 186 of file leveleditor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_a675038d66c5ea045d4e3b922e28a23ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_ad34dad62ef7c5ea26250b97e9803776a}\label{classleveleditor_ad34dad62ef7c5ea26250b97e9803776a}} 
+\index{leveleditor@{leveleditor}!load\+\_\+tile\+\_\+list@{load\+\_\+tile\+\_\+list}}
+\index{load\+\_\+tile\+\_\+list@{load\+\_\+tile\+\_\+list}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{load\+\_\+tile\+\_\+list()}{load\_tile\_list()}}
+{\footnotesize\ttfamily void leveleditor\+::load\+\_\+tile\+\_\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This method loads all tiles which can be choosen at the right side of the level editor. 
+
+This method will fill the tile\+\_\+store with objects. 
+
+Definition at line 223 of file leveleditor.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_ad34dad62ef7c5ea26250b97e9803776a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classleveleditor_ad34dad62ef7c5ea26250b97e9803776a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_aa44f48b9869b3d5e0ce0429c6916e2b9}\label{classleveleditor_aa44f48b9869b3d5e0ce0429c6916e2b9}} 
+\index{leveleditor@{leveleditor}!menu\+\_\+options@{menu\+\_\+options}}
+\index{menu\+\_\+options@{menu\+\_\+options}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{menu\+\_\+options()}{menu\_options()}}
+{\footnotesize\ttfamily bool leveleditor\+::menu\+\_\+options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Looks if a menu button is pressed. 
+
+\subsubsection*{Return\+: }
+
+back\+\_\+to\+\_\+menu\+\_\+button\+\_\+pressed \+: bool ~\newline
+-\/$>$ returns true if the back to menu button is pressed. ~\newline
+sets other variables in the hpp on true or false if a button is pressed. ~\newline
+ \subsubsection*{Example\+: }
+
+\hyperlink{classleveleditor_aa44f48b9869b3d5e0ce0429c6916e2b9}{menu\+\_\+options()} ~\newline
+-\/$>$ true ~\newline
+
+
+Definition at line 121 of file leveleditor.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_aa44f48b9869b3d5e0ce0429c6916e2b9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveleditor_aa44f48b9869b3d5e0ce0429c6916e2b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_aa2b54b93aa87f704d841f6ccd59b4e38}\label{classleveleditor_aa2b54b93aa87f704d841f6ccd59b4e38}} 
+\index{leveleditor@{leveleditor}!remove\+\_\+last\+\_\+object@{remove\+\_\+last\+\_\+object}}
+\index{remove\+\_\+last\+\_\+object@{remove\+\_\+last\+\_\+object}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{remove\+\_\+last\+\_\+object()}{remove\_last\_object()}}
+{\footnotesize\ttfamily void leveleditor\+::remove\+\_\+last\+\_\+object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Removes the last object from the temporary store. 
+
+This function removes the last object from the temporary store. 
+
+Definition at line 204 of file leveleditor.\+cpp.
+
+\mbox{\Hypertarget{classleveleditor_a89e3b4fb65aa6db692a2f4db65e6dba2}\label{classleveleditor_a89e3b4fb65aa6db692a2f4db65e6dba2}} 
+\index{leveleditor@{leveleditor}!remove\+\_\+object\+\_\+under\+\_\+mouse@{remove\+\_\+object\+\_\+under\+\_\+mouse}}
+\index{remove\+\_\+object\+\_\+under\+\_\+mouse@{remove\+\_\+object\+\_\+under\+\_\+mouse}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{remove\+\_\+object\+\_\+under\+\_\+mouse()}{remove\_object\_under\_mouse()}}
+{\footnotesize\ttfamily bool leveleditor\+::remove\+\_\+object\+\_\+under\+\_\+mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This function removes the object under the mouse by pressing c. 
+
+\subsubsection*{Return\+: }
+
+bool \+: bool ~\newline
+-\/$>$ returns a bool.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classleveleditor_a89e3b4fb65aa6db692a2f4db65e6dba2}{remove\+\_\+object\+\_\+under\+\_\+mouse()} -\/$>$ true 
+
+Definition at line 211 of file leveleditor.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classleveleditor_a89e3b4fb65aa6db692a2f4db65e6dba2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveleditor_a6579d63ca18e84f7a335bf8072f798cc}\label{classleveleditor_a6579d63ca18e84f7a335bf8072f798cc}} 
+\index{leveleditor@{leveleditor}!set\+\_\+selected@{set\+\_\+selected}}
+\index{set\+\_\+selected@{set\+\_\+selected}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{set\+\_\+selected()}{set\_selected()}}
+{\footnotesize\ttfamily void leveleditor\+::set\+\_\+selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set a object from the tile list as selected when there is clicked on it. 
+
+This method is used in the code to be able to switch between objects. 
+
+Definition at line 302 of file leveleditor.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classleveleditor_a6579d63ca18e84f7a335bf8072f798cc_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classleveleditor_a17bf53d8483496da9967d5344293db54}\label{classleveleditor_a17bf53d8483496da9967d5344293db54}} 
+\index{leveleditor@{leveleditor}!actions@{actions}}
+\index{actions@{actions}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{actions}{actions}}
+{\footnotesize\ttfamily \hyperlink{classaction}{action} leveleditor\+::actions\mbox{[}12\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        \hyperlink{classaction}{action}(sf::Keyboard::Left,  [&]() \{\hyperlink{classleveleditor_a8a6367bede4a3a13c41f764f1ac628a4}{view1}.move(-16, 0); \}),
+        \hyperlink{classaction}{action}(sf::Keyboard::Right, [&]() \{\hyperlink{classleveleditor_a8a6367bede4a3a13c41f764f1ac628a4}{view1}.move(16, 0); \}),
+        \hyperlink{classaction}{action}(sf::Keyboard::Up,    [&]() \{\hyperlink{classleveleditor_a8a6367bede4a3a13c41f764f1ac628a4}{view1}.move(0, -32); \}),
+        \hyperlink{classaction}{action}(sf::Keyboard::Down,  [&]() \{\hyperlink{classleveleditor_a8a6367bede4a3a13c41f764f1ac628a4}{view1}.move(0, 32); \}),
+        \hyperlink{classaction}{action}(sf::Keyboard::Z,     [&]() \{\hyperlink{classleveleditor_a8a6367bede4a3a13c41f764f1ac628a4}{view1}.zoom(0.9f); \}),
+        \hyperlink{classaction}{action}(sf::Keyboard::X,       [&]() \{\hyperlink{classleveleditor_a8a6367bede4a3a13c41f764f1ac628a4}{view1}.zoom(1.1f); \}),
+        \hyperlink{classaction}{action}(sf::Mouse::Left,     [&]() \{\textcolor{keywordflow}{if} (\hyperlink{classleveleditor_a0c983ad2887a677d22fbea4eed0ec7d4}{is\_object\_under\_mouse}(
+      \hyperlink{classleveleditor_a07af571a23c704edfe87baef71265597}{rectangle\_store}, \hyperlink{classleveleditor_a8a6367bede4a3a13c41f764f1ac628a4}{view1})) \{ \hyperlink{classleveleditor_a3d09ece44892be49f42c62b3cdcada0c}{create\_object}(
+      \hyperlink{classleveleditor_ac6bf4571731b8283feb4c20d1391fa8b}{get\_position\_from\_rectangle\_under\_mouse}()); \} \}),
+        \hyperlink{classaction}{action}(sf::Mouse::Left,       [&]() \{\textcolor{keywordflow}{if} (\hyperlink{classleveleditor_a0c983ad2887a677d22fbea4eed0ec7d4}{is\_object\_under\_mouse}(
+      \hyperlink{classleveleditor_a0af5e07c57e50b3ad3d15d7ae64190ce}{tile\_store}, \hyperlink{classleveleditor_aa6730359d22f4ea8f82347e29af75afa}{view2})) \{ \hyperlink{classleveleditor_a6579d63ca18e84f7a335bf8072f798cc}{set\_selected}(); \} \}),
+        \hyperlink{classaction}{action}(sf::Keyboard::S,       [&]() \{\hyperlink{classleveleditor_aa6730359d22f4ea8f82347e29af75afa}{view2}.move(0,5); \}),
+        \hyperlink{classaction}{action}(sf::Keyboard::W,       [&]() \{\hyperlink{classleveleditor_aa6730359d22f4ea8f82347e29af75afa}{view2}.move(0,-5); \}),
+        \hyperlink{classaction}{action}(sf::Keyboard::C,     [&]() \{\hyperlink{classleveleditor_a89e3b4fb65aa6db692a2f4db65e6dba2}{remove\_object\_under\_mouse}(); \}),
+        \hyperlink{classaction}{action}(sf::Keyboard::BackSpace, [&]() \{\hyperlink{classleveleditor_aa2b54b93aa87f704d841f6ccd59b4e38}{remove\_last\_object}(); \})
+    \}
+\end{DoxyCode}
+
+
+Definition at line 94 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_acb425c1934ea523a6850a160610385d5}\label{classleveleditor_acb425c1934ea523a6850a160610385d5}} 
+\index{leveleditor@{leveleditor}!active\+\_\+level@{active\+\_\+level}}
+\index{active\+\_\+level@{active\+\_\+level}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{active\+\_\+level}{active\_level}}
+{\footnotesize\ttfamily std\+::string leveleditor\+::active\+\_\+level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 83 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a8ba58913d3035bc9ae363e1ce72279d3}\label{classleveleditor_a8ba58913d3035bc9ae363e1ce72279d3}} 
+\index{leveleditor@{leveleditor}!back\+\_\+to\+\_\+menu\+\_\+button@{back\+\_\+to\+\_\+menu\+\_\+button}}
+\index{back\+\_\+to\+\_\+menu\+\_\+button@{back\+\_\+to\+\_\+menu\+\_\+button}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{back\+\_\+to\+\_\+menu\+\_\+button}{back\_to\_menu\_button}}
+{\footnotesize\ttfamily \hyperlink{classpicture}{picture} leveleditor\+::back\+\_\+to\+\_\+menu\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 87 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_adb28cbc235cb4af8b3c4ce8d725a0672}\label{classleveleditor_adb28cbc235cb4af8b3c4ce8d725a0672}} 
+\index{leveleditor@{leveleditor}!background\+\_\+store@{background\+\_\+store}}
+\index{background\+\_\+store@{background\+\_\+store}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{background\+\_\+store}{background\_store}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classpicture}{picture}$\ast$$>$ leveleditor\+::background\+\_\+store\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 75 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a36fa2dbff8ca9dfddb8ff3b6b331e275}\label{classleveleditor_a36fa2dbff8ca9dfddb8ff3b6b331e275}} 
+\index{leveleditor@{leveleditor}!background\+\_\+values\+\_\+map@{background\+\_\+values\+\_\+map}}
+\index{background\+\_\+values\+\_\+map@{background\+\_\+values\+\_\+map}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{background\+\_\+values\+\_\+map}{background\_values\_map}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::vector$<$std\+::string$>$ $>$ leveleditor\+::background\+\_\+values\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 81 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a1b1594767de698a60f38e91690a55a36}\label{classleveleditor_a1b1594767de698a60f38e91690a55a36}} 
+\index{leveleditor@{leveleditor}!database@{database}}
+\index{database@{database}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily \hyperlink{classsql}{sql}\& leveleditor\+::database\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 86 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a03a8753b5312938d83c67b0873014f6e}\label{classleveleditor_a03a8753b5312938d83c67b0873014f6e}} 
+\index{leveleditor@{leveleditor}!level\+\_\+buttons@{level\+\_\+buttons}}
+\index{level\+\_\+buttons@{level\+\_\+buttons}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{level\+\_\+buttons}{level\_buttons}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classdialogbox}{dialogbox}$\ast$$>$ leveleditor\+::level\+\_\+buttons\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a02e37e18772af606dce2ee96d59dc7ae}\label{classleveleditor_a02e37e18772af606dce2ee96d59dc7ae}} 
+\index{leveleditor@{leveleditor}!level\+\_\+ids@{level\+\_\+ids}}
+\index{level\+\_\+ids@{level\+\_\+ids}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{level\+\_\+ids}{level\_ids}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ leveleditor\+::level\+\_\+ids\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 80 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_ace10ab3736e90b40682ab9733b46d8f0}\label{classleveleditor_ace10ab3736e90b40682ab9733b46d8f0}} 
+\index{leveleditor@{leveleditor}!levelsize@{levelsize}}
+\index{levelsize@{levelsize}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{levelsize}{levelsize}}
+{\footnotesize\ttfamily sf\+::\+Vector2f leveleditor\+::levelsize = \{ 0,0 \}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_adc1e2055b7a34c0719af86f0778b8954}\label{classleveleditor_adc1e2055b7a34c0719af86f0778b8954}} 
+\index{leveleditor@{leveleditor}!load\+\_\+game\+\_\+button@{load\+\_\+game\+\_\+button}}
+\index{load\+\_\+game\+\_\+button@{load\+\_\+game\+\_\+button}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{load\+\_\+game\+\_\+button}{load\_game\_button}}
+{\footnotesize\ttfamily \hyperlink{classpicture}{picture} leveleditor\+::load\+\_\+game\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 90 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_aa227a29f049d0b381c05b0e08ea12775}\label{classleveleditor_aa227a29f049d0b381c05b0e08ea12775}} 
+\index{leveleditor@{leveleditor}!new\+\_\+game\+\_\+button@{new\+\_\+game\+\_\+button}}
+\index{new\+\_\+game\+\_\+button@{new\+\_\+game\+\_\+button}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{new\+\_\+game\+\_\+button}{new\_game\_button}}
+{\footnotesize\ttfamily \hyperlink{classpicture}{picture} leveleditor\+::new\+\_\+game\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 89 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_aec34dfe3c55f923f1a04b63040f70050}\label{classleveleditor_aec34dfe3c55f923f1a04b63040f70050}} 
+\index{leveleditor@{leveleditor}!object\+\_\+values\+\_\+map@{object\+\_\+values\+\_\+map}}
+\index{object\+\_\+values\+\_\+map@{object\+\_\+values\+\_\+map}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{object\+\_\+values\+\_\+map}{object\_values\_map}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::vector$<$std\+::string$>$ $>$ leveleditor\+::object\+\_\+values\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 82 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a45f7bffb16d54852e0e24902d23f3a91}\label{classleveleditor_a45f7bffb16d54852e0e24902d23f3a91}} 
+\index{leveleditor@{leveleditor}!pressed\+\_\+esc@{pressed\+\_\+esc}}
+\index{pressed\+\_\+esc@{pressed\+\_\+esc}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{pressed\+\_\+esc}{pressed\_esc}}
+{\footnotesize\ttfamily bool leveleditor\+::pressed\+\_\+esc = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 91 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a31762448e212fa345f3a3b6d5ce81d66}\label{classleveleditor_a31762448e212fa345f3a3b6d5ce81d66}} 
+\index{leveleditor@{leveleditor}!pressed\+\_\+load\+\_\+game@{pressed\+\_\+load\+\_\+game}}
+\index{pressed\+\_\+load\+\_\+game@{pressed\+\_\+load\+\_\+game}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{pressed\+\_\+load\+\_\+game}{pressed\_load\_game}}
+{\footnotesize\ttfamily bool leveleditor\+::pressed\+\_\+load\+\_\+game = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 92 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a520e15cb7a61acba59ccd36a951479e5}\label{classleveleditor_a520e15cb7a61acba59ccd36a951479e5}} 
+\index{leveleditor@{leveleditor}!rect\+\_\+size@{rect\+\_\+size}}
+\index{rect\+\_\+size@{rect\+\_\+size}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{rect\+\_\+size}{rect\_size}}
+{\footnotesize\ttfamily sf\+::\+Vector2f leveleditor\+::rect\+\_\+size = \{ 0,0 \}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 73 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a07af571a23c704edfe87baef71265597}\label{classleveleditor_a07af571a23c704edfe87baef71265597}} 
+\index{leveleditor@{leveleditor}!rectangle\+\_\+store@{rectangle\+\_\+store}}
+\index{rectangle\+\_\+store@{rectangle\+\_\+store}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{rectangle\+\_\+store}{rectangle\_store}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classfigure}{figure}$\ast$$>$ leveleditor\+::rectangle\+\_\+store\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 74 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_ac05afa3b3ddd67cc6be6df6a43f1526f}\label{classleveleditor_ac05afa3b3ddd67cc6be6df6a43f1526f}} 
+\index{leveleditor@{leveleditor}!save\+\_\+level\+\_\+button@{save\+\_\+level\+\_\+button}}
+\index{save\+\_\+level\+\_\+button@{save\+\_\+level\+\_\+button}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{save\+\_\+level\+\_\+button}{save\_level\_button}}
+{\footnotesize\ttfamily \hyperlink{classpicture}{picture} leveleditor\+::save\+\_\+level\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 88 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_aebecc1e7c65f9bfd0da843b138fd9e68}\label{classleveleditor_aebecc1e7c65f9bfd0da843b138fd9e68}} 
+\index{leveleditor@{leveleditor}!temporary\+\_\+store@{temporary\+\_\+store}}
+\index{temporary\+\_\+store@{temporary\+\_\+store}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{temporary\+\_\+store}{temporary\_store}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classpicture}{picture}$\ast$$>$ leveleditor\+::temporary\+\_\+store\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 77 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a0af5e07c57e50b3ad3d15d7ae64190ce}\label{classleveleditor_a0af5e07c57e50b3ad3d15d7ae64190ce}} 
+\index{leveleditor@{leveleditor}!tile\+\_\+store@{tile\+\_\+store}}
+\index{tile\+\_\+store@{tile\+\_\+store}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{tile\+\_\+store}{tile\_store}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classpicture}{picture}$\ast$$>$ leveleditor\+::tile\+\_\+store\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 76 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a8a6367bede4a3a13c41f764f1ac628a4}\label{classleveleditor_a8a6367bede4a3a13c41f764f1ac628a4}} 
+\index{leveleditor@{leveleditor}!view1@{view1}}
+\index{view1@{view1}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{view1}{view1}}
+{\footnotesize\ttfamily sf\+::\+View leveleditor\+::view1}
+
+
+
+Definition at line 338 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_aa6730359d22f4ea8f82347e29af75afa}\label{classleveleditor_aa6730359d22f4ea8f82347e29af75afa}} 
+\index{leveleditor@{leveleditor}!view2@{view2}}
+\index{view2@{view2}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{view2}{view2}}
+{\footnotesize\ttfamily sf\+::\+View leveleditor\+::view2}
+
+
+
+Definition at line 339 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a2051eecaa725f921ef9520030c713a0b}\label{classleveleditor_a2051eecaa725f921ef9520030c713a0b}} 
+\index{leveleditor@{leveleditor}!view3@{view3}}
+\index{view3@{view3}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{view3}{view3}}
+{\footnotesize\ttfamily sf\+::\+View leveleditor\+::view3}
+
+
+
+Definition at line 340 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a73061ee47d22e443922a460cb97d2ed3}\label{classleveleditor_a73061ee47d22e443922a460cb97d2ed3}} 
+\index{leveleditor@{leveleditor}!view4@{view4}}
+\index{view4@{view4}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{view4}{view4}}
+{\footnotesize\ttfamily sf\+::\+View leveleditor\+::view4}
+
+
+
+Definition at line 341 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classleveleditor_a95edfc93a38089da61375eef9e65606e}\label{classleveleditor_a95edfc93a38089da61375eef9e65606e}} 
+\index{leveleditor@{leveleditor}!window@{window}}
+\index{window@{window}!leveleditor@{leveleditor}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& leveleditor\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 85 of file leveleditor.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{leveleditor_8hpp}{leveleditor.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{leveleditor_8cpp}{leveleditor.\+cpp}\end{DoxyCompactItemize}

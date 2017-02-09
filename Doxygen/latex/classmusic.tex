@@ -1,0 +1,231 @@
+\hypertarget{classmusic}{}\section{music Class Reference}
+\label{classmusic}\index{music@{music}}
+
+
+{\ttfamily \#include $<$music.\+hpp$>$}
+
+
+
+Collaboration diagram for music\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classmusic__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmusic_a08986f41efee0ffe77fcf819dd1bfc2d}{music} (\hyperlink{classsql}{sql} \&\hyperlink{classmusic_a483b70809538add9b52adcaaaddd3c7f}{database}, sf\+::\+Sound\+Buffer \hyperlink{classmusic_a20de39eece3638a2128136af4ad765e2}{buffer}, sf\+::\+Sound \hyperlink{classmusic_a14ba0b22d1e21a9c07b8b24ab50bbb10}{sound})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classmusic_aeb639e45c64ee79496e8ec6187cfcf70}{set\+\_\+volume} (int i)
+\begin{DoxyCompactList}\small\item\em Set music volume. \end{DoxyCompactList}\item 
+void \hyperlink{classmusic_ae7835578f75b785e1ef2a3d0db9420b9}{play\+\_\+music\+\_\+from\+\_\+map} (std\+::string map\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Play map music. \end{DoxyCompactList}\item 
+void \hyperlink{classmusic_ae89df284db606b4fb68f9e99702a6872}{stop\+\_\+music} ()
+\begin{DoxyCompactList}\small\item\em Stop the music. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Sound\+Buffer \hyperlink{classmusic_a20de39eece3638a2128136af4ad765e2}{buffer}
+\item 
+sf\+::\+Sound \hyperlink{classmusic_a14ba0b22d1e21a9c07b8b24ab50bbb10}{sound}
+\item 
+sf\+::\+Music \hyperlink{classmusic_a08beb3c6befa97938b98edae5bc6ec39}{intro}
+\item 
+\hyperlink{classsql}{sql} \hyperlink{classmusic_a483b70809538add9b52adcaaaddd3c7f}{database}
+\item 
+std\+::string \hyperlink{classmusic_a14adc1380bd15d32bd1a7df66910dabf}{path}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file music.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmusic_a08986f41efee0ffe77fcf819dd1bfc2d}\label{classmusic_a08986f41efee0ffe77fcf819dd1bfc2d}} 
+\index{music@{music}!music@{music}}
+\index{music@{music}!music@{music}}
+\subsubsection{\texorpdfstring{music()}{music()}}
+{\footnotesize\ttfamily music\+::music (\begin{DoxyParamCaption}\item[{\hyperlink{classsql}{sql} \&}]{database,  }\item[{sf\+::\+Sound\+Buffer}]{buffer,  }\item[{sf\+::\+Sound}]{sound }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+This method will crate an object of class music.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+database \+: sql\& ~\newline
+-\/$>$ refference to the sqlite database.~\newline
+ buffer \+: sf\+::\+Sound\+Buffer ~\newline
+-\/$>$ a sf\+::\+Sound\+Buffer.~\newline
+ sound \+: sf\+::\+Sound ~\newline
+-\/$>$ a sf\+::sound.~\newline
+
+
+\subsubsection*{Example\+: }
+
+music m(database, buffer, sound)~\newline
+
+
+Definition at line 3 of file music.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmusic_ae7835578f75b785e1ef2a3d0db9420b9}\label{classmusic_ae7835578f75b785e1ef2a3d0db9420b9}} 
+\index{music@{music}!play\+\_\+music\+\_\+from\+\_\+map@{play\+\_\+music\+\_\+from\+\_\+map}}
+\index{play\+\_\+music\+\_\+from\+\_\+map@{play\+\_\+music\+\_\+from\+\_\+map}!music@{music}}
+\subsubsection{\texorpdfstring{play\+\_\+music\+\_\+from\+\_\+map()}{play\_music\_from\_map()}}
+{\footnotesize\ttfamily void music\+::play\+\_\+music\+\_\+from\+\_\+map (\begin{DoxyParamCaption}\item[{std\+::string}]{map\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Play map music. 
+
+Play the music that belongs to a specific map ~\newline
+ \subsubsection*{Parameters\+: }
+
+map\+\_\+id \+: std\+::string ~\newline
+-\/$>$ The map of which the music has to be played ~\newline
+ \subsubsection*{Example\+: }
+
+play\+\_\+music\+\_\+from\+\_\+map(\char`\"{}1\char`\"{}) ~\newline
+-\/$>$ Play the music from map 1 ~\newline
+
+
+Definition at line 13 of file music.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmusic_ae7835578f75b785e1ef2a3d0db9420b9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classmusic_ae7835578f75b785e1ef2a3d0db9420b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmusic_aeb639e45c64ee79496e8ec6187cfcf70}\label{classmusic_aeb639e45c64ee79496e8ec6187cfcf70}} 
+\index{music@{music}!set\+\_\+volume@{set\+\_\+volume}}
+\index{set\+\_\+volume@{set\+\_\+volume}!music@{music}}
+\subsubsection{\texorpdfstring{set\+\_\+volume()}{set\_volume()}}
+{\footnotesize\ttfamily void music\+::set\+\_\+volume (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Set music volume. 
+
+This function changes the volume of the played music ~\newline
+ \subsubsection*{Parameters\+: }
+
+i \+: int ~\newline
+-\/$>$ The volume strength ~\newline
+ \subsubsection*{Example\+: }
+
+set\+\_\+volume(100) ~\newline
+-\/$>$ Volume has been set to 100 ~\newline
+
+
+Definition at line 9 of file music.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmusic_aeb639e45c64ee79496e8ec6187cfcf70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmusic_ae89df284db606b4fb68f9e99702a6872}\label{classmusic_ae89df284db606b4fb68f9e99702a6872}} 
+\index{music@{music}!stop\+\_\+music@{stop\+\_\+music}}
+\index{stop\+\_\+music@{stop\+\_\+music}!music@{music}}
+\subsubsection{\texorpdfstring{stop\+\_\+music()}{stop\_music()}}
+{\footnotesize\ttfamily void music\+::stop\+\_\+music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stop the music. 
+
+This function stops the music ~\newline
+ \subsubsection*{Example\+: }
+
+\hyperlink{classmusic_ae89df284db606b4fb68f9e99702a6872}{stop\+\_\+music()} ~\newline
+-\/$>$ Music has been stopped ~\newline
+
+
+Definition at line 35 of file music.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmusic_a20de39eece3638a2128136af4ad765e2}\label{classmusic_a20de39eece3638a2128136af4ad765e2}} 
+\index{music@{music}!buffer@{buffer}}
+\index{buffer@{buffer}!music@{music}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer music\+::buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 8 of file music.\+hpp.
+
+\mbox{\Hypertarget{classmusic_a483b70809538add9b52adcaaaddd3c7f}\label{classmusic_a483b70809538add9b52adcaaaddd3c7f}} 
+\index{music@{music}!database@{database}}
+\index{database@{database}!music@{music}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily \hyperlink{classsql}{sql} music\+::database\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file music.\+hpp.
+
+\mbox{\Hypertarget{classmusic_a08beb3c6befa97938b98edae5bc6ec39}\label{classmusic_a08beb3c6befa97938b98edae5bc6ec39}} 
+\index{music@{music}!intro@{intro}}
+\index{intro@{intro}!music@{music}}
+\subsubsection{\texorpdfstring{intro}{intro}}
+{\footnotesize\ttfamily sf\+::\+Music music\+::intro\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 10 of file music.\+hpp.
+
+\mbox{\Hypertarget{classmusic_a14adc1380bd15d32bd1a7df66910dabf}\label{classmusic_a14adc1380bd15d32bd1a7df66910dabf}} 
+\index{music@{music}!path@{path}}
+\index{path@{path}!music@{music}}
+\subsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily std\+::string music\+::path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file music.\+hpp.
+
+\mbox{\Hypertarget{classmusic_a14ba0b22d1e21a9c07b8b24ab50bbb10}\label{classmusic_a14ba0b22d1e21a9c07b8b24ab50bbb10}} 
+\index{music@{music}!sound@{sound}}
+\index{sound@{sound}!music@{music}}
+\subsubsection{\texorpdfstring{sound}{sound}}
+{\footnotesize\ttfamily sf\+::\+Sound music\+::sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 9 of file music.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{music_8hpp}{music.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{music_8cpp}{music.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,745 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classgame">
+<title>game class Reference</title>
+<para>
+    <programlisting>#include <link linkend="game_8hpp">&lt;game.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for game</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classgame__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for game</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classgame__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>player arno</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dialogbox dialogbox</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sql &amp; database</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RenderWindow &amp; window</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::View game_view</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::View dialogbox_view</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>inventory inv</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f levelsize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; picture * &gt; background_store</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; npc * &gt; npc_list</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; sf::IntRect &gt; collision_objects</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; sf::IntRect &gt; collision_backgrounds</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; background_values_map</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; object_values_map</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; begin_stories</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool game_begin</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool first_dialog_done</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int count</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classgame_1ae263cdc30dcc916b98b0ddbbf0a6fccc">mouse_intersects_left_edge</link> (
+sf::View &amp; view)<para><emphasis>Checkt left edge of screen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classgame_1a273013552bc7ad8fef9d9192aad3cc0c">mouse_intersects_right_edge</link> (
+sf::View &amp; view)<para><emphasis>Checkt right edge of screen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classgame_1abb1c33c5a73de27e4ebd20e1b61dc3dc">mouse_intersects_upper_edge</link> (
+sf::View &amp; view)<para><emphasis>Checkt upper edge of screen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classgame_1a34a5241e205d0985a9e477a3dd77ba08">mouse_intersects_down_edge</link> (
+sf::View &amp; view)<para><emphasis>Checkt buttom edge of screen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1a69793e75c155cb06e4f2c4d98c5da27c">game_viewer</link> (
+)<para><emphasis>Activate game_viewr.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1a961fe8a42a2c0bc1ef62ef17c7c64f06">draw_npc</link> (
+)<para><emphasis>Draw NPC&apos;s on the window.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1a3718980f99cd44e9c882c2aa67368450">load_npc</link> (
+)<para><emphasis>Get all the NPC&apos;s.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1af99a7ac774385373a015bd3082049bd2">view_start_dialogs</link> (
+)<para><emphasis>Show beginning dialogues.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1a4cf9147e06874edfc6190db64d719dec">draw_background_store</link> (
+)<para><emphasis>Show the store on the window.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1ab13015cdc535671de1dd7a5a7970a238">move_player</link> (
+)<para><emphasis>Moves the player.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1a4982a1c81b1a52b8f050ef48dea86743">draw_player</link> (
+)<para><emphasis>Draws the player on the screen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1a50870549f1abdbc924743d8173ced15d">perform_player_action</link> (
+std::string action)<para><emphasis>Show the sprite that belongs to the action.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1a5b71f711786b1b48343dd02d31551a69">perform_npc_action</link> (
+std::string npc_name, std::string action)<para><emphasis>Show the sprite that belongs to the action.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1a478a3366ffd0e10713b0abc3adb65696">player_skill</link> (
+)<para><emphasis>Show action if action button pressed.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1a61adfafa4d31548fc94c853f10b9bf3b">interact</link> (
+)<para><emphasis>Interact with a NPC.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1aa78cf955c292ac2bd75fa385a946cd6e">interact</link> (
+std::string item_id)<para><emphasis>Interact with a object or tile.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classgame_1a46eaf7a077e7f3ff0b5e229142358f00">game</link> (
+sf::RenderWindow &amp; window, <link linkend="classsql">sql</link> &amp; database, sf::Vector2f levelsize)<para><emphasis>The constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1a2b80a1fbc6d723e78d3c86d2f8ff24d4">game_loop</link> (
+)<para><emphasis>Loop that handles the game.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgame_1a0eb06f984d04128ba7fba6fcca04bda3">get_items_from_database</link> (
+std::map&lt; std::string, std::vector&lt; std::string &gt;&gt; &amp; item_values_map)<para><emphasis>Get the items from the database.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classgame_1ae263cdc30dcc916b98b0ddbbf0a6fccc">
+                <title>bool game::mouse_intersects_left_edge (sf::View &amp;view)</title> <emphasis>Checkt left edge of screen.</emphasis>
+                
+<para>This function checks if the mouse intersects with the left edge of the screen.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>view : sf::View&amp;
+<literallayout>
+</literallayout>
+-&gt; The view is given with the function.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>mouse_intersects_left_edge(view1); </para>
+
+            </section>
+            <section xml:id="classgame_1a273013552bc7ad8fef9d9192aad3cc0c">
+                <title>bool game::mouse_intersects_right_edge (sf::View &amp;view)</title> <emphasis>Checkt right edge of screen.</emphasis>
+                
+<para>This function checks if the mouse intersects with the right edge of the screen.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>view : sf::View&amp;
+<literallayout>
+</literallayout>
+-&gt; The view is given with the function.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>mouse_intersects_right_edge(view1); </para>
+
+            </section>
+            <section xml:id="classgame_1abb1c33c5a73de27e4ebd20e1b61dc3dc">
+                <title>bool game::mouse_intersects_upper_edge (sf::View &amp;view)</title> <emphasis>Checkt upper edge of screen.</emphasis>
+                
+<para>This function checks if the mouse intersects with the upper edge of the screen.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>view : sf::View&amp;
+<literallayout>
+</literallayout>
+-&gt; The view is given with the function.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>mouse_intersects_upper_edge(view1); </para>
+
+            </section>
+            <section xml:id="classgame_1a34a5241e205d0985a9e477a3dd77ba08">
+                <title>bool game::mouse_intersects_down_edge (sf::View &amp;view)</title> <emphasis>Checkt buttom edge of screen.</emphasis>
+                
+<para>This function checks if the mouse intersects with the down edge of the screen.
+<literallayout>
+</literallayout>
+ <formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>view : sf::View&amp;
+<literallayout>
+</literallayout>
+-&gt; The view is given with the function.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>mouse_intersects_down_edge(view1); </para>
+
+            </section>
+            <section xml:id="classgame_1a69793e75c155cb06e4f2c4d98c5da27c">
+                <title>void game::game_viewer ()</title> <emphasis>Activate game_viewr.</emphasis>
+                
+<para>This function is used to activate the game_viewer. 
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classgame_1a69793e75c155cb06e4f2c4d98c5da27c">game_viewer()</link>; </para>
+
+            </section>
+            <section xml:id="classgame_1a961fe8a42a2c0bc1ef62ef17c7c64f06">
+                <title>void game::draw_npc ()</title> <emphasis>Draw NPC&apos;s on the window.</emphasis>
+                
+<para>This function will go through a vector which contains NPC objects, their draw function will be called on all of them one by one.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classgame_1a961fe8a42a2c0bc1ef62ef17c7c64f06">draw_npc()</link> 
+<literallayout>
+</literallayout>
+-&gt; Drawing the NPC&apos;s on the window </para>
+
+            </section>
+            <section xml:id="classgame_1a3718980f99cd44e9c882c2aa67368450">
+                <title>void game::load_npc ()</title> <emphasis>Get all the NPC&apos;s.</emphasis>
+                
+<para>This function will retrieve all the NPC&apos;s from the database and put them in the &apos;npc_list&apos; vector.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classgame_1a3718980f99cd44e9c882c2aa67368450">load_npc()</link> 
+<literallayout>
+</literallayout>
+-&gt; The npc_list vector will be filled with NPC objects from the database </para>
+
+            </section>
+            <section xml:id="classgame_1af99a7ac774385373a015bd3082049bd2">
+                <title>void game::view_start_dialogs ()</title> <emphasis>Show beginning dialogues.</emphasis>
+                
+<para>This function shows the the dialogs that will be shown in the beginning of the game.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classgame_1af99a7ac774385373a015bd3082049bd2">view_start_dialogs()</link> 
+<literallayout>
+</literallayout>
+-&gt; Dialogues will be shown on the bottom of the screen </para>
+
+            </section>
+            <section xml:id="classgame_1a4cf9147e06874edfc6190db64d719dec">
+                <title>void game::draw_background_store ()</title> <emphasis>Show the store on the window.</emphasis>
+                
+<para>This function retrieves the background of the store from the vector it&apos;s in and displays it on the screen.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classgame_1a4cf9147e06874edfc6190db64d719dec">draw_background_store()</link> 
+<literallayout>
+</literallayout>
+-&gt; The store will be shown on the window </para>
+
+            </section>
+            <section xml:id="classgame_1ab13015cdc535671de1dd7a5a7970a238">
+                <title>void game::move_player ()</title> <emphasis>Moves the player.</emphasis>
+                
+<para>This function will move the player as long as there&apos;s no collision. 
+<literallayout>
+</literallayout>
+When there&apos;s a collision the player will be set back to its previous position before the collision.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classgame_1ab13015cdc535671de1dd7a5a7970a238">move_player()</link> 
+<literallayout>
+</literallayout>
+-&gt; Move the player </para>
+
+            </section>
+            <section xml:id="classgame_1a4982a1c81b1a52b8f050ef48dea86743">
+                <title>void game::draw_player ()</title> <emphasis>Draws the player on the screen.</emphasis>
+                
+<para>This function calls the draw function from the &apos;player&apos; class, which will then draw the player on the screen.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classgame_1ab13015cdc535671de1dd7a5a7970a238">move_player()</link> 
+<literallayout>
+</literallayout>
+-&gt; Player will be shown on the screen </para>
+
+            </section>
+            <section xml:id="classgame_1a50870549f1abdbc924743d8173ced15d">
+                <title>void game::perform_player_action (std::string action)</title> <emphasis>Show the sprite that belongs to the action.</emphasis>
+                
+<para>This function shows the action the belongs to the state of the player, 
+<literallayout>
+</literallayout>
+if he walks up, the sprite will be shown of the player walking up. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>action : std::string
+<literallayout>
+</literallayout>
+-&gt; The name of the action that must be performed</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>perform_player_action(&quot;walk_up&quot;) 
+<literallayout>
+</literallayout>
+<itemizedlist>
+<listitem>
+<para>&gt; The player will be shown doing something, like walking up, walking down or dying </para>
+</listitem></itemizedlist>
+</para>
+
+            </section>
+            <section xml:id="classgame_1a5b71f711786b1b48343dd02d31551a69">
+                <title>void game::perform_npc_action (std::string npc_name, std::string action)</title> <emphasis>Show the sprite that belongs to the action.</emphasis>
+                
+<para>This function shows the action the belongs to the state of the NPC, if it walks up, the sprite will be shown of the NPC walking up.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>action : std::string
+<literallayout>
+</literallayout>
+-&gt; The name of the action that must be performed.</para>
+
+<para>npc_name : std::string
+<literallayout>
+</literallayout>
+-&gt; The name of the NPC on which this function must be executed.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>perform_npc_action(&quot;henk&quot;, &quot;walk_up&quot;) 
+<literallayout>
+</literallayout>
+<itemizedlist>
+<listitem>
+<para>&gt; The NPC will be shown doing something, like walking up, walking down or dying </para>
+</listitem></itemizedlist>
+</para>
+
+            </section>
+            <section xml:id="classgame_1a478a3366ffd0e10713b0abc3adb65696">
+                <title>void game::player_skill ()</title> <emphasis>Show action if action button pressed.</emphasis>
+                
+<para>This method will let the player perform a certain skill if the consisting button is pressed. 
+<literallayout>
+</literallayout>
+The consisting keys and buttons are defined in button_actions.
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classgame_1a61adfafa4d31548fc94c853f10b9bf3b">
+                <title>void game::interact ()</title> <emphasis>Interact with a NPC.</emphasis>
+                
+<para>Call the &apos;interact&apos; function to see if the player can interact with a player.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>player.interact() 
+<literallayout>
+</literallayout>
+-&gt; Executing the function which will show text on the screen </para>
+
+            </section>
+            <section xml:id="classgame_1aa78cf955c292ac2bd75fa385a946cd6e">
+                <title>void game::interact (std::string item_id)</title> <emphasis>Interact with a object or tile.</emphasis>
+                
+<para>Call the &apos;interact&apos; function to see if the player can interact with a player.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>item_name : std::string
+<literallayout>
+</literallayout>
+-&gt; The name of an item which will be given to the player</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>player.interact(&quot;banana&quot;) 
+<literallayout>
+</literallayout>
+<itemizedlist>
+<listitem>
+<para>&gt; Give the player an item and update this in the database </para>
+</listitem></itemizedlist>
+</para>
+
+            </section>
+            <section xml:id="classgame_1a46eaf7a077e7f3ff0b5e229142358f00">
+                <title>game::game (sf::RenderWindow &amp;window, sql &amp;database, sf::Vector2f levelsize)</title> <emphasis>The constructor.</emphasis>
+                
+<para>The constructor of the &apos;game&apos; class, this creates a game object.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>levelsize : sf::Vector2f 
+<literallayout>
+</literallayout>
+-&gt; The size of the level</para>
+
+<para>database : sql &amp; 
+<literallayout>
+</literallayout>
+-&gt; A &apos;SQ&apos; object, this will be used to get information from the database</para>
+
+<para>window :sf::RenderWindow 
+<literallayout>
+</literallayout>
+-&gt; The window on which the game has to be drawn</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classgame">game(window, database, levelsize)</link> 
+<literallayout>
+</literallayout>
+<itemizedlist>
+<listitem>
+<para>&gt; This will create a &apos;game&apos; object </para>
+</listitem></itemizedlist>
+</para>
+
+            </section>
+            <section xml:id="classgame_1a2b80a1fbc6d723e78d3c86d2f8ff24d4">
+                <title>void game::game_loop ()</title> <emphasis>Loop that handles the game.</emphasis>
+                
+<para>This funtion will execute everything that will be needed to run the game, 
+<literallayout>
+</literallayout>
+like drawing the window, loading the NPC&apos;s and working with them</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classgame_1a2b80a1fbc6d723e78d3c86d2f8ff24d4">game_loop()</link> 
+<literallayout>
+</literallayout>
+<itemizedlist>
+<listitem>
+<para>&gt; This will start the game </para>
+</listitem></itemizedlist>
+</para>
+
+            </section>
+            <section xml:id="classgame_1a0eb06f984d04128ba7fba6fcca04bda3">
+                <title>void game::get_items_from_database (std::map&lt; std::string, std::vector&lt; std::string &gt;&gt; &amp;item_values_map)</title> <emphasis>Get the items from the database.</emphasis>
+                
+<para>This function gets all the items from the database and places it in a std::map.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>item_values_map : std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; &amp; 
+<literallayout>
+</literallayout>
+-&gt; The map that contains all the items and its location</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_items_from_database(background_values_map) 
+<literallayout>
+</literallayout>
+<itemizedlist>
+<listitem>
+<para>&gt; The std::map will be filled with the items </para>
+</listitem></itemizedlist>
+</para>
+
+            </section>
+</section>

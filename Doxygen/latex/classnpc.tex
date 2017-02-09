@@ -1,0 +1,741 @@
+\hypertarget{classnpc}{}\section{npc Class Reference}
+\label{classnpc}\index{npc@{npc}}
+
+
+{\ttfamily \#include $<$npc.\+hpp$>$}
+
+
+
+Collaboration diagram for npc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classnpc__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnpc_ac99eae829579a6f49387bd44129ec33a}{npc} (sf\+::\+Render\+Window \&\hyperlink{classnpc_a7fde3d3012e4dff0d02bf882fa466fc6}{window}, \hyperlink{classsql}{sql} \&\hyperlink{classnpc_a092e6acb7f951c0805d6c4c948ccd37d}{database}, std\+::string npc\+\_\+id, bool \hyperlink{classnpc_a3815e143f7d384cb9bd0a1ab45c729a5}{is\+\_\+player}=false)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classnpc_ae8d1bfcd87382237192ebb5b6def33a5}{move} (sf\+::\+Vector2f delta)
+\begin{DoxyCompactList}\small\item\em Move the npc. \end{DoxyCompactList}\item 
+void \hyperlink{classnpc_aa86a880284a09f9fc3358a61a74be1b9}{set\+\_\+action} (std\+::string s=\char`\"{}0\char`\"{})
+\begin{DoxyCompactList}\small\item\em set action of npc \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classnpc_a670b40abcf52e0615883622324ac3bc9}{get\+\_\+name} ()
+\begin{DoxyCompactList}\small\item\em Get the name of npc. \end{DoxyCompactList}\item 
+const void \hyperlink{classnpc_a1adf71c32d8948c9718568d1a2a6d9a7}{draw} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classnpc_a1adf71c32d8948c9718568d1a2a6d9a7}{draw()} \+: Print N\+PC \end{DoxyCompactList}\item 
+sf\+::\+Int\+Rect \hyperlink{classnpc_aa6a71f7355403e4a108f3c4e8b6a3931}{get\+\_\+bounds} ()
+\begin{DoxyCompactList}\small\item\em Get a bounds from a N\+PC. \end{DoxyCompactList}\item 
+int \hyperlink{classnpc_a2714b410c2e644040f69f1cf50d3bc50}{get\+\_\+interaction} (\hyperlink{classnpc}{npc} \&other\+\_\+npc)
+\begin{DoxyCompactList}\small\item\em Get interaction two N\+PC\textquotesingle{}s. \end{DoxyCompactList}\item 
+int \hyperlink{classnpc_a64342e70f2e8c3afde210ffa77e1e54e}{get\+\_\+collision} (sf\+::\+Int\+Rect colliding\+\_\+object)
+\begin{DoxyCompactList}\small\item\em Get interaction N\+PC and object. \end{DoxyCompactList}\item 
+void \hyperlink{classnpc_a52d22585e441af4d8dde1d1a2658b2dc}{set\+\_\+position} (sf\+::\+Vector2f given\+\_\+position)
+\begin{DoxyCompactList}\small\item\em Get position of N\+PC. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \hyperlink{classnpc_af58658444d25eaa77aec883dd9d5592d}{get\+\_\+position} ()
+\begin{DoxyCompactList}\small\item\em Get position of N\+PC. \end{DoxyCompactList}\item 
+std\+::vector$<$ sf\+::\+Sprite $>$ \hyperlink{classnpc_a78bc2f0af05b44a6a8e71fa3853c0920}{get\+\_\+action} (std\+::string action\+\_\+to\+\_\+get)
+\begin{DoxyCompactList}\small\item\em Get N\+PC action. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classnpc_a61315bb51941237b6b2c0fb578f3e5ee}{get\+\_\+current\+\_\+action} ()
+\begin{DoxyCompactList}\small\item\em Get current action of N\+PC. \end{DoxyCompactList}\item 
+void \hyperlink{classnpc_a2a5bbed340b918265dabc2dcfb5d07b6}{show\+\_\+ability} (std\+::string action\+\_\+to\+\_\+show)
+\begin{DoxyCompactList}\small\item\em Perform an action. \end{DoxyCompactList}\item 
+\hyperlink{classnpc_a77e7e3430ee5ff383f7a16b4b3e07fa1}{$\sim$npc} ()
+\begin{DoxyCompactList}\small\item\em Decontructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classnpc_a357fc1c053fb6fe0e09c03d72f63191a}{load\+\_\+all\+\_\+actions} ()
+\begin{DoxyCompactList}\small\item\em Load all abilities. \end{DoxyCompactList}\item 
+void \hyperlink{classnpc_a3f32867195150317774af508034f0a41}{load\+\_\+action} (std\+::string action\+\_\+name, int steps\+\_\+of\+\_\+action, int level)
+\begin{DoxyCompactList}\small\item\em Load a npc ability. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classability}{ability} $\ast$ $>$ \hyperlink{classnpc_afc25127e7611064526758d66e78e4e29}{npc\+\_\+actions}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classnpc_ae50304639c2715b89dc1902c59830acf}{npc\+\_\+values}
+\item 
+std\+::string \hyperlink{classnpc_af2544175f28e31abaa3587d7807aa60c}{id}
+\item 
+sf\+::\+Vector2f \hyperlink{classnpc_af27f0e211e77578a73b34c7ea094d82b}{position}
+\item 
+\hyperlink{classsql}{sql} \& \hyperlink{classnpc_a092e6acb7f951c0805d6c4c948ccd37d}{database}
+\item 
+int \hyperlink{classnpc_a662c915f75653537fcbffcef96087a48}{sprite\+\_\+size} = 64
+\item 
+sf\+::\+Texture \hyperlink{classnpc_ade5118e0c4c299eea10fda2d8a6611f6}{texture}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{classnpc_a7fde3d3012e4dff0d02bf882fa466fc6}{window}
+\item 
+std\+::string \hyperlink{classnpc_a3ca0e4e222e0e7fee4d3abd9a3c7c5c4}{current\+\_\+action} = \char`\"{}walk\+\_\+down\char`\"{}
+\item 
+bool \hyperlink{classnpc_a3815e143f7d384cb9bd0a1ab45c729a5}{is\+\_\+player} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file npc.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnpc_ac99eae829579a6f49387bd44129ec33a}\label{classnpc_ac99eae829579a6f49387bd44129ec33a}} 
+\index{npc@{npc}!npc@{npc}}
+\index{npc@{npc}!npc@{npc}}
+\subsubsection{\texorpdfstring{npc()}{npc()}}
+{\footnotesize\ttfamily npc\+::npc (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{classsql}{sql} \&}]{database,  }\item[{std\+::string}]{npc\+\_\+id,  }\item[{bool}]{is\+\_\+player = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+This method will crate an object of class npc.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+window \+: sf\+::\+Render\+Window ~\newline
+-\/$>$ window where content will be drawn on.
+
+database \+: sql ~\newline
+-\/$>$ referrence to the database class.~\newline
+ npc\+\_\+id \+: sf\+::string ~\newline
+-\/$>$ id of the npc that has to be drawn.
+
+is\+\_\+player \+: bool ~\newline
+-\/$>$ boolean to select if this npc is the player or not.
+
+\subsubsection*{Example\+: }
+
+ability a(window, database, \char`\"{}1\char`\"{})~\newline
+
+
+Definition at line 3 of file npc.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_ac99eae829579a6f49387bd44129ec33a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_a77e7e3430ee5ff383f7a16b4b3e07fa1}\label{classnpc_a77e7e3430ee5ff383f7a16b4b3e07fa1}} 
+\index{npc@{npc}!````~npc@{$\sim$npc}}
+\index{````~npc@{$\sim$npc}!npc@{npc}}
+\subsubsection{\texorpdfstring{$\sim$npc()}{~npc()}}
+{\footnotesize\ttfamily npc\+::$\sim$npc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Decontructor. 
+
+Will be called when the object is deleted. ~\newline
+
+
+Definition at line 184 of file npc.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_a77e7e3430ee5ff383f7a16b4b3e07fa1_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnpc_a1adf71c32d8948c9718568d1a2a6d9a7}\label{classnpc_a1adf71c32d8948c9718568d1a2a6d9a7}} 
+\index{npc@{npc}!draw@{draw}}
+\index{draw@{draw}!npc@{npc}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily const void npc\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classnpc_a1adf71c32d8948c9718568d1a2a6d9a7}{draw()} \+: Print N\+PC 
+
+This method draws the N\+PC on the screen. ~\newline
+ \subsubsection*{Example\+: }
+
+\hyperlink{classnpc_a1adf71c32d8948c9718568d1a2a6d9a7}{draw()}~\newline
+-\/$>$ Draw the N\+PC on the screen 
+
+Definition at line 102 of file npc.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_a1adf71c32d8948c9718568d1a2a6d9a7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_a78bc2f0af05b44a6a8e71fa3853c0920}\label{classnpc_a78bc2f0af05b44a6a8e71fa3853c0920}} 
+\index{npc@{npc}!get\+\_\+action@{get\+\_\+action}}
+\index{get\+\_\+action@{get\+\_\+action}!npc@{npc}}
+\subsubsection{\texorpdfstring{get\+\_\+action()}{get\_action()}}
+{\footnotesize\ttfamily std\+::vector$<$ sf\+::\+Sprite $>$ npc\+::get\+\_\+action (\begin{DoxyParamCaption}\item[{std\+::string}]{action\+\_\+to\+\_\+get }\end{DoxyParamCaption})}
+
+
+
+Get N\+PC action. 
+
+This function return a list of sprites that is asked from the N\+PC. ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+action\+\_\+to\+\_\+perform \+: std\+::string ~\newline
+-\/$>$ The action that has to be shown.
+
+\subsubsection*{Return\+: }
+
+temp \+: std\+::vector$<$sf\+::\+Sprite$>$ ~\newline
+-\/$>$ list of sprites containing the sprites of an ability.
+
+\subsubsection*{Example\+: }
+
+get\+\_\+action(\char`\"{}walk\+\_\+up\char`\"{}) ~\newline
+-\/$>$ \{sprite1,sprite2,....\} 
+
+Definition at line 173 of file npc.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_a78bc2f0af05b44a6a8e71fa3853c0920_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_aa6a71f7355403e4a108f3c4e8b6a3931}\label{classnpc_aa6a71f7355403e4a108f3c4e8b6a3931}} 
+\index{npc@{npc}!get\+\_\+bounds@{get\+\_\+bounds}}
+\index{get\+\_\+bounds@{get\+\_\+bounds}!npc@{npc}}
+\subsubsection{\texorpdfstring{get\+\_\+bounds()}{get\_bounds()}}
+{\footnotesize\ttfamily sf\+::\+Int\+Rect npc\+::get\+\_\+bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a bounds from a N\+PC. 
+
+This function returns a sf\+::\+Int\+Rect object which is created from the position and size of the N\+PC object.~\newline
+ \subsubsection*{Return\+: }
+
+intrect\+\_\+object \+: sf\+::\+Int\+Rect ~\newline
+-\/$>$ a sf\+::\+Int\+Rect object using the position and size of the N\+PC object
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classnpc_aa6a71f7355403e4a108f3c4e8b6a3931}{get\+\_\+bounds()} ~\newline
+return\+: sf\+::\+Int\+Rect(100, 100, 30, 30) . 
+
+Definition at line 117 of file npc.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_aa6a71f7355403e4a108f3c4e8b6a3931_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_a64342e70f2e8c3afde210ffa77e1e54e}\label{classnpc_a64342e70f2e8c3afde210ffa77e1e54e}} 
+\index{npc@{npc}!get\+\_\+collision@{get\+\_\+collision}}
+\index{get\+\_\+collision@{get\+\_\+collision}!npc@{npc}}
+\subsubsection{\texorpdfstring{get\+\_\+collision()}{get\_collision()}}
+{\footnotesize\ttfamily int npc\+::get\+\_\+collision (\begin{DoxyParamCaption}\item[{sf\+::\+Int\+Rect}]{colliding\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+Get interaction N\+PC and object. 
+
+Call the \textquotesingle{}get\+\_\+collision\textquotesingle{} function to check for a collision with a sf\+::\+Int\+Rect object.~\newline
+ \subsubsection*{Parameters\+: }
+
+colliding\+\_\+object \+: sf\+::\+Int\+Rect ~\newline
+-\/$>$ The sf\+::\+Int\+Rect that will be check for a collision.~\newline
+ \subsubsection*{Return\+: }
+
+0 / 1 \+: integer ~\newline
+-\/$>$ Return a 1 if there\textquotesingle{}s a collision detected, return a 0 if no collision is detected.~\newline
+ \subsubsection*{Example\+: }
+
+npc.\+get\+\_\+collision(recangle) ~\newline
+return\+: \{\char`\"{}1\char`\"{}\}. 
+
+Definition at line 122 of file npc.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classnpc_a64342e70f2e8c3afde210ffa77e1e54e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_a64342e70f2e8c3afde210ffa77e1e54e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_a61315bb51941237b6b2c0fb578f3e5ee}\label{classnpc_a61315bb51941237b6b2c0fb578f3e5ee}} 
+\index{npc@{npc}!get\+\_\+current\+\_\+action@{get\+\_\+current\+\_\+action}}
+\index{get\+\_\+current\+\_\+action@{get\+\_\+current\+\_\+action}!npc@{npc}}
+\subsubsection{\texorpdfstring{get\+\_\+current\+\_\+action()}{get\_current\_action()}}
+{\footnotesize\ttfamily std\+::string npc\+::get\+\_\+current\+\_\+action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get current action of N\+PC. 
+
+This function returns the name of the current action of a N\+PC. ~\newline
+This is the action that the N\+PC is currently performing in the game.~\newline
+
+
+\subsubsection*{Return\+: }
+
+current\+\_\+action \+: std\+::string ~\newline
+-\/$>$ Name of the current action from N\+PC.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classnpc_a61315bb51941237b6b2c0fb578f3e5ee}{get\+\_\+current\+\_\+action()} ~\newline
+-\/$>$ \char`\"{}walk\+\_\+up\char`\"{} 
+
+Definition at line 169 of file npc.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_a61315bb51941237b6b2c0fb578f3e5ee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_a2714b410c2e644040f69f1cf50d3bc50}\label{classnpc_a2714b410c2e644040f69f1cf50d3bc50}} 
+\index{npc@{npc}!get\+\_\+interaction@{get\+\_\+interaction}}
+\index{get\+\_\+interaction@{get\+\_\+interaction}!npc@{npc}}
+\subsubsection{\texorpdfstring{get\+\_\+interaction()}{get\_interaction()}}
+{\footnotesize\ttfamily int npc\+::get\+\_\+interaction (\begin{DoxyParamCaption}\item[{\hyperlink{classnpc}{npc} \&}]{other\+\_\+npc }\end{DoxyParamCaption})}
+
+
+
+Get interaction two N\+PC\textquotesingle{}s. 
+
+Call the \textquotesingle{}get\+\_\+interaction\textquotesingle{} function to check for a collision with another N\+PC.
+
+\subsubsection*{Parameters\+: }
+
+other\+\_\+npc \+: N\+PC \& ~\newline
+-\/$>$ The N\+PC that will be check for a collision.
+
+\subsubsection*{Return\+: }
+
+0 / 1 \+: integer ~\newline
+-\/$>$ Return a 1 if there\textquotesingle{}s a collision detected, return a 0 if no collision is detected.
+
+\subsubsection*{Example\+: }
+
+get\+\_\+interaction($\ast$other\+\_\+npc) ~\newline
+-\/$>$ return\+: \{\char`\"{}1\char`\"{}\}. 
+
+Definition at line 139 of file npc.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classnpc_a2714b410c2e644040f69f1cf50d3bc50_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_a2714b410c2e644040f69f1cf50d3bc50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_a670b40abcf52e0615883622324ac3bc9}\label{classnpc_a670b40abcf52e0615883622324ac3bc9}} 
+\index{npc@{npc}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!npc@{npc}}
+\subsubsection{\texorpdfstring{get\+\_\+name()}{get\_name()}}
+{\footnotesize\ttfamily std\+::string npc\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of npc. 
+
+This method returns the name of an npc.~\newline
+
+
+\subsubsection*{Return\+: }
+
+name \+: std\+::\+String~\newline
+-\/$>$ name of the ability
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classnpc_a670b40abcf52e0615883622324ac3bc9}{get\+\_\+name()}~\newline
+\char`\"{}monk\char`\"{}~\newline
+
+
+Definition at line 111 of file npc.\+cpp.
+
+\mbox{\Hypertarget{classnpc_af58658444d25eaa77aec883dd9d5592d}\label{classnpc_af58658444d25eaa77aec883dd9d5592d}} 
+\index{npc@{npc}!get\+\_\+position@{get\+\_\+position}}
+\index{get\+\_\+position@{get\+\_\+position}!npc@{npc}}
+\subsubsection{\texorpdfstring{get\+\_\+position()}{get\_position()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f npc\+::get\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get position of N\+PC. 
+
+When this function is called, it will return the position of the N\+PC.
+
+\subsubsection*{Return\+: }
+
+position \+: sf\+::\+Vector2f ~\newline
+-\/$>$ The position of the N\+PC
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classnpc_af58658444d25eaa77aec883dd9d5592d}{get\+\_\+position()} ~\newline
+-\/$>$ return sf\+::\+Vector(200,200) 
+
+Definition at line 232 of file npc.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classnpc_af58658444d25eaa77aec883dd9d5592d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classnpc_af58658444d25eaa77aec883dd9d5592d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_a3f32867195150317774af508034f0a41}\label{classnpc_a3f32867195150317774af508034f0a41}} 
+\index{npc@{npc}!load\+\_\+action@{load\+\_\+action}}
+\index{load\+\_\+action@{load\+\_\+action}!npc@{npc}}
+\subsubsection{\texorpdfstring{load\+\_\+action()}{load\_action()}}
+{\footnotesize\ttfamily void npc\+::load\+\_\+action (\begin{DoxyParamCaption}\item[{std\+::string}]{action\+\_\+name,  }\item[{int}]{steps\+\_\+of\+\_\+action,  }\item[{int}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Load a npc ability. 
+
+This method will load one ability of an N\+PC sprite sheet.~\newline
+This ability has a certain ammount of steps and stands on a certain level in the sprite sheet.~\newline
+ \subsubsection*{Parameters\+: }
+
+action\+\_\+name \+: std\+::string~\newline
+-\/$>$ name of the ability to load
+
+steps\+\_\+of\+\_\+action \+: int ~\newline
+-\/$>$ ammount of steps of the ability. ~\newline
+
+
+Definition at line 65 of file npc.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_a3f32867195150317774af508034f0a41_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_a357fc1c053fb6fe0e09c03d72f63191a}\label{classnpc_a357fc1c053fb6fe0e09c03d72f63191a}} 
+\index{npc@{npc}!load\+\_\+all\+\_\+actions@{load\+\_\+all\+\_\+actions}}
+\index{load\+\_\+all\+\_\+actions@{load\+\_\+all\+\_\+actions}!npc@{npc}}
+\subsubsection{\texorpdfstring{load\+\_\+all\+\_\+actions()}{load\_all\_actions()}}
+{\footnotesize\ttfamily void npc\+::load\+\_\+all\+\_\+actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Load all abilities. 
+
+This method will load all abilities of an N\+PC sprite sheet.~\newline
+
+
+Definition at line 26 of file npc.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classnpc_a357fc1c053fb6fe0e09c03d72f63191a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classnpc_a357fc1c053fb6fe0e09c03d72f63191a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_ae8d1bfcd87382237192ebb5b6def33a5}\label{classnpc_ae8d1bfcd87382237192ebb5b6def33a5}} 
+\index{npc@{npc}!move@{move}}
+\index{move@{move}!npc@{npc}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void npc\+::move (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{delta }\end{DoxyParamCaption})}
+
+
+
+Move the npc. 
+
+This method moves the position an npc.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+delta \+: sf\+::\+Vector2f~\newline
+-\/$>$ new position of the npc.
+
+\subsubsection*{Example\+: }
+
+move(\{2,0\})~\newline
+npc has moved 2 pixels to the right~\newline
+
+
+Definition at line 55 of file npc.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_ae8d1bfcd87382237192ebb5b6def33a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_aa86a880284a09f9fc3358a61a74be1b9}\label{classnpc_aa86a880284a09f9fc3358a61a74be1b9}} 
+\index{npc@{npc}!set\+\_\+action@{set\+\_\+action}}
+\index{set\+\_\+action@{set\+\_\+action}!npc@{npc}}
+\subsubsection{\texorpdfstring{set\+\_\+action()}{set\_action()}}
+{\footnotesize\ttfamily void npc\+::set\+\_\+action (\begin{DoxyParamCaption}\item[{std\+::string}]{s = {\ttfamily \char`\"{}0\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+set action of npc 
+
+This method sets the current action of the npc.~\newline
+The standard value is walk down.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+s \+: std\+::string~\newline
+-\/$>$ name of the action that has to be set on active.
+
+\subsubsection*{Example\+: }
+
+set\+\_\+action(\char`\"{}walk\+\_\+up\char`\"{})~\newline
+npc is now set for walking up.~\newline
+
+
+Definition at line 81 of file npc.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_aa86a880284a09f9fc3358a61a74be1b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_a52d22585e441af4d8dde1d1a2658b2dc}\label{classnpc_a52d22585e441af4d8dde1d1a2658b2dc}} 
+\index{npc@{npc}!set\+\_\+position@{set\+\_\+position}}
+\index{set\+\_\+position@{set\+\_\+position}!npc@{npc}}
+\subsubsection{\texorpdfstring{set\+\_\+position()}{set\_position()}}
+{\footnotesize\ttfamily void npc\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{given\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Get position of N\+PC. 
+
+When this function is called, it will return the position of the N\+PC.~\newline
+ \subsubsection*{Return\+: }
+
+position \+: sf\+::\+Vector2f ~\newline
+-\/$>$ The position of the N\+PC
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classnpc_af58658444d25eaa77aec883dd9d5592d}{get\+\_\+position()} ~\newline
+-\/$>$ return sf\+::\+Vector(200,200) 
+
+Definition at line 158 of file npc.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_a52d22585e441af4d8dde1d1a2658b2dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnpc_a2a5bbed340b918265dabc2dcfb5d07b6}\label{classnpc_a2a5bbed340b918265dabc2dcfb5d07b6}} 
+\index{npc@{npc}!show\+\_\+ability@{show\+\_\+ability}}
+\index{show\+\_\+ability@{show\+\_\+ability}!npc@{npc}}
+\subsubsection{\texorpdfstring{show\+\_\+ability()}{show\_ability()}}
+{\footnotesize\ttfamily void npc\+::show\+\_\+ability (\begin{DoxyParamCaption}\item[{std\+::string}]{action\+\_\+to\+\_\+show }\end{DoxyParamCaption})}
+
+
+
+Perform an action. 
+
+This function shows one step of the asked ability. ~\newline
+This function has to be called in a loop that stops at the max size of the ability list. ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+action\+\_\+to\+\_\+show \+: std\+::string ~\newline
+-\/$>$ Name of action.
+
+\subsubsection*{Example\+: }
+
+show\+\_\+ability(\char`\"{}shoot\+\_\+arrow\+\_\+up\char`\"{}) ~\newline
+-\/$>$ N\+PC will shoot an arrow northwards. 
+
+Definition at line 89 of file npc.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnpc_a2a5bbed340b918265dabc2dcfb5d07b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnpc_a3ca0e4e222e0e7fee4d3abd9a3c7c5c4}\label{classnpc_a3ca0e4e222e0e7fee4d3abd9a3c7c5c4}} 
+\index{npc@{npc}!current\+\_\+action@{current\+\_\+action}}
+\index{current\+\_\+action@{current\+\_\+action}!npc@{npc}}
+\subsubsection{\texorpdfstring{current\+\_\+action}{current\_action}}
+{\footnotesize\ttfamily std\+::string npc\+::current\+\_\+action = \char`\"{}walk\+\_\+down\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 20 of file npc.\+hpp.
+
+\mbox{\Hypertarget{classnpc_a092e6acb7f951c0805d6c4c948ccd37d}\label{classnpc_a092e6acb7f951c0805d6c4c948ccd37d}} 
+\index{npc@{npc}!database@{database}}
+\index{database@{database}!npc@{npc}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily \hyperlink{classsql}{sql}\& npc\+::database\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 15 of file npc.\+hpp.
+
+\mbox{\Hypertarget{classnpc_af2544175f28e31abaa3587d7807aa60c}\label{classnpc_af2544175f28e31abaa3587d7807aa60c}} 
+\index{npc@{npc}!id@{id}}
+\index{id@{id}!npc@{npc}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily std\+::string npc\+::id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file npc.\+hpp.
+
+\mbox{\Hypertarget{classnpc_a3815e143f7d384cb9bd0a1ab45c729a5}\label{classnpc_a3815e143f7d384cb9bd0a1ab45c729a5}} 
+\index{npc@{npc}!is\+\_\+player@{is\+\_\+player}}
+\index{is\+\_\+player@{is\+\_\+player}!npc@{npc}}
+\subsubsection{\texorpdfstring{is\+\_\+player}{is\_player}}
+{\footnotesize\ttfamily bool npc\+::is\+\_\+player = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 22 of file npc.\+hpp.
+
+\mbox{\Hypertarget{classnpc_afc25127e7611064526758d66e78e4e29}\label{classnpc_afc25127e7611064526758d66e78e4e29}} 
+\index{npc@{npc}!npc\+\_\+actions@{npc\+\_\+actions}}
+\index{npc\+\_\+actions@{npc\+\_\+actions}!npc@{npc}}
+\subsubsection{\texorpdfstring{npc\+\_\+actions}{npc\_actions}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classability}{ability}$\ast$$>$ npc\+::npc\+\_\+actions\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 10 of file npc.\+hpp.
+
+\mbox{\Hypertarget{classnpc_ae50304639c2715b89dc1902c59830acf}\label{classnpc_ae50304639c2715b89dc1902c59830acf}} 
+\index{npc@{npc}!npc\+\_\+values@{npc\+\_\+values}}
+\index{npc\+\_\+values@{npc\+\_\+values}!npc@{npc}}
+\subsubsection{\texorpdfstring{npc\+\_\+values}{npc\_values}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ npc\+::npc\+\_\+values\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file npc.\+hpp.
+
+\mbox{\Hypertarget{classnpc_af27f0e211e77578a73b34c7ea094d82b}\label{classnpc_af27f0e211e77578a73b34c7ea094d82b}} 
+\index{npc@{npc}!position@{position}}
+\index{position@{position}!npc@{npc}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily sf\+::\+Vector2f npc\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file npc.\+hpp.
+
+\mbox{\Hypertarget{classnpc_a662c915f75653537fcbffcef96087a48}\label{classnpc_a662c915f75653537fcbffcef96087a48}} 
+\index{npc@{npc}!sprite\+\_\+size@{sprite\+\_\+size}}
+\index{sprite\+\_\+size@{sprite\+\_\+size}!npc@{npc}}
+\subsubsection{\texorpdfstring{sprite\+\_\+size}{sprite\_size}}
+{\footnotesize\ttfamily int npc\+::sprite\+\_\+size = 64\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 17 of file npc.\+hpp.
+
+\mbox{\Hypertarget{classnpc_ade5118e0c4c299eea10fda2d8a6611f6}\label{classnpc_ade5118e0c4c299eea10fda2d8a6611f6}} 
+\index{npc@{npc}!texture@{texture}}
+\index{texture@{texture}!npc@{npc}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily sf\+::\+Texture npc\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file npc.\+hpp.
+
+\mbox{\Hypertarget{classnpc_a7fde3d3012e4dff0d02bf882fa466fc6}\label{classnpc_a7fde3d3012e4dff0d02bf882fa466fc6}} 
+\index{npc@{npc}!window@{window}}
+\index{window@{window}!npc@{npc}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& npc\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file npc.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{npc_8hpp}{npc.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{npc_8cpp}{npc.\+cpp}\end{DoxyCompactItemize}

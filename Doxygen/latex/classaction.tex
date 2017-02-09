@@ -1,0 +1,154 @@
+\hypertarget{classaction}{}\section{action Class Reference}
+\label{classaction}\index{action@{action}}
+
+
+{\ttfamily \#include $<$leveleditor.\+hpp$>$}
+
+
+
+Collaboration diagram for action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{classaction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classaction_a326b1acaf626d97dbaa9c52f6f3f90e4}{action} (std\+::function$<$ bool() $>$ \hyperlink{classaction_a949abf979a5255f54e88a6a4273afebe}{condition}, std\+::function$<$ void() $>$ \hyperlink{classaction_a1cab66c9a7adf408ebb3734e5d95315b}{work})
+\begin{DoxyCompactList}\small\item\em Template function for bool. \end{DoxyCompactList}\item 
+\hyperlink{classaction_af9e6424028e398ca05829d3538789840}{action} (std\+::function$<$ void() $>$ \hyperlink{classaction_a1cab66c9a7adf408ebb3734e5d95315b}{work})
+\begin{DoxyCompactList}\small\item\em Template function for void. \end{DoxyCompactList}\item 
+\hyperlink{classaction_ad39321beff71da26f4aef37916974f11}{action} (\hyperlink{button__actions_8hpp_a2e21a2810e34d3df6a08f9ce18ce760d}{sf\+::\+Keyboard\+::\+Key} key, std\+::function$<$ void() $>$ \hyperlink{classaction_a1cab66c9a7adf408ebb3734e5d95315b}{work})
+\begin{DoxyCompactList}\small\item\em Template function for key pressing. \end{DoxyCompactList}\item 
+\hyperlink{classaction_a55a91caa9803002fa7ddd6e9e9e46dc6}{action} (sf\+::\+Mouse\+::\+Button button, std\+::function$<$ void() $>$ \hyperlink{classaction_a1cab66c9a7adf408ebb3734e5d95315b}{work})
+\begin{DoxyCompactList}\small\item\em Template function for mouse button. \end{DoxyCompactList}\item 
+void \hyperlink{classaction_a92c003677656b5b3e6e58b19376e6b04}{operator()} ()
+\begin{DoxyCompactList}\small\item\em Overloader for \hyperlink{classaction_a92c003677656b5b3e6e58b19376e6b04}{operator()()} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ bool() $>$ \hyperlink{classaction_a949abf979a5255f54e88a6a4273afebe}{condition}
+\item 
+std\+::function$<$ void() $>$ \hyperlink{classaction_a1cab66c9a7adf408ebb3734e5d95315b}{work}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file leveleditor.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classaction_a326b1acaf626d97dbaa9c52f6f3f90e4}\label{classaction_a326b1acaf626d97dbaa9c52f6f3f90e4}} 
+\index{action@{action}!action@{action}}
+\index{action@{action}!action@{action}}
+\subsubsection{\texorpdfstring{action()}{action()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily action\+::action (\begin{DoxyParamCaption}\item[{std\+::function$<$ bool() $>$}]{condition,  }\item[{std\+::function$<$ void() $>$}]{work }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Template function for bool. 
+
+This method will create a boolean function with a specified use. ~\newline
+ 
+
+Definition at line 21 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classaction_af9e6424028e398ca05829d3538789840}\label{classaction_af9e6424028e398ca05829d3538789840}} 
+\index{action@{action}!action@{action}}
+\index{action@{action}!action@{action}}
+\subsubsection{\texorpdfstring{action()}{action()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily action\+::action (\begin{DoxyParamCaption}\item[{std\+::function$<$ void() $>$}]{work }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Template function for void. 
+
+This method will create a void function with a specified use. ~\newline
+ 
+
+Definition at line 31 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classaction_ad39321beff71da26f4aef37916974f11}\label{classaction_ad39321beff71da26f4aef37916974f11}} 
+\index{action@{action}!action@{action}}
+\index{action@{action}!action@{action}}
+\subsubsection{\texorpdfstring{action()}{action()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily action\+::action (\begin{DoxyParamCaption}\item[{\hyperlink{button__actions_8hpp_a2e21a2810e34d3df6a08f9ce18ce760d}{sf\+::\+Keyboard\+::\+Key}}]{key,  }\item[{std\+::function$<$ void() $>$}]{work }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Template function for key pressing. 
+
+This method will create a boolean function with a specified use. ~\newline
+And returns if a specified key is pressed. ~\newline
+
+
+Definition at line 42 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classaction_a55a91caa9803002fa7ddd6e9e9e46dc6}\label{classaction_a55a91caa9803002fa7ddd6e9e9e46dc6}} 
+\index{action@{action}!action@{action}}
+\index{action@{action}!action@{action}}
+\subsubsection{\texorpdfstring{action()}{action()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily action\+::action (\begin{DoxyParamCaption}\item[{sf\+::\+Mouse\+::\+Button}]{button,  }\item[{std\+::function$<$ void() $>$}]{work }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Template function for mouse button. 
+
+This method will create a boolean function with a specified use. ~\newline
+And returns if a specified mouse button is pressed. ~\newline
+
+
+Definition at line 53 of file leveleditor.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaction_a92c003677656b5b3e6e58b19376e6b04}\label{classaction_a92c003677656b5b3e6e58b19376e6b04}} 
+\index{action@{action}!operator()@{operator()}}
+\index{operator()@{operator()}!action@{action}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily void action\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloader for \hyperlink{classaction_a92c003677656b5b3e6e58b19376e6b04}{operator()()} 
+
+This method creates the \hyperlink{classaction_a92c003677656b5b3e6e58b19376e6b04}{operator()()} so it can be used in this class. ~\newline
+
+
+Definition at line 63 of file leveleditor.\+hpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classaction_a949abf979a5255f54e88a6a4273afebe}\label{classaction_a949abf979a5255f54e88a6a4273afebe}} 
+\index{action@{action}!condition@{condition}}
+\index{condition@{condition}!action@{action}}
+\subsubsection{\texorpdfstring{condition}{condition}}
+{\footnotesize\ttfamily std\+::function$<$ bool() $>$ action\+::condition\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file leveleditor.\+hpp.
+
+\mbox{\Hypertarget{classaction_a1cab66c9a7adf408ebb3734e5d95315b}\label{classaction_a1cab66c9a7adf408ebb3734e5d95315b}} 
+\index{action@{action}!work@{work}}
+\index{work@{work}!action@{action}}
+\subsubsection{\texorpdfstring{work}{work}}
+{\footnotesize\ttfamily std\+::function$<$ void() $>$ action\+::work\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 14 of file leveleditor.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{leveleditor_8hpp}{leveleditor.\+hpp}\end{DoxyCompactItemize}

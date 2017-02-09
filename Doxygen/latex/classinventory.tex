@@ -1,0 +1,184 @@
+\hypertarget{classinventory}{}\section{inventory Class Reference}
+\label{classinventory}\index{inventory@{inventory}}
+
+
+{\ttfamily \#include $<$inventory.\+hpp$>$}
+
+
+
+Collaboration diagram for inventory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classinventory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinventory_a0c767f0886d01023984f4b06372ca626}{inventory} (sf\+::\+Render\+Window \&\hyperlink{classinventory_a699933dd5f2c8a98088ec92cbf2d5bcc}{window}, \hyperlink{classsql}{sql} \&\hyperlink{classinventory_a6d18133706ef066978817d32130bf560}{database})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classinventory_abb6d846e4b7297f79c2c9fb34b26fee2}{get\+\_\+inventory} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classinventory_abb6d846e4b7297f79c2c9fb34b26fee2}{get\+\_\+inventory()} \+: Get the inventory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{classinventory_a699933dd5f2c8a98088ec92cbf2d5bcc}{window}
+\item 
+\hyperlink{classsql}{sql} \& \hyperlink{classinventory_a6d18133706ef066978817d32130bf560}{database}
+\item 
+std\+::vector$<$ \hyperlink{classitem}{item} $>$ \hyperlink{classinventory_ac9ae72d119fe30ef46df9b8c05faed61}{inventory\+\_\+vector}
+\item 
+int \hyperlink{classinventory_abc26ad2f285ce00ab783726872007d89}{counter} = 1
+\item 
+sf\+::\+Sprite \hyperlink{classinventory_adb8d5ebeb0dada8462c1f4246d87c8e4}{inventory\+\_\+sprite}
+\item 
+sf\+::\+Texture \hyperlink{classinventory_a1c0ceddc587277e92c8a389eb7a9b139}{inventory\+\_\+texture}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file inventory.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinventory_a0c767f0886d01023984f4b06372ca626}\label{classinventory_a0c767f0886d01023984f4b06372ca626}} 
+\index{inventory@{inventory}!inventory@{inventory}}
+\index{inventory@{inventory}!inventory@{inventory}}
+\subsubsection{\texorpdfstring{inventory()}{inventory()}}
+{\footnotesize\ttfamily inventory\+::inventory (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{classsql}{sql} \&}]{database }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+This method will crate an object of class inventory.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+window \+: sf\+::\+Renderwindow\& ~\newline
+-\/$>$ window the inventory hs to be drawn one.
+
+database \+: sql\& ~\newline
+-\/$>$ refference to the sqlite database.~\newline
+
+
+\subsubsection*{Example\+: }
+
+inventory inv(window, database)~\newline
+
+
+Definition at line 3 of file inventory.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classinventory_abb6d846e4b7297f79c2c9fb34b26fee2}\label{classinventory_abb6d846e4b7297f79c2c9fb34b26fee2}} 
+\index{inventory@{inventory}!get\+\_\+inventory@{get\+\_\+inventory}}
+\index{get\+\_\+inventory@{get\+\_\+inventory}!inventory@{inventory}}
+\subsubsection{\texorpdfstring{get\+\_\+inventory()}{get\_inventory()}}
+{\footnotesize\ttfamily void inventory\+::get\+\_\+inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classinventory_abb6d846e4b7297f79c2c9fb34b26fee2}{get\+\_\+inventory()} \+: Get the inventory 
+
+This function returns the items in the inventory
+
+\subsubsection*{Example\+: }
+
+get\+\_\+inventory(1) ~\newline
+-\/$>$ Shows the items in the inventory 
+
+Definition at line 8 of file inventory.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinventory_abb6d846e4b7297f79c2c9fb34b26fee2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinventory_abb6d846e4b7297f79c2c9fb34b26fee2_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classinventory_abc26ad2f285ce00ab783726872007d89}\label{classinventory_abc26ad2f285ce00ab783726872007d89}} 
+\index{inventory@{inventory}!counter@{counter}}
+\index{counter@{counter}!inventory@{inventory}}
+\subsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily int inventory\+::counter = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 15 of file inventory.\+hpp.
+
+\mbox{\Hypertarget{classinventory_a6d18133706ef066978817d32130bf560}\label{classinventory_a6d18133706ef066978817d32130bf560}} 
+\index{inventory@{inventory}!database@{database}}
+\index{database@{database}!inventory@{inventory}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily \hyperlink{classsql}{sql}\& inventory\+::database\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file inventory.\+hpp.
+
+\mbox{\Hypertarget{classinventory_adb8d5ebeb0dada8462c1f4246d87c8e4}\label{classinventory_adb8d5ebeb0dada8462c1f4246d87c8e4}} 
+\index{inventory@{inventory}!inventory\+\_\+sprite@{inventory\+\_\+sprite}}
+\index{inventory\+\_\+sprite@{inventory\+\_\+sprite}!inventory@{inventory}}
+\subsubsection{\texorpdfstring{inventory\+\_\+sprite}{inventory\_sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite inventory\+::inventory\+\_\+sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 17 of file inventory.\+hpp.
+
+\mbox{\Hypertarget{classinventory_a1c0ceddc587277e92c8a389eb7a9b139}\label{classinventory_a1c0ceddc587277e92c8a389eb7a9b139}} 
+\index{inventory@{inventory}!inventory\+\_\+texture@{inventory\+\_\+texture}}
+\index{inventory\+\_\+texture@{inventory\+\_\+texture}!inventory@{inventory}}
+\subsubsection{\texorpdfstring{inventory\+\_\+texture}{inventory\_texture}}
+{\footnotesize\ttfamily sf\+::\+Texture inventory\+::inventory\+\_\+texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file inventory.\+hpp.
+
+\mbox{\Hypertarget{classinventory_ac9ae72d119fe30ef46df9b8c05faed61}\label{classinventory_ac9ae72d119fe30ef46df9b8c05faed61}} 
+\index{inventory@{inventory}!inventory\+\_\+vector@{inventory\+\_\+vector}}
+\index{inventory\+\_\+vector@{inventory\+\_\+vector}!inventory@{inventory}}
+\subsubsection{\texorpdfstring{inventory\+\_\+vector}{inventory\_vector}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classitem}{item}$>$ inventory\+::inventory\+\_\+vector\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file inventory.\+hpp.
+
+\mbox{\Hypertarget{classinventory_a699933dd5f2c8a98088ec92cbf2d5bcc}\label{classinventory_a699933dd5f2c8a98088ec92cbf2d5bcc}} 
+\index{inventory@{inventory}!window@{window}}
+\index{window@{window}!inventory@{inventory}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& inventory\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file inventory.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{inventory_8hpp}{inventory.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{inventory_8cpp}{inventory.\+cpp}\end{DoxyCompactItemize}

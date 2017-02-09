@@ -1,0 +1,4 @@
+<map id="npc::load_action" name="npc::load_action">
+<area shape="rect" id="node2" href="$classnpc.html#a357fc1c053fb6fe0e09c03d72f63191a" title="Load all abilities. " alt="" coords="171,5,315,32"/>
+<area shape="rect" id="node3" href="$classnpc.html#ac99eae829579a6f49387bd44129ec33a" title="Constructor. " alt="" coords="363,5,435,32"/>
+</map>

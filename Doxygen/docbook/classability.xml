@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classability">
+<title>ability class Reference</title>
+<para>
+    <programlisting>#include <link linkend="ability_8hpp">&lt;ability.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for ability</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classability__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ability</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classability__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; sf::Sprite &gt; action</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f position</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int current_action_step</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classability_1a467a2d8bf397119e9856d1cf8d2c58bc">ability</link> (
+std::string name, std::vector&lt; sf::Sprite &gt; &amp; action, sf::Vector2f position)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="classability_1a83c4b418a33a2a7f44c3883abfeac4fb">get_name</link> (
+)<para><emphasis>Get the name of the ability.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classability_1ae34dc7ddb4b0fdb1b00e70ce1860456e">move</link> (
+sf::Vector2f new_position)<para><emphasis>Move the current ability.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const void <link linkend="classability_1a5cc662aeebc530c01b7bd5ed9328a54e">draw</link> (
+sf::RenderWindow &amp; window)<para><emphasis>Print ability.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classability_1a3c6429af67529f039161a35f70caca6f">add_sprite_to_action</link> (
+sf::Sprite t)<para><emphasis>Add a sprite to the action.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; sf::Sprite &gt; <link linkend="classability_1adeb10a7af2d372637d56395792ac918f">get_action</link> (
+)<para><emphasis>Get list of sprites from an ability.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classability_1aed378a7d8a69e8a50347bcc03c0cffb3">next_step</link> (
+)<para><emphasis>Skip to the next action step.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classability_1a6eedfacfa97cb7195dee8e9c0cccb54d">~ability</link> (
+)<para><emphasis>Decontructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classability_1a467a2d8bf397119e9856d1cf8d2c58bc">
+                <title>ability::ability (std::string name, std::vector&lt; sf::Sprite &gt; &amp;action, sf::Vector2f position)</title> <emphasis>Constructor.</emphasis>
+                
+<para>This method will crate an object of class ability.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>name : std::string 
+<literallayout>
+</literallayout>
+-&gt; name of the ability to be loaded.</para>
+
+<para>action : std::vector&lt;sf::Sprite&gt; 
+<literallayout>
+</literallayout>
+-&gt; list of sprites that the animation of the ability needs.
+<literallayout>
+</literallayout>
+ position : sf::Vector2f 
+<literallayout>
+</literallayout>
+-&gt; position of the player, so the ability is loaded on that spot.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>ability a(&quot;arno&quot;, {...}, {100,100})
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classability_1a83c4b418a33a2a7f44c3883abfeac4fb">
+                <title>std::string ability::get_name ()</title> <emphasis>Get the name of the ability.</emphasis>
+                
+<para>This method returns the name of the saved ability.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>name : std::String
+<literallayout>
+</literallayout>
+-&gt; name of the ability</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classability_1a83c4b418a33a2a7f44c3883abfeac4fb">get_name()</link>
+<literallayout>
+</literallayout>
+&quot;walk_up&quot;
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classability_1ae34dc7ddb4b0fdb1b00e70ce1860456e">
+                <title>void ability::move (sf::Vector2f new_position)</title> <emphasis>Move the current ability.</emphasis>
+                
+<para>This method moves the position of the ability, 
+<literallayout>
+</literallayout>
+so that the ability sprite is printed on the same position as the player or NPC.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>new_position : sf::Vector2f
+<literallayout>
+</literallayout>
+-&gt; new position of the ability sprite</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>move({200,200})
+<literallayout>
+</literallayout>
+ability position now set on 200, 200
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classability_1a5cc662aeebc530c01b7bd5ed9328a54e">
+                <title>const void ability::draw (sf::RenderWindow &amp;window)</title> <emphasis>Print ability.</emphasis>
+                
+<para>This method draws the ability on the screen. 
+<literallayout>
+</literallayout>
+Because there are likely multiple sprites in an ability, 
+<literallayout>
+</literallayout>
+the sprite that have to be printed is handle by the current_action_step value. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>window : sf::RenderWindow
+<literallayout>
+</literallayout>
+-&gt; window where the ability have to be drawn on.
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classability_1a3c6429af67529f039161a35f70caca6f">
+                <title>void ability::add_sprite_to_action (sf::Sprite t)</title> <emphasis>Add a sprite to the action.</emphasis>
+                
+<para>This method will add a new sprite to the action. 
+<literallayout>
+</literallayout>
+This method can be used if you think that the animation is not complete enough,
+<literallayout>
+</literallayout>
+and want to add an extra sprite to the animation.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>t : sf::Sprite
+<literallayout>
+</literallayout>
+-&gt; new sprite that will be added to the ability.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>add_sprite_to_action(example_sprite)
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classability_1adeb10a7af2d372637d56395792ac918f">
+                <title>std::vector&lt; sf::Sprite &gt; ability::get_action ()</title> <emphasis>Get list of sprites from an ability.</emphasis>
+                
+<para>This method returns a list that contains all sprites from the ability. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>action : std::vector&lt;sf::Sprite&gt;
+<literallayout>
+</literallayout>
+-&gt; List of sprites, containing the ability.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classability_1adeb10a7af2d372637d56395792ac918f">get_action()</link>
+<literallayout>
+</literallayout>
+{sprite1,sprite2,sprite3} </para>
+
+            </section>
+            <section xml:id="classability_1aed378a7d8a69e8a50347bcc03c0cffb3">
+                <title>void ability::next_step ()</title> <emphasis>Skip to the next action step.</emphasis>
+                
+<para>This method moves the current_action_step to the next value. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>current_action_step = 5
+<literallayout>
+</literallayout>
+<link linkend="classability_1aed378a7d8a69e8a50347bcc03c0cffb3">next_step()</link>
+<literallayout>
+</literallayout>
+current_action_step = 6
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classability_1a6eedfacfa97cb7195dee8e9c0cccb54d">
+                <title>ability::~ability ()</title> <emphasis>Decontructor.</emphasis>
+                
+<para>Will be called when the object is deleted. 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+</section>

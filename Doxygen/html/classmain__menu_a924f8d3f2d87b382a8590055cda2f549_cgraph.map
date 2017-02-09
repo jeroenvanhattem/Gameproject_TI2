@@ -1,0 +1,7 @@
+<map id="main_menu::load_screen" name="main_menu::load_screen">
+<area shape="rect" id="node2" href="$classmain__menu.html#ac653f7645e7dab1807f141ba2395dc5c" title="Show menu. " alt="" coords="220,56,387,83"/>
+<area shape="rect" id="node4" href="$classpicture.html#ac69e8047651291091abbe2a8da545aa1" title="picture::draw" alt="" coords="681,56,777,83"/>
+<area shape="rect" id="node6" href="$classpicture.html#a4222d8d8a5be3d0775b741049064714f" title="picture::set_transpirantie" alt="" coords="221,157,386,184"/>
+<area shape="rect" id="node3" href="$classmain__menu.html#a2f5aeef38a566a25311f77bc24b8c8b5" title="main_menu::draw_main_menu" alt="" coords="435,5,633,32"/>
+<area shape="rect" id="node5" href="$classmain__menu.html#a9314da13b6b8a7cd40dee3d45f029835" title="Ceck if a button is pressed. " alt="" coords="441,56,627,83"/>
+</map>

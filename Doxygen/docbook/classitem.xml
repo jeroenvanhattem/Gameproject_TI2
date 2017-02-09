@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classitem">
+<title>item class Reference</title>
+<para>
+    <programlisting>#include <link linkend="item_8hpp">&lt;item.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for item</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classitem__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for item</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classitem__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string id</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sql &amp; database</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Sprite sprite</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Texture texture</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classitem_1a235883f911ed8fad4679655a57d23d96">item</link> (
+std::string id, <link linkend="classsql">sql</link> &amp; database)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="classitem_1ab7c2fa653e0f9a565283b60ca325f2a7">get_name</link> (
+)<para><emphasis>std::string get_name() : Get the name from an item</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="classitem_1aa5a9140482a7d88d6a3eea342cb0c082">get_in_game_name</link> (
+)<para><emphasis>std::string get_name() : Get the in game name from an item</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Sprite <link linkend="classitem_1aafc61a4b7e2bd10300a6767e6dd7281e">get_sprite</link> (
+int counter)<para><emphasis>std::string get_sprite() : Get the sprite from an item</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classitem_1a235883f911ed8fad4679655a57d23d96">
+                <title>item::item (std::string id, sql &amp;database)</title> <emphasis>Constructor.</emphasis>
+                
+<para>This method will crate an object of class item.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>id : std::string 
+<literallayout>
+</literallayout>
+-&gt; id of the item in the database.</para>
+
+<para>database : sql&amp; 
+<literallayout>
+</literallayout>
+-&gt; refference to the sqlite database.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>item banana(&quot;1&quot;, database)
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classitem_1ab7c2fa653e0f9a565283b60ca325f2a7">
+                <title>std::string item::get_name ()</title> <emphasis>std::string get_name() : Get the name from an item</emphasis>
+                
+<para>This function returns the name of an item by using its ID</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>name : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; The name of the requested item</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classitem_1ab7c2fa653e0f9a565283b60ca325f2a7">get_name()</link> 
+<literallayout>
+</literallayout>
+-&gt; tokato_gloves </para>
+
+            </section>
+            <section xml:id="classitem_1aa5a9140482a7d88d6a3eea342cb0c082">
+                <title>std::string item::get_in_game_name ()</title> <emphasis>std::string get_name() : Get the in game name from an item</emphasis>
+                
+<para>This function returns the in game name of an item by using its ID</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>name : std::vector&lt;std::string&gt; 
+<literallayout>
+</literallayout>
+-&gt; The in game name of the requested item</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classitem_1aa5a9140482a7d88d6a3eea342cb0c082">get_in_game_name()</link> 
+<literallayout>
+</literallayout>
+-&gt; Tokato Gloves </para>
+
+            </section>
+            <section xml:id="classitem_1aafc61a4b7e2bd10300a6767e6dd7281e">
+                <title>sf::Sprite item::get_sprite (int counter)</title> <emphasis>std::string get_sprite() : Get the sprite from an item</emphasis>
+                
+<para>This function returns the sprite of an item by using its ID</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>sprite : sf::Sprite 
+<literallayout>
+</literallayout>
+-&gt; The sprite of the requested item</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classitem_1aafc61a4b7e2bd10300a6767e6dd7281e">get_sprite()</link> 
+<literallayout>
+</literallayout>
+-&gt; sf::Sprite </para>
+
+            </section>
+</section>

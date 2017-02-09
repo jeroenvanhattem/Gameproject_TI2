@@ -1,0 +1,4 @@
+<map id="leveleditor::get_position_from_rectangle_under_mouse" name="leveleditor::get_position_from_rectangle_under_mouse">
+<area shape="rect" id="node2" href="$classrectangle.html#a827e05afcb275c3e6fe29fc80337d8cc" title="rectangle::getBounds" alt="" coords="252,5,397,32"/>
+<area shape="rect" id="node3" href="$classleveleditor.html#ac2de1ac26fa5f7e10ca834e6448b1b6b" title="Converts a mouse position to map coords on the given view. " alt="" coords="261,57,389,98"/>
+</map>

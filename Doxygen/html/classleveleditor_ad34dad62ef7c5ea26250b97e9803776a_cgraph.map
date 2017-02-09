@@ -1,0 +1,26 @@
+<map id="leveleditor::load_tile_list" name="leveleditor::load_tile_list">
+<area shape="rect" id="node2" href="$classsql.html#a0ea1aa772cb693be29da61c6cadffd86" title="Get id&#39;s from objects and tiles sprites. " alt="" coords="212,606,383,633"/>
+<area shape="rect" id="node14" href="$classsql.html#a2466fe5b0ec24e98190ee5763a4a69d1" title="Get all values from columns in sprites. " alt="" coords="929,970,1076,1011"/>
+<area shape="rect" id="node3" href="$classsql.html#a53dd323de395c13534e63a3482190777" title="Execute a query. " alt="" coords="431,599,563,640"/>
+<area shape="rect" id="node4" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="615,454,710,481"/>
+<area shape="rect" id="node10" href="$classsql.html#a4bdab1846b3789ddd83521d5eec019b5" title="Checks if query is executed correctly. " alt="" coords="1319,558,1489,585"/>
+<area shape="rect" id="node25" href="$classsql.html#ad4d8bdf41eede1ae1363d0be8a2f60a9" title="Get saved result. " alt="" coords="611,353,715,380"/>
+<area shape="rect" id="node5" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="763,454,867,481"/>
+<area shape="rect" id="node6" href="$classsql.html#ae560c01f2e8e57cee454ecd8e38616eb" title="Get value of a column from the player. " alt="" coords="931,97,1074,124"/>
+<area shape="rect" id="node7" href="$classsql.html#a370d018617316ff6489cbb97565b7af9" title="Get sprite sheet of the player. " alt="" coords="929,468,1076,494"/>
+<area shape="rect" id="node8" href="$classsql.html#af0e753f3af81ff1ff7f7582dcea4b0ed" title="Add an item to the players inventory. " alt="" coords="915,249,1091,276"/>
+<area shape="rect" id="node11" href="$classsql.html#af04403a0cab4ee13a6f70b396e5b3a20" title="Get all values from columns in NPC. " alt="" coords="938,716,1067,742"/>
+<area shape="rect" id="node12" href="$classsql.html#ae854372bac3fc5e681287e3cbf5b03de" title="Get all id&#39;s of the NPC&#39;s. " alt="" coords="919,350,1086,377"/>
+<area shape="rect" id="node15" href="$classsql.html#ac24a3682f7478f78508e3e433b637407" title="Create new map. " alt="" coords="939,148,1066,174"/>
+<area shape="rect" id="node16" href="$classsql.html#a4c6195e2934d72569b45041039a2be63" title="Saves the tiles in the database. " alt="" coords="951,198,1055,225"/>
+<area shape="rect" id="node17" href="$classsql.html#a29fe43df701460704744049aec28d58e" title="Get the names of all levels in the database. " alt="" coords="942,402,1063,443"/>
+<area shape="rect" id="node18" href="$classsql.html#a9928c456c632f88d19cce26b8165bd6f" title="Get the ID&#39;s of all levels in the database. " alt="" coords="942,300,1063,326"/>
+<area shape="rect" id="node19" href="$classsql.html#a1dd21fbf729e949d804ba5509af2b295" title="Get all object values of a level. " alt="" coords="933,519,1072,560"/>
+<area shape="rect" id="node20" href="$classsql.html#af126860a2afcf82e53c9f895577bab76" title="Get the not walkable objects. " alt="" coords="943,584,1062,626"/>
+<area shape="rect" id="node21" href="$classsql.html#a5eb7fea00a56fe6ba33f602871798bc8" title="Get all background values of a level. " alt="" coords="917,650,1088,691"/>
+<area shape="rect" id="node22" href="$classsql.html#ae959c21f71c8f9b1df8bde932a6c484b" title="Get music of consisting map. " alt="" coords="949,766,1056,793"/>
+<area shape="rect" id="node23" href="$classsql.html#a59249e218b1bb9d811c50b5615312eaf" title="Get quest part text. " alt="" coords="936,817,1069,844"/>
+<area shape="rect" id="node24" href="$classsql.html#a9f75a32a77a498b1a328a53ade518ce7" title="Get all part numbers from quest. " alt="" coords="933,46,1073,73"/>
+<area shape="rect" id="node9" href="$classsql.html#ac70e1da6d9e49f114bcf639fd1e6f86c" title="Execute a query. " alt="" coords="1139,191,1271,232"/>
+<area shape="rect" id="node13" href="$classsql.html#a1cb74ab7343ef603490518715297be83" title="Get data from a column in a table in the database. " alt="" coords="1156,468,1253,494"/>
+</map>

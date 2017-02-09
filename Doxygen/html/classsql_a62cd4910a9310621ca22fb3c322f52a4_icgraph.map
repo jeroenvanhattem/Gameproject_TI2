@@ -1,0 +1,3 @@
+<map id="sql::get_in_game_name_from_id_inventory" name="sql::get_in_game_name_from_id_inventory">
+<area shape="rect" id="node2" href="$classitem.html#aa5a9140482a7d88d6a3eea342cb0c082" title="std::string get_name() : Get the in game name from an item " alt="" coords="213,13,381,39"/>
+</map>

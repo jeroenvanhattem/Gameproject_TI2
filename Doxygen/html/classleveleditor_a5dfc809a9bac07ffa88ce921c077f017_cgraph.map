@@ -1,0 +1,28 @@
+<map id="leveleditor::leveleditor" name="leveleditor::leveleditor">
+<area shape="rect" id="node2" href="$classleveleditor.html#a675038d66c5ea045d4e3b922e28a23ec" title="This function loads all background rectangles in the background vector. " alt="" coords="197,762,376,789"/>
+<area shape="rect" id="node3" href="$classleveleditor.html#ad34dad62ef7c5ea26250b97e9803776a" title="This method loads all tiles which can be choosen at the right side of the level editor. " alt="" coords="207,813,366,840"/>
+<area shape="rect" id="node4" href="$classsql.html#a0ea1aa772cb693be29da61c6cadffd86" title="Get id&#39;s from objects and tiles sprites. " alt="" coords="424,606,595,633"/>
+<area shape="rect" id="node16" href="$classsql.html#a2466fe5b0ec24e98190ee5763a4a69d1" title="Get all values from columns in sprites. " alt="" coords="1141,970,1288,1011"/>
+<area shape="rect" id="node5" href="$classsql.html#a53dd323de395c13534e63a3482190777" title="Execute a query. " alt="" coords="643,599,775,640"/>
+<area shape="rect" id="node6" href="$classsql.html#aff61710f28dd54827b67a99c24fbdb0d" title="Get value from database. " alt="" coords="827,454,922,481"/>
+<area shape="rect" id="node12" href="$classsql.html#a4bdab1846b3789ddd83521d5eec019b5" title="Checks if query is executed correctly. " alt="" coords="1531,558,1701,585"/>
+<area shape="rect" id="node27" href="$classsql.html#ad4d8bdf41eede1ae1363d0be8a2f60a9" title="Get saved result. " alt="" coords="823,353,927,380"/>
+<area shape="rect" id="node7" href="$classsql.html#ad28cc81f2ee03c6a15d26ff216353d71" title="Save result to static value. " alt="" coords="975,454,1079,481"/>
+<area shape="rect" id="node8" href="$classsql.html#ae560c01f2e8e57cee454ecd8e38616eb" title="Get value of a column from the player. " alt="" coords="1143,97,1286,124"/>
+<area shape="rect" id="node9" href="$classsql.html#a370d018617316ff6489cbb97565b7af9" title="Get sprite sheet of the player. " alt="" coords="1141,468,1288,494"/>
+<area shape="rect" id="node10" href="$classsql.html#af0e753f3af81ff1ff7f7582dcea4b0ed" title="Add an item to the players inventory. " alt="" coords="1127,249,1303,276"/>
+<area shape="rect" id="node13" href="$classsql.html#af04403a0cab4ee13a6f70b396e5b3a20" title="Get all values from columns in NPC. " alt="" coords="1150,716,1279,742"/>
+<area shape="rect" id="node14" href="$classsql.html#ae854372bac3fc5e681287e3cbf5b03de" title="Get all id&#39;s of the NPC&#39;s. " alt="" coords="1131,350,1298,377"/>
+<area shape="rect" id="node17" href="$classsql.html#ac24a3682f7478f78508e3e433b637407" title="Create new map. " alt="" coords="1151,148,1278,174"/>
+<area shape="rect" id="node18" href="$classsql.html#a4c6195e2934d72569b45041039a2be63" title="Saves the tiles in the database. " alt="" coords="1163,198,1267,225"/>
+<area shape="rect" id="node19" href="$classsql.html#a29fe43df701460704744049aec28d58e" title="Get the names of all levels in the database. " alt="" coords="1154,402,1275,443"/>
+<area shape="rect" id="node20" href="$classsql.html#a9928c456c632f88d19cce26b8165bd6f" title="Get the ID&#39;s of all levels in the database. " alt="" coords="1154,300,1275,326"/>
+<area shape="rect" id="node21" href="$classsql.html#a1dd21fbf729e949d804ba5509af2b295" title="Get all object values of a level. " alt="" coords="1145,519,1284,560"/>
+<area shape="rect" id="node22" href="$classsql.html#af126860a2afcf82e53c9f895577bab76" title="Get the not walkable objects. " alt="" coords="1155,584,1274,626"/>
+<area shape="rect" id="node23" href="$classsql.html#a5eb7fea00a56fe6ba33f602871798bc8" title="Get all background values of a level. " alt="" coords="1129,650,1300,691"/>
+<area shape="rect" id="node24" href="$classsql.html#ae959c21f71c8f9b1df8bde932a6c484b" title="Get music of consisting map. " alt="" coords="1161,766,1268,793"/>
+<area shape="rect" id="node25" href="$classsql.html#a59249e218b1bb9d811c50b5615312eaf" title="Get quest part text. " alt="" coords="1148,817,1281,844"/>
+<area shape="rect" id="node26" href="$classsql.html#a9f75a32a77a498b1a328a53ade518ce7" title="Get all part numbers from quest. " alt="" coords="1145,46,1285,73"/>
+<area shape="rect" id="node11" href="$classsql.html#ac70e1da6d9e49f114bcf639fd1e6f86c" title="Execute a query. " alt="" coords="1351,191,1483,232"/>
+<area shape="rect" id="node15" href="$classsql.html#a1cb74ab7343ef603490518715297be83" title="Get data from a column in a table in the database. " alt="" coords="1368,468,1465,494"/>
+</map>

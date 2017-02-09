@@ -1,0 +1,4 @@
+<map id="leveleditor::is_button_pressed" name="leveleditor::is_button_pressed">
+<area shape="rect" id="node2" href="$classleveleditor.html#aa44f48b9869b3d5e0ce0429c6916e2b9" title="Looks if a menu button is pressed. " alt="" coords="193,13,361,39"/>
+<area shape="rect" id="node3" href="$classleveleditor.html#a2ee968e4a8d305cdb1465397388b63f2" title="The main loop for the editor to stay working. " alt="" coords="409,13,560,39"/>
+</map>

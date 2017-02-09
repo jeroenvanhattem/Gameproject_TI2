@@ -1,0 +1,389 @@
+\hypertarget{classmain__menu}{}\section{main\+\_\+menu Class Reference}
+\label{classmain__menu}\index{main\+\_\+menu@{main\+\_\+menu}}
+
+
+{\ttfamily \#include $<$main\+\_\+menu.\+hpp$>$}
+
+
+
+Collaboration diagram for main\+\_\+menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmain__menu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmain__menu_a4b0f9ffe66384d5e424a2d353371d84b}{main\+\_\+menu} (sf\+::\+Render\+Window \&\hyperlink{classmain__menu_aa3c11885ae695ba18f0b1c48cd4012c5}{window})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classmain__menu_ac653f7645e7dab1807f141ba2395dc5c}{show\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Show menu. \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__menu_a9314da13b6b8a7cd40dee3d45f029835}{button\+\_\+pressed} (\hyperlink{classpicture}{picture} \&object, sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em Ceck if a button is pressed. \end{DoxyCompactList}\item 
+void \hyperlink{classmain__menu_a924f8d3f2d87b382a8590055cda2f549}{load\+\_\+screen} ()
+\begin{DoxyCompactList}\small\item\em Load the load screen. \end{DoxyCompactList}\item 
+void \hyperlink{classmain__menu_a555c4191cafced116939b5c6c354fe3e}{gid\+\_\+gud\+\_\+splash} ()
+\begin{DoxyCompactList}\small\item\em Creater screen. \end{DoxyCompactList}\item 
+void \hyperlink{classmain__menu_a83e10a5ce65747f1de76e40d32dd8e5b}{loading} ()
+\begin{DoxyCompactList}\small\item\em start the load screen \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+View \hyperlink{classmain__menu_a673d7133b0bbaf357bd1578830545352}{view1}
+\item 
+sf\+::\+View \hyperlink{classmain__menu_aa3d65353a385ba3e32800335cafef315}{view2}
+\item 
+\hyperlink{classpicture}{picture} \hyperlink{classmain__menu_a33ab93a1dbb2117179aa7f92e7c75b57}{level\+\_\+editor\+\_\+button}
+\item 
+\hyperlink{classpicture}{picture} \hyperlink{classmain__menu_ac1da4a5a730e90c687bbe6cf368308ad}{play\+\_\+game\+\_\+button}
+\item 
+\hyperlink{classpicture}{picture} \hyperlink{classmain__menu_a614132486d879a486991e992ed6ba9a5}{load\+\_\+screen\+\_\+pic}
+\item 
+\hyperlink{classpicture}{picture} \hyperlink{classmain__menu_a5c77a4d3087e15c767029c9d55d7f4e6}{gid\+\_\+gud}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmain__menu_a2f5aeef38a566a25311f77bc24b8c8b5}{draw\+\_\+main\+\_\+menu} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{classmain__menu_aa3c11885ae695ba18f0b1c48cd4012c5}{window}
+\item 
+\hyperlink{classpicture}{picture} \hyperlink{classmain__menu_a322ab524817b0c59d040962cef7c7295}{background}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file main\+\_\+menu.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmain__menu_a4b0f9ffe66384d5e424a2d353371d84b}\label{classmain__menu_a4b0f9ffe66384d5e424a2d353371d84b}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!main\+\_\+menu@{main\+\_\+menu}}
+\index{main\+\_\+menu@{main\+\_\+menu}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{main\+\_\+menu()}{main\_menu()}}
+{\footnotesize\ttfamily main\+\_\+menu\+::main\+\_\+menu (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+This method will crate an object of class \hyperlink{classmain__menu}{main\+\_\+menu}.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+window \+: sf\+::\+Render\+Window\& ~\newline
+-\/$>$ refference to the S\+F\+ML window.~\newline
+
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classmain__menu}{main\+\_\+menu} m(window)~\newline
+
+
+Definition at line 3 of file main\+\_\+menu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classmain__menu_a4b0f9ffe66384d5e424a2d353371d84b_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain__menu_a9314da13b6b8a7cd40dee3d45f029835}\label{classmain__menu_a9314da13b6b8a7cd40dee3d45f029835}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!button\+\_\+pressed@{button\+\_\+pressed}}
+\index{button\+\_\+pressed@{button\+\_\+pressed}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{button\+\_\+pressed()}{button\_pressed()}}
+{\footnotesize\ttfamily bool main\+\_\+menu\+::button\+\_\+pressed (\begin{DoxyParamCaption}\item[{\hyperlink{classpicture}{picture} \&}]{object,  }\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})}
+
+
+
+Ceck if a button is pressed. 
+
+This method return a boolean if a menu button is pressed with the mouse or not.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+object \+: picture\& ~\newline
+-\/$>$ refference to picture class object \char`\"{}object\char`\"{}.~\newline
+ view \+: sf\+::\+View\& ~\newline
+-\/$>$ view where the mouse click is checked on.~\newline
+
+
+\subsubsection*{Return\+: }
+
+button pressed \+: bool -\/$>$ button pressed with mouse
+
+\subsubsection*{Example\+: }
+
+button\+\_\+pressed(play\+\_\+game, menu\+\_\+view)~\newline
+-\/$>$ true 
+
+Definition at line 29 of file main\+\_\+menu.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__menu_a9314da13b6b8a7cd40dee3d45f029835_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmain__menu_a2f5aeef38a566a25311f77bc24b8c8b5}\label{classmain__menu_a2f5aeef38a566a25311f77bc24b8c8b5}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!draw\+\_\+main\+\_\+menu@{draw\+\_\+main\+\_\+menu}}
+\index{draw\+\_\+main\+\_\+menu@{draw\+\_\+main\+\_\+menu}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{draw\+\_\+main\+\_\+menu()}{draw\_main\_menu()}}
+{\footnotesize\ttfamily void main\+\_\+menu\+::draw\+\_\+main\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 23 of file main\+\_\+menu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classmain__menu_a2f5aeef38a566a25311f77bc24b8c8b5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__menu_a2f5aeef38a566a25311f77bc24b8c8b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmain__menu_a555c4191cafced116939b5c6c354fe3e}\label{classmain__menu_a555c4191cafced116939b5c6c354fe3e}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!gid\+\_\+gud\+\_\+splash@{gid\+\_\+gud\+\_\+splash}}
+\index{gid\+\_\+gud\+\_\+splash@{gid\+\_\+gud\+\_\+splash}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{gid\+\_\+gud\+\_\+splash()}{gid\_gud\_splash()}}
+{\footnotesize\ttfamily void main\+\_\+menu\+::gid\+\_\+gud\+\_\+splash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creater screen. 
+
+This method will start the advertisement screen from the creators of the game. ~\newline
+
+
+Definition at line 60 of file main\+\_\+menu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classmain__menu_a555c4191cafced116939b5c6c354fe3e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classmain__menu_a555c4191cafced116939b5c6c354fe3e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmain__menu_a924f8d3f2d87b382a8590055cda2f549}\label{classmain__menu_a924f8d3f2d87b382a8590055cda2f549}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!load\+\_\+screen@{load\+\_\+screen}}
+\index{load\+\_\+screen@{load\+\_\+screen}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{load\+\_\+screen()}{load\_screen()}}
+{\footnotesize\ttfamily void main\+\_\+menu\+::load\+\_\+screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Load the load screen. 
+
+This method will start a small loop, ~\newline
+that smoothly change the \hyperlink{classmain__menu}{main\+\_\+menu} to the load screen. ~\newline
+
+
+Definition at line 33 of file main\+\_\+menu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__menu_a924f8d3f2d87b382a8590055cda2f549_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classmain__menu_a924f8d3f2d87b382a8590055cda2f549_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmain__menu_a83e10a5ce65747f1de76e40d32dd8e5b}\label{classmain__menu_a83e10a5ce65747f1de76e40d32dd8e5b}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!loading@{loading}}
+\index{loading@{loading}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{loading()}{loading()}}
+{\footnotesize\ttfamily void main\+\_\+menu\+::loading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+start the load screen 
+
+This method will start draw the loadscreen pic. ~\newline
+This is so that the player does not only see a black screen while waiting. ~\newline
+
+
+Definition at line 81 of file main\+\_\+menu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classmain__menu_a83e10a5ce65747f1de76e40d32dd8e5b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classmain__menu_a83e10a5ce65747f1de76e40d32dd8e5b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmain__menu_ac653f7645e7dab1807f141ba2395dc5c}\label{classmain__menu_ac653f7645e7dab1807f141ba2395dc5c}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!show\+\_\+menu@{show\+\_\+menu}}
+\index{show\+\_\+menu@{show\+\_\+menu}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{show\+\_\+menu()}{show\_menu()}}
+{\footnotesize\ttfamily void main\+\_\+menu\+::show\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Show menu. 
+
+This method shows the menu.~\newline
+ \subsubsection*{Example\+: }
+
+\hyperlink{classmain__menu_ac653f7645e7dab1807f141ba2395dc5c}{show\+\_\+menu()} ~\newline
+-\/$>$ You can now see the menu 
+
+Definition at line 17 of file main\+\_\+menu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__menu_ac653f7645e7dab1807f141ba2395dc5c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__menu_ac653f7645e7dab1807f141ba2395dc5c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmain__menu_a322ab524817b0c59d040962cef7c7295}\label{classmain__menu_a322ab524817b0c59d040962cef7c7295}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!background@{background}}
+\index{background@{background}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \hyperlink{classpicture}{picture} main\+\_\+menu\+::background\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 9 of file main\+\_\+menu.\+hpp.
+
+\mbox{\Hypertarget{classmain__menu_a5c77a4d3087e15c767029c9d55d7f4e6}\label{classmain__menu_a5c77a4d3087e15c767029c9d55d7f4e6}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!gid\+\_\+gud@{gid\+\_\+gud}}
+\index{gid\+\_\+gud@{gid\+\_\+gud}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{gid\+\_\+gud}{gid\_gud}}
+{\footnotesize\ttfamily \hyperlink{classpicture}{picture} main\+\_\+menu\+::gid\+\_\+gud}
+
+
+
+Definition at line 19 of file main\+\_\+menu.\+hpp.
+
+\mbox{\Hypertarget{classmain__menu_a33ab93a1dbb2117179aa7f92e7c75b57}\label{classmain__menu_a33ab93a1dbb2117179aa7f92e7c75b57}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!level\+\_\+editor\+\_\+button@{level\+\_\+editor\+\_\+button}}
+\index{level\+\_\+editor\+\_\+button@{level\+\_\+editor\+\_\+button}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{level\+\_\+editor\+\_\+button}{level\_editor\_button}}
+{\footnotesize\ttfamily \hyperlink{classpicture}{picture} main\+\_\+menu\+::level\+\_\+editor\+\_\+button}
+
+
+
+Definition at line 16 of file main\+\_\+menu.\+hpp.
+
+\mbox{\Hypertarget{classmain__menu_a614132486d879a486991e992ed6ba9a5}\label{classmain__menu_a614132486d879a486991e992ed6ba9a5}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!load\+\_\+screen\+\_\+pic@{load\+\_\+screen\+\_\+pic}}
+\index{load\+\_\+screen\+\_\+pic@{load\+\_\+screen\+\_\+pic}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{load\+\_\+screen\+\_\+pic}{load\_screen\_pic}}
+{\footnotesize\ttfamily \hyperlink{classpicture}{picture} main\+\_\+menu\+::load\+\_\+screen\+\_\+pic}
+
+
+
+Definition at line 18 of file main\+\_\+menu.\+hpp.
+
+\mbox{\Hypertarget{classmain__menu_ac1da4a5a730e90c687bbe6cf368308ad}\label{classmain__menu_ac1da4a5a730e90c687bbe6cf368308ad}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!play\+\_\+game\+\_\+button@{play\+\_\+game\+\_\+button}}
+\index{play\+\_\+game\+\_\+button@{play\+\_\+game\+\_\+button}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{play\+\_\+game\+\_\+button}{play\_game\_button}}
+{\footnotesize\ttfamily \hyperlink{classpicture}{picture} main\+\_\+menu\+::play\+\_\+game\+\_\+button}
+
+
+
+Definition at line 17 of file main\+\_\+menu.\+hpp.
+
+\mbox{\Hypertarget{classmain__menu_a673d7133b0bbaf357bd1578830545352}\label{classmain__menu_a673d7133b0bbaf357bd1578830545352}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!view1@{view1}}
+\index{view1@{view1}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{view1}{view1}}
+{\footnotesize\ttfamily sf\+::\+View main\+\_\+menu\+::view1}
+
+
+
+Definition at line 14 of file main\+\_\+menu.\+hpp.
+
+\mbox{\Hypertarget{classmain__menu_aa3d65353a385ba3e32800335cafef315}\label{classmain__menu_aa3d65353a385ba3e32800335cafef315}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!view2@{view2}}
+\index{view2@{view2}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{view2}{view2}}
+{\footnotesize\ttfamily sf\+::\+View main\+\_\+menu\+::view2}
+
+
+
+Definition at line 15 of file main\+\_\+menu.\+hpp.
+
+\mbox{\Hypertarget{classmain__menu_aa3c11885ae695ba18f0b1c48cd4012c5}\label{classmain__menu_aa3c11885ae695ba18f0b1c48cd4012c5}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!window@{window}}
+\index{window@{window}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& main\+\_\+menu\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 8 of file main\+\_\+menu.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{main__menu_8hpp}{main\+\_\+menu.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{main__menu_8cpp}{main\+\_\+menu.\+cpp}\end{DoxyCompactItemize}

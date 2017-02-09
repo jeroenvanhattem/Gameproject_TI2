@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$main_8cpp.html#a235bce26738e0eec7d7ed336e30e538d" title="intro" alt="" coords="178,5,225,32"/>
+<area shape="rect" id="node3" href="$classmain__menu.html#a555c4191cafced116939b5c6c354fe3e" title="Creater screen. " alt="" coords="130,57,273,98"/>
+<area shape="rect" id="node6" href="$classmain__menu.html#a83e10a5ce65747f1de76e40d32dd8e5b" title="start the load screen " alt="" coords="132,123,271,149"/>
+<area shape="rect" id="node7" href="$classsql.html#a9928c456c632f88d19cce26b8165bd6f" title="Get the ID&#39;s of all levels in the database. " alt="" coords="141,929,262,956"/>
+<area shape="rect" id="node10" href="$classmusic.html#ae7835578f75b785e1ef2a3d0db9420b9" title="Play map music. " alt="" coords="104,1188,299,1215"/>
+<area shape="rect" id="node13" href="$main_8cpp.html#a357ffa2037bfb7515a059fd98995e184" title="intro_stop" alt="" coords="162,1239,241,1265"/>
+<area shape="rect" id="node14" href="$classmain__menu.html#ac653f7645e7dab1807f141ba2395dc5c" title="Show menu. " alt="" coords="347,224,513,251"/>
+<area shape="rect" id="node16" href="$classmain__menu.html#a9314da13b6b8a7cd40dee3d45f029835" title="Ceck if a button is pressed. " alt="" coords="567,275,754,301"/>
+<area shape="rect" id="node17" href="$classmain__menu.html#a924f8d3f2d87b382a8590055cda2f549" title="Load the load screen. " alt="" coords="118,173,285,200"/>
+<area shape="rect" id="node18" href="$classgame.html#a2b80a1fbc6d723e78d3c86d2f8ff24d4" title="Loop that handles the game. " alt="" coords="139,775,264,801"/>
+<area shape="rect" id="node4" href="$classpicture.html#a4222d8d8a5be3d0775b741049064714f" title="picture::set_transpirantie" alt="" coords="347,72,513,99"/>
+<area shape="rect" id="node5" href="$classpicture.html#ac69e8047651291091abbe2a8da545aa1" title="picture::draw" alt="" coords="850,173,946,200"/>
+<area shape="rect" id="node8" href="$classsql.html#a1cb74ab7343ef603490518715297be83" title="Get data from a column in a table in the database. " alt="" coords="381,1217,479,1244"/>
+<area shape="rect" id="node9" href="$classsql.html#a53dd323de395c13534e63a3482190777" title="Execute a query. " alt="" coords="832,1290,964,1331"/>
+<area shape="rect" id="node11" href="$classsql.html#ae959c21f71c8f9b1df8bde932a6c484b" title="Get music of consisting map. " alt="" coords="377,1293,483,1320"/>
+<area shape="rect" id="node12" href="$classmusic.html#aeb639e45c64ee79496e8ec6187cfcf70" title="Set music volume. " alt="" coords="365,1457,495,1484"/>
+<area shape="rect" id="node15" href="$classmain__menu.html#a2f5aeef38a566a25311f77bc24b8c8b5" title="main_menu::draw_main_menu" alt="" coords="561,224,760,251"/>
+<area shape="rect" id="node19" href="$classgame.html#a4cf9147e06874edfc6190db64d719dec" title="Show the store on the window. " alt="" coords="1036,417,1199,458"/>
+<area shape="rect" id="node20" href="$classgame.html#ab13015cdc535671de1dd7a5a7970a238" title="Moves the player. " alt="" coords="593,775,728,801"/>
+<area shape="rect" id="node29" href="$classgame.html#a961fe8a42a2c0bc1ef62ef17c7c64f06" title="Draw NPC&#39;s on the window. " alt="" coords="1059,541,1176,568"/>
+<area shape="rect" id="node30" href="$classgame.html#a478a3366ffd0e10713b0abc3adb65696" title="Show action if action button pressed. " alt="" coords="597,325,724,352"/>
+<area shape="rect" id="node34" href="$classgame.html#a4982a1c81b1a52b8f050ef48dea86743" title="Draws the player on the screen. " alt="" coords="595,708,726,735"/>
+<area shape="rect" id="node36" href="$classgame.html#a69793e75c155cb06e4f2c4d98c5da27c" title="Activate game_viewr. " alt="" coords="593,1001,729,1028"/>
+<area shape="rect" id="node41" href="$classplayer.html#a519784459639f6b785bcfeaa05b6f604" title="void respawn() : Respawn player " alt="" coords="373,1407,487,1433"/>
+<area shape="rect" id="node42" href="$classgame.html#af99a7ac774385373a015bd3082049bd2" title="Show beginning dialogues. " alt="" coords="347,651,513,677"/>
+<area shape="rect" id="node45" href="$classgame.html#a61adfafa4d31548fc94c853f10b9bf3b" title="Interact with a NPC. " alt="" coords="377,825,483,852"/>
+<area shape="rect" id="node48" href="$classinventory.html#abb6d846e4b7297f79c2c9fb34b26fee2" title="void get_inventory() : Get the inventory " alt="" coords="351,1153,509,1180"/>
+<area shape="rect" id="node21" href="$classplayer.html#ad93507550867df5598b86b73de01ec12" title="int npc::get_interaction(npc &amp; other_npc) : Get interaction between the player and a NPC ..." alt="" coords="823,977,973,1004"/>
+<area shape="rect" id="node22" href="$classplayer.html#aa405bc495c5a6bced7740352abd4249f" title="int get_collision(sf::IntRect colliding_object) : Get interaction between a NPC and a sf::IntRect obj..." alt="" coords="829,825,967,852"/>
+<area shape="rect" id="node23" href="$classplayer.html#aa673c84d7b56badc58d7c467325cbf88" title="void set_action(std::string s) : Set action of the player " alt="" coords="1055,487,1180,513"/>
+<area shape="rect" id="node24" href="$button__actions_8cpp.html#a147658cb884fa19f4a0a255ea858b7b8" title="Get the name of a move if move button is pressed. " alt="" coords="821,709,975,750"/>
+<area shape="rect" id="node25" href="$classplayer.html#a0f6538451ec51b4407cca22294451443" title="void move() : Move the player " alt="" coords="851,775,945,801"/>
+<area shape="rect" id="node26" href="$button__actions_8cpp.html#a6a2c7019e201b42b13d3032fc538298d" title="Get the move direction if move button is pressed. " alt="" coords="831,643,965,685"/>
+<area shape="rect" id="node27" href="$classplayer.html#a3bf8cc80800146684a3dbf28c0c4a83c" title="void set_last_position() : Set the position back to its last position " alt="" coords="817,927,979,953"/>
+<area shape="rect" id="node28" href="$classnpc.html#a52d22585e441af4d8dde1d1a2658b2dc" title="Get position of NPC. " alt="" coords="1057,1167,1178,1193"/>
+<area shape="rect" id="node31" href="$button__actions_8cpp.html#aac3d825fa7b0f54fd0340a611b9639d5" title="Check if skill button is pressed. " alt="" coords="808,323,988,349"/>
+<area shape="rect" id="node32" href="$classplayer.html#afc7732284851b7f0d90b66a5d25931e2" title="Get current action the player. " alt="" coords="1052,309,1183,350"/>
+<area shape="rect" id="node33" href="$classgame.html#a50870549f1abdbc924743d8173ced15d" title="Show the sprite that belongs to the action. " alt="" coords="825,475,971,517"/>
+<area shape="rect" id="node35" href="$classplayer.html#a67423ce10d4abb42775868f978d04247" title="void draw() : Print player " alt="" coords="852,592,944,619"/>
+<area shape="rect" id="node37" href="$classgame.html#ae263cdc30dcc916b98b0ddbbf0a6fccc" title="Checkt left edge of screen. " alt="" coords="815,1159,981,1201"/>
+<area shape="rect" id="node38" href="$classgame.html#a273013552bc7ad8fef9d9192aad3cc0c" title="Checkt right edge of screen. " alt="" coords="815,1225,981,1266"/>
+<area shape="rect" id="node39" href="$classgame.html#abb1c33c5a73de27e4ebd20e1b61dc3dc" title="Checkt upper edge of screen. " alt="" coords="815,1029,981,1070"/>
+<area shape="rect" id="node40" href="$classgame.html#a34a5241e205d0985a9e477a3dd77ba08" title="Checkt buttom edge of screen. " alt="" coords="815,1094,981,1135"/>
+<area shape="rect" id="node43" href="$classdialogbox.html#ab9d8f8b65c3a54ccaea57a941d43a176" title="Set text in the dialogbox. " alt="" coords="589,825,732,852"/>
+<area shape="rect" id="node44" href="$classdialogbox.html#a722438dee05d120c77871b1ec9d26cf5" title="Draw the dialogbox. " alt="" coords="605,532,717,559"/>
+<area shape="rect" id="node46" href="$classsql.html#a9f75a32a77a498b1a328a53ade518ce7" title="Get all part numbers from quest. " alt="" coords="591,1103,731,1129"/>
+<area shape="rect" id="node47" href="$classsql.html#a59249e218b1bb9d811c50b5615312eaf" title="Get quest part text. " alt="" coords="594,1052,727,1079"/>
+<area shape="rect" id="node49" href="$classsql.html#a7f818b967453b1ae15ce4c5b28cf4765" title="Get the inventory. " alt="" coords="599,1153,722,1180"/>
+<area shape="rect" id="node50" href="$classitem.html#aafc61a4b7e2bd10300a6767e6dd7281e" title="std::string get_sprite() : Get the sprite from an item " alt="" coords="605,1204,717,1231"/>
+</map>

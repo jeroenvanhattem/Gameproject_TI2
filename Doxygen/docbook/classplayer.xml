@@ -1,0 +1,537 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classplayer">
+<title>player class Reference</title>
+<para>
+    <programlisting>#include <link linkend="player_8hpp">&lt;player.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for player</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classplayer__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for player</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classplayer__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>npc player_npc</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string player_id</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f spawn</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f position</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f last_move</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sql database</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classplayer_1a1a369fcd087aa48f9241fb20c8df52f3">player</link> (
+sf::RenderWindow &amp; window, <link linkend="classsql">sql</link> &amp; database, std::string save)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classplayer_1a0f6538451ec51b4407cca22294451443">move</link> (
+sf::Vector2f delta)<para><emphasis>void move() : Move the player</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classplayer_1aa673c84d7b56badc58d7c467325cbf88">set_action</link> (
+std::string s)<para><emphasis>void set_action(std::string s) : Set action of the player</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classplayer_1a67423ce10d4abb42775868f978d04247">draw</link> (
+)<para><emphasis>void draw() : Print player</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classplayer_1a519784459639f6b785bcfeaa05b6f604">respawn</link> (
+)<para><emphasis>void respawn() : Respawn player</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classplayer_1ad93507550867df5598b86b73de01ec12">get_interaction</link> (
+<link linkend="classnpc">npc</link> &amp; other_npc)<para><emphasis>int npc::get_interaction(npc &amp; other_npc) : Get interaction between the player and a NPC</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classplayer_1aa405bc495c5a6bced7740352abd4249f">get_collision</link> (
+sf::IntRect colliding_object)<para><emphasis>int get_collision(sf::IntRect colliding_object) : Get interaction between a NPC and a sf::IntRect object</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classplayer_1a3bf8cc80800146684a3dbf28c0c4a83c">set_last_position</link> (
+)<para><emphasis>void set_last_position() : Set the position back to its last position</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="classplayer_1a78d420774623e89cd896d3cb1d265b17">get_position</link> (
+)<para><emphasis>sf::Vector2f get_position() : Get position of player</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; sf::Sprite &gt; <link linkend="classplayer_1a676129193d589a975d7a86429a37b1b7">get_action</link> (
+std::string action_to_get)<para><emphasis>void show_action(std::string action_to_perform) : Player acion</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="classplayer_1afc7732284851b7f0d90b66a5d25931e2">get_current_action</link> (
+)<para><emphasis>Get current action the player.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classplayer_1a4659a0677d5b19b0ae27737dfaa0176e">show_ability</link> (
+std::string action_to_show)<para><emphasis>Perform an action.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classplayer_1a17ee5122ab15251afb54b4cdd42060e6">set_position</link> (
+sf::Vector2f new_position)<para><emphasis>Get position of the player.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classplayer_1aab5d2e47b80e0481f09ca0df8b823057">~player</link> (
+)<para><emphasis>Decontructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classplayer_1a1a369fcd087aa48f9241fb20c8df52f3">
+                <title>player::player (sf::RenderWindow &amp;window, sql &amp;database, std::string save)</title> <emphasis>Constructor.</emphasis>
+                
+<para>This method will create an object of class npc.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>window : sf::RenderWindow 
+<literallayout>
+</literallayout>
+-&gt; window where content will be drawn on.</para>
+
+<para>database : sql 
+<literallayout>
+</literallayout>
+-&gt; referrence to the database class.
+<literallayout>
+</literallayout>
+ save : sf::string 
+<literallayout>
+</literallayout>
+-&gt; id of the current game save.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>player a(window, database, &quot;1&quot;)
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classplayer_1a0f6538451ec51b4407cca22294451443">
+                <title>void player::move (sf::Vector2f delta)</title> <emphasis>void move() : Move the player</emphasis>
+                
+<para>This method moves the position the player.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>delta : sf::Vector2f
+<literallayout>
+</literallayout>
+-&gt; new position of the player.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>move({2,0})
+<literallayout>
+</literallayout>
+player has moved 2 pixels to the right
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classplayer_1aa673c84d7b56badc58d7c467325cbf88">
+                <title>void player::set_action (std::string s)</title> <emphasis>void set_action(std::string s) : Set action of the player</emphasis>
+                
+<para>This method sets the current action of the player.
+<literallayout>
+</literallayout>
+The standard value is walk down.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>s : std::string
+<literallayout>
+</literallayout>
+-&gt; name of the action that has to be set on active.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>set_action(&quot;walk_up&quot;)
+<literallayout>
+</literallayout>
+-&gt; Player is now set for walking up.
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classplayer_1a67423ce10d4abb42775868f978d04247">
+                <title>void player::draw ()</title> <emphasis>void draw() : Print player</emphasis>
+                
+<para>This method draws the player on the screen. 
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classplayer_1a67423ce10d4abb42775868f978d04247">draw()</link>
+<literallayout>
+</literallayout>
+-&gt; Draw the player on the screen </para>
+
+            </section>
+            <section xml:id="classplayer_1a519784459639f6b785bcfeaa05b6f604">
+                <title>void player::respawn ()</title> <emphasis>void respawn() : Respawn player</emphasis>
+                
+<para>This method moves the player back to a specific location 
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classplayer_1a519784459639f6b785bcfeaa05b6f604">respawn()</link>
+<literallayout>
+</literallayout>
+-&gt; Player will be moved back to (200,200) </para>
+
+            </section>
+            <section xml:id="classplayer_1ad93507550867df5598b86b73de01ec12">
+                <title>int player::get_interaction (npc &amp;other_npc)</title> <emphasis>int npc::get_interaction(npc &amp; other_npc) : Get interaction between the player and a NPC</emphasis>
+                
+<para>Call the &apos;get_interaction&apos; function to check for a collision between the player and a NPC</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>other_npc : NPC &amp; 
+<literallayout>
+</literallayout>
+-&gt; The NPC that will be checked with for a collision</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>0 / 1 : integer 
+<literallayout>
+</literallayout>
+-&gt; Return a 1 if there&apos;s a collision detected, return a 0 if no collision is detected</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_interaction(*other_npc) 
+<literallayout>
+</literallayout>
+-&gt; return: {&quot;1&quot;}. </para>
+
+            </section>
+            <section xml:id="classplayer_1aa405bc495c5a6bced7740352abd4249f">
+                <title>int player::get_collision (sf::IntRect colliding_object)</title> <emphasis>int get_collision(sf::IntRect colliding_object) : Get interaction between a NPC and a sf::IntRect object</emphasis>
+                
+<para>Call the &apos;get_collision&apos; function to check for a collision with a sf::IntRect object</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>colliding_object : sf::IntRect 
+<literallayout>
+</literallayout>
+-&gt; The sf::IntRect that will be check for a collision</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>0 / 1 : integer 
+<literallayout>
+</literallayout>
+-&gt; Return a 1 if there&apos;s a collision detected, return a 0 if no collision is detected</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_collision(recangle) 
+<literallayout>
+</literallayout>
+-&gt; return: {&quot;1&quot;}. </para>
+
+            </section>
+            <section xml:id="classplayer_1a3bf8cc80800146684a3dbf28c0c4a83c">
+                <title>void player::set_last_position ()</title> <emphasis>void set_last_position() : Set the position back to its last position</emphasis>
+                
+<para>When this function is called, the current location will be set to last location</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classplayer_1a3bf8cc80800146684a3dbf28c0c4a83c">set_last_position()</link> 
+<literallayout>
+</literallayout>
+ -&gt; The position is now set to the last position </para>
+
+            </section>
+            <section xml:id="classplayer_1a78d420774623e89cd896d3cb1d265b17">
+                <title>sf::Vector2f player::get_position ()</title> <emphasis>sf::Vector2f get_position() : Get position of player</emphasis>
+                
+<para>When this function is called, it will return the position of the player</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>position : sf::Vector2f 
+<literallayout>
+</literallayout>
+-&gt; The position of the player</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classplayer_1a78d420774623e89cd896d3cb1d265b17">get_position()</link> 
+<literallayout>
+</literallayout>
+-&gt; return sf::Vector(200,200) </para>
+
+            </section>
+            <section xml:id="classplayer_1a676129193d589a975d7a86429a37b1b7">
+                <title>std::vector&lt; sf::Sprite &gt; player::get_action (std::string action_to_get)</title> <emphasis>void show_action(std::string action_to_perform) : Player acion</emphasis>
+                
+<para>This function displays the right action of the player, so the right spritepart that displays the current action of the player, like walking up</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>action_to_perform : std::string 
+<literallayout>
+</literallayout>
+-&gt; The action that has to be shown</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>show_action(&quot;walk_up&quot;) 
+<literallayout>
+</literallayout>
+-&gt; Now the player seems to be walking up </para>
+
+            </section>
+            <section xml:id="classplayer_1afc7732284851b7f0d90b66a5d25931e2">
+                <title>std::string player::get_current_action ()</title> <emphasis>Get current action the player.</emphasis>
+                
+<para>This function returns the name of the current action of the player. 
+<literallayout>
+</literallayout>
+This is the action that the player is currently performing in the game.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>current_action : std::string 
+<literallayout>
+</literallayout>
+-&gt; Name of the current action from the player.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classplayer_1afc7732284851b7f0d90b66a5d25931e2">get_current_action()</link> 
+<literallayout>
+</literallayout>
+-&gt; &quot;walk_up&quot; </para>
+
+            </section>
+            <section xml:id="classplayer_1a4659a0677d5b19b0ae27737dfaa0176e">
+                <title>void player::show_ability (std::string action_to_show)</title> <emphasis>Perform an action.</emphasis>
+                
+<para>This function shows one step of the asked ability. 
+<literallayout>
+</literallayout>
+This function has to be called in a loop that stops at the max size of the ability list. 
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>action_to_show : std::string 
+<literallayout>
+</literallayout>
+-&gt; Name of action.</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>show_ability(&quot;shoot_arrow_up&quot;) 
+<literallayout>
+</literallayout>
+-&gt; the player will shoot an arrow northwards. </para>
+
+            </section>
+            <section xml:id="classplayer_1a17ee5122ab15251afb54b4cdd42060e6">
+                <title>void player::set_position (sf::Vector2f new_position)</title> <emphasis>Get position of the player.</emphasis>
+                
+<para>When this function is called, it will return the position of the player.
+<literallayout>
+</literallayout>
+ <formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>position : sf::Vector2f 
+<literallayout>
+</literallayout>
+-&gt; The position of the player</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classplayer_1a78d420774623e89cd896d3cb1d265b17">get_position()</link> 
+<literallayout>
+</literallayout>
+-&gt; return sf::Vector(200,200) </para>
+
+            </section>
+            <section xml:id="classplayer_1aab5d2e47b80e0481f09ca0df8b823057">
+                <title>player::~player ()</title> <emphasis>Decontructor.</emphasis>
+                
+<para>Will be called when the object is deleted. 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+</section>

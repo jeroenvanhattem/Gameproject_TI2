@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classinventory">
+<title>inventory class Reference</title>
+<para>
+    <programlisting>#include <link linkend="inventory_8hpp">&lt;inventory.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for inventory</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classinventory__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for inventory</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classinventory__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RenderWindow &amp; window</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sql &amp; database</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; item &gt; inventory_vector</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int counter</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Sprite inventory_sprite</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Texture inventory_texture</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classinventory_1a0c767f0886d01023984f4b06372ca626">inventory</link> (
+sf::RenderWindow &amp; window, <link linkend="classsql">sql</link> &amp; database)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classinventory_1abb6d846e4b7297f79c2c9fb34b26fee2">get_inventory</link> (
+)<para><emphasis>void get_inventory() : Get the inventory</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classinventory_1a0c767f0886d01023984f4b06372ca626">
+                <title>inventory::inventory (sf::RenderWindow &amp;window, sql &amp;database)</title> <emphasis>Constructor.</emphasis>
+                
+<para>This method will crate an object of class inventory.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>window : sf::Renderwindow&amp; 
+<literallayout>
+</literallayout>
+-&gt; window the inventory hs to be drawn one.</para>
+
+<para>database : sql&amp; 
+<literallayout>
+</literallayout>
+-&gt; refference to the sqlite database.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>inventory inv(window, database)
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classinventory_1abb6d846e4b7297f79c2c9fb34b26fee2">
+                <title>void inventory::get_inventory ()</title> <emphasis>void get_inventory() : Get the inventory</emphasis>
+                
+<para>This function returns the items in the inventory</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>get_inventory(1) 
+<literallayout>
+</literallayout>
+-&gt; Shows the items in the inventory </para>
+
+            </section>
+</section>

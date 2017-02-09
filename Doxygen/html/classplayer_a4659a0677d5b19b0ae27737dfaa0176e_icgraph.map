@@ -1,0 +1,7 @@
+<map id="player::show_ability" name="player::show_ability">
+<area shape="rect" id="node2" href="$classgame.html#a50870549f1abdbc924743d8173ced15d" title="Show the sprite that belongs to the action. " alt="" coords="189,23,336,65"/>
+<area shape="rect" id="node3" href="$classgame.html#af99a7ac774385373a015bd3082049bd2" title="Show beginning dialogues. " alt="" coords="559,5,725,32"/>
+<area shape="rect" id="node6" href="$classgame.html#a478a3366ffd0e10713b0abc3adb65696" title="Show action if action button pressed. " alt="" coords="384,56,511,83"/>
+<area shape="rect" id="node4" href="$classgame.html#a2b80a1fbc6d723e78d3c86d2f8ff24d4" title="Loop that handles the game. " alt="" coords="773,31,899,57"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="947,31,997,57"/>
+</map>

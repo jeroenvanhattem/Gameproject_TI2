@@ -1,0 +1,5 @@
+<map id="figure" name="figure">
+<area shape="rect" id="node2" href="$classcircle.html" title="{circle\n|&#45; size_in\l&#45; set_color\l&#45; circ\l|+ circle()\l+ getBounds()\l+ draw()\l}" alt="" coords="5,241,109,377"/>
+<area shape="rect" id="node3" href="$classpicture.html" title="{picture\n|+ picture_path\l+ tile_size\l&#45; texture\l&#45; sprite\l|+ picture()\l+ getBounds()\l+ rotate()\l+ set_transpirantie()\l+ draw()\l}" alt="" coords="133,219,272,399"/>
+<area shape="rect" id="node4" href="$classrectangle.html" title="{rectangle\n|&#45; size_in\l&#45; set_color\l&#45; rect\l|+ rectangle()\l+ getBounds()\l+ draw()\l}" alt="" coords="296,241,400,377"/>
+</map>

@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classmain__menu">
+<title>main_menu class Reference</title>
+<para>
+    <programlisting>#include <link linkend="main__menu_8hpp">&lt;main_menu.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for main_menu</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classmain__menu__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for main_menu</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classmain__menu__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RenderWindow &amp; window</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>picture background</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::View view1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::View view2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>picture level_editor_button</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>picture play_game_button</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>picture load_screen_pic</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>picture gid_gud</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classmain__menu_1a2f5aeef38a566a25311f77bc24b8c8b5">draw_main_menu</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classmain__menu_1a4b0f9ffe66384d5e424a2d353371d84b">main_menu</link> (
+sf::RenderWindow &amp; window)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classmain__menu_1ac653f7645e7dab1807f141ba2395dc5c">show_menu</link> (
+)<para><emphasis>Show menu.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classmain__menu_1a9314da13b6b8a7cd40dee3d45f029835">button_pressed</link> (
+<link linkend="classpicture">picture</link> &amp; object, sf::View &amp; view)<para><emphasis>Ceck if a button is pressed.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classmain__menu_1a924f8d3f2d87b382a8590055cda2f549">load_screen</link> (
+)<para><emphasis>Load the load screen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classmain__menu_1a555c4191cafced116939b5c6c354fe3e">gid_gud_splash</link> (
+)<para><emphasis>Creater screen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classmain__menu_1a83e10a5ce65747f1de76e40d32dd8e5b">loading</link> (
+)<para><emphasis>start the load screen</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classmain__menu_1a2f5aeef38a566a25311f77bc24b8c8b5">
+                <title>void main_menu::draw_main_menu ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classmain__menu_1a4b0f9ffe66384d5e424a2d353371d84b">
+                <title>main_menu::main_menu (sf::RenderWindow &amp;window)</title> <emphasis>Constructor.</emphasis>
+                
+<para>This method will crate an object of class <link linkend="classmain__menu">main_menu</link>.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>window : sf::RenderWindow&amp; 
+<literallayout>
+</literallayout>
+-&gt; refference to the SFML window.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classmain__menu">main_menu</link> m(window)
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classmain__menu_1ac653f7645e7dab1807f141ba2395dc5c">
+                <title>void main_menu::show_menu ()</title> <emphasis>Show menu.</emphasis>
+                
+<para>This method shows the menu.
+<literallayout>
+</literallayout>
+ <formalpara><title>Example: </title></formalpara>
+</para>
+
+<para><link linkend="classmain__menu_1ac653f7645e7dab1807f141ba2395dc5c">show_menu()</link> 
+<literallayout>
+</literallayout>
+-&gt; You can now see the menu </para>
+
+            </section>
+            <section xml:id="classmain__menu_1a9314da13b6b8a7cd40dee3d45f029835">
+                <title>bool main_menu::button_pressed (picture &amp;object, sf::View &amp;view)</title> <emphasis>Ceck if a button is pressed.</emphasis>
+                
+<para>This method return a boolean if a menu button is pressed with the mouse or not.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Parameters: </title></formalpara>
+</para>
+
+<para>object : picture&amp; 
+<literallayout>
+</literallayout>
+-&gt; refference to picture class object &quot;object&quot;.
+<literallayout>
+</literallayout>
+ view : sf::View&amp; 
+<literallayout>
+</literallayout>
+-&gt; view where the mouse click is checked on.
+<literallayout>
+</literallayout>
+</para>
+
+<para><formalpara><title>Return: </title></formalpara>
+</para>
+
+<para>button pressed : bool -&gt; button pressed with mouse</para>
+
+<para><formalpara><title>Example: </title></formalpara>
+</para>
+
+<para>button_pressed(play_game, menu_view)
+<literallayout>
+</literallayout>
+-&gt; true </para>
+
+            </section>
+            <section xml:id="classmain__menu_1a924f8d3f2d87b382a8590055cda2f549">
+                <title>void main_menu::load_screen ()</title> <emphasis>Load the load screen.</emphasis>
+                
+<para>This method will start a small loop, 
+<literallayout>
+</literallayout>
+that smoothly change the <link linkend="classmain__menu">main_menu</link> to the load screen. 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classmain__menu_1a555c4191cafced116939b5c6c354fe3e">
+                <title>void main_menu::gid_gud_splash ()</title> <emphasis>Creater screen.</emphasis>
+                
+<para>This method will start the advertisement screen from the creators of the game. 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+            <section xml:id="classmain__menu_1a83e10a5ce65747f1de76e40d32dd8e5b">
+                <title>void main_menu::loading ()</title> <emphasis>start the load screen</emphasis>
+                
+<para>This method will start draw the loadscreen pic. 
+<literallayout>
+</literallayout>
+This is so that the player does not only see a black screen while waiting. 
+<literallayout>
+</literallayout>
+</para>
+
+            </section>
+</section>

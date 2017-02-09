@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classfigure">
+<title>figure class Reference</title>
+<para>
+    <programlisting>#include <link linkend="objects_8hpp">&lt;objects.hpp&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for figure</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classfigure__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for figure</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classfigure__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f position</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool selected</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classfigure_1a73a600829aee74a3ac635b4a7d0719b8">figure</link> (
+sf::Vector2f position)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual sf::FloatRect <link linkend="classfigure_1aca9a3924bc0883e1aa8e93c04887abbc">getBounds</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="classfigure_1a56d8a53a8bf2b82178aa476bac071596">draw</link> (
+sf::RenderWindow &amp; window)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="classfigure_1ac7592a3b4cb4210fbd114c42d015c4e7">move</link> (
+sf::Vector2f delta)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="classfigure_1a2290acc133127e643fab20c7ce9ab975">jump</link> (
+sf::Vector2f target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="classfigure_1a25bfb0a452b2b2fe60f7f01b08dab423">jump</link> (
+sf::Vector2i target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classfigure_1a73a600829aee74a3ac635b4a7d0719b8">
+                <title>figure::figure (sf::Vector2f position)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classfigure_1aca9a3924bc0883e1aa8e93c04887abbc">
+                <title>virtual sf::FloatRect figure::getBounds ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classfigure_1a56d8a53a8bf2b82178aa476bac071596">
+                <title>virtual void figure::draw (sf::RenderWindow &amp;window)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classfigure_1ac7592a3b4cb4210fbd114c42d015c4e7">
+                <title>void figure::move (sf::Vector2f delta)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classfigure_1a2290acc133127e643fab20c7ce9ab975">
+                <title>void figure::jump (sf::Vector2f target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classfigure_1a25bfb0a452b2b2fe60f7f01b08dab423">
+                <title>void figure::jump (sf::Vector2i target)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

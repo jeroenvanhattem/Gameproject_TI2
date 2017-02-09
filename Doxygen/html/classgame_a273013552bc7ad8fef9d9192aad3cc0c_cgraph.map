@@ -1,0 +1,4 @@
+<map id="game::mouse_intersects_right_edge" name="game::mouse_intersects_right_edge">
+<area shape="rect" id="node2" href="$button__actions_8cpp.html#a067f53aa6474ce70abccc5bbd28ad01d" title="Get the position of the mouse. " alt="" coords="219,13,357,39"/>
+<area shape="rect" id="node3" href="$button__actions_8cpp.html#a94ef0400a00795316cd4e374db2af104" title="Convert a sf::vector2i to sf::Vector2f. " alt="" coords="405,13,563,39"/>
+</map>

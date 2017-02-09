@@ -1,0 +1,662 @@
+\hypertarget{classplayer}{}\section{player Class Reference}
+\label{classplayer}\index{player@{player}}
+
+
+{\ttfamily \#include $<$player.\+hpp$>$}
+
+
+
+Collaboration diagram for player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classplayer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classplayer_a1a369fcd087aa48f9241fb20c8df52f3}{player} (sf\+::\+Render\+Window \&window, \hyperlink{classsql}{sql} \&\hyperlink{classplayer_aa5560a5bdfc340ad6def011573ee5eb7}{database}, std\+::string save)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classplayer_a0f6538451ec51b4407cca22294451443}{move} (sf\+::\+Vector2f delta)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classplayer_a0f6538451ec51b4407cca22294451443}{move()} \+: Move the player \end{DoxyCompactList}\item 
+void \hyperlink{classplayer_aa673c84d7b56badc58d7c467325cbf88}{set\+\_\+action} (std\+::string s)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classplayer_aa673c84d7b56badc58d7c467325cbf88}{set\+\_\+action(std\+::string s)} \+: Set action of the player \end{DoxyCompactList}\item 
+void \hyperlink{classplayer_a67423ce10d4abb42775868f978d04247}{draw} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classplayer_a67423ce10d4abb42775868f978d04247}{draw()} \+: Print player \end{DoxyCompactList}\item 
+void \hyperlink{classplayer_a519784459639f6b785bcfeaa05b6f604}{respawn} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classplayer_a519784459639f6b785bcfeaa05b6f604}{respawn()} \+: Respawn player \end{DoxyCompactList}\item 
+int \hyperlink{classplayer_ad93507550867df5598b86b73de01ec12}{get\+\_\+interaction} (\hyperlink{classnpc}{npc} \&other\+\_\+npc)
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classnpc_a2714b410c2e644040f69f1cf50d3bc50}{npc\+::get\+\_\+interaction(npc \& other\+\_\+npc)} \+: Get interaction between the player and a N\+PC \end{DoxyCompactList}\item 
+int \hyperlink{classplayer_aa405bc495c5a6bced7740352abd4249f}{get\+\_\+collision} (sf\+::\+Int\+Rect colliding\+\_\+object)
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classplayer_aa405bc495c5a6bced7740352abd4249f}{get\+\_\+collision(sf\+::\+Int\+Rect colliding\+\_\+object)} \+: Get interaction between a N\+PC and a sf\+::\+Int\+Rect object \end{DoxyCompactList}\item 
+void \hyperlink{classplayer_a3bf8cc80800146684a3dbf28c0c4a83c}{set\+\_\+last\+\_\+position} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classplayer_a3bf8cc80800146684a3dbf28c0c4a83c}{set\+\_\+last\+\_\+position()} \+: Set the position back to its last position \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \hyperlink{classplayer_a78d420774623e89cd896d3cb1d265b17}{get\+\_\+position} ()
+\begin{DoxyCompactList}\small\item\em sf\+::\+Vector2f \hyperlink{classplayer_a78d420774623e89cd896d3cb1d265b17}{get\+\_\+position()} \+: Get position of player \end{DoxyCompactList}\item 
+std\+::vector$<$ sf\+::\+Sprite $>$ \hyperlink{classplayer_a676129193d589a975d7a86429a37b1b7}{get\+\_\+action} (std\+::string action\+\_\+to\+\_\+get)
+\begin{DoxyCompactList}\small\item\em void show\+\_\+action(std\+::string action\+\_\+to\+\_\+perform) \+: Player acion \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classplayer_afc7732284851b7f0d90b66a5d25931e2}{get\+\_\+current\+\_\+action} ()
+\begin{DoxyCompactList}\small\item\em Get current action the player. \end{DoxyCompactList}\item 
+void \hyperlink{classplayer_a4659a0677d5b19b0ae27737dfaa0176e}{show\+\_\+ability} (std\+::string action\+\_\+to\+\_\+show)
+\begin{DoxyCompactList}\small\item\em Perform an action. \end{DoxyCompactList}\item 
+void \hyperlink{classplayer_a17ee5122ab15251afb54b4cdd42060e6}{set\+\_\+position} (sf\+::\+Vector2f new\+\_\+position)
+\begin{DoxyCompactList}\small\item\em Get position of the player. \end{DoxyCompactList}\item 
+\hyperlink{classplayer_aab5d2e47b80e0481f09ca0df8b823057}{$\sim$player} ()
+\begin{DoxyCompactList}\small\item\em Decontructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnpc}{npc} \hyperlink{classplayer_a7f6192f63ec45be0efbf6903c1f8910e}{player\+\_\+npc}
+\item 
+std\+::string \hyperlink{classplayer_ab6521a8b56e507945311a7e415933a49}{player\+\_\+id}
+\item 
+sf\+::\+Vector2f \hyperlink{classplayer_a3809687b5d650b424726ef2f61c285de}{spawn}
+\item 
+sf\+::\+Vector2f \hyperlink{classplayer_a7e37704e10e2be3e02a155127495727e}{position}
+\item 
+sf\+::\+Vector2f \hyperlink{classplayer_a856eed939c632225be8287f0b56df8d0}{last\+\_\+move}
+\item 
+\hyperlink{classsql}{sql} \hyperlink{classplayer_aa5560a5bdfc340ad6def011573ee5eb7}{database}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file player.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplayer_a1a369fcd087aa48f9241fb20c8df52f3}\label{classplayer_a1a369fcd087aa48f9241fb20c8df52f3}} 
+\index{player@{player}!player@{player}}
+\index{player@{player}!player@{player}}
+\subsubsection{\texorpdfstring{player()}{player()}}
+{\footnotesize\ttfamily player\+::player (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{classsql}{sql} \&}]{database,  }\item[{std\+::string}]{save }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+This method will create an object of class npc.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+window \+: sf\+::\+Render\+Window ~\newline
+-\/$>$ window where content will be drawn on.
+
+database \+: sql ~\newline
+-\/$>$ referrence to the database class.~\newline
+ save \+: sf\+::string ~\newline
+-\/$>$ id of the current game save.
+
+\subsubsection*{Example\+: }
+
+player a(window, database, \char`\"{}1\char`\"{})~\newline
+
+
+Definition at line 5 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_a1a369fcd087aa48f9241fb20c8df52f3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_aab5d2e47b80e0481f09ca0df8b823057}\label{classplayer_aab5d2e47b80e0481f09ca0df8b823057}} 
+\index{player@{player}!````~player@{$\sim$player}}
+\index{````~player@{$\sim$player}!player@{player}}
+\subsubsection{\texorpdfstring{$\sim$player()}{~player()}}
+{\footnotesize\ttfamily player\+::$\sim$player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Decontructor. 
+
+Will be called when the object is deleted. ~\newline
+
+
+Definition at line 72 of file player.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classplayer_a67423ce10d4abb42775868f978d04247}\label{classplayer_a67423ce10d4abb42775868f978d04247}} 
+\index{player@{player}!draw@{draw}}
+\index{draw@{draw}!player@{player}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void player\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classplayer_a67423ce10d4abb42775868f978d04247}{draw()} \+: Print player 
+
+This method draws the player on the screen. ~\newline
+ \subsubsection*{Example\+: }
+
+\hyperlink{classplayer_a67423ce10d4abb42775868f978d04247}{draw()}~\newline
+-\/$>$ Draw the player on the screen 
+
+Definition at line 28 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classplayer_a67423ce10d4abb42775868f978d04247_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_a67423ce10d4abb42775868f978d04247_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_a676129193d589a975d7a86429a37b1b7}\label{classplayer_a676129193d589a975d7a86429a37b1b7}} 
+\index{player@{player}!get\+\_\+action@{get\+\_\+action}}
+\index{get\+\_\+action@{get\+\_\+action}!player@{player}}
+\subsubsection{\texorpdfstring{get\+\_\+action()}{get\_action()}}
+{\footnotesize\ttfamily std\+::vector$<$ sf\+::\+Sprite $>$ player\+::get\+\_\+action (\begin{DoxyParamCaption}\item[{std\+::string}]{action\+\_\+to\+\_\+get }\end{DoxyParamCaption})}
+
+
+
+void show\+\_\+action(std\+::string action\+\_\+to\+\_\+perform) \+: Player acion 
+
+This function displays the right action of the player, so the right spritepart that displays the current action of the player, like walking up
+
+\subsubsection*{Parameters\+: }
+
+action\+\_\+to\+\_\+perform \+: std\+::string ~\newline
+-\/$>$ The action that has to be shown
+
+\subsubsection*{Example\+: }
+
+show\+\_\+action(\char`\"{}walk\+\_\+up\char`\"{}) ~\newline
+-\/$>$ Now the player seems to be walking up 
+
+Definition at line 59 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classplayer_a676129193d589a975d7a86429a37b1b7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_a676129193d589a975d7a86429a37b1b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_aa405bc495c5a6bced7740352abd4249f}\label{classplayer_aa405bc495c5a6bced7740352abd4249f}} 
+\index{player@{player}!get\+\_\+collision@{get\+\_\+collision}}
+\index{get\+\_\+collision@{get\+\_\+collision}!player@{player}}
+\subsubsection{\texorpdfstring{get\+\_\+collision()}{get\_collision()}}
+{\footnotesize\ttfamily int player\+::get\+\_\+collision (\begin{DoxyParamCaption}\item[{sf\+::\+Int\+Rect}]{colliding\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+int \hyperlink{classplayer_aa405bc495c5a6bced7740352abd4249f}{get\+\_\+collision(sf\+::\+Int\+Rect colliding\+\_\+object)} \+: Get interaction between a N\+PC and a sf\+::\+Int\+Rect object 
+
+Call the \textquotesingle{}get\+\_\+collision\textquotesingle{} function to check for a collision with a sf\+::\+Int\+Rect object
+
+\subsubsection*{Parameters\+: }
+
+colliding\+\_\+object \+: sf\+::\+Int\+Rect ~\newline
+-\/$>$ The sf\+::\+Int\+Rect that will be check for a collision
+
+\subsubsection*{Return\+: }
+
+0 / 1 \+: integer ~\newline
+-\/$>$ Return a 1 if there\textquotesingle{}s a collision detected, return a 0 if no collision is detected
+
+\subsubsection*{Example\+: }
+
+get\+\_\+collision(recangle) ~\newline
+-\/$>$ return\+: \{\char`\"{}1\char`\"{}\}. 
+
+Definition at line 46 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_aa405bc495c5a6bced7740352abd4249f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_aa405bc495c5a6bced7740352abd4249f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_afc7732284851b7f0d90b66a5d25931e2}\label{classplayer_afc7732284851b7f0d90b66a5d25931e2}} 
+\index{player@{player}!get\+\_\+current\+\_\+action@{get\+\_\+current\+\_\+action}}
+\index{get\+\_\+current\+\_\+action@{get\+\_\+current\+\_\+action}!player@{player}}
+\subsubsection{\texorpdfstring{get\+\_\+current\+\_\+action()}{get\_current\_action()}}
+{\footnotesize\ttfamily std\+::string player\+::get\+\_\+current\+\_\+action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get current action the player. 
+
+This function returns the name of the current action of the player. ~\newline
+This is the action that the player is currently performing in the game.~\newline
+
+
+\subsubsection*{Return\+: }
+
+current\+\_\+action \+: std\+::string ~\newline
+-\/$>$ Name of the current action from the player.
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classplayer_afc7732284851b7f0d90b66a5d25931e2}{get\+\_\+current\+\_\+action()} ~\newline
+-\/$>$ \char`\"{}walk\+\_\+up\char`\"{} 
+
+Definition at line 55 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classplayer_afc7732284851b7f0d90b66a5d25931e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_afc7732284851b7f0d90b66a5d25931e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_ad93507550867df5598b86b73de01ec12}\label{classplayer_ad93507550867df5598b86b73de01ec12}} 
+\index{player@{player}!get\+\_\+interaction@{get\+\_\+interaction}}
+\index{get\+\_\+interaction@{get\+\_\+interaction}!player@{player}}
+\subsubsection{\texorpdfstring{get\+\_\+interaction()}{get\_interaction()}}
+{\footnotesize\ttfamily int player\+::get\+\_\+interaction (\begin{DoxyParamCaption}\item[{\hyperlink{classnpc}{npc} \&}]{other\+\_\+npc }\end{DoxyParamCaption})}
+
+
+
+int \hyperlink{classnpc_a2714b410c2e644040f69f1cf50d3bc50}{npc\+::get\+\_\+interaction(npc \& other\+\_\+npc)} \+: Get interaction between the player and a N\+PC 
+
+Call the \textquotesingle{}get\+\_\+interaction\textquotesingle{} function to check for a collision between the player and a N\+PC
+
+\subsubsection*{Parameters\+: }
+
+other\+\_\+npc \+: N\+PC \& ~\newline
+-\/$>$ The N\+PC that will be checked with for a collision
+
+\subsubsection*{Return\+: }
+
+0 / 1 \+: integer ~\newline
+-\/$>$ Return a 1 if there\textquotesingle{}s a collision detected, return a 0 if no collision is detected
+
+\subsubsection*{Example\+: }
+
+get\+\_\+interaction($\ast$other\+\_\+npc) ~\newline
+-\/$>$ return\+: \{\char`\"{}1\char`\"{}\}. 
+
+Definition at line 42 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_ad93507550867df5598b86b73de01ec12_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_ad93507550867df5598b86b73de01ec12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_a78d420774623e89cd896d3cb1d265b17}\label{classplayer_a78d420774623e89cd896d3cb1d265b17}} 
+\index{player@{player}!get\+\_\+position@{get\+\_\+position}}
+\index{get\+\_\+position@{get\+\_\+position}!player@{player}}
+\subsubsection{\texorpdfstring{get\+\_\+position()}{get\_position()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f player\+::get\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+sf\+::\+Vector2f \hyperlink{classplayer_a78d420774623e89cd896d3cb1d265b17}{get\+\_\+position()} \+: Get position of player 
+
+When this function is called, it will return the position of the player
+
+\subsubsection*{Return\+: }
+
+position \+: sf\+::\+Vector2f ~\newline
+-\/$>$ The position of the player
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classplayer_a78d420774623e89cd896d3cb1d265b17}{get\+\_\+position()} ~\newline
+-\/$>$ return sf\+::\+Vector(200,200) 
+
+Definition at line 51 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_a78d420774623e89cd896d3cb1d265b17_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_a0f6538451ec51b4407cca22294451443}\label{classplayer_a0f6538451ec51b4407cca22294451443}} 
+\index{player@{player}!move@{move}}
+\index{move@{move}!player@{player}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void player\+::move (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{delta }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classplayer_a0f6538451ec51b4407cca22294451443}{move()} \+: Move the player 
+
+This method moves the position the player.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+delta \+: sf\+::\+Vector2f~\newline
+-\/$>$ new position of the player.
+
+\subsubsection*{Example\+: }
+
+move(\{2,0\})~\newline
+player has moved 2 pixels to the right~\newline
+
+
+Definition at line 18 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classplayer_a0f6538451ec51b4407cca22294451443_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_a0f6538451ec51b4407cca22294451443_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_a519784459639f6b785bcfeaa05b6f604}\label{classplayer_a519784459639f6b785bcfeaa05b6f604}} 
+\index{player@{player}!respawn@{respawn}}
+\index{respawn@{respawn}!player@{player}}
+\subsubsection{\texorpdfstring{respawn()}{respawn()}}
+{\footnotesize\ttfamily void player\+::respawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classplayer_a519784459639f6b785bcfeaa05b6f604}{respawn()} \+: Respawn player 
+
+This method moves the player back to a specific location ~\newline
+ \subsubsection*{Example\+: }
+
+\hyperlink{classplayer_a519784459639f6b785bcfeaa05b6f604}{respawn()}~\newline
+-\/$>$ Player will be moved back to (200,200) 
+
+Definition at line 37 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classplayer_a519784459639f6b785bcfeaa05b6f604_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_a519784459639f6b785bcfeaa05b6f604_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_aa673c84d7b56badc58d7c467325cbf88}\label{classplayer_aa673c84d7b56badc58d7c467325cbf88}} 
+\index{player@{player}!set\+\_\+action@{set\+\_\+action}}
+\index{set\+\_\+action@{set\+\_\+action}!player@{player}}
+\subsubsection{\texorpdfstring{set\+\_\+action()}{set\_action()}}
+{\footnotesize\ttfamily void player\+::set\+\_\+action (\begin{DoxyParamCaption}\item[{std\+::string}]{s }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classplayer_aa673c84d7b56badc58d7c467325cbf88}{set\+\_\+action(std\+::string s)} \+: Set action of the player 
+
+This method sets the current action of the player.~\newline
+The standard value is walk down.~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+s \+: std\+::string~\newline
+-\/$>$ name of the action that has to be set on active.
+
+\subsubsection*{Example\+: }
+
+set\+\_\+action(\char`\"{}walk\+\_\+up\char`\"{})~\newline
+-\/$>$ Player is now set for walking up.~\newline
+
+
+Definition at line 24 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classplayer_aa673c84d7b56badc58d7c467325cbf88_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_aa673c84d7b56badc58d7c467325cbf88_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_a3bf8cc80800146684a3dbf28c0c4a83c}\label{classplayer_a3bf8cc80800146684a3dbf28c0c4a83c}} 
+\index{player@{player}!set\+\_\+last\+\_\+position@{set\+\_\+last\+\_\+position}}
+\index{set\+\_\+last\+\_\+position@{set\+\_\+last\+\_\+position}!player@{player}}
+\subsubsection{\texorpdfstring{set\+\_\+last\+\_\+position()}{set\_last\_position()}}
+{\footnotesize\ttfamily void player\+::set\+\_\+last\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classplayer_a3bf8cc80800146684a3dbf28c0c4a83c}{set\+\_\+last\+\_\+position()} \+: Set the position back to its last position 
+
+When this function is called, the current location will be set to last location
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classplayer_a3bf8cc80800146684a3dbf28c0c4a83c}{set\+\_\+last\+\_\+position()} ~\newline
+ -\/$>$ The position is now set to the last position 
+
+Definition at line 32 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classplayer_a3bf8cc80800146684a3dbf28c0c4a83c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_a3bf8cc80800146684a3dbf28c0c4a83c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_a17ee5122ab15251afb54b4cdd42060e6}\label{classplayer_a17ee5122ab15251afb54b4cdd42060e6}} 
+\index{player@{player}!set\+\_\+position@{set\+\_\+position}}
+\index{set\+\_\+position@{set\+\_\+position}!player@{player}}
+\subsubsection{\texorpdfstring{set\+\_\+position()}{set\_position()}}
+{\footnotesize\ttfamily void player\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{new\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Get position of the player. 
+
+When this function is called, it will return the position of the player.~\newline
+ \subsubsection*{Return\+: }
+
+position \+: sf\+::\+Vector2f ~\newline
+-\/$>$ The position of the player
+
+\subsubsection*{Example\+: }
+
+\hyperlink{classplayer_a78d420774623e89cd896d3cb1d265b17}{get\+\_\+position()} ~\newline
+-\/$>$ return sf\+::\+Vector(200,200) 
+
+Definition at line 63 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classplayer_a17ee5122ab15251afb54b4cdd42060e6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classplayer_a4659a0677d5b19b0ae27737dfaa0176e}\label{classplayer_a4659a0677d5b19b0ae27737dfaa0176e}} 
+\index{player@{player}!show\+\_\+ability@{show\+\_\+ability}}
+\index{show\+\_\+ability@{show\+\_\+ability}!player@{player}}
+\subsubsection{\texorpdfstring{show\+\_\+ability()}{show\_ability()}}
+{\footnotesize\ttfamily void player\+::show\+\_\+ability (\begin{DoxyParamCaption}\item[{std\+::string}]{action\+\_\+to\+\_\+show }\end{DoxyParamCaption})}
+
+
+
+Perform an action. 
+
+This function shows one step of the asked ability. ~\newline
+This function has to be called in a loop that stops at the max size of the ability list. ~\newline
+
+
+\subsubsection*{Parameters\+: }
+
+action\+\_\+to\+\_\+show \+: std\+::string ~\newline
+-\/$>$ Name of action.
+
+\subsubsection*{Example\+: }
+
+show\+\_\+ability(\char`\"{}shoot\+\_\+arrow\+\_\+up\char`\"{}) ~\newline
+-\/$>$ the player will shoot an arrow northwards. 
+
+Definition at line 68 of file player.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classplayer_a4659a0677d5b19b0ae27737dfaa0176e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplayer_a4659a0677d5b19b0ae27737dfaa0176e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classplayer_aa5560a5bdfc340ad6def011573ee5eb7}\label{classplayer_aa5560a5bdfc340ad6def011573ee5eb7}} 
+\index{player@{player}!database@{database}}
+\index{database@{database}!player@{player}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily \hyperlink{classsql}{sql} player\+::database\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 14 of file player.\+hpp.
+
+\mbox{\Hypertarget{classplayer_a856eed939c632225be8287f0b56df8d0}\label{classplayer_a856eed939c632225be8287f0b56df8d0}} 
+\index{player@{player}!last\+\_\+move@{last\+\_\+move}}
+\index{last\+\_\+move@{last\+\_\+move}!player@{player}}
+\subsubsection{\texorpdfstring{last\+\_\+move}{last\_move}}
+{\footnotesize\ttfamily sf\+::\+Vector2f player\+::last\+\_\+move\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file player.\+hpp.
+
+\mbox{\Hypertarget{classplayer_ab6521a8b56e507945311a7e415933a49}\label{classplayer_ab6521a8b56e507945311a7e415933a49}} 
+\index{player@{player}!player\+\_\+id@{player\+\_\+id}}
+\index{player\+\_\+id@{player\+\_\+id}!player@{player}}
+\subsubsection{\texorpdfstring{player\+\_\+id}{player\_id}}
+{\footnotesize\ttfamily std\+::string player\+::player\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 10 of file player.\+hpp.
+
+\mbox{\Hypertarget{classplayer_a7f6192f63ec45be0efbf6903c1f8910e}\label{classplayer_a7f6192f63ec45be0efbf6903c1f8910e}} 
+\index{player@{player}!player\+\_\+npc@{player\+\_\+npc}}
+\index{player\+\_\+npc@{player\+\_\+npc}!player@{player}}
+\subsubsection{\texorpdfstring{player\+\_\+npc}{player\_npc}}
+{\footnotesize\ttfamily \hyperlink{classnpc}{npc} player\+::player\+\_\+npc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 9 of file player.\+hpp.
+
+\mbox{\Hypertarget{classplayer_a7e37704e10e2be3e02a155127495727e}\label{classplayer_a7e37704e10e2be3e02a155127495727e}} 
+\index{player@{player}!position@{position}}
+\index{position@{position}!player@{player}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily sf\+::\+Vector2f player\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file player.\+hpp.
+
+\mbox{\Hypertarget{classplayer_a3809687b5d650b424726ef2f61c285de}\label{classplayer_a3809687b5d650b424726ef2f61c285de}} 
+\index{player@{player}!spawn@{spawn}}
+\index{spawn@{spawn}!player@{player}}
+\subsubsection{\texorpdfstring{spawn}{spawn}}
+{\footnotesize\ttfamily sf\+::\+Vector2f player\+::spawn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file player.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{player_8hpp}{player.\+hpp}\item 
+D\+:/\+Documents-\/(\+D)/\+H\+B\+O-\/\+I\+C\+T/jaar2/\+Blok B/git/game\+\_\+development/\+Software/\+Maingame/src/\hyperlink{player_8cpp}{player.\+cpp}\end{DoxyCompactItemize}

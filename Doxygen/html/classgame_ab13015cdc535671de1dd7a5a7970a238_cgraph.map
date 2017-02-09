@@ -1,0 +1,15 @@
+<map id="game::move_player" name="game::move_player">
+<area shape="rect" id="node2" href="$classplayer.html#ad93507550867df5598b86b73de01ec12" title="int npc::get_interaction(npc &amp; other_npc) : Get interaction between the player and a NPC ..." alt="" coords="194,5,345,32"/>
+<area shape="rect" id="node5" href="$classplayer.html#aa405bc495c5a6bced7740352abd4249f" title="int get_collision(sf::IntRect colliding_object) : Get interaction between a NPC and a sf::IntRect obj..." alt="" coords="201,56,338,83"/>
+<area shape="rect" id="node7" href="$classplayer.html#aa673c84d7b56badc58d7c467325cbf88" title="void set_action(std::string s) : Set action of the player " alt="" coords="207,107,332,133"/>
+<area shape="rect" id="node9" href="$button__actions_8cpp.html#a147658cb884fa19f4a0a255ea858b7b8" title="Get the name of a move if move button is pressed. " alt="" coords="193,158,346,199"/>
+<area shape="rect" id="node10" href="$classplayer.html#a0f6538451ec51b4407cca22294451443" title="void move() : Move the player " alt="" coords="222,224,317,251"/>
+<area shape="rect" id="node12" href="$button__actions_8cpp.html#a6a2c7019e201b42b13d3032fc538298d" title="Get the move direction if move button is pressed. " alt="" coords="203,275,336,317"/>
+<area shape="rect" id="node13" href="$classplayer.html#a3bf8cc80800146684a3dbf28c0c4a83c" title="void set_last_position() : Set the position back to its last position " alt="" coords="188,341,351,368"/>
+<area shape="rect" id="node3" href="$classnpc.html#a2714b410c2e644040f69f1cf50d3bc50" title="Get interaction two NPC&#39;s. " alt="" coords="399,5,535,32"/>
+<area shape="rect" id="node4" href="$classnpc.html#aa6a71f7355403e4a108f3c4e8b6a3931" title="Get a bounds from a NPC. " alt="" coords="583,31,701,57"/>
+<area shape="rect" id="node6" href="$classnpc.html#a64342e70f2e8c3afde210ffa77e1e54e" title="Get interaction NPC and object. " alt="" coords="405,56,528,83"/>
+<area shape="rect" id="node8" href="$classnpc.html#aa86a880284a09f9fc3358a61a74be1b9" title="set action of npc " alt="" coords="411,107,522,133"/>
+<area shape="rect" id="node11" href="$classnpc.html#ae8d1bfcd87382237192ebb5b6def33a5" title="Move the npc. " alt="" coords="426,224,507,251"/>
+<area shape="rect" id="node14" href="$classnpc.html#a52d22585e441af4d8dde1d1a2658b2dc" title="Get position of NPC. " alt="" coords="406,341,527,368"/>
+</map>

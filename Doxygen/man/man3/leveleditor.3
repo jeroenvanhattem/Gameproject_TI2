@@ -1,0 +1,659 @@
+.TH "leveleditor" 3 "Fri Feb 3 2017" "Version Version: alpha v1.5" "Git Gud: The adventures of the hungover" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+leveleditor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <leveleditor\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBleveleditor\fP (sf::Vector2f \fBlevelsize\fP, sf::Vector2f tilesize, sf::RenderWindow &\fBwindow\fP, \fBsql\fP &\fBdatabase\fP)"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "void \fBeditor_loop\fP ()"
+.br
+.RI "The main loop for the editor to stay working\&. "
+.ti -1c
+.RI "void \fBget_actions\fP ()"
+.br
+.RI "Loop through the actions in the action class\&. "
+.ti -1c
+.RI "void \fBdraw_rectangle_store\fP ()"
+.br
+.RI "Draw the rectangle store on the screen\&. "
+.ti -1c
+.RI "void \fBdraw_background_store\fP ()"
+.br
+.RI "Draw the background store\&. "
+.ti -1c
+.RI "void \fBdraw_tile_store\fP ()"
+.br
+.RI "Draw the tile store\&. "
+.ti -1c
+.RI "void \fBdraw_temporary_store\fP ()"
+.br
+.RI "Draw the temporary store\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::View \fBview1\fP"
+.br
+.ti -1c
+.RI "sf::View \fBview2\fP"
+.br
+.ti -1c
+.RI "sf::View \fBview3\fP"
+.br
+.ti -1c
+.RI "sf::View \fBview4\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBbutton_pressed\fP (\fBdialogbox\fP &object, sf::View &view)"
+.br
+.RI "Check if a button is pressed at the given view\&. "
+.ti -1c
+.RI "void \fBget_items_from_database\fP (std::map< std::string, std::vector< std::string >> &item_values_map)"
+.br
+.RI "Get data from the database by giving a map\&. "
+.ti -1c
+.RI "void \fBload_rectangles\fP ()"
+.br
+.RI "This function loads all background rectangles in the background vector\&. "
+.ti -1c
+.RI "void \fBload_tile_list\fP ()"
+.br
+.RI "This method loads all tiles which can be choosen at the right side of the level editor\&. "
+.ti -1c
+.RI "void \fBset_selected\fP ()"
+.br
+.RI "Set a object from the tile list as selected when there is clicked on it\&. "
+.ti -1c
+.RI "void \fBremove_last_object\fP ()"
+.br
+.RI "Removes the last object from the temporary store\&. "
+.ti -1c
+.RI "bool \fBremove_object_under_mouse\fP ()"
+.br
+.RI "This function removes the object under the mouse by pressing c\&. "
+.ti -1c
+.RI "void \fBcreate_object\fP (sf::Vector2f position)"
+.br
+.RI "Creates an object which is selected at the given position\&. "
+.ti -1c
+.RI "sf::Vector2f \fBconvert_to_coords\fP (sf::View &view)"
+.br
+.RI "Converts a mouse position to map coords on the given view\&. "
+.ti -1c
+.RI "sf::Vector2f \fBget_position_from_rectangle_under_mouse\fP ()"
+.br
+.RI "Get the position of the rectangle from rectangle store under the mouse\&. "
+.ti -1c
+.RI "bool \fBis_object_under_mouse\fP (std::vector< \fBpicture\fP *> &vector, sf::View &view)"
+.br
+.RI "Check if a picture object is under the mouse\&. "
+.ti -1c
+.RI "bool \fBis_object_under_mouse\fP (std::vector< \fBfigure\fP *> &vector, sf::View &view)"
+.br
+.RI "Check if a figure object is under the mouse\&. "
+.ti -1c
+.RI "bool \fBis_button_pressed\fP (\fBpicture\fP &object, sf::View &view)"
+.br
+.RI "Check if a button is pressed at the given view\&. "
+.ti -1c
+.RI "bool \fBmenu_options\fP ()"
+.br
+.RI "Looks if a menu button is pressed\&. "
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::Vector2f \fBlevelsize\fP = { 0,0 }"
+.br
+.ti -1c
+.RI "sf::Vector2f \fBrect_size\fP = { 0,0 }"
+.br
+.ti -1c
+.RI "std::vector< \fBfigure\fP * > \fBrectangle_store\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBpicture\fP * > \fBbackground_store\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBpicture\fP * > \fBtile_store\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBpicture\fP * > \fBtemporary_store\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBdialogbox\fP * > \fBlevel_buttons\fP"
+.br
+.ti -1c
+.RI "std::vector< std::string > \fBlevel_ids\fP"
+.br
+.ti -1c
+.RI "std::map< std::string, std::vector< std::string > > \fBbackground_values_map\fP"
+.br
+.ti -1c
+.RI "std::map< std::string, std::vector< std::string > > \fBobject_values_map\fP"
+.br
+.ti -1c
+.RI "std::string \fBactive_level\fP"
+.br
+.ti -1c
+.RI "sf::RenderWindow & \fBwindow\fP"
+.br
+.ti -1c
+.RI "\fBsql\fP & \fBdatabase\fP"
+.br
+.ti -1c
+.RI "\fBpicture\fP \fBback_to_menu_button\fP"
+.br
+.ti -1c
+.RI "\fBpicture\fP \fBsave_level_button\fP"
+.br
+.ti -1c
+.RI "\fBpicture\fP \fBnew_game_button\fP"
+.br
+.ti -1c
+.RI "\fBpicture\fP \fBload_game_button\fP"
+.br
+.ti -1c
+.RI "bool \fBpressed_esc\fP = true"
+.br
+.ti -1c
+.RI "bool \fBpressed_load_game\fP = false"
+.br
+.ti -1c
+.RI "\fBaction\fP \fBactions\fP [12]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 70 of file leveleditor\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "leveleditor::leveleditor (sf::Vector2f levelsize, sf::Vector2f tilesize, sf::RenderWindow & window, \fBsql\fP & database)"
+
+.PP
+Constructor\&. 
+.SS "This will create a leveleditor object\&.  Parameters: "
+.PP
+levelsize : sf::Vector2f 
+.br
+-> Give the levelsize with the function\&. 
+.br
+ tilesize : sf::Vector2f 
+.br
+-> Give the tilesize with the function\&. 
+.br
+ window : sf::RenderWindow& 
+.br
+-> Give a window with the function where the leveleditor needs to be drawn at\&. 
+.br
+ database : sql& 
+.br
+-> Give the database to the function\&.
+.br
+ 
+.SS "Example: "
+.PP
+leveleditor({1080,1080}, {32,32}, window, database); 
+.br
+
+.PP
+Definition at line 3 of file leveleditor\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool leveleditor::button_pressed (\fBdialogbox\fP & object, sf::View & view)\fC [private]\fP"
+
+.PP
+Check if a button is pressed at the given view\&. 
+.SS "Parameters: "
+.PP
+object : dialogbox& 
+.br
+-> A dialog object\&.
+.PP
+view : view& 
+.br
+-> A view\&.
+.PP
+.SS "Return: "
+.PP
+bool : bool 
+.br
+-> returns true if left mouse button is pressed on the given dialogbox\&.
+.PP
+.SS "Example: "
+.PP
+Get_data(dialogbox, view1) 
+.br
+return: {true}\&. 
+.PP
+Definition at line 182 of file leveleditor\&.cpp\&.
+.SS "sf::Vector2f leveleditor::convert_to_coords (sf::View & view)\fC [private]\fP"
+
+.PP
+Converts a mouse position to map coords on the given view\&. 
+.SS "Parameters: "
+.PP
+view : sf::View& 
+.br
+-> view of the editor
+.PP
+.SS "Return: "
+.PP
+vector : sf::Vector2f 
+.br
+-> A vector converted to mapcoords\&.
+.PP
+.SS "Example: "
+.PP
+convert_to_coords(view1); -> (256,596) 
+.PP
+Definition at line 271 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::create_object (sf::Vector2f position)\fC [private]\fP"
+
+.PP
+Creates an object which is selected at the given position\&. 
+.SS "Parameters: "
+.PP
+position : sf::Vector2f -> position for object
+.PP
+.SS "Example: "
+.PP
+Create_object({100,50}) Creates a selected object at position {100,50}\&. 
+.PP
+Definition at line 195 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::draw_background_store ()"
+
+.PP
+Draw the background store\&. 
+.SS "Example: "
+.PP
+\fBdraw_background_store()\fP 
+.br
+background_store is now drawn on the screen\&. 
+.br
+
+.PP
+Definition at line 319 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::draw_rectangle_store ()"
+
+.PP
+Draw the rectangle store on the screen\&. 
+.SS "Example: "
+.PP
+\fBdraw_rectangle_store()\fP 
+.br
+rectangle_store is now drawn on the screen\&. 
+.br
+
+.PP
+Definition at line 313 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::draw_temporary_store ()"
+
+.PP
+Draw the temporary store\&. 
+.SS "Example: "
+.PP
+\fBdraw_temporary_store()\fP 
+.br
+Draw the objects from the temporary_store\&. 
+.br
+
+.PP
+Definition at line 325 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::draw_tile_store ()"
+
+.PP
+Draw the tile store\&. 
+.SS "Example: "
+.PP
+\fBdraw_tile_store()\fP 
+.br
+Draw the objects from the tile_store\&. 
+.br
+
+.PP
+Definition at line 331 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::editor_loop ()"
+
+.PP
+The main loop for the editor to stay working\&. 
+.SS "Example: "
+.PP
+\fBeditor_loop()\fP; 
+.br
+
+.PP
+Definition at line 36 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::get_actions ()"
+
+.PP
+Loop through the actions in the action class\&. 
+.PP
+Definition at line 337 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::get_items_from_database (std::map< std::string, std::vector< std::string >> & item_values_map)\fC [private]\fP"
+
+.PP
+Get data from the database by giving a map\&. 
+.SS "Parameters: "
+.PP
+map vector : std::map<std::string, std::vector<std::string>>& 
+.br
+-> a map vector which contains a string with all the database values\&.
+.PP
+.SS "Return: "
+.PP
+vector : std::vector<object> 
+.br
+-> returns a vector with all the objects from the database\&.
+.PP
+.SS "Example: "
+.PP
+get_items_from_database(object_map) 
+.br
+-> item_map is now filled with objects\&. 
+.PP
+Definition at line 164 of file leveleditor\&.cpp\&.
+.SS "sf::Vector2f leveleditor::get_position_from_rectangle_under_mouse ()\fC [private]\fP"
+
+.PP
+Get the position of the rectangle from rectangle store under the mouse\&. 
+.SS "Return: "
+.PP
+position : sf::Vector2f 
+.br
+-> A vector2f position\&.
+.PP
+.SS "Example: "
+.PP
+\fBget_position_from_rectangle_under_mouse()\fP 
+.br
+-> (234,262) 
+.PP
+Definition at line 275 of file leveleditor\&.cpp\&.
+.SS "bool leveleditor::is_button_pressed (\fBpicture\fP & object, sf::View & view)\fC [private]\fP"
+
+.PP
+Check if a button is pressed at the given view\&. 
+.SS "Parameters: "
+.PP
+object : 'picture& 
+.br
+-> A picture object\&. 
+.br
+ view : view& 
+.br
+-> A view\&. 
+.br
+ 
+.SS "Return: "
+.PP
+button_pressed : bool 
+.br
+-> returns true if left mouse button is pressed on the given picture\&. 
+.br
+ 
+.SS "Example: "
+.PP
+Get_data(picture, view1) 
+.br
+-> true 
+.br
+
+.PP
+Definition at line 178 of file leveleditor\&.cpp\&.
+.SS "bool leveleditor::is_object_under_mouse (std::vector< \fBpicture\fP *> & vector, sf::View & view)\fC [private]\fP"
+
+.PP
+Check if a picture object is under the mouse\&. 
+.SS "Parameters: "
+.PP
+vector : std::vector<picture*>& 
+.br
+-> Give a picture vector with the function\&.
+.PP
+view : sf::View 
+.br
+-> Give a view with the function\&.
+.PP
+.SS "Return: "
+.PP
+picture_under_mouse : bool 
+.br
+-> Returns true if the mouse is on a object\&. 
+.br
+ 
+.SS "Example: "
+.PP
+is_object_under_mouse(picture_vector, view1) 
+.br
+-> true 
+.PP
+Definition at line 293 of file leveleditor\&.cpp\&.
+.SS "bool leveleditor::is_object_under_mouse (std::vector< \fBfigure\fP *> & vector, sf::View & view)\fC [private]\fP"
+
+.PP
+Check if a figure object is under the mouse\&. 
+.SS "Parameters: "
+.PP
+vector : std::vector<picture*>& 
+.br
+-> Give a figure vector with the function\&. 
+.br
+ view : sf::View 
+.br
+-> Give a view with the function\&. 
+.br
+.PP
+.SS "Return: "
+.PP
+figure_under_mouse : bool 
+.br
+-> Returns true if the mouse is on a object\&. 
+.br
+.PP
+.SS "Example: "
+.PP
+is_object_under_mouse(figure_vector, view2) 
+.br
+-> true 
+.br
+
+.PP
+Definition at line 284 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::load_rectangles ()\fC [private]\fP"
+
+.PP
+This function loads all background rectangles in the background vector\&. This method will fill the rectangle_store with rectangles\&. 
+.PP
+Definition at line 186 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::load_tile_list ()\fC [private]\fP"
+
+.PP
+This method loads all tiles which can be choosen at the right side of the level editor\&. This method will fill the tile_store with objects\&. 
+.PP
+Definition at line 223 of file leveleditor\&.cpp\&.
+.SS "bool leveleditor::menu_options ()\fC [private]\fP"
+
+.PP
+Looks if a menu button is pressed\&. 
+.SS "Return: "
+.PP
+back_to_menu_button_pressed : bool 
+.br
+-> returns true if the back to menu button is pressed\&. 
+.br
+sets other variables in the hpp on true or false if a button is pressed\&. 
+.br
+ 
+.SS "Example: "
+.PP
+\fBmenu_options()\fP 
+.br
+-> true 
+.br
+
+.PP
+Definition at line 121 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::remove_last_object ()\fC [private]\fP"
+
+.PP
+Removes the last object from the temporary store\&. This function removes the last object from the temporary store\&. 
+.PP
+Definition at line 204 of file leveleditor\&.cpp\&.
+.SS "bool leveleditor::remove_object_under_mouse ()\fC [private]\fP"
+
+.PP
+This function removes the object under the mouse by pressing c\&. 
+.SS "Return: "
+.PP
+bool : bool 
+.br
+-> returns a bool\&.
+.PP
+.SS "Example: "
+.PP
+\fBremove_object_under_mouse()\fP -> true 
+.PP
+Definition at line 211 of file leveleditor\&.cpp\&.
+.SS "void leveleditor::set_selected ()\fC [private]\fP"
+
+.PP
+Set a object from the tile list as selected when there is clicked on it\&. This method is used in the code to be able to switch between objects\&. 
+.PP
+Definition at line 302 of file leveleditor\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBaction\fP leveleditor::actions[12]\fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+        action(sf::Keyboard::Left,  [&]() {view1\&.move(-16, 0); }),
+        action(sf::Keyboard::Right, [&]() {view1\&.move(16, 0); }),
+        action(sf::Keyboard::Up,    [&]() {view1\&.move(0, -32); }),
+        action(sf::Keyboard::Down,  [&]() {view1\&.move(0, 32); }),
+        action(sf::Keyboard::Z,     [&]() {view1\&.zoom(0\&.9f); }),
+        action(sf::Keyboard::X,     [&]() {view1\&.zoom(1\&.1f); }),
+        action(sf::Mouse::Left,     [&]() {if (is_object_under_mouse(rectangle_store, view1)) { create_object(get_position_from_rectangle_under_mouse()); } }),
+        action(sf::Mouse::Left,     [&]() {if (is_object_under_mouse(tile_store, view2)) { set_selected(); } }),
+        action(sf::Keyboard::S,     [&]() {view2\&.move(0,5); }),
+        action(sf::Keyboard::W,     [&]() {view2\&.move(0,-5); }),
+        action(sf::Keyboard::C,     [&]() {remove_object_under_mouse(); }),
+        action(sf::Keyboard::BackSpace, [&]() {remove_last_object(); })
+    }
+.fi
+.PP
+Definition at line 94 of file leveleditor\&.hpp\&.
+.SS "std::string leveleditor::active_level\fC [private]\fP"
+
+.PP
+Definition at line 83 of file leveleditor\&.hpp\&.
+.SS "\fBpicture\fP leveleditor::back_to_menu_button\fC [private]\fP"
+
+.PP
+Definition at line 87 of file leveleditor\&.hpp\&.
+.SS "std::vector<\fBpicture\fP*> leveleditor::background_store\fC [private]\fP"
+
+.PP
+Definition at line 75 of file leveleditor\&.hpp\&.
+.SS "std::map<std::string, std::vector<std::string> > leveleditor::background_values_map\fC [private]\fP"
+
+.PP
+Definition at line 81 of file leveleditor\&.hpp\&.
+.SS "\fBsql\fP& leveleditor::database\fC [private]\fP"
+
+.PP
+Definition at line 86 of file leveleditor\&.hpp\&.
+.SS "std::vector<\fBdialogbox\fP*> leveleditor::level_buttons\fC [private]\fP"
+
+.PP
+Definition at line 78 of file leveleditor\&.hpp\&.
+.SS "std::vector<std::string> leveleditor::level_ids\fC [private]\fP"
+
+.PP
+Definition at line 80 of file leveleditor\&.hpp\&.
+.SS "sf::Vector2f leveleditor::levelsize = { 0,0 }\fC [private]\fP"
+
+.PP
+Definition at line 72 of file leveleditor\&.hpp\&.
+.SS "\fBpicture\fP leveleditor::load_game_button\fC [private]\fP"
+
+.PP
+Definition at line 90 of file leveleditor\&.hpp\&.
+.SS "\fBpicture\fP leveleditor::new_game_button\fC [private]\fP"
+
+.PP
+Definition at line 89 of file leveleditor\&.hpp\&.
+.SS "std::map<std::string, std::vector<std::string> > leveleditor::object_values_map\fC [private]\fP"
+
+.PP
+Definition at line 82 of file leveleditor\&.hpp\&.
+.SS "bool leveleditor::pressed_esc = true\fC [private]\fP"
+
+.PP
+Definition at line 91 of file leveleditor\&.hpp\&.
+.SS "bool leveleditor::pressed_load_game = false\fC [private]\fP"
+
+.PP
+Definition at line 92 of file leveleditor\&.hpp\&.
+.SS "sf::Vector2f leveleditor::rect_size = { 0,0 }\fC [private]\fP"
+
+.PP
+Definition at line 73 of file leveleditor\&.hpp\&.
+.SS "std::vector<\fBfigure\fP*> leveleditor::rectangle_store\fC [private]\fP"
+
+.PP
+Definition at line 74 of file leveleditor\&.hpp\&.
+.SS "\fBpicture\fP leveleditor::save_level_button\fC [private]\fP"
+
+.PP
+Definition at line 88 of file leveleditor\&.hpp\&.
+.SS "std::vector<\fBpicture\fP*> leveleditor::temporary_store\fC [private]\fP"
+
+.PP
+Definition at line 77 of file leveleditor\&.hpp\&.
+.SS "std::vector<\fBpicture\fP*> leveleditor::tile_store\fC [private]\fP"
+
+.PP
+Definition at line 76 of file leveleditor\&.hpp\&.
+.SS "sf::View leveleditor::view1"
+
+.PP
+Definition at line 338 of file leveleditor\&.hpp\&.
+.SS "sf::View leveleditor::view2"
+
+.PP
+Definition at line 339 of file leveleditor\&.hpp\&.
+.SS "sf::View leveleditor::view3"
+
+.PP
+Definition at line 340 of file leveleditor\&.hpp\&.
+.SS "sf::View leveleditor::view4"
+
+.PP
+Definition at line 341 of file leveleditor\&.hpp\&.
+.SS "sf::RenderWindow& leveleditor::window\fC [private]\fP"
+
+.PP
+Definition at line 85 of file leveleditor\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Git Gud: The adventures of the hungover from the source code\&.

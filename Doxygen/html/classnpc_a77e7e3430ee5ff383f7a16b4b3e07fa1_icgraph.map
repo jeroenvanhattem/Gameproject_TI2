@@ -1,0 +1,4 @@
+<map id="npc::~npc" name="npc::~npc">
+<area shape="rect" id="node2" href="$classnpc.html#af58658444d25eaa77aec883dd9d5592d" title="Get position of NPC. " alt="" coords="133,5,255,32"/>
+<area shape="rect" id="node3" href="$classplayer.html#a78d420774623e89cd896d3cb1d265b17" title="sf::Vector2f get_position() : Get position of player " alt="" coords="303,5,437,32"/>
+</map>

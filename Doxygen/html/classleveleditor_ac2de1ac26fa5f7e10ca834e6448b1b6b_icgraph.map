@@ -1,0 +1,6 @@
+<map id="leveleditor::convert_to_coords" name="leveleditor::convert_to_coords">
+<area shape="rect" id="node2" href="$classleveleditor.html#a89e3b4fb65aa6db692a2f4db65e6dba2" title="This function removes the object under the mouse by pressing c. " alt="" coords="206,5,355,47"/>
+<area shape="rect" id="node3" href="$classleveleditor.html#ac6bf4571731b8283feb4c20d1391fa8b" title="Get the position of the rectangle from rectangle store under the mouse. " alt="" coords="181,71,380,112"/>
+<area shape="rect" id="node4" href="$classleveleditor.html#af11cad8cf1e7999a04f6a8f2a4950794" title="Check if a figure object is under the mouse. " alt="" coords="211,136,350,177"/>
+<area shape="rect" id="node5" href="$classleveleditor.html#a6579d63ca18e84f7a335bf8072f798cc" title="Set a object from the tile list as selected when there is clicked on it. " alt="" coords="200,202,361,229"/>
+</map>

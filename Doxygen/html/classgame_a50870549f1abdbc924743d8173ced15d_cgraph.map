@@ -1,0 +1,12 @@
+<map id="game::perform_player_action" name="game::perform_player_action">
+<area shape="rect" id="node2" href="$classplayer.html#a676129193d589a975d7a86429a37b1b7" title="void show_action(std::string action_to_perform) : Player acion " alt="" coords="219,5,344,32"/>
+<area shape="rect" id="node4" href="$classplayer.html#afc7732284851b7f0d90b66a5d25931e2" title="Get current action the player. " alt="" coords="216,57,347,98"/>
+<area shape="rect" id="node6" href="$classplayer.html#aa673c84d7b56badc58d7c467325cbf88" title="void set_action(std::string s) : Set action of the player " alt="" coords="219,123,344,149"/>
+<area shape="rect" id="node8" href="$classgame.html#a4cf9147e06874edfc6190db64d719dec" title="Show the store on the window. " alt="" coords="200,174,363,215"/>
+<area shape="rect" id="node9" href="$classgame.html#a961fe8a42a2c0bc1ef62ef17c7c64f06" title="Draw NPC&#39;s on the window. " alt="" coords="223,240,340,267"/>
+<area shape="rect" id="node10" href="$classplayer.html#a4659a0677d5b19b0ae27737dfaa0176e" title="Perform an action. " alt="" coords="213,291,349,317"/>
+<area shape="rect" id="node3" href="$classnpc.html#a78bc2f0af05b44a6a8e71fa3853c0920" title="Get NPC action. " alt="" coords="435,5,545,32"/>
+<area shape="rect" id="node5" href="$classnpc.html#a61315bb51941237b6b2c0fb578f3e5ee" title="Get current action of NPC. " alt="" coords="411,64,569,91"/>
+<area shape="rect" id="node7" href="$classnpc.html#aa86a880284a09f9fc3358a61a74be1b9" title="set action of npc " alt="" coords="435,123,545,149"/>
+<area shape="rect" id="node11" href="$classnpc.html#a2a5bbed340b918265dabc2dcfb5d07b6" title="Perform an action. " alt="" coords="429,291,551,317"/>
+</map>

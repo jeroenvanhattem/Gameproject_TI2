@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="main_8cpp">
+    <title>main.cpp File Reference</title>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &quot;sqlite3.h&quot;</programlisting>
+    <programlisting>#include &quot;sql.hpp&quot;</programlisting>
+    <programlisting>#include &lt;SFML\Graphics.hpp&gt;</programlisting>
+    <programlisting>#include &quot;button_actions.hpp&quot;</programlisting>
+    <programlisting>#include &quot;player.hpp&quot;</programlisting>
+    <programlisting>#include &quot;music.hpp&quot;</programlisting>
+    <programlisting>#include &quot;main_menu.hpp&quot;</programlisting>
+    <programlisting>#include &quot;game.hpp&quot;</programlisting>
+    <programlisting>#include &quot;leveleditor.hpp&quot;</programlisting>
+<para>Include dependency diagram for main.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="main_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for main.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="main_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="main_8cpp_1a235bce26738e0eec7d7ed336e30e538d">intro</link> (
+sf::Music &amp; m, std::string path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="main_8cpp_1a357ffa2037bfb7515a059fd98995e184">intro_stop</link> (
+sf::Music &amp; m)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97">main</link> (
+int argc, char * argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Documents-(D)/HBO-ICT/jaar2/Blok B/git/game_development/Software/Maingame/src/main.cpp</para>
+    </simplesect>
+</section>

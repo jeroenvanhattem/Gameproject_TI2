@@ -1,0 +1,7 @@
+<map id="game::draw_player" name="game::draw_player">
+<area shape="rect" id="node2" href="$classgame.html#a46eaf7a077e7f3ff0b5e229142358f00" title="The constructor. " alt="" coords="220,5,315,32"/>
+<area shape="rect" id="node3" href="$classgame.html#a2b80a1fbc6d723e78d3c86d2f8ff24d4" title="Loop that handles the game. " alt="" coords="399,107,524,133"/>
+<area shape="rect" id="node5" href="$classgame.html#af99a7ac774385373a015bd3082049bd2" title="Show beginning dialogues. " alt="" coords="184,107,351,133"/>
+<area shape="rect" id="node6" href="$classgame.html#a61adfafa4d31548fc94c853f10b9bf3b" title="Interact with a NPC. " alt="" coords="215,157,320,184"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="572,107,623,133"/>
+</map>

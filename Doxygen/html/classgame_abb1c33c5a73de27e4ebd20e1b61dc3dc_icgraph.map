@@ -1,0 +1,6 @@
+<map id="game::mouse_intersects_upper_edge" name="game::mouse_intersects_upper_edge">
+<area shape="rect" id="node2" href="$classgame.html#a69793e75c155cb06e4f2c4d98c5da27c" title="Activate game_viewr. " alt="" coords="219,13,355,39"/>
+<area shape="rect" id="node3" href="$classgame.html#a2b80a1fbc6d723e78d3c86d2f8ff24d4" title="Loop that handles the game. " alt="" coords="617,13,743,39"/>
+<area shape="rect" id="node5" href="$classgame.html#af99a7ac774385373a015bd3082049bd2" title="Show beginning dialogues. " alt="" coords="403,38,569,65"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="791,13,841,39"/>
+</map>

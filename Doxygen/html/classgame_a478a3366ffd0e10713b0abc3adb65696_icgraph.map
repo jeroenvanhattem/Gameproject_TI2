@@ -1,0 +1,5 @@
+<map id="game::player_skill" name="game::player_skill">
+<area shape="rect" id="node2" href="$classgame.html#a2b80a1fbc6d723e78d3c86d2f8ff24d4" title="Loop that handles the game. " alt="" coords="395,5,520,32"/>
+<area shape="rect" id="node4" href="$classgame.html#af99a7ac774385373a015bd3082049bd2" title="Show beginning dialogues. " alt="" coords="180,31,347,57"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="568,5,619,32"/>
+</map>

@@ -1,0 +1,215 @@
+.TH "main_menu" 3 "Fri Feb 3 2017" "Version Version: alpha v1.5" "Git Gud: The adventures of the hungover" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main_menu
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <main_menu\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBmain_menu\fP (sf::RenderWindow &\fBwindow\fP)"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "void \fBshow_menu\fP ()"
+.br
+.RI "Show menu\&. "
+.ti -1c
+.RI "bool \fBbutton_pressed\fP (\fBpicture\fP &object, sf::View &view)"
+.br
+.RI "Ceck if a button is pressed\&. "
+.ti -1c
+.RI "void \fBload_screen\fP ()"
+.br
+.RI "Load the load screen\&. "
+.ti -1c
+.RI "void \fBgid_gud_splash\fP ()"
+.br
+.RI "Creater screen\&. "
+.ti -1c
+.RI "void \fBloading\fP ()"
+.br
+.RI "start the load screen "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::View \fBview1\fP"
+.br
+.ti -1c
+.RI "sf::View \fBview2\fP"
+.br
+.ti -1c
+.RI "\fBpicture\fP \fBlevel_editor_button\fP"
+.br
+.ti -1c
+.RI "\fBpicture\fP \fBplay_game_button\fP"
+.br
+.ti -1c
+.RI "\fBpicture\fP \fBload_screen_pic\fP"
+.br
+.ti -1c
+.RI "\fBpicture\fP \fBgid_gud\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdraw_main_menu\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::RenderWindow & \fBwindow\fP"
+.br
+.ti -1c
+.RI "\fBpicture\fP \fBbackground\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 6 of file main_menu\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "main_menu::main_menu (sf::RenderWindow & window)"
+
+.PP
+Constructor\&. This method will crate an object of class \fBmain_menu\fP\&.
+.br
+.PP
+.SS "Parameters: "
+.PP
+window : sf::RenderWindow& 
+.br
+-> refference to the SFML window\&.
+.br
+.PP
+.SS "Example: "
+.PP
+\fBmain_menu\fP m(window)
+.br
+
+.PP
+Definition at line 3 of file main_menu\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool main_menu::button_pressed (\fBpicture\fP & object, sf::View & view)"
+
+.PP
+Ceck if a button is pressed\&. This method return a boolean if a menu button is pressed with the mouse or not\&.
+.br
+.PP
+.SS "Parameters: "
+.PP
+object : picture& 
+.br
+-> refference to picture class object 'object'\&.
+.br
+ view : sf::View& 
+.br
+-> view where the mouse click is checked on\&.
+.br
+.PP
+.SS "Return: "
+.PP
+button pressed : bool -> button pressed with mouse
+.PP
+.SS "Example: "
+.PP
+button_pressed(play_game, menu_view)
+.br
+-> true 
+.PP
+Definition at line 29 of file main_menu\&.cpp\&.
+.SS "void main_menu::draw_main_menu ()\fC [private]\fP"
+
+.PP
+Definition at line 23 of file main_menu\&.cpp\&.
+.SS "void main_menu::gid_gud_splash ()"
+
+.PP
+Creater screen\&. This method will start the advertisement screen from the creators of the game\&. 
+.br
+
+.PP
+Definition at line 60 of file main_menu\&.cpp\&.
+.SS "void main_menu::load_screen ()"
+
+.PP
+Load the load screen\&. This method will start a small loop, 
+.br
+that smoothly change the \fBmain_menu\fP to the load screen\&. 
+.br
+
+.PP
+Definition at line 33 of file main_menu\&.cpp\&.
+.SS "void main_menu::loading ()"
+
+.PP
+start the load screen This method will start draw the loadscreen pic\&. 
+.br
+This is so that the player does not only see a black screen while waiting\&. 
+.br
+
+.PP
+Definition at line 81 of file main_menu\&.cpp\&.
+.SS "void main_menu::show_menu ()"
+
+.PP
+Show menu\&. This method shows the menu\&.
+.br
+ 
+.SS "Example: "
+.PP
+\fBshow_menu()\fP 
+.br
+-> You can now see the menu 
+.PP
+Definition at line 17 of file main_menu\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBpicture\fP main_menu::background\fC [private]\fP"
+
+.PP
+Definition at line 9 of file main_menu\&.hpp\&.
+.SS "\fBpicture\fP main_menu::gid_gud"
+
+.PP
+Definition at line 19 of file main_menu\&.hpp\&.
+.SS "\fBpicture\fP main_menu::level_editor_button"
+
+.PP
+Definition at line 16 of file main_menu\&.hpp\&.
+.SS "\fBpicture\fP main_menu::load_screen_pic"
+
+.PP
+Definition at line 18 of file main_menu\&.hpp\&.
+.SS "\fBpicture\fP main_menu::play_game_button"
+
+.PP
+Definition at line 17 of file main_menu\&.hpp\&.
+.SS "sf::View main_menu::view1"
+
+.PP
+Definition at line 14 of file main_menu\&.hpp\&.
+.SS "sf::View main_menu::view2"
+
+.PP
+Definition at line 15 of file main_menu\&.hpp\&.
+.SS "sf::RenderWindow& main_menu::window\fC [private]\fP"
+
+.PP
+Definition at line 8 of file main_menu\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Git Gud: The adventures of the hungover from the source code\&.
